@@ -1,0 +1,376 @@
+@font-face {
+  font-family: Os;
+  src: url(fonts/OpenSans-Semibold.ttf); }
+@font-face {
+  font-family: Or;
+  src: url(fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: Ob;
+  src: url(fonts/OpenSans-Bold.ttf); }
+@font-face {
+  font-family: Ol;
+  src: url(fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: Mr;
+  src: url(fonts/Montserrat-Regular.otf); }
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header .container {
+  padding-top: 18px;
+  padding-bottom: 25px; }
+header .btn-success {
+  color: white;
+  background: #bcda5c;
+  border-radius: 20px;
+  width: 100px;
+  border: 0; }
+
+.navbar-nav {
+  float: right; }
+  .navbar-nav li a {
+    font: 14px Os;
+    margin-right: 25px;
+    color: #a2a2a2;
+    padding: 0; }
+    .navbar-nav li a:hover {
+      background: none; }
+
+.navmenu {
+  padding-top: 15px;
+  text-align: right; }
+
+.login-btn {
+  padding-top: 8px; }
+
+.banner {
+  text-align: center;
+  box-shadow: 0 0 0 800px rgba(0, 0, 0, 0.2) inset;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  background: url(images/banner-bg.png) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%; }
+  .banner .container h1 {
+    color: white;
+    font: 49px Os; }
+    .banner .container h1 span {
+      font: 30px Or; }
+  .banner .container button {
+    margin-top: 50px;
+    color: white;
+    background: #99c50a;
+    border: 0;
+    width: 255px;
+    height: 70px;
+    border-radius: 8px;
+    font: 20px Os; }
+
+.our_works {
+  padding: 95px 0; }
+  .our_works .container {
+    text-align: center; }
+    .our_works .container img {
+      margin-bottom: 50px; }
+    .our_works .container h1 {
+      font: 32px Os;
+      color: #515151;
+      line-height: 1.7em; }
+    .our_works .container p {
+      font: 20px Or;
+      color: #a2a2a2;
+      margin-top: 45px;
+      line-height: 1.7em; }
+
+.about_us {
+  padding-bottom: 90px;
+  padding-top: 60px; }
+  .about_us .container .border-bot {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 35px; }
+    .about_us .container .border-bot:hover {
+      border-bottom: 1px solid #add136; }
+    .about_us .container .border-bot .number {
+      text-align: center;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 22px;
+      font: 21px Os;
+      background: #5f5f5f;
+      float: left;
+      padding-top: 6px;
+      margin-right: 30px;
+      margin-top: 5px; }
+      .about_us .container .border-bot .number:hover {
+        background: #add136; }
+    .about_us .container .border-bot h5 {
+      color: #656565;
+      font: 34px Ol; }
+  .about_us .container h4 {
+    color: #add136;
+    font: 26px Or;
+    margin-bottom: 30px; }
+  .about_us .container p {
+    color: #a2a2a2;
+    font: 18px Or;
+    line-height: 1.8em; }
+  .about_us .container .au-box {
+    margin-top: 60px; }
+  .about_us .container .img-center {
+    text-align: center; }
+
+.follow .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+  .follow .container-fluid .img-center {
+    text-align: center;
+    padding-top: 8%; }
+  .follow .container-fluid h5 {
+    font: 24px Mr;
+    color: #515151;
+    margin-bottom: 30px; }
+  .follow .container-fluid p {
+    font: 18px Or;
+    color: #515151;
+    margin-bottom: 20px;
+    line-height: 1.7em; }
+  .follow .container-fluid button {
+    font: 15px Os;
+    color: white;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 8px; }
+  .follow .container-fluid .btn-success {
+    background: #add136; }
+  .follow .container-fluid .btn-primary {
+    background: #26a6d1; }
+  .follow .container-fluid .properties {
+    background: #e2f8ff;
+    padding: 50px 0; }
+    .follow .container-fluid .properties img {
+      width: 135px; }
+  .follow .container-fluid .buyers {
+    background: #f5f9eb;
+    padding: 50px 0; }
+    .follow .container-fluid .buyers img {
+      width: 100px; }
+
+.projects {
+  padding-top: 75px; }
+  .projects h1 {
+    font: 30px Os;
+    color: #515151;
+    margin-bottom: 20px; }
+  .projects p {
+    font: 18px Or;
+    color: #8f8f8f;
+    line-height: 1.8em; }
+  .projects .pr-title {
+    margin-bottom: 65px; }
+  .projects .pr-button {
+    margin-bottom: 65px; }
+  .projects .btn-default {
+    color: #8f8f8f;
+    background: #ffffff;
+    border: 1px solid #8f8f8f;
+    padding: 15px 22px;
+    outline: none;
+    border-radius: 12px; }
+  .projects .pr-box {
+    padding: 0 30px;
+    border-radius: 10px; }
+  .projects .pr-price {
+    background: #26a6d1;
+    border-radius: 6px;
+    padding: 8px 6px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px; }
+    .projects .pr-price p {
+      font: 17px Os;
+      color: white; }
+  .projects .pr-text {
+    background: #f9f9f9;
+    padding: 25px 20px;
+    border: 1px solid #e5e5e5; }
+    .projects .pr-text h4 {
+      font: 18px Ob;
+      color: #484848;
+      margin-bottom: 15px; }
+    .projects .pr-text p {
+      font: 14px Or;
+      line-height: 1.8em; }
+  .projects .pr-img {
+    position: relative; }
+    .projects .pr-img img {
+      width: 100%; }
+  .projects .pr-arrow {
+    text-align: right;
+    padding-top: 20px;
+    border-top: 1px solid #d6d6d6; }
+    .projects .pr-arrow img {
+      float: right;
+      margin-left: 10px;
+      padding-top: 3px; }
+    .projects .pr-arrow a {
+      font: 16px Os;
+      color: #484848; }
+
+.testimonials {
+  background: url(images/bg-img-2.png) no-repeat;
+  background-size: 100%; }
+  .testimonials .container {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .testimonials .container h2 {
+      font: 40px Os;
+      color: #9ec02d;
+      margin-bottom: 40px; }
+    .testimonials .container p {
+      font: 20px Or;
+      color: #949494;
+      margin-bottom: 95px; }
+    .testimonials .container .comment {
+      background: white;
+      border-radius: 10px;
+      padding: 20px 15px; }
+      .testimonials .container .comment h3 {
+        color: #9ec02d;
+        font: 22px Os;
+        margin-bottom: 10px; }
+      .testimonials .container .comment p {
+        font: 14px Or;
+        color: #848484;
+        line-height: 1.8em;
+        margin-bottom: 0; }
+
+.partners {
+  text-align: center;
+  padding: 40px; }
+  .partners img {
+    width: 100%; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #ededed; }
+  footer p {
+    font: 14px Or;
+    color: #848484; }
+
+@media screen and (max-width: 768px) {
+  header .h-logo {
+    text-align: center; }
+  header .navbar-nav {
+    text-align: center;
+    float: none; }
+    header .navbar-nav li {
+      margin-bottom: 5px; }
+      header .navbar-nav li a {
+        margin-right: 0; }
+  header .login-btn {
+    text-align: center; }
+
+  .banner {
+    background-size: cover; }
+    .banner .container h1 {
+      font: 25px Os; }
+      .banner .container h1 span {
+        font-size: 18px; }
+    .banner .container button {
+      margin-top: 20px;
+      width: 150px;
+      font-size: 14px;
+      height: 37px; }
+
+  .about_us .border-bot {
+    padding-top: 5px; }
+
+  .projects .pr-button {
+    text-align: center; }
+
+  .follow .container-fluid .properties {
+    text-align: center; }
+    .follow .container-fluid .properties .img-center {
+      margin-bottom: 25px; }
+  .follow .container-fluid .buyers {
+    text-align: center; }
+    .follow .container-fluid .buyers .img-center {
+      margin-bottom: 25px; }
+
+  .testimonials {
+    background: none; }
+    .testimonials .container h2 {
+      font-size: 28px;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .testimonials .container p {
+      font-size: 16px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 50px; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .container .row .h-logo img {
+    width: 100%;
+    padding-top: 4%; }
+  header .container .row .navbar-nav li a {
+    font-size: 13px; }
+  header .container .row .login-btn {
+    text-align: center;
+    padding-top: 12px; }
+
+  .banner {
+    background-size: cover; }
+    .banner .container h1 {
+      font: 35px Os; }
+      .banner .container h1 span {
+        font-size: 25px; }
+    .banner .container button {
+      width: 200px;
+      font-size: 16px;
+      height: 47px; }
+
+  .follow .container-fluid .img-center {
+    padding-bottom: 10px; }
+  .follow .container-fluid .buyers .img-center {
+    padding-top: 13%; }
+
+  .projects .pr-box {
+    padding: 0 10px; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header .container .row .navbar-nav li a {
+    font-size: 13px; }
+
+  .banner {
+    background-size: cover; }
+    .banner .container h1 {
+      font: 45px Os; }
+      .banner .container h1 span {
+        font-size: 28px; }
+    .banner .container button {
+      width: 240px;
+      font-size: 18px;
+      height: 57px; }
+
+  .follow .container-fluid .img-center {
+    padding-bottom: 10px; }
+  .follow .container-fluid .buyers .img-center {
+    padding-top: 12%; }
+
+  .projects .pr-box {
+    padding: 0 10px; }
+
+  .testimonials .container .row p {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=style.css.map */
