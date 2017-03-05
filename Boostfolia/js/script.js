@@ -10,8 +10,8 @@ $(document).ready(function(){
 		'width': slideWidth
 	});
 	$('.slideInner').css("width", slideWidth*numberOfSlides);
-	$('.banner').prepend('<img id="leftControl" class="l_arr control" src="../css/images/left_arr.png" alt="">')
-	.append('<img id="rightControl" class="r_arr control" src="../css/images/right_arr.png" alt="">');
+	$('.banner').prepend('<img id="leftControl" class="l_arr control" src="css/images/left_arr.png" alt="">')
+	.append('<img id="rightControl" class="r_arr control" src="css/images/right_arr.png" alt="">');
 	
 	manageControls(currentPosition);
 
