@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$(this).stop().animate({marginTop: '45px'}, 200)
 	});
 	//Nav menu
-	$(".nav-toggle").click(function(){
+	$(".nav-toggle").onclick("click", function(){
 		$(".nav-menu").slideToggle(400);
 	});
 });
