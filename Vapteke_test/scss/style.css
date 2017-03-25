@@ -89,6 +89,7 @@ header {
           background: none;
           outline: none;
           border: 0;
+          max-width: 150px;
           font: 14px open_sansreg; }
         .banner .banner_cont .banner-cf .input_cont input[placeholder] {
           text-align: center;
@@ -243,6 +244,7 @@ header {
         background: none;
         outline: none;
         border: 0;
+        max-width: 160px;
         font: 14px open_sansreg; }
       .block_2 .block_2_cont .input_cont_2 input[placeholder] {
         text-align: center;
