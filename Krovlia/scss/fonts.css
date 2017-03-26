@@ -1,4 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@font-face {
+  font-family: Helvetica;
+  /* ╨Ш╨╝╤П ╤И╤А╨╕╤Д╤В╨░ */
+  src: url(fonts/HelveticaNeueCyr-Light.otf);
+  /* ╨Я╤Г╤В╤М ╨║ ╤Д╨░╨╣╨╗╤Г ╤Б╨╛ ╤И╤А╨╕╤Д╤В╨╛╨╝ */ }
 
 /*# sourceMappingURL=fonts.css.map */
