@@ -211,7 +211,8 @@ header {
         .block1 .block1_cont .form-1 .input label {
           top: 10px;
           left: 35px;
-          cursor: text; }
+          cursor: text;
+          color: #444444;}
       .block1 .block1_cont .form-1 button {
         border-radius: 3px;
         width: 320px;
@@ -495,6 +496,7 @@ header {
         .block6 .block6_cont .b6_right .input label {
           top: 10px;
           left: 35px;
+          color: #444444;
           cursor: text; }
       .block6 .block6_cont .b6_right button {
         border-radius: 3px;
@@ -734,6 +736,7 @@ header {
         .block11 .block11_cont .cont-form form .input label {
           top: 10px;
           left: 35px;
+          color: #444444;
           cursor: text; }
       .block11 .block11_cont .cont-form form button {
         border-radius: 3px;
