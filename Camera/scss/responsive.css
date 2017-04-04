@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    min-height: 235px; }
+    header .header_cont .logo {
+      padding-left: 40px; }
+    header .header_cont .header_right img:last-child {
+      display: none; }
+    header nav {
+      height: auto;
+      min-height: 55px; }
+      header nav ul li {
+        display: block; }
+    header .gorka {
+      top: 170px; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,30 @@
+@media screen and (max-width:768px){
+	header{
+		height: auto;
+		min-height: 235px;
+		.header_cont{
+			.logo{
+				padding-left: 40px;
+			}
+			.header_right{
+				img{
+					&:last-child{
+						display: none;
+					}			
+				}
+			}
+		}
+		nav{
+			height: auto;
+			min-height: 55px;
+			ul{
+				li{
+					display: block;
+				}
+			}
+		}
+		.gorka{
+			top: 170px;
+		}
+	}
+}
