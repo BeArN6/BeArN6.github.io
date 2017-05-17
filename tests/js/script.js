@@ -86,7 +86,7 @@ $(document).ready(function(){
 			$(this).closest(".question_w").next(".question_w").removeClass("hideQuestion").addClass("activeQuestion");
 			var valueA = $(this).attr("data-value");
 			if(valueA == "a"){
-				answerA[a] = "a";
+				answerA[answerA.length] = "a";
 			}
 			if(valueA == "b"){
 				answerB[answerB.length] = "b";
@@ -105,7 +105,7 @@ $(document).ready(function(){
 				$(".answer_cont").prepend("<h1>Результат 1</h1>");
 			}
 			if(b > a && b > c && b > d){
-				a$(".answer_cont").prepend("<h1>Результат 2</h1>");
+				$(".answer_cont").prepend("<h1>Результат 2</h1>");
 			}
 			if(c > a && c > b && c > d){
 				$(".answer_cont").prepend("<h1>Результат 3</h1>");
