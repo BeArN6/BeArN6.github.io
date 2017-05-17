@@ -36,7 +36,7 @@ $(document).ready(function(){
 			$(this).closest(".question_m").next(".question_m").removeClass("hideQuestion").addClass("activeQuestion");
 			var valueA = $(this).attr("data-value");
 			if(valueA == "a"){
-				answerA[a] = "a";
+				answerA[answerA.length] = "a";
 			}
 			if(valueA == "b"){
 				answerB[answerB.length] = "b";
