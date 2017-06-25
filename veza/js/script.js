@@ -8,6 +8,12 @@ $(document).ready(function(){
     $('.bxslider').bxSlider({
   		pagerCustom: '#bx-pager'
 	});
+	$('.slider2').slick({
+  		infinite: true,
+  		slidesToShow: 3,
+  		slidesToScroll: 1,
+  		variableWidth: true
+	});
 	$('.i_tab-1').click(function(){
 		$('.i-tab').removeClass('active');
 		$(this).addClass('active');
