@@ -29,4 +29,16 @@ $(document).ready(function(){
 	$('.toggle').click(function(){
 		$('.h_right ul li').not('.toggle').slideToggle(400);
 	});
+	$('.cxcx1').click(function(){
+		$('.right_size a').removeClass('rs_active');
+		$(this).addClass('rs_active');
+		$('.main_sizes a').removeClass('available');
+		$('.main_sizes .cx1').addClass('available');
+	});
+	$('.cxcx5').click(function(){
+		$('.right_size a').removeClass('rs_active');
+		$(this).addClass('rs_active');
+		$('.main_sizes a').removeClass('available');
+		$('.main_sizes .cx-5').addClass('available');
+	});
 });

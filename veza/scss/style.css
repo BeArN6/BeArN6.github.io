@@ -161,14 +161,15 @@ h2 {
         padding: 7px 0;
         float: right; }
         .main .main_product .prod_size .ps_title .right_size a {
-          background: #699bd2;
-          color: #fff;
+          color: #1a63a4;
+          background: #e6e6e6;
           padding: 8px 25px;
           border-radius: 3px;
-          text-decoration: none; }
+          text-decoration: none;
+          cursor: pointer; }
         .main .main_product .prod_size .ps_title .right_size .rs_active {
-          color: #1a63a4;
-          background: #e6e6e6; }
+          background: #699bd2;
+          color: #fff; }
     .main .main_product .prod_size .main_sizes {
       padding: 5px 0;
       margin-top: 5px; }
@@ -416,7 +417,10 @@ h2 {
       margin-right: 5px;
       margin-bottom: 10px; }
   .main .main_product .contacts .cont_cont {
-    height: 55px; }
+    height: 90px; }
+    .main .main_product .contacts .cont_cont span {
+      display: block;
+      margin-bottom: 10px; }
 
   .slick-next, .slick-prev {
     display: none !important; } }

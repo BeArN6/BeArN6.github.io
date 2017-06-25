@@ -191,15 +191,16 @@ h2{
 					padding: 7px 0;
 					float: right;
 					a{
-						background: #699bd2;
-						color: #fff;
+						color: #1a63a4;
+						background: #e6e6e6;
 						padding: 8px 25px;
 						border-radius: 3px;
 						text-decoration: none;
+						cursor: pointer;
 					}
 					.rs_active{
-						color: #1a63a4;
-						background: #e6e6e6;
+						background: #699bd2;
+						color: #fff;
 					}
 				}
 			}
@@ -527,7 +528,11 @@ h2{
 			}
 			.contacts {
 				.cont_cont{
-					height: 55px;
+					height: 90px;
+					span{
+						display: block;
+						margin-bottom: 10px;
+					}
 				}
 			}
 		}
