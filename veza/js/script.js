@@ -26,7 +26,6 @@ $(document).ready(function(){
 		$('.info').removeClass('info_active');
 		$('.info3').addClass('info_active');
 	});
-	var wWidth = $(window).width();
 	$('.toggle').click(function(){
 		$('.h_right ul li').not('.toggle').slideToggle(400);
 	});
