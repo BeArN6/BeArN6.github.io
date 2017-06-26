@@ -47,4 +47,5 @@ $(document).ready(function(){
 		$('.main_sizes a').removeClass('available');
 		$('.main_sizes .cx-5').addClass('available');
 	});
+	$("a.iframe").fancybox();
 });

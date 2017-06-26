@@ -577,17 +577,57 @@ h2{
 		}
 	}
 	.slick-next,.slick-prev{
-		display: none !important;
+		display: block !important;
 	}
 }
-@media (max-width: 499px){
+/*@media (max-width: 499px){
 	.slider1{
 		max-width: 323px;
 		margin-left: auto;
 		margin-right: auto;
 	}
+}*/
+@media (max-width: 457px){
+	.slider1{
+		max-width: 285px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slick-list{
+		max-width: 159px;
+	}
 }
-@media (min-width: 500px) and (max-width: 659px){
+@media (min-width: 458px) and (max-width: 617px){
+	.slider1{
+		max-width: 449px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slick-list{
+		max-width: 323px;
+	}
+}
+@media (min-width: 617px) and (max-width: 777px){
+	.slider1{
+		max-width: 612px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slick-list{
+		max-width: 486px;
+	}
+}
+@media (min-width: 778px) and (max-width: 944px){
+	.slider1{
+		max-width: 777px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slick-list{
+		max-width: 650px;
+	}
+}
+/*@media (min-width: 500px) and (max-width: 659px){
 	.slider1{
 		max-width: 487px;
 		margin-left: auto;
@@ -600,7 +640,7 @@ h2{
 		margin-left: auto;
 		margin-right: auto;
 	}
-}
+}*/
 @media (min-width: 769px) and (max-width: 992px){
 	header {
 		.h_right {
@@ -659,6 +699,6 @@ h2{
 		}
 	}
 	.slick-next,.slick-prev{
-		display: none !important;
+		display: block !important;
 	}
 }
