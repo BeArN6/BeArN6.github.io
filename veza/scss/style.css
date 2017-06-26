@@ -333,7 +333,7 @@ h2 {
   height: 34px;
   width: 20px;
   border: 0;
-  background: url(images/prev.png);
+  background: url(images/prev.png) no-repeat;
   text-indent: -9999px;
   position: absolute;
   left: 2px;
@@ -345,7 +345,7 @@ h2 {
   height: 34px;
   width: 20px;
   border: 0;
-  background: url(images/next.png);
+  background: url(images/next.png) no-repeat;
   text-indent: -9999px;
   position: absolute;
   right: 3px;
