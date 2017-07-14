@@ -12,7 +12,9 @@ $c1: #000100;
     font-family: ADV;
     src: url(fonts/Adventure.ttf);
 }
-
+input[type='submit']{
+	-webkit-appearance: none;
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -605,6 +607,12 @@ h2,p,span,h1,h3,h4,h5,a{
 	}
 }
 @media screen and (max-width:768px){
+	.right-b{
+		margin-left: 1%;
+	}
+	.left-b{
+		margin-right: 1%;
+	}
 	.b-1 {
 		background-size: cover;
 		.box-1-1{
