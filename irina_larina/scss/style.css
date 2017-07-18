@@ -1316,7 +1316,6 @@ div.wpcf7 .ajax-loader {
           border-radius: 7px; }
 
   .b-6 {
-    background: url(images/bg-6.png) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: local; }
@@ -1379,9 +1378,11 @@ div.wpcf7 .ajax-loader {
     border-radius: 7px;
     max-width: 35%; }
   .b-10 .b10-cont {
-    max-width: 95%; }
+    max-width: 95%;
+    display: block;
+    text-align: center; }
     .b-10 .b10-cont .section p {
-      font-size: 2.03125VW; }
+      font-size: 1.875VW; }
     .b-10 .b10-cont .play-3 {
       text-align: center;
       width: 68%; }
@@ -1390,7 +1391,19 @@ div.wpcf7 .ajax-loader {
       border-radius: 7px;
       width: 50%; }
     .b-10 .b10-cont .b10-video {
-      width: 44%; }
+      width: 44%;
+      display: inline-block;
+      margin-top: 24%; }
+    .b-10 .b10-cont .section-1 {
+      top: 7%; }
+    .b-10 .b10-cont .section-2 {
+      top: 7%; }
+    .b-10 .b10-cont .section-3 {
+      bottom: 8%; }
+    .b-10 .b10-cont .section-4 {
+      bottom: 18%; }
+    .b-10 .b10-cont .play-3 {
+      left: 50%; }
 
   .b-11 .b11-title img {
     width: 3.4%; }

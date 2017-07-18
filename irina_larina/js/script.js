@@ -62,6 +62,10 @@ $(document).ready(function(){
 			$('.b10-cont').css({
 				'height':b10Height
 			});
+			var pl3 = $('.play-3').width();
+			$('.play-3').css({
+				'margin-left': -pl3/2
+			});
 		}
 	$('.all-text').hide();
 	$('.read-more').click(function(){

@@ -1586,7 +1586,6 @@ div.wpcf7 .ajax-loader{
     	}
 	}
 	.b-6{
-		background: url(images/bg-6.png) no-repeat;
     	background-size: cover;
     	background-position: center center;
     	background-attachment: local;
@@ -1686,9 +1685,11 @@ div.wpcf7 .ajax-loader{
 		}
 		.b10-cont{
 			max-width: 95%;
+			display: block;
+			text-align: center;
 			.section{
 				p{
-					font-size: 2.03125VW;
+					font-size: 1.875VW;
 				}
 			}
 			.play-3{
@@ -1702,6 +1703,23 @@ div.wpcf7 .ajax-loader{
 			}
 			.b10-video{
 				width: 44%;
+				display: inline-block;
+				margin-top: 24%;
+			}
+			.section-1{
+				top: 7%;
+			}
+			.section-2{
+				top: 7%;
+			}
+			.section-3{
+				bottom: 8%;
+			}
+			.section-4{
+				bottom: 18%;
+			}
+			.play-3{
+				left: 50%;
 			}
 		}
 	}
