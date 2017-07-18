@@ -472,7 +472,7 @@ h2, p, span, h1, h3, h4, h5, a {
 .b-8 {
   background: url(images/bg-8.png) no-repeat;
   background-size: 100%;
-  box-shadow: 0 0 0 9999px rgba(203, 84, 108, 0.2) inset; }
+  /*box-shadow: 0 0 0 9999px rgba(203,84,108,0.2) inset;*/ }
   .b-8 .box-8-1 {
     box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.8) inset;
     max-width: 50.5%;
@@ -630,7 +630,7 @@ h2, p, span, h1, h3, h4, h5, a {
       margin: 0 1%;
       width: 2.4%; }
     .b-11 .b11-title h2 {
-      font-size: 2.204585537918871VW;
+      font: 2.204585537918871VW KV;
       color: #b64066;
       display: inline-block;
       vertical-align: middle; }
@@ -868,7 +868,8 @@ h2, p, span, h1, h3, h4, h5, a {
       .b-13 .comments .comment a {
         color: #872a4c;
         text-decoration: none;
-        font: 1.1022927689594355VW KV; }
+        font: 1.1022927689594355VW KV;
+        cursor: pointer; }
     .b-13 .comments .comment-1 .plast {
       margin-bottom: 24%; }
     .b-13 .comments .comment-4 .plast {
@@ -1261,7 +1262,7 @@ div.wpcf7 .ajax-loader {
         line-height: 100%; }
       .b-3 .box-3-1 input[type='submit'] {
         font-size: 3.125VW;
-        max-width: 80%;
+        max-width: 70%;
         border-radius: 7px; }
     .b-3 .box-3-2 img {
       width: 16%; }
@@ -1302,7 +1303,7 @@ div.wpcf7 .ajax-loader {
           font-size: 3.125VW; }
         .b-5 .box-5-1 .block-5-1 input[type='submit'] {
           font-size: 3.125VW;
-          max-width: 80%;
+          max-width: 70%;
           border-radius: 7px; }
 
   .b-6 {
@@ -1401,7 +1402,7 @@ div.wpcf7 .ajax-loader {
       font-size: 3.125VW; }
     .b-12 .box-12-1 .block-12-1 .play-4 input[type='submit'] {
       font-size: 3.125VW;
-      max-width: 100%;
+      max-width: 70%;
       border-radius: 7px; }
 
   .b-13 .b13-title {
@@ -1410,7 +1411,7 @@ div.wpcf7 .ajax-loader {
     .b-13 .b13-title span {
       font-size: 3.75VW; }
   .b-13 .play-5 input[type='submit'] {
-    max-width: 69.7%;
+    max-width: 75.7%;
     font-size: 3.125VW;
     border-radius: 7px; }
   .b-13 .comments {
@@ -1497,7 +1498,8 @@ div.wpcf7 .ajax-loader {
       max-width: 90%; }
       .b-17 .box-17-1 .play-6 input[type='submit'] {
         font-size: 3.125VW;
-        border-radius: 7px; }
+        border-radius: 7px;
+        max-width: 70%; }
 
   .b-18 h2 {
     font-size: 3.75VW; }

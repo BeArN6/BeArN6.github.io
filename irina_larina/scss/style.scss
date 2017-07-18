@@ -548,7 +548,7 @@ h2,p,span,h1,h3,h4,h5,a{
 .b-8{
 	background: url(images/bg-8.png) no-repeat;
 	background-size: 100%;
-	box-shadow: 0 0 0 9999px rgba(203,84,108,0.2) inset;
+	/*box-shadow: 0 0 0 9999px rgba(203,84,108,0.2) inset;*/
 	.box-8-1{
 		box-shadow: 0 0 0 9999px rgba(255,255,255,0.8) inset;
 		max-width: 50.5%;
@@ -742,7 +742,7 @@ h2,p,span,h1,h3,h4,h5,a{
 			width: 2.4%;
 		}
 		h2{
-			font-size: 2.204585537918871VW;
+			font: 2.204585537918871VW KV;
 			color: #b64066;
 			display: inline-block;
 			vertical-align: middle;
@@ -1048,6 +1048,7 @@ h2,p,span,h1,h3,h4,h5,a{
 				color: #872a4c;
 				text-decoration: none;
 				font: 1.1022927689594355VW KV;
+				cursor: pointer;
 			}
 		}
 		.comment-1{
@@ -1507,7 +1508,7 @@ div.wpcf7 .ajax-loader{
 		    }
 		    input[type='submit']{
 		    	font-size: 3.125VW;
-    			max-width: 80%;
+    			max-width: 70%;
     			border-radius: 7px;
 		    }
     	}
@@ -1568,7 +1569,7 @@ div.wpcf7 .ajax-loader{
     			}
     			input[type='submit']{
     				font-size: 3.125VW;
-    				max-width: 80%;
+    				max-width: 70%;
     				border-radius: 7px;
     			}
     		}
@@ -1732,7 +1733,7 @@ div.wpcf7 .ajax-loader{
     			.play-4 {
     				input[type='submit']{
     					font-size: 3.125VW;
-    					max-width: 100%;
+    					max-width: 70%;
     					border-radius: 7px;
     				}
     			}
@@ -1749,7 +1750,7 @@ div.wpcf7 .ajax-loader{
 		}
 		.play-5{
 			input[type='submit']{
-				max-width: 69.7%;
+				max-width: 75.7%;
 				font-size: 3.125VW;
 				border-radius: 7px;
 			}
@@ -1883,6 +1884,7 @@ div.wpcf7 .ajax-loader{
     			input[type='submit']{
     				font-size: 3.125VW;
     				border-radius: 7px;
+    				max-width: 70%;
     			}
     		}
 		}

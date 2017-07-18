@@ -55,4 +55,10 @@ $(document).ready(function(){
 				'height':CVideo
 			});
 		}
+	$('.all-text').hide();
+	$('.read-more').click(function(){
+		$(this).hide(400);
+		$(this).prev('p').children('.more-sign').hide(400);
+		$(this).prev('p').children('.all-text').show(400);
+	});
 });
