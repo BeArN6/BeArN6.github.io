@@ -1346,7 +1346,7 @@ div.wpcf7 .ajax-loader {
       .b-7 .bouble-2 .b-text p, .b-7 .bouble-4 .b-text p {
         font-size: 2.5VW; }
     .b-7 .bouble-1 .b-text {
-      bottom: 18%; }
+      bottom: 15%; }
     .b-7 .bouble-2 .b-text {
       left: 5.5%;
       bottom: 17%; }
@@ -1389,7 +1389,7 @@ div.wpcf7 .ajax-loader {
     .b-10 .b10-cont input[type='submit'] {
       font-size: 2.5VW;
       border-radius: 7px;
-      width: 50%; }
+      width: 60%; }
     .b-10 .b10-cont .b10-video {
       width: 44%;
       display: inline-block;
