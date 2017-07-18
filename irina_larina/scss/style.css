@@ -371,8 +371,9 @@ h2, p, span, h1, h3, h4, h5, a {
         max-width: 375px; }
 
 .b-6 {
-  background: url(images/bg-6.png);
+  background: url(images/bg-6.jpg);
   background-size: 100%;
+  background-attachment: fixed;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 4.4%;
@@ -516,8 +517,8 @@ h2, p, span, h1, h3, h4, h5, a {
         color: #000100; }
 
 .b-9 {
-  background: url(images/bg-9.png) no-repeat;
-  /*background-attachment: fixed;*/
+  background: url(images/bg-9.jpg) no-repeat;
+  background-attachment: fixed;
   padding-top: 7.5%;
   padding-bottom: 7%; }
   .b-9 p {
@@ -919,9 +920,10 @@ h2, p, span, h1, h3, h4, h5, a {
       margin-bottom: 5%; }
 
 .b-15 {
-  background: url(images/b-15.png) no-repeat;
+  background: url(images/b-15.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   padding-top: 4%;
   padding-bottom: 5%; }
