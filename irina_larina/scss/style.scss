@@ -991,7 +991,7 @@ h2,p,span,h1,h3,h4,h5,a{
 		text-align: center;
 		margin: 0 auto;
 		.c-video{
-			width: 46%;
+			width: 92%;
 			margin: 0 1.5%;
 			margin-bottom: 2.8%;
 			background: #b64066;
@@ -999,6 +999,10 @@ h2,p,span,h1,h3,h4,h5,a{
 			iframe{
 				width: 100% !important;
 				height: 100% !important;
+				.ytp-icon{
+					width: 48px;
+					height: 28px;
+				}
 			}
 		}
 		.comment{
@@ -1428,6 +1432,10 @@ div.wpcf7 .ajax-loader{
 	.left-b{
 		margin-right: 1%;
 	}
+	.ytp-icon-large-play-button-hover,.ytp-large-play-button{
+		width: 40px !important;
+    	height: 30px !important;
+	}
 	.b-1 {
 		background-size: cover;
 		.box-1-1{
@@ -1452,7 +1460,7 @@ div.wpcf7 .ajax-loader{
     			font-size: 3.125VW;
     		}
     		input[type='submit']{
-    			font-size: 3.125VW;
+    			font-size: 2.8125VW;
     			border-radius: 7px;
     		}
 		}
@@ -1464,8 +1472,9 @@ div.wpcf7 .ajax-loader{
 			bottom: -13.3%;
 		}
 		.light{
-			width: 100%;
-    		left: 12%;
+			width: 85%;
+    		left: 15%;
+    		height: 75%;
 		}
 	}
 	.b-2{
@@ -1474,6 +1483,7 @@ div.wpcf7 .ajax-loader{
     	.box-2-1{
     		max-width: 60%;
     		margin-left: 4.4%;
+    		padding-top: 3%;
     		h2{
     			font-size: 3.125VW;
     		}
@@ -1488,7 +1498,7 @@ div.wpcf7 .ajax-loader{
 				font-size: 3.125VW;
     		}
     		input[type='submit']{
-    			font-size: 3.125VW;
+    			font-size: 2.8125VW;
     			border-radius: 7px;
     		}
     	}
@@ -1507,7 +1517,7 @@ div.wpcf7 .ajax-loader{
     			line-height: 100%;
 		    }
 		    input[type='submit']{
-		    	font-size: 3.125VW;
+		    	font-size: 2.8125VW;
     			max-width: 70%;
     			border-radius: 7px;
 		    }
@@ -1568,7 +1578,7 @@ div.wpcf7 .ajax-loader{
     				font-size: 3.125VW;
     			}
     			input[type='submit']{
-    				font-size: 3.125VW;
+    				font-size: 2.8125VW;
     				max-width: 70%;
     				border-radius: 7px;
     			}
@@ -1579,6 +1589,7 @@ div.wpcf7 .ajax-loader{
 		background: url(images/bg-6.png) no-repeat;
     	background-size: cover;
     	background-position: center center;
+    	background-attachment: local;
     	.boxes-6{
     		p{
     			font-size: 3.125VW;
@@ -1622,13 +1633,13 @@ div.wpcf7 .ajax-loader{
 		}
 		.bouble-1{
 			.b-text{
-    			bottom: 20%;
+    			bottom: 18%;
 			}
 		}
 		.bouble-2{
 			.b-text{
 				left: 5.5%;
-    			bottom: 19%;
+    			bottom: 17%;
 			}
 		}
 		.bouble-4{
@@ -1661,8 +1672,37 @@ div.wpcf7 .ajax-loader{
 		}
 	}
 	.b-9{
+		background-attachment: local;
+		background-size: cover;
 		p{
 			font-size: 2.8125VW;
+		}
+	}
+	.b-10{
+		h2{
+			font-size: 3.75VW;
+			border-radius: 7px;
+			max-width: 35%;
+		}
+		.b10-cont{
+			max-width: 95%;
+			.section{
+				p{
+					font-size: 2.03125VW;
+				}
+			}
+			.play-3{
+				text-align: center;
+				width: 68%;
+			}
+			input[type='submit']{
+				font-size: 2.5VW;
+				border-radius: 7px;
+				width: 50%;
+			}
+			.b10-video{
+				width: 44%;
+			}
 		}
 	}
 	.b-11 {
@@ -1732,7 +1772,7 @@ div.wpcf7 .ajax-loader{
     			}
     			.play-4 {
     				input[type='submit']{
-    					font-size: 3.125VW;
+    					font-size: 2.8125VW;
     					max-width: 70%;
     					border-radius: 7px;
     				}
@@ -1751,7 +1791,7 @@ div.wpcf7 .ajax-loader{
 		.play-5{
 			input[type='submit']{
 				max-width: 75.7%;
-				font-size: 3.125VW;
+				font-size: 2.8125VW;
 				border-radius: 7px;
 			}
 		}
@@ -1803,6 +1843,7 @@ div.wpcf7 .ajax-loader{
 		}
 	}
 	.b-15 {
+		background-attachment: local;
 		.box-15 {
 			p{
 				font-size: 2.8125VW;
@@ -1882,7 +1923,7 @@ div.wpcf7 .ajax-loader{
     		.play-6{
     			max-width: 90%;
     			input[type='submit']{
-    				font-size: 3.125VW;
+    				font-size: 2.8125VW;
     				border-radius: 7px;
     				max-width: 70%;
     			}

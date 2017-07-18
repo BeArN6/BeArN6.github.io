@@ -50,9 +50,17 @@ $(document).ready(function(){
 			);
 	});
 		if(windWidth < 768){
-			var CVideo = windWidth * 0.2125;
+			var CVideo = windWidth * 0.4250;
 			$(".c-video").css({
 				'height':CVideo
+			});
+			var b10Video = windWidth * 0.25;
+			$('.b10-video').css({
+				'height':b10Video
+			});
+			var b10Height = windWidth * 0.725;
+			$('.b10-cont').css({
+				'height':b10Height
 			});
 		}
 	$('.all-text').hide();
