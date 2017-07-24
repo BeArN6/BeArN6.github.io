@@ -1,0 +1,336 @@
+@font-face {
+  font-family: CN;
+  src: url(fonts/Constantia.ttf); }
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+button {
+  outline: none; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header {
+  background-image: url(images/bg-1.png);
+  background-color: #771b31;
+  background-size: cover;
+  background-position: center; }
+  header .top_header {
+    padding: 20px 80px;
+    padding-right: 0;
+    margin-bottom: 100px; }
+    header .top_header img {
+      width: 6%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5.7%; }
+    header .top_header nav {
+      display: inline-block;
+      vertical-align: middle;
+      width: 86%; }
+      header .top_header nav ul li {
+        display: inline-block;
+        margin-right: 11%; }
+        header .top_header nav ul li a {
+          font: 24px CN;
+          color: #fff;
+          text-decoration: none;
+          transition: 1s; }
+          header .top_header nav ul li a:hover {
+            color: #e2ac90; }
+  header .bott_header {
+    text-align: center;
+    padding-bottom: 80px; }
+    header .bott_header h2 {
+      text-transform: uppercase;
+      color: #fff;
+      font: 24px CN;
+      line-height: 40px; }
+    header .bott_header .border-1 {
+      height: 3px;
+      width: 128px;
+      background: #771b31;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 35px; }
+    header .bott_header p {
+      color: #fff;
+      font: 18px CN;
+      font-style: italic;
+      line-height: 38px; }
+    header .bott_header button {
+      color: #fff;
+      font: 18px CN;
+      text-transform: uppercase;
+      border: 2px solid #fff;
+      background: none;
+      margin-top: 40px;
+      padding: 10px 35px;
+      cursor: pointer;
+      border-radius: 3px; }
+
+.b-1 {
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #dda388; }
+  .b-1 .box-1 {
+    display: inline-block;
+    margin: 0px 6%;
+    vertical-align: top;
+    text-align: left; }
+    .b-1 .box-1 h2 {
+      text-transform: uppercase;
+      color: #771b31;
+      font: 24px CN;
+      text-align: left; }
+    .b-1 .box-1 .border-2 {
+      height: 3px;
+      width: 82px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      background: linear-gradient(to right, #c3885d, #eebda7); }
+    .b-1 .box-1 ul {
+      text-align: left;
+      list-style: square;
+      color: #e2ac90; }
+      .b-1 .box-1 ul li {
+        line-height: 35px; }
+        .b-1 .box-1 ul li a {
+          color: #421e28;
+          font: 16px CN;
+          cursor: pointer;
+          text-decoration: none; }
+    .b-1 .box-1 button {
+      color: #e2ac90;
+      font: 16px CN;
+      background: none;
+      border: 2px solid #e2ac90;
+      border-radius: 3px;
+      padding: 13px 14px;
+      cursor: pointer; }
+  .b-1 .box-1-2 {
+    margin-right: 2%; }
+  .b-1 .box-1-3 button {
+    margin-top: 40px; }
+  .b-1 .box-1-1 button, .b-1 .box-1-2 button {
+    margin-top: 75px; }
+
+.b-2 {
+  box-shadow: 0 0 0 9999px rgba(241, 241, 241, 0.41) inset;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  text-align: center; }
+  .b-2 .box-2 {
+    display: inline-block;
+    margin: 0 3%; }
+    .b-2 .box-2 .img_cont {
+      height: 102px;
+      width: 102px;
+      border-radius: 100%;
+      background: #56212b;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px; }
+    .b-2 .box-2 h2 {
+      text-transform: uppercase;
+      color: #56212b;
+      font: 16px CN;
+      margin-bottom: 15px;
+      line-height: 20px; }
+    .b-2 .box-2 p {
+      color: #56212b;
+      font: 14px CN;
+      line-height: 25px; }
+
+.b-4 {
+  background: linear-gradient(to right, #f2cebe, #c48657);
+  height: 7px; }
+
+footer {
+  background: #421e28;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 30px; }
+  footer .f-logo {
+    width: 85px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4%; }
+  footer .address {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 3%; }
+    footer .address h2 {
+      font: 24px CN;
+      color: #e2ac90; }
+    footer .address .f-border {
+      background: linear-gradient(to right, #c58658, #f2bea7);
+      height: 3px;
+      width: 82px;
+      margin-top: 15px;
+      margin-bottom: 12px; }
+    footer .address p {
+      color: #e2ac90;
+      font: 14px CN;
+      line-height: 25px; }
+      footer .address p a {
+        color: #e2ac90;
+        text-decoration: none; }
+  footer .phones {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 5%; }
+    footer .phones p {
+      color: #e2ac90;
+      font: 14px CN;
+      line-height: 25px; }
+  footer .cont_us {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 6%; }
+    footer .cont_us .f-border {
+      background: linear-gradient(to right, #c58658, #f2bea7);
+      height: 3px;
+      width: 82px;
+      margin-top: 15px;
+      margin-bottom: 12px; }
+    footer .cont_us h2 {
+      font: 24px CN;
+      color: #e2ac90; }
+    footer .cont_us p {
+      color: #e2ac90;
+      font: 14px CN;
+      line-height: 25px; }
+  footer .follow_us {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left; }
+    footer .follow_us .f-border {
+      background: linear-gradient(to right, #c58658, #f2bea7);
+      height: 3px;
+      width: 82px;
+      margin-top: 15px;
+      margin-bottom: 12px; }
+    footer .follow_us h2 {
+      font: 24px CN;
+      color: #e2ac90; }
+    footer .follow_us p {
+      color: #e2ac90;
+      font: 14px CN;
+      line-height: 25px;
+      margin-bottom: 10px; }
+    footer .follow_us a:hover img {
+      transform: rotate(1440deg);
+      transition: 1s; }
+    footer .follow_us a img {
+      max-width: 38px;
+      margin-right: 10px; }
+
+@media (max-width: 1366px) {
+  header .top_header nav ul li {
+    margin-right: 8%; }
+    header .top_header nav ul li a {
+      font-size: 22px; } }
+@media (max-width: 1200px) and (min-width: 601px) {
+  header .top_header {
+    margin-bottom: 50px;
+    padding-left: 20px; }
+    header .top_header img {
+      width: 20%;
+      max-width: 80px; }
+    header .top_header nav {
+      text-align: right;
+      width: 70%; }
+      header .top_header nav ul li {
+        display: block; }
+      header .top_header nav ul .toggle a {
+        vertical-align: middle; }
+      header .top_header nav ul .toggle img {
+        margin-right: 0;
+        max-width: 40px;
+        margin-right: -11px;
+        margin-left: 15%; }
+  header .bott_header {
+    padding-bottom: 50px; }
+
+  .b-1 .box-1-2 {
+    margin-bottom: 30px; }
+  .b-1 .box-1-1 button, .b-1 .box-1-2 button {
+    margin-top: 40px; }
+
+  .b-2 .box-2 {
+    margin-bottom: 30px; } }
+@media (max-width: 600px) {
+  header .top_header {
+    padding: 20px 10px;
+    margin-bottom: 15px; }
+    header .top_header img {
+      width: 20%;
+      max-width: 80px; }
+    header .top_header nav {
+      text-align: right;
+      width: 70%; }
+      header .top_header nav ul li {
+        display: block; }
+      header .top_header nav ul .toggle a {
+        vertical-align: middle; }
+      header .top_header nav ul .toggle img {
+        margin-right: 0;
+        max-width: 40px;
+        margin-right: -11px;
+        margin-left: 15%; }
+  header .bott_header {
+    padding-bottom: 30px; }
+    header .bott_header h2 {
+      font: 20px CN;
+      line-height: 30px; }
+    header .bott_header .border-1 {
+      margin-bottom: 25px; }
+    header .bott_header p {
+      font-size: 15px;
+      line-height: 25px; }
+    header .bott_header button {
+      font-size: 15px;
+      margin-top: 20px;
+      padding: 5px 20px; }
+
+  .b-1 {
+    padding-top: 35px;
+    padding-bottom: 30px; }
+    .b-1 .box-1 {
+      margin-bottom: 20px; }
+      .b-1 .box-1 .border-2 {
+        margin-bottom: 15px; }
+      .b-1 .box-1 button {
+        margin-top: 30px; }
+    .b-1 .box-1-2 {
+      max-width: 250px; }
+
+  .b-2 .box-2 {
+    margin-bottom: 20px; }
+
+  footer {
+    padding-top: 20px;
+    padding-bottom: 15px; }
+    footer .address {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    footer .phones {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    footer .cont_us {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    footer .follow_us {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
