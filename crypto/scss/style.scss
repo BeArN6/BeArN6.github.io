@@ -151,6 +151,92 @@ header{
 		}
 	}
 }
+.banner-1{
+	background: url(images/partners.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	h2{
+		font: 30px Arial;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+	}
+}
+.partners{
+	max-width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	p{
+		text-align: justify;
+		font: 14px Arial;
+		font-weight: 700;
+		color: #333;
+		text-indent: 30px;
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+		font: 14px Arial;
+		font-weight: 700;
+		color: #333;
+	}
+	.p-img-cont{
+		text-align: center;
+		margin-top: 30px;
+		img{
+			display: inline-block;
+			vertical-align: top;
+			width: 48%;
+			max-width: 540px;
+		}
+	}
+	.p-text-right,.p-text-left{
+		width: 47%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 1%;
+		p{
+			text-align: justify;
+			font: 14px Arial;
+			font-weight: 700;
+			color: #333;
+			text-indent: 30px;
+			line-height: 25px;
+		}
+	}
+	.p-lider-img{
+		text-align: center;
+		img{
+			width: 70%;
+		}
+	}
+	h3{
+		color: #000;
+		font: 30px Arial;
+		font-weight: 70px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.border-img{
+		text-align: center;
+		.border-left,.border-right{
+			height: 1px;
+			width: 150px;
+			background: #000;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.lion{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
 /*Slider*/
 .bx-wrapper{
 	border: 0!important;
@@ -723,6 +809,7 @@ footer{
 		.slide{
 			padding-top: 20px;
     		padding-bottom: 40px;
+    		max-height: 205px !important;
     		h2{
     			font-size: 30px;
     			margin-bottom: 20px;
@@ -980,5 +1067,22 @@ footer{
     			padding-right: 2%;
     		}
     	}
+	}
+}
+@media (max-width: 1119px) {
+	.partners{
+		padding-left: 10px;
+		padding-right: 10px;
+		img{
+			width: 100% !important;
+		}
+		.border-img {
+			.border-left,.border-right{
+				width: 100px;
+			}
+			img{
+				width: auto !important;
+			}
+		}
 	}
 }

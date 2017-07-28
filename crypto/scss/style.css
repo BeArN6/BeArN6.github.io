@@ -121,6 +121,79 @@ header {
     text-align: center;
     color: #fff; }
 
+.banner-1 {
+  background: url(images/partners.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .banner-1 h2 {
+    font: 30px Arial;
+    font-weight: 700;
+    color: #fff;
+    text-align: center; }
+
+.partners {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px; }
+  .partners p {
+    text-align: justify;
+    font: 14px Arial;
+    font-weight: 700;
+    color: #333;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 30px; }
+  .partners h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font: 14px Arial;
+    font-weight: 700;
+    color: #333; }
+  .partners .p-img-cont {
+    text-align: center;
+    margin-top: 30px; }
+    .partners .p-img-cont img {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      max-width: 540px; }
+  .partners .p-text-right, .partners .p-text-left {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%; }
+    .partners .p-text-right p, .partners .p-text-left p {
+      text-align: justify;
+      font: 14px Arial;
+      font-weight: 700;
+      color: #333;
+      text-indent: 30px;
+      line-height: 25px; }
+  .partners .p-lider-img {
+    text-align: center; }
+    .partners .p-lider-img img {
+      width: 70%; }
+  .partners h3 {
+    color: #000;
+    font: 30px Arial;
+    font-weight: 70px;
+    text-align: center;
+    margin-bottom: 15px; }
+  .partners .border-img {
+    text-align: center; }
+    .partners .border-img .border-left, .partners .border-img .border-right {
+      height: 1px;
+      width: 150px;
+      background: #000;
+      display: inline-block;
+      vertical-align: middle; }
+    .partners .border-img .lion {
+      display: inline-block;
+      vertical-align: middle; }
+
 /*Slider*/
 .bx-wrapper {
   border: 0 !important; }
@@ -580,7 +653,8 @@ footer {
 
   .banner .slide {
     padding-top: 20px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    max-height: 205px !important; }
     .banner .slide h2 {
       font-size: 30px;
       margin-bottom: 20px; }
@@ -759,5 +833,15 @@ footer {
       width: 48%;
       padding-left: 2%;
       padding-right: 2%; } }
+@media (max-width: 1119px) {
+  .partners {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .partners img {
+      width: 100% !important; }
+    .partners .border-img .border-left, .partners .border-img .border-right {
+      width: 100px; }
+    .partners .border-img img {
+      width: auto !important; } }
 
 /*# sourceMappingURL=style.css.map */
