@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	$('.links').click(function(){
+		$('.links').removeClass("tab-active");
+		$(this).addClass('tab-active');
+	});
+	$('.link1').click(function(){
+		$('.tab').hide();
+		$('.tab1').show();
+	});
+	$('.link2').click(function(){
+		$('.tab').hide();
+		$('.tab2').show();
+	});
+	$('.link3').click(function(){
+		$('.tab').hide();
+		$('.tab3').show();
+	});
+	$('.banner').bxSlider({
+    	
+  	});
+});
