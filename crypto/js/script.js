@@ -18,4 +18,21 @@ $(document).ready(function(){
 	$('.banner').bxSlider({
     	
   	});
+  	$('.slider1').bxSlider({
+    	minSlides: 1,
+    	maxSlides: 4,
+    	slideMargin: 50,
+    	slideWidth: 200,
+    	pager: false,
+    	auto: true,
+    	pause: 3000,
+    	moveSlides: 1
+  	});
+  	var windWidth = $(window).width();
+	  if(windWidth < 768){
+	  	$('.header_bott nav ul li').not('.toggle').hide();
+	  	$('.toggle').click(function(){
+	  		$('.header_bott nav ul li').not('.toggle').slideToggle();
+	  	});
+	  }
 });
