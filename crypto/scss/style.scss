@@ -18,7 +18,13 @@ button {
     font-family: IMP;
     src: url(fonts/impact.ttf);
 }
-
+.fixed{
+	position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -211,6 +217,15 @@ header{
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
+.banner-7{
+	background: url(images/news.jpg) no-repeat;
+	box-shadow: 0 0 0 9999px rgba(0,0,0,0.5) inset;
+	background-size: cover;
+	background-position: center center;
+	background-position-y: 40%; 
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
 .partners,.investors,.faq,.calculator,.cont_page{
 	max-width: 1120px;
 	margin-right: auto;
@@ -322,20 +337,6 @@ header{
 		font-weight: 70px;
 		text-align: center;
 		margin-bottom: 15px;
-	}
-	.border-img{
-		text-align: center;
-		.border-left,.border-right{
-			height: 1px;
-			width: 150px;
-			background: #000;
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.lion{
-			display: inline-block;
-			vertical-align: middle;
-		}
 	}
 }
 .about_us{
@@ -1309,14 +1310,6 @@ footer{
 		padding-right: 10px;
 		img{
 			width: 100% !important;
-		}
-		.border-img {
-			.border-left,.border-right{
-				width: 100px;
-			}
-			img{
-				width: auto !important;
-			}
 		}
 	}
 }

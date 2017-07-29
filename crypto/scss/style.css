@@ -15,6 +15,13 @@ button {
 @font-face {
   font-family: IMP;
   src: url(fonts/impact.ttf); }
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  border-bottom: 1px solid #333; }
+
 .clearfix::after {
   content: "";
   display: table;
@@ -181,6 +188,15 @@ header {
   padding-top: 120px;
   padding-bottom: 120px; }
 
+.banner-7 {
+  background: url(images/news.jpg) no-repeat;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5) inset;
+  background-size: cover;
+  background-position: center center;
+  background-position-y: 40%;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
 .partners, .investors, .faq, .calculator, .cont_page {
   max-width: 1120px;
   margin-right: auto;
@@ -265,17 +281,6 @@ header {
     font-weight: 70px;
     text-align: center;
     margin-bottom: 15px; }
-  .partners .border-img, .investors .border-img, .faq .border-img, .calculator .border-img, .cont_page .border-img {
-    text-align: center; }
-    .partners .border-img .border-left, .partners .border-img .border-right, .investors .border-img .border-left, .investors .border-img .border-right, .faq .border-img .border-left, .faq .border-img .border-right, .calculator .border-img .border-left, .calculator .border-img .border-right, .cont_page .border-img .border-left, .cont_page .border-img .border-right {
-      height: 1px;
-      width: 150px;
-      background: #000;
-      display: inline-block;
-      vertical-align: middle; }
-    .partners .border-img .lion, .investors .border-img .lion, .faq .border-img .lion, .calculator .border-img .lion, .cont_page .border-img .lion {
-      display: inline-block;
-      vertical-align: middle; }
 
 .about_us {
   max-width: 1120px;
@@ -1020,11 +1025,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px; }
     .partners img {
-      width: 100% !important; }
-    .partners .border-img .border-left, .partners .border-img .border-right {
-      width: 100px; }
-    .partners .border-img img {
-      width: auto !important; } }
+      width: 100% !important; } }
 /*End Tablet*/
 
 /*# sourceMappingURL=style.css.map */

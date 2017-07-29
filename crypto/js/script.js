@@ -44,5 +44,19 @@ $(document).ready(function(){
 	  	$('.toggle').click(function(){
 	  		$('.header_bott nav ul li').not('.toggle').slideToggle();
 	  	});
-	  }
+	}
+	$(window).scroll(function(){
+		if ( $(this).scrollTop()){
+			$('header').addClass('fixed');
+			$('body').css({
+				'paddingTop': '114px'
+			})
+		}
+		else{
+			$('header').removeClass('fixed');
+			$('body').css({
+				'paddingTop': '0'
+			})
+		}
+	});
 });
