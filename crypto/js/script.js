@@ -28,6 +28,16 @@ $(document).ready(function(){
     	pause: 3000,
     	moveSlides: 1
   	});
+  	$('.slider2').bxSlider({
+    	minSlides: 1,
+    	maxSlides: 15,
+    	slideMargin: 0,
+    	slideWidth: 150,
+    	pager: false,
+    	auto: true,
+    	pause: 1000,
+    	moveSlides: 1
+  	});
   	var windWidth = $(window).width();
 	  if(windWidth < 768){
 	  	$('.header_bott nav ul li').not('.toggle').hide();
