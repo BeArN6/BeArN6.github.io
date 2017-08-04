@@ -31,6 +31,9 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 h2, p, span, h1, h3, h4, h5, a {
   font-family: KC; }
 
+.ytp-title-text {
+  display: none; }
+
 .b-1 {
   background: url(images/bg-1.png) no-repeat;
   background-size: 100%;
@@ -146,10 +149,10 @@ h2, p, span, h1, h3, h4, h5, a {
     position: relative; }
     .b-2 .box-2-1 .body2 {
       position: absolute;
-      right: -55%;
+      right: -59%;
       bottom: 0;
       z-index: 3;
-      width: 80%; }
+      width: 66%; }
     .b-2 .box-2-1 h2 {
       font-size: 2.020833333333333VW;
       font-weight: lighter;
@@ -162,7 +165,13 @@ h2, p, span, h1, h3, h4, h5, a {
       margin-bottom: 8%;
       color: #872a4d;
       font-weight: bold;
-      font-family: KV; }
+      font-family: KV;
+      line-height: 30px; }
+      .b-2 .box-2-1 h3 span {
+        font-weight: bold;
+        font-size: 1.8375VW;
+        line-height: 14px;
+        font-family: KV; }
     .b-2 .box-2-1 form {
       position: relative;
       z-index: 5; }
@@ -717,17 +726,27 @@ h2, p, span, h1, h3, h4, h5, a {
     .b-11 .packages .package-3 .pack-info {
       border: 4px solid #964d69;
       box-shadow: 0 0 0 9999px rgba(255, 169, 31, 0.8) inset; }
-      .b-11 .packages .package-3 .pack-info li p {
+      .b-11 .packages .package-3 .pack-info ul .center {
+        text-align: center; }
+        .b-11 .packages .package-3 .pack-info ul .center span {
+          background: url(images/disable.png) no-repeat;
+          background-position-x: left;
+          background-size: 32%; }
+      .b-11 .packages .package-3 .pack-info ul li p {
         color: #872a4c;
         font: 1.1022927689594355VW KV;
         margin-bottom: 0; }
-      .b-11 .packages .package-3 .pack-info li .span1 {
+      .b-11 .packages .package-3 .pack-info ul li span {
+        color: #872a4c;
+        font: 1VW KC;
+        margin-bottom: 0; }
+      .b-11 .packages .package-3 .pack-info ul li .span1 {
         color: #872a4c;
         font-size: 1.3778659611992945VW;
         font-family: KV;
         width: 20%;
         text-align: center; }
-      .b-11 .packages .package-3 .pack-info li .span2 {
+      .b-11 .packages .package-3 .pack-info ul li .span2 {
         color: #872a4c;
         font-size: 1.1022927689594355VW;
         font-family: KV; }
@@ -820,7 +839,7 @@ h2, p, span, h1, h3, h4, h5, a {
     text-align: center;
     margin: 0 auto; }
     .b-13 .comments .c-video {
-      width: 92%;
+      /*width: 92%;*/
       margin: 0 1.5%;
       margin-bottom: 2.8%;
       background: #b64066;
@@ -1247,7 +1266,11 @@ div.wpcf7 .ajax-loader {
       .b-2 .box-2-1 h2 {
         font-size: 3.125VW; }
       .b-2 .box-2-1 h3 {
-        font-size: 4.375VW; }
+        font-size: 4.375VW;
+        line-height: 67%; }
+        .b-2 .box-2-1 h3 span {
+          font-size: 2.5VW;
+          line-height: 1px; }
       .b-2 .box-2-1 input[type='text'] {
         font-size: 3.125VW;
         border-radius: 7px; }
@@ -1419,6 +1442,8 @@ div.wpcf7 .ajax-loader {
     .b-11 .packages .package .pack-info {
       border: 2px solid #c08b9f;
       border-radius: 7px; }
+      .b-11 .packages .package .pack-info ul .center span {
+        font-size: 2.25VW; }
       .b-11 .packages .package .pack-info ul li img {
         width: 8%; }
       .b-11 .packages .package .pack-info ul li span {
@@ -1428,7 +1453,7 @@ div.wpcf7 .ajax-loader {
       .b-11 .packages .package .pack-info ul li .span1 {
         font-size: 2.5VW; }
       .b-11 .packages .package .pack-info ul li .span2 {
-        font-size: 2.5VW; }
+        font-size: 2.3VW; }
     .b-11 .packages .package button {
       border-radius: 7px;
       font-size: 3.125VW; }
@@ -1466,6 +1491,8 @@ div.wpcf7 .ajax-loader {
       padding: 2%;
       border-width: 2px;
       margin-bottom: 5%; }
+      .b-13 .comments .comment .c-video {
+        width: 92%; }
       .b-13 .comments .comment h2 {
         font-size: 3.75VW; }
       .b-13 .comments .comment p {
