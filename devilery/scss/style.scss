@@ -7,6 +7,10 @@
 	src: url(fonts/SourceSansPro-Semibold.otf); 
 }
 @font-face {
+	font-family: SB;
+	src: url(fonts/SourceSansPro-Bold.otf); 
+}
+@font-face {
 	font-family: SL;
 	src: url(fonts/SourceSansPro-Light.otf); 
 }
@@ -173,6 +177,7 @@ header{
 		}
 	}
 }
+/*About us page*/
 .au_banner{
 	background: url(images/about_us.jpg) no-repeat;
 	background-size: cover;
@@ -255,6 +260,445 @@ header{
 		}
 	}
 }
+/*About us page end*/
+/*Delivery page*/
+.del_banner{
+	min-height: 525px;
+	width: 100%;
+	background: url(images/devilery.jpg) no-repeat;
+	background-size: cover;
+	background-position-y: 55%;
+	position: relative;
+	.delivery_info{
+		padding: 50px 70px;
+		box-shadow: 0 0 0 9999px rgba(61,158,206,0.83) inset;
+		width: 54%;
+		max-width: 1020px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		h2{
+			font: 33px SSB;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+		p{
+			font: 22px	SSB;
+			line-height: 31px;
+			color: #fff;
+		}
+	}
+}
+.delivery_servs{
+	padding: 0 80px;
+	position: relative;
+	.servs_cont{
+		max-width: 1180px;
+		padding-top: 45px;
+		h2{
+			font: 48px SR;
+			color: #000;
+			text-align: center;
+		}
+		.del_border{
+			width: 72px;
+			height: 5px;
+			background: #898989;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 25px;
+			margin-bottom: 40px;
+		}
+		p{
+			font: 22px SR;
+			color: #81868e;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+		.del_serv{
+			float: left;
+			margin-right: 130px;
+			margin-bottom: 105px;
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+			.del_cont{
+				height: 186px;
+				width: 303px;
+				text-align: center;
+				border: 1px solid #e5e5e5;
+				img{
+					width: 100%;
+				}
+			}
+			.dc1{
+				img{
+					width: 60%;
+    				padding-top: 4%;
+				}
+			}
+			.dc2{
+				img{
+					width: 81%;
+				}
+			}
+			.dc3{
+				img{
+					width: 70%;
+				}
+			}
+			.dc4{
+				img{
+					width: 90%;
+				}
+			}
+			.dc5{
+				img{
+					width: 61%;
+				}
+			}
+			.dc6{
+				text-align: left;
+				img{
+					width: 75%;
+				}
+			}
+			.dc7{
+				img{
+					width: 55%;
+					padding-top: 4%;
+				}
+			}
+			p{
+				font: 33px SR;
+				color: #303030;
+				margin: 25px auto;
+				text-align: left;
+			}
+			button{
+				font: 20px SR;
+				color: #fff;
+				background: #45a2d1;
+				width: 160px;
+				height: 67px;
+				border: 0;
+			}
+		}
+	}
+}
+.del_form{
+	background: #3d9ece;
+	width: 385px;
+	height: 510px;
+	padding: 30px 45px;
+	position: absolute;
+	top: 0;
+	right: 100px;
+	p{
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #fff;
+		line-height: 27px;
+		margin-bottom: 20px;
+	}
+	input{
+		width: 100%;
+		max-width: 352px;
+		padding: 8px 15px;
+		margin-bottom: 10px;
+		border: 0;
+		height: 30px;
+		padding-top: 11px;
+		color: #999999;
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	input::placeholder{
+		color: #999999;
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	textarea{
+		width: 100%;
+		max-width: 352px;
+		padding: 8px 15px;
+		margin-bottom: 10px;
+		border: 0;
+		height: 130px;
+		padding-top: 11px;
+		color: #999999;
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	textarea::placeholder{
+		color: #999999;
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	input[type="submit"]{
+		max-width: 100%;
+		font-size: 22px;
+		font-family: 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 0;
+		background: #33cc99;
+		height: 59px;
+	}
+}
+/*Delivery page end*/
+/*Garantie page*/
+.gar_banner{
+	min-height: 530px;
+	width: 100%;
+	background: url(images/garantie.jpg) no-repeat;
+	background-size: cover;
+	background-position-y: 35%;
+}
+.gar_box{
+	.gar_cont{
+		max-width: 1730px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+		padding-bottom: 100px;
+		h2{
+			font: 48px SR;
+    		color: #000;
+    		text-align: center;
+		}
+		.gar_border{
+			width: 72px;
+		    height: 5px;
+		    background: #898989;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: 25px;
+		    margin-bottom: 40px;
+		}
+		p{
+			font: 22px SR;
+		    color: #81868e;
+		    text-align: center;
+		    margin-bottom: 50px;
+		}
+		.gar_left,.gar_right{
+			max-width: 765px;
+			background: #3399cc;
+			padding-bottom: 50px;
+			height: 760px;
+			.gar_img{
+				height: 250px;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			h3{
+				font: 30px SSB;
+				line-height: 38px;
+				color: #fff;
+				padding: 0 30px;
+			}
+			.w_border{
+				width: 52px;
+				height: 3px;
+				background: #fff;
+				margin-bottom: 30px;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			p{
+				font: 22px SR;
+				font-weight: 400;
+				color: #fff;
+				line-height: 29px;
+				text-align: left;
+				margin-bottom: 0;
+				padding: 0 30px;
+				padding-right: 60px;
+			}
+		}
+		.gar_left{
+			float: left;
+			.gar_img{
+				background: url(images/gar1.jpg);
+				background-size: cover;
+			}
+		}
+		.gar_right{
+			float: right;
+			.gar_img{
+				background-color: #33cc99;
+				background-position-y: 23%;
+				background-image: url(images/gar2.png);
+				background-size: cover;
+			}
+		}
+	}
+}
+/*Garantie page end*/
+/*Services page*/
+.services{
+	h2{
+		font: 48px SR;
+    	color: #000;
+    	text-align: center;
+	}
+	.serv_border{
+		width: 72px;
+		height: 5px;
+		background: #898989;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+	p{
+		font: 22px SR;
+	   	color: #81868e;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.services_container{
+		padding-left: 120px;
+		.serv_right{
+			width: 740px;
+			height: 470px;
+			float: right;
+			background: url(images/servbg1.png);
+			background-size: 100%;
+			img{
+				width: 100%;
+			}
+		}
+		.serv_left{
+			height: 475px;
+			width: 730px;
+			background: url(images/servbg2.png);
+			background-size: 100%;
+			float: left;
+		}
+		.serv_left_text,.serv_right_text{
+			float: left;
+			padding-top: 100px;
+			h3{
+				color: #666666;
+				font: 24px SB;
+				line-height: 17px;
+				margin-left: 30px;
+				margin-left: 78px;
+			}
+			.sm_border{
+				height: 3px;
+				width: 53px;
+				background: #d7d7d7;
+				margin-bottom: 20px;
+				margin-top: 25px;
+				margin-left: 78px;
+			}
+			p{
+				color: #666666;
+				font: 26px SL;
+				line-height: 35px;
+				text-align: left;
+				margin-bottom: 30px;
+				img{
+					margin-right: 25px;
+				}
+				img,span{
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+		.serv_right_text{
+			margin-left: 210px;
+			margin-bottom: 90px;
+			h3{
+				text-transform: uppercase;
+				margin-left: 0;
+				letter-spacing: 3px;
+			}
+			.sm_border{
+				margin-left: 0;
+			}
+			p{
+				margin-bottom: 10px;
+			}
+			button{
+				margin-left: 0;
+			}
+		}
+
+		button{
+			width: 200px;
+			height: 67px;
+			background: #45d1a2;
+			color: #fff;
+			font: 32px SL;
+			letter-spacing: 1px;
+			border: 0;
+			margin-left: 78px;
+			margin-top: 20px;
+		}
+	}
+	.second_one{
+		padding-left: 0;
+	}
+}
+.other_servs{
+	text-align: center;
+	.other_serv{
+		text-align: center;
+		max-width: 305px;
+		margin-bottom: 105px;
+		margin-right: 160px;
+		display: inline-block;
+		vertical-align: top;
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		.os_img{
+			width: 100%;
+			height: 375px;
+			overflow: hidden;
+			margin-bottom: 25px;
+			img{
+				margin-left: -170px;
+			}
+		}
+		h2{
+			color: #303030;
+			font: 20px SR;
+			line-height: 35px;
+			margin-bottom: 15px;
+		}
+		p{
+			color: #006633;
+			font: 20px SR;
+			line-height: 35px;
+			margin-bottom: 15px;
+		}
+		button{
+			font: 20px SR;
+			color: #fff;
+			border: 0;
+			padding: 20px;
+		}
+		.more-serv{
+			background: #45a2d1;
+			margin-right: 34px;
+		}
+		.to-cart{
+			background: #45d1a2;
+		}
+	}
+}
+/*Services page end*/
 footer{
 	background: #39a0b9;
 	padding-top: 65px;
@@ -455,6 +899,7 @@ footer{
 			}
 		}
 	}
+	/*About us*/
 	.au_banner {
 		min-height: 290px;
 		.aub_cont {
@@ -495,6 +940,235 @@ footer{
 			}
 		}
 	}
+	/*About us end*/
+	/*Delivery page*/
+	.del_banner{
+		min-height: 390px;
+		.delivery_info{
+			padding: 35px 55px;
+			h2{
+				font: 25px SSB;
+    			color: #fff;
+    			margin-bottom: 15px;
+			}
+			p{
+				font: 16px SSB;
+    			line-height: 24px;
+			}
+		}
+	}
+	.delivery_servs {
+		.servs_cont{
+			max-width: 740px;
+			h2{
+				font: 36px SR;
+			}
+			.del_border{
+				width: 62px;
+    			height: 3px;
+				margin-top: 15px;
+    			margin-bottom: 25px;
+			}
+			p{
+				margin-bottom: 25px;
+				font-size: 15px;
+			}
+			.del_serv{
+				margin-right: 50px;
+    			margin-bottom: 60px;
+    			.del_cont{
+    				height: 129px;
+    				width: 210px;
+    			}
+    			p{
+    				font-size: 22px;
+    				margin: 16px auto;
+    			}
+    			button{
+    				font-size: 16px;
+    				width: 130px;
+    				height: 46px;
+    			}
+			}
+		}
+	}
+	.del_form {
+		width: 290px;
+    	height: 410px;
+    	padding: 15px 25px;
+		p{
+			font-size: 17px;
+			line-height: 23px;
+			margin-bottom: 15px;
+		}
+		input{
+			max-width: 272px;
+    		padding: 5px 9px;
+    		margin-bottom: 7px;
+    		height: 20px;
+    		padding-top: 6px;
+    		font-size: 17px;
+		}
+		input::placeholder{
+			font-size: 17px;
+		}
+		textarea{
+			max-width: 272px;
+			padding: 5px 9px;
+			margin-bottom: 7px;
+			padding-top: 6px;
+    		font-size: 17px;
+		}
+		textarea::placeholder{
+			font-size: 17px;
+		}
+		input[type="submit"]{
+			font-size: 17px;
+			height: 40px;
+		}
+	}
+	/*Delivery page end*/
+	/*Garantie page*/
+	.gar_banner{
+		min-height: 390px;
+	}
+	.gar_box {
+		.gar_cont {
+			max-width: 1170px;
+			padding-bottom: 60px;
+			padding-top: 30px;
+			h2{
+				font: 36px SR;
+			}
+			.gar_border{
+				width: 62px;
+			    height: 3px;
+			    margin-top: 15px;
+			    margin-bottom: 25px;
+			}
+			p{
+				margin-bottom: 25px;
+    			font-size: 15px;
+			}
+			.gar_left,.gar_right{
+				max-width: 540px;
+				height: 565px;
+				.gar_img{
+					height: 180px;
+				}
+				h3{
+					font: 23px SSB;
+    				line-height: 30px;
+				}
+				p{
+					font-size: 15px;
+					line-height: 24px;
+				}
+				.w_border{
+					margin-bottom: 15px;
+    				margin-top: 15px;
+    				width: 40px;
+    			height: 2px;
+				}
+			}
+		}
+	}
+	/*Garantie page end*/
+	/*Services page*/
+	.services {
+		h2{
+			font: 36px SR;
+		}
+		.serv_border{
+			width: 62px;
+		    height: 3px;
+		    margin-top: 15px;
+		    margin-bottom: 25px;
+		}
+		p{
+			margin-bottom: 25px;
+    		font-size: 15px
+		}
+		.services_container{
+			.serv_right,.serv_left{
+				width: 500px;
+    			height: 330px;
+			}
+			.serv_left_text,.serv_right_text{
+				padding-top: 60px;
+				h3{
+					font-size: 18px;
+					margin-left: 64px;
+				}
+				.sm_border{
+					height: 2px;
+    				width: 35px;
+    				margin-bottom: 10px;
+    				margin-top: 15px;
+    				margin-left: 64px;
+				}
+				p{
+					font-size: 17px;
+					line-height: 25px;
+					img{
+						max-width: 40px;
+					}
+				}
+				button{
+					width: 150px;
+    				height: 45px;
+    				font: 20px SL;
+    				margin-top: 10px;
+    				margin-left: 64px;
+				}
+			}
+			.serv_right_text{
+				h3{
+					margin-left: 0;
+				}
+				.sm_border{
+					margin-left: 0;
+				}
+				button{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.other_servs {
+		.other_serv{
+			max-width: 220px;
+			margin-right: 80px;
+			margin-bottom: 60px;
+			.os_img{
+				height: 300px;
+				margin-bottom: 15px;
+				img{
+					width: 225%;
+				}
+			}
+			h2{
+				font: 16px SR;
+    			line-height: 28px;
+    			margin-bottom: 10px;
+			}
+			p{
+				font: 16px SR;
+    			line-height: 28px;
+    			margin-bottom: 10px;
+			}
+			button{
+				font: 16px SR;
+			    color: #fff;
+			    border: 0;
+			    padding: 12px;
+			}
+			.more-serv{
+				margin-right: 18px;
+			}
+		}
+	}
+	/*Services page end*/
 	footer {
 		.footer_cont{
 			max-width: 1100px;
@@ -637,6 +1311,7 @@ footer{
 			margin-bottom: 20px;
 		}
 	}
+	/*About us*/
 	.au_banner {
 		.aub_cont{
 			padding-top: 30px;
@@ -686,6 +1361,246 @@ footer{
     		}
     	}
 	}
+	/*About us end*/
+	/*Delivery page*/
+	.del_banner{
+		min-height: auto;
+		.delivery_info{
+			padding: 15px 25px;
+			position: static;
+			width: calc(100% - 50px);
+			h2{
+				margin-bottom: 10px;
+				font: 22px SSB;
+			}
+			p{
+				font: 15px SSB;
+    			line-height: 21px;
+			}
+		}
+	}
+	.delivery_servs{
+		padding: 0 20px;
+		.servs_cont{
+			padding-top: 20px;
+			h2{
+				font: 30px SR;
+			}
+			.del_border{
+				width: 60px;
+    			height: 2px;
+    			margin-top: 15px;
+    			margin-bottom: 20px;
+			}
+			p{
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+			.del_serv{
+				width: 100%;
+				margin-right: 30px;
+    			margin-bottom: 45px;
+    			text-align: center;
+    			.del_cont{
+    				max-width: 282px;
+    				height: 173px;
+    				width: 100%;
+    				margin-left: auto;
+    				margin-right: auto;
+    			}
+    			p{
+    				margin: 15px auto;
+    				font-size: 25px;
+    				text-align: center;
+    			}
+    			button{
+    				width: 130px;
+    				height: 45px;
+    				font: 16px SR;
+    			}
+			}
+		}
+	}
+	.del_form {
+		max-width: 385px;
+    	width: calc(100% - 40px);
+    	position: static;
+    	padding: 15px 20px;
+    	height: 360px;
+    	margin-bottom: 15px;
+    	margin-left: auto;
+    	margin-right: auto;
+		input{
+			width: calc(100% - 30px);
+		    max-width: 352px;
+		    padding: 8px 15px;
+		    margin-bottom: 7px;
+		    height: 16px;
+    		padding-top: 7px;
+    		font-size: 15px;
+		}
+		input::placeholder{
+			font-size: 15px;
+		}
+		textarea{
+			width: calc(100% - 30px);
+		    max-width: 352px;
+		    padding: 8px 15px;
+		    margin-bottom: 7px;
+		    height: 95px;
+    		padding-top: 7px;
+    		font-size: 15px;
+		}
+		textarea::placeholder{
+			font-size: 15px;
+		}
+		p{
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 15px;
+		}
+		input[type="submit"]{
+			height: 35px;
+			font-size: 14px;
+			width: 100%;
+		}
+	}
+	/*Delivery page end*/
+	/*Garantie page*/
+	.gar_banner{
+		min-height: 170px;
+	}
+	.gar_box{
+		.gar_cont{
+			padding-top: 10px;
+    		padding-bottom: 15px;
+			h2{
+				font: 30px SR;
+			}
+			.gar_border{
+				width: 60px;
+			    height: 2px;
+			    margin-top: 15px;
+			    margin-bottom: 20px;
+			}
+			p{
+				font-size: 14px;
+    			margin-bottom: 20px;
+			}
+			.gar_left,.gar_right{
+				float: none;
+    			width: 90%;
+    			margin: 0 auto 20px auto;
+    			height: auto;
+    			padding-bottom: 15px;
+    			.gar_img{
+    				height: 130px;
+    			}
+    			h3{
+    				font: 17px SSB;
+    				line-height: 23px;
+    				padding: 0 15px;
+    				br{
+    					display: none;
+    				}
+    			}
+    			.w_border{
+    				width: 40px;
+    				height: 2px;
+    				margin-bottom: 15px;
+    				margin-top: 15px;
+    				margin-left: 15px;
+    			}
+    			p{
+    				padding: 0 15px;
+    				padding-right: 15px;
+    				font: 13px SR;
+    				line-height: 20px;
+    			}
+			}
+		}
+	}
+	/*Garantie page end*/
+	/*Services page*/
+	.services{
+		h2{
+			font: 30px SR;
+		}
+		.serv_border{
+			width: 60px;
+    		height: 2px;
+    		margin-top: 15px;
+    		margin-bottom: 20px;
+		}
+		p{
+			font-size: 14px;
+    		margin-bottom: 20px;
+    		padding-left: 15px;
+    		padding-right: 15px;
+		}
+		.services_container{
+			padding-left: 0;
+			.serv_right,.serv_left{
+				width: 100%;
+    			height: 210px;
+    			float: none;
+			}
+			.serv_left_text,.serv_right_text{
+				padding-top: 20px;
+				float: none;
+				margin-left: 0;
+				margin-bottom: 30px;
+				padding-left: 15px;
+    			padding-right: 15px;
+    			text-align: center;
+				h3{
+					margin-left: 0;
+    				text-align: center;
+    				font-size: 18px;
+				}
+				.sm_border{
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 10px;
+    				margin-top: 15px;
+				}
+				p{
+					font-size: 16px;
+    				margin-bottom: 15px;
+					text-align: center;
+					padding-left: 0;
+					padding-right: 0;
+					line-height: 25px;
+					img{
+						max-width: 30px;
+    					margin-right: 10px;
+					}
+				}
+				button{
+					margin-left: 0;
+					width: 170px;
+    				height: 50px;
+    				font: 22px SL;
+    				margin-top: 10px;
+				}
+			}
+		}
+	}
+	.other_servs{
+		.other_serv{
+			margin-right: auto;
+		    width: 100%;
+		    margin-left: auto;
+		    margin-bottom: 30px;
+		    button{
+		    	padding: 14px;
+		    }
+		    .more-serv{
+		    	margin-right: 58px;
+		    }
+		}
+	}
+	/*Services page end*/
 	footer{
 		padding-top: 30px;
 		padding-bottom: 20px;
