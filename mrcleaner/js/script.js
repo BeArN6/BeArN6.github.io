@@ -9,13 +9,13 @@ $(document).ready(function(){
 				$('.modal-form')
 					.css({
 						'display': 'flex',
-						'overflow-y': 'scroll',
+						'overflow-y': 'hidden',
     					'overflow-x': 'hidden',
 					})
 					.animate({
 						'opacity': '1',
 						'left': '0'
-					},300)
+					},500)
 			});
 			$("body").css({
 				"overflow":"hidden"
