@@ -18,7 +18,8 @@ $(document).ready(function(){
 					},500)
 			});
 			$(".wrapper-hidden").css({
-				"overflow":"hidden"
+				"overflow":"hidden",
+				'position': 'fixed'
 			})
 		});
 		$('.modal-close,.overlay').click(function(){
@@ -32,7 +33,8 @@ $(document).ready(function(){
 				}
 			);
 			$(".wrapper-hidden").css({
-				"overflow":"auto"
+				"overflow":"auto",
+				'position': 'static'
 			})
 	});
 	//Modal end
