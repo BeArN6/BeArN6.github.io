@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Трудоустройство</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="scss/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="mob-header"></div>
+	<header class="header fixed clearfix wrap">
+		<div class="logo"><a href=""><img src="img/logo.png" alt="" class="header__logo"><img src="img/logo-mob.png" alt="" class="header__logo_mob"></a></div>
+		<a href="tel:8(3822)977902" class="header__phone">Звоните 8 (3822) 977-902</a>
+		<img src="img/hamb.png" alt="" class="modal-run">
+	</header>
+	<div class="banner">
+		<div class="wrap">
+			<h3 class="banner__title">Ищем специалистов по уборке квартир </h3>
+			<p class="banner__subtitle">Отправьте заявку сейчас и мы ответим в течении 24 часов</p>
+			<form action="">
+				<div class="banner__left">
+					<input type="text" class="town" name="" value="Томск" readonly>
+					<div class="banner__pager">
+						<span class="change_town">
+	                    	<img src="img/up.png">
+	                    </span>
+	                    <span class="change_town">
+	                    	<img src="img/down.png">
+	                    </span>
+					</div>
+					<br>
+					<input class="fio" type="text" placeholder="Ф.И.О">
+					<br>
+					<span class="pre-phone">+7</span><input type="tel" class="phone" name="" placeholder="(__) - ___-___-___" maxlength="15">
+					<br>
+					<input type="submit" value="Отправить заявку">
+				</div>
+				<div class="banner__right">
+					<input type="text" class="town" name="" value="Гражданство" readonly>
+					<div class="banner__pager">
+						<span class="change_town">
+	                    	<img src="img/up.png">
+	                    </span>
+	                    <span class="change_town">
+	                    	<img src="img/down.png">
+	                    </span>
+					</div>
+					<input type="text" class="town" name="" value="Год рождения" readonly>
+					<div class="banner__pager">
+						<span class="change_town">
+	                    	<img src="img/up.png">
+	                    </span>
+	                    <span class="change_town">
+	                    	<img src="img/down.png">
+	                    </span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="advantages wrap">
+		<div class="advantages__item">
+			<img src="img/adv1.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Стандартное обучение</h3>
+			<p class="advantages__text">Если Вы чего-то не умеете <br>
+			мы обязательно Вас научим</p>
+		</div>
+		<div class="advantages__item">
+			<img src="img/adv2.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Регулярные выплаты</h3>
+			<p class="advantages__text">Вы всегда видите, сколько<br>
+			уже заработали. <br>
+			Деньги поступают<br>
+			на карту 2 раза в месяц</p>
+		</div>
+		<div class="advantages__item">
+			<img src="img/adv3.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Выездная работа</h3>
+			<p class="advantages__text">Заказы выдаются удобным способом,<br>
+			учитывая маршруты общественного<br>
+			транспорта, а вотдаленные<br>
+			районы оплачивается такси</p>
+		</div>
+		<div class="advantages__item">
+			<img src="img/adv4.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Бесплатный инвентарь</h3>
+			<p class="advantages__text">Мы выдаем Вам форму<br>
+			и все необходимое для уборки.<br>
+			Бесплатно пополнить<br>
+			запасы можно в офисе.</p>
+		</div>
+		<div class="advantages__item">
+			<img src="img/adv5.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Достойная оплата</h3>
+			<p class="advantages__text">Вы работаете на постоянной<br>
+			основе и зарабатываете<br>
+			хорошие деньги</p>
+		</div>
+		<div class="advantages__item">
+			<img src="img/adv6.png" alt="" class="advantages__img">
+			<h3 class="advantages__title">Страховой фонд</h3>
+			<p class="advantages__text">Если что-то пойдет не так,<br>
+			Вы не останетесь один на один <br>
+			с необходимостью покрыть<br>
+			клиенту ущерб</p>
+		</div>
+		<button class="advantages__button">Подать заявку</button>
+	</div>
+	<div class="footer2 wrap">
+		<a class="footer2__phone" href="tel:8(382)977-902">8(382)977-902</a><br>
+		<a class="footer2__mail" href="mailto:job@mcleaner.pro">job@mcleaner.pro</a>
+	</div>
+	<!-- Modal mobile menu -->
+    <div class="modal-form">
+        <span class="modal-close"><img src="img/close.png" alt=""></span>
+        <div class="modal-form__top">
+            <h2>Mister Cleaner <br>
+                <span>Сервис заказа уборки</span>
+            </h2>
+        </div>
+        <div class="modal-form__menu">
+            <ul>
+                <li>
+                    <img src="img/mob1.png" alt="">
+                    <span>Мытье окон</span>
+                </li>
+                <li>
+                    <img src="img/mob2.png" alt="">
+                    <span>Вопросы</span>
+                </li>
+                <li>
+                    <img src="img/mob3.png" alt="">
+                    <span>О сервисе</span>
+                </li>
+                <li>
+                    <img src="img/mob4.png" alt="">
+                    <span>Войти</span>
+                </li>
+            </ul>
+        </div>
+        <button class="modal-form__butt modal-form__butt_a">ЗАКАЗАТЬ УБОРКУ</button>
+        <a href="tel:8 (3822) 977-262" class="modal-form__butt modal-form__butt_b"><img src="img/mob5.png" alt="">8 (3822) 977-262</a>
+    </div>
+    <div class="overlay"></div>
+    <!-- Modal mobile menu end -->
+</body>
+</html>

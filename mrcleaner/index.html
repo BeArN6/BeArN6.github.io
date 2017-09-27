@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="scss/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<!--Slick slider-->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+<body>
+	<div class="comments">
+		<div class="wrap">
+			<p class="comments__title">3,000+ заказов выполненных лучшими профессионалами уборки</p>
+			<p class="comments__subtitle">
+				Профессиональность оценивается такими же клиентами, как Вы. <br>
+Выберите понравившихся профессионалов с которыми Вы хотите работать и добавьте их в список избранных.
+			</p>
+			<div class="slick_slider">
+				<div class="comments__item comment">
+					<div class="comment__title">
+						<p>Анна В.</p>
+						<p><img src="img/star.png" alt="">4.9</p>
+					</div>
+					<div class="comment__img">
+						<img src="img/face1.png" alt="">
+					</div>
+					<div class="comment__stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+				<div class="comments__item comment">
+					<div class="comment__title">
+						<p>Наталья А.</p>
+						<p><img src="img/star.png" alt="">5.0</p>
+					</div>
+					<div class="comment__img">
+						<img src="img/face2.png" alt="">
+					</div>
+					<div class="comment__stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+				<div class="comments__item comment">
+					<div class="comment__title">
+						<p>Светлана Р.</p>
+						<p><img src="img/star.png" alt="">4.8</p>
+					</div>
+					<div class="comment__img">
+						<img src="img/face3.png" alt="">
+					</div>
+					<div class="comment__stars">
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+			</div>
+			<button class="comments__button">
+				Из чего состоит уборка
+			</button>
+		</div>
+	</div>
+	<div class="price wrap">
+		<p class="price__title">СКОЛЬКО ЭТО СТОИТ</p>
+			<div class="price__item">
+				<p class="price__price">1290.-</p>
+				<p class="price__text">Однушка</p>
+				<button class="price__button">ЗАКАЗАТЬ</button>
+			</div>
+			<div class="price__item price__item_margin">
+				<p class="price__price">1790.-</p>
+				<p class="price__text">Двушка</p>
+				<button class="price__button">ЗАКАЗАТЬ</button>
+			</div>
+			<div class="price__item">
+				<p class="price__price">2290.-</p>
+				<p class="price__text">Трешка</p>
+				<button class="price__button">ЗАКАЗАТЬ</button>
+			</div>
+			<div class="price__item price__item_mob">
+				<p class="price__price"><span>Однушка</span> 1290.- </p>
+				<p class="price__price"><span>Двушка</span> 1790.- </p>
+				<p class="price__price"><span>Трешка</span> 2290.- </p>
+				<button class="price__button">ЗАКАЗАТЬ</button>
+			</div>
+		<p class="price__more">*Стоимость за полную уборку квартиры с одним санузлом без учета скидок за регулярность</p>
+	</div>
+	<div class="faq wrap">
+		<p class="faq__title">Часто задаваемые вопросы</p>
+		<div class="faq__item question">
+			<p class="question__title question__title_active">У меня зал объединен с кухней, как мне это отразить при заказе? <img src="img/arrow.png" alt="" class="faq__arrow"></p>
+			<p class="question__text">
+				Если у вас студия или просто нет стены – вам просто необходимо указать количество комнат. <br>
+				Комната и кухня разделяется не по принципу наличия перегородок, а по принципу типа<br>
+				загрязнений. Согласитесь, что загрязнения на кухне отличаются от загрязнений в комнатах. Именно<br>
+				поэтому кухня всегда входит в стоимость услуг.
+			</p>
+		</div>
+		<div class="faq__item question">
+			<p class="question__title">Клинер приезжает с необходимым инвентарем и средствами? <img src="img/arrow.png" alt="" class="faq__arrow"></p>
+		</div>
+		<div class="faq__item question">
+			<p class="question__title">Нужно ли мне быть дома во время уборки? <img src="img/arrow.png" alt="" class="faq__arrow"></p>
+		</div>
+		<div class="faq__item question">
+			<p class="question__title">Делаете ли вы уборку после ремонта? <img src="img/arrow.png" alt="" class="faq__arrow"></p>
+		</div>
+		<button class="faq__button">все вопросы и ответы  </button>
+	</div>
+	<div class="ordernow">
+		<div class="wrap">
+			<p class="ordernow__title">закажите уборку сейчас</p>
+			<p class="ordernow__text">лучшее время чтобы навести чистоту и порядок</p>
+			<form action="" method="post">
+                <input type="hidden" name="" value="">
+                <div class="ordernow__left">
+                    <span class="change_rooms" data-type="room" data-direction="minus">
+                    	<img src="img/minus.jpg">
+                    </span>
+                    <input type="text" class="room" name="" value=" 1 комната" readonly="">
+                    <input type="hidden" id="order-rooms" name="Order[rooms]" value="1">
+                    <span class="change_rooms" data-type="room" data-direction="plus">
+                    	<img src="img/plus.jpg">
+                    </span>
+                    <div class="br"></div>
+                    <span class="change_rooms" data-type="bathroom" data-direction="minus">
+                    	<img src="img/minus.jpg">
+                    </span>
+                    <input type="text" class="bathroom" name="" value=" 1 санузел" readonly="">
+                    <input type="hidden" id="order-bathrooms" name="Order[bathrooms]" value="0">
+                    <span class="change_rooms" data-type="bathroom" data-direction="plus">
+                    	<img src="img/plus.jpg">
+                    </span>
+                </div>
+                <div class="ordernow__right">
+                    <span class="pre-phone">+7</span><input type="tel" id="phone" class="phone" name="" placeholder="(__) - ___-___-___" maxlength="15">
+                    <div class="br"></div>
+                    <input type="submit" value="Отправить заявку">
+                </div>
+            </form>
+		</div>
+	</div>
+</body>
+</html>

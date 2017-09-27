@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Окна</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="scss/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body class="bg-2">
+    <div class="mob-header"></div>
+	<header class="header fixed clearfix wrap">
+		<div class="logo"><a href=""><img src="img/logo.png" alt="" class="header__logo"><img src="img/logo-mob.png" alt="" class="header__logo_mob"></a></div>
+		<nav class="top-menu">
+			<ul>
+				<li><a href="">Заказать уборку</a></li>
+				<li><a href="">Вопросы и ответы</a></li>
+				<li><a href="">Войти</a></li>
+			</ul>
+		</nav>
+        <img src="img/hamb.png" alt="" class="modal-run">
+	</header>
+	<div class="banner windbanner clearfix">
+		<div class="wrap">
+			<div class="windbanner__left">
+				<h3 class="windbanner__title">Помоем все окна <br>
+				в квартире за 990 рублей</h3>
+				<p class="windbanner__text">
+					- Все-все? Но у меня их... <br>
+					- У вас их 5, 10? Не имеет значения!
+				</p>
+			</div>
+			<div class="windbanner__right">
+				<p>Добавьте балкон за 1000 рублей</p>
+				<span class="change_windows">
+                    <img src="img/minus.jpg">
+                </span>
+				<input type="text" class="window" value="Окна и 1 балкон" readonly>
+                <span class="change_windows change_windows_last">
+                    <img src="img/plus.jpg">
+                </span>
+                <input id="check1" class="check1" type="checkbox">
+                <label for="check1">Помыть только остекленные балконы</label>
+                <br>
+                <span class="pre-phone">+7</span>
+                <input type="tel" class="phone" placeholder="(__) - ___-___-___">
+				<p>К оплате 990 рублей</p>
+				<input type="submit" value="Отправить заявку">
+			</div>
+			<div class="list">
+                <div class="item">
+                    <img src="img/icon1.png">
+                    <span>Удобное время</span>
+                    Наши клинеры<br>приедут тогда,<br>когда вы скажите.<br>Например, уже сегодня
+                </div>
+                <div class="item">
+                    <img src="img/icon2.png">
+                    <span>Экологичные продукты</span>
+                    Мы используем <br> биоразлагаемые средства <br> из натурального сырья - <br> можно поливать даже цветы
+                </div>
+                <div class="item">
+                    <img src="img/icon3.png">
+                    <span>Отборные исполнители</span>
+                    У нас не бывает случайных<br>людей - только те,<br>кто прошел жесткий<br>отбор и обучение
+                </div>
+                <div class="item">
+                    <img src="img/icon4.png">
+                    <span>Честный подход </span>
+                    Маловероятно, но если<br> Вам что-нибудь непонравится -<br> мы все бесплатно<br> исправим или вернем Вам деньги<br>
+                </div>
+                <div class="clear"></div>
+            </div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="steps">
+            <div class="top-text">
+                Как работает сервис mr.cleaner
+            </div>
+            <div class="list">
+                <div class="item">
+                	<img src="img/right_arrow.png" alt="" class="steps_arrow">
+                    <div class="step">шаг 1</div>
+                    <img src="img/step1.png">
+                    <span>Закажите уборку</span>
+                    Расскажите где Вы живите<br>
+                    и что нужно сделать
+                </div>
+                <div class="item">
+                	<img src="img/right_arrow.png" alt="" class="steps_arrow">
+                    <div class="step">шаг 2</div>
+                    <img src="img/step2.png">
+                    <span>Дождитесь клинера</span>
+                    Или оставьте ключ, исполнитель<br>
+                    приедет со всем необходимым
+                </div>
+                <div class="item">
+                    <div class="step">шаг 3</div>
+                    <img src="img/step3.png">
+                    <span>Платите за результат</span>
+                    И наслаждайтесь<br>
+                    чистотой в квартире
+                </div>
+                <div class="clear"></div>
+            </div>
+            <button class="show_popup">Как мы моем окна всегда</button>
+        </div>
+	</div>
+	<div class="wrap">
+        <footer class="footer clearfix">
+            <div class="col">
+                <nav class="bottom-menu">
+                    <ul>
+                        <li><a href="">О сервисе</a></li>
+                        <li><a href="" target="_blank">Вопросы и ответы</a></li>
+                        <li><a href="">Приведи друга</a></li>
+                        <li><a href="">Пользовательское соглашение</a></li>
+                        <li><a href="">Работа в MrCleaner</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                Мы в социальных сетях<br>
+                <a href="https://www.facebook.com/mrcleaner.pro" target="_blank"><img src="img/fb.jpg"></a>
+                <a href="https://twitter.com/mrcleaner_pro" target="_blank"><img src="img/tw.jpg"></a>
+                <a href="https://www.instagram.com/mrcleaner.pro/" target="_blank"><img src="img/in.jpg"></a>
+                <a href="https://vk.com/mrcleaner" target="_blank"><img src="img/vk.jpg"></a>
+                <a href="https://ok.ru/group/54429294329983" target="_blank"><img src="img/ok.jpg"></a>
+                <a href="https://www.youtube.com/channel/UCOAxZx2nk8phrtFo6c31Cbg" target="_blank"><img src="img/yt.jpg"></a>
+            </div>
+            <div class="col">
+                Оплата картами<br>
+                <img src="img/payment.jpg">
+            </div>
+        </footer>
+    </div>
+    <!-- Modal mobile menu -->
+    <div class="modal-form">
+        <span class="modal-close"><img src="img/close.png" alt=""></span>
+        <div class="modal-form__top">
+            <h2>Mister Cleaner <br>
+                <span>Сервис заказа уборки</span>
+            </h2>
+        </div>
+        <div class="modal-form__menu">
+            <ul>
+                <li>
+                    <img src="img/mob1.png" alt="">
+                    <span>Мытье окон</span>
+                </li>
+                <li>
+                    <img src="img/mob2.png" alt="">
+                    <span>Вопросы</span>
+                </li>
+                <li>
+                    <img src="img/mob3.png" alt="">
+                    <span>О сервисе</span>
+                </li>
+                <li>
+                    <img src="img/mob4.png" alt="">
+                    <span>Войти</span>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-form__bott">
+            <button class="modal-form__butt modal-form__butt_a">ЗАКАЗАТЬ УБОРКУ</button>
+            <a href="tel:8 (3822) 977-262" class="modal-form__butt modal-form__butt_b"><img src="img/mob5.png" alt="">8 (3822) 977-262</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Modal mobile menu end -->
+</body>
+</html>
