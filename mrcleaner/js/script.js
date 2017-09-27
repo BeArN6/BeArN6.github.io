@@ -17,7 +17,7 @@ $(document).ready(function(){
 						'left': '0'
 					},500)
 			});
-			$("body").css({
+			$(".wrapper-hidden").css({
 				"overflow":"hidden"
 			})
 		});
@@ -31,7 +31,7 @@ $(document).ready(function(){
 					$('.overlay').fadeOut(300);
 				}
 			);
-			$("body").css({
+			$(".wrapper-hidden").css({
 				"overflow":"auto"
 			})
 	});
