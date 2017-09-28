@@ -39,14 +39,14 @@ $(document).ready(function(){
 	});
 	//Modal end
 
- 	//Menu height
- 	var viewportHeight = $('.modal-form').outerHeight();
-	$('.modal-form').css({ height: viewportHeight });
+ // 	//Menu height
+ // 	var viewportHeight = $('.modal-form').outerHeight();
+	// $('.modal-form').css({ height: viewportHeight });
 
-	$(".question__title").click(function(){
-		$(this).siblings('.question__text').toggle();
-		$(this).toggleClass('question__title_active');
-	});
+	// $(".question__title").click(function(){
+	// 	$(this).siblings('.question__text').toggle();
+	// 	$(this).toggleClass('question__title_active');
+	// });
 
 	//Slider
 	var windWidth = $(window).width();
