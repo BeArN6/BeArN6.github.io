@@ -8,9 +8,7 @@ $(document).ready(function(){
 			$(".overlay").fadeIn(0,function(){
 				$('.modal-form')
 					.css({
-						'display': 'flex',
-						'overflow-y': 'hidden',
-    					'overflow-x': 'hidden',
+						'display': 'flex'
 					})
 					.animate({
 						'opacity': '1',
