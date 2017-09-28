@@ -22,6 +22,9 @@ button,input[type="submit"]{
     display: table;
     clear: both;
 }
+input{
+	-webkit-appearance: none;
+}
 /*Slick slider*/
 .slick-slide img{
 	display: inline-block !important;
@@ -143,7 +146,7 @@ button,input[type="submit"]{
 	}
 	&__menu{
 		margin-bottom: 25px;
-		height: 50vh;
+		/*height: 50vh;*/
 		li{
 			line-height: 40px;
 			&:nth-child(3){
@@ -1019,15 +1022,23 @@ button,input[type="submit"]{
 	.comments{
 		padding-top: 25px;
     	padding-bottom: 20px;
+    	.wrap{
+    		padding: 0;
+    	}
     	&__title{
     		margin-bottom: 15px;
+    		padding-right: 15px;
+    		padding-left: 15px;
     	}
     	&__subtitle{
     		margin-bottom: 40px;
+    		padding-right: 15px;
+    		padding-left: 15px;
     	}
 	}
 	.comment{
 		margin: 0 10px;
+		width: 200px;
 	}
 	.price{
 		padding-top: 20px;
