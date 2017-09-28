@@ -118,7 +118,7 @@ input{
 	z-index: 5;
     flex-direction: column;
     justify-content: space-between;
-    /*overflow-y: scroll;*/
+    overflow: scroll;
 	.modal-close{
 		cursor: pointer;
 		position: absolute;
