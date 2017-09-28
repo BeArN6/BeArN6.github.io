@@ -69,4 +69,7 @@ $(document).ready(function(){
 	  		variableWidth: true
 		});
 	}
+
+	var viewportHeight = $('.modal-form__menu').outerHeight();
+	$('.modal-form__menu').css({ height: viewportHeight });
 });
