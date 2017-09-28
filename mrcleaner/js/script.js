@@ -70,6 +70,6 @@ $(document).ready(function(){
 		});
 	}
 
-	var viewportHeight = $('.modal-form__menu').outerHeight();
-	$('.modal-form__menu').css({ height: viewportHeight });
+	var viewportHeight = $('.modal-form').outerHeight();
+	$('.modal-form').css({ height: viewportHeight });
 });

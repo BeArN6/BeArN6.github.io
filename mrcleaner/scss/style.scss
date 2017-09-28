@@ -22,8 +22,15 @@ button,input[type="submit"]{
     display: table;
     clear: both;
 }
+/*IOS*/
 input{
-	-webkit-appearance: none;
+   -webkit-appearance: none;
+   box-shadow: none;
+   -webkit-box-shadow: none;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-appearance: none;
 }
 /*Slick slider*/
 .slick-slide img{
@@ -146,7 +153,7 @@ input{
 	}
 	&__menu{
 		margin-bottom: 25px;
-		/*height: 50vh;*/
+		height: 50vh;
 		li{
 			line-height: 40px;
 			&:nth-child(3){
