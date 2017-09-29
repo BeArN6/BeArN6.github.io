@@ -231,6 +231,7 @@ html.mm-opening .mm-menu.mm-opened~.mm-slideout{
 .mm-listview{
 	height: 95vh !important;
 	padding-bottom: 5vh !important;
+	min-height: 30px !important;
     display: flex !important;
     justify-content: space-between !important;
 }
