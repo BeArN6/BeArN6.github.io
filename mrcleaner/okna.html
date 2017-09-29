@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="scss/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.7/jquery.mmenu.all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.7/jquery.mmenu.all.js"></script>
 </head>
 <body class="bg-2">
 <div class="wrapper-hidden">
@@ -22,7 +26,7 @@
 				<li><a href="">Войти</a></li>
 			</ul>
 		</nav>
-        <img src="img/hamb.png" alt="" class="modal-run">
+        <a href="#menu" class="modal-run"><img src="img/hamb.png" alt=""></a>
 	</header>
 	<div class="banner windbanner clearfix">
 		<div class="wrap">
@@ -139,8 +143,8 @@
         </footer>
     </div>
     <!-- Modal mobile menu -->
-    <div class="modal-form">
-        <span class="modal-close"><img src="img/close.png" alt=""></span>
+    <div id="menu" class="modal-form">
+        <span class="modal-close"><a href="#page"><img src="img/close.png" alt=""></a></span>
         <div class="modal-form__top">
             <h2>Mister Cleaner <br>
                 <span>Сервис заказа уборки</span>
