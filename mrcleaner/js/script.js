@@ -3,8 +3,8 @@ $(document).ready(function(){
 	// var modalWidth = $('.modal-form').width();
 	// var modalFormMargin = modalWidth/2;
 
-	// 	$('.modal-run').click(function(event){
-	// 		event.preventDefault();
+	//$('.modal-run').click(function(event){
+	//	event.preventDefault();
 	// 		$(".overlay").fadeIn(500);
 	// 		$('.modal-form').animate({
 	// 			'opacity': '1',
@@ -15,12 +15,12 @@ $(document).ready(function(){
 	// 			'position': 'fixed'
 	// 		})
 	// 	});
-	// 	$('.modal-close,.overlay').click(function(){
+	// 	$('.modal-close,.overlay,.mm-slideout').click(function(){
 	// 		$(".modal-form").animate({
 	// 			'opacity': '1',
 	// 			'left': '-300px'
 	// 		}, 300);
-	// 		$('.overlay').fadeOut(300);
+	 		$('.overlay').fadeOut(300);
 	// 		$(".wrapper-hidden").css({
 	// 			"overflow":"auto",
 	// 			'position': 'static'
@@ -44,7 +44,7 @@ $(document).ready(function(){
             	navbar: {
               		add: false
               	},
-              	"extensions": [
+              	extensions: [
             		"listview-justify"
          		]
         	})
