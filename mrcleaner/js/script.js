@@ -30,15 +30,15 @@ $(document).ready(function(){
 
  	//Menu height
  	// $('.modal-form').height(window.innerHeight + 'px');
- 	function calcVH() {
-    	$('.modal-form').innerHeight( $(this).innerHeight() );
-	}
-	(function($) { 
-  		calcVH();
-  			$(window).on('orientationchange', function() {
-    		calcVH();
-  		});
-	})(jQuery);
+ // 	function calcVH() {
+ //    	$('.modal-form').innerHeight( $(this).innerHeight() );
+	// }
+	// (function($) { 
+ //  		calcVH();
+ //  			$(window).on('orientationchange', function() {
+ //    		calcVH();
+ //  		});
+	// })(jQuery);
  	
 
 	//Slider
