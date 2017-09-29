@@ -221,16 +221,21 @@ input{
 .modal-run{
 	display: none;
 }
-.mm-menu.mm-setwidth{
+.mm-menu.mm-offcanvas{
 	min-width: 300px !important;
 	max-width: 300px !important;
 }
 html.mm-opening .mm-menu.mm-opened~.mm-slideout{
 	transform: translate3d(300px,0,0) !important;
 }
-.mm-panels>.mm-panel:after{
-	height: 0 !important;
+.mm-listview{
+	height: 95vh !important;
+    display: flex !important;
+    justify-content: space-between !important;
 }
+/*.mm-panels>.mm-panel:after{
+	height: 0 !important;
+}*/
 .mm-listview>li>a, .mm-listview>li>span{
 	display: inline-block !important;
 }

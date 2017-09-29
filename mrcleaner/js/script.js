@@ -44,8 +44,10 @@ $(document).ready(function(){
             	navbar: {
               		add: false
               	},
-              	extensions: [ "setwidth" ]
-        	});
+              	"extensions": [
+            		"listview-justify"
+         		]
+        	})
     	});
 
 		$('.slick_slider').slick({
