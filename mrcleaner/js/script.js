@@ -31,17 +31,22 @@ $(document).ready(function(){
  	//Menu height
  	$('.modal-form').height(window.innerHeight + 'px');
 
- 	jQuery(document).ready(function( $ ) {
-        $("#menu").mmenu({
-        	backButton: {
-               close: true
-            }
-        });
-    });
+ 	
 
 	//Slider
 	var windWidth = $(window).width();
 	if(windWidth < 768){
+		jQuery(document).ready(function( $ ) {
+        	$("#menu").mmenu({
+        		backButton: {
+            	   close: true
+            	},
+            	navbar: {
+              		add: false
+              	}
+        	});
+    	});
+
 		$('.slick_slider').slick({
 	  		infinite: true,
 	  		slidesToShow: 1,
