@@ -111,9 +111,9 @@ input{
 }/*Modal end*/
 /*Modal menu*/
 .modal-form{
-  	display: flex;
+  	/*display: flex !important;*/
 	width: 300px;
-	height: 100vh;
+	/*height: 100vh;*/
 	position: fixed;
 	top: 0;
 	left: -300px;
