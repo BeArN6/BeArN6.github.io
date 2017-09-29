@@ -14,6 +14,9 @@ body,h1,h2,h3,h4,h5,p,ul,li{
 	margin:0;
 	padding: 0;
 }
+body{
+	background: #fff;
+}
 button,input[type="submit"]{
 	outline: none;
 }
@@ -218,9 +221,13 @@ input{
 .modal-run{
 	display: none;
 }
-/*.mm-menu.mm-offcanvas{
+.mm-menu.mm-setwidth{
+	min-width: 300px !important;
 	max-width: 300px !important;
-}*/
+}
+html.mm-opening .mm-menu.mm-opened~.mm-slideout{
+	transform: translate3d(300px,0,0) !important;
+}
 .mm-panels>.mm-panel:after{
 	height: 0 !important;
 }
@@ -1041,7 +1048,7 @@ input{
 	}
 	/*Modal end*/
 	.bg-2{
-		background: none;
+		background: #fff;
 	}
 	/*Home page*/
 	.comments{
@@ -1264,4 +1271,11 @@ input{
 	}
 	/*Главная окна конец*/
 }
+@media all and (max-width: 768px) {
+  html.mm-opening .mm-slideout {
+    -webkit-transform: translate(300px, 0);
+    -moz-transform: translate(300px, 0);
+    -ms-transform: translate(300px, 0);
+    -o-transform: translate(300px, 0);
+    transform: translate(300px, 0); } }
 /*Responsive end*/

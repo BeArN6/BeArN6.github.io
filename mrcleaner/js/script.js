@@ -29,7 +29,7 @@ $(document).ready(function(){
 	//Modal end
 
  	//Menu height
- 	$('.modal-form').height(window.innerHeight + 'px');
+ 	// $('.modal-form').height(window.innerHeight + 'px');
 
  	
 
@@ -43,7 +43,8 @@ $(document).ready(function(){
             	},
             	navbar: {
               		add: false
-              	}
+              	},
+              	extensions: [ "setwidth" ]
         	});
     	});
 
