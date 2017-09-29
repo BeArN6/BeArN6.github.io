@@ -229,7 +229,8 @@ html.mm-opening .mm-menu.mm-opened~.mm-slideout{
 	transform: translate3d(300px,0,0) !important;
 }
 .mm-listview{
-	height: 90vh !important;
+	height: 100vh !important;
+	padding-bottom: 30px;
     display: flex !important;
     justify-content: space-between !important;
 }
