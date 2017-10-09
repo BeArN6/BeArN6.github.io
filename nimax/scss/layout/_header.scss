@@ -75,7 +75,7 @@ header{
 	position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10;
     display: none;
     height: 80px;
 	nav{
@@ -134,14 +134,18 @@ header{
 		color: #fff;
 		text-transform: uppercase;
 		border: 0;
-		padding: 13.5px 25.5px;
+		padding: 14.5px 25.5px;
+		padding-bottom: 12.5px;
 		&_footer{
-			border: 2px solid #3ac1e5;
+			border: 2px solid #23abd0;
 			background: transparent;
 			min-width: 228px;
 			border-radius: 30px;
 			margin-top: 18px;
 			margin-bottom: 25px;
+			&:hover{
+				background: #23abd0;
+			}
 		}
 	}
 	i{
@@ -233,14 +237,22 @@ header{
 		.wrapper{
 			flex-direction: column;
 		}
+		&__location{
+			display: none;
+		}
 	}
 	.headerfixed{
 		height: 110px;
 		padding: 10px 0;
 	}
 	.headerbott{
-		max-width: 780px;
+		max-width: 750px;
     	margin: 0 auto;
+    	&__logo{
+    		span{
+    			display: none;
+    		}
+    	}
 	}
 }
 
@@ -256,6 +268,7 @@ header{
 		    		display: none;
     				margin: 0;
     				text-align: center;
+    				border-bottom: 1px solid #565656;
 		    	}
 		    }
 		}
@@ -265,6 +278,7 @@ header{
 	}
 	.toggle{
 		display: block !important;
+		border-bottom: 0 !important;
 		a{
 			display: inline-block;
 			vertical-align: middle;

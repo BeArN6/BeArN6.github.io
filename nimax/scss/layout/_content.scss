@@ -67,6 +67,46 @@ h3{
 |                                     CONTENT                                 |
 ================================================================================
 */
+/*Modal*/
+.modal-form{
+	display: none;
+	width: 849px;
+	height: 196px;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	background: #ffffff;
+	z-index: 15;
+	.modal-close{
+		cursor: pointer;
+		position: absolute;
+  		right: 20px;
+  		top: 20px;
+	}
+}
+.modal__title{
+	color: #363636;
+	font: 21px GPBl;
+	text-transform: uppercase;
+	line-height: 30px;
+	padding: 0 25px;
+    margin-top: 35px;
+}
+.overlay{
+	display: none;
+	background: #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	opacity: 0.7;
+  	-moz-opacity:0.7; 
+  	filter:alpha(opacity=70);
+	z-index: 12;
+	overflow: hidden;
+}
+  /*Modal end*/
 .content{	
 	order: 2;
     -webkit-order: 2;
@@ -334,12 +374,13 @@ li.slick-active{
 			border-radius: 30px;
 			color: #23abd0;
 			font: 12px GPB;
-			line-height: 34px;
 			border: 0;
 			text-transform: uppercase;
 			height: 40px;
 			width: 184px;
 			margin-top: 45px;
+			padding: 14.5px 25.5px;
+			padding-bottom: 12.5px;
 		}
 	}
 	&__img{
@@ -431,6 +472,8 @@ li.slick-active{
     		border-radius: 30px;
     		height: 40px;
     		width: 184px;
+    		padding: 14.5px 25.5px;
+			padding-bottom: 12.5px;
     		letter-spacing: 0.5px;
     		&:hover{
     			background:#1a90af;
@@ -561,6 +604,8 @@ li.slick-active{
 		font: 12px GPB;
 		text-transform: uppercase;
 		padding: 13px 34px;
+		padding: 14.5px 25.5px;
+		padding-bottom: 12.5px;
 	}
 }
 .adv{
@@ -643,6 +688,8 @@ li.slick-active{
 			color: #fff;
 			background: #23abd0;
 			border: 0;
+			padding: 14.5px 25.5px;
+			padding-bottom: 12.5px;
 		}
 	}
 }
@@ -667,8 +714,21 @@ li.slick-active{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+	/*Modal*/
+	.modal-form{
+		width: 520px;
+		height: 273px;
+		.contus{
+			flex-wrap: wrap;
+    		justify-content: space-around;
+		}
+	}
+	.modal__title{
+		padding: 0 50px;
+	}
+  	/*Modal end*/
 	.main{
-		max-width: 550px;
+		max-width: 520px;
 	}
 	.slider{
 		&__item{
@@ -678,29 +738,29 @@ li.slick-active{
 			h2{
 			    font: 36px GPBl;
     			line-height: 40px;
-    			max-width: 780px;
+    			max-width: 750px;
     			margin-left: auto;
     			margin-right: auto;
 			}
 			p{
 				font: 14px GPL;
     			line-height: 22px;
-    			max-width: 780px;
+    			max-width: 750px;
     			margin-left: auto;
     			margin-right: auto;
 			}
 		}
 		.slick-dots{
 			bottom: 120px;
-		    width: 780px;
+		    width: 750px;
     		left: 50%;
-    		margin-left: -390px;
+    		margin-left: -375px;
 		}
 	}
 	.content {
 		.wrapper{
 			top: -80px;
-			max-width: 780px;
+			max-width: 750px;
     		padding-left: 0;
     		padding-right: 0;
 		}
@@ -728,6 +788,7 @@ li.slick-active{
 		}
 		&__title{
 			font-size: 12px;
+			line-height: 16px;
 		}
 		&__text{
 			font-size: 10px;
@@ -777,9 +838,33 @@ li.slick-active{
 		flex-wrap: wrap;
     	justify-content: space-around;
 	}
+	.order {
+		button{
+			min-width: 185px;
+		}
+		p{
+			font: 16px GPL;
+    		line-height: 28px;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
+	/*Modal*/
+	.modal-form{
+		width: 300px;
+		height: 273px;
+		.contus{
+			display: block;
+    		text-align: center;
+		}
+	}
+	.modal__title{
+		padding: 0 50px;
+		text-align: center;
+		font-size: 18px;
+	}
+  	/*Modal end*/
 	.content{
 		padding-bottom: 0;
 		.wrapper{
@@ -818,8 +903,18 @@ li.slick-active{
 		}
 	}
 	.sidebar{
+		display: none;
+		max-width: auto;
 		margin-left: auto;
     	margin-right: auto;
+	}
+	.sidenav{
+		margin-bottom: 15px;
+		&__li{
+			&:last-child{
+				border-bottom: 1px solid #565656;
+			}
+		}
 	}
 	.contslider{
 		&__img{
@@ -868,6 +963,20 @@ li.slick-active{
 			display: none;
 		}
 	}
+	.result {
+		tr{
+			td{
+				font-size: 11px;
+				line-height: 25px;
+				&:last-child {
+					min-width: 65px;
+				}
+				&:nth-child(2){
+					min-width: 40px;
+				}
+			}
+		}
+	}
 	.contus{
 		display: block;
 		text-align: center;
@@ -878,7 +987,26 @@ li.slick-active{
 			margin-bottom: 10px;
 		}
 	}
+	.sidebox1,.sidebox2,.sidebox3,.sidebox4{
+		display: none;
+	}
 }
-
+@media screen and (min-width: 545px) and (max-width: 768px){
+	.fence{
+		&__box{
+			min-height: 330px;
+			vertical-align: top;
+			&:last-child{
+				display: none;
+			}
+		}
+	}
+	.adv{
+		&__item{
+			margin: 0 25px;
+			margin-bottom: 10px;
+		}
+	}
+}
 
 
