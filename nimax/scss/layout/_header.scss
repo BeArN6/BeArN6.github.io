@@ -136,6 +136,9 @@ header{
 		border: 0;
 		padding: 14.5px 25.5px;
 		padding-bottom: 12.5px;
+		&:hover{
+			background: #1a90af;
+		}
 		&_footer{
 			border: 2px solid #23abd0;
 			background: transparent;
