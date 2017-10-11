@@ -839,6 +839,9 @@ li.slick-active{
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
+				h2{
+					max-height: 80px;
+				}
 			}
 		}
 		.slick-dots{
@@ -911,6 +914,7 @@ li.slick-active{
     			width:255px;
     			padding: 15px 15px;
     			padding-right: 15px;
+    			max-height: 191px;
     		}
 			&:last-child{
 				display: none;
@@ -1017,6 +1021,7 @@ li.slick-active{
 					font-size: 19px;
 					margin-bottom: 10px;
 					width: 290px;
+					max-height: 56px;
     			}
 
     		}
