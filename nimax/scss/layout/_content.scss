@@ -27,6 +27,10 @@
 	margin: 0 auto;
 	position: relative;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /* titles */
 p{	
@@ -836,11 +840,13 @@ li.slick-active{
 			}
 			&_page{
 				min-height: 405px;
-				display: flex;
-				justify-content: center;
-				flex-direction: column;
+				display: block;
 				h2{
 					max-height: 80px;
+					margin-top: 70px;
+				}
+				.breadcrumbs{
+					margin-top: 75px;
 				}
 			}
 		}
@@ -909,6 +915,8 @@ li.slick-active{
 	}
 	.fence{
 		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
 		&__box{
     		&_page{
     			width:255px;
@@ -1014,16 +1022,18 @@ li.slick-active{
     		}
     		&_page{
     			min-height: 295px;
-    			display: flex;
-    			flex-direction: column;
-    			justify-content: center;
+    			display: block;
+    			padding-bottom: 15px;
     			h2{
 					font-size: 19px;
 					margin-bottom: 10px;
 					width: 290px;
 					max-height: 56px;
+					margin-top: 80px;
     			}
-
+				.breadcrumbs{
+					margin-top: 98px;
+				}
     		}
 		}
 		.slick-dots{
@@ -1157,6 +1167,9 @@ li.slick-active{
 		&__box{
 			min-height: 330px;
 			vertical-align: top;
+			&_page{
+				min-height: auto;
+			}
 			&:last-child{
 				display: none;
 			}
