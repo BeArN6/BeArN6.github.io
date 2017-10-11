@@ -815,7 +815,7 @@ li.slick-active{
 	}
 	.slider{
 		&__item{
-			padding: 80px 0 180px 0;
+			padding: 60px 0 100px 0;
 			background-size: cover;
     		background-position: center;
 			h2{
@@ -824,6 +824,8 @@ li.slick-active{
     			max-width: 750px;
     			margin-left: auto;
     			margin-right: auto;
+    			width: 750px;
+    			margin-bottom: 20px;
 			}
 			p{
 				font: 14px GPL;
@@ -832,6 +834,12 @@ li.slick-active{
     			margin-left: auto;
     			margin-right: auto;
 			}
+			&_page{
+				min-height: 405px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
 		}
 		.slick-dots{
 			bottom: 120px;
@@ -839,6 +847,10 @@ li.slick-active{
     		left: 50%;
     		margin-left: -375px;
 		}
+	}
+	.breadcrumbs{
+		width: 750px;
+		max-width: 750px;
 	}
 	.content {
 		.wrapper{
@@ -893,10 +905,20 @@ li.slick-active{
 		}
 	}
 	.fence{
+		margin-bottom: 10px;
 		&__box{
+    		&_page{
+    			width:255px;
+    			padding: 15px 15px;
+    			padding-right: 15px;
+    		}
 			&:last-child{
 				display: none;
 			}
+		}
+		&__img{
+			width: 100%;
+			max-width: 100%;
 		}
 	}
 	.adv{
@@ -986,6 +1008,18 @@ li.slick-active{
     			font: 13px GPL;
     			line-height: 16px;
     		}
+    		&_page{
+    			min-height: 295px;
+    			display: flex;
+    			flex-direction: column;
+    			justify-content: center;
+    			h2{
+					font-size: 19px;
+					margin-bottom: 10px;
+					width: 290px;
+    			}
+
+    		}
 		}
 		.slick-dots{
 			left: 15px;
@@ -998,6 +1032,9 @@ li.slick-active{
 				}
 			}
 		}
+	}
+	.breadcrumbs{
+		width: 290px;
 	}
 	.sidebar{
 		display: none;
@@ -1024,10 +1061,20 @@ li.slick-active{
 	.fence{
 		display: block;
     	text-align: center;
+    	margin: 0;
     	&__box{
     		display: inline-block;
     		margin: 0 5px;
     		margin-bottom: 10px;
+    		&_page{
+    			width:220px;
+    			padding: 15px 15px;
+    			padding-right: 15px;
+    		}
+    	}
+    	&__img{
+    		width: 100%;
+    		max-width: 100%;
     	}
 	}
 	.selectd{
