@@ -1,0 +1,73 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+    background: url(../img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 55px 0 60px 0;
+}
+.buy{
+	max-width: 975px;
+	margin: 0 auto;
+	background: url(../img/cont.jpg) center center no-repeat;
+    background-size: 100%;
+    padding: 57px 0;
+    margin-bottom: 40px;
+	h2{
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		font: 72px OSE;
+		line-height: 72px;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+	}
+	p{
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		font: 60px OSE;
+		line-height: 60px;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+	}
+}
+.installnow{
+	text-align: center;
+	button{
+		color: #470814;
+		font: 20px OSE;
+		text-transform: uppercase;
+		width: 370px;
+		border: 0;
+		border-radius: 5px;
+		height: 84px;
+		background: linear-gradient(to bottom, #fedd01,#fa7c00);
+		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
