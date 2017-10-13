@@ -718,6 +718,9 @@ footer {
 .row__title_small {
   font-size: 21px;
 }
+.row__title_calc {
+  margin-bottom: 30px;
+}
 .row__border {
   width: 360px;
   height: 1px;
@@ -1194,6 +1197,38 @@ h3 {
   padding: 0;
   text-transform: uppercase;
   color: #fff;
+}
+
+.calculator {
+  padding: 30px 0;
+  text-align: center;
+}
+.calculator input {
+  font: 14px RR;
+  color: #343434;
+  background: transparent;
+  border: 1px solid #343434;
+  border-radius: 30px;
+  padding: 9.5px 32px;
+  margin-right: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.calculator input::placeholder {
+  font: 14px RR;
+  color: #343434;
+}
+.calculator p {
+  font: 18px RB;
+  display: inline-block;
+  margin-right: 10px;
+  color: #343434;
+}
+.calculator__butt {
+  display: inline-block;
+}
+.calculator .result {
+  margin-right: 20px;
 }
 
 .sert {

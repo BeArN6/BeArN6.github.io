@@ -56,6 +56,9 @@
 		&_small{
 			font-size: 21px;
 		}
+		&_calc{
+			margin-bottom: 30px;
+		}
 	}
 	&__border{
 		width: 360px;
@@ -501,6 +504,37 @@ h3{
 			text-transform: uppercase;
 			color: #fff;
 		}
+	}
+}
+.calculator{
+	padding: 30px 0;
+	text-align: center;
+	input{
+		font: 14px RR;
+	    color: #343434;
+	    background: transparent;
+	    border: 1px solid #343434;
+	    border-radius: 30px;
+	    padding: 9.5px 32px;
+	    margin-right: 12px;
+	    text-align: center;
+	    margin-bottom: 10px;
+	    &::placeholder{
+	    	font: 14px RR;
+	    	color: #343434;
+	    }
+	}
+	p{
+		font: 18px RB;
+		display: inline-block;
+		margin-right: 10px;
+	    color: #343434;
+	}
+	&__butt{
+		display: inline-block;
+	}
+	.result{
+		margin-right: 20px;
 	}
 }
 .sert{

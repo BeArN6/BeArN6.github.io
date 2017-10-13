@@ -141,11 +141,30 @@ $(document).ready(function(){
   		autoplaySpeed: 3000
     });
 
-    //Counter
-   	$(".investors__item h2").spincrement({
-   		duration: 3000,
-   		decimalPoint: " ",
-   		thousandSeparator: " "
-   	});
+    //Calculator
+    var dSumm = $('.calculator__summ');
+    var dTime = $('.calculator__time');
+    var calcButt = $(".calculator__butt")
+    $(calcButt).click(function(){
+    	var result = (+dSumm.val()) * 0.06 * (+dTime.val()) + (+dSumm.val()) ;
+    	$(".result").text(result);
+    });		   	
+   			
 });
 
+$(function () {
+    var jqBar = $('.investors'); // селектор для вашего блока
+    var jqBarStatus = true;
+    $(window).scroll(function() {
+        var scrollEvent = ($(window).scrollTop() > (jqBar.position().top - $(window).height()));
+        if (scrollEvent && jqBarStatus) { 
+            jqBarStatus = false;
+            /* выполнение скрипта jqbar с определенными параметрами */
+            $(".investors__item h2").spincrement({
+		   		duration: 3000,
+		   		decimalPoint: " ",
+		   		thousandSeparator: " "
+		   	});
+        }
+    });
+});
