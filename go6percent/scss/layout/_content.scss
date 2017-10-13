@@ -119,6 +119,12 @@ h3{
 }
 .variants{
 	padding: 40px 0;
+	&__item{
+		&:hover{
+			margin-top:-20px;
+			transition: 1s;
+		}
+	}
 	&__cont{
 		display: flex;
 		justify-content: center;
@@ -246,6 +252,11 @@ h3{
 				margin-top: 9px;
 			}
 		}
+		&:hover{
+			width: 360px;
+			margin-top: 0;
+			transition: 0.6s;
+		}
 	}
 	&_3{
 		margin-left: -1px;
@@ -311,8 +322,41 @@ h3{
 		margin-top: 20px;
 		position: relative;
 	}
+	&__round{
+		position: relative;
+	}
 	&__img{
 		width: 100%;
+		&_1{
+			position: absolute;
+			left: 212px;
+    		top: -27px;
+		}
+		&_2{
+			position: absolute;
+			right: 212px;
+    		top: -27px;
+		}
+		&_3{
+			position: absolute;
+			left: 212px;
+    		bottom: -22px;
+		}
+		&_4{
+			position: absolute;
+			right: 212px;
+    		bottom: -22px;
+		}
+		&_5{
+			position: absolute;
+			left: 282px;
+    		top: -28px;
+		}
+		&_6{
+			position: absolute;
+			right: 282px;
+    		top: -28px;
+		}
 	}
 	&__box{
 		position: absolute;
@@ -337,26 +381,82 @@ h3{
 		&_1{
 			left: -225px;
     		top: 25px;
+    		&:hover{
+    			top: 10px;
+    			left: -240px;
+    			transition: 1s;
+    			.adv__img_1{
+    				transition: 1s;
+    				top: -29px;
+    				left: 194px;
+    			}
+    		}
 		}
 		&_2{
 			left: -295px;
     		top: 105px;
+    		&:hover{
+    			left: -310px;
+    			transition: 1s;
+    			.adv__img_5{
+    				transition: 1s;
+    				left: 267px;
+    			}
+    		}
 		}
 		&_3{
 			bottom: 25px;
     		left: -225px;
+    		&:hover{
+    			left: -240px;
+    			bottom: 10px;
+    			transition: 1s;
+    			.adv__img_5{
+    				transition: 1s;
+    				bottom: -29px;
+    				left: 194px;
+    			}
+    		}
 		}
 		&_4{
 			right: -225px;
     		top: 25px;
+    		&:hover{
+    			top: 10px;
+    			right: -240px;
+    			transition: 1s;
+    			.adv__img_2{
+    				transition: 1s;
+    				top: -29px;
+    				right: 194px;
+    			}
+    		}
 		}
 		&_5{
 			right: -295px;
     		top: 105px;
+    		&:hover{
+    			right: -310px;
+    			transition: 1s;
+    			.adv__img_6{
+    				transition: 1s;
+    				right: 267px;
+    			}
+    		}
 		}
 		&_6{
-			right: -225px;
-    		bottom: 25px;
+			bottom: 25px;
+    		right: -225px;
+    		&:hover{
+    			right: -240px;
+    			bottom: 10px;
+    			transition: 1s;
+    			.adv__img_5{
+    				transition: 1s;
+    				bottom: -29px;
+    				right: 194px;
+    			}
+    		}
 		}
 	}
 }
@@ -376,7 +476,20 @@ h3{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 		min-height: 135px;
+		&:first-child{
+			&:before{
+				content: '$';
+				display: inline-block;
+				position: absolute;
+				left: 90px;
+    			top: 31px;
+				font: 44px RR;
+				line-height: 50px;
+				color: #fff;
+			}
+		}
 		h2{
 			font: 44px RR;
 			line-height: 50px;

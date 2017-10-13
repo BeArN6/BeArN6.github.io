@@ -133,5 +133,19 @@ $(document).ready(function(){
     $(".toggle").click(function(){
     	$(".headernav__navigation li").not(".toggle").slideToggle();
     });
+
+    //Slider
+    $('.headerbott__info').slick({
+    	arrows: false,
+    	autoplay: true,
+  		autoplaySpeed: 3000
+    });
+
+    //Counter
+   	$(".investors__item h2").spincrement({
+   		duration: 3000,
+   		decimalPoint: " ",
+   		thousandSeparator: " "
+   	});
 });
 

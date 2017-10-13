@@ -192,16 +192,6 @@ header {
   cursor: pointer;
 }
 
-.navigation_fixed {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #751157;
-  z-index: 6;
-}
-
 .headertop {
   padding: 25px 0;
   box-shadow: 0px 1px 0px 0px white;
@@ -224,6 +214,10 @@ header {
   border: 2px solid #fff;
   border-radius: 100%;
   margin-right: 9px;
+}
+.headertop__icons a:hover {
+  transition: 1s;
+  border-style: dashed;
 }
 .headertop__info {
   display: flex;
@@ -402,6 +396,59 @@ header {
   color: #fff;
   text-transform: uppercase;
   font: 15px RM;
+  position: relative;
+}
+.headernav__navigation a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.headernav__navigation a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.navigation_fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #751157;
+  background: linear-gradient(to right, #3a1439, #791259);
+  z-index: 6;
+  margin-bottom: 12px;
+  padding: 8px 0;
+  opacity: 0.9;
+}
+.navigation_fixed .headernav__logo {
+  height: 52%;
+}
+.navigation_fixed .logo {
+  max-width: 160px;
+}
+.navigation_fixed .item1 {
+  max-width: 31px;
+  top: 10px;
+  left: 39px;
+}
+.navigation_fixed .item2 {
+  top: 3px;
+  left: 32px;
+  max-width: 46px;
 }
 
 .logo {
@@ -770,6 +817,10 @@ h3 {
 .variants {
   padding: 40px 0;
 }
+.variants__item:hover {
+  margin-top: -20px;
+  transition: 1s;
+}
 .variants__cont {
   display: flex;
   justify-content: center;
@@ -897,6 +948,11 @@ h3 {
   height: 48px;
   margin-top: 9px;
 }
+.variant_2:hover {
+  width: 360px;
+  margin-top: 0;
+  transition: 0.6s;
+}
 .variant_3 {
   margin-left: -1px;
 }
@@ -962,8 +1018,41 @@ h3 {
   margin-top: 20px;
   position: relative;
 }
+.adv__round {
+  position: relative;
+}
 .adv__img {
   width: 100%;
+}
+.adv__img_1 {
+  position: absolute;
+  left: 212px;
+  top: -27px;
+}
+.adv__img_2 {
+  position: absolute;
+  right: 212px;
+  top: -27px;
+}
+.adv__img_3 {
+  position: absolute;
+  left: 212px;
+  bottom: -22px;
+}
+.adv__img_4 {
+  position: absolute;
+  right: 212px;
+  bottom: -22px;
+}
+.adv__img_5 {
+  position: absolute;
+  left: 282px;
+  top: -28px;
+}
+.adv__img_6 {
+  position: absolute;
+  right: 282px;
+  top: -28px;
 }
 .adv__box {
   position: absolute;
@@ -988,25 +1077,81 @@ h3 {
   left: -225px;
   top: 25px;
 }
+.adv__box_1:hover {
+  top: 10px;
+  left: -240px;
+  transition: 1s;
+}
+.adv__box_1:hover .adv__img_1 {
+  transition: 1s;
+  top: -29px;
+  left: 194px;
+}
 .adv__box_2 {
   left: -295px;
   top: 105px;
+}
+.adv__box_2:hover {
+  left: -310px;
+  transition: 1s;
+}
+.adv__box_2:hover .adv__img_5 {
+  transition: 1s;
+  left: 267px;
 }
 .adv__box_3 {
   bottom: 25px;
   left: -225px;
 }
+.adv__box_3:hover {
+  left: -240px;
+  bottom: 10px;
+  transition: 1s;
+}
+.adv__box_3:hover .adv__img_5 {
+  transition: 1s;
+  bottom: -29px;
+  left: 194px;
+}
 .adv__box_4 {
   right: -225px;
   top: 25px;
+}
+.adv__box_4:hover {
+  top: 10px;
+  right: -240px;
+  transition: 1s;
+}
+.adv__box_4:hover .adv__img_2 {
+  transition: 1s;
+  top: -29px;
+  right: 194px;
 }
 .adv__box_5 {
   right: -295px;
   top: 105px;
 }
+.adv__box_5:hover {
+  right: -310px;
+  transition: 1s;
+}
+.adv__box_5:hover .adv__img_6 {
+  transition: 1s;
+  right: 267px;
+}
 .adv__box_6 {
-  right: -225px;
   bottom: 25px;
+  right: -225px;
+}
+.adv__box_6:hover {
+  right: -240px;
+  bottom: 10px;
+  transition: 1s;
+}
+.adv__box_6:hover .adv__img_5 {
+  transition: 1s;
+  bottom: -29px;
+  right: 194px;
 }
 
 .investors {
@@ -1026,7 +1171,18 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   min-height: 135px;
+}
+.investors__item:first-child:before {
+  content: '$';
+  display: inline-block;
+  position: absolute;
+  left: 90px;
+  top: 31px;
+  font: 44px RR;
+  line-height: 50px;
+  color: #fff;
 }
 .investors__item h2 {
   font: 44px RR;
