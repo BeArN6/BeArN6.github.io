@@ -9,7 +9,7 @@ header{
     -webkit-order: 1;	
     background: url(../img/banner.jpg) center center no-repeat;
     background-size: cover;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
 }
 .mainbutt{
 	font: 14px RR;
@@ -329,6 +329,28 @@ header{
 			line-height: 30px;
 			margin-bottom: 10px;
 		}
+	}
+}
+.slick-dots{
+	text-align: center;
+	margin-top: 25px;
+	li{
+		display: inline-block;
+		width: 10px;
+    	height: 10px;
+    	border-radius: 100%;
+    	background: #fff;
+    	border: 0;
+    	margin: 0 5px;
+    	button{
+    		width: 10px !important;
+    		padding: 0;
+		    height: 10px;
+		    border: 0;
+		    border-radius: 100%;
+		    background: #fff;
+		    text-indent: 9999px;
+    	}
 	}
 }
 

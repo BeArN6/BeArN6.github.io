@@ -124,10 +124,34 @@ $(document).ready(function(){
 	$(window).scroll(function(){
         if ( $(this).scrollTop() > 500){
             $(".navigation_fixed").slideDown(500);
+            $(".navigation_fixed .item1").css({
+            	'transform': 'rotate(1turn)',
+            },800);
+            $(".navigation_fixed .item2").css({
+            	'transform': 'rotate(-1turn)',
+            });
+            $(".upbutton").css({
+            	"visibility": "visible"
+            });
         } else if($(this).scrollTop() <= 500) {
             $(".navigation_fixed").slideUp(500);
+            $(".navigation_fixed .item1").css({
+            	'transform': 'rotate(-1turn)',
+            });
+            $(".navigation_fixed .item2").css({
+            	'transform': 'rotate(+1turn)',
+            });
+            $(".upbutton").css({
+            	"visibility": "hidden"
+            },800);
         }
     });
+
+    //Up button
+    $(".upbutton").click(function() {
+    	$('html, body').animate({scrollTop: 0},1500);
+    	return false;
+  	});
 
     //Menu mobile
     $(".toggle").click(function(){
@@ -138,7 +162,8 @@ $(document).ready(function(){
     $('.headerbott__info').slick({
     	arrows: false,
     	autoplay: true,
-  		autoplaySpeed: 3000
+  		autoplaySpeed: 3000,
+  		dots: true
     });
 
     //Calculator
