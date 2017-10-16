@@ -7,7 +7,6 @@
 header{
 	order: 1;	
     -webkit-order: 1;	
-    background: url(../img/banner.jpg) center center no-repeat;
     background-size: cover;
     padding-bottom: 100px;
 }
@@ -26,6 +25,31 @@ header{
 }
 .header{
 	position: relative;
+	background: url(../img/banner.jpg) center center no-repeat;
+	&__page{
+		background-image: url(../img/bp1.jpg);
+		/*background: linear-gradient(to right, #3a1439, #761157);*/
+		background-position: center center;
+		background-size: cover;
+		&_2{
+			background-image: url(../img/bp2.jpg);
+		}
+		&_3{
+			background-image: url(../img/bp3.jpg);
+		}
+		&_4{
+			background-image: url(../img/bp4.jpg);
+		}
+		&_5{
+			background-image: url(../img/bp5.jpg);
+		}
+		&_6{
+			background-image: url(../img/bp6.jpg);
+		}
+		&_7{
+			background-image: url(../img/bp7.jpg);
+		}
+	}
 	&__down{
 		position: absolute;
 		left: 50%;
@@ -128,6 +152,22 @@ header{
 			background: #f523ad;
 			border-color: #f523ad;
 		}
+	}
+}
+.headerbott{
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+#myCanvasContainer{
+	width: 350px;
+	height: 350px;
+	background: url('../img/bg.png') center center no-repeat;
+	canvas{
+		margin-left: -50px;
+   	 	margin-top: -50px;
 	}
 }
 .select{
@@ -471,7 +511,11 @@ header{
 		}
 	}
 	.headerbott{
+		.wrapper{
+			flex-direction: column;
+		}
 		&__info {
+			max-width: 360px;
 			h2{
 				font-size: 22px;
     			line-height: 30px;

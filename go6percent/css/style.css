@@ -162,7 +162,6 @@ button {
 header {
   order: 1;
   -webkit-order: 1;
-  background: url(../img/banner.jpg) center center no-repeat;
   background-size: cover;
   padding-bottom: 100px;
 }
@@ -183,6 +182,31 @@ header {
 
 .header {
   position: relative;
+  background: url(../img/banner.jpg) center center no-repeat;
+}
+.header__page {
+  background-image: url(../img/bp1.jpg);
+  /*background: linear-gradient(to right, #3a1439, #761157);*/
+  background-position: center center;
+  background-size: cover;
+}
+.header__page_2 {
+  background-image: url(../img/bp2.jpg);
+}
+.header__page_3 {
+  background-image: url(../img/bp3.jpg);
+}
+.header__page_4 {
+  background-image: url(../img/bp4.jpg);
+}
+.header__page_5 {
+  background-image: url(../img/bp5.jpg);
+}
+.header__page_6 {
+  background-image: url(../img/bp6.jpg);
+}
+.header__page_7 {
+  background-image: url(../img/bp7.jpg);
 }
 .header__down {
   position: absolute;
@@ -287,6 +311,22 @@ header {
 .headertop__register:hover {
   background: #f523ad;
   border-color: #f523ad;
+}
+
+.headerbott .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#myCanvasContainer {
+  width: 350px;
+  height: 350px;
+  background: url("../img/bg.png") center center no-repeat;
+}
+#myCanvasContainer canvas {
+  margin-left: -50px;
+  margin-top: -50px;
 }
 
 .select {
@@ -604,6 +644,12 @@ header {
     line-height: 25px;
   }
 
+  .headerbott .wrapper {
+    flex-direction: column;
+  }
+  .headerbott__info {
+    max-width: 360px;
+  }
   .headerbott__info h2 {
     font-size: 22px;
     line-height: 30px;
@@ -1206,6 +1252,82 @@ h3 {
   right: 194px;
 }
 
+.bitcoin {
+  background: #f9fbfc;
+  padding: 40px 0 50px;
+}
+.bitcoin__graph {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.bitcoin__dot {
+  display: none;
+}
+.bitcoin__dot_1 {
+  position: absolute;
+  left: 125px;
+  top: 205px;
+}
+.bitcoin__dot_2 {
+  position: absolute;
+  left: 275px;
+  top: 187px;
+}
+.bitcoin__dot_3 {
+  position: absolute;
+  left: 431px;
+  top: 152px;
+}
+.bitcoin__dot_4 {
+  position: absolute;
+  left: 582px;
+  top: 138px;
+}
+.bitcoin__dot_5 {
+  position: absolute;
+  left: 734px;
+  top: 126px;
+}
+.bitcoin__dot_6 {
+  position: absolute;
+  left: 892px;
+  top: 123px;
+}
+.bitcoin__dot_7 {
+  position: absolute;
+  left: 1045px;
+  top: 104px;
+}
+.bitcoin__day {
+  position: absolute;
+  bottom: 10px;
+  font: 15px RR;
+  color: #343434;
+  padding: 0;
+}
+.bitcoin__day_1 {
+  left: 100px;
+}
+.bitcoin__day_2 {
+  left: 260px;
+}
+.bitcoin__day_3 {
+  left: 420px;
+}
+.bitcoin__day_4 {
+  left: 580px;
+}
+.bitcoin__day_5 {
+  left: 740px;
+}
+.bitcoin__day_6 {
+  left: 900px;
+}
+.bitcoin__day_7 {
+  left: 1060px;
+}
+
 .investors {
   background: url(../img/banner2.jpg) center center no-repeat;
   padding: 80px 0;
@@ -1548,12 +1670,16 @@ h3 {
   .adv__item {
     text-align: center;
   }
-  .adv__img {
-    margin-bottom: 15px;
-  }
   .adv__box {
     position: static;
     margin-bottom: 15px;
+  }
+
+  img.adv__img {
+    display: none;
+  }
+  img.adv__img_1, img.adv__img_2, img.adv__img_3, img.adv__img_4, img.adv__img_5, img.adv__img_6 {
+    display: none;
   }
 
   .investors {

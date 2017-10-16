@@ -193,3 +193,48 @@ $(function () {
         }
     });
 });
+
+$(document).ready(function() {
+   if( ! $('#myCanvas').tagcanvas({
+     textColour : '#ffffff',
+     noSelect: true,
+     maxSpeed : 0.03,
+     depth : 0.75,
+     zoom: 0.85,
+     wheelZoom: false
+   })) {
+     // TagCanvas failed to load
+     $('#myCanvasContainer').hide();
+   }
+   // your other jQuery stuff here...
+
+   //Graph
+   	var date = new Date();
+   	var day = date.getDay();
+   	var month = date.getMonth();
+   	alert(month);
+	
+	switch(day) {
+  		case 0:  
+    		$('.bitcoin__dot_7').show();
+    		break;
+  		case 1:  // if (x === 'value2')
+    		$('.bitcoin__dot_1').show();
+    		break;
+    	case 2:  // if (x === 'value2')
+    		$('.bitcoin__dot_2').show();
+    		break;
+    	case 3:  // if (x === 'value2')
+    		$('.bitcoin__dot_3').show();
+    		break;
+    	case 4:  // if (x === 'value2')
+    		$('.bitcoin__dot_4').show();
+    		break;
+    	case 5:  // if (x === 'value2')
+    		$('.bitcoin__dot_5').show();
+    		break;
+    	case 6:  // if (x === 'value2')
+    		$('.bitcoin__dot_6').show();
+    		break;
+	}
+ });

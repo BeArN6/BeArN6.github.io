@@ -466,6 +466,81 @@ h3{
 		}
 	}
 }
+.bitcoin{
+	background: #f9fbfc;
+	padding: 40px 0 50px;
+	&__graph{
+		width: 1140px;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__dot{
+		display: none;
+    	&_1{
+    		position: absolute;
+			left: 125px;
+    		top: 205px;
+    	}
+    	&_2{
+    		position: absolute;
+			left: 275px;
+    		top: 187px;
+    	}
+    	&_3{
+    		position: absolute;
+    		left: 431px;
+    		top: 152px;
+    	}
+    	&_4{
+    		position: absolute;
+    		left: 582px;
+    		top: 138px;
+    	}
+    	&_5{
+    		position: absolute;
+    		left: 734px;
+    		top: 126px;
+    	}
+    	&_6{
+    		position: absolute;
+    		left: 892px;
+    		top: 123px;
+    	}
+    	&_7{
+    		position: absolute;
+    		left: 1045px;
+    		top: 104px;
+    	}
+	}
+	&__day{
+		position: absolute;
+		bottom: 10px;
+		font: 15px RR;
+		color: #343434;
+		padding: 0;
+		&_1{
+			left: 100px;
+		}
+		&_2{
+			left: 260px;
+		}
+		&_3{
+			left: 420px;
+		}
+		&_4{
+			left: 580px;
+		}
+		&_5{
+			left: 740px;
+		}
+		&_6{
+			left: 900px;
+		}
+		&_7{
+			left: 1060px;
+		}
+	}
+}
 .investors{
 	background: url(../img/banner2.jpg) center center no-repeat;
 	padding: 80px 0; 
@@ -828,12 +903,17 @@ h3{
 		&__item{
 			text-align: center;
 		}
-		&__img{
-			margin-bottom: 15px;
-		}
 		&__box{
 			position: static;
 			margin-bottom: 15px;
+		}
+	}
+	img.adv{
+		&__img{
+			display: none;
+			&_1,&_2,&_3,&_4,&_5,&_6{
+				display: none;
+			}
 		}
 	}
 	.investors{
