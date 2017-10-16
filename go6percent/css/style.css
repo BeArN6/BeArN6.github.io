@@ -183,6 +183,7 @@ header {
 .header {
   position: relative;
   background: url(../img/banner.jpg) center center no-repeat;
+  background-size: cover;
 }
 .header__page {
   background-image: url(../img/bp1.jpg);
@@ -659,6 +660,10 @@ header {
     font-size: 14px;
     line-height: 20px;
     padding: 0;
+  }
+
+  #myCanvasContainer {
+    display: none;
   }
 }
 /*
@@ -1553,6 +1558,9 @@ h3 {
   .row__subtitle {
     font-size: 16px;
   }
+  .row__title {
+    line-height: 35px;
+  }
 
   .variants {
     padding: 20px 0;
@@ -1572,6 +1580,10 @@ h3 {
   }
   .variant__right p {
     font-size: 12px;
+  }
+
+  .bitcoin {
+    display: none;
   }
 
   .sponsors {
@@ -1611,6 +1623,24 @@ h3 {
   .adv__box img {
     margin: 0 5px;
   }
+  .adv__img_1 {
+    left: 122px;
+  }
+  .adv__img_2 {
+    right: 122px;
+  }
+  .adv__img_3 {
+    left: 122px;
+  }
+  .adv__img_4 {
+    right: 122px;
+  }
+  .adv__img_5 {
+    left: 121px;
+  }
+  .adv__img_6 {
+    right: 121px;
+  }
 
   .sert {
     padding: 20px 0;
@@ -1639,6 +1669,10 @@ h3 {
   }
   .serts__item {
     margin-bottom: 15px;
+  }
+
+  .investors__item:first-child:before {
+    left: 12%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1696,11 +1730,18 @@ h3 {
     position: static;
     margin-bottom: 15px;
   }
+  .adv__box span {
+    font-size: 15px;
+  }
 
   img.adv__img {
     display: none;
   }
   img.adv__img_1, img.adv__img_2, img.adv__img_3, img.adv__img_4, img.adv__img_5, img.adv__img_6 {
+    display: none;
+  }
+
+  .bitcoin {
     display: none;
   }
 
@@ -1715,6 +1756,9 @@ h3 {
     max-width: 320px;
     width: 90%;
     margin-bottom: 15px;
+  }
+  .investors__item:first-child:before {
+    left: 25px;
   }
 
   .sert {

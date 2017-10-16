@@ -171,7 +171,7 @@ $(document).ready(function(){
     var dTime = $('.calculator__time');
     var calcButt = $(".calculator__butt")
     $(calcButt).click(function(){
-    	var result = (+dSumm.val()) * 0.06 * (+dTime.val()) + (+dSumm.val()) ;
+    	var result = (+dSumm.val()) * 0.06 * (+dTime.val());
     	$(".result").text(result);
     });		   	
    			
