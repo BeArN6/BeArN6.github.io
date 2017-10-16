@@ -211,8 +211,6 @@ $(document).ready(function() {
    //Graph
    	var date = new Date();
    	var day = date.getDay();
-   	var month = date.getMonth();
-   	alert(month);
 	
 	switch(day) {
   		case 0:  
@@ -238,3 +236,6 @@ $(document).ready(function() {
     		break;
 	}
  });
+
+
+
