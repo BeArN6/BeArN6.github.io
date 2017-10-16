@@ -105,10 +105,10 @@ h3{
 .nowrap{white-space: nowrap!important;}
 
 
-/* loader */
+/* loader 
 .loaded .main-wrapper{visibility:hidden;}
 .icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
-.loaded .icon-load{display:block;}
+.loaded .icon-load{display:block;}*/
 
 
 /*
@@ -519,27 +519,66 @@ h3{
 		color: #343434;
 		padding: 0;
 		&_1{
-			left: 100px;
+			left: 128px;
 		}
 		&_2{
-			left: 260px;
+			left: 285px;
 		}
 		&_3{
-			left: 420px;
+			left: 440px;
 		}
 		&_4{
-			left: 580px;
+			left: 595px;
 		}
 		&_5{
 			left: 740px;
 		}
 		&_6{
-			left: 900px;
+			left: 895px;
 		}
 		&_7{
-			left: 1060px;
+			left: 1052px;
 		}
 	}
+}
+.btc{
+	&__price{
+		position: absolute;
+		font: 15px RB;
+		color: #343434;
+		background: #fff;
+    	padding: 4px 8px;
+    	border-radius: 4px;
+    	display: none;
+		&_1{
+			left: 76px;
+    		top: 250px;
+		}
+		&_2{
+			left: 230px;
+			top: 232px;
+		}
+		&_3{
+			left: 380px;
+			top: 197px;
+		}
+		&_4{
+			left: 535px;
+			top: 183px;
+		}
+		&_5{
+			left: 695px;
+			top: 171px;
+		}
+		&_6{
+			left: 848px;
+			top: 168px;
+		}
+		&_7{
+			left: 996px;
+			top: 149px;
+		}
+	}	
 }
 .investors{
 	background: url(../img/banner2.jpg) center center no-repeat;

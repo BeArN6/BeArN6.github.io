@@ -214,6 +214,7 @@ header {
   margin-left: -10.5px;
   bottom: 50px;
   cursor: pointer;
+  display: none;
 }
 
 .headertop {
@@ -878,27 +879,10 @@ h3 {
   white-space: nowrap !important;
 }
 
-/* loader */
-.loaded .main-wrapper {
-  visibility: hidden;
-}
-
-.icon-load {
-  background: url(../img/loader.gif) no-repeat left top;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-left: -20px;
-  margin-left: -20px;
-  display: none;
-}
-
-.loaded .icon-load {
-  display: block;
-}
-
+/* loader 
+.loaded .main-wrapper{visibility:hidden;}
+.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.loaded .icon-load{display:block;}*/
 /*
 ================================================================================
 |                                     CONTENT                                 |
@@ -1307,25 +1291,63 @@ h3 {
   padding: 0;
 }
 .bitcoin__day_1 {
-  left: 100px;
+  left: 128px;
 }
 .bitcoin__day_2 {
-  left: 260px;
+  left: 285px;
 }
 .bitcoin__day_3 {
-  left: 420px;
+  left: 440px;
 }
 .bitcoin__day_4 {
-  left: 580px;
+  left: 595px;
 }
 .bitcoin__day_5 {
   left: 740px;
 }
 .bitcoin__day_6 {
-  left: 900px;
+  left: 895px;
 }
 .bitcoin__day_7 {
-  left: 1060px;
+  left: 1052px;
+}
+
+.btc__price {
+  position: absolute;
+  font: 15px RB;
+  color: #343434;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: none;
+}
+.btc__price_1 {
+  left: 76px;
+  top: 250px;
+}
+.btc__price_2 {
+  left: 230px;
+  top: 232px;
+}
+.btc__price_3 {
+  left: 380px;
+  top: 197px;
+}
+.btc__price_4 {
+  left: 535px;
+  top: 183px;
+}
+.btc__price_5 {
+  left: 695px;
+  top: 171px;
+}
+.btc__price_6 {
+  left: 848px;
+  top: 168px;
+}
+.btc__price_7 {
+  left: 996px;
+  top: 149px;
 }
 
 .investors {

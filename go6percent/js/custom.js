@@ -215,24 +215,31 @@ $(document).ready(function() {
 	switch(day) {
   		case 0:  
     		$('.bitcoin__dot_7').show();
+    		$('.btc__price_7').show();
     		break;
   		case 1:  // if (x === 'value2')
     		$('.bitcoin__dot_1').show();
+    		$('.btc__price_1').show();
     		break;
     	case 2:  // if (x === 'value2')
     		$('.bitcoin__dot_2').show();
+    		$('.btc__price_2').show();
     		break;
     	case 3:  // if (x === 'value2')
     		$('.bitcoin__dot_3').show();
+    		$('.btc__price_3').show();
     		break;
     	case 4:  // if (x === 'value2')
     		$('.bitcoin__dot_4').show();
+    		$('.btc__price_4').show();
     		break;
     	case 5:  // if (x === 'value2')
     		$('.bitcoin__dot_5').show();
+    		$('.btc__price_5').show();
     		break;
     	case 6:  // if (x === 'value2')
     		$('.bitcoin__dot_6').show();
+    		$('.btc__price_6').show();
     		break;
 	}
  });
