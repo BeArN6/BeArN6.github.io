@@ -74,6 +74,7 @@ footer{
 @media screen and (max-width: 767px) {
 	.continfo{
 		&__item {
+			min-width: 80px;
 			img{
 				max-width: 16px;
     			margin-right: 3px;
