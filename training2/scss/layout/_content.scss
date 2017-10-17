@@ -85,7 +85,7 @@ h3{
 	padding-bottom: 5%;
 	&__img{
 		position: absolute;
-		left: 10%;
+		left: 16%;
 		bottom: 0;
 		max-width: 738px;
     	width: 33%;
@@ -95,7 +95,7 @@ h3{
 		padding: 4% 0;
 		position: absolute;
 		bottom: 30px;
-		left: 23%;
+		left: 31%;
 		background: url(../img/icon1-4.png) center center no-repeat;
 		background-size: 100%;
 		text-align: center;
@@ -108,7 +108,7 @@ h3{
 .block1text{
 	max-width: 34%;
 	text-align: center;
-	margin-left: 43%;
+	margin-left: 49%;
 }
 .block1top{
 	display: flex;
@@ -255,6 +255,7 @@ h3{
 			display: inline-block;
 			width: 100%;
 			margin-bottom: 3%;
+			text-align: center;
 		}
 		p{
 			color: #231f20;
@@ -444,6 +445,7 @@ h3{
 	&__info{
 		&_h2{
 			font: 1.455026455026455VW HI;
+			text-align: left;
 		}
 	}
 	&__cont{

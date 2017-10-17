@@ -18,6 +18,14 @@ function viewport(){
 	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
 };
 
+//To prices
+var b11Pos = $(".block11").offset().top;
+$('.to_b11').click(function(){
+	$('html, body').animate({
+		scrollTop: b11Pos
+	},2000);
+}); 
+
 //Show more
 $(".block10__a").click(function(){
 	$(this).siblings(".block10__p").children(".block10__more").show();
