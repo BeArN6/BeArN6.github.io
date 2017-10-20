@@ -198,7 +198,7 @@ $(document).ready(function() {
    if( ! $('#myCanvas').tagcanvas({
      textColour : '#ffffff',
      noSelect: true,
-     maxSpeed : 0.03,
+     maxSpeed : 0.1,
      depth : 0.75,
      zoom: 0.85,
      wheelZoom: false
@@ -215,31 +215,52 @@ $(document).ready(function() {
 	switch(day) {
   		case 0:  
     		$('.bitcoin__dot_7').show();
-    		$('.btc__price_7').show();
+    		$('.btc__price').css({
+    			'left': '996px',
+    			'top': '149px'
+    		});
     		break;
   		case 1:  // if (x === 'value2')
     		$('.bitcoin__dot_1').show();
-    		$('.btc__price_1').show();
+    		$('.btc__price').css({
+    			'left': '76px',
+    			'top': '250px'
+    		});
     		break;
     	case 2:  // if (x === 'value2')
     		$('.bitcoin__dot_2').show();
-    		$('.btc__price_2').show();
+    		$('.btc__price').css({
+    			'left': '230px',
+    			'top': '232px'
+    		});
     		break;
     	case 3:  // if (x === 'value2')
     		$('.bitcoin__dot_3').show();
-    		$('.btc__price_3').show();
+    		$('.btc__price').css({
+    			'left': '380px',
+    			'top': '197px'
+    		});
     		break;
     	case 4:  // if (x === 'value2')
     		$('.bitcoin__dot_4').show();
-    		$('.btc__price_4').show();
+    		$('.btc__price').css({
+    			'left': '535px',
+    			'top': '183px'
+    		});
     		break;
     	case 5:  // if (x === 'value2')
     		$('.bitcoin__dot_5').show();
-    		$('.btc__price_5').show();
+    		$('.btc__price').css({
+    			'left': '695px',
+    			'top': '171px'
+    		});
     		break;
     	case 6:  // if (x === 'value2')
     		$('.bitcoin__dot_6').show();
-    		$('.btc__price_6').show();
+    		$('.btc__price').css({
+    			'left': '848px',
+    			'top': '168px'
+    		});
     		break;
 	}
  });

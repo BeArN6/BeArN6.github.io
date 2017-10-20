@@ -119,6 +119,134 @@ h3{
 .content{	
 	order: 2;
     -webkit-order: 2;
+    &_lk{
+    	height: 90vh;
+    }
+}
+.contentlk{
+	display: flex;
+	justify-content: flex-start;
+	&__left{
+		width: 17%;
+		min-width: 320px;
+		background: #5f1858;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	&__profile{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background: #4e1048;
+		padding: 15px 30px;
+	}
+	&__img{
+		margin-right: 10px;
+		border-radius: 100%;
+	}
+	&__text{
+		p{
+			padding: 0;
+		}
+		&_1{
+			color: #ffffff;
+			font: 14px RL;
+		}
+		&_2{
+			color: #ffffff;
+			font: 16px RB;
+		}
+		&_3{
+			color: #9c4393;
+			font: 14px RL;
+		}
+	}
+	&__list{
+		padding: 10px 0;
+		border-bottom: 1px solid #7a2471;
+		height: 100%;
+		ul{
+			list-style: none;
+		}
+	}
+	&__li{
+		display: flex;
+		align-items: center;
+		padding: 0 30px;
+		border-top: 1px solid #4e1447;
+		border-bottom: 1px solid #7a2471;
+		&_title{
+			border-bottom: 1px solid #7a2471;
+			font: 15px RB;
+			text-transform: uppercase;
+			padding: 15px 30px;
+			a{
+				color: #fff;
+			}
+		}
+		i{
+			width: 40px;
+			height: 42px;
+			margin: 2px 0;
+			margin-right: 15px;
+			display: inline-block;
+			border-right: 1px solid #7a2471;
+			background: url(../img/phone.png) center center no-repeat;
+		}
+		a{
+			font: 15px RM;
+			color: #fff;
+		}
+		&_1{
+			i{
+				background: url(../img/icn1.png) left center no-repeat;
+			}
+		}
+		&_2{
+			i{
+				background: url(../img/icn2.png) left center no-repeat;
+			}
+		}
+		&_3{
+			i{
+				background: url(../img/icn3.png) left center no-repeat;
+			}
+		}
+		&_4{
+			i{
+				background: url(../img/icn4.png) left center no-repeat;
+			}
+		}
+		&_5{
+			i{
+				background: url(../img/icn5.png) left center no-repeat;
+			}
+		}
+		&_6{
+			i{
+				background: url(../img/icn6.png) left center no-repeat;
+			}
+		}
+		&_7{
+			i{
+				background: url(../img/icn7.png) left center no-repeat;
+			}
+		}
+	}
+	&__copyright{
+		padding: 10px 30px;
+		border-top: 1px solid #4e1447;
+		p{
+			color: #ff7af2;
+			font: 14px RL;
+			padding: 0;
+		}
+	}
+	&__right{
+		width: 83%;
+		background: #f9fbfc;
+	}
 }
 .variants{
 	padding: 40px 0;
@@ -549,7 +677,6 @@ h3{
 		background: #fff;
     	padding: 4px 8px;
     	border-radius: 4px;
-    	display: none;
 		&_1{
 			left: 76px;
     		top: 250px;
@@ -577,6 +704,12 @@ h3{
 		&_7{
 			left: 996px;
 			top: 149px;
+		}
+		&_lk{
+			position: static;
+    		background: none;
+    		color: #fff;
+    		font-size: 15px;
 		}
 	}	
 }
