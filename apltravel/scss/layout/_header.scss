@@ -1,0 +1,188 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+/*---Checkout---*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	&__logotext{
+		color: #f49c15;
+		font-size: 24px;
+		line-height: normal;
+	}
+	&__phone{
+		color: #734a93;
+		font-size: 24px;
+		line-height: normal;
+	}
+}
+.navigation{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	nav{
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__ul{
+		list-style: none;
+	}
+	&__link{
+		color: #734a93;
+	    font-family: "Arial", sans-serif;
+	    font-size: 13px;
+	    font-weight: 400;
+	    line-height: 15px;
+	}
+}
+.login{
+	background: #f7f8f7;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding-top: 11px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	a{
+		color: #878887;
+		font-family: "Arial", sans-serif;
+	    font-size: 13px;
+	}
+}
+.htabs{
+	border-bottom: 1px solid #f0f0f0;
+	padding-left: 5px;
+	&__item{
+		padding: 9px 30px;
+		border: 1px solid #cccccc;
+		border-bottom: 0;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -.36em;
+		cursor: pointer;
+		span{
+			color: #f49c15;
+			font-family: "Arial", sans-serif;
+	    	font-size: 14px;
+		}
+		&_active{
+			background: #ff9a00;
+			color: #fff;
+			border-color: #ffa61f;
+			span{
+				color: #fff;
+			}
+		}
+		&_right{
+			float: right;
+			span{
+				color: #aa55b8;
+			}
+		}
+	}
+}
+/*---Checkout end---*/
+/*---Main---*/
+.header{
+	&_main{
+		padding: 25px 0;
+	}
+	&__logotext{
+		&_main{
+			color: #ff992f;
+			font-family: 'Noto Sans', sans-serif;
+			font-size: 18px;
+		}
+	}
+	&__reg{
+		button{
+			color: #734a93;
+			font-family: "Arial", sans-serif;
+			font-size: 13px;
+			background: #fff;
+			border-radius: 6px;
+			border: 1px solid #734a93;
+			padding: 5px 15px;
+			margin: 0 4px;
+		}
+	}
+}
+.navmain{
+	&__li{
+		display: inline-block;
+		border-right: 1px solid #c4c4c4;
+		padding: 0 20px;
+		&:last-child{
+			border: 0;
+		}
+	}
+	&__link{
+		color: #734a93;
+		font-family: "Arial", sans-serif;
+	   	font-size: 14px;
+	   	line-height: 20px;
+	   	padding-bottom: 2px;
+	   	&:hover{
+	   		border-bottom: 3px solid #f49c15;
+	   	}
+	   	img{
+	   		margin-bottom: -4px;
+	   	}
+	   	&_message{
+			i{
+				background: url(../img/message.png);
+	    		height: 16px;
+	    		width: 17px;
+	    		display: inline-block;
+	    		margin-bottom: -4px;
+			}
+	   	}
+	   	&_bell{
+			i{
+				background: url(../img/bell.png);
+	    		height: 16px;
+	    		width: 14px;
+	    		display: inline-block;
+	    		margin-bottom: -4px;
+			}
+	   	}
+	}	
+}
+/*---Main end---*/
+
+
+@media screen and (min-width: 1201px) and (max-width: 1400px){
+	
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}

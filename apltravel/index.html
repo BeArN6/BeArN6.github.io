@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet">	
+</head>
+<body class="loaded">
+
+							
+<!-- BEGIN BODY -->
+
+<div class="main-wrapper">
+
+<!-- BEGIN CONTENT -->
+
+	<main class="content">		
+		<div class="wrapper">
+			<div class="infotabs">
+				<div class="infotabs__item infotabs__item_succ">
+					<a href="">1. Выберите ваш номер</a>
+				</div>
+				<div class="infotabs__item infotabs__item_active">
+					<a href="">2. Введите информацию для бронирования</a>
+				</div>
+				<div class="infotabs__item">
+					<a href="">3. Введите платежную информацию </a>
+				</div>
+				<div class="infotabs__item">
+					<a href="">4. Готово!</a>
+				</div>
+			</div>
+			<div class="breadcrumbs">
+				<a href="" class="breadcrumbs__a">APL Travel</a>
+				<span class="breadcrumbs__span">/</span>
+				<a href="" class="breadcrumbs__a">Туры в Турцию</a>
+				<span class="breadcrumbs__span">/</span>
+				<a href="" class="breadcrumbs__a">Туры в Аланию</a>
+				<span class="breadcrumbs__span">/</span>
+				<a href="" class="breadcrumbs__a breadcrumbs__a_active">Отель Club Paradiso</a>
+			</div>
+			<div class="rating">
+				<img src="img/country.jpg" alt="" class="rating__icon">
+				<a href="" class="rating__name">Club Paradiso</a>		
+				<div id="reviewStars-input">
+				    <input id="star-4" type="radio" name="reviewStars"/>
+				    <label title="gorgeous" for="star-4"></label>
+
+				    <input id="star-3" type="radio" name="reviewStars"/>
+				    <label title="good" for="star-3"></label>
+
+				    <input id="star-2" type="radio" name="reviewStars"/>
+				    <label title="regular" for="star-2"></label>
+
+				    <input id="star-1" type="radio" name="reviewStars"/>
+				    <label title="poor" for="star-1"></label>
+
+				    <input id="star-0" type="radio" name="reviewStars"/>
+				    <label title="bad" for="star-0"></label>
+				</div>
+			</div>
+			<h2 class="infotitle">Надежное бронирование - займет не более 2 минут!</h2>
+			<div class="checkout">
+				<div class="checkout__title">
+					<h3>Введите свои данные</h3>
+					<p><span>Номер 1:</span> Стандартный двухместный номер с видом на море</p>
+				</div>
+				<form action="" class="checkout__form form">
+					<div class="form__item">
+						<label for="">Имя</label>
+						<input type="text">
+					</div>
+					<div class="form__item">
+						<label for="">Фамилия</label>
+						<input type="text">
+					</div>
+					<br>
+					<div class="form__item">
+						<label for="">Адрес электронной почты</label>
+						<input type="email">
+					</div>
+					<div class="form__item">
+						<label for="">Номер телефона</label>
+						<ul class="select">
+							<li class="select__item_init">
+								<img src="img/ukr.png" alt="">
+							</li>
+							<li data-value="value 1" class="select__item">
+								<img src="img/ukr.png" alt="">
+							</li>
+							<li data-value="value 2" class="select__item select__item_active">
+								<img src="img/ukr.png" alt="">
+							</li>
+							<li data-value="value 3" class="select__item">
+								<img src="img/ukr.png" alt="">
+							</li>
+						</ul>
+						<input type="text" value="+380">
+					</div>
+					<div class="form__item">
+						<input type="checkbox" id='check1' class="form__checkbox" />
+						<label for="check1" class="form__checkboxlabel">Зарегистрировать аккаунт <a href="">Узнать зачем</a></label>
+					</div>
+				</form>
+				<div class="guestinfo guestinfo1">
+					<span>Заполнение сведений о гостях</span>
+					<img class="guestinfo__arrow" src="img/arrow.png" alt="">
+				</div>
+				<form action="" class="checkout__form checkout__form_pb form">
+					<div class="form__item">
+						<label for="">Имя</label>
+						<input type="text">
+					</div>
+					<div class="form__item">
+						<label for="">Фамилия</label>
+						<input type="text">
+					</div>
+					<br>
+					<div class="form__item">
+						<label for="">Страна выдачи паспорта</label>
+						<ul class="select2">
+							<li class="select2__item_init">
+								Украина
+							</li>
+							<li data-value="value 1" class="select2__item">
+								USA
+							</li>
+							<li data-value="value 2" class="select2__item select__item_active">
+								Украина
+							</li>
+							<li data-value="value 3" class="select2__item">
+								Россия
+							</li>
+						</ul>
+					</div>
+					<div class="form__item">
+						<label for="">Серия</label>
+						<input type="text">
+					</div>
+					<div class="form__item form__item_last">
+						<label for="">Номер паспорта</label>
+						<input type="text">
+					</div>
+					<br>
+				</form>
+				<div class="checkout__title checkout__more">
+					<h3>Есть особые пожелания? </h3>
+					<p>Мы уведомим объект или владельца, как только вы заброруете!</p>
+					<div class="guestinfo guestinfo2 guestinfo_nopadding">
+						<span>Добавте ваши специальные запросы</span>
+						<img class="guestinfo__arrow" src="img/arrow.png" alt="">
+					</div>
+					<p>Не забывайте, что все запросы выполняются при наличии возможностей.</p>
+					<form action="" class="checkout__form checkout__form_nopadding form">
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check2' class="form__checkbox" />
+							<label for="check2" class="form__checkboxlabel">Номер для некурящих</label>
+						</div>
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check6' class="form__checkbox" />
+							<label for="check6" class="form__checkboxlabel">Две односпальные кровати</label>
+						</div>
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check3' class="form__checkbox" />
+							<label for="check3" class="form__checkboxlabel">Номер на верхних этажах</label>
+						</div>
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check7' class="form__checkbox" />
+							<label for="check7" class="form__checkboxlabel">Тихий номер</label>
+						</div>
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check4' class="form__checkbox" />
+							<label for="check4" class="form__checkboxlabel">Большая кровать</label>
+						</div>
+						<div class="form__item form__item_check form__item_big">
+							<input type="checkbox" id='check8' class="form__checkbox" />
+							<label for="check8" class="form__checkboxlabel">Детская кроватка <br> (может потребоваться дополнительная плата)</label>
+						</div>
+						<div class="form__item form__item_check">
+							<input type="checkbox" id='check5' class="form__checkbox" />
+							<label for="check5" class="form__checkboxlabel">Услуга трансфера</label>
+						</div>
+						<p class="form__p">Дополнительные примечания</p>
+						<textarea class="form__textarea"></textarea>
+						<div class="form__button">
+							<button>Продолжить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="sidebar">
+				<div class="sidebartop">
+					<div class="sidebar__title">
+						<h3>Выберите перелет</h3>
+					</div>
+					<div class="sidebar__radio radiobutt">
+						<form action="">
+							<div class="radiobutt__item">
+								<input id="radio1" type="radio" value="WindRose">
+								<label for="radio1">WindRose</label>
+								<span>7w 7611 / 7612</span>
+								<div class="radiobutt__to">
+									<img src="img/to.png" alt="">
+									<p>Киев (KBP) - Анталия (AYT) <br>
+									<span>13:05 24.09.17, Вс.</span></p>
+								</div>
+								<div class="radiobutt__back">
+									<img src="img/to.png" alt="">
+									<p>Анталия (AYT) - Киев (KBP) <br>
+									<span>16:30 24.09.17, Вс.</span></p>
+								</div>
+							</div>
+							<div class="radiobutt__item">
+								<input id="radio2" type="radio">
+								<label for="radio2">Turkish Airlines</label>
+								<span>7w 7611 / 7612</span>
+								<div class="radiobutt__to">
+									<img src="img/to.png" alt="">
+									<p>Киев (KBP) - Анталия (AYT) <br>
+									<span>13:05 24.09.17, Вс.</span></p>
+								</div>
+								<div class="radiobutt__back">
+									<img src="img/to.png" alt="">
+									<p>Анталия (AYT) - Киев (KBP) <br>
+									<span>16:30 24.09.17, Вс.</span></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="tourinfo">
+					<div class="tourinfo__title">
+						<img src="img/tour.png" alt="">
+						<h2>The Oberoi, Bali</h2>
+						<div id="reviewStars-input">
+						    <input id="star-4" type="radio" name="reviewStars"/>
+						    <label title="gorgeous" for="star-4"></label>
+						    <input id="star-3" type="radio" name="reviewStars"/>
+						    <label title="good" for="star-3"></label>
+						    <input id="star-2" type="radio" name="reviewStars"/>
+						    <label title="regular" for="star-2"></label>
+						    <input id="star-1" type="radio" name="reviewStars"/>
+						    <label title="poor" for="star-1"></label>
+						    <input id="star-0" type="radio" name="reviewStars"/>
+						    <label title="bad" for="star-0"></label>
+						</div>
+						<p>Seminyak Beach, Jalan Kayu Aya, 80033 Семиньяк, Индонезия</p>
+					</div>
+					<div class="tourinfo__main">
+						<h3>Данные номера 1: </h3>
+						<p>Максимум 2 человека, Стандартный 
+двухместный номер с видом на море</p>
+						<p><span>Заезд:</span> пятница, 13 октября 2017 г.</p>
+						<p><span>Выезд:</span> среда, 25 октября 2017 г.</p>
+						<p><span>12 ночей</span></p>
+					</div>
+				</div>
+				<div class="price">
+					<h3>Промо код</h3>
+					<input type="text"><button>Применить</button>
+					<div class="price__total">
+						<span>Итоговая сумма:</span>
+						<img src="img/info.png" alt="">
+						<a>7 440 грн</a>
+					</div>
+					<div class="price__info">
+						<img src="img/money.png" alt="">
+						<span>Никакой конвертации и скрытых платежей    </span>
+					</div>
+					<div class="price__prepayment">
+						<span>Предоплата:</span>
+						<a>5 000 грн</a>
+					</div>
+					<div class="price__main">
+						<span>Основной платеж:</span>
+						<a>2 440 грн</a>
+					</div>
+					<div class="price__bonus">
+						<img src="img/gift.png" alt="">
+						<p>
+							<span>77 грн -</span><br>
+							бонус за это бронирование
+							<img src="img/info.png" alt="">
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="unicid">
+				<p>Уникальный идентификатор: <span>1001602</span></p>
+			</div>
+		</div>		
+	</main>	
+			
+<!-- CONTENT EOF   -->
+
+<!-- BEGIN HEADER -->
+
+	<header>		
+		<div class="wrapper">
+			<div class="header">
+				<img src="img/logo.jpg" alt="" class="header__logo">
+				<p class="header__logotext">Туры со СКИДКАМИ</p>
+				<a href="tel:0(800)307720" class="header__phone">0 (800) 307-720</a>
+				<div class="header__nav navigation">
+					<nav>
+						<ul class="navigation__ul">
+							<li><a href="" class="navigation__link">О компании</a></li>
+							<li><a href="" class="navigation__link">Вопрос - ответ</a></li>
+							<li><a href="" class="navigation__link">Отзывы туристов</a></li>
+							<li><a href="" class="navigation__link">Награды</a></li>
+						</ul>
+					</nav>
+					<div class="login">
+						<img src="img/man.jpg" alt="">
+						<a href="">ВХОД</a>
+					</div>
+				</div>
+			</div>
+			<div class="htabs">
+				<div class="htabs__item htabs__item_active"><span>Авиа Туры</span></div>
+				<div class="htabs__item"><span>Круизы</span></div>
+				<div class="htabs__item"><span>Exciting Trips</span></div>
+				<div class="htabs__item"><span>Top Sale</span></div>
+				<div class="htabs__item htabs__item_right"><span>APL Family + 66822</span></div>
+			</div>
+		</div>		
+	</header>
+	
+<!-- HEADER EOF   -->	
+
+<!-- BEGIN FOOTER -->	
+	
+	<footer>
+		<div class="wrapper">
+			<div class="fleft">
+				<p class="fleft__title">О компании</p>
+				<nav class="fleft__nav">
+					<ul>
+						<li><a class="fleft__link" href="">О компании</a></li>
+						<li><a class="fleft__link" href="">Награды</a></li>
+						<li><a class="fleft__link" href="">Зарабатывайте легко</a></li>
+						<li><a class="fleft__link" href="">Сотрудничество</a></li>
+					</ul>
+				</nav>
+				<nav class="fleft__nav">
+					<ul>
+						<li><a class="fleft__link" href="">Наши офисы</a></li>
+						<li><a class="fleft__link" href="">APL Family</a></li>
+						<li><a class="fleft__link" href="">Отзывы туристов</a></li>
+						<li><a class="fleft__link" href="">Дополнительные услуги</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="fright">
+				<div class="fright__search">
+					<input type="text" placeholder="введите курорт / название отеля">
+					<button>Найти туры</button>
+				</div>
+				<p class="fright__title">Горящие туры</p>
+				<div class="tours">
+					<div class="tours__item">
+						<p>Горящие туры в Египет</p>
+						<p>Горящие туры в Тунис</p>
+					</div>
+					<div class="tours__item">
+						<p>Горящие туры в Турцию</p>
+						<p>Горящие туры в Испанию</p>
+					</div>
+					<div class="tours__item">
+						<p>Горящие туры в ОАЭ</p>
+						<p>Горящие туры в Грецию</p>
+					</div>
+				</div>
+			</div>
+			<div class="fbott">
+				<div class="fbott__item">
+					<a target="_blank" href=""><img src="img/fb.jpg" alt=""></a>
+					<a target="_blank" href=""><img src="img/insta.jpg" alt=""></a>
+					<button>Блог <span>APL Travel</span></button>
+				</div>
+				<div class="fbott__item">
+					<img src="img/card1.jpg" alt="">
+					<img src="img/card2.jpg" alt="">
+					<img src="img/card3.jpg" alt="">
+					<img src="img/card4.jpg" alt="">
+				</div>
+			</div>
+			<div class="copyright">
+				<p class="copyright__item">© Туристический оператор «APL Travel», 2006-2017</p>
+			</div>
+		</div>	
+	</footer>
+	
+<!-- FOOTER EOF   -->
+
+</div>		
+
+<div class="icon-load"></div>		
+
+<!-- BODY EOF   -->
+	
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>		
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script>
+	<!--
+	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+	<script type="text/javascript" src="js/components/slick.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+	-->
+	<script type="text/javascript" src="js/custom.js" ></script>
+</body>
+</html>
