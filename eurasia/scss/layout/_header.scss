@@ -1,0 +1,152 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+    .wrapper{
+    	max-width: 1260px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+    }
+}
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	&__butt{
+		width: 296px;
+		height: 50px;
+		border-radius: 35px;
+		background: #55cd63;
+		border: 2px solid #81da89;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: 'Play', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+		i{
+			display: inline-block;
+    		margin-right: 10px;
+			background: url(../img/wa.png) center center no-repeat;
+			width: 24px;
+			height: 25px;
+		}
+	}
+}
+.nav{
+	background: #fff;
+	li{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	a{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		color: #273c51;
+		text-transform: uppercase;
+		padding: 24px 0;
+		line-height: 80px;
+		&:hover{
+			border-bottom: 8px solid #ffd800;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	header {
+		.wrapper{
+			max-width: 990px;
+		}
+	}
+	.header{
+		&__butt{
+			width: 235px;
+    		height: 40px;
+    		font-size: 13px;
+		}
+	}
+	.nav{
+		li{
+			margin-right: 15px;
+		}
+		a{
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	header {
+		.wrapper{
+			max-width: 740px;
+			padding: 10px 0;
+		}
+	}
+	.nav{
+		li{
+			padding: 5px 0;
+		}
+		a{
+			padding: 0;
+    		line-height: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header {
+		.wrapper{
+			flex-direction: column-reverse;
+    		padding: 15px 0;
+		}
+	}
+	.header{
+		&__butt{
+			margin-bottom: 0;
+		}
+		&__buttcont{
+			display: flex;
+    		justify-content: space-between;
+		}
+	}
+	.nav{
+		margin-top: 15px;
+		li{
+			padding: 7px 0;
+			display: block;
+			text-align: center;
+		}
+		a{
+			font-size: 15px;
+			padding: 0;
+    		line-height: 0;
+		}
+	}
+	.toggle{
+		width: 40px;
+    	height: 40px;
+    	margin-left: 15px;
+    	cursor: pointer;
+	}
+}
