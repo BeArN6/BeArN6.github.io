@@ -114,11 +114,36 @@ $(document).ready(function(){
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png'></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev.png'></button>"
 	});
+	$('.popular__box,.popular__box_2').slick({
+		infinite: true,
+  		slidesToShow: 4,
+  		slidesToScroll: 1,
+  		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+	});
+	$('.reviews__slider').slick({
+		infinite: true,
+  		slidesToShow: 2,
+  		slidesToScroll: 1,
+  		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+	});
 
 	//Sidenav toggle
 	$('.sidenav__more').click(function(){
 		$(this).toggleClass('sidenav__more_active');
 		$(this).siblings('ul').slideToggle();
-	})
+	});
+
+	//Hover menu
+	$('.dropdown').hide();
+	$('.mainnav li').hover(function () {
+     	clearTimeout($.data(this,'timer'));
+     	$('.dropdown',this).stop(true,true).slideDown(200);
+  	}, function () {
+    	$.data(this,'timer', setTimeout($.proxy(function() {
+      		$('.dropdown',this).stop(true,true).slideUp(200);
+    	}, this), 100));
+  	});
 });
 
