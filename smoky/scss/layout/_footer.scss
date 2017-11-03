@@ -127,7 +127,25 @@ footer{
 
 
 @media screen and (max-width: 1200px) {
-	
+	.footer{
+		max-width: 100%;
+    	min-width: 100%;
+    	.wrapper{
+    		margin-left: auto;
+    		margin-right: auto;
+    		flex-wrap: wrap;
+    		max-width: 990px;
+    		min-width: 990px;
+    		justify-content: center;
+    	}
+    	&__box{
+    		margin-right: 20px;
+    		margin-bottom: 15px;
+    		.header__logo{
+    			margin-right: 20px;
+    		}
+    	}
+	}
 }
 
 @media screen and (min-width: 992px){
@@ -139,9 +157,60 @@ footer{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.footer{
+		max-width: 100%;
+    	min-width: 100%;
+    	.wrapper{
+    		margin-left: auto;
+    		margin-right: auto;
+    		flex-wrap: wrap;
+    		max-width: 770px;
+    		min-width: 770px;
+    		justify-content: center;
+    	}
+    	&__box{
+    		margin-right: 20px;
+    		margin-bottom: 15px;
+    		.header__logo{
+    			margin-right: 20px;
+    		}
+    	}
+	}
+	.subscribe{
+		.fmenu{
+			&__title{
+				text-align: center;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.footer{
+		max-width: 100%;
+    	min-width: 100%;
+    	padding-top: 15px;
+    	.wrapper{
+    		max-width: 100%;
+    		min-width: 100%;
+    		flex-wrap: wrap;
+    		justify-content: center;
+    	}
+    	&__box{
+    		text-align: center;
+    		margin-bottom: 10px;
+    		&_fl{
+    			min-height: auto;
+    		}
+    	}
+	}
+	.fmenu{
+		&__title{
+			min-height: auto;
+		}
+	}
+	.disclaimer{
+		font-size: 13px;
+    	padding: 0 15px;
+	}
 }

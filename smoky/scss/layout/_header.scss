@@ -19,6 +19,13 @@ header{
 		padding-top: 7px;
 		padding-bottom: 7px;
 		box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.22);
+		position: relative;
+	}
+	&__side{
+		display: none;
+		i{
+			font-size: 25px;
+		}
 	}
 	&__logo{
 		margin-right: 60px;
@@ -102,6 +109,10 @@ header{
 			margin-left: 2px;
 			padding-bottom: 3px;
 			border-bottom: 1px dashed #192028;
+		}
+		i{
+			color: #192028;
+			font-size: 17px;
 		}
 	}
 }
@@ -194,6 +205,9 @@ header{
 				box-shadow: 0px 10px 0px 0px rgba(255,255,255,1);
 			}
 		}
+		&:hover{
+			cursor: pointer;
+		}
 	}
 	&__img{
 		height: 50px;
@@ -214,6 +228,9 @@ header{
 			}
 		}
 		&_1{
+			span{
+				top: 17px;
+			}
 			i{
 				display: inline-block;
 				width: 39px;
@@ -505,7 +522,42 @@ header{
 
 
 @media screen and (max-width: 1200px) {
-	
+	.header{
+		background: #fff;
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
+		.wrapper{
+			min-width: 990px;
+    		max-width: 990px;
+    		flex-wrap: wrap;
+    		justify-content: center;
+    		box-shadow: 0px 0px 0 0;
+		}
+		&__side{
+			display: block;
+		    position: absolute;
+		    top: 10px;
+    		left: 5px;
+		}
+		&__logo{
+			margin-right: 10px;
+    		margin-left: 5px;
+		}
+	}
+	.htabs{
+		&__item{
+			width: 76.5px;
+			&_4{
+				border-right: 1px solid #e1e1e1;
+			}
+		}
+	}
+	.search{
+		&__box{
+			input{
+				width: 200px;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 992px){
@@ -517,9 +569,72 @@ header{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.header{
+		background: #fff;
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
+		.wrapper{
+			min-width: 770px;
+    		max-width: 770px;
+    		flex-wrap: wrap;
+    		justify-content: center;
+    		box-shadow: 0px 0px 0 0;
+		}
+		&__side{
+			display: block;
+		    position: absolute;
+		    top: 15px;
+		    right: 48px;
+		}
+	}
+	.htabs{
+		&__item{
+			&_4{
+				border-right: 1px solid #e1e1e1;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		margin-top: 52px;
+		.wrapper{
+			min-width: 100%;
+    		max-width: 100%;
+    		flex-direction: column;
+		}
+		&__logo{
+			margin: 0 auto;
+    		margin-bottom: 7px;
+		}
+		&__cont{
+			margin-right: 0;
+		}
+		&__time{
+			p{
+				padding-left: 0;
+				text-align: center;
+				br{
+					display: none;
+				}
+			}
+		}
+		&__call{
+			margin-bottom: 10px;
+    		display: inline-block;
+		}
+		&__info{
+			margin-right: 0;
+		}
+	}
+	.search{
+		margin-bottom: 5px;
+	}
+	.htabs{
+		justify-content: space-between;
+    	width: 100%;
+    	&__item{
+    		width: 25%;
+    	}
+	}
 }
