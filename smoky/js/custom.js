@@ -177,7 +177,7 @@ $(document).ready(function(){
 				.animate({opacity: 1,left: "0"},200)
 		});
 	});
-	$('.modal__close,.overlay_2').click(function(){
+	$('.overlay_2').click(function(){
 		$(".sidebar").animate({opacity: 1, left:"-10%"}, 200,
 			function(){
 				$(this).css('display', 'none'); 

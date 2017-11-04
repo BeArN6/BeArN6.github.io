@@ -78,6 +78,9 @@ footer{
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
+		&:hover{
+			color: #a91c5f;
+		}
 	}
 }
 .subscribe{

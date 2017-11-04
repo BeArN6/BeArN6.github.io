@@ -129,6 +129,9 @@ h3{
 			font-weight: 300;
 			cursor: pointer;
 			line-height: 30px;
+			&:hover{
+				color: #a91c5f;
+			}
 		}
 	}
 	&__text{
@@ -557,6 +560,9 @@ h3{
 			font-family: 'Roboto', sans-serif;
 		    font-size: 14px;
 		    font-weight: 400;
+		    &:hover{
+		    	color: #a91c5f;
+		    }
 		}
 		i{
 			font-size: 18px;
@@ -743,6 +749,11 @@ h3{
 	ul{
 		width: 100%;
 		list-style: none;
+    	display: flex;
+    	justify-content: space-around;
+    	ul{
+    		display: block;
+    	}
 	}
 	li{
 		display: inline-block;
@@ -772,7 +783,7 @@ h3{
 	box-shadow: 0 0 0 9999px rgba(255,255,255,0.9) inset;
 	position: absolute;
 	padding: 10px 30px;
-	bottom: -366px;
+	top: 30px;
 	left: 0;
 	z-index: 7;
 	width: 895px;
@@ -1736,12 +1747,16 @@ h3{
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		span{
+		a{
 			color: #503471;
 			font-family: 'Roboto', sans-serif;
 			font-size: 12px;
 			font-weight: 400;
 			margin-bottom: 7px;
+			cursor: pointer;
+			&:hover{
+				color: #a91c5f;
+			}
 		}
 	}
 	&__sub{
