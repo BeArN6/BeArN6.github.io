@@ -292,5 +292,40 @@ $(document).ready(function(){
 		}
 		$("#slider").slider("values",1,value2);
 	});
+
+	//Cart page checkbox
+	$(".delivery__checkcont label,.delivery__checkcont input[type='radio']")
+	.click(function(){
+		$('.delivery__checkcont').removeClass("delivery__checkcont_active");
+		$(this).parent('.delivery__checkcont').addClass("delivery__checkcont_active");
+	});
+
+	//Tag cloud
+    var words = [
+	    {text: "SLK", weight: 14},
+	    {text: "Al Aziz", weight: 6},
+	    {text: "Mini", weight: 32},
+	    {text: "Mini", weight: 6},
+	    {text: "Mini LP", weight: 9},
+	    {text: "Zumo", weight: 13},
+	    {text: "Zumo Mini", weight: 5},
+	    {text: "Standart LP", weight: 6},
+	    {text: "Фараон M", weight: 13},
+	    {text: "SkySeven", weight: 10},
+	    {text: "Mini MagiX", weight: 4},
+	    {text: "MYA MOZZA", weight: 1},
+	    {text: "Econo MYA", weight: 9},
+	    {text: "Gelato-Hookah", weight: 10},
+	    {text: "MYA Econo", weight: 6}
+	];
+	$("#demo").jQCloud(words, {
+		shape: 'rectangular'
+	});
+	$("#demo1").jQCloud(words, {
+		shape: 'rectangular'
+	});
+	$("#demo2").jQCloud(words, {
+		shape: 'rectangular'
+	});
 });
 
