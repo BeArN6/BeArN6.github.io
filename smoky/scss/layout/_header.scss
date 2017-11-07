@@ -38,8 +38,10 @@ header{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		img{
+		i{
 			margin-right: 6px;
+			color: #3a424b;
+			font-size: 22px;
 		}
 		a{
 			color: #3a424b;
@@ -88,8 +90,12 @@ header{
 		justify-content: flex-start;
 		align-items: center;
 		margin-bottom: 3px;
-		img{
+		i{
 			margin-left: 5px;
+			width: 17px;
+			height: 17px;
+			background-image: url(../img/icon_24-hours.svg);
+    		background-size: 100% 100%;
 		}
 	}
 	&__city{
@@ -153,8 +159,10 @@ header{
 	&__close{
 		position: absolute;
     	right: 6px;
-    	top: 11px;
+    	top: 9px;
     	cursor: pointer;
+    	color: #aeaeae;
+    	font-size: 14px;
 	}
 	button{
 		width: 34px;
@@ -167,6 +175,10 @@ header{
 		display: flex;
     	align-items: center;
     	justify-content: center;
+    	i{
+    		color: #ffffff;
+    		font-size: 14px;
+    	}
 	}
 }
 .htabs{
@@ -261,7 +273,7 @@ header{
 				display: inline-block;
 				width: 35px;
 				height: 35px;
-				background: url(../img/basket.png) center center no-repeat;
+				background: url(../img/icon_basket.svg) center center no-repeat;
 			}
 			&:hover{
 				i{
