@@ -160,7 +160,34 @@ $(document).ready(function(){
 	  	]
 	});
 
+	//Constructor slider
+	$('.const__slider').slick({
+		infinite: true,
+  		slidesPerRow: 3,
+    	rows: 2,
+  		slidesToScroll: 1,
+  		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+		responsive: [
+	    {
+	      breakpoint: 990,
+	      settings: {
+	        slidesPerRow: 2,
+    		rows: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesPerRow: 1,
+    		rows: 1,
+	      }
+	    }
+	  	]
+	});
+
 	//Sidenav toggle
+	$(".allfilters_2").hide();
 	$('.sidenav__more').click(function(){
 		$(this).toggleClass('sidenav__more_active');
 		$(this).siblings().not('.sidenav__text').slideToggle();
@@ -291,7 +318,6 @@ $(document).ready(function(){
 		$("#slider").slider("values",0,value1);	
 	});
 
-	
 	$("input#maxCost").change(function(){
 		var value1=$("input#minCost").val();
 		var value2=$("input#maxCost").val();
@@ -303,6 +329,184 @@ $(document).ready(function(){
 			$("input#maxCost").val(value2);
 		}
 		$("#slider").slider("values",1,value2);
+	});
+
+	//2 UI
+	$("#slider2").slider({
+		min: 0,
+		max: 8000,
+		values: [0,8000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost2").val($("#slider2").slider("values",0));
+			$("input#maxCost2").val($("#slider2").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost2").val($("#slider2").slider("values",0));
+			$("input#maxCost2").val($("#slider2").slider("values",1));
+    	}
+	});
+	$("input#minCost2").change(function(){
+		var value1=$("input#minCost2").val();
+		var value2=$("input#maxCost2").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost2").val(value1);
+		}
+		$("#slider2").slider("values",0,value1);	
+	});
+
+	
+	$("input#maxCost2").change(function(){
+		var value1=$("input#minCost2").val();
+		var value2=$("input#maxCost2").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost2").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost2").val(value2);
+		}
+		$("#slider2").slider("values",1,value2);
+	});
+
+	//3 UI
+	$("#slider3").slider({
+		min: 0,
+		max: 8000,
+		values: [0,8000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost3").val($("#slider3").slider("values",0));
+			$("input#maxCost3").val($("#slider3").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost3").val($("#slider3").slider("values",0));
+			$("input#maxCost3").val($("#slider3").slider("values",1));
+    	}
+	});
+	$("input#minCost3").change(function(){
+		var value1=$("input#minCost3").val();
+		var value2=$("input#maxCost3").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost3").val(value1);
+		}
+		$("#slider3").slider("values",0,value1);	
+	});
+
+	
+	$("input#maxCost3").change(function(){
+		var value1=$("input#minCost3").val();
+		var value2=$("input#maxCost3").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost3").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost3").val(value2);
+		}
+		$("#slider3").slider("values",1,value2);
+	});
+
+	//4 UI
+	$("#slider4").slider({
+		min: 0,
+		max: 8000,
+		values: [0,8000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost4").val($("#slider4").slider("values",0));
+			$("input#maxCost4").val($("#slider4").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost4").val($("#slider4").slider("values",0));
+			$("input#maxCost4").val($("#slider4").slider("values",1));
+    	}
+	});
+	$("input#minCost4").change(function(){
+		var value1=$("input#minCost4").val();
+		var value2=$("input#maxCost4").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost4").val(value1);
+		}
+		$("#slider4").slider("values",0,value1);	
+	});
+
+	//Star placeholder
+	$('.perinfo_phone2').focus(function() {
+    $('.perinfo_label2').hide();
+});
+
+$('.perinfo_phone2').blur(function() {
+    if ($(this).val().trim() === '') {
+        $('.perinfo_label2').show();
+    }
+});
+
+	//Anchor sidebar menu
+	$(".sideinfo__item a").click(function(){
+  	 	event.preventDefault();
+  	 	var id  = $(this).attr('href'),
+  	 	top = $(id).offset().top;
+  	 	$('body,html').animate({scrollTop: top - 15}, 1500);
+  	});
+	
+	$("input#maxCost4").change(function(){
+		var value1=$("input#minCost4").val();
+		var value2=$("input#maxCost4").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost4").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost4").val(value2);
+		}
+		$("#slider4").slider("values",1,value2);
+	});
+
+	//5 UI
+	$("#slider5").slider({
+		min: 0,
+		max: 8000,
+		values: [0,8000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost5").val($("#slider5").slider("values",0));
+			$("input#maxCost5").val($("#slider5").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost5").val($("#slider5").slider("values",0));
+			$("input#maxCost5").val($("#slider5").slider("values",1));
+    	}
+	});
+	$("input#minCost5").change(function(){
+		var value1=$("input#minCost5").val();
+		var value2=$("input#maxCost5").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost5").val(value1);
+		}
+		$("#slider5").slider("values",0,value1);	
+	});
+
+	
+	$("input#maxCost5").change(function(){
+		var value1=$("input#minCost5").val();
+		var value2=$("input#maxCost5").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost5").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost5").val(value2);
+		}
+		$("#slider5").slider("values",1,value2);
 	});
 
 	//Cart page checkbox
@@ -339,6 +543,33 @@ $(document).ready(function(){
 	$("#demo2").jQCloud(words, {
 		shape: 'rectangular'
 	});
+
+	//Constructor
+	$(document).on("click touchend",".click1, click21, .click31",function(){
+		$(".kalitem__img_1").toggleClass("kalitem__img_active");
+		$(".constructor__part_1").toggleClass("constructor__part_active");
+	});
+	$(document).on("click touchend",".click2, click22, .click32",function(){
+		$(".kalitem__img_2").toggleClass("kalitem__img_active");
+		$(".constructor__part_2").toggleClass("constructor__part_active");
+	});
+	$(document).on("click touchend",".click3, click23, .click33",function(){
+		$(".kalitem__img_3").toggleClass("kalitem__img_active");
+		$(".constructor__part_3").toggleClass("constructor__part_active");
+	});
+	$(document).on("click touchend",".click4, click24, .click34",function(){
+		$(".kalitem__img_4").toggleClass("kalitem__img_active");
+		$(".constructor__part_4").toggleClass("constructor__part_active");
+	});
+	$(document).on("click touchend",".click5, click25, .click35",function(){
+		$(".kalitem__img_5").toggleClass("kalitem__img_active");
+		$(".constructor__part_5").toggleClass("constructor__part_active");
+	});
+	$(document).on("click touchend",".click6, click26, .click36",function(){
+		$(".kalitem__img_6").toggleClass("kalitem__img_active");
+		$(".constructor__part_6").toggleClass("constructor__part_active");
+	});
+
 	//Check color
 	$(".colorbox__item").click(function(){
 		$(this).siblings(".colorbox__item").removeClass('colorbox__item_active');

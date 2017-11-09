@@ -28,8 +28,8 @@ header{
 		}
 	}
 	&__logo{
-		margin-right: 60px;
-		margin-left: 18px;
+		width: 275px;
+    	text-align: center;
 	}
 	&__cont{
 		margin-right: 15px;
@@ -38,11 +38,6 @@ header{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		i{
-			margin-right: 6px;
-			color: #3a424b;
-			font-size: 22px;
-		}
 		a{
 			color: #3a424b;
 			font-family: 'Roboto', sans-serif;
@@ -58,7 +53,6 @@ header{
 			font-size: 10px;
 			font-weight: 700;
 			text-transform: uppercase;
-			padding-left: 26px;
     		line-height: 12px;
 		}
 	}
@@ -179,6 +173,9 @@ header{
     		color: #ffffff;
     		font-size: 14px;
     	}
+    	&:hover{
+    		background: #8f8f8f;
+    	}
 	}
 }
 .htabs{
@@ -210,8 +207,8 @@ header{
 		&_4{
 			position: relative;
 			.htabs__img span{
-				 top: 12px;
-    			left: 17px;
+				top: 11px;
+    			left: 18.5px;
 			}
 			p{
 				box-shadow: 0px 10px 0px 0px rgba(255,255,255,1);
@@ -234,7 +231,7 @@ header{
 			font-weight: 400;
 			position: absolute;
 		}
-		&:hover{
+		&_active{
 			span{
 				color: #a91c5f;
 			}
@@ -243,42 +240,11 @@ header{
 			span{
 				top: 17px;
 			}
-			i{
-				display: inline-block;
-				width: 39px;
-				height: 34px;
-				background: url(../img/heart.png) center center no-repeat;
-			}
-			&:hover{
-				i{
-					background: url(../img/hearth.png) center center no-repeat;
-				}
-			}
 		}
-		&_3{
-			i{
-				display: inline-block;
-				width: 39px;
-				height: 42px;
-				background: url(../img/user.png) center center no-repeat;
-			}
-			&:hover{
-				i{
-					background: url(../img/userh.png) center center no-repeat;
-				}
-			}
-		}
-		&_4{
-			i{
-				display: inline-block;
-				width: 35px;
-				height: 35px;
-				background: url(../img/icon_basket.svg) center center no-repeat;
-			}
-			&:hover{
-				i{
-					background: url(../img/basketh.png) center center no-repeat;
-				}
+		&_2{
+			span{
+				top: 11px;
+    			margin-left: -0.5px;
 			}
 		}
 	}
