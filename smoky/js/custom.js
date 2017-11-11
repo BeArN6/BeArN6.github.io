@@ -109,18 +109,6 @@ $(window).bind('resize', handler);
 
 $(document).ready(function(){
 	var windWidth = $(window).width();
-	//Sortby
-	$(".select2").on("click", ".select2__item_init", function() {
-	    $(this).closest(".select2").children('li:not(.select2__item_init)').slideDown();
-	});
-
-	var allOptions2 = $(".select2").children('li:not(.select2__item_init)');
-	$(".select2").on("click", "li:not(.select2__item_init)", function() {
-	    allOptions2.removeClass('selected');
-	    $(this).addClass('selected');
-	    $(".select2").children('.select2__item_init').html($(this).html());
-	    allOptions2.slideUp();
-	});
 	//Slider
 	$('.slider').slick({
 		dots: true,
@@ -184,6 +172,31 @@ $(document).ready(function(){
 	      }
 	    }
 	  	]
+	});
+
+	//Sortby
+	$(".select2").on("click", ".select2__item_init", function() {
+	    $(this).closest(".select2").children('li:not(.select2__item_init)').slideDown();
+	});
+
+	var allOptions2 = $(".select2").children('li:not(.select2__item_init)');
+	$(".select2").on("click", "li:not(.select2__item_init)", function() {
+	    allOptions2.removeClass('selected');
+	    $(this).addClass('selected');
+	    $(".select2").children('.select2__item_init').html($(this).html());
+	    allOptions2.slideUp();
+	});
+
+	$(".select3").on("click", ".select3__item_init", function() {
+	    $(this).closest(".select3").children('li:not(.select3__item_init)').slideDown();
+	});
+
+	var allOptions3 = $(".select3").children('li:not(.select3__item_init)');
+	$(".select3").on("click", "li:not(.select3__item_init)", function() {
+	    allOptions3.removeClass('selected');
+	    $(this).addClass('selected');
+	    $(".select3").children('.select3__item_init').html($(this).html());
+	    allOptions3.slideUp();
 	});
 
 	//Sidenav toggle
@@ -439,34 +452,13 @@ $(document).ready(function(){
 
 	//Star placeholder
 	$('.perinfo_phone2').focus(function() {
-    $('.perinfo_label2').hide();
-});
+    	$('.perinfo_label2').hide();
+	});
 
-$('.perinfo_phone2').blur(function() {
-    if ($(this).val().trim() === '') {
-        $('.perinfo_label2').show();
-    }
-});
-
-	//Anchor sidebar menu
-	$(".sideinfo__item a").click(function(){
-  	 	event.preventDefault();
-  	 	var id  = $(this).attr('href'),
-  	 	top = $(id).offset().top;
-  	 	$('body,html').animate({scrollTop: top - 15}, 1500);
-  	});
-	
-	$("input#maxCost4").change(function(){
-		var value1=$("input#minCost4").val();
-		var value2=$("input#maxCost4").val();
-	
-		if (value2 > 8000) { value2 = 8000; $("input#maxCost4").val(8000)}
-
-		if(parseInt(value1) > parseInt(value2)){
-			value2 = value1;
-			$("input#maxCost4").val(value2);
-		}
-		$("#slider4").slider("values",1,value2);
+	$('.perinfo_phone2').blur(function() {
+	    if ($(this).val().trim() === '') {
+	        $('.perinfo_label2').show();
+	    }
 	});
 
 	//5 UI
@@ -509,11 +501,38 @@ $('.perinfo_phone2').blur(function() {
 		$("#slider5").slider("values",1,value2);
 	});
 
+	//Anchor sidebar menu
+	$(".sideinfo__item a").click(function(){
+  	 	event.preventDefault();
+  	 	var id  = $(this).attr('href'),
+  	 	top = $(id).offset().top;
+  	 	$('body,html').animate({scrollTop: top - 15}, 1500);
+  	});
+	
+	$("input#maxCost4").change(function(){
+		var value1=$("input#minCost4").val();
+		var value2=$("input#maxCost4").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost4").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost4").val(value2);
+		}
+		$("#slider4").slider("values",1,value2);
+	});
+
 	//Cart page checkbox
 	$(".delivery__checkcont label,.delivery__checkcont input[type='radio']")
 	.click(function(){
 		$('.delivery__checkcont').removeClass("delivery__checkcont_active");
 		$(this).parent('.delivery__checkcont').addClass("delivery__checkcont_active");
+	});
+
+	$(".payment__checkcont label,.payment__checkcont input[type='radio']")
+	.click(function(){
+		$('.payment__checkcont').removeClass("payment__checkcont_active");
+		$(this).parent('.payment__checkcont').addClass("payment__checkcont_active");
 	});
 
 	//Tag cloud
@@ -576,9 +595,27 @@ $('.perinfo_phone2').blur(function() {
 		$(this).addClass('colorbox__item_active');
 	});
 
+	//Account tabs
+	$(".accountcont__tab_1").click(function(){
+		$(".myinfo,.mycomments,.myorders").hide();
+		$(".accountcont__tab").removeClass('accountcont__tab_active');
+		$(this).addClass('accountcont__tab_active');
+		$('.myinfo').show();
+	});
+	$(".accountcont__tab_2").click(function(){
+		$(".myinfo,.mycomments,.myorders").hide();
+		$(".accountcont__tab").removeClass('accountcont__tab_active');
+		$(this).addClass('accountcont__tab_active');
+		$('.mycomments').show();
+	});
+	$(".accountcont__tab_3").click(function(){
+		$(".myinfo,.mycomments,.myorders").hide();
+		$(".accountcont__tab").removeClass('accountcont__tab_active');
+		$(this).addClass('accountcont__tab_active');
+		$('.myorders').show();
+	});
+
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
-
-	
 });
 

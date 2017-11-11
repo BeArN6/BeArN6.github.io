@@ -7,6 +7,7 @@
 	<title>Главная</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="css/jqcloud.css">
 	<!--Google font-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -1653,6 +1654,35 @@
 				<div class="sideconstructor">
 					<a href=""><img src="img/constructor.png" alt=""></a>
 				</div>
+				<div class="sideinfo">
+					<h2 class="sideinfo__title">полезная информация</h2>
+					<div class="sideinfo_box">
+						<div class="sideinfo__item">
+							<a href="#ex1">ИНФОРМАЦИЯ О КОМПАНИИ</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+						<div class="sideinfo__item">
+							<a href="#ex2">ИЗ ЧЕГО СОСТОИТ КАЛЬЯН</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+						<div class="sideinfo__item">
+							<a href="#ex3">КАКОЙ КАЛЬЯН ВЫБРАТЬ?</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+						<div class="sideinfo__item">
+							<a href="#ex4">Классификация кальянов</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+						<div class="sideinfo__item">
+							<a href="#ex5">Размеры кальянов</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+						<div class="sideinfo__item">
+							<a href="#ex6">Названия и виды кальянов</a>
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
 				<div class="sidevideo">
 					<h2 class="sidevideo__title">видео</h2>
 					<div class="sidevideo__box sidevideo__box_1">
@@ -1834,324 +1864,485 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="main__container cart__container">
+				<div class="main__container balance__container">
 					<div class="breadcrumbs">
 						<a href="">Главная</a>
 						<span>/</span>
-						<a href="">Оформление заказа</a>
+						<a href="">Списки сравнения</a>
 					</div>
-					<div class="cart">
-						<h2 class="main__title">Корзина</h2>
-						<div class="carttable">
-							<div class="carttable__row carttable__row_title">
-								<div class="carttable__col carttable__col_1">
-									<h2 class="carttable__title">
-										Товар
-									</h2>
+					<div class="balance">
+						<h2 class="main__title">Списки сравнения</h2>
+						<div class="wishlist__butts balance__butts">
+							<button class="showmore">Очистить всё</button>
+						</div>
+						<h3 class="main__subtitle">Кальяны:</h3>
+						<div class="wishlist__goods balance__goods">
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">-25%</span>
+									<div class="popular__timer">
+										<span>20:30:46</span>
+									</div>
 								</div>
-								<div class="carttable__col carttable__col_2">
-									<h2 class="carttable__title">
-										Скидка
-									</h2>
+								<div class="popular__img">
+									<img src="img/pop1.jpg" alt="">
 								</div>
-								<div class="carttable__col carttable__col_3">
-									<h2 class="carttable__title">
-										Цена
-									</h2>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
 								</div>
-								<div class="carttable__col carttable__col_4">
-									<h2 class="carttable__title">
-										Количество
-									</h2>
+								<div class="popular__name">
+									<p>Кальян Алладин</p>
 								</div>
-								<div class="carttable__col carttable__col_5">
-									<h2 class="carttable__title">
-										Стоимость
-									</h2>
+								<div class="popular__price pprice">
+									<span class="pprice__old">4 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<span class="pprice__new">3 599<i class="fa fa-rub" aria-hidden="true"></i></span>
 								</div>
-								<div class="carttable__col carttable__col_6">
-									<h2 class="carttable__title">
-									
-									</h2>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color1.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
 								</div>
 							</div>
-							<div class="carttable__row">
-								<div class="carttable__col carttable__col_1">
-									<div class="carttable__item">
-										<div class="carttable__img">
-											<img src="img/pop1.jpg" alt="">
-										</div>
-										<div class="carttable__info">
-											<h3 class="carttable__name">
-												Кальян Алладин
-											</h3>
-											<div class="carttable__color">
-												<span>Цвет:</span>
-												<div class="colorbox_blu2 colorbox__item"></div>
-											</div>
-										</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">NEW</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop2.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Чашка для кальяна из<br> глины «Фаянс» № 1</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">5 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color2.png" alt="">
 									</div>
 								</div>
-								<div class="carttable__col carttable__col_2">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">25%</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_3">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">4 800 руб.</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_4">
-									<div class="carttable__item carttable__item_c">
-										<div class="popular__amount">
-											<span>
-												<i class="fa fa-minus" aria-hidden="true"></i>
-											</span>
-											<input type="text" tabindex="0">
-											<span>
-												<i class="fa fa-plus" aria-hidden="true"></i>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_5">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">3 599 руб.</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_6">
-									<div class="carttable__item carttable__item_c">
-										<div class="carttable__remove">
-											<img src="img/close1.png" alt="">
-										</div>
-									</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
 								</div>
 							</div>
-							<div class="carttable__row">
-								<div class="carttable__col carttable__col_1">
-									<div class="carttable__item">
-										<div class="carttable__img">
-											<img src="img/pop6.jpg" alt="">
-										</div>
-										<div class="carttable__info">
-											<h3 class="carttable__name">
-												Уголь для кальяна «Cocolemon» 96 кубиков
-											</h3>
-										</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">хит</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop3.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Sirius»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">6 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color3.png" alt="">
 									</div>
 								</div>
-								<div class="carttable__col carttable__col_2">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">0%</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_3">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">450 руб.</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_4">
-									<div class="carttable__item carttable__item_c">
-										<div class="popular__amount">
-											<span>
-												<i class="fa fa-minus" aria-hidden="true"></i>
-											</span>
-											<input type="text" tabindex="0">
-											<span>
-												<i class="fa fa-plus" aria-hidden="true"></i>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_5">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">1 800 руб.</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_6">
-									<div class="carttable__item carttable__item_c">
-										<div class="carttable__remove">
-											<img src="img/close1.png" alt="">
-										</div>
-									</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
 								</div>
 							</div>
-							<div class="carttable__row">
-								<div class="carttable__col carttable__col_1">
-									<div class="carttable__item">
-										<div class="carttable__img">
-											<img src="img/gift.png" alt="">
-										</div>
-										<div class="carttable__info">
-											<h3 class="carttable__name">
-												Подарок от Smoky Shop
-											</h3>
-										</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+								</div>
+								<div class="popular__img">
+									<img src="img/pop4.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Chrome»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">3 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color4.png" alt="">
 									</div>
 								</div>
-								<div class="carttable__col carttable__col_2">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">0%</p>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">хит</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop3.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Sirius»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">6 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color3.png" alt="">
 									</div>
 								</div>
-								<div class="carttable__col carttable__col_3">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">0 руб.</p>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+								</div>
+								<div class="popular__img">
+									<img src="img/pop4.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Chrome»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">3 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color4.png" alt="">
 									</div>
 								</div>
-								<div class="carttable__col carttable__col_4">
-									<div class="carttable__item carttable__item_c">
-										<div class="popular__amount">
-											<span>
-												<i class="fa fa-minus" aria-hidden="true"></i>
-											</span>
-											<input type="text" tabindex="0">
-											<span>
-												<i class="fa fa-plus" aria-hidden="true"></i>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_5">
-									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">0 руб.</p>
-									</div>
-								</div>
-								<div class="carttable__col carttable__col_6">
-									<div class="carttable__item carttable__item_c">
-										<div class="carttable__remove">
-											<img src="img/close1.png" alt="">
-										</div>
-									</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="cart__cont">
-						<div class="perinfo">
-							<h2 class="main__title">Личные данные</h2>
-							<div class="perinfo__butts">
-								<button class="showmore">ВОЙТИ В АККАУНТ</button>
-								<button class="showmore">БЫСТРЫЙ ЗАКАЗ</button>
-							</div>
-							<p class="perinfo__p">Войдите и получайте с каждого заказа баллы</p>
-							<form action="">
-								<div class="perinfo__input">
-									<label for="">Имя получателя<span>*</span></label>
-									<input type="text" placeholder="Введите имя">
-								</div>
-								<div class="perinfo__input">
-									<label for="">Фамилия получателя<span>*</span></label>
-									<input type="text" placeholder="Введите фамилию">
-								</div>
-								<div class="perinfo__input">
-									<label for="">Контактный телефон<span>*</span></label>
-									<input class="perinfo_phone1" type="text" value="+7">
-									<div class="perinfo__p2cont">
-										<input class="perinfo_phone2" id="placeholder" type="text">
-										<label class="perinfo_label2" for="placeholder">**********</label>
+						<button class="showmore">Сравнить эти товары</button>
+						<h3 class="main__subtitle">Табаки:</h3>
+						<div class="wishlist__goods balance__goods">
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">-25%</span>
+									<div class="popular__timer">
+										<span>20:30:46</span>
 									</div>
 								</div>
-								<div class="perinfo__input">
-									<label for="">Полный адрес<span>*</span></label>
-									<input type="text" placeholder="75112, г. Москва, ул. Ленина 25/17">
+								<div class="popular__img">
+									<img src="img/pop1.jpg" alt="">
 								</div>
-								<div class="perinfo__input">
-									<label for="">E-mail<span>*</span></label>
-									<input type="email" placeholder="Введите e-mail">
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
 								</div>
-								<div class="perinfo__input">
-									<label for="">Комментарий</label>
-									<textarea placeholder="Ваш комментарий к заказу"></textarea>
+								<div class="popular__name">
+									<p>Кальян Алладин</p>
 								</div>
-								<div class="perinfo__check">
-									<input type="checkbox" id="pcheck1" class="perinfo__checkbox">
-									<label for="pcheck1" class="perinfo__checkboxlabel">Оформляя заказ, я подтверждаю свое согласие с <a href="">условиями использование сайта и условиями возврата товара</a></label>
+								<div class="popular__price pprice">
+									<span class="pprice__old">4 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<span class="pprice__new">3 599<i class="fa fa-rub" aria-hidden="true"></i></span>
 								</div>
-							</form>
-						</div>
-						<div class="delivery">
-							<h2 class="main__title delivery__title">Доставка</h2>
-							<form action="">
-								<div class="delivery__checkcont">
-									<div class="delivery__img">
-										<img src="img/d1.png" alt="">
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
 									</div>
-									<input id="del1" type="radio" name="del">
-									<label for="del1">Самовывоз</label>
-								</div>
-								<div class="delivery__checkcont delivery__checkcont_2">
-									<div class="delivery__img">
-										<img src="img/d2.png" alt="">
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
 									</div>
-									<input id="del2" type="radio" name="del">
-									<label for="del2">Курьером по Москве <br> и МО</label>
-								</div>
-								<div class="delivery__checkcont delivery__checkcont_3">
-									<div class="delivery__img">
-										<img src="img/d3.png" alt="">
+									<div class="popular__tool">
+										<img src="img/color1.png" alt="">
 									</div>
-									<input id="del3" type="radio" name="del">
-									<label for="del3">Байкал-Сервис<br> (в регионы)</label>
 								</div>
-								<div class="delivery__checkcont delivery__checkcont_4">
-									<div class="delivery__img">
-										<img src="img/d4.png" alt="">
-									</div>
-									<input id="del4" type="radio" name="del">
-									<label for="del4">Деловые линии<br> (в регионы)</label>
-								</div>
-								<div class="delivery__checkcont">
-									<div class="delivery__img">
-										<img src="img/d5.png" alt="">
-									</div>
-									<input id="del5" type="radio" name="del">
-									<label for="del5">Автотрейдинг</label>
-								</div>
-								<div class="delivery__checkcont">
-									<div class="delivery__img">
-										<img src="img/d6.png" alt="">
-									</div>
-									<input id="del6" type="radio" name="del">
-									<label for="del6">Почта России </label>
-								</div>
-							</form>
-						</div>
-						<div class="cartpayment">
-							<h2 class="main__title cartpayment__title">Оплата</h2>
-							<form action="">
-								<div class="payment__checkcont">
-									<div class="payment__img">
-										<img src="img/d7.png" alt="">
-									</div>
-									<input id="pay1" type="radio" name="pay">
-									<label for="pay1">Безналичный рассчёт</label>
-								</div>
-								<div class="payment__checkcont">
-									<div class="payment__img">
-										<img src="img/d8.png" alt="">
-									</div>
-									<input id="pay2" type="radio" name="pay">
-									<label for="pay2">Наличными</label>
-								</div>
-							</form>
-							<div class="cartpayment__total">
-								<div class="cartpayment__block">
-									<h2 class="cartpayment__subtitle">ИТОГО</h2>
-									<p class="cartpayment__p"><b>Количество товаров</b><span>5</span></p>
-									<p class="cartpayment__p"><b>Товаров на сумму</b><span>6 600 руб.</span></p>
-									<p class="cartpayment__p"><b>Скидки</b><span>1 201 руб.</span></p>
-									<a href="">Есть купон или промокод?</a>
-								</div>
-								<div class="cartpayment__border"></div>
-								<div class="cartpayment__block">
-									<h2 class="cartpayment__subtitle cartpayment__subtitle_b">СУММА ЗАКАЗА</h2>
-									<p class="cartpayment__price">5 399 руб.</p>
-									<button class="showmore">ОФОРМИТЬ ЗАКАЗ</button>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
 								</div>
 							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">NEW</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop2.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Чашка для кальяна из<br> глины «Фаянс» № 1</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">5 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color2.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">хит</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop3.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Sirius»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">6 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color3.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+								</div>
+								<div class="popular__img">
+									<img src="img/pop4.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Chrome»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">3 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color4.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+									<span class="popular__stiker">хит</span>
+								</div>
+								<div class="popular__img">
+									<img src="img/pop3.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Sirius»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">6 900<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color3.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
+							<div class="popular__item gcont__item">
+								<div class="popular__top">
+								</div>
+								<div class="popular__img">
+									<img src="img/pop4.jpg" alt="">
+								</div>
+								<div class="popular__amount">
+									<span>
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<input type="text">
+									<span>
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+								<div class="popular__name">
+									<p>Кальян «Chrome»</p>
+								</div>
+								<div class="popular__price pprice">
+									<span class="pprice__current">3 800<i class="fa fa-rub" aria-hidden="true"></i></span>
+								</div>
+								<button class="butt__tocart">В КОРЗИНУ</button>
+								<div class="popular__toolbox">
+									<div class="popular__tool">
+										<i class="fa fa-heart-o" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<i class="fa fa-balance-scale" aria-hidden="true"></i>
+									</div>
+									<div class="popular__tool">
+										<img src="img/color4.png" alt="">
+									</div>
+								</div>
+								<div class="carttable__remove wishlist__remove">
+									<img src="img/close1.png" alt="">
+								</div>
+							</div>
 						</div>
+						<button class="showmore">Сравнить эти товары</button>
 					</div>
 				</div>	
 			</div>
@@ -2651,7 +2842,7 @@
 	-->
 	<script type="text/javascript" src="js/custom.js" ></script>
 	<script type="text/javascript" src="js/components/slick.js" ></script>
-	<script type="text/javascript" src="js/components/jquery.awesomeCloud-0.2.js" ></script>
+	<script type="text/javascript" src="js/components/jqcloud-1.0.4.js" ></script>
 	<script src="https://use.fontawesome.com/6b27e5d2aa.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
