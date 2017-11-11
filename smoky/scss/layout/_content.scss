@@ -159,6 +159,7 @@ h3{
 			background-size: contain;
 			width: 16px;
 			height: 25px;
+			display: inline-block;
 		}
 		&_2{
 			background-image: url(../img/icon_tobaccoo.svg);
@@ -166,18 +167,21 @@ h3{
 			background-size: 100% 100%;
 			width: 21px;
 			height: 14px;
+			display: inline-block;
 		}
 		&_3{
 			background-image: url(../img/icon_coal.svg);
 			background-size: contain;
 			width: 21px;
 			height: 17px;
+			display: inline-block;
 		}
 		&_4{
 			background-image: url(../img/icon_accessories.svg);
 			background-size: contain;
 			width: 21px;
 			height: 21px;
+			display: inline-block;
 		}
 		&_5{
 			background-image: url(../img/icon_smoking-blends.svg);
@@ -185,48 +189,56 @@ h3{
 			background-size: 100% 100%;
 			width: 20px;
 			height: 16px;
+			display: inline-block;
 		}
 		&_6{
 			background-image: url(../img/icon_kolba.svg);
 			background-size: contain;
 			width: 14px;
 			height: 19px;
+			display: inline-block;
 		}
 		&_7{
 			background-image: url(../img/icon_elHookah.svg);
 			background-size: contain;
 			width: 22px;
 			height: 22px;
+			display: inline-block;
 		}
 		&_8{
 			background-image: url(../img/icon_vape.svg);
 			background-size: contain;
 			width: 12px;
 			height: 24px;
+			display: inline-block;
 		}
 		&_9{
 			background-image: url(../img/icon_vapeWater.svg);
 			background-size: contain;
 			width: 10px;
 			height: 22px;
+			display: inline-block;
 		}
 		&_10{
 			background-image: url(../img/icon_game.svg);
 			background-size: contain;
 			width: 22px;
 			height: 22px;
+			display: inline-block;
 		}
 		&_11{
 			background-image: url(../img/icon_tea.svg);
 			background-size: contain;
 			width: 22px;
 			height: 14px;
+			display: inline-block;
 		}
 		&_12{
 			background-image: url(../img/icon_candy.svg);
 			background-size: contain;
 			width: 22px;
 			height: 21px;
+			display: inline-block;
 		}
 	}
 	&__more{
@@ -968,6 +980,11 @@ h3{
     			color: #a91c5f;
     		}
 		}
+		a.showall{
+			color: #000;
+			text-decoration: underline;
+			font-weight: 500;
+		}
 	}
 	li.dropdown__title{
 		margin-bottom: 10px;
@@ -977,6 +994,99 @@ h3{
 	    	font-family: 'Roboto', sans-serif;
 	    	font-size: 14px;
 	    	font-weight: 500;
+		}
+	}
+	.popular__item{
+		padding-bottom: 10px;
+	}
+	&__boxitem{
+		a{
+			display: inline-block;
+			color: #000;
+		}
+	}
+}
+.dropdowncatalog{
+	flex-wrap: wrap;
+	ul{
+		min-width: 16% !important;
+		margin-bottom: 20px;
+	}
+	li.dropdown__title a{
+		color: #000; 
+		font-size: 13px;
+		line-height: normal;
+	}
+	li{
+		a{
+			color: #000; 
+		}
+	}
+	.sidenav__svg_1{
+		background-size: 100%;
+    	width: 15px;
+    	height: 23px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_2{
+		background-size: 100%;
+    	width: 24px;
+    	height: 14px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_3{
+		background-size: 100%;
+    	width: 18px;
+    	height: 14px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_4{
+		background-size: 100%;
+    	width: 24px;
+    	height: 24px;
+    	transform: rotate(-20deg);
+    	filter: brightness(0);
+	}
+	.sidenav__svg_5{
+		background-size: 100%;
+    	width: 18px;
+    	height: 21px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_6{
+		filter: brightness(0);
+	}
+	.sidenav__svg_7{
+		filter: brightness(0);
+	}
+	.sidenav__svg_8{
+		filter: brightness(0);
+	}
+	.sidenav__svg_9{
+		background-size: 100%;
+    	width: 12px;
+    	height: 26px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_10{
+		filter: brightness(0);
+	}
+	.sidenav__svg_11{
+		background-size: 100%;
+    	width: 24px;
+    	height: 16px;
+    	filter: brightness(0);
+	}
+	.sidenav__svg_12{
+    	filter: brightness(0);
+	}
+	.dropdown__title{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		min-height: 30px;
+		a{
+			margin-left: 5px;
 		}
 	}
 }
@@ -1199,6 +1309,7 @@ h3{
 		padding-bottom: 0;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
 		position: relative;
+		background: #fff;
 	}
 	&__top{
 		display: flex;
