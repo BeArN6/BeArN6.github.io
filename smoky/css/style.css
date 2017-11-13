@@ -1969,7 +1969,6 @@ h3 {
 }
 .mainnav li {
   display: block;
-  padding: 8px 15px;
   border-radius: 30px;
 }
 .mainnav li:hover {
@@ -3396,7 +3395,7 @@ h3 {
   z-index: 100;
   cursor: text;
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 15px;
   color: #aeaeae;
   font-family: 'Roboto', sans-serif;
@@ -3524,7 +3523,7 @@ h3 {
   content: '';
   position: absolute;
   left: -80px;
-  top: -1px;
+  top: 1px;
   width: 16px;
   height: 16px;
   border: 1px solid #aeaeae;
@@ -3543,7 +3542,7 @@ h3 {
   height: 8px;
   background: #000;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: -76px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
@@ -3569,7 +3568,7 @@ h3 {
 .payment__checkcont_2 [type="radio"]:not(:checked) + label:before, .payment__checkcont_3 [type="radio"]:checked + label:before,
 .payment__checkcont_3 [type="radio"]:not(:checked) + label:before, .payment__checkcont_4 [type="radio"]:checked + label:before,
 .payment__checkcont_4 [type="radio"]:not(:checked) + label:before {
-  top: 6px;
+  top: 9px;
 }
 .delivery__checkcont_2 [type="radio"]:checked + label:after,
 .delivery__checkcont_2 [type="radio"]:not(:checked) + label:after, .delivery__checkcont_3 [type="radio"]:checked + label:after,
@@ -3578,7 +3577,7 @@ h3 {
 .payment__checkcont_2 [type="radio"]:not(:checked) + label:after, .payment__checkcont_3 [type="radio"]:checked + label:after,
 .payment__checkcont_3 [type="radio"]:not(:checked) + label:after, .payment__checkcont_4 [type="radio"]:checked + label:after,
 .payment__checkcont_4 [type="radio"]:not(:checked) + label:after {
-  top: 10px;
+  top: 13px;
 }
 .delivery__img, .payment__img {
   margin-left: 37px;
@@ -3705,11 +3704,13 @@ h3 {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  -webkit-text-size-adjust: 100%;
 }
 #clock div span {
   font-size: 8px;
   display: inline-block;
   margin-top: -2px;
+  -webkit-text-size-adjust: 100%;
 }
 
 /*Cart_goods page*/
@@ -4041,11 +4042,15 @@ h3 {
 .goodreview__input_3 {
   width: 181px;
 }
+.goodreview__kapchacont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .goodreview__kapcha {
   height: 31px;
   width: 88px;
   margin-right: 4px;
-  float: left;
 }
 .goodreview__kapcha img {
   width: 100%;
@@ -5256,10 +5261,7 @@ h3 {
 
   .mainnav ul {
     display: flex;
-    justify-content: space-between;
-  }
-  .mainnav li {
-    padding: 8px 10px;
+    justify-content: space-around;
   }
 
   .information__sizetext {
