@@ -1955,7 +1955,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .mainnav ul {
   width: 100%;
@@ -1970,6 +1970,7 @@ h3 {
 .mainnav li {
   display: block;
   border-radius: 30px;
+  padding: 8px 10px;
 }
 .mainnav li:hover {
   background: #a91c5f;
@@ -2137,6 +2138,7 @@ h3 {
 .slider {
   min-height: 390px;
   margin-bottom: 30px;
+  -moz-appearance: none;
 }
 .slider__item {
   background: url(../img/banner.jpg) center center no-repeat;
@@ -2401,6 +2403,24 @@ h3 {
   color: #fff;
   background: #bd3c7a;
   padding: 5.5px 7px;
+}
+.popular__moreimg {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #cfcfcf;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+}
+.popular__moreimg a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  border-top: 0;
+  overflow: hidden;
 }
 .popular__img {
   height: 162px;

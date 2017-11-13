@@ -109,6 +109,17 @@ $(window).bind('resize', handler);
 
 $(document).ready(function(){
 	var windWidth = $(window).width();
+	//Hover menu
+	$('.dropdown').hide();
+	$('.mainnav li').hover(function () {
+     	clearTimeout($.data(this,'timer'));
+     	$('.dropdown',this).stop(true,true).slideDown(200);
+  	}, function () {
+    	$.data(this,'timer', setTimeout($.proxy(function() {
+      		$('.dropdown',this).stop(true,true).slideUp(200);
+    	}, this), 100));
+  	});
+
 	//Slider
 	$('.slider').slick({
 		dots: true,
@@ -239,17 +250,6 @@ $(document).ready(function(){
 			}
 		);
 	});
-
-	//Hover menu
-	$('.dropdown').hide();
-	$('.mainnav li').hover(function () {
-     	clearTimeout($.data(this,'timer'));
-     	$('.dropdown',this).stop(true,true).slideDown(200);
-  	}, function () {
-    	$.data(this,'timer', setTimeout($.proxy(function() {
-      		$('.dropdown',this).stop(true,true).slideUp(200);
-    	}, this), 100));
-  	});
 
   	//Modal
 	var modalWidth = $('.modal18').width();
@@ -667,7 +667,6 @@ $(document).ready(function(){
 		$(this).children().toggleClass("fa-heart");
 		$(this).children().toggleClass("active");
 	});
-
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();

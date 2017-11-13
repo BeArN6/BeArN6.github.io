@@ -907,7 +907,7 @@ h3{
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	ul{
 		width: 100%;
 		list-style: none;
@@ -921,6 +921,7 @@ h3{
 	li{
 		display: block;
 		border-radius: 30px;
+		padding: 8px 10px;
 		&:hover{
 			background: #a91c5f;
 		}
@@ -1094,6 +1095,7 @@ h3{
 .slider{
 	min-height: 390px;
 	margin-bottom: 30px;
+	-moz-appearance: none;
 	&__item{
 		background: url(../img/banner.jpg) center center no-repeat;
 		width: 100%;
@@ -1359,6 +1361,24 @@ h3{
 			color: #fff;
 			background: #bd3c7a;
 			padding: 5.5px 7px;
+		}
+	}
+	&__moreimg{
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid #cfcfcf;
+		position: absolute;
+		top: 53px;
+		left: -1px;
+		a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 22px;
+			height: 30px;
+			border: 1px solid #cfcfcf;
+			border-top: 0;
+			overflow: hidden;
 		}
 	}
 	&__img{
