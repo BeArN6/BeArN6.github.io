@@ -1853,7 +1853,13 @@
 						<h2 class="main__title">Кальян Faraon Mina</h2>
 						<div class="reviews__rating rating">
 							<span>4.5</span>
-							<img src="img/stars.png" alt="">
+							<div class="rating__starcont">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
 						</div>
 						<div class="product">
 							<div class="sp-wrap">
@@ -1861,8 +1867,9 @@
 								<a href="img/prod1.jpg"><img src="img/prod1.jpg" alt=""></a>
 							</div>
 							<div class="product__center">
-								<div class="product__item product__item_top">
-									
+								<div class="product__item product__item_top coutdown">
+									<p class="coutdown__p">СКИДКА 25%</p>
+									<div id="clock"></div>
 								</div>
 								<div class="product__item">
 									<div class="popular__toolbox product__toolbox">
@@ -1880,11 +1887,13 @@
 											<div class="product__color product__color_r"><i class="fa fa-check" aria-hidden="true"></i></div>
 											<span>Красный</span>
 										</div>
-										<div class="product__colorbox">
-											<div class="product__color product__color_blu"></div>
+										<div class="product__colorbox product__colorbox_blu">
+											<div class="product__color product__color_blu"><i class="fa fa-check" aria-hidden="true"></i></div>
+											<span>Синий</span>
 										</div>
-										<div class="product__colorbox">
-											<div class="product__color product__color_black"></div>
+										<div class="product__colorbox product__colorbox_black">
+											<div class="product__color product__color_black"><i class="fa fa-check" aria-hidden="true"></i></div>
+											<span>Черный</span>
 										</div>
 									</div>
 									<p class="product__subtitle">Количество:</p>
@@ -1994,6 +2003,23 @@
 								<h3 class="goodreview__title">Оставьте Ваш отзыв о товаре</h3>
 								<div class="goodreview__rating">
 									<span>Ваша оценка:</span>
+									<div class="goodreview__stars ratingg">
+										<label>
+										    <input type="radio" name="rating" value="5" title="5 stars"> 5
+										  </label>
+										  <label>
+										    <input type="radio" name="rating" value="4" title="4 stars"> 4
+										  </label>
+										  <label>
+										    <input type="radio" name="rating" value="3" title="3 stars"> 3
+										  </label>
+										  <label>
+										    <input type="radio" name="rating" value="2" title="2 stars"> 2
+										  </label>
+										  <label>
+										    <input type="radio" name="rating" value="1" title="1 star"> 1
+										  </label>
+									</div>
 								</div>
 								<form action="">
 									<div class="goodreview__textarea">

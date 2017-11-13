@@ -112,6 +112,8 @@ $(document).ready(function(){
 	//Slider
 	$('.slider').slick({
 		dots: true,
+		autoplay: true,
+  		autoplaySpeed: 3000,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png'></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev.png'></button>"
 	});
@@ -501,6 +503,46 @@ $(document).ready(function(){
 		$("#slider5").slider("values",1,value2);
 	});
 
+	//6 UI
+	$("#slider6").slider({
+		min: 0,
+		max: 8000,
+		values: [0,8000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost6").val($("#slider6").slider("values",0));
+			$("input#maxCost6").val($("#slider6").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost6").val($("#slider6").slider("values",0));
+			$("input#maxCost6").val($("#slider6").slider("values",1));
+    	}
+	});
+	$("input#minCost6").change(function(){
+		var value1=$("input#minCost6").val();
+		var value2=$("input#maxCost6").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost6").val(value1);
+		}
+		$("#slider6").slider("values",0,value1);	
+	});
+
+	
+	$("input#maxCost6").change(function(){
+		var value1=$("input#minCost6").val();
+		var value2=$("input#maxCost6").val();
+	
+		if (value2 > 8000) { value2 = 8000; $("input#maxCost6").val(8000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost6").val(value2);
+		}
+		$("#slider6").slider("values",1,value2);
+	});
+
 	//Anchor sidebar menu
 	$(".sideinfo__item a").click(function(){
   	 	event.preventDefault();
@@ -535,34 +577,6 @@ $(document).ready(function(){
 		$(this).parent('.payment__checkcont').addClass("payment__checkcont_active");
 	});
 
-	//Tag cloud
-    var words = [
-	    {text: "SLK", weight: 14},
-	    {text: "Al Aziz", weight: 6},
-	    {text: "Mini", weight: 32},
-	    {text: "Mini", weight: 6},
-	    {text: "Mini LP", weight: 9},
-	    {text: "Zumo", weight: 13},
-	    {text: "Zumo Mini", weight: 5},
-	    {text: "Standart LP", weight: 6},
-	    {text: "Фараон M", weight: 13},
-	    {text: "SkySeven", weight: 10},
-	    {text: "Mini MagiX", weight: 4},
-	    {text: "MYA MOZZA", weight: 1},
-	    {text: "Econo MYA", weight: 9},
-	    {text: "Gelato-Hookah", weight: 10},
-	    {text: "MYA Econo", weight: 6}
-	];
-	$("#demo").jQCloud(words, {
-		shape: 'rectangular'
-	});
-	$("#demo1").jQCloud(words, {
-		shape: 'rectangular'
-	});
-	$("#demo2").jQCloud(words, {
-		shape: 'rectangular'
-	});
-
 	//Constructor
 	$(document).on("click touchend",".click1, click21, .click31",function(){
 		$(".kalitem__img_1").toggleClass("kalitem__img_active");
@@ -592,7 +606,7 @@ $(document).ready(function(){
 	//Check color
 	$(".colorbox__item").click(function(){
 		$(this).siblings(".colorbox__item").removeClass('colorbox__item_active');
-		$(this).addClass('colorbox__item_active');
+		$(this).toggleClass('colorbox__item_active');
 	});
 
 	//Account tabs
@@ -614,6 +628,46 @@ $(document).ready(function(){
 		$(this).addClass('accountcont__tab_active');
 		$('.myorders').show();
 	});
+
+	//Check color cart_page
+	$(".product__colorbox").click(function(){
+		$(".product__colorbox").removeClass("product__colorbox_active");
+		$(this).toggleClass("product__colorbox_active");
+	});
+
+	//Check stars
+	$('.rating input').change(function () {
+  		var $radio = $(this);
+  		$('.rating .selected').removeClass('selected');
+  		$radio.closest('label').addClass('selected');
+	});
+
+	//Balance open tabs
+	$(".balanceopen__title_1").click(function(){
+		$(".balanceopen__title").removeClass("balanceopen__title_active");
+		$(this).addClass("balanceopen__title_active");
+		$(".balanceopen__block").not(".balanceopen__block_title").hide();
+		$(".balanceopen__block_1").show();
+	});
+	$(".balanceopen__title_2").click(function(){
+		$(".balanceopen__title").removeClass("balanceopen__title_active");
+		$(this).addClass("balanceopen__title_active");
+		$(".balanceopen__block").not(".balanceopen__block_title").hide();
+		$(".balanceopen__block_2").show();
+	});
+
+	//Sales timer
+	$('#clock').countdown('2017/11/18', function(event) {
+  		$(this).html(event.strftime('<div>%D <span>дней</span></div> <div>%H <span>часов</span></div> <div>%M <span>минут</span></div> <div>%S <span>секунд</span></div>'));
+	});
+
+	//Pouring heart
+	$(".popular__tool").click(function(){
+		$(this).children().toggleClass("fa-heart-o");
+		$(this).children().toggleClass("fa-heart");
+		$(this).children().toggleClass("active");
+	});
+
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
