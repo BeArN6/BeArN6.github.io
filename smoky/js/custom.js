@@ -643,6 +643,7 @@ $(document).ready(function(){
 	});
 
 	//Balance open tabs
+	$(".balanceopen__block_2").hide();
 	$(".balanceopen__title_1").click(function(){
 		$(".balanceopen__title").removeClass("balanceopen__title_active");
 		$(this).addClass("balanceopen__title_active");
@@ -659,6 +660,9 @@ $(document).ready(function(){
 	//Sales timer
 	$('#clock').countdown('2017/11/18', function(event) {
   		$(this).html(event.strftime('<div>%D <span>дней</span></div> <div>%H <span>часов</span></div> <div>%M <span>минут</span></div> <div>%S <span>секунд</span></div>'));
+	});
+	$('.popular__timer').countdown('2017/11/18 12:34:56', function(event) {
+  		$(this).html(event.strftime('<span>%H:%M:%S</span>'));
 	});
 
 	//Pouring heart

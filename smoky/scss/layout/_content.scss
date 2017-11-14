@@ -921,7 +921,7 @@ h3{
 	li{
 		display: block;
 		border-radius: 30px;
-		padding: 8px 10px;
+		padding: 7.5px 10px;
 		&:hover{
 			background: #a91c5f;
 		}
@@ -943,7 +943,7 @@ h3{
 	}
 }
 .dropdown{
-	box-shadow: 0 0 0 9999px rgba(255,255,255,0.9) inset;
+	box-shadow: 0 0 0 9999px rgba(255,255,255,1) inset;
 	position: absolute;
 	padding: 10px 30px;
 	top: 30px;
@@ -1489,7 +1489,7 @@ h3{
 			border-bottom: 1px solid #cfcfcf;
 		}
 		i{
-			color: #3a424b;
+			color: #a1a3a5;
 			cursor: pointer;
 			&:hover{
 				color: #a91c5f;
@@ -3397,7 +3397,7 @@ h3{
 			border-color: #3b205c;
 			background: #3b205c;
 			box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
-			img{
+			i{
 				filter: brightness(2);
 			}
 		}
@@ -3405,11 +3405,60 @@ h3{
 			border-color: #3b205c;
 			background: #3b205c;
 			box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
-			img{
+			i{
 				filter: brightness(2);
 			}
 			&:hover{
 				background: #553082;
+			}
+		}
+		&_1{
+			i{
+				width: 54px;
+				height: 27px;
+				display: inline-block;
+				background: url(../img/icon_lotos.svg) no-repeat;
+			}
+		}
+		&_2{
+			i{
+				width: 39px;
+				height: 57px;
+				display: inline-block;
+				background: url(../img/icon_shisha.svg) no-repeat;
+			}
+		}
+		&_3{
+			i{
+				width: 62px;
+				height: 34px;
+				display: inline-block;
+				background: url(../img/icon_plate.svg) no-repeat;
+			}
+		}
+		&_4{
+			i{
+				width: 70px;
+				height: 70px;
+				display: inline-block;
+				background: url(../img/icon_shaxta.svg) no-repeat;
+				transform: rotate(45deg);
+			}
+		}
+		&_5{
+			i{
+				width: 54px;
+				height: 52px;
+				display: inline-block;
+				background: url(../img/icon_tube.svg) no-repeat;
+			}
+		}
+		&_6{
+			i{
+				width: 42px;
+				height: 54px;
+				display: inline-block;
+				background: url(../img/icon_kolba2.svg) no-repeat;
 			}
 		}
 	}
@@ -3502,6 +3551,11 @@ h3{
 			display: block;
 		}
 	}
+	span{
+		color: #a91c5f;
+    	font: 16px NP;
+    	position: absolute;
+	}
 	&_1{
 		top: 53px;
     	left: 172px;
@@ -3551,9 +3605,15 @@ h3{
 		&:hover + img{
 			display: block;
 		}
+		img{
+			display: block;
+		}
 		&_1{
     		left: -149px;
     		top: -25px;
+    		span{
+    			bottom: 28px;
+    		}
 		}
 		&_2{
     		left: -168px;
@@ -3570,10 +3630,16 @@ h3{
 		&_5{
     		left: -31px;
     		top: 96px;
+    		span{
+    			bottom: 32px;
+    		}
 		}
 		&_6{
     		left: -107px;
     		top: 68px;
+    		span{
+    			bottom: 32px;
+    		}
 		}
 	}
 }
@@ -3669,9 +3735,8 @@ h3{
 		top: -10px;
 		background: #fff;
 		&:hover{
-			background: #3b205c;
-			background: #3b205c;
-			border-color: #3b205c;
+			background: #8f8f8f;
+			border-color: #8f8f8f;
 		}
 	}
 }
@@ -3690,9 +3755,7 @@ h3{
 	&__block{
 		display: flex;
 		justify-content: space-between;
-		&:last-child{
-			padding-bottom: 20px;
-		}
+		padding-bottom: 20px;
 	}
 	&__title{
 		width: 50%;
