@@ -1809,25 +1809,20 @@ h3 {
 }
 .interview__cont {
   position: relative;
+  display: flex;
 }
 .interview__tabs {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background: #dddddd;
-  float: left;
-  min-height: 235px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  min-height: 170px;
   width: 31px;
 }
 .interview__tab {
   color: #595959;
   width: 30px;
-  height: 47px;
+  height: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1847,7 +1842,6 @@ h3 {
 .interview__block {
   background: #fff;
   padding: 15px 20px;
-  float: right;
   width: calc(100% - 30px);
 }
 .interview__block_1 {
@@ -3412,7 +3406,7 @@ h3 {
   width: 100%;
 }
 .perinfo__input label.perinfo_label2 {
-  z-index: 100;
+  z-index: 3;
   cursor: text;
   position: absolute;
   top: 8px;
@@ -5056,6 +5050,22 @@ h3 {
 }
 
 /*Account oo page end*/
+/*Feedback page*/
+.feedback {
+  width: 100%;
+  float: none;
+}
+.feedback__box_grey {
+  background: #f4f4f4;
+}
+.feedback__pager {
+  margin-top: 40px;
+}
+.feedback__textarea textarea {
+  height: 250px;
+}
+
+/*Feedback oo page end*/
 /*Modal*/
 .modalform {
   width: 550px;
@@ -5143,6 +5153,83 @@ h3 {
 }
 .modalps__p {
   text-align: left;
+}
+
+.modallog, .modalreg {
+  width: 430px;
+  height: 490px;
+}
+.modallog .loginpop__box, .modallog .registerpop__box, .modalreg .loginpop__box, .modalreg .registerpop__box {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.modallog .loginpop__box_1, .modallog .registerpop__box_1, .modalreg .loginpop__box_1, .modalreg .registerpop__box_1 {
+  padding: 0;
+  padding-bottom: 20px;
+}
+.modallog .loginpop__box:last-child, .modallog .registerpop__box:last-child, .modalreg .loginpop__box:last-child, .modalreg .registerpop__box:last-child {
+  border-bottom: 0px;
+}
+.modallog .loginpop__input, .modallog .registerpop__input, .modalreg .loginpop__input, .modalreg .registerpop__input {
+  margin-bottom: 10px;
+}
+.modallog .loginpop__input p, .modallog .registerpop__input p, .modalreg .loginpop__input p, .modalreg .registerpop__input p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 7px;
+}
+.modallog .loginpop__input input, .modallog .registerpop__input input, .modalreg .loginpop__input input, .modalreg .registerpop__input input {
+  height: 40px;
+  border: 1px solid #aeaeae;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+  color: #000;
+}
+.modallog .loginpop__input input:placeholder, .modallog .registerpop__input input:placeholder, .modalreg .loginpop__input input:placeholder, .modalreg .registerpop__input input:placeholder {
+  color: #626262;
+}
+.modallog .loginpop__pass, .modallog .registerpop__pass, .modalreg .loginpop__pass, .modalreg .registerpop__pass {
+  font-size: 12px;
+  font-weight: 300;
+  color: #333333;
+}
+.modallog .loginpop__soccont p, .modallog .registerpop__soccont p, .modalreg .loginpop__soccont p, .modalreg .registerpop__soccont p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #333333;
+}
+.modallog .loginpop__reg, .modallog .registerpop__reg, .modalreg .loginpop__reg, .modalreg .registerpop__reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modallog .loginpop__reg p, .modallog .registerpop__reg p, .modalreg .loginpop__reg p, .modalreg .registerpop__reg p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.modallog .loginpop__reg a, .modallog .registerpop__reg a, .modalreg .loginpop__reg a, .modalreg .registerpop__reg a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.modallog .showmore, .modalreg .showmore {
+  margin-top: 10px;
+}
+.modallog .socials, .modalreg .socials {
+  justify-content: center;
+}
+.modallog .socials a, .modalreg .socials a {
+  border-radius: 100%;
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  margin: 0 5px;
+}
+.modallog .socials a:hover, .modalreg .socials a:hover {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
 }
 
 .modalcall {
