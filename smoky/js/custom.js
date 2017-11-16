@@ -189,7 +189,7 @@ $(document).ready(function(){
 
 	//Sortby
 	$(".select2").on("click", ".select2__item_init", function() {
-	    $(this).closest(".select2").children('li:not(.select2__item_init)').slideDown();
+	    $(this).closest(".select2").children('li:not(.select2__item_init)').slideToggle();
 	});
 
 	var allOptions2 = $(".select2").children('li:not(.select2__item_init)');
@@ -201,7 +201,7 @@ $(document).ready(function(){
 	});
 
 	$(".select3").on("click", ".select3__item_init", function() {
-	    $(this).closest(".select3").children('li:not(.select3__item_init)').slideDown();
+	    $(this).closest(".select3").children('li:not(.select3__item_init)').slideToggle();
 	});
 
 	var allOptions3 = $(".select3").children('li:not(.select3__item_init)');
