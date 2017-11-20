@@ -4518,6 +4518,18 @@ h3{
     		img{
     			zoom: 0.8;
     		}
+    		&:hover{
+				background: transparent;
+				i{
+					filter: none;
+				}
+			}
+			&_active{
+				background: #3b205c !important;
+				i{
+					filter: brightness(2) !important;
+				}
+			}
 		}
 		&__top{
 			flex-wrap: wrap;
@@ -4527,6 +4539,18 @@ h3{
 		}
 		.slick-slide{
 			text-align: center;
+		}
+	}
+	.kalitem{
+		&:hover{
+			img{
+				display: none;
+			}
+		}
+		&__title{
+			img{
+				display: block !important;
+			}
 		}
 	}
 	.constselected{
@@ -4842,6 +4866,9 @@ h3{
 			}
 			&_active{
 				background: #3b205c !important;
+				i{
+					filter: brightness(2) !important;
+				}
 			}
 		}
 		.slick-slide{
