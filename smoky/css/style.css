@@ -5859,7 +5859,7 @@ h3 {
     margin-bottom: 15px;
   }
   .constructor__part:hover {
-    background: none;
+    background: transparent;
   }
   .constructor__part:hover i {
     filter: none;
