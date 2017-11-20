@@ -5861,6 +5861,9 @@ h3 {
   .constructor__part:hover {
     background: none;
   }
+  .constructor__part:hover i {
+    filter: none;
+  }
   .constructor .slick-slide {
     text-align: center;
   }

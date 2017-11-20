@@ -4836,6 +4836,9 @@ h3{
 			margin-bottom: 15px;
 			&:hover{
 				background: none;
+				i{
+					filter: none;
+				}
 			}
 		}
 		.slick-slide{
