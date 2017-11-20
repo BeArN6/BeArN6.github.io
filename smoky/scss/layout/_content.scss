@@ -794,8 +794,10 @@ h3{
 		background: #fff;
 		padding: 15px 20px;
 		width: calc(100% - 30px);
+		display: none;
 		&_1{
 			border-bottom: 1px solid #c3c3c3;
+			display: block;
 		}
 		form{
 			color: #2d2d2d;
@@ -3389,9 +3391,7 @@ h3{
 		cursor: pointer;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
 		&:hover{
-			border-color: #3b205c;
-			background: #3b205c;
-			box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
+			background: #aeaeae;
 			i{
 				filter: brightness(2);
 			}
@@ -3404,7 +3404,7 @@ h3{
 				filter: brightness(2);
 			}
 			&:hover{
-				background: #553082;
+				background: #3b205c;
 			}
 		}
 		&_1{
@@ -4834,6 +4834,9 @@ h3{
 		}
 		&__part{
 			margin-bottom: 15px;
+			&:hover{
+				background: none;
+			}
 		}
 		.slick-slide{
 			text-align: center;
@@ -4845,6 +4848,21 @@ h3{
 		}
 		&__img{
 			margin-right: 10px;
+		}
+	}
+	.kalitem{
+		&_6{
+			bottom: 68px;
+		}
+		&:hover{
+			img{
+				display: none;
+			}
+		}
+		&__title{
+			img{
+				display: block !important;
+			}
 		}
 	}
 	/*Constructor page end*/

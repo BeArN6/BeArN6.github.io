@@ -1843,9 +1843,11 @@ h3 {
   background: #fff;
   padding: 15px 20px;
   width: calc(100% - 30px);
+  display: none;
 }
 .interview__block_1 {
   border-bottom: 1px solid #c3c3c3;
+  display: block;
 }
 .interview__block form {
   color: #2d2d2d;
@@ -4453,9 +4455,7 @@ h3 {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
 }
 .constructor__part:hover {
-  border-color: #3b205c;
-  background: #3b205c;
-  box-shadow: 0px 2px 0px 0px black;
+  background: #aeaeae;
 }
 .constructor__part:hover i {
   filter: brightness(2);
@@ -4469,7 +4469,7 @@ h3 {
   filter: brightness(2);
 }
 .constructor__part_active:hover {
-  background: #553082;
+  background: #3b205c;
 }
 .constructor__part_1 i {
   width: 54px;
@@ -5858,6 +5858,9 @@ h3 {
   .constructor__part {
     margin-bottom: 15px;
   }
+  .constructor__part:hover {
+    background: none;
+  }
   .constructor .slick-slide {
     text-align: center;
   }
@@ -5867,6 +5870,16 @@ h3 {
   }
   .constselected__img {
     margin-right: 10px;
+  }
+
+  .kalitem_6 {
+    bottom: 68px;
+  }
+  .kalitem:hover img {
+    display: none;
+  }
+  .kalitem__title img {
+    display: block !important;
   }
 
   /*Constructor page end*/

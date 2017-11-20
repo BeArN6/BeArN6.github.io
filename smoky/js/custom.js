@@ -225,7 +225,24 @@ $(document).ready(function(){
 
 	//Tab active
 	$('.interview__tab').click(function(){
+		$('.interview__tab').removeClass('interview__tab_active');
 		$(this).toggleClass('interview__tab_active');
+		$('.interview__block').hide();
+	});
+	$('.interview__tab_1').click(function(){
+		$('.interview__block_1').show();
+	});
+	$('.interview__tab_2').click(function(){
+		$('.interview__block_2').show();
+	});
+	$('.interview__tab_3').click(function(){
+		$('.interview__block_3').show();
+	});
+	$('.interview__tab_4').click(function(){
+		$('.interview__block_4').show();
+	});
+	$('.interview__tab_5').click(function(){
+		$('.interview__block_5').show();
 	});
 
 	//Mobile menu
@@ -601,29 +618,39 @@ $(document).ready(function(){
 	});
 
 	//Constructor
-	$(document).on("click touchend",".click1, click21, .click31",function(){
+	$(document).on("click touchend",".click1, click21, .click31",function(e){
+		e.preventDefault();
 		$(".kalitem__img_1").toggleClass("kalitem__img_active");
 		$(".constructor__part_1").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click2, click22, .click32",function(){
+	$(document).on("click touchend",".click2, click22, .click32",function(e){
+		e.preventDefault();
 		$(".kalitem__img_2").toggleClass("kalitem__img_active");
 		$(".constructor__part_2").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click3, click23, .click33",function(){
+	$(document).on("click touchend",".click3, click23, .click33",function(e){
+		e.preventDefault();
 		$(".kalitem__img_3").toggleClass("kalitem__img_active");
 		$(".constructor__part_3").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click4, click24, .click34",function(){
+	$(document).on("click touchend",".click4, click24, .click34",function(e){
+		e.preventDefault();
 		$(".kalitem__img_4").toggleClass("kalitem__img_active");
 		$(".constructor__part_4").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click5, click25, .click35",function(){
+	$(document).on("click touchend",".click5, click25, .click35",function(e){
+		e.preventDefault();
 		$(".kalitem__img_5").toggleClass("kalitem__img_active");
 		$(".constructor__part_5").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click6, click26, .click36",function(){
+	$(document).on("click touchend",".click6, click26, .click36",function(e){
+		e.preventDefault();
 		$(".kalitem__img_6").toggleClass("kalitem__img_active");
 		$(".constructor__part_6").toggleClass("constructor__part_active");
+	});
+
+	$(".constructor__part").click(function(e){
+		e.preventDefault();
 	});
 
 	//Check color
