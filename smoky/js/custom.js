@@ -136,10 +136,18 @@ $(document).ready(function(){
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 		responsive: [
 	    {
-	      breakpoint: 480,
+	      breakpoint: 400,
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1
+	      }
+	    },
+	    {
+	      breakpoint: 760,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        arrows: false
 	      }
 	    }
 	  	]
@@ -180,8 +188,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        slidesPerRow: 1,
-    		rows: 1,
+	        slidesPerRow: 2,
+    		rows: 2,
 	      }
 	    }
 	  	]
@@ -223,6 +231,9 @@ $(document).ready(function(){
 		$(this).siblings().slideToggle();
 	});
 
+	//Show 12 goods
+	$(".gcont__item:lt(12)").show();
+
 	//Tab active
 	$('.interview__tab').click(function(){
 		$('.interview__tab').removeClass('interview__tab_active');
@@ -246,8 +257,12 @@ $(document).ready(function(){
 	});
 
 	//Mobile menu
-	$(".mainnav_toggle").click(function(){
-		$(this).siblings().slideToggle();
+	$(".header__toogle").click(function(){
+		$(".mobside").slideToggle();
+	});
+	$(".mobside_nav_toggle").click(function(){
+		$(this).toggleClass("mobside_nav_toggle_active");
+		$(".sidenav__item").slideToggle();
 	});
 
 	//Sidebar 770

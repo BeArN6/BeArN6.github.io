@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 548.54669 620.18665"
+   height="32"
+   width="26"
+   xml:space="preserve"
+   id="svg2" class="svg2"
+   version="1.1">
+  <style>
+    .svg2{
+      cursor: pointer;
+      overflow:hidden;
+      padding: 1px 0;
+    }
+    .svg2 path{
+      stroke: #000 !important;
+    }
+    .svg2_active path{
+      stroke: #000 !important;
+    }
+    <!-- .svg2:hover{
+      filter: drop-shadow( 0px 0px 1px #3b205c);
+    }
+    .svg2:hover path{
+      stroke: #3a424b !important;
+    } -->
+   </style>
+   <metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,605.18667)"
+     id="g10"><g
+       transform="scale(0.1)"
+       id="g12"><path
+         id="path14"
+         style="fill:none;stroke:#3a424b;stroke-width:210;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         d="m 2057.06,2304.33 c 293.96,0 544.87,104.06 752.76,312.08 208.06,207.89 311.91,458.8 311.91,752.75 0,293.83 -103.85,544.73 -311.91,752.8 -207.89,207.86 -458.8,311.91 -752.76,311.91 -293.95,0 -544.9,-104.05 -752.8,-311.91 -208.02,-208.07 -311.905,-458.97 -311.905,-752.8 0,-293.95 103.885,-544.86 311.905,-752.75 207.9,-208.02 458.85,-312.08 752.8,-312.08 z" /><path
+         id="path16"
+         style="fill:none;stroke:#3a424b;stroke-width:210;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         d="m 3999.3,1110.02 c -6.47,93.38 -19.45,194.07 -38.89,302.26 -19.27,108.17 -43.86,208.52 -73.47,300.93 -29.56,92.4 -69.29,182.46 -119.27,270.21 -49.87,87.89 -107.21,162.68 -171.83,224.66 -64.83,61.98 -143.74,111.33 -237.17,148.38 -93.37,36.89 -196.4,55.35 -309.05,55.35 -16.63,0 -55.52,-19.78 -116.52,-59.47 -60.96,-39.91 -129.75,-84.28 -206.54,-133.11 -76.78,-49.05 -176.63,-93.43 -299.44,-133.11 -122.98,-39.73 -246.27,-59.69 -370.23,-59.69 -123.79,0 -247.12,19.96 -370.06,59.69 -122.99,39.68 -222.87,84.06 -299.44,133.11 -76.79,48.83 -145.58,93.2 -206.58,133.11 -61,39.69 -99.89,59.47 -116.48,59.47 -112.689,0 -215.846,-18.46 -309.096,-55.35 C 661.855,2319.41 582.73,2270.06 518.113,2208.08 453.449,2146.1 396.148,2071.31 346.289,1983.42 296.262,1895.67 256.531,1805.61 226.965,1713.21 197.398,1620.8 172.98,1520.45 153.535,1412.28 134.098,1304.09 121.125,1203.4 114.656,1110.02 108.145,1016.77 105,921.059 105,823 105,601.32 172.469,426.18 307.406,297.582 442.344,169.281 621.656,105 845.289,105 H 3268.79 c 223.67,0 402.81,64.281 537.92,192.582 134.94,128.598 202.37,303.738 202.37,525.418 0,98.059 -3.32,193.77 -9.78,287.02 z" /></g></g></svg>

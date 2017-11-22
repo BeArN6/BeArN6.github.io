@@ -309,7 +309,7 @@ h3{
 }
 /*UI slider*/
 /* Ширина слайдера */
-#slider,#slider2,#slider3,#slider4,#slider5 {
+#slider,#slider2,#slider3,#slider4,#slider5,#slider6 {
 	width: 200px;
 	margin: 0 auto;
 }
@@ -1224,7 +1224,7 @@ h3{
 		    span{
 		    	background: #fff;
 		    	position: relative;
-    			z-index: 5;
+    			z-index: 3;
     			display: inline-block;
     			box-shadow: 0px 0px 0px 7px rgba(255,255,255,1);
 		    }
@@ -3794,6 +3794,9 @@ h3{
 		&_active{
 			background: #edebf0;
 		}
+		p.balanceopen__row_p{
+			display: none;
+		}
 		p{
 			color: #2d2d2d;
 			font-family: 'Roboto', sans-serif;
@@ -4023,6 +4026,10 @@ h3{
 		textarea{
 			height: 250px;
 		}
+	}
+	&__showmore{
+		display: none;
+		margin-bottom: 10px;
 	}
 }
 /*Feedback oo page end*/
@@ -4374,6 +4381,21 @@ h3{
 	    background: #fff;
 	    display: none;
 	}
+	.sidenav{
+		&__item{
+			padding: 0 20px;
+			background: #f8f8f8;
+			display: none;
+			li{
+				padding: 0;
+				margin: 0;
+				border-bottom: 1px solid #f2f2f2;
+			}
+		}
+		&__more{
+			right: 5px;
+		}
+	}
 	.maincont{
 		width: 100%;
     	max-width: 895px;
@@ -4583,6 +4605,7 @@ h3{
 
 @media screen and (max-width: 767px) {
 	.content{
+		margin-top: 62px;
 		.wrapper{
 			min-width: 100%;
     		max-width: 100%;
@@ -4593,8 +4616,24 @@ h3{
 		width: 100%;
 		margin-bottom: 10px;
 	}
+	.sidenav{
+		&__item{
+			padding: 0 20px;
+			background: #f8f8f8;
+			display: none;
+			li{
+				padding: 0;
+				margin: 0;
+				border-bottom: 1px solid #f2f2f2;
+			}
+		}
+		&__more{
+			right: 5px;
+		}
+	}
 	.mainnav{
-		height: auto;
+		display: none;
+		/*height: auto;
     	text-align: center;
     	padding: 10px 0;
     	position: fixed;
@@ -4619,7 +4658,7 @@ h3{
     	}
     	a{
     		font-size: 14px;
-    	}
+    	}*/
 	}
 	.dropdown{
 		display: none;
@@ -4639,6 +4678,7 @@ h3{
 		}
 		&__cont{
 			min-height: auto;
+			margin: 0 auto;
 			img{
 				display: none;
 			}
@@ -4647,14 +4687,31 @@ h3{
 	.catgoods{
 		&__cont{
 			justify-content: center;
+			padding: 0 5px;
+			align-items: stretch;
 		}
 		&__item{
 			margin-left: 10px;
     		margin-right: 10px;
+    		width: calc(50% - 20px);
+    		a{
+    			font-size: 13px;
+    		}
+		}
+		&__img{
+			img{
+				width: 100%;
+    			margin-left: 0;
+			}
 		}
 	}
+	.popular{
+		padding: 0;
+		padding-bottom: 30px;
+	}
 	.reviews{
-		&__box{
+		display: none;
+		/*&__box{
 			width: auto;
 		}
 		&__slider{
@@ -4664,10 +4721,11 @@ h3{
 			p{
 				width: 170px;
 			}
-		}
+		}*/
 	}
 	.types{
 		flex-direction: column;
+		align-items: center;
 		&__item{
 			margin-bottom: 15px;
 		}
@@ -4750,20 +4808,39 @@ h3{
 	.carttable{
 		&__row{
 			flex-wrap: wrap;
+			position: relative;
 		}
 		&__col{
 			&_1{
 				width: 100%;
+				border-bottom: 1px solid #aeaeae;
+			}
+			&_2{
+				border-right: 1px solid #aeaeae;
 			}
 			&_2,&_3{
 				width: 50%;
+				border-bottom: 1px solid #aeaeae;
+			}
+			&_4{
+				border-right: 1px solid #aeaeae;
 			}
 			&_4,&_5{
-				width: 40%;
+				width: 50%;
 			}
 			&_6{
-				width: 20%;
+				width: 0;
 			}
+		}
+		&__item{
+			/*justify-content: center;*/
+			padding: 10px 25px;
+		}
+		&__remove{
+			position: absolute;
+		    top: 20px;
+		    right: 15px;
+		    background: #fff;
 		}
 	}
 	/*Cart page end*/
@@ -4807,6 +4884,9 @@ h3{
 			width: 100%;
 		}
 	}
+	.viewed, .interesting{
+		padding: 0;
+	}
 	/*Cart__good page end*/
 	/*Goods page*/
 	.goods{
@@ -4814,7 +4894,8 @@ h3{
 			justify-content: center;
 		}
 		&__type{
-			margin-left: 14px;
+			margin-left: 5px;
+			margin-right: 5px;
 			&:nth-child(8n){
 				margin-right: 14px;
 			}
@@ -4823,16 +4904,22 @@ h3{
 	.gcont{
 		justify-content: center;
 		&__item{
-			margin-left: 20px;
+			margin-left: 5px;
+			width: 170px;
+    		margin-right: 5px;
+    		display: none;
 			&:nth-child(4n){
-				margin-right: 20px;
+				margin-right: 5px;
 			}
 		}
 	}
 	.viewed, .interesting{
+		margin-top: 20px;
 		&__title{
 			font-size: 15px;
     		line-height: normal;
+    		padding: 0 10px;
+    		top: -10px;
 		}
 	}
 	.goodstext{
@@ -4840,6 +4927,21 @@ h3{
 		p{
 			font-size: 13px;
 		}
+	}
+	.filterbar{
+		flex-direction: column;
+	}
+	.removefilter{
+		flex-wrap: wrap;
+		&__item{
+			margin-top: 5px;
+		}
+	}
+	.sortby{
+		margin-top: 10px;
+	}
+	.goodpager{
+		display: none;
 	}
 	/*Goods page end*/
 	/*Constructor page*/
@@ -4873,6 +4975,11 @@ h3{
 		}
 		.slick-slide{
 			text-align: center;
+		}
+	}
+	.const{
+		&__item{
+			width: 145px !important;
 		}
 	}
 	.constselected{
@@ -4934,6 +5041,21 @@ h3{
 		}
 		&__item{
 			width: 100%;
+			&_title{
+				display: none;
+			}
+		}
+		&__row{
+			justify-content: space-between;
+			&_center{
+				justify-content: space-between;
+			}
+			p.balanceopen__row_p{
+				display: block;
+			}
+		}
+		&__dots{
+			width: auto;
 		}
 	}
 	/*Balance open page end*/
@@ -4991,7 +5113,21 @@ h3{
 		margin-top: 25px;
 	}
 	/*Account oo page end*/
+	/*Feedback*/
+	.feedback{
+		&__showmore{
+			display: block;
+		}
+	}
+	/*Feedback end*/
 }
 
-
+@media screen and (max-width: 400px){
+	.popular{
+		padding: 0 49px;
+	}
+	.viewed, .interesting{
+		padding: 0 40px;
+	}
+}
 
