@@ -722,6 +722,9 @@ header {
     justify-content: center;
     box-shadow: 0px 0px 0 0;
   }
+  .header .mobside {
+    display: none;
+  }
   .header__side {
     display: block;
     position: absolute;
@@ -838,9 +841,6 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    /*&__side{
-    	display: none;
-    }*/
   }
   .header .wrapper {
     min-width: 100%;
@@ -908,6 +908,9 @@ header {
   }
   .header__info {
     margin-right: 0;
+    display: none;
+  }
+  .header__side {
     display: none;
   }
 

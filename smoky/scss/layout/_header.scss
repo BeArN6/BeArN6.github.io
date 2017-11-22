@@ -577,6 +577,9 @@ header{
     		justify-content: center;
     		box-shadow: 0px 0px 0 0;
 		}
+		.mobside{
+    		display: none;
+    	}
 		&__side{
 			display: block;
 		    position: absolute;
@@ -783,9 +786,9 @@ header{
 			margin-right: 0;
 			display: none;
 		}
-		/*&__side{
+		&__side{
 			display: none;
-		}*/
+		}
 	}
 	.mobside{
 		padding: 20px 0;
