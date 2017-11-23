@@ -773,7 +773,7 @@ h3{
 	&__tab{
 		color: #595959;
 		width: 30px;
-		height: 34px;
+		height: 20%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -2465,6 +2465,7 @@ h3{
 		height: 41px;
 		border-radius: 5px;
 		margin-bottom: 10px;
+		position: relative;
 		&_ml{
 			margin-left: 5px;
 		}
@@ -2491,12 +2492,16 @@ h3{
 		    line-height: normal;
 		    display: inline-block;
 		    color: #666;
+		    position: absolute;
+    		left: 12px;
+    		width: 230px;
+    		padding-left: 75px;
 		}
 		[type="radio"]:checked + label:before,
 		[type="radio"]:not(:checked) + label:before {
 		    content: '';
 		    position: absolute;
-		    left: -80px;
+		    left: -2px;
 		    top: 1px;
 		    width: 16px;
 		    height: 16px;
@@ -2516,7 +2521,7 @@ h3{
 		    background: #000;
 		    position: absolute;
 		    top: 5px;
-		    left: -76px;
+		    left: 2px;
 		    border-radius: 100%;
 		    -webkit-transition: all 0.2s ease;
 		    transition: all 0.2s ease;
@@ -3550,6 +3555,9 @@ h3{
 		color: #a91c5f;
     	font: 16px NP;
     	position: absolute;
+    	&:hover{
+    		text-shadow: 1px 1px 1px rgba(169, 28, 95, 0.5);
+    	}
 	}
 	&_1{
 		top: 53px;
@@ -4683,6 +4691,12 @@ h3{
 				display: none;
 			}
 		}
+		&__block{
+			display: none;
+		}
+	}
+	#ex2{
+		display: none;
 	}
 	.catgoods{
 		&__cont{
@@ -4774,6 +4788,7 @@ h3{
 		padding: 15px 20px;
 		width: 310px;
 		overflow-y: scroll;
+		margin-left: -155px !important;
 		&__title{
 			font-size: 20px;
 			margin-bottom: 5px;
@@ -4804,6 +4819,11 @@ h3{
 	.perinfo{
 		width: 290px;
 		margin-bottom: 20px;
+		&__butts{
+			.modal-run5{
+				margin-right: 10px;
+			}
+		}
 	}
 	.carttable{
 		&__row{
@@ -4837,10 +4857,12 @@ h3{
 			padding: 10px 25px;
 		}
 		&__remove{
-			position: absolute;
-		    top: 20px;
-		    right: 15px;
 		    background: #fff;
+		    &_mob{
+		    	position: absolute;
+		    	top: 20px;
+		    	right: 15px;
+		    }
 		}
 	}
 	/*Cart page end*/
@@ -4886,6 +4908,14 @@ h3{
 	}
 	.viewed, .interesting{
 		padding: 0;
+		position: relative;
+		&__title{
+			left: 15px;
+			position: absolute;
+		}
+		.slick-slider{
+			padding-top: 15px;
+		}
 	}
 	/*Cart__good page end*/
 	/*Goods page*/

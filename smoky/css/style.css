@@ -2032,7 +2032,7 @@ h3 {
 .interview__tab {
   color: #595959;
   width: 30px;
-  height: 34px;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3715,6 +3715,7 @@ h3 {
   height: 41px;
   border-radius: 5px;
   margin-bottom: 10px;
+  position: relative;
 }
 .delivery__checkcont_ml, .payment__checkcont_ml {
   margin-left: 5px;
@@ -3743,13 +3744,17 @@ h3 {
   line-height: normal;
   display: inline-block;
   color: #666;
+  position: absolute;
+  left: 12px;
+  width: 230px;
+  padding-left: 75px;
 }
 .delivery__checkcont [type="radio"]:checked + label:before,
 .delivery__checkcont [type="radio"]:not(:checked) + label:before, .payment__checkcont [type="radio"]:checked + label:before,
 .payment__checkcont [type="radio"]:not(:checked) + label:before {
   content: '';
   position: absolute;
-  left: -80px;
+  left: -2px;
   top: 1px;
   width: 16px;
   height: 16px;
@@ -3770,7 +3775,7 @@ h3 {
   background: #000;
   position: absolute;
   top: 5px;
-  left: -76px;
+  left: 2px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -4809,6 +4814,9 @@ h3 {
   color: #a91c5f;
   font: 16px NP;
   position: absolute;
+}
+.kalitem span:hover {
+  text-shadow: 1px 1px 1px rgba(169, 28, 95, 0.5);
 }
 .kalitem_1 {
   top: 53px;
@@ -5916,6 +5924,13 @@ h3 {
   .information__cont img {
     display: none;
   }
+  .information__block {
+    display: none;
+  }
+
+  #ex2 {
+    display: none;
+  }
 
   .catgoods__cont {
     justify-content: center;
@@ -6005,6 +6020,7 @@ h3 {
     padding: 15px 20px;
     width: 310px;
     overflow-y: scroll;
+    margin-left: -155px !important;
   }
   .modalform__title {
     font-size: 20px;
@@ -6034,6 +6050,9 @@ h3 {
   .perinfo {
     width: 290px;
     margin-bottom: 20px;
+  }
+  .perinfo__butts .modal-run5 {
+    margin-right: 10px;
   }
 
   .carttable__row {
@@ -6065,10 +6084,12 @@ h3 {
     padding: 10px 25px;
   }
   .carttable__remove {
+    background: #fff;
+  }
+  .carttable__remove_mob {
     position: absolute;
     top: 20px;
     right: 15px;
-    background: #fff;
   }
 
   /*Cart page end*/
@@ -6116,6 +6137,14 @@ h3 {
 
   .viewed, .interesting {
     padding: 0;
+    position: relative;
+  }
+  .viewed__title, .interesting__title {
+    left: 15px;
+    position: absolute;
+  }
+  .viewed .slick-slider, .interesting .slick-slider {
+    padding-top: 15px;
   }
 
   /*Cart__good page end*/

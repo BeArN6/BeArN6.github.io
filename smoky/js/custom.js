@@ -305,7 +305,7 @@ $(document).ready(function(){
 
 		$('.modal18').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modal18')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
@@ -313,7 +313,7 @@ $(document).ready(function(){
 		});
 		$('.modalps').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modalps')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
@@ -321,7 +321,7 @@ $(document).ready(function(){
 		});
 		$('.modal-run3').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modalcall')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
@@ -329,7 +329,7 @@ $(document).ready(function(){
 		});
 		$('.modal-run4').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modaltown')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
@@ -337,7 +337,7 @@ $(document).ready(function(){
 		});
 		$('.modal-run5').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modallog')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "10%"},200)
@@ -346,7 +346,7 @@ $(document).ready(function(){
 		$('.modal-run6').click(function(event){
 			event.preventDefault();
 			$(".modallog").hide();
-			$(".overlay").fadeIn(600,function(){
+			$(".overlay").fadeIn(300,function(){
 				$('.modalreg')
 					.css('display', 'block')
 					.animate({opacity: 1,top: "10%"},200)
@@ -356,7 +356,7 @@ $(document).ready(function(){
 			$(".modal18,.modalps,.modalcall,.modaltown,.modallog,.modalreg").animate({opacity: 1, top:"10%"}, 200,
 				function(){
 					$(this).css('display', 'none'); 
-					$('.overlay').fadeOut(400);
+					$('.overlay').fadeOut(300);
 				}
 			);
 		});
@@ -507,17 +507,6 @@ $(document).ready(function(){
 		$("#slider4").slider("values",0,value1);	
 	});
 
-	//Star placeholder
-	$('.perinfo_phone2').focus(function() {
-    	$('.perinfo_label2').hide();
-	});
-
-	$('.perinfo_phone2').blur(function() {
-	    if ($(this).val().trim() === '') {
-	        $('.perinfo_label2').show();
-	    }
-	});
-
 	//5 UI
 	$("#slider5").slider({
 		min: 0,
@@ -598,12 +587,23 @@ $(document).ready(function(){
 		$("#slider6").slider("values",1,value2);
 	});
 
+	//Star placeholder
+	$('.perinfo_phone2').focus(function() {
+    	$('.perinfo_label2').hide();
+	});
+
+	$('.perinfo_phone2').blur(function() {
+	    if ($(this).val().trim() === '') {
+	        $('.perinfo_label2').show();
+	    }
+	});
+
 	//Anchor sidebar menu
 	$(".sideinfo__item a").click(function(){
   	 	event.preventDefault();
   	 	var id  = $(this).attr('href'),
   	 	top = $(id).offset().top;
-  	 	$('body,html').animate({scrollTop: top - 15}, 1500);
+  	 	$('body,html').animate({scrollTop: top - 15}, 800);
   	});
 	
 	$("input#maxCost4").change(function(){
@@ -633,32 +633,32 @@ $(document).ready(function(){
 	});
 
 	//Constructor
-	$(document).on("click touchend",".click1, click21, .click31",function(e){
+	$(document).on("click touchend",".click21, .click1, .click31",function(e){
 		e.preventDefault();
 		$(".kalitem__img_1").toggleClass("kalitem__img_active");
 		$(".constructor__part_1").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click2, click22, .click32",function(e){
+	$(document).on("click touchend",".click2, .click22, .click32",function(e){
 		e.preventDefault();
 		$(".kalitem__img_2").toggleClass("kalitem__img_active");
 		$(".constructor__part_2").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click3, click23, .click33",function(e){
+	$(document).on("click touchend",".click3, .click23, .click33",function(e){
 		e.preventDefault();
 		$(".kalitem__img_3").toggleClass("kalitem__img_active");
 		$(".constructor__part_3").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click4, click24, .click34",function(e){
+	$(document).on("click touchend",".click4, .click24, .click34",function(e){
 		e.preventDefault();
 		$(".kalitem__img_4").toggleClass("kalitem__img_active");
 		$(".constructor__part_4").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click5, click25, .click35",function(e){
+	$(document).on("click touchend",".click5, .click25, .click35",function(e){
 		e.preventDefault();
 		$(".kalitem__img_5").toggleClass("kalitem__img_active");
 		$(".constructor__part_5").toggleClass("constructor__part_active");
 	});
-	$(document).on("click touchend",".click6, click26, .click36",function(e){
+	$(document).on("click touchend",".click6, .click26, .click36",function(e){
 		e.preventDefault();
 		$(".kalitem__img_6").toggleClass("kalitem__img_active");
 		$(".constructor__part_6").toggleClass("constructor__part_active");
