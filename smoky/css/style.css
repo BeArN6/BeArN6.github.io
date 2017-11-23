@@ -1238,6 +1238,14 @@ footer {
   position: relative;
 }
 
+[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* titles */
 p {
   font-size: 13px;
