@@ -938,8 +938,12 @@ h3{
 		}
 	}
 	a{
-		font: 12px UT;
-		font-weight: 700;
+		/*font: 12px UT;*/
+		/*font-weight: 700;*/
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		font-weight: 100;
+		text-transform: uppercase;
 		color: #fff;
 		padding: 8px 0px;
 	}
@@ -3561,9 +3565,6 @@ h3{
 		color: #a91c5f;
     	font: 16px NP;
     	position: absolute;
-    	&:hover{
-    		text-shadow: 1px 1px 1px rgba(169, 28, 95, 0.5);
-    	}
 	}
 	&_1{
 		top: 53px;
@@ -3611,41 +3612,50 @@ h3{
 		position: absolute;
 		z-index: 4;
 		display: block !important;
+		transition: 0.3s;
+		&:hover{
+			margin-top: -3px;
+		}
 		&:hover + img{
 			display: block;
 		}
 		img{
 			display: block;
 		}
+		span{
+			color: #a91c5f;
+    		font: 16px NP;
+    		position: absolute;
+		}
 		&_1{
-    		left: -149px;
-    		top: -25px;
+    		left: 24px;
+    		top: 30px;
     		span{
     			bottom: 28px;
     		}
 		}
 		&_2{
-    		left: -168px;
-    		top: -28px;
+    		left: 24px;
+    		top: 66px;
 		}
 		&_3{
-    		left: -129px;
-    		top: -41px;
+    		left: 24px;
+    		top: 103px;
 		}
 		&_4{
-    		left: -151px;
-    		top: -30px;
+    		left: 24px;
+    		top: 143px;
 		}
 		&_5{
-    		left: -31px;
-    		top: 96px;
+    		left: 24px;
+    		top: 300px;
     		span{
     			bottom: 32px;
     		}
 		}
 		&_6{
-    		left: -107px;
-    		top: 68px;
+    		left: 24px;
+    		top: 405px;
     		span{
     			bottom: 32px;
     		}
@@ -3782,11 +3792,11 @@ h3{
 		}
 		&:first-child{
 			border-top-left-radius: 8px;
-			border-bottom-left-radius: 8px;
+			/*border-bottom-left-radius: 8px;*/
 		}
 		&:last-child{
 			border-top-right-radius: 8px;
-			border-bottom-right-radius: 8px;
+			/*border-bottom-right-radius: 8px;*/
 		}
 	}
 	&__item{
@@ -4618,6 +4628,11 @@ h3{
 }
 
 @media screen and (max-width: 767px) {
+	.main{
+		&__container{
+			padding: 15px 10px;
+		}
+	}
 	.content{
 		margin-top: 62px;
 		.wrapper{
@@ -4643,6 +4658,9 @@ h3{
 		}
 		&__more{
 			right: 5px;
+		}
+		.checkboxlabel{
+			display: none;
 		}
 	}
 	.mainnav{
@@ -4940,12 +4958,12 @@ h3{
 	.gcont{
 		justify-content: center;
 		&__item{
-			margin-left: 5px;
+			margin-left: 0;
 			width: 170px;
-    		margin-right: 5px;
+    		margin-right: 0;
     		display: none;
 			&:nth-child(4n){
-				margin-right: 5px;
+				margin-right: 0;
 			}
 		}
 	}
@@ -4996,6 +5014,7 @@ h3{
 		}
 		&__part{
 			margin-bottom: 15px;
+			width: 26%;
 			&:hover{
 				background: transparent;
 				i{
@@ -5039,13 +5058,16 @@ h3{
 			img{
 				display: block !important;
 			}
+			&:hover{
+				margin-top: 0;
+			}
 		}
 	}
 	/*Constructor page end*/
 	/*Wishlist page*/
 	.wishlist{
 		&__goods{
-			justify-content: center;
+			justify-content: space-between;
 		}
 		&__filter{
 			flex-wrap: wrap;
@@ -5063,17 +5085,15 @@ h3{
 	.balanceopen{
 		&__block{
 			flex-direction: column;
+			&_title{
+				flex-direction: row;
+			}
 		}
 		&__title{
 			width: 100%;
-			&:first-child{
-				border-top-left-radius: 8px;
-				border-top-right-radius: 8px;
-    			border-bottom-left-radius: 0;
-			}
-			&:last-child{
-				border-radius: 0;
-			}
+			font-size: 15px;
+			border-bottom-left-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
 		}
 		&__item{
 			width: 100%;
@@ -5088,6 +5108,9 @@ h3{
 			}
 			p.balanceopen__row_p{
 				display: block;
+			}
+			&_active{
+				background: #fff;
 			}
 		}
 		&__dots{
@@ -5158,12 +5181,20 @@ h3{
 	/*Feedback end*/
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 350px){
 	.popular{
 		padding: 0 49px;
 	}
 	.viewed, .interesting{
 		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.wishlist{
+		&__goods{
+			justify-content: center;
+		}
 	}
 }
 

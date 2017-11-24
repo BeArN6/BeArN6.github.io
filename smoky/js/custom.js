@@ -137,7 +137,7 @@ $(document).ready(function(){
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 		responsive: [
 	    {
-	      breakpoint: 400,
+	      breakpoint: 350,
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1
@@ -364,7 +364,7 @@ $(document).ready(function(){
 	//Modal end
 
 	//UI slider
-	$("#slider").slider({
+	$("#slider,#mobslider").slider({
 		min: 0,
 		max: 8000,
 		values: [0,8000],
@@ -723,6 +723,20 @@ $(document).ready(function(){
 		$(".balanceopen__block_2").show();
 	});
 
+	$(".description__block_1").hide();
+	$(".description__title_1").click(function(){
+		$(".description__title").removeClass("description__title_active");
+		$(this).addClass("description__title_active");
+		$(".description__block").not(".description__block_title").hide();
+		$(".description__block_1").show();
+	});
+	$(".description__title_2").click(function(){
+		$(".description__title").removeClass("description__title_active");
+		$(this).addClass("description__title_active");
+		$(".description__block").not(".description__block_title").hide();
+		$(".description__block_2").show();
+	});
+
 	//Sales timer
 	$('#clock').countdown('2017/11/18', function(event) {
   		$(this).html(event.strftime('<div>%D <span>дней</span></div> <div>%H <span>часов</span></div> <div>%M <span>минут</span></div> <div>%S <span>секунд</span></div>'));
@@ -737,6 +751,11 @@ $(document).ready(function(){
 		$(this).children().toggleClass("fa-heart");
 		$(this).children().toggleClass("active");
 	});
+
+	//Replace sidenav when windowsize < 990px
+	if(windWidth < 990){
+		$(".mobside_nav_toggle").after($(".sidenav__item"));
+	}
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();

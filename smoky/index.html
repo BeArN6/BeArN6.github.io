@@ -43,12 +43,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost" min="0" pattern="[0-9]*">
+												<input type="number" id="minCost" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost" value="8000"/>
+												<input type="number" id="maxCost" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -386,12 +386,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost2" value="0"/>
+												<input type="number" id="minCost2" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost2" value="8000"/>
+												<input type="number" id="maxCost2" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -635,12 +635,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost3" value="0"/>
+												<input type="number" id="minCost3" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost3" value="8000"/>
+												<input type="number" id="maxCost3" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -784,12 +784,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost4" value="0"/>
+												<input type="number" id="minCost4" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost4" value="8000"/>
+												<input type="number" id="maxCost4" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -1081,12 +1081,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost5" value="0"/>
+												<input type="number" id="minCost5" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost5" value="8000"/>
+												<input type="number" id="maxCost5" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -1399,12 +1399,12 @@
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost6" value="0"/>
+												<input type="number" id="minCost6" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost6" value="8000"/>
+												<input type="number" id="maxCost6" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -2983,7 +2983,7 @@
 						<a href="">Каталог</a>
 						<i class="fa fa-caret-up" aria-hidden="true"></i>
 					</li>
-					<nav class="sidenav__item">
+					<!-- <nav class="sidenav__item">
 						<ul>
 							<li>
 								<div class="sidenav__text">
@@ -2997,16 +2997,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="number" id="minCost" min="0" pattern="[0-9]*">
+												<input type="number" id="minCost" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost" value="8000">
+												<input type="number" id="maxCost" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -3103,100 +3103,100 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check2" class="checkbox">
-												<label for="check2" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck2" class="checkbox">
+												<label for="ccheck2" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check3" class="checkbox">
-												<label for="check3" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck3" class="checkbox">
+												<label for="ccheck3" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check4" class="checkbox">
-												<label for="check4" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck4" class="checkbox">
+												<label for="ccheck4" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check5" class="checkbox">
-												<label for="check5" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck5" class="checkbox">
+												<label for="ccheck5" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check6" class="checkbox">
-												<label for="check6" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck6" class="checkbox">
+												<label for="ccheck6" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check7" class="checkbox">
-												<label for="check7" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck7" class="checkbox">
+												<label for="ccheck7" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check8" class="checkbox">
-												<label for="check8" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck8" class="checkbox">
+												<label for="ccheck8" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check9" class="checkbox">
-												<label for="check9" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck9" class="checkbox">
+												<label for="ccheck9" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check10" class="checkbox">
-												<label for="check10" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck10" class="checkbox">
+												<label for="ccheck10" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check11" class="checkbox">
-												<label for="check11" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck11" class="checkbox">
+												<label for="ccheck11" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check12" class="checkbox">
-												<label for="check12" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck12" class="checkbox">
+												<label for="ccheck12" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check13" class="checkbox">
-												<label for="check13" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck13" class="checkbox">
+												<label for="ccheck13" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check14" class="checkbox">
-												<label for="check14" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck14" class="checkbox">
+												<label for="ccheck14" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check15" class="checkbox">
-												<label for="check15" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck15" class="checkbox">
+												<label for="ccheck15" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check16" class="checkbox">
-												<label for="check16" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck16" class="checkbox">
+												<label for="ccheck16" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check17" class="checkbox">
-												<label for="check17" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck17" class="checkbox">
+												<label for="ccheck17" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check18" class="checkbox">
-												<label for="check18" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck18" class="checkbox">
+												<label for="ccheck18" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check19" class="checkbox">
-												<label for="check19" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck19" class="checkbox">
+												<label for="ccheck19" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check20" class="checkbox">
-												<label for="check20" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck20" class="checkbox">
+												<label for="ccheck20" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check21" class="checkbox">
-												<label for="check21" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck21" class="checkbox">
+												<label for="ccheck21" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check22" class="checkbox">
-												<label for="check22" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ccheck22" class="checkbox">
+												<label for="ccheck22" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check23" class="checkbox">
-												<label for="check2" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ccheck23" class="checkbox">
+												<label for="ccheck2" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check23" class="checkbox">
-												<label for="check2" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ccheck23" class="checkbox">
+												<label for="ccheck2" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="check24" class="checkbox">
-												<label for="check24" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ccheck24" class="checkbox">
+												<label for="ccheck24" class="checkboxlabel">Ager (24)</label>
 											</div>
 										</div>
 									</div>
@@ -3209,16 +3209,16 @@
 										</h2>
 										<div class="allfilters sizes">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="size1" class="checkbox">
-												<label for="size1" class="checkboxlabel">До 50 см</label>
+												<input type="checkbox" id="ssize1" class="checkbox">
+												<label for="ssize1" class="checkboxlabel">До 50 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="size2" class="checkbox">
-												<label for="size2" class="checkboxlabel">От 50 до 80 см</label>
+												<input type="checkbox" id="ssize2" class="checkbox">
+												<label for="ssize2" class="checkboxlabel">От 50 до 80 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="size3" class="checkbox">
-												<label for="size3" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ssize3" class="checkbox">
+												<label for="ssize3" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 										</div>
 									</div>
@@ -3231,32 +3231,32 @@
 										</h2>
 										<div class="allfilters typeof">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof1" class="checkbox">
-												<label for="typeof1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof1" class="checkbox">
+												<label for="ttypeof1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof2" class="checkbox">
-												<label for="typeof2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof2" class="checkbox">
+												<label for="ttypeof2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof3" class="checkbox">
-												<label for="typeof3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof3" class="checkbox">
+												<label for="ttypeof3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof4" class="checkbox">
-												<label for="typeof4" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof4" class="checkbox">
+												<label for="ttypeof4" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof5" class="checkbox">
-												<label for="typeof5" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof5" class="checkbox">
+												<label for="ttypeof5" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof6" class="checkbox">
-												<label for="typeof6" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof6" class="checkbox">
+												<label for="ttypeof6" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof7" class="checkbox">
-												<label for="typeof7" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof7" class="checkbox">
+												<label for="ttypeof7" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3269,39 +3269,39 @@
 										</h2>
 										<div class="allfilters country">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country1" class="checkbox">
-												<label for="country1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ccountry1" class="checkbox">
+												<label for="ccountry1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country2" class="checkbox">
-												<label for="country2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ccountry2" class="checkbox">
+												<label for="ccountry2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country3" class="checkbox">
-												<label for="country3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry3" class="checkbox">
+												<label for="ccountry3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country4" class="checkbox">
-												<label for="country4" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ccountry4" class="checkbox">
+												<label for="ccountry4" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country5" class="checkbox">
-												<label for="country5" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ccountry5" class="checkbox">
+												<label for="ccountry5" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country6" class="checkbox">
-												<label for="country6" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry6" class="checkbox">
+												<label for="ccountry6" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country7" class="checkbox">
-												<label for="country7" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry7" class="checkbox">
+												<label for="ccountry7" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
 									<div class="sidefilters__item sidefilters__akcii">
 										<div class="allfilters__item allfilters__item_check">
-											<input type="checkbox" id="check25" class="checkbox">
-											<label for="check25" class="checkboxlabel">Товар по акции</label>
+											<input type="checkbox" id="ccheck25" class="checkbox">
+											<label for="ccheck25" class="checkboxlabel">Товар по акции</label>
 										</div>
 									</div>
 									<div class="sidefilters__used usedf">
@@ -3340,16 +3340,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider2" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider2"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost2" value="0">
+												<input type="number" id="minCost2" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost2" value="8000">
+												<input type="number" id="maxCost2" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -3362,28 +3362,28 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac2" class="checkbox">
-												<label for="tabac2" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac2" class="checkbox">
+												<label for="ttabac2" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac3" class="checkbox">
-												<label for="tabac3" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac3" class="checkbox">
+												<label for="ttabac3" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac4" class="checkbox">
-												<label for="tabac4" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ttabac4" class="checkbox">
+												<label for="ttabac4" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac5" class="checkbox">
-												<label for="tabac5" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ttabac5" class="checkbox">
+												<label for="ttabac5" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac6" class="checkbox">
-												<label for="tabac6" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac6" class="checkbox">
+												<label for="ttabac6" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac7" class="checkbox">
-												<label for="tabac7" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac7" class="checkbox">
+												<label for="ttabac7" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 										</div>
 									</div>
@@ -3396,32 +3396,32 @@
 										</h2>
 										<div class="allfilters taste">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste1" class="checkbox">
-												<label for="taste1" class="checkboxlabel">До 50 см</label>
+												<input type="checkbox" id="ttaste1" class="checkbox">
+												<label for="ttaste1" class="checkboxlabel">До 50 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste2" class="checkbox">
-												<label for="taste2" class="checkboxlabel">От 50 до 80 см</label>
+												<input type="checkbox" id="ttaste2" class="checkbox">
+												<label for="ttaste2" class="checkboxlabel">От 50 до 80 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste3" class="checkbox">
-												<label for="taste3" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste3" class="checkbox">
+												<label for="ttaste3" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste4" class="checkbox">
-												<label for="taste4" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste4" class="checkbox">
+												<label for="ttaste4" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste5" class="checkbox">
-												<label for="taste5" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste5" class="checkbox">
+												<label for="ttaste5" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste6" class="checkbox">
-												<label for="taste6" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste6" class="checkbox">
+												<label for="ttaste6" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste7" class="checkbox">
-												<label for="taste7" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste7" class="checkbox">
+												<label for="ttaste7" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 										</div>
 									</div>
@@ -3434,20 +3434,20 @@
 										</h2>
 										<div class="allfilters weight">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight1" class="checkbox">
-												<label for="weight1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="wweight1" class="checkbox">
+												<label for="wweight1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight2" class="checkbox">
-												<label for="weight2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="wweight2" class="checkbox">
+												<label for="wweight2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight3" class="checkbox">
-												<label for="weight3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="wweight3" class="checkbox">
+												<label for="wweight3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight4" class="checkbox">
-												<label for="weight4" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="wweight4" class="checkbox">
+												<label for="wweight4" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -3460,32 +3460,32 @@
 										</h2>
 										<div class="allfilters heat">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat1" class="checkbox">
-												<label for="heat1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="hheat1" class="checkbox">
+												<label for="hheat1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat2" class="checkbox">
-												<label for="heat2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="hheat2" class="checkbox">
+												<label for="hheat2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat3" class="checkbox">
-												<label for="heat3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat3" class="checkbox">
+												<label for="hheat3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat4" class="checkbox">
-												<label for="heat4" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="hheat4" class="checkbox">
+												<label for="hheat4" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat5" class="checkbox">
-												<label for="heat5" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="hheat5" class="checkbox">
+												<label for="hheat5" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat6" class="checkbox">
-												<label for="heat6" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat6" class="checkbox">
+												<label for="hheat6" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat7" class="checkbox">
-												<label for="heat7" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat7" class="checkbox">
+												<label for="hheat7" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3498,20 +3498,20 @@
 										</h2>
 										<div class="allfilters fortress">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress1" class="checkbox">
-												<label for="fortress1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ffortress1" class="checkbox">
+												<label for="ffortress1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress2" class="checkbox">
-												<label for="fortress2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ffortress2" class="checkbox">
+												<label for="ffortress2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress3" class="checkbox">
-												<label for="fortress3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ffortress3" class="checkbox">
+												<label for="ffortress3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress4" class="checkbox">
-												<label for="fortress4" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="ffortress4" class="checkbox">
+												<label for="ffortress4" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -3524,32 +3524,32 @@
 										</h2>
 										<div class="allfilters producer">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer1" class="checkbox">
-												<label for="producer1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer1" class="checkbox">
+												<label for="pproducer1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer2" class="checkbox">
-												<label for="producer2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer2" class="checkbox">
+												<label for="pproducer2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer3" class="checkbox">
-												<label for="producer3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer3" class="checkbox">
+												<label for="pproducer3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer4" class="checkbox">
-												<label for="producer4" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer4" class="checkbox">
+												<label for="pproducer4" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer5" class="checkbox">
-												<label for="producer5" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer5" class="checkbox">
+												<label for="pproducer5" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer6" class="checkbox">
-												<label for="producer6" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer6" class="checkbox">
+												<label for="pproducer6" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer7" class="checkbox">
-												<label for="producer7" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer7" class="checkbox">
+												<label for="pproducer7" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3589,16 +3589,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider3" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider3"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost3" value="0">
+												<input type="number" id="minCost3" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost3" value="8000">
+												<input type="number" id="maxCost3" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -3611,32 +3611,32 @@
 										</h2>
 										<div class="allfilters heat">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand11" class="checkbox">
-												<label for="brand11" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="bbrand11" class="checkbox">
+												<label for="bbrand11" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand12" class="checkbox">
-												<label for="brand12" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="bbrand12" class="checkbox">
+												<label for="bbrand12" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand13" class="checkbox">
-												<label for="brand13" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="bbrand13" class="checkbox">
+												<label for="bbrand13" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand14" class="checkbox">
-												<label for="brand14" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="bbrand14" class="checkbox">
+												<label for="bbrand14" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand15" class="checkbox">
-												<label for="brand15" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="bbrand15" class="checkbox">
+												<label for="bbrand15" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand16" class="checkbox">
-												<label for="brand16" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="bbrand16" class="checkbox">
+												<label for="bbrand16" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="brand17" class="checkbox">
-												<label for="brand17" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="bbrand17" class="checkbox">
+												<label for="bbrand17" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3649,32 +3649,32 @@
 										</h2>
 										<div class="allfilters producer">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof11" class="checkbox">
-												<label for="typeof11" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof11" class="checkbox">
+												<label for="ttypeof11" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof12" class="checkbox">
-												<label for="typeof12" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof12" class="checkbox">
+												<label for="ttypeof12" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof13" class="checkbox">
-												<label for="typeof13" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof13" class="checkbox">
+												<label for="ttypeof13" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof14" class="checkbox">
-												<label for="typeof14" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof14" class="checkbox">
+												<label for="ttypeof14" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof15" class="checkbox">
-												<label for="typeof15" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof15" class="checkbox">
+												<label for="ttypeof15" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof16" class="checkbox">
-												<label for="typeof16" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof16" class="checkbox">
+												<label for="ttypeof16" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof17" class="checkbox">
-												<label for="typeof17" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof17" class="checkbox">
+												<label for="ttypeof17" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3738,16 +3738,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider4" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider4"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost4" value="0">
+												<input type="number" id="minCost4" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost4" value="8000">
+												<input type="number" id="maxCost4" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -3760,28 +3760,28 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac22" class="checkbox">
-												<label for="tabac22" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac22" class="checkbox">
+												<label for="ttabac22" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac23" class="checkbox">
-												<label for="tabac23" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac23" class="checkbox">
+												<label for="ttabac23" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac24" class="checkbox">
-												<label for="tabac24" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ttabac24" class="checkbox">
+												<label for="ttabac24" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac25" class="checkbox">
-												<label for="tabac25" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ttabac25" class="checkbox">
+												<label for="ttabac25" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac26" class="checkbox">
-												<label for="tabac26" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac26" class="checkbox">
+												<label for="ttabac26" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac27" class="checkbox">
-												<label for="tabac27" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac27" class="checkbox">
+												<label for="ttabac27" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 										</div>
 									</div>
@@ -3794,32 +3794,32 @@
 										</h2>
 										<div class="allfilters taste">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste21" class="checkbox">
-												<label for="taste21" class="checkboxlabel">До 50 см</label>
+												<input type="checkbox" id="ttaste21" class="checkbox">
+												<label for="ttaste21" class="checkboxlabel">До 50 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste22" class="checkbox">
-												<label for="taste22" class="checkboxlabel">От 50 до 80 см</label>
+												<input type="checkbox" id="ttaste22" class="checkbox">
+												<label for="ttaste22" class="checkboxlabel">От 50 до 80 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste23" class="checkbox">
-												<label for="taste23" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste23" class="checkbox">
+												<label for="ttaste23" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste24" class="checkbox">
-												<label for="taste24" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste24" class="checkbox">
+												<label for="ttaste24" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste25" class="checkbox">
-												<label for="taste25" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste25" class="checkbox">
+												<label for="ttaste25" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste26" class="checkbox">
-												<label for="taste26" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste26" class="checkbox">
+												<label for="ttaste26" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste27" class="checkbox">
-												<label for="taste27" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste27" class="checkbox">
+												<label for="ttaste27" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 										</div>
 									</div>
@@ -3832,20 +3832,20 @@
 										</h2>
 										<div class="allfilters weight">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight21" class="checkbox">
-												<label for="weight21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="wweight21" class="checkbox">
+												<label for="wweight21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight22" class="checkbox">
-												<label for="weight22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="wweight22" class="checkbox">
+												<label for="wweight22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight23" class="checkbox">
-												<label for="weight23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="wweight23" class="checkbox">
+												<label for="wweight23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="weight24" class="checkbox">
-												<label for="weight24" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="wweight24" class="checkbox">
+												<label for="wweight24" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -3858,32 +3858,32 @@
 										</h2>
 										<div class="allfilters heat">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat21" class="checkbox">
-												<label for="heat21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="hheat21" class="checkbox">
+												<label for="hheat21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat22" class="checkbox">
-												<label for="heat22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="hheat22" class="checkbox">
+												<label for="hheat22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat23" class="checkbox">
-												<label for="heat23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat23" class="checkbox">
+												<label for="hheat23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat24" class="checkbox">
-												<label for="heat24" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="hheat24" class="checkbox">
+												<label for="hheat24" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat25" class="checkbox">
-												<label for="heat25" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="hheat25" class="checkbox">
+												<label for="hheat25" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat26" class="checkbox">
-												<label for="heat26" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat26" class="checkbox">
+												<label for="hheat26" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="heat27" class="checkbox">
-												<label for="heat27" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="hheat27" class="checkbox">
+												<label for="hheat27" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -3896,20 +3896,20 @@
 										</h2>
 										<div class="allfilters fortress">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress21" class="checkbox">
-												<label for="fortress21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ffortress21" class="checkbox">
+												<label for="ffortress21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress22" class="checkbox">
-												<label for="fortress22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ffortress22" class="checkbox">
+												<label for="ffortress22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress23" class="checkbox">
-												<label for="fortress23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ffortress23" class="checkbox">
+												<label for="ffortress23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress24" class="checkbox">
-												<label for="fortress24" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="ffortress24" class="checkbox">
+												<label for="ffortress24" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -3922,32 +3922,32 @@
 										</h2>
 										<div class="allfilters producer">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer21" class="checkbox">
-												<label for="producer21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer21" class="checkbox">
+												<label for="pproducer21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer22" class="checkbox">
-												<label for="producer22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer22" class="checkbox">
+												<label for="pproducer22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer23" class="checkbox">
-												<label for="producer23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer23" class="checkbox">
+												<label for="pproducer23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer24" class="checkbox">
-												<label for="producer24" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer24" class="checkbox">
+												<label for="pproducer24" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer25" class="checkbox">
-												<label for="producer25" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer25" class="checkbox">
+												<label for="pproducer25" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer26" class="checkbox">
-												<label for="producer26" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer26" class="checkbox">
+												<label for="pproducer26" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer27" class="checkbox">
-												<label for="producer27" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer27" class="checkbox">
+												<label for="pproducer27" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -4035,16 +4035,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider5" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider5"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost5" value="0">
+												<input type="number" id="minCost5" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost5" value="8000">
+												<input type="number" id="maxCost5" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -4099,32 +4099,32 @@
 										</h2>
 										<div class="allfilters typeof" style="display: none;">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof21" class="checkbox">
-												<label for="typeof21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof21" class="checkbox">
+												<label for="ttypeof21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof22" class="checkbox">
-												<label for="typeof22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof22" class="checkbox">
+												<label for="ttypeof22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof23" class="checkbox">
-												<label for="typeof23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof23" class="checkbox">
+												<label for="ttypeof23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof24" class="checkbox">
-												<label for="typeof24" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ttypeof24" class="checkbox">
+												<label for="ttypeof24" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof25" class="checkbox">
-												<label for="typeof25" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ttypeof25" class="checkbox">
+												<label for="ttypeof25" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof26" class="checkbox">
-												<label for="typeof26" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof26" class="checkbox">
+												<label for="ttypeof26" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="typeof27" class="checkbox">
-												<label for="typeof27" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ttypeof27" class="checkbox">
+												<label for="ttypeof27" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -4156,28 +4156,28 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater1" class="checkbox">
-												<label for="mater1" class="checkboxlabel">Материал 1</label>
+												<input type="checkbox" id="mmater1" class="checkbox">
+												<label for="mmater1" class="checkboxlabel">Материал 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater2" class="checkbox">
-												<label for="mater2" class="checkboxlabel">Материал 2</label>
+												<input type="checkbox" id="mmater2" class="checkbox">
+												<label for="mmater2" class="checkboxlabel">Материал 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater3" class="checkbox">
-												<label for="mater3" class="checkboxlabel">Материал 3</label>
+												<input type="checkbox" id="mmater3" class="checkbox">
+												<label for="mmater3" class="checkboxlabel">Материал 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater4" class="checkbox">
-												<label for="mater4" class="checkboxlabel">Материал 4</label>
+												<input type="checkbox" id="mmater4" class="checkbox">
+												<label for="mmater4" class="checkboxlabel">Материал 4</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater5" class="checkbox">
-												<label for="mater5" class="checkboxlabel">Материал 5</label>
+												<input type="checkbox" id="mmater5" class="checkbox">
+												<label for="mmater5" class="checkboxlabel">Материал 5</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="mater6" class="checkbox">
-												<label for="mater6" class="checkboxlabel">Материал 6</label>
+												<input type="checkbox" id="mmater6" class="checkbox">
+												<label for="mmater6" class="checkboxlabel">Материал 6</label>
 											</div>
 										</div>
 									</div>
@@ -4190,28 +4190,28 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac42" class="checkbox">
-												<label for="tabac42" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac42" class="checkbox">
+												<label for="ttabac42" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac43" class="checkbox">
-												<label for="tabac43" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac43" class="checkbox">
+												<label for="ttabac43" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac44" class="checkbox">
-												<label for="tabac44" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ttabac44" class="checkbox">
+												<label for="ttabac44" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac45" class="checkbox">
-												<label for="tabac45" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ttabac45" class="checkbox">
+												<label for="ttabac45" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac46" class="checkbox">
-												<label for="tabac46" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac46" class="checkbox">
+												<label for="ttabac46" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac47" class="checkbox">
-												<label for="tabac47" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac47" class="checkbox">
+												<label for="ttabac47" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 										</div>
 									</div>
@@ -4224,32 +4224,32 @@
 										</h2>
 										<div class="allfilters taste">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat1" class="checkbox">
-												<label for="bat1" class="checkboxlabel">Аккумулятор 1</label>
+												<input type="checkbox" id="bbat1" class="checkbox">
+												<label for="bbat1" class="checkboxlabel">Аккумулятор 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat2" class="checkbox">
-												<label for="bat2" class="checkboxlabel">Аккумулятор 2</label>
+												<input type="checkbox" id="bbat2" class="checkbox">
+												<label for="bbat2" class="checkboxlabel">Аккумулятор 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat3" class="checkbox">
-												<label for="bat3" class="checkboxlabel">Аккумулятор 3</label>
+												<input type="checkbox" id="bbat3" class="checkbox">
+												<label for="bbat3" class="checkboxlabel">Аккумулятор 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat4" class="checkbox">
-												<label for="bat4" class="checkboxlabel">Аккумулятор 4</label>
+												<input type="checkbox" id="bbat4" class="checkbox">
+												<label for="bbat4" class="checkboxlabel">Аккумулятор 4</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat5" class="checkbox">
-												<label for="bat5" class="checkboxlabel">Аккумулятор 5</label>
+												<input type="checkbox" id="bbat5" class="checkbox">
+												<label for="bbat5" class="checkboxlabel">Аккумулятор 5</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat6" class="checkbox">
-												<label for="bat6" class="checkboxlabel">Аккумулятор 6</label>
+												<input type="checkbox" id="bbat6" class="checkbox">
+												<label for="bbat6" class="checkboxlabel">Аккумулятор 6</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bat7" class="checkbox">
-												<label for="bat7" class="checkboxlabel">Аккумулятор 7</label>
+												<input type="checkbox" id="bbat7" class="checkbox">
+												<label for="bbat7" class="checkboxlabel">Аккумулятор 7</label>
 											</div>
 										</div>
 									</div>
@@ -4262,20 +4262,20 @@
 										</h2>
 										<div class="allfilters bulk">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk21" class="checkbox">
-												<label for="bulk21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="bbulk21" class="checkbox">
+												<label for="bbulk21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk22" class="checkbox">
-												<label for="bulk22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="bbulk22" class="checkbox">
+												<label for="bbulk22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk23" class="checkbox">
-												<label for="bulk23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="bbulk23" class="checkbox">
+												<label for="bbulk23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk24" class="checkbox">
-												<label for="bulk24" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="bbulk24" class="checkbox">
+												<label for="bbulk24" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -4288,32 +4288,32 @@
 										</h2>
 										<div class="allfilters country">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country21" class="checkbox">
-												<label for="country21" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ccountry21" class="checkbox">
+												<label for="ccountry21" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country22" class="checkbox">
-												<label for="country22" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ccountry22" class="checkbox">
+												<label for="ccountry22" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country23" class="checkbox">
-												<label for="country23" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry23" class="checkbox">
+												<label for="ccountry23" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country24" class="checkbox">
-												<label for="country24" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ccountry24" class="checkbox">
+												<label for="ccountry24" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country25" class="checkbox">
-												<label for="country25" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ccountry25" class="checkbox">
+												<label for="ccountry25" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country26" class="checkbox">
-												<label for="country26" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry26" class="checkbox">
+												<label for="ccountry26" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="country27" class="checkbox">
-												<label for="country27" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ccountry27" class="checkbox">
+												<label for="ccountry27" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -4353,16 +4353,16 @@
 										<h2 class="sidefilters__title pricefilter__title">
 											Цена, руб.
 										</h2>
-										<div id="slider6" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+										<div id="slider6"></div>
 										<div class="pricefilter__cont">
 											<div class="pricefilter__input">
 												<span>от:</span>
-												<input type="text" id="minCost6" value="0">
+												<input type="number" id="minCost6" min="0" pattern="[0-9]*" value="0">
 											</div>
 											<div class="pricefilter__line"></div>
 											<div class="pricefilter__input">
 												<span>до:</span>
-												<input type="text" id="maxCost6" value="8000">
+												<input type="number" id="maxCost6" min="0" pattern="[0-9]*" value="8000">
 											</div>
 										</div>
 									</div>
@@ -4375,28 +4375,28 @@
 										</h2>
 										<div class="allfilters brand">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac32" class="checkbox">
-												<label for="tabac32" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac32" class="checkbox">
+												<label for="ttabac32" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac33" class="checkbox">
-												<label for="tabac33" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac33" class="checkbox">
+												<label for="ttabac33" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac34" class="checkbox">
-												<label for="tabac34" class="checkboxlabel">Khalil Mamoon (80)</label>
+												<input type="checkbox" id="ttabac34" class="checkbox">
+												<label for="ttabac34" class="checkboxlabel">Khalil Mamoon (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac35" class="checkbox">
-												<label for="tabac35" class="checkboxlabel">Ager (24)</label>
+												<input type="checkbox" id="ttabac35" class="checkbox">
+												<label for="ttabac35" class="checkboxlabel">Ager (24)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac36" class="checkbox">
-												<label for="tabac36" class="checkboxlabel">Арт Кальян (80)</label>
+												<input type="checkbox" id="ttabac36" class="checkbox">
+												<label for="ttabac36" class="checkboxlabel">Арт Кальян (80)</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="tabac37" class="checkbox">
-												<label for="tabac37" class="checkboxlabel">Amy Deluxe (24)</label>
+												<input type="checkbox" id="ttabac37" class="checkbox">
+												<label for="ttabac37" class="checkboxlabel">Amy Deluxe (24)</label>
 											</div>
 										</div>
 									</div>
@@ -4409,32 +4409,32 @@
 										</h2>
 										<div class="allfilters taste">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste31" class="checkbox">
-												<label for="taste31" class="checkboxlabel">До 50 см</label>
+												<input type="checkbox" id="ttaste31" class="checkbox">
+												<label for="ttaste31" class="checkboxlabel">До 50 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste32" class="checkbox">
-												<label for="taste32" class="checkboxlabel">От 50 до 80 см</label>
+												<input type="checkbox" id="ttaste32" class="checkbox">
+												<label for="ttaste32" class="checkboxlabel">От 50 до 80 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste33" class="checkbox">
-												<label for="taste33" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste33" class="checkbox">
+												<label for="ttaste33" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste34" class="checkbox">
-												<label for="taste34" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste34" class="checkbox">
+												<label for="ttaste34" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste35" class="checkbox">
-												<label for="taste35" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste35" class="checkbox">
+												<label for="ttaste35" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste36" class="checkbox">
-												<label for="taste36" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste36" class="checkbox">
+												<label for="ttaste36" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="taste37" class="checkbox">
-												<label for="taste37" class="checkboxlabel">От 80 до 120 см</label>
+												<input type="checkbox" id="ttaste37" class="checkbox">
+												<label for="ttaste37" class="checkboxlabel">От 80 до 120 см</label>
 											</div>
 										</div>
 									</div>
@@ -4447,20 +4447,20 @@
 										</h2>
 										<div class="allfilters bulk">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk1" class="checkbox">
-												<label for="bulk1" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="bbulk1" class="checkbox">
+												<label for="bbulk1" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk2" class="checkbox">
-												<label for="bulk2" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="bbulk2" class="checkbox">
+												<label for="bbulk2" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk3" class="checkbox">
-												<label for="bulk3" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="bbulk3" class="checkbox">
+												<label for="bbulk3" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="bulk4" class="checkbox">
-												<label for="bulk4" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="bbulk4" class="checkbox">
+												<label for="bbulk4" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -4473,20 +4473,20 @@
 										</h2>
 										<div class="allfilters fortress">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress31" class="checkbox">
-												<label for="fortress31" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="ffortress31" class="checkbox">
+												<label for="ffortress31" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress32" class="checkbox">
-												<label for="fortress32" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="ffortress32" class="checkbox">
+												<label for="ffortress32" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress33" class="checkbox">
-												<label for="fortress33" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="ffortress33" class="checkbox">
+												<label for="ffortress33" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="fortress34" class="checkbox">
-												<label for="fortress34" class="checkboxlabel">Вид 4</label>
+												<input type="checkbox" id="ffortress34" class="checkbox">
+												<label for="ffortress34" class="checkboxlabel">Вид 4</label>
 											</div>
 										</div>
 									</div>
@@ -4499,32 +4499,32 @@
 										</h2>
 										<div class="allfilters producer">
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer31" class="checkbox">
-												<label for="producer31" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer31" class="checkbox">
+												<label for="pproducer31" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer32" class="checkbox">
-												<label for="producer32" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer32" class="checkbox">
+												<label for="pproducer32" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer33" class="checkbox">
-												<label for="producer33" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer33" class="checkbox">
+												<label for="pproducer33" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer34" class="checkbox">
-												<label for="producer34" class="checkboxlabel">Вид 1</label>
+												<input type="checkbox" id="pproducer34" class="checkbox">
+												<label for="pproducer34" class="checkboxlabel">Вид 1</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer35" class="checkbox">
-												<label for="producer35" class="checkboxlabel">Вид 2</label>
+												<input type="checkbox" id="pproducer35" class="checkbox">
+												<label for="pproducer35" class="checkboxlabel">Вид 2</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer36" class="checkbox">
-												<label for="producer26" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer36" class="checkbox">
+												<label for="pproducer26" class="checkboxlabel">Вид 3</label>
 											</div>
 											<div class="allfilters__item allfilters__item_check">
-												<input type="checkbox" id="producer37" class="checkbox">
-												<label for="producer37" class="checkboxlabel">Вид 3</label>
+												<input type="checkbox" id="pproducer37" class="checkbox">
+												<label for="pproducer37" class="checkboxlabel">Вид 3</label>
 											</div>
 										</div>
 									</div>
@@ -4607,7 +4607,7 @@
 								<img src="img/icon_more-g.svg" alt="" class="sidenav__more">
 							</li>
 						</ul>
-					</nav>
+					</nav> -->
 					<li>
 						<a href="">Главная</a>
 					</li>

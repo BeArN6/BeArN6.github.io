@@ -2199,8 +2199,12 @@ h3 {
   font-size: 20px;
 }
 .mainnav a {
-  font: 12px UT;
-  font-weight: 700;
+  /*font: 12px UT;*/
+  /*font-weight: 700;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
   color: #fff;
   padding: 8px 0px;
 }
@@ -4823,9 +4827,6 @@ h3 {
   font: 16px NP;
   position: absolute;
 }
-.kalitem span:hover {
-  text-shadow: 1px 1px 1px rgba(169, 28, 95, 0.5);
-}
 .kalitem_1 {
   top: 53px;
   left: 172px;
@@ -4870,6 +4871,10 @@ h3 {
   position: absolute;
   z-index: 4;
   display: block !important;
+  transition: 0.3s;
+}
+.kalitem__title:hover {
+  margin-top: -3px;
 }
 .kalitem__title:hover + img {
   display: block;
@@ -4877,35 +4882,40 @@ h3 {
 .kalitem__title img {
   display: block;
 }
+.kalitem__title span {
+  color: #a91c5f;
+  font: 16px NP;
+  position: absolute;
+}
 .kalitem__title_1 {
-  left: -149px;
-  top: -25px;
+  left: 24px;
+  top: 30px;
 }
 .kalitem__title_1 span {
   bottom: 28px;
 }
 .kalitem__title_2 {
-  left: -168px;
-  top: -28px;
+  left: 24px;
+  top: 66px;
 }
 .kalitem__title_3 {
-  left: -129px;
-  top: -41px;
+  left: 24px;
+  top: 103px;
 }
 .kalitem__title_4 {
-  left: -151px;
-  top: -30px;
+  left: 24px;
+  top: 143px;
 }
 .kalitem__title_5 {
-  left: -31px;
-  top: 96px;
+  left: 24px;
+  top: 300px;
 }
 .kalitem__title_5 span {
   bottom: 32px;
 }
 .kalitem__title_6 {
-  left: -107px;
-  top: 68px;
+  left: 24px;
+  top: 405px;
 }
 .kalitem__title_6 span {
   bottom: 32px;
@@ -5041,11 +5051,11 @@ h3 {
 }
 .balanceopen__title:first-child {
   border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  /*border-bottom-left-radius: 8px;*/
 }
 .balanceopen__title:last-child {
   border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  /*border-bottom-right-radius: 8px;*/
 }
 .balanceopen__item {
   width: 33.33%;
@@ -5849,6 +5859,10 @@ h3 {
   /*Balance open page end*/
 }
 @media screen and (max-width: 767px) {
+  .main__container {
+    padding: 15px 10px;
+  }
+
   .content {
     margin-top: 62px;
   }
@@ -5875,6 +5889,9 @@ h3 {
   }
   .sidenav__more {
     right: 5px;
+  }
+  .sidenav .checkboxlabel {
+    display: none;
   }
 
   .mainnav {
@@ -6172,13 +6189,13 @@ h3 {
     justify-content: center;
   }
   .gcont__item {
-    margin-left: 5px;
+    margin-left: 0;
     width: 170px;
-    margin-right: 5px;
+    margin-right: 0;
     display: none;
   }
   .gcont__item:nth-child(4n) {
-    margin-right: 5px;
+    margin-right: 0;
   }
 
   .viewed, .interesting {
@@ -6235,6 +6252,7 @@ h3 {
   }
   .constructor__part {
     margin-bottom: 15px;
+    width: 26%;
   }
   .constructor__part:hover {
     background: transparent;
@@ -6272,11 +6290,14 @@ h3 {
   .kalitem__title img {
     display: block !important;
   }
+  .kalitem__title:hover {
+    margin-top: 0;
+  }
 
   /*Constructor page end*/
   /*Wishlist page*/
   .wishlist__goods {
-    justify-content: center;
+    justify-content: space-between;
   }
   .wishlist__filter {
     flex-wrap: wrap;
@@ -6294,16 +6315,14 @@ h3 {
   .balanceopen__block {
     flex-direction: column;
   }
+  .balanceopen__block_title {
+    flex-direction: row;
+  }
   .balanceopen__title {
     width: 100%;
-  }
-  .balanceopen__title:first-child {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0;
-  }
-  .balanceopen__title:last-child {
-    border-radius: 0;
+    font-size: 15px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
   .balanceopen__item {
     width: 100%;
@@ -6319,6 +6338,9 @@ h3 {
   }
   .balanceopen__row p.balanceopen__row_p {
     display: block;
+  }
+  .balanceopen__row_active {
+    background: #fff;
   }
   .balanceopen__dots {
     width: auto;
@@ -6388,12 +6410,17 @@ h3 {
 
   /*Feedback end*/
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   .popular {
     padding: 0 49px;
   }
 
   .viewed, .interesting {
     padding: 0 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .wishlist__goods {
+    justify-content: center;
   }
 }
