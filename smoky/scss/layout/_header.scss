@@ -566,13 +566,15 @@ header{
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 	.header{
 		background: #fff;
 		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
+		width: 100%;
+		margin: 0 auto;
 		.wrapper{
-			min-width: 990px;
-    		max-width: 990px;
+			min-width: 892px;
+    		max-width: 100%;
     		flex-wrap: wrap;
     		justify-content: center;
     		box-shadow: 0px 0px 0 0;
@@ -580,20 +582,79 @@ header{
 		.mobside{
     		display: none;
     	}
+    	&__cont{
+    		display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-right: 15px;
+    		i{
+				display: block;
+    			font-size: 30px;
+    			color: #3a424b;
+    			margin-right: 10px;
+			}
+    	}
 		&__side{
-			display: block;
+			/*display: block;
 		    position: absolute;
 		    top: 10px;
-    		left: 5px;
+    		left: 5px;*/
+    		display: none;
 		}
 		&__logo{
+			width: 200px;
 			margin-right: 10px;
-    		margin-left: 5px;
+		}
+		&__info{
+			display: none;
+		}
+	}
+	.mobside{
+		padding: 20px 0;
+		width: 288px;
+		background: #fff;
+		position: absolute;
+		top: 105px;
+		left: 0;
+		z-index: 15;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
+		height: calc(100vh - 62px);
+    	overflow-y: scroll;
+		&_nav{
+			li{
+				display: block;
+				border-bottom: 1px solid #f2f2f2;
+				padding: 12px 0;
+				margin: 0 20px;
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+			a{
+				font-family: 'Roboto', sans-serif;
+    			font-size: 14px;
+    			font-weight: 700;
+    			color: #7f7f7f
+			}
+			&_toggle{
+				display: flex !important;
+				justify-content: space-between;
+				align-items: center;
+				i{
+					color: #7f7f7f;
+					font-size: 16px;
+					margin-right: 7px;
+				}
+				&_active{
+					i{
+						transform: rotate(180deg);
+					}
+				}
+			}
 		}
 	}
 	.htabs{
 		&__item{
-			width: 76.5px;
 			&_4{
 				border-right: 1px solid #e1e1e1;
 			}
@@ -622,7 +683,7 @@ header{
 		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
 		.wrapper{
 			min-width: 770px;
-    		max-width: 770px;
+    		max-width: 100%;
     		flex-wrap: wrap;
     		justify-content: center;
     		box-shadow: 0px 0px 0 0;
@@ -631,6 +692,7 @@ header{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
+			margin-right: 15px;
 			i{
 				display: block;
     			font-size: 30px;
@@ -704,6 +766,7 @@ header{
 	}
 	.htabs{
 		&__item{
+			width: 82.5px;
 			&_4{
 				border-right: 1px solid #e1e1e1;
 			}

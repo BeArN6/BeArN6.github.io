@@ -1,19 +1,54 @@
-@font-face {
+/*@font-face {
 	font-family: 'UT';
 	src: url('../fonts/Uni_Sans_Thin.otf');;
+}*/
+@font-face {
+	font-family: 'UT';
+	src: url('../fonts/Uni_Sans_Thin.eot');
+	src: url('../fonts/Uni_Sans_Thin.eot?#iefix') 
+	format('embedded-opentype'), url('../fonts/Uni_Sans_Thin.woff') 
+	format('woff'), url('../fonts/Uni_Sans_Thin.ttf') format('truetype'), 
+	url('../fonts/Uni_Sans_Thin.svg#Uni_Sans_Thin') format('svg');
 }
+
+/*@font-face {
+	font-family: 'NP';
+	src: url('../fonts/Nautilus.otf');
+}*/
 
 @font-face {
 	font-family: 'NP';
-	src: url('../fonts/Nautilus.otf');
+	src: url('../fonts/Nautilus.eot');
+	src: url('../fonts/Nautilus.eot?#iefix') 
+	format('embedded-opentype'), url('../fonts/Nautilus.woff') 
+	format('woff'), url('../fonts/Nautilus.ttf') format('truetype'), 
+	url('../fonts/Nautilus.svg#Nautilus') format('svg');
 }
+
+/*@font-face {
+	font-family: 'INTRO';
+	src: url('../fonts/Intro.otf');
+}*/
 
 @font-face {
 	font-family: 'INTRO';
-	src: url('../fonts/Intro.otf');
+	src: url('../fonts/Intro.eot');
+	src: url('../fonts/Intro.eot?#iefix') 
+	format('embedded-opentype'), url('../fonts/Intro.woff') 
+	format('woff'), url('../fonts/Intro.ttf') format('truetype'), 
+	url('../fonts/Intro.svg#Intro') format('svg');
 }
+
+/*@font-face {
+	font-family: 'MP';
+	src: url('../fonts/MyriadPro-Regular.otf');
+}*/
 
 @font-face {
 	font-family: 'MP';
-	src: url('../fonts/MyriadPro-Regular.otf');
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') 
+	format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff') 
+	format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), 
+	url('../fonts/MyriadPro-Regular.svg#Intro') format('svg');
 }
