@@ -108,35 +108,6 @@ $(window).bind('load', handler);
 $(window).bind('resize', handler);
 
 $(document).ready(function(){
-	var windWidth = $(window).width();
-	var slideHeight = windWidth/6.95;
-	var slideHeight2 = windWidth*0.64;
-	var timerH = windWidth/34.04;
-	var timerH2 = windWidth/10.67;
-	$(".box3__slide").css({
-		"height":slideHeight
-	});
-	$(".countDiv, .position").css({
-		"height":timerH
-	});
-	if(windWidth <= 768){
-		$(".box3__slide").css({
-			"height": slideHeight2
-		});
-		$(".countDiv, .position").css({
-			"height":timerH2
-		});
-	}
-	$('#clock').countdown('2017/12/09', function(event) {
-  		$(this).html(event.strftime('' 
-  			+ '<div class="zone"><span>%d</span><p>дней</p></div>'
-  			+ '<span>:</span>'
-  			+ '<div class="zone"><span>%H</span><p>часов</p></div>'
-  			+ '<span>:</span>'
-  			+ '<div class="zone"><span>%M</span><p>минут</p></div>'
-  			+ '<span>:</span>'
-  			+ '<div class="zone"><span>%S</span><p>секунд</p></div>'));
-	});
 	$(".slider1").slick({
 		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/arrow.png'></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/arrow.png'></button>"
@@ -152,6 +123,39 @@ $(document).ready(function(){
 			    }
 			}
 		]
+	});
+	var windWidth = $(window).width();
+	var slideHeight = windWidth/6.95;
+	var slideHeight2 = windWidth*0.64;
+	var timerH = windWidth/34.04;
+	var timerH2 = windWidth/10.67;
+	$(".box3__slide").css({
+		"height":slideHeight
+	});
+	$(".countDiv, .position").css({
+		"height":timerH
+	});
+	var dotWidth = $(".box3 .slick-dots li").width();
+	if(windWidth <= 768){
+		$(".box3__slide").css({
+			"height": slideHeight2
+		});
+		$(".countDiv, .position").css({
+			"height":timerH2
+		});
+		$('.box3 .slick-dots li').css({
+			"height":dotWidth
+		});
+	}
+	$('#clock').countdown('2017/12/09', function(event) {
+  		$(this).html(event.strftime('' 
+  			+ '<div class="zone"><span>%d</span><p>дней</p></div>'
+  			+ '<span>:</span>'
+  			+ '<div class="zone"><span>%H</span><p>часов</p></div>'
+  			+ '<span>:</span>'
+  			+ '<div class="zone"><span>%M</span><p>минут</p></div>'
+  			+ '<span>:</span>'
+  			+ '<div class="zone"><span>%S</span><p>секунд</p></div>'));
 	});
 });
 

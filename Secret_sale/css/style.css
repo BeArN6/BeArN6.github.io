@@ -402,7 +402,7 @@ header .wrapper {
   }
 
   .header .wrapper {
-    padding-top: 7.5%;
+    padding-top: 5.5%;
   }
   .header__logo {
     width: 37.5%;
@@ -427,7 +427,7 @@ header .wrapper {
     width: 100%;
     border-radius: 0;
     padding: 4% 0;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
   }
   .header__timer p {
     font-size: 4.375VW;
@@ -936,6 +936,7 @@ footer {
 @media screen and (max-width: 767px) {
   .main-wrapper {
     background: url(../img/mobmainbg.jpg) top center no-repeat;
+    background-size: cover;
   }
 
   .contenttitle {
@@ -1081,18 +1082,28 @@ footer {
   }
   .box3__slide_1 {
     background: url(../img/mob1.jpg);
+    background-size: cover;
+    background-position: bottom right;
   }
   .box3__slide_2 {
     background: url(../img/mob3.jpg);
+    background-size: cover;
+    background-position: bottom right;
   }
   .box3__slide_3 {
     background: url(../img/mob4.jpg);
+    background-size: cover;
+    background-position: bottom right;
   }
   .box3__slide_4 {
     background: url(../img/mob5.jpg);
+    background-size: cover;
+    background-position: bottom right;
   }
   .box3__slide_5 {
     background: url(../img/mob6.jpg);
+    background-size: cover;
+    background-position: bottom right;
   }
   .box3__h2 {
     font-size: 7.5VW;

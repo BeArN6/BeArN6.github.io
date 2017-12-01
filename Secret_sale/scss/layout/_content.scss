@@ -409,6 +409,7 @@
 @media screen and (max-width: 767px) {
 	.main-wrapper{
 		background: url(../img/mobmainbg.jpg) top center no-repeat;
+		background-size: cover;
 	}
 	.contenttitle{
 		font-size: 8.75VW;
@@ -553,18 +554,28 @@
 		&__slide{
 			&_1{
 				background: url(../img/mob1.jpg);
+				background-size: cover;
+    			background-position: bottom right;
 			}
 			&_2{
 				background: url(../img/mob3.jpg);
+				background-size: cover;
+    			background-position: bottom right;
 			}
 			&_3{
 				background: url(../img/mob4.jpg);
+				background-size: cover;
+    			background-position: bottom right;
 			}
 			&_4{
 				background: url(../img/mob5.jpg);
+				background-size: cover;
+    			background-position: bottom right;
 			}
 			&_5{
 				background: url(../img/mob6.jpg);
+				background-size: cover;
+    			background-position: bottom right;
 			}
 		}
 		&__h2{
