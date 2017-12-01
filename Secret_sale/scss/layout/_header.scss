@@ -1,0 +1,336 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+/*Countdown styles*/
+.countdownHolder{
+	width: 100%;
+	margin: 0 auto;
+	/*font: 40px/1.5 'Open Sans Condensed',sans-serif;*/
+	text-align: center;
+	/*letter-spacing: -3px;*/
+}
+.position{
+	display: inline-block;
+	height: 1.6em;
+	/*overflow: hidden;*/
+	position: relative;
+	width: 7.4%;
+	margin: 0 0.2%;
+}
+.digit{
+	position: absolute;
+	display: block;
+	width: 100%;
+	letter-spacing: 0;
+	border-radius: 3px;
+	text-align: center;
+	left: 0;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.875VW;
+	box-shadow: 0px 2px 3px 0px rgba(36,9,56,0.75);
+}
+.digit.static{
+	/*box-shadow: 1px 1px 1px rgba(4, 4, 4, 0.35);*/
+	background-image: linear-gradient(to bottom, #9254c7, #7221ad);
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+.countDiv{
+	display: inline-block;
+	width: 5.4%;
+	height: 1.6em;
+	position: relative;
+}
+.countDiv:before/*,
+.countDiv:after*/{
+	position: absolute;
+	/*width: 13.2%;
+    height: 10.8%;
+	background-color: #fff;
+	border-radius: 100%;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.875VW;
+	color: #fff;
+	left: 38%;
+    top: 12%;
+	content: ':';
+}
+/*.countDiv:after{
+	top: 57%;
+}*/
+/*Countdown styles end*/
+
+header{
+	order: 1;	
+    -webkit-order: 1;	
+    .wrapper{
+    	text-align: center;
+    	padding-top: 1.8%;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	position: relative;
+    	z-index: 1;
+    }
+}
+.header{
+	margin-bottom: 9%;
+	&__logo{
+		width: 11.25%;
+		margin-bottom: 1.3%;
+		img{
+			width: 100%;
+		}
+	}
+	&__date{
+		width: 15.1875%;
+		background: url(../img/datebg.png) center center no-repeat;
+		background-size: 100%;
+		padding: 0.5% 0 0.65%;
+		span{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			font-size: 1.5VW;
+			color: #fff;
+		}
+	}
+	&__title{
+		font: 5.625VW Intro;
+		text-transform: uppercase;
+		/*Text gradient and shadow*/
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #91a9cb)); 
+		background-image: -webkit-linear-gradient(#ffa841,#ff8f20);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    color: #fff;
+	    position: relative;
+	    &:after{
+	    	background: none;
+		    content: attr(data-text);
+		    left: 0;
+			position: absolute;
+			text-shadow: 5px 0px 10px rgba(49, 11, 79, 0.3);
+			top: 0;
+			z-index: -1;
+	    }
+	    /*Text gradient and shadow end*/
+	}
+	&__subtitle{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 1.7500000000000002VW;
+		color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 1.8%;
+	}
+	&__timer{
+		border-radius: 5px;
+		box-shadow: 0 0 0 9999px rgba(255,255,255,0.1) inset;
+		margin-bottom: 2.1%;
+		width: 34.6875%;
+		padding-bottom: 1%;
+		padding-top: 1.3%;
+		p{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 1.375VW;
+			color: #fff;
+			margin-bottom: 4%;
+		}
+	}
+	&__note{
+		width: 86.5%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 2%;
+		span{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 0.8750000000000001VW;
+			color: #fff;
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+		}
+	}
+}
+/*#clock{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	span{
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1.875VW;
+	}
+}*/
+.zone{
+	span{
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700 !important;
+		font-size: 2.25VW !important;
+	}
+	p{
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 0.8750000000000001VW;
+	}
+}
+.connectform{
+	width: 34.6875%;
+	&__h2{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1.375VW;
+		color: #fff;
+		margin-bottom: 2%;
+		br{
+			display: none;
+		}
+	}
+	&__form{
+		display: flex;
+		justify-content: space-around;
+	}
+	&__input{
+		display: block;
+		background: #fff;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		border: 0;
+		width: 30.94%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 1.125VW;
+		color: #4d3f4e;
+		width: 68%;
+		padding: 3.4% 3.5%;
+		&::placeholder{
+			color: #4d3f4e;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 1.125VW;
+		}
+	}
+	&__submit{
+		display: block;
+		background: linear-gradient(to bottom, #ffa741, #f07e0f);
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size: 1.25VW;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 1px 0px 2px rgba(180, 90, 0, 0.3);
+		width: 32%;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.digit{
+		font-size: 6.875000000000001VW;
+	}
+	.countDiv{
+		&:before{
+			font-size: 6.09375VW;
+		}
+	}
+	.header{
+		.wrapper{
+			padding-top: 7.5%;
+		}
+		&__logo{
+			width: 37.5%;
+			margin-bottom: 5%;
+		}
+		&__date{
+			width: 50%;
+			padding: 2.2% 0 1.8%;
+			margin-bottom: 2%;
+			span{
+				font-size: 4.875VW;
+			}
+		}
+		&__title{
+			font-size: 13.750000000000002VW;
+		}
+		&__subtitle{
+			font-size: 5VW;
+			margin-bottom: 5.8%;
+		}
+		&__timer{
+			width: 100%;
+    		border-radius: 0;
+    		padding: 4% 0;
+    		margin-bottom: 8%;
+    		p{
+    			font-size: 4.375VW;
+    		}
+		}
+		&__note{
+			span{
+				font-size: 3.4375000000000004VW;
+			}
+		}
+	}
+	.connectform{
+		width: 90.625%;
+		&__h2{
+			font-size: 5VW;
+			line-height: 150%;
+			margin-bottom: 4%;
+			br{
+				display: block;
+			}
+		}
+		&__input{
+			padding: 4% 3.5%;
+			font-size: 3.75VW;
+			&::placeholder{
+				font-size: 3.75VW;
+			}
+		}
+		&__submit{
+			font-size: 4.0625VW;
+		}
+	}
+}
