@@ -36,6 +36,12 @@ header{
     	&_mob{
     		display: none;
     	}
+    	a{
+    		display: inline-block;
+    	}
+    	img{
+    		width: 230px;
+    	}
 	}
 	&__cont{
 		margin-right: 37px;
@@ -219,7 +225,7 @@ header{
 			position: relative;
 			.htabs__img span{
 				top: 11px;
-    			left: 18.5px;
+    			left: 19.5px;
 			}
 			p{
 				box-shadow: 0px 10px 0px 0px rgba(255,255,255,1);
@@ -233,7 +239,7 @@ header{
 		height: 50px;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: stretch;
 		position: relative;
 		span{
 			color: #192028;
@@ -254,7 +260,7 @@ header{
 		}
 		&_2{
 			span{
-				top: 11px;
+				top: 9px;
     			margin-left: -0.5px;
 			}
 		}
@@ -575,8 +581,9 @@ header{
 		.wrapper{
 			min-width: 892px;
     		max-width: 100%;
+    		min-height: 105px;
     		flex-wrap: wrap;
-    		justify-content: center;
+    		justify-content: space-between;
     		box-shadow: 0px 0px 0 0;
 		}
 		.mobside{
@@ -602,7 +609,7 @@ header{
     		display: none;
 		}
 		&__logo{
-			width: 200px;
+			/*width: 200px;*/
 			margin-right: 10px;
 		}
 		&__info{

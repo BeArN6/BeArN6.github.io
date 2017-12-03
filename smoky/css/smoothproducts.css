@@ -56,8 +56,6 @@ html, body {
 	background-size: cover;
 	background-position: center;
 	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-ms-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 }
@@ -95,7 +93,6 @@ html, body {
 	left: -50%;
 	top: -50%;
 	cursor: -webkit-zoom-in;
-	cursor: -moz-zoom-in;
 	cursor: zoom-in;
 	display: none;
 }
@@ -137,7 +134,10 @@ html, body {
 	border: 2px solid #fff;
 	width: 50px;
 	height: 50px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
 	transition: .2s;
 }
 #sp-prev {

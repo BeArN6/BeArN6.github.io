@@ -114,6 +114,21 @@ $(document).ready(function(){
 	if(windWidth < 768){
 		$(".htabs__item_3").addClass("modal-run5");
 	}
+
+	//Open cart mobile
+	$(".carttable__remove_mob1").click(function(){
+		$(".carttable__mobbox1").toggleClass("carttable__mobbox_active");
+		$(this).toggleClass("carttable__remove_mobactive");
+	});
+	$(".carttable__remove_mob2").click(function(){
+		$(".carttable__mobbox2").toggleClass("carttable__mobbox_active");
+		$(this).toggleClass("carttable__remove_mobactive");
+	});
+	$(".carttable__remove_mob3").click(function(){
+		$(".carttable__mobbox3").toggleClass("carttable__mobbox_active");
+		$(this).toggleClass("carttable__remove_mobactive");
+	});
+
 	//Hover menu
 	$('.dropdown').hide();
 	$('.mainnav li').hover(function () {
@@ -202,7 +217,7 @@ $(document).ready(function(){
 
 	//Sortby
 	$(".select2").on("click", ".select2__item_init", function() {
-	    $(this).closest(".select2").children('li:not(.select2__item_init)').slideToggle();
+	    $(this).closest(".select2").children('li:not(.select2__item_init)').toggle();
 	});
 
 	var allOptions2 = $(".select2").children('li:not(.select2__item_init)');
@@ -210,11 +225,11 @@ $(document).ready(function(){
 	    allOptions2.removeClass('selected');
 	    $(this).addClass('selected');
 	    $(".select2").children('.select2__item_init').html($(this).html());
-	    allOptions2.slideUp();
+	    allOptions2.hide();
 	});
 
 	$(".select3").on("click", ".select3__item_init", function() {
-	    $(this).closest(".select3").children('li:not(.select3__item_init)').slideToggle();
+	    $(this).closest(".select3").children('li:not(.select3__item_init)').toggle();
 	});
 
 	var allOptions3 = $(".select3").children('li:not(.select3__item_init)');
@@ -222,7 +237,33 @@ $(document).ready(function(){
 	    allOptions3.removeClass('selected');
 	    $(this).addClass('selected');
 	    $(".select3").children('.select3__item_init').html($(this).html());
-	    allOptions3.slideUp();
+	    allOptions3.hide();
+	});
+
+	//Balance open active
+	$(".balanceopen__row_2").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_2").toggleClass("balanceopen__row_active");
+	});
+	$(".balanceopen__row_3").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_3").toggleClass("balanceopen__row_active");
+	});
+	$(".balanceopen__row_4").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_4").toggleClass("balanceopen__row_active");
+	});
+	$(".balanceopen__row_5").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_5").toggleClass("balanceopen__row_active");
+	});
+	$(".balanceopen__row_6").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_6").toggleClass("balanceopen__row_active");
+	});
+	$(".balanceopen__row_7").click(function(){
+		$(".balanceopen__row").removeClass("balanceopen__row_active")
+		$(".balanceopen__row_7").toggleClass("balanceopen__row_active");
 	});
 
 	//Sidenav toggle
