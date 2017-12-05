@@ -4879,6 +4879,9 @@ h3{
 		width: 310px;
 		overflow-y: scroll;
 		margin-left: -155px !important;
+		overflow-y: scroll;
+		top: 10% !important;
+		max-height: 75vh;
 		&__title{
 			font-size: 20px;
 			margin-bottom: 5px;

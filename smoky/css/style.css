@@ -1087,9 +1087,11 @@ header {
   }
   .htabs__img_1 span {
     top: 8px;
+    left: 13.5px;
   }
   .htabs__img_2 span {
     top: 3px;
+    left: 16px;
   }
   .htabs__img_active span {
     color: #000;
@@ -6210,6 +6212,9 @@ h3 {
     width: 310px;
     overflow-y: scroll;
     margin-left: -155px !important;
+    overflow-y: scroll;
+    top: 10% !important;
+    max-height: 75vh;
   }
   .modalform__title {
     font-size: 20px;
