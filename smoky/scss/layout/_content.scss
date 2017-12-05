@@ -22,6 +22,7 @@ body{
 	justify-content:flex-start;	
     -webkit-justify-content:flex-start;	
     -ms-flex-pack: start;
+    align-items: center;
     background: url(../img/bg.jpg) top center no-repeat;
     background-size: cover;
 }
@@ -961,7 +962,7 @@ h3{
 	padding: 10px 30px;
 	top: 30px;
 	left: 0;
-	z-index: 7;
+	z-index: 11;
 	width: 895px;
 	display: flex;
 	justify-content: space-between;
@@ -1502,6 +1503,7 @@ h3{
 		border-bottom: 0;
 		border-radius: 2px;
 		cursor: pointer;
+		border-bottom: 1px solid #cfcfcf;
 		&:last-child{
 			border-bottom: 1px solid #cfcfcf;
 		}
@@ -1519,6 +1521,16 @@ h3{
 			color: #a91c5f;
 		}
 	}
+	&__hide{
+		display: none;
+	}
+	&__flex{
+		display: flex;
+	}
+	/*&__choose{
+		display: flex;
+		border-bottom: 1px solid #cfcfcf;
+	}*/
 }
 .pprice{
 	display: flex;

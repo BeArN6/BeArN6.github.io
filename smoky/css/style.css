@@ -762,7 +762,7 @@ header {
     align-items: center;
     margin-left: 15px;
     margin-right: 0;
-    width: calc(100% - 646px);
+    width: calc(100% - 700px);
     justify-self: flex-start;
   }
   .header__cont i {
@@ -779,9 +779,27 @@ header {
     display: none;
   }
   .header__logo {
-    width: 245px;
+    width: auto;
     margin-right: 10px;
     margin-right: 0;
+    		/*display: flex;
+			justify-content: flex-start;
+			align-items: center;*/
+  }
+  .header__logo i {
+    display: block;
+    font-size: 30px;
+    color: #3a424b;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .header__logo img {
+    width: 245px;
+  }
+  .header .header__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .header__info {
     display: none;
@@ -854,20 +872,32 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-right: 15px;
-    width: calc(100% - 555px);
-  }
-  .header__cont i {
-    display: block;
-    font-size: 30px;
-    color: #3a424b;
-    margin-right: 10px;
+    width: calc(100% - 590px);
+    			/*i{
+    				display: block;
+        			font-size: 30px;
+        			color: #3a424b;
+        			margin-right: 10px;
+    			}*/
   }
   .header__logo {
-    width: 200px;
+    width: auto;
     margin-right: 10px;
   }
+  .header__logo i {
+    display: block;
+    font-size: 23px;
+    color: #3a424b;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
   .header__logo img {
-    width: 100%;
+    width: 190px;
+  }
+  .header .header__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .header__info {
     display: none;
@@ -1338,6 +1368,7 @@ body {
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  align-items: center;
   background: url(../img/bg.jpg) top center no-repeat;
   background-size: cover;
 }
@@ -2329,7 +2360,7 @@ h3 {
   padding: 10px 30px;
   top: 30px;
   left: 0;
-  z-index: 7;
+  z-index: 11;
   width: 895px;
   display: flex;
   justify-content: space-between;
@@ -2648,6 +2679,10 @@ h3 {
   padding: 0 49px;
   padding-bottom: 30px;
   /* the slides */
+  /*&__choose{
+  	display: flex;
+  	border-bottom: 1px solid #cfcfcf;
+  }*/
 }
 .popular .slick-slide {
   margin-bottom: 10px;
@@ -2860,6 +2895,7 @@ h3 {
   border-bottom: 0;
   border-radius: 2px;
   cursor: pointer;
+  border-bottom: 1px solid #cfcfcf;
 }
 .popular__tool:last-child {
   border-bottom: 1px solid #cfcfcf;
@@ -2876,6 +2912,12 @@ h3 {
 }
 .popular__tool i.active {
   color: #a91c5f;
+}
+.popular__hide {
+  display: none;
+}
+.popular__flex {
+  display: flex;
 }
 
 .pprice {

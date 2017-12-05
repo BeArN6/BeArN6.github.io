@@ -115,6 +115,10 @@ $(document).ready(function(){
 		$(".htabs__item_3").addClass("modal-run5");
 	}
 
+	if(windWidth > 768 && windWidth < 1200){
+		$(".header__toogle").prependTo($(".header .header__logo"));
+	}
+
 	//Open cart mobile
 	$(".carttable__remove_mob1").click(function(){
 		$(".carttable__mobbox1").toggleClass("carttable__mobbox_active");
@@ -216,11 +220,18 @@ $(document).ready(function(){
 	});
 
 	//Product color choose
+	$(".popular__choose").click(function(){
+		$(this).siblings(".popular__color").toggleClass("popular__hide");
+		$(this).removeClass("popular__hide");
+		$(this).toggleClass("popular__choose");
+	});
 	$(".popular__color").click(function(){
 		var dataValue = $(this).attr('data-value');
 		var thisParent = $(this).parent('.popular__toolbox');
 		thisParent.siblings(".popular__img").removeClass("popular__img_active");
 		thisParent.siblings('[data-value = ' + dataValue + ']').addClass("popular__img_active");
+		$(this).toggleClass("popular__choose");
+		$(this).siblings(".popular__color").toggleClass("popular__hide");
 	});
 
 	//Sortby
@@ -799,7 +810,7 @@ $(document).ready(function(){
 	});
 
 	//Pouring heart
-	$(".popular__tool").click(function(){
+	$(".popular__tool").not($(".popular__color")).click(function(){
 		$(this).children().toggleClass("fa-heart-o");
 		$(this).children().toggleClass("fa-heart");
 		$(this).children().toggleClass("active");
