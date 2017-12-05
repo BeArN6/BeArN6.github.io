@@ -112,7 +112,7 @@ $(document).ready(function(){
 	var windWidth = $(window).width();
 
 	if(windWidth < 768){
-		$(".htabs__item_3").addClass("modal-run5");
+		$(".htabs__img_3").addClass("modal-run5");
 	}
 
 	//Open cart mobile
