@@ -111,7 +111,9 @@ $(window).bind('resize', handler);
 $(document).ready(function(){
 	var windWidth = $(window).width();
 
-	
+	if(windWidth < 768){
+		$(".htabs__item_3").addClass("modal-run5");
+	}
 
 	//Open cart mobile
 	$(".carttable__remove_mob1").click(function(){
@@ -186,10 +188,6 @@ $(document).ready(function(){
 	    }
 	  	]
 	});
-
-	if(windWidth < 768){
-		$(".htabs__item_3").addClass("modal-run5");
-	}
 
 	//Constructor slider
 	$('.const__slider').slick({
