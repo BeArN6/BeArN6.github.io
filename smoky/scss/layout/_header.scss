@@ -597,6 +597,8 @@ header{
 			align-items: center;
 			margin-left: 15px;
     		margin-right: 0;
+    		width: calc(100% - 646px);			
+    		justify-self: flex-start;
     		i{
 				display: block;
     			font-size: 30px;
@@ -612,9 +614,8 @@ header{
     		display: none;
 		}
 		&__logo{
-			/*width: 200px;*/
+			width: 245px;
 			margin-right: 10px;
-			order: 2;
     		margin-right: 0;
 		}
 		&__info{
@@ -656,17 +657,15 @@ header{
 					color: #7f7f7f;
 					font-size: 16px;
 					margin-right: 7px;
+					transform: rotate(180deg);
 				}
 				&_active{
 					i{
-						transform: rotate(180deg);
+						transform: rotate(0deg);
 					}
 				}
 			}
 		}
-	}
-	.htabs{
-		order: 2;
 	}
 	.search{
 		margin-bottom: 5px;
@@ -693,9 +692,9 @@ header{
 		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
 		.wrapper{
 			min-width: 770px;
-    		max-width: 100%;
+    		max-width: 100%;			
     		flex-wrap: wrap;
-    		justify-content: center;
+    		justify-content: space-between;
     		box-shadow: 0px 0px 0 0;
 		}
 		&__cont{
@@ -703,6 +702,7 @@ header{
 			justify-content: flex-start;
 			align-items: center;
 			margin-right: 15px;
+			width: calc(100% - 555px);
 			i{
 				display: block;
     			font-size: 30px;
@@ -713,6 +713,9 @@ header{
 		&__logo{
 			width: 200px;
 			margin-right: 10px;
+			img{
+				width: 100%;
+			}
 		}
 		&__info{
 			display: none;
@@ -726,7 +729,7 @@ header{
 		width: 288px;
 		background: #fff;
 		position: absolute;
-		top: 105px;
+		top: 92px;
 		left: 0;
 		z-index: 15;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
@@ -734,7 +737,7 @@ header{
     	overflow-y: scroll;
 		&_nav{
 			li{
-				display: block;
+				display: none;
 				border-bottom: 1px solid #f2f2f2;
 				padding: 12px 0;
 				margin: 0 20px;
@@ -756,10 +759,11 @@ header{
 					color: #7f7f7f;
 					font-size: 16px;
 					margin-right: 7px;
+					transform: rotate(180deg);
 				}
 				&_active{
 					i{
-						transform: rotate(180deg);
+						transform: rotate(0deg);
 					}
 				}
 			}
@@ -777,9 +781,9 @@ header{
 	.htabs{
 		&__item{
 			width: 82.5px;
-			&_4{
+			/*&_4{
 				border-right: 1px solid #e1e1e1;
-			}
+			}*/
 		}
 	}
 }

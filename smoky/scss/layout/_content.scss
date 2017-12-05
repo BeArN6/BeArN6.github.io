@@ -1396,11 +1396,14 @@ h3{
 	}
 	&__img{
 		height: 162px;
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 4px;
 		overflow: hidden;
+		&_active{
+			display: flex;
+		}
 	}
 	&__amount{
 		margin-bottom: 5px;
@@ -1498,6 +1501,7 @@ h3{
 		border: 1px solid #cfcfcf;
 		border-bottom: 0;
 		border-radius: 2px;
+		cursor: pointer;
 		&:last-child{
 			border-bottom: 1px solid #cfcfcf;
 		}
@@ -2830,7 +2834,7 @@ h3{
 	&__item{
 		border: 1px solid #cfcfcf;
     	border-radius: 8px;
-    	padding: 15px;
+    	padding: 11px 15px;
     	padding-top: 14.5px;
     	position: relative;
     	&_top{
@@ -2870,6 +2874,7 @@ h3{
 		justify-content: flex-start;
 		align-items: center;
 		cursor: pointer;
+		padding: 4px 0;
 		&_r{
 			border: 1px solid #d01a2d;
 			border-width: 0;
@@ -3641,6 +3646,12 @@ h3{
 		cursor: pointer;
 		&:hover{
 			margin-top: -3px;
+			img{
+				filter: hue-rotate(317deg);
+			}
+			span{
+				color: #503471;
+			}
 		}
 		&:hover + img{
 			display: block;
@@ -4412,7 +4423,7 @@ h3{
 		&__item{
 			padding: 0 20px;
 			background: #f8f8f8;
-			display: none;
+			/*display: none;*/
 			li{
 				padding: 0;
 				margin: 0;
@@ -4463,7 +4474,7 @@ h3{
 		&__item{
 			padding: 0 20px;
 			background: #f8f8f8;
-			display: none;
+			/*display: none;*/
 			li{
 				padding: 0;
 				margin: 0;

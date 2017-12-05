@@ -215,6 +215,14 @@ $(document).ready(function(){
 	  	]
 	});
 
+	//Product color choose
+	$(".popular__color").click(function(){
+		var dataValue = $(this).attr('data-value');
+		var thisParent = $(this).parent('.popular__toolbox');
+		thisParent.siblings(".popular__img").removeClass("popular__img_active");
+		thisParent.siblings('[data-value = ' + dataValue + ']').addClass("popular__img_active");
+	});
+
 	//Sortby
 	$(".select2").on("click", ".select2__item_init", function() {
 	    $(this).closest(".select2").children('li:not(.select2__item_init)').toggle();
