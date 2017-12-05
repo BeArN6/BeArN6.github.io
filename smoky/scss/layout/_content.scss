@@ -910,7 +910,7 @@ h3{
 	background: #3b205c;
 	height: 30px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: space-around;
 	position: relative;
 	/*overflow: hidden;*/
@@ -919,15 +919,18 @@ h3{
 		list-style: none;
     	display: flex;
     	justify-content: space-around;
+    	align-items: stretch;
     	ul{
     		display: block;
     		width: auto;
     	}
 	}
 	li{
-		display: block;
+		display: flex;
+		align-items: center;
 		border-radius: 30px;
-		padding: 7.5px 10px;
+		padding-left: 10px;
+    	padding-right: 10px;
 		&:hover{
 			background: #a91c5f;
 		}
@@ -949,7 +952,7 @@ h3{
 		font-weight: 400;
 		text-transform: uppercase;
 		color: #fff;
-		padding: 8px 0px;
+		/*padding: 8px 0px;*/
 	}
 }
 .dropdown{
@@ -1434,7 +1437,7 @@ h3{
 			color: #000;
 			font-family: 'Roboto', sans-serif;
 			font-size: 12px;
-			font-weight: 700;
+			font-weight: 400;
 			text-align: center;
 			&::placeholder{
 				color: #aeaeae;
@@ -1971,6 +1974,9 @@ h3{
 			top: 133px;
 			left: 145px;
 		}
+		&:hover{
+			color: #a91c5f;
+		}
 	}
 }
 .demo2{
@@ -2032,6 +2038,9 @@ h3{
 			top: 115px;
 			left: 40px;
 		}
+		&:hover{
+			color: #a91c5f;
+		}
 	}
 }
 .demo3{
@@ -2092,6 +2101,9 @@ h3{
 			font-size: 16px;
 			top: 115px;
 			left: 65px;
+		}
+		&:hover{
+			color: #a91c5f;
 		}
 	}
 }
@@ -3626,6 +3638,7 @@ h3{
 		z-index: 4;
 		display: block !important;
 		transition: 0.3s;
+		cursor: pointer;
 		&:hover{
 			margin-top: -3px;
 		}
@@ -4394,6 +4407,21 @@ h3{
 	    overflow-y: scroll;
 	    background: #fff;
 	    display: none;
+	}
+	.sidenav{
+		&__item{
+			padding: 0 20px;
+			background: #f8f8f8;
+			display: none;
+			li{
+				padding: 0;
+				margin: 0;
+				border-bottom: 1px solid #f2f2f2;
+			}
+		}
+		&__more{
+			right: 5px;
+		}
 	}
 	.maincont{
 		margin-left: auto;
@@ -5268,9 +5296,9 @@ h3{
 			p.balanceopen__row_p{
 				display: block;
 			}
-			&_active{
+			/*&_active{
 				background: #fff;
-			}
+			}*/
 		}
 		&__dots{
 			width: auto;

@@ -593,7 +593,8 @@ header{
     		display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			margin-right: 15px;
+			margin-left: 15px;
+    		margin-right: 0;
     		i{
 				display: block;
     			font-size: 30px;
@@ -611,6 +612,8 @@ header{
 		&__logo{
 			/*width: 200px;*/
 			margin-right: 10px;
+			order: 2;
+    		margin-right: 0;
 		}
 		&__info{
 			display: none;
@@ -629,7 +632,7 @@ header{
     	overflow-y: scroll;
 		&_nav{
 			li{
-				display: block;
+				display: none;
 				border-bottom: 1px solid #f2f2f2;
 				padding: 12px 0;
 				margin: 0 20px;
@@ -661,13 +664,11 @@ header{
 		}
 	}
 	.htabs{
-		&__item{
-			&_4{
-				border-right: 1px solid #e1e1e1;
-			}
-		}
+		order: 2;
 	}
 	.search{
+		margin-bottom: 5px;
+    	padding: 0 20px;
 		&__box{
 			input{
 				width: 200px;
@@ -921,6 +922,9 @@ header{
     		border: 0;
     		height: auto;
     		margin-left: 7px;
+    		&:hover{
+    			cursor: none;
+    		}
     		p{
     			display: none;
     		}

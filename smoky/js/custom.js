@@ -798,7 +798,7 @@ $(document).ready(function(){
 	});
 
 	//Replace sidenav when windowsize < 990px
-	if(windWidth < 990){
+	if(windWidth < 1200){
 		$(".mobside_nav_toggle").after($(".sidenav__item"));
 	}
 
