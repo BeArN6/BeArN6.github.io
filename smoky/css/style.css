@@ -762,7 +762,7 @@ header {
     align-items: center;
     margin-left: 15px;
     margin-right: 0;
-    width: calc(100% - 700px);
+    /*width: calc(100% - 700px);	*/
     justify-self: flex-start;
   }
   .header__cont i {
@@ -872,7 +872,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-right: 15px;
-    width: calc(100% - 590px);
+    /*width: calc(100% - 590px);*/
     			/*i{
     				display: block;
         			font-size: 30px;
@@ -1155,6 +1155,7 @@ footer {
   margin: 0 auto;
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.33);
   position: relative;
+  align-self: center;
 }
 .footer .wrapper {
   max-width: 1070px;
@@ -1368,7 +1369,7 @@ body {
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  align-items: center;
+  /*align-items: center;*/
   background: url(../img/bg.jpg) top center no-repeat;
   background-size: cover;
 }
@@ -5054,7 +5055,7 @@ h3 {
   cursor: pointer;
 }
 .kalitem__title:hover {
-  margin-top: -3px;
+  /*margin-top: -3px;*/
 }
 .kalitem__title:hover img {
   filter: hue-rotate(317deg);
