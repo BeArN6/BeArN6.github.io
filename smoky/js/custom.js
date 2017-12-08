@@ -271,7 +271,7 @@ $(window).load(function(){
 
 	//Mobile menu
 	$(".header__toogle").on('click',function(){
-		$(".mobside").slideToggle();
+		$(".header .wrapper .mobside").slideToggle(400);
 	});
 	$(".mobside_nav_toggle").click(function(){
 		$(this).toggleClass("mobside_nav_toggle_active");
