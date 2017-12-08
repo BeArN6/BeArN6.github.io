@@ -5503,6 +5503,16 @@ h3 {
   display: none;
   margin-bottom: 10px;
 }
+.feedback__p {
+  color: #2d2d2d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.feedback__p b {
+  font-weight: 500;
+}
 
 /*Feedback oo page end*/
 /*Modal*/
