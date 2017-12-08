@@ -67,6 +67,15 @@ $(window).load(function(){
 		$(".header__toogle").prependTo($(".header .header__logo"));
 	}
 
+	//Mobile menu
+	$(".header__toogle").on('click',function(){
+		$(".header .wrapper").find('.mobside').slideToggle(400);
+	});
+	$(".mobside_nav_toggle").click(function(){
+		$(this).toggleClass("mobside_nav_toggle_active");
+		$(".sidenav__item").slideToggle();
+	});
+
 	//Open cart mobile
 	$(".carttable__remove_mob1").click(function(){
 		$(".carttable__mobbox1").toggleClass("carttable__mobbox_active");
@@ -267,15 +276,6 @@ $(window).load(function(){
 	});
 	$('.interview__tab_5').click(function(){
 		$('.interview__block_5').show();
-	});
-
-	//Mobile menu
-	$(".header__toogle").on('click',function(){
-		$(".header .wrapper .mobside").slideToggle(400);
-	});
-	$(".mobside_nav_toggle").click(function(){
-		$(this).toggleClass("mobside_nav_toggle_active");
-		$(".sidenav__item").slideToggle();
 	});
 
 	//Sidebar 770
