@@ -4217,6 +4217,9 @@ h3 {
 .description__p b {
   font-weight: 500;
 }
+.description__p a {
+  font-weight: 500;
+}
 .description .showmore {
   margin-top: 10px;
 }
