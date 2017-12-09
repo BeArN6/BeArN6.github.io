@@ -4209,7 +4209,7 @@ h3 {
 }
 .description p {
   color: #2d2d2d;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
