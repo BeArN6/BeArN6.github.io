@@ -22,8 +22,7 @@ body{
 	justify-content:flex-start;	
     -webkit-justify-content:flex-start;	
     -ms-flex-pack: start;
-    /*align-items: center;*/
-    background: url(../img/bg.jpg) top center no-repeat;
+    background: url(../images/bg.jpg) top center no-repeat;
     background-size: cover;
 }
 .wrapper{
@@ -40,6 +39,7 @@ body{
 }
 .fixed{
 	position: fixed;
+	width: 100%;
 }
 
 /* titles */
@@ -72,7 +72,7 @@ h3{
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
-.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.icon-load{background:url(../images/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
 .loaded .icon-load{display:block;}
 
 
@@ -172,14 +172,14 @@ h3{
 	}
 	&__svg{
 		&_1{
-			background-image: url(../img/icon_hookah.svg);
+			background-image: url(../images/icon_hookah.svg);
 			background-size: contain;
 			width: 16px;
 			height: 25px;
 			display: inline-block;
 		}
 		&_2{
-			background-image: url(../img/icon_tobaccoo.svg);
+			background-image: url(../images/icon_tobaccoo.svg);
 			background-size: contain;
 			background-size: 100% 100%;
 			width: 21px;
@@ -187,21 +187,21 @@ h3{
 			display: inline-block;
 		}
 		&_3{
-			background-image: url(../img/icon.svg);
+			background-image: url(../images/icon.svg);
 			background-size: contain;
 			width: 21px;
 			height: 17px;
 			display: inline-block;
 		}
 		&_4{
-			background-image: url(../img/icon_accessories.svg);
+			background-image: url(../images/icon_accessories.svg);
 			background-size: contain;
 			width: 21px;
 			height: 21px;
 			display: inline-block;
 		}
 		&_5{
-			background-image: url(../img/icon_smoking-blends.svg);
+			background-image: url(../images/icon_smoking-blends.svg);
 			background-size: cover;
 			background-position: 100%;
 			width: 20px;
@@ -209,49 +209,49 @@ h3{
 			display: inline-block;
 		}
 		&_6{
-			background-image: url(../img/icon_kolba.svg);
+			background-image: url(../images/icon_kolba.svg);
 			background-size: contain;
 			width: 14px;
 			height: 19px;
 			display: inline-block;
 		}
 		&_7{
-			background-image: url(../img/icon_elHookah.svg);
+			background-image: url(../images/icon_elHookah.svg);
 			background-size: contain;
 			width: 22px;
 			height: 22px;
 			display: inline-block;
 		}
 		&_8{
-			background-image: url(../img/icon_vape.svg);
+			background-image: url(../images/icon_vape.svg);
 			background-size: contain;
 			width: 12px;
 			height: 24px;
 			display: inline-block;
 		}
 		&_9{
-			background-image: url(../img/icon_vapeWater.svg);
+			background-image: url(../images/icon_vapeWater.svg);
 			background-size: contain;
 			width: 10px;
 			height: 22px;
 			display: inline-block;
 		}
 		&_10{
-			background-image: url(../img/icon_game.svg);
+			background-image: url(../images/icon_game.svg);
 			background-size: contain;
 			width: 22px;
 			height: 22px;
 			display: inline-block;
 		}
 		&_11{
-			background-image: url(../img/icon_tea.svg);
+			background-image: url(../images/icon_tea.svg);
 			background-size: contain;
 			width: 22px;
 			height: 14px;
 			display: inline-block;
 		}
 		&_12{
-			background-image: url(../img/icon_candy.svg);
+			background-image: url(../images/icon_candy.svg);
 			background-size: contain;
 			width: 22px;
 			height: 21px;
@@ -322,16 +322,13 @@ h3{
 	}
 }
 /*UI slider*/
-/* Ширина слайдера */
 #slider,#slider2,#slider3,#slider4,#slider5,#slider6 {
 	width: 200px;
 	margin: 0 auto;
 }
-/* Контейнер слайдера */
 .ui-slider {
 	position: relative;
 }
-/* Ползунок */
 .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
@@ -351,11 +348,9 @@ h3{
 	border: 0;
 	overflow: hidden;
 }
-/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-	 height: 3px; /* задаем высоту согласно дизайна */
+	 height: 3px;
 }
-/* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle { 
 	top: -6px;
 	margin-left: -6px;
@@ -370,23 +365,19 @@ h3{
 .ui-slider-horizontal .ui-slider-range-max {
 	right: 0;
 }
-/* оформление полосы по которой ходит ползунок */
 .ui-widget-content { 
 	border: 0;
 	background: #f3f3f3;
 }
-/* оформление активного участка (между двумя ползунками) */
 .ui-widget-header { 
 	border: 0;
 	background: #3b205c;
 }
-/* скругление для полосы слайдера */
 .ui-corner-all {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
-/*UI slider end*/
 .pricefilter{
 	&__title{
 		margin-bottom: 8px;
@@ -607,7 +598,7 @@ h3{
 	}
 }
 .checkbox:checked + .checkboxlabel:before{
-	content: url(../img/check.png);
+	content: url(../images/check.png);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     font-size: 15px;
     color: #f3f3f3;
@@ -923,7 +914,6 @@ h3{
 	align-items: stretch;
 	justify-content: space-around;
 	position: relative;
-	/*overflow: hidden;*/
 	ul{
 		width: 100%;
 		list-style: none;
@@ -955,14 +945,11 @@ h3{
 		}
 	}
 	a{
-		/*font: 12px UT;*/
-		/*font-weight: 700;*/
 		font-family: 'Roboto', sans-serif;
 		font-size: 12px;
 		font-weight: 400;
 		text-transform: uppercase;
 		color: #fff;
-		/*padding: 8px 0px;*/
 	}
 }
 .dropdown{
@@ -1120,7 +1107,7 @@ h3{
 	margin-bottom: 30px;
 	-moz-appearance: none;
 	&__item{
-		background: url(../img/banner.jpg) center center no-repeat;
+		background: url(../images/banner.jpg) center center no-repeat;
 		width: 100%;
 	}
 	&__text{
@@ -1130,7 +1117,7 @@ h3{
 		color: #000;
 		font: 45px NP;
 		width: 415px;
-		background: url(../img/slide-item.png) center center no-repeat;
+		background: url(../images/slide-item.png) center center no-repeat;
 		padding-top: 14px;
     	padding-bottom: 42px;
     	padding-left: 50px;
@@ -1208,7 +1195,6 @@ h3{
 .slick-dots li.slick-active button{
 	background: #dddddd;
 }
-/*Good categories*/
 .catgoods{
 	&__title{
 		color: #3b205c;
@@ -1296,7 +1282,6 @@ h3{
 .popular{
 	padding: 0 49px;
 	padding-bottom: 30px;
-	/* the slides */
 	.slick-slide {
     	margin-bottom: 10px;
     	transition: all .2s ease-in-out;
@@ -1536,10 +1521,6 @@ h3{
 	&__flex{
 		display: flex;
 	}
-	/*&__choose{
-		display: flex;
-		border-bottom: 1px solid #cfcfcf;
-	}*/
 }
 .pprice{
 	display: flex;
@@ -1623,7 +1604,6 @@ h3{
 	&__box{
 		padding: 17px 14px;
 		border: 1px solid #cfcfcf;
-		/*width: 387px;*/
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -1691,7 +1671,6 @@ h3{
 		font-size: 14px;
 		font-weight: 400;
 	}
-	/* the slides */
 	.slick-slide {
     	margin-bottom: 10px;
 	}
@@ -1743,9 +1722,6 @@ h3{
 .information{
 	padding: 0 16px;
 	text-align: center;
-	/*&__block{
-		position: relative;
-	}*/
 	&__p{
 		font: 14px MP;
 		color: #3d3d3d;
@@ -1777,7 +1753,7 @@ h3{
 	&__sizetext{
 		padding-left: 35px;
 		text-align: left;
-		background: url(../img/size2.png) left top no-repeat;
+		background: url(../images/size2.png) left top no-repeat;
 		background-size: auto 99%;
 		padding-top: 3px;
 		h3{
@@ -1800,49 +1776,9 @@ h3{
 			}
 		}
 	}
-	/*&__item{
-		position: absolute;
-		&_1{
-			left: 0;
-			top: 16px;
-		}
-		&_3{
-			left: 0;
-			top: 200px;
-		}
-		&_5{
-			left: 0;
-			top: 384px;
-		}
-		&_2{
-			right: 0;
-			top: 16px;
-			.information__cont img{
-				right: 0;
-				left: auto;
-			}
-		}
-		&_4{
-			right: 0;
-			top: 200px;
-			.information__cont img{
-				right: 0;
-				left: auto;
-			}
-		}
-		&_6{
-			right: 0;
-			top: 384px;
-			.information__cont img{
-				right: 0;
-				left: auto;
-			}
-		}
-	}*/
 	&__cont{
 		text-align: center;
 		width: 260px;
-		/*background: url(../img/line1.png) left top no-repeat;*/
 		padding: 10px 0 0;
 		min-height: 170px;
 		position: relative;
@@ -2474,7 +2410,6 @@ h3{
 		width: calc(100% - 65px);
 		position: relative;
 	}
-	/*Perinfo account__oo page*/
 	&__perinfo{
 		margin-bottom: 18px;
 		display: flex;
@@ -2498,11 +2433,10 @@ h3{
     		padding-top: 2px;
 		}
 	}
-	/*Perinfo account__oo page end*/
 }
 .perinfo__checkbox:checked + .perinfo__checkboxlabel:before{
 	content: "";
-	background: url(../img/check2.png) center center no-repeat;
+	background: url(../images/check2.png) center center no-repeat;
 	background-size: 80%;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     font-size: 15px;
@@ -2622,7 +2556,7 @@ h3{
 		border-radius: 5px;
 		box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.33);
 		margin-top: 20px;
-		background: url(../img/cart-bg.png) center center no-repeat;
+		background: url(../images/cart-bg.png) center center no-repeat;
 		background-size: 100% 100%;
 	}
 	&__block{
@@ -2719,7 +2653,7 @@ h3{
 	div{
 		width: 42px;
 		height: 44px;
-		background: url(../img/timer.png) center center no-repeat;
+		background: url(../images/timer.png) center center no-repeat;
 		background-size: 100%;
 		color: #bd3c7a;
 		font-family: 'Roboto', sans-serif;
@@ -3476,7 +3410,7 @@ h3{
 				width: 54px;
 				height: 27px;
 				display: inline-block;
-				background: url(../img/icon_lotos.svg) no-repeat;
+				background: url(../images/icon_lotos.svg) no-repeat;
 			}
 		}
 		&_2{
@@ -3484,7 +3418,7 @@ h3{
 				width: 39px;
 				height: 57px;
 				display: inline-block;
-				background: url(../img/icon_shisha.svg) no-repeat;
+				background: url(../images/icon_shisha.svg) no-repeat;
 			}
 		}
 		&_3{
@@ -3492,7 +3426,7 @@ h3{
 				width: 62px;
 				height: 34px;
 				display: inline-block;
-				background: url(../img/icon_plate.svg) no-repeat;
+				background: url(../images/icon_plate.svg) no-repeat;
 			}
 		}
 		&_4{
@@ -3500,7 +3434,7 @@ h3{
 				width: 70px;
 				height: 70px;
 				display: inline-block;
-				background: url(../img/icon_shaxta.svg) no-repeat;
+				background: url(../images/icon_shaxta.svg) no-repeat;
 				transform: rotate(45deg);
 			}
 		}
@@ -3509,7 +3443,7 @@ h3{
 				width: 54px;
 				height: 52px;
 				display: inline-block;
-				background: url(../img/icon_tube.svg) no-repeat;
+				background: url(../images/icon_tube.svg) no-repeat;
 			}
 		}
 		&_6{
@@ -3517,7 +3451,7 @@ h3{
 				width: 42px;
 				height: 54px;
 				display: inline-block;
-				background: url(../img/icon_kolba2.svg) no-repeat;
+				background: url(../images/icon_kolba2.svg) no-repeat;
 			}
 		}
 	}
@@ -3664,7 +3598,6 @@ h3{
 		transition: 0.3s;
 		cursor: pointer;
 		&:hover{
-			/*margin-top: -3px;*/
 			img{
 				filter: hue-rotate(317deg);
 			}
@@ -3848,11 +3781,9 @@ h3{
 		}
 		&:first-child{
 			border-top-left-radius: 8px;
-			/*border-bottom-left-radius: 8px;*/
 		}
 		&:last-child{
 			border-top-right-radius: 8px;
-			/*border-bottom-right-radius: 8px;*/
 		}
 	}
 	&__item{
@@ -4429,7 +4360,6 @@ h3{
 	}
 	.content{
 		.wrapper{
-			/*width: 892px;*/
 			min-width: auto;
 			max-width: 100%;
 		}
@@ -4447,7 +4377,6 @@ h3{
 		&__item{
 			padding: 0 20px;
 			background: #f8f8f8;
-			/*display: none;*/
 			li{
 				padding: 0;
 				margin: 0;
@@ -4502,7 +4431,6 @@ h3{
 		&__item{
 			padding: 0 20px;
 			background: #f8f8f8;
-			/*display: none;*/
 			li{
 				padding: 0;
 				margin: 0;
@@ -4762,32 +4690,6 @@ h3{
 	}
 	.mainnav{
 		display: none;
-		/*height: auto;
-    	text-align: center;
-    	padding: 10px 0;
-    	position: fixed;
-    	top: 0;
-    	width: 100%;
-    	z-index: 50;
-    	ul{
-    		display: block;
-    	}
-    	li.mainnav_toggle{
-    		display: flex;
-    		padding-top: 0;
-    		padding-bottom: 0;
-    	}
-    	li{
-    		vertical-align: top;
-    		width: 100%;
-    		display: none;
-    		&:hover{
-    			background: none;
-    		}
-    	}
-    	a{
-    		font-size: 14px;
-    	}*/
 	}
 	.dropdown{
 		display: none;
@@ -4854,17 +4756,6 @@ h3{
 		
 	.reviews{
 		display: none;
-		/*&__box{
-			width: auto;
-		}
-		&__slider{
-			width: auto;
-		}
-		&__text{
-			p{
-				width: 170px;
-			}
-		}*/
 	}
 	.types{
 		flex-direction: column;
@@ -5034,7 +4925,6 @@ h3{
 			}
 		}
 		&__item{
-			/*justify-content: center;*/
 			padding: 5px 5px;
 			min-height: 40px;
 			justify-content: flex-start;
@@ -5046,11 +4936,6 @@ h3{
 		}
 		&__remove{
 		    background: #fff;
-		    /*&_mob{
-		    	position: absolute;
-		    	top: 20px;
-		    	right: 15px;
-		    }*/
 		    &:hover{
 		    	background: #fff;
 		    	img{
@@ -5290,7 +5175,6 @@ h3{
 				&:last-child{
 					margin-left: 15px;
 				}
-				/*margin-left: 15px;*/
 			}
 		}
 		&__box{
@@ -5338,9 +5222,6 @@ h3{
 			p.balanceopen__row_p{
 				display: block;
 			}
-			/*&_active{
-				background: #fff;
-			}*/
 		}
 		&__dots{
 			width: auto;

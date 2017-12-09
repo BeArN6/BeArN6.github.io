@@ -105,7 +105,7 @@ header{
 			margin-left: 5px;
 			width: 17px;
 			height: 17px;
-			background-image: url(../img/icon_24-hours.svg);
+			background-image: url(../images/icon_24-hours.svg);
     		background-size: 100% 100%;
 		}
 	}
@@ -607,19 +607,12 @@ header{
 			}
     	}
 		&__side{
-			/*display: block;
-		    position: absolute;
-		    top: 10px;
-    		left: 5px;*/
     		display: none;
 		}
 		&__logo{
 			width: auto;
 			margin-right: 10px;
     		margin-right: 0;
-    		/*display: flex;
-			justify-content: flex-start;
-			align-items: center;*/
 			i{
 				display: block;
 			    font-size: 30px;
@@ -720,13 +713,6 @@ header{
 			justify-content: flex-start;
 			align-items: center;
 			margin-right: 15px;
-			/*width: calc(100% - 590px);*/
-			/*i{
-				display: block;
-    			font-size: 30px;
-    			color: #3a424b;
-    			margin-right: 10px;
-			}*/
 		}
 		&__logo{
 			width: auto;
@@ -811,16 +797,12 @@ header{
 	.htabs{
 		&__item{
 			width: 82.5px;
-			/*&_4{
-				border-right: 1px solid #e1e1e1;
-			}*/
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.header{
-		/*margin-top: 52px;*/
 		position: fixed;
 		width: 100%;
 		top: 0;
