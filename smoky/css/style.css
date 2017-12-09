@@ -138,6 +138,11 @@ button {
   src: url("../fonts/Uni_Sans_Thin.eot");
   src: url("../fonts/Uni_Sans_Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Uni_Sans_Thin.woff") format("woff"), url("../fonts/Uni_Sans_Thin.ttf") format("truetype"), url("../fonts/Uni_Sans_Thin.svg#Uni_Sans_Thin") format("svg");
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto.eot");
+  src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype"), url("../fonts/Roboto.svg#Roboto") format("svg");
+}
 /*@font-face {
 	font-family: 'NP';
 	src: url('../fonts/Nautilus.otf');
@@ -4207,13 +4212,14 @@ h3 {
   font-size: 14px;
   font-weight: 300;
 }
-.description p {
+.description__p {
   color: #2d2d2d;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
+  line-height: 18px;
 }
-.description p b {
+.description__p b {
   font-weight: 500;
 }
 .description .showmore {
