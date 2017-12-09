@@ -272,6 +272,7 @@ $(window).load(function(){
 	//Mobile menu
 	$(".header__toogle").on('click',function(){
 		$(".header .wrapper .mobside").slideToggle(400);
+		$("body").toggleClass("fixed");
 	});
 	$(".mobside_nav_toggle").click(function(){
 		$(this).toggleClass("mobside_nav_toggle_active");
@@ -323,6 +324,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modalps').click(function(event){
 			event.preventDefault();
@@ -331,6 +333,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modal-run3').click(function(event){
 			event.preventDefault();
@@ -339,6 +342,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modal-run4').click(function(event){
 			event.preventDefault();
@@ -347,6 +351,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "20%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modal-run5').click(function(event){
 			event.preventDefault();
@@ -355,6 +360,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "10%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modal-run6').click(function(event){
 			event.preventDefault();
@@ -364,6 +370,7 @@ $(window).load(function(){
 					.css('display', 'block')
 					.animate({opacity: 1,top: "10%"},200)
 			});
+			$('body').addClass("fixed");
 		});
 		$('.modal__close,.overlay').click(function(){
 			$(".modal18,.modalps,.modalcall,.modaltown,.modallog,.modalreg").animate({opacity: 1, top:"10%"}, 200,
@@ -372,6 +379,7 @@ $(window).load(function(){
 					$('.overlay').fadeOut(300);
 				}
 			);
+			$('body').removeClass("fixed");
 		});
 	//Modal end
 

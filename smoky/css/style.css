@@ -1394,6 +1394,10 @@ body {
   -moz-appearance: textfield;
 }
 
+.fixed {
+  position: fixed;
+}
+
 /* titles */
 p {
   font-size: 13px;
