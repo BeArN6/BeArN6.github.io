@@ -139,7 +139,7 @@ button {
   src: url("../fonts/Uni_Sans_Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Uni_Sans_Thin.woff") format("woff"), url("../fonts/Uni_Sans_Thin.ttf") format("truetype"), url("../fonts/Uni_Sans_Thin.svg#Uni_Sans_Thin") format("svg");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-reg';
   src: url("../fonts/Roboto.eot");
   src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype"), url("../fonts/Roboto.svg#Roboto") format("svg");
 }
@@ -1052,7 +1052,7 @@ header {
     padding: 20px 0;
     width: 288px;
     background: #fff;
-    position: fixed;
+    position: absolute;
     top: 62px;
     left: 0;
     z-index: 15;
@@ -4212,15 +4212,12 @@ h3 {
   font-size: 14px;
   font-weight: 300;
 }
-.description__p {
+.description p {
   color: #2d2d2d;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto-reg', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
-}
-.description__p b {
-  font-weight: 500;
 }
 .description .showmore {
   margin-top: 10px;
