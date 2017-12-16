@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="287 3078 148 148">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0.88;
+      }
+
+      .cls-4 {
+        fill: #32b2cb;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #1d586d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        fill: #ff983d;
+      }
+
+      .cls-7 {
+        font-size: 18px;
+        font-family: AccordAlt-ExtraBold, AccordAlt;
+        font-weight: 800;
+      }
+
+      .cls-8 {
+        filter: url(#Ellipse_4);
+      }
+    </style>
+    <filter id="Ellipse_4" x="287" y="3078" width="148" height="148" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_122" data-name="Group 122" transform="translate(5 -330)">
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, -5, 330)">
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" class="cls-1" cx="44" cy="44" r="44" transform="translate(313 3104)"/>
+    </g>
+    <g id="icon-02" class="cls-2" transform="translate(308 3434)">
+      <g id="Group_11" data-name="Group 11">
+        <circle id="Ellipse_24" data-name="Ellipse 24" class="cls-3" cx="44" cy="44" r="44"/>
+        <circle id="Ellipse_25" data-name="Ellipse 25" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(42.24 23.98)"/>
+        <circle id="Ellipse_26" data-name="Ellipse 26" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(42.24 39.93)"/>
+        <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(50.27 23.98)"/>
+        <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(50.27 31.9)"/>
+        <circle id="Ellipse_29" data-name="Ellipse 29" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(58.3 23.98)"/>
+        <circle id="Ellipse_30" data-name="Ellipse 30" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(58.3 31.9)"/>
+        <circle id="Ellipse_31" data-name="Ellipse 31" class="cls-4" cx="2.75" cy="2.75" r="2.75" transform="translate(58.3 39.93)"/>
+        <line id="Line_1" data-name="Line 1" class="cls-5" x1="6.93" y1="12.21" transform="translate(24.31 27.28)"/>
+        <path id="Path_6" data-name="Path 6" class="cls-5" d="M43.105,56.81h0a8.811,8.811,0,0,1,4.4-5.5,22.5,22.5,0,0,1,9.79,7.26c-.77,4.84-7.15,10.78-12.32,8.69a52.88,52.88,0,0,1-17.6-12.87A54.424,54.424,0,0,1,16.815,34.7c-1.32-5.5,5.5-10.89,10.34-11a22.092,22.092,0,0,1,5.83,10.67,9.089,9.089,0,0,1-6.05,3.52h0s4.73,7.7,6.82,10.12C35.625,50.43,43.105,56.81,43.105,56.81Z" transform="translate(1.665 2.37)"/>
+        <line id="Line_2" data-name="Line 2" class="cls-5" x2="11" y2="8.58" transform="translate(45.98 56.54)"/>
+      </g>
+    </g>
+    <path id="Path_116" data-name="Path 116" class="cls-6" d="M16,0A16,16,0,1,1,0,16,16,16,0,0,1,16,0Z" transform="translate(292 3482)"/>
+    <text id="_2" data-name="2" class="cls-7" transform="translate(308 3504)"><tspan x="-4.662" y="0">2</tspan></text>
+  </g>
+</svg>

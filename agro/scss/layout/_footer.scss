@@ -1,0 +1,51 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	background: #357dac;
+	&__cont{
+		width: 86.4%;
+		margin: 0 auto;
+		padding: 0.5% 0;
+		p{
+			font-family: 'PT Sans Caption',sans-serif;
+			font-size: 0.8791208791208791VW;
+			font-weight: 400;
+			color: #fff;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		&__cont{
+			p{
+				font-size: 3.4375000000000004VW;
+			}
+		}
+	}
+}

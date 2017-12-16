@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="743 5361 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #b2b2b2;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+      .cls-2 {
+        fill: #b2b2b2;
+      }
+    </style>
+  </defs>
+  <g id="_05-01" data-name="05-01" transform="translate(743 5361)">
+    <g id="Group_108" data-name="Group 108">
+      <path id="Path_106" data-name="Path 106" class="cls-2" d="M20.2,18.8V9.2A3.338,3.338,0,0,0,19,6.7a2.929,2.929,0,0,0-3.8,0A3.338,3.338,0,0,0,14,9.2v9.6a5.2,5.2,0,0,0,3.2,9.3,5.228,5.228,0,0,0,5.2-5.2A6.178,6.178,0,0,0,20.2,18.8Zm-3.2,8a3.842,3.842,0,0,1-3.9-3.9,4.45,4.45,0,0,1,.7-2.3A4.263,4.263,0,0,1,15,19.5V8.9a1.863,1.863,0,0,1,1.9-1.7,2.006,2.006,0,0,1,2,2V19.5a4.263,4.263,0,0,1,1.2,1.1,3.506,3.506,0,0,1,.7,2.3A3.7,3.7,0,0,1,17,26.8Z"/>
+      <path id="Path_107" data-name="Path 107" class="cls-2" d="M19.6,22.8a2.6,2.6,0,1,1-3.3-2.5V13.8h1.2v6.5A2.55,2.55,0,0,1,19.6,22.8Z"/>
+      <circle id="Ellipse_78" data-name="Ellipse 78" class="cls-1" cx="16" cy="16" r="16" transform="translate(1 1)"/>
+    </g>
+  </g>
+</svg>

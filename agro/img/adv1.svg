@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-742 3994 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a9c3de;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #efb852;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 3.528px;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 1.926px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #000;
+      }
+
+      .cls-5 {
+        stroke-linecap: square;
+        stroke-linejoin: round;
+      }
+
+      .cls-6 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="cell" transform="translate(-742 3994)">
+    <g id="Group_124" data-name="Group 124">
+      <circle id="Ellipse_83" data-name="Ellipse 83" class="cls-1" cx="48" cy="48" r="48"/>
+      <circle id="Ellipse_84" data-name="Ellipse 84" class="cls-2" cx="14.1" cy="14.1" r="14.1" transform="translate(33.6 33.7)"/>
+      <circle id="Ellipse_85" data-name="Ellipse 85" class="cls-3" cx="3.5" cy="3.5" r="3.5" transform="translate(44.2 44.3)"/>
+      <circle id="Ellipse_86" data-name="Ellipse 86" class="cls-4" cx="23.6" cy="23.6" r="23.6" transform="translate(24.1 24.3)"/>
+      <g id="Group_123" data-name="Group 123">
+        <g id="Group_122" data-name="Group 122">
+          <line id="Line_39" data-name="Line 39" class="cls-5" y1="9" x2="17" transform="translate(53 35.7)"/>
+          <g id="Group_121" data-name="Group 121">
+            <path id="Path_116" data-name="Path 116" d="M56.6,48.4l-9.9-.3L52,39.7Z"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_117" data-name="Path 117" class="cls-6" d="M70.5,29.5v6.1l5.2,2.8"/>
+      <path id="Path_118" data-name="Path 118" class="cls-6" d="M74.2,27v6.1l5.2,2.8"/>
+      <path id="Path_119" data-name="Path 119" class="cls-6" d="M77.9,24.8v6.1l5.3,2.8"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="452 3078 148 148">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #1d586d;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #32b2cb;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #ffc225;
+      }
+
+      .cls-6 {
+        fill: #ff983d;
+      }
+
+      .cls-7 {
+        font-size: 18px;
+        font-family: AccordAlt-ExtraBold, AccordAlt;
+        font-weight: 800;
+      }
+
+      .cls-8 {
+        filter: url(#Ellipse_5);
+      }
+    </style>
+    <filter id="Ellipse_5" x="452" y="3078" width="148" height="148" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_123" data-name="Group 123" transform="translate(5 -330)">
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, -5, 330)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" class="cls-1" cx="44" cy="44" r="44" transform="translate(478 3104)"/>
+    </g>
+    <g id="icon-05" transform="translate(473 3434)">
+      <g id="Group_14" data-name="Group 14">
+        <circle id="Ellipse_34" data-name="Ellipse 34" class="cls-1" cx="44" cy="44" r="44"/>
+        <path id="Path_18" data-name="Path 18" class="cls-2" d="M47.27,39,56.4,56.93,53.43,64.3,42.1,42.41" transform="translate(4.21 3.9)"/>
+        <path id="Path_19" data-name="Path 19" class="cls-3" d="M60.58,38.8A20.688,20.688,0,0,1,40.67,53.87a20.382,20.382,0,0,1-7.37-1.32" transform="translate(3.33 3.88)"/>
+        <line id="Line_6" data-name="Line 6" class="cls-3" y2="7.7" transform="translate(44 53.13)"/>
+        <path id="Path_20" data-name="Path 20" class="cls-2" d="M34.03,39,24.9,56.93l2.97,7.37L39.2,42.41" transform="translate(2.49 3.9)"/>
+        <circle id="Ellipse_35" data-name="Ellipse 35" class="cls-4" cx="4.18" cy="4.18" r="4.18" transform="translate(39.82 33)"/>
+        <circle id="Ellipse_36" data-name="Ellipse 36" class="cls-5" cx="2.42" cy="2.42" r="2.42" transform="translate(41.58 34.76)"/>
+        <path id="Path_21" data-name="Path 21" class="cls-4" d="M37.3,26.36V18h5.94v8.36" transform="translate(3.73 1.8)"/>
+        <circle id="Ellipse_37" data-name="Ellipse 37" class="cls-4" cx="9.79" cy="9.79" r="9.79" transform="translate(34.21 27.39)"/>
+        <line id="Line_7" data-name="Line 7" class="cls-4" x2="6.27" transform="translate(41.03 23.32)"/>
+      </g>
+    </g>
+    <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-6" cx="16" cy="16" r="16" transform="translate(457 3482)"/>
+    <text id="_3" data-name="3" class="cls-7" transform="translate(473 3504)"><tspan x="-4.707" y="0">3</tspan></text>
+  </g>
+</svg>

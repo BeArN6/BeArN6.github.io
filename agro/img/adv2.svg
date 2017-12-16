@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-410 3994 96 96">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #a9c3de;
+      }
+
+      .cls-2 {
+        fill: #efb852;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="_2" data-name="2" transform="translate(-410 3994)">
+    <g id="Group_130" data-name="Group 130">
+      <circle id="Ellipse_91" data-name="Ellipse 91" class="cls-1" cx="48" cy="48" r="48"/>
+      <g id="Group_127" data-name="Group 127">
+        <path id="Path_130" data-name="Path 130" class="cls-2" d="M70.1,69l-8-.4-1.2,8L48.6,61.9l9.2-7.6Z"/>
+        <path id="Path_131" data-name="Path 131" class="cls-2" d="M25.5,69l8-.4,1.2,8L47,61.9l-9.2-7.6Z"/>
+      </g>
+      <path id="Path_132" data-name="Path 132" class="cls-3" d="M53.6,22.7l-6,2.5-6-2.4A4.022,4.022,0,0,0,36.4,25L34,31l-6,2.5a4.04,4.04,0,0,0-2.1,5.3l2.5,6-2.4,6A4.022,4.022,0,0,0,28.2,56l6,2.4,2.5,6A4.04,4.04,0,0,0,42,66.5L48,64l6,2.4a4.022,4.022,0,0,0,5.2-2.2l2.4-6,6-2.5a4.04,4.04,0,0,0,2.1-5.3l-2.5-6,2.4-6a4.022,4.022,0,0,0-2.2-5.2l-6-2.4-2.5-6A4.128,4.128,0,0,0,53.6,22.7Z"/>
+      <g id="Group_129" data-name="Group 129">
+        <g id="Group_128" data-name="Group 128">
+          <path id="Path_133" data-name="Path 133" d="M47.5,37.9a1.956,1.956,0,0,0-2.2,2.2H40.4c-.1-4.9,3.2-7.3,7.2-7.4,6.5-.2,9.3,6.3,6,11.5L49,50.6h6.7v5.2H39.9v-.9l8.5-12.5C49.5,40.9,50.4,37.9,47.5,37.9Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

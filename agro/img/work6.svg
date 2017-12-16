@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="950 3078 148 148">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #32b2cb;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #1d586d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #ff983d;
+      }
+
+      .cls-5 {
+        font-size: 18px;
+        font-family: AccordAlt-ExtraBold, AccordAlt;
+        font-weight: 800;
+      }
+
+      .cls-6 {
+        filter: url(#Ellipse_8);
+      }
+    </style>
+    <filter id="Ellipse_8" x="950" y="3078" width="148" height="148" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_128" data-name="Group 128" transform="translate(5 -330)">
+    <g id="Group_126" data-name="Group 126">
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, -5, 330)">
+        <circle id="Ellipse_8-2" data-name="Ellipse 8" class="cls-1" cx="44" cy="44" r="44" transform="translate(976 3104)"/>
+      </g>
+      <g id="icon-01" transform="translate(971 3434)">
+        <g id="Group_10" data-name="Group 10">
+          <circle id="Ellipse_23" data-name="Ellipse 23" class="cls-1" cx="44" cy="44" r="44"/>
+          <path id="Path_2" data-name="Path 2" class="cls-2" d="M42.03,43v2.75h-8.8a8.891,8.891,0,0,0,8.8,7.59h.11V63.35H40.38a2.441,2.441,0,0,1-2.42-2.42V59.06a.7.7,0,0,0-.55-.66,8.515,8.515,0,0,1-1.76-.77.83.83,0,0,0-.88.11l-1.32,1.32a2.425,2.425,0,0,1-1.65.66,2.239,2.239,0,0,1-1.65-.66l-2.53-2.53a2.531,2.531,0,0,1,0-3.41l1.32-1.32a.83.83,0,0,0,.11-.88,12.222,12.222,0,0,1-.77-1.76.7.7,0,0,0-.66-.55H25.75a2.539,2.539,0,0,1-2.42-2.53L23,43Z" transform="translate(2.3 4.3)"/>
+          <path id="Path_3" data-name="Path 3" class="cls-3" d="M33.7,26.01V23.59c-8.36,2.31-7.92,14.08-7.92,14.08H22.7v4.07H60.98V37.67H57.79s.44-11.77-7.92-14.08v2.42L45.8,28.76V21.5H37.77v7.26Z" transform="translate(2.27 2.15)"/>
+          <path id="Path_4" data-name="Path 4" class="cls-3" d="M32,45.5a8.9,8.9,0,0,0,17.6,0Z" transform="translate(3.2 4.55)"/>
+          <path id="Path_5" data-name="Path 5" class="cls-3" d="M60.65,43l-.22,3.08a2.539,2.539,0,0,1-2.42,2.53H56.14a.7.7,0,0,0-.66.55,8.515,8.515,0,0,1-.77,1.76.83.83,0,0,0,.11.88l1.32,1.32a2.531,2.531,0,0,1,0,3.41l-2.53,2.53a2.425,2.425,0,0,1-1.65.66,2.239,2.239,0,0,1-1.65-.66l-1.32-1.32a.83.83,0,0,0-.88-.11,12.222,12.222,0,0,1-1.76.77.7.7,0,0,0-.55.66v1.87a2.441,2.441,0,0,1-2.42,2.42H39.97a2.441,2.441,0,0,1-2.42-2.42V59.06A.7.7,0,0,0,37,58.4a8.515,8.515,0,0,1-1.76-.77.83.83,0,0,0-.88.11l-1.32,1.32a2.425,2.425,0,0,1-1.65.66,2.239,2.239,0,0,1-1.65-.66l-2.53-2.53a2.531,2.531,0,0,1,0-3.41l1.32-1.32a.83.83,0,0,0,.11-.88,12.222,12.222,0,0,1-.77-1.76.7.7,0,0,0-.66-.55H25.23a2.539,2.539,0,0,1-2.42-2.53L22.7,43" transform="translate(2.27 4.3)"/>
+        </g>
+      </g>
+      <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-4" cx="16" cy="16" r="16" transform="translate(955 3482)"/>
+    </g>
+    <text id="_6" data-name="6" class="cls-5" transform="translate(970 3504)"><tspan x="-5.022" y="0">6</tspan></text>
+  </g>
+</svg>
