@@ -745,564 +745,786 @@
 					<img src="img/close.png" alt="">
 					<button><i></i></button>
 				</div>
-				<!-- Banner -->
-				<div class="banner">
-					<img src="img/banner.jpg" alt="">
-				</div>
-				<!-- Banner categories -->
-				<div class="bannercat">
-					<div class="bannercat__item">
-						<img src="img/icon_suitcase.svg" alt="" class="bannercat__img bannercat__img_1">
-						<span>Чемоданы</span>
+				<!-- Mainbox -->
+				<div class="mainbox mainbox__goods">
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav>
+							<ul>
+								<li><a class="breadcrumbs__link" href="">Главная</a></li>
+								<li><a class="breadcrumbs__link" href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+								<li><a class="breadcrumbs__link" href="">Чемоданы</a></li>
+								<li><a class="breadcrumbs__link" href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+								<li><a class="breadcrumbs__link" href="">Большие</a></li>
+								<li><a class="breadcrumbs__link" href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+								<li><a class="breadcrumbs__link" href="">Чемодан Alezar Global</a></li>
+							</ul>
+						</nav>
 					</div>
-					<div class="bannercat__item">
-						<img src="img/icon_sport-bag.svg" alt="" class="bannercat__img bannercat__img_2">
-						<span>Сумки</span>
-					</div>
-					<div class="bannercat__item">
-						<img src="img/icon_backpack.svg" alt="" class="bannercat__img bannercat__img_3">
-						<span>Рюкзаки</span>
-					</div>
-					<div class="bannercat__item">
-						<img src="img/icon_bear.svg" alt="" class="bannercat__img bannercat__img_4">
-						<span>Для детей</span>
-					</div>
-					<div class="bannercat__item">
-						<img src="img/icon_leather.svg" alt="" class="bannercat__img bannercat__img_5">
-						<span>Кожгалантерея</span>
-					</div>
-					<div class="bannercat__item">
-						<img src="img/icon_accessories.svg" alt="" class="bannercat__img bannercat__img_6">
-						<span>Аксессуары</span>
-					</div>
-				</div>
-			</div>
-			<!-- Main content home page -->
-			<div class="advantages">
-				<div class="advantages__item">
-					<img src="img/icon_free_shipping.svg" alt="">
-					<p>Бесплатная доставка</p>
-				</div>
-				<div class="advantages__item">
-					<img src="img/icon_cost.svg" alt="">
-					<p>Выгодные цены</p>
-				</div>
-				<div class="advantages__item">
-					<img src="img/icon_discount.svg" alt="">
-					<p>Скидки и акции</p>
-				</div>
-				<div class="advantages__item">
-					<img src="img/icon_guarantee.svg" alt="">
-					<p>Гарантии</p>
-				</div>
-				<div class="advantages__item">
-					<img src="img/icon_pickup.svg" alt="">
-					<p>5 500 пунктов <br /> самовывоза</p>
-				</div>
-			</div>
-			<!-- Categories -->
-			<div class="categories">
-				<div class="categories__item categories__item_1">
-					<div class="categories__left">
-						<img src="img/suitcase.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">ЧЕМОДАНЫ</a>
-						<ul>
-							<li><a href="">ЧЕМОДАНЫ</a></li>
-							<li><a href="">Чехлы для чемоданов</a></li>
-							<li><a href="">Сумки на колёсах</a></li>
-							<li><a href="">Дорожные сумки</a></li>
-							<li><a href="">Портпледы</a></li>
-							<li><a href="">Бьюти-кейсы</a></li>
-							<li><a href="">Косметички</a></li>
-						</ul>
-						<a href="" class="categories__show">ПОСМОТРЕТЬ ВСЕ</a>
-					</div>
-				</div>
-				<div class="categories__item categories__item_2">
-					<div class="categories__left">
-						<img src="img/bag.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">СУМКИ</a>
-						<ul>
-							<li><a href="">Дорожные</a></li>
-							<li><a href="">Спортивные</a></li>
-							<li><a href="">Повседневные</a></li>
-							<li><a href="">Сумки-планшеты</a></li>
-							<li><a href="">Молодёжные</a></li>
-							<li><a href="">Хозяйственные</a></li>
-							<li><a href="">Пилот-кейсы</a></li>
-						</ul>
-						<a href="" class="categories__show">ПОСМОТРЕТЬ ВСЕ</a>
-					</div>
-				</div>
-				<div class="categories__item categories__item_3">
-					<div class="categories__left">
-						<img src="img/backpack.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">РЮКЗАКИ</a>
-						<ul>
-							<li><a href="">Городские</a></li>
-							<li><a href="">Спортивные</a></li>
-							<li><a href="">На колёсах</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="categories__item categories__item_4">
-					<div class="categories__left">
-						<img src="img/children.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">ДЛЯ ДЕТЕЙ</a>
-						<ul>
-							<li><a href="">Детские чемоданы</a></li>
-							<li><a href="">Детские рюкзаки</a></li>
-							<li><a href="">Портфели</a></li>
-							<li><a href="">Сумки</a></li>
-							<li><a href="">Ранцы</a></li>
-							<li><a href="">Школьные рюкзаки</a></li>
-							<li><a href="">Кошельки</a></li>
-							<li><a href="">Зонты</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="categories__item categories__item_5">
-					<div class="categories__left">
-						<img src="img/leather.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">КОЖГАЛАНТЕРЕЯ</a>
-						<ul>
-							<li><a href="">Брелоки для ключей</a></li>
-							<li><a href="">Визитницы</a></li>
-							<li><a href="">Зажимы для денег</a></li>
-							<li><a href="">Ключницы</a></li>
-							<li><a href="">Косметички</a></li>
-							<li><a href="">Обложки для документов</a></li>
-							<li><a href="">Портмоне и кошельки</a></li>
-							<li><a href="">Футляры для кредитных карт</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="categories__item categories__item_6">
-					<div class="categories__left">
-						<img src="img/accessories.png" alt="">
-					</div>
-					<div class="categories__right">
-						<a href="" class="categories__h2">АКСЕССУАРЫ</a>
-						<ul>
-							<li><a href="">Бирки для багажа</a></li>
-							<li><a href="">Багажные весы</a></li>
-							<li><a href="">Багажные замки</a></li>
-							<li><a href="">Органайзеры для вещей</a></li>
-							<li><a href="">Подушки для шеи</a></li>
-							<li><a href="">Багажные ремни</a></li>
-							<li><a href="">Органайзеры для документов</a></li>
-						</ul>
-						<a href="" class="categories__show">ПОСМОТРЕТЬ ВСЕ</a>
-					</div>
-				</div>
-			</div>
-			<!-- Goods -->
-			<div class="maingoods">
-				<div class="maingoods__cont">
-					<span class="filtertab filtertab_active">ВСЕ ПОПУЛЯРНЫЕ</span>
-					<span class="filtertab">ЧЕМОДАНЫ</span>
-					<span class="filtertab">СУМКИ</span>
-					<span class="filtertab">РЮКЗАКИ</span>
-					<span class="filtertab">ДЛЯ ДЕТЕЙ</span>
-					<span class="filtertab">КОЖГАЛАНТЕРЕЯ</span>
-					<span class="filtertab">АКСЕССУАРЫ</span>
-				</div>
-				<div class="maingoods__slider">
-					<!-- Product -->
-					<div class="product">
-						<div class="product__img">
-							<img src="img/product1.png" alt="">
+					<!-- Filterbar -->
+					<div class="filterbar">
+						<div class="filterbar__item">
+							<div class="filterbar__img">
+								<i class="fa fa-plane" aria-hidden="true"></i>
+							</div>
+							<span>для ручной клади</span>
+							<img src="img/close.png" alt="" class="filterbar__remove">
 						</div>
-						<div class="product__center">
-							<div class="product__left">
-								<span>Цвет:</span>
-								<div class="product__colors">
-									<div class="product__color product__color_green product__color_active">
-										<i class="fa fa-check" aria-hidden="true"></i>
+						<div class="filterbar__item">
+							<div class="filterbar__img">
+								<b>L</b>
+							</div>
+							<span>большой, до 20 л</span>
+							<img src="img/close.png" alt="" class="filterbar__remove">
+						</div>
+						<div class="filterbar__item filterbar__item_np">
+							<span>пластик</span>
+							<img src="img/close.png" alt="" class="filterbar__remove">
+						</div>
+						<div class="filterbar__item filterbar__item_np">
+							<span>сбросить</span>
+						</div>
+					</div>
+					<!-- Goods -->
+					<div class="goods">
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product1.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
 									</div>
-									<div class="product__color product__color_blue">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_black">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_grey">
-										<i class="fa fa-check" aria-hidden="true"></i>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="product__right">
-								<span>Размер:</span>
-								<div class="product__sizes">
-									<div class="product__size product__size_active">
-										<span>S</span>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_prev">3 790 руб.</span>
+									<span class="product__price product__price_discount">2 604 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_red">-30%</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product2.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
 									</div>
-									<div class="product__size">
-										<span>M</span>
-									</div>
-									<div class="product__size">
-										<span>L</span>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="product__info">
-							<div class="product__stars">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-half.png" alt="">
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Monopol <br />
+								Kopenhagen </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
 							</div>
-							<p class="product__name">Чемодан Alezar Global </p>
-							<div class="product__pricecont">
-								<span class="product__price product__price_prev">3 790 руб.</span>
-								<span class="product__price product__price_discount">2 604 руб.</span>
-							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_green">+ подарок</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
 						</div>
-						<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
-						<span class="product__tip product__tip_red">-30%</span>
-						<span class="product__compare">
-							<i></i>
-						</span>
-						<span class="product__favorite">
-							<i></i>
-						</span>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product3.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Рюкзак молодежный <br />
+								Alliance 5-1127/1</p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_orange">хит</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img style="margin-bottom: -30px;" src="img/product4.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_purple">new</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product1.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_prev">3 790 руб.</span>
+									<span class="product__price product__price_discount">2 604 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_red">-30%</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product2.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Monopol <br />
+								Kopenhagen </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_green">+ подарок</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product3.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Рюкзак молодежный <br />
+								Alliance 5-1127/1</p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_orange">хит</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img style="margin-bottom: -30px;" src="img/product4.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_purple">new</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product1.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_prev">3 790 руб.</span>
+									<span class="product__price product__price_discount">2 604 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_red">-30%</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product2.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Monopol <br />
+								Kopenhagen </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_green">+ подарок</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img src="img/product3.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Рюкзак молодежный <br />
+								Alliance 5-1127/1</p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_orange">хит</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
+						<div class="product">
+							<div class="product__img">
+								<img style="margin-bottom: -30px;" src="img/product4.png" alt="">
+							</div>
+							<div class="product__center">
+								<div class="product__left">
+									<span>Цвет:</span>
+									<div class="product__colors">
+										<div class="product__color product__color_green product__color_active">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_blue">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_black">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+										<div class="product__color product__color_grey">
+											<i class="fa fa-check" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div class="product__right">
+									<span>Размер:</span>
+									<div class="product__sizes">
+										<div class="product__size product__size_active">
+											<span>S</span>
+										</div>
+										<div class="product__size">
+											<span>M</span>
+										</div>
+										<div class="product__size">
+											<span>L</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__info">
+								<div class="product__stars">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-full.png" alt="">
+									<img src="img/star-half.png" alt="">
+								</div>
+								<p class="product__name">Чемодан Alezar Global </p>
+								<div class="product__pricecont">
+									<span class="product__price product__price_now">3 190 руб.</span>
+								</div>
+							</div>
+							<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
+							<span class="product__tip product__tip_purple">new</span>
+							<span class="product__compare">
+								<i></i>
+							</span>
+							<span class="product__favorite">
+								<i></i>
+							</span>
+						</div>
 					</div>
-					<div class="product">
-						<div class="product__img">
-							<img src="img/product2.png" alt="">
+					<!-- Goods pager -->
+					<div class="goodpager">
+						<div class="goodpager__prev">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
 						</div>
-						<div class="product__center">
-							<div class="product__left">
-								<span>Цвет:</span>
-								<div class="product__colors">
-									<div class="product__color product__color_green">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_blue product__color_active">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_black">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_grey">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-								</div>
+						<div class="goodpager__main">
+							<a href="">1</a>
+							<a href="">...</a>
+							<a href="">3</a>
+							<a href="">4</a>
+							<a href="">5</a>
+							<a href="">...</a>
+							<a href="">16</a>
+							<a href="">17</a>
 							</div>
-							<div class="product__right">
-								<span>Размер:</span>
-								<div class="product__sizes">
-									<div class="product__size product__size_active">
-										<span>S</span>
-									</div>
-									<div class="product__size">
-										<span>M</span>
-									</div>
-									<div class="product__size">
-										<span>L</span>
-									</div>
-								</div>
+							<div class="goodpager__next">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</div>
 						</div>
-						<div class="product__info">
-							<div class="product__stars">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-half.png" alt="">
-							</div>
-							<p class="product__name">Чемодан Monopol <br />
-							Kopenhagen </p>
-							<div class="product__pricecont">
-								<span class="product__price product__price_now">3 190 руб.</span>
-							</div>
-						</div>
-						<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
-						<span class="product__tip product__tip_green">+ подарок</span>
-						<span class="product__compare">
-							<i></i>
-						</span>
-						<span class="product__favorite">
-							<i></i>
-						</span>
-					</div>
-					<div class="product">
-						<div class="product__img">
-							<img src="img/product3.png" alt="">
-						</div>
-						<div class="product__center">
-							<div class="product__left">
-								<span>Цвет:</span>
-								<div class="product__colors">
-									<div class="product__color product__color_green">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_blue">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_black product__color_active">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_grey">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="product__right">
-								<span>Размер:</span>
-								<div class="product__sizes">
-									<div class="product__size product__size_active">
-										<span>S</span>
-									</div>
-									<div class="product__size">
-										<span>M</span>
-									</div>
-									<div class="product__size">
-										<span>L</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="product__info">
-							<div class="product__stars">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-half.png" alt="">
-							</div>
-							<p class="product__name">Рюкзак молодежный <br />
-							Alliance 5-1127/1</p>
-							<div class="product__pricecont">
-								<span class="product__price product__price_now">3 190 руб.</span>
-							</div>
-						</div>
-						<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
-						<span class="product__tip product__tip_orange">хит</span>
-						<span class="product__compare">
-							<i></i>
-						</span>
-						<span class="product__favorite">
-							<i></i>
-						</span>
-					</div>
-					<div class="product">
-						<div class="product__img product__img_2">
-							<img style="margin-bottom: -30px;" src="img/product4.png" alt="">
-						</div>
-						<div class="product__center">
-							<div class="product__left">
-								<span>Цвет:</span>
-								<div class="product__colors">
-									<div class="product__color product__color_green product__color_active">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_blue">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_black">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_grey">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="product__right">
-								<span>Размер:</span>
-								<div class="product__sizes">
-									<div class="product__size product__size_active">
-										<span>S</span>
-									</div>
-									<div class="product__size">
-										<span>M</span>
-									</div>
-									<div class="product__size">
-										<span>L</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="product__info">
-							<div class="product__stars">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-half.png" alt="">
-							</div>
-							<p class="product__name">Чемодан Alezar Global </p>
-							<div class="product__pricecont">
-								<span class="product__price product__price_now">3 190 руб.</span>
-							</div>
-						</div>
-						<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
-						<span class="product__tip product__tip_purple">new</span>
-						<span class="product__compare">
-							<i></i>
-						</span>
-						<span class="product__favorite">
-							<i></i>
-						</span>
-					</div>
-					<div class="product">
-						<div class="product__img">
-							<img src="img/product2.png" alt="">
-						</div>
-						<div class="product__center">
-							<div class="product__left">
-								<span>Цвет:</span>
-								<div class="product__colors">
-									<div class="product__color product__color_green product__color_active">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_blue">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_black">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-									<div class="product__color product__color_grey">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div class="product__right">
-								<span>Размер:</span>
-								<div class="product__sizes">
-									<div class="product__size product__size_active">
-										<span>S</span>
-									</div>
-									<div class="product__size">
-										<span>M</span>
-									</div>
-									<div class="product__size">
-										<span>L</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="product__info">
-							<div class="product__stars">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-full.png" alt="">
-								<img src="img/star-half.png" alt="">
-							</div>
-							<p class="product__name">Чемодан Alezar Global </p>
-							<div class="product__pricecont">
-								<span class="product__price product__price_prev">3 790 руб.</span>
-								<span class="product__price product__price_discount">2 604 руб.</span>
-							</div>
-						</div>
-						<button class="product__btn">ДОБАВИТЬ В КОРЗИНУ</button>
-						<span class="product__tip product__tip_red">-30%</span>
-						<span class="product__compare">
-							<i></i>
-						</span>
-						<span class="product__favorite">
-							<i></i>
-						</span>
-					</div>
 				</div>
-			</div>
-			<!-- Comments -->
-			<div class="comments">
-				<div class="maingoods__cont">
-					<span class="filtertab filtertab_active">ОТЗЫВЫ</span>
-				</div>
-				<div class="comments__slider">
-					<div class="comments__item">
-						<div class="comments__img">
-							<img src="img/comment1.jpg" alt="">
-						</div>
-						<div class="comments__stars">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-						</div>
-						<p class="comments__p">
-							В пятницу заказала рюкзак на сайте <br /> Robinzon.ru. Менеджер обещал, что его<br /> вышлют ко мне в понедельник. Каково же<br /> было мое удивление, когда уже утром в<br /> понедельник я получила свою посылочку!....
-						</p>
-						<h2 class="comments__h2">ОЛЕГ, <span>Владимир</span></h2>
-					</div>
-					<div class="comments__item">
-						<div class="comments__img">
-							<img src="img/comment2.jpg" alt="">
-						</div>
-						<div class="comments__stars">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-						</div>
-						<p class="comments__p">
-							Впервые купил здесь чемодан Самсонайт с<br /> большим дисконтом три года назад. Причем<br /> тогда в муках выбора вернул один<br /> приобретенный чемодан и взял другой, деньги<br /> на карту вернули в течение 3-х дней,... никаких
-						</p>
-						<h2 class="comments__h2">НАТАЛЬЯ ЛАПИНА, <span>Ростовская область</span></h2>
-					</div>
-					<div class="comments__item">
-						<div class="comments__img">
-							<img src="img/comment3.jpg" alt="">
-						</div>
-						<div class="comments__stars">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-						</div>
-						<p class="comments__p">
-							Большое спасибо магазину за возможность<br /> покупать товары моей любимой марки<br /> HEDGREN. Недавно заказал портмоне.<br /> Прислали быстро. Качество отличное. В<br /> обычном магазине найти эту фирму очень
-						</p>
-						<h2 class="comments__h2">КИРИЛЛ ПАРШИН, <span>Москва</span></h2>
-					</div>
-					<div class="comments__item">
-						<div class="comments__img">
-							<img src="img/comment3.jpg" alt="">
-						</div>
-						<div class="comments__stars">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-							<img src="img/star-full.png" alt="">
-						</div>
-						<p class="comments__p">
-							Большое спасибо магазину за возможность<br /> покупать товары моей любимой марки<br /> HEDGREN. Недавно заказал портмоне.<br /> Прислали быстро. Качество отличное. В<br /> обычном магазине найти эту фирму очень
-						</p>
-						<h2 class="comments__h2">КИРИЛЛ ПАРШИН, <span>Москва</span></h2>
-					</div>
-				</div>
-			</div>
-			<!-- Description -->
-			<div class="description">
-				<div class="maingoods__cont">
-					<span class="filtertab filtertab_active">ИНТЕРНЕТ-МАГАЗИН CHEMODAN.RU</span>
-				</div>
-				<p class="description__p">
-					В мультибрендовых магазинах Робинзон представлены товары всемирно известных и проверенных временем брендов. Всегда в наличии дорожные сумки и чемоданы<br /> Samsonite, Rimowa, Bric's, Titan, Travelite, Delsey, Roncato, Ricardo Beverly Hills и American Tourister, рюкзаки Wenger, Herschel Supply Co, Ogio, Dakine, женские сумки Lipault,<br /> спортивные и молодежные сумки Hedgren, бизнес ассортимент: мужские портфели и портмоне Tumi, Victorinox и многое другое. 
-				</p>
-				<p class="description__p">История компании Робинзон.ру началась в 1993 году. Вот уже более 20 лет мы являемся одной из ведущих фирм в сфере багажа, кожгалантереи и аксессуаров. </p>
-				<p class="description__p">Робинзон.ру - удобный интернет-магазин чемоданов, сумок, рюкзаков и разнообразных аксессуаров. Вы можете выбрать все, что Вам необходимо для путешествия, не выходя<br /> из дома, использовать любой удобный Вам способ оплаты, а мы оперативно доставим Ваш заказ по Москве, Санкт-Петербургу или в один из 60 других городов России<br /> курьерской службой. Также доставляем в любую точку России EMS Почтой. </p>
-				<p class="description__p">Имея за плечами 20-летний опыт и изучив все тонкости, мы поможем Вам подобрать именно тот чемодан или сумку, которую Вы давно искали. Совершая покупку в магазине<br /> Робинзон, Вы можете быть уверены в профессиональной консультации специалистов и высоком качестве товаров.</p>
 			</div>
 		</div>	
 		<!--Modal window-->
