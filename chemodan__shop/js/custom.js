@@ -196,29 +196,26 @@ $(window).load(function (){
 
 		$('.modalrun1').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300,function(){
-				$('.modalreg')
+			$(".overlay").fadeIn(400);
+			$('.modalreg')
 					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},200)
-			});
+					.animate({opacity: 1,top: "20%"},400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun2').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300,function(){
+			$(".overlay").fadeIn(300)
 				$('.modallog')
 					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},200)
-			});
+					.animate({opacity: 1,top: "20%"},300);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun3').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300,function(){
+			$(".overlay").fadeIn(300)
 				$('.modalcall')
 					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},200)
-			});
+					.animate({opacity: 1,top: "20%"},300);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun4').click(function(event){
@@ -226,17 +223,17 @@ $(window).load(function (){
 			$(".overlay").fadeIn(300,function(){
 				$('.modalcity')
 					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},200)
+					.animate({opacity: 1,top: "20%"},300)
 			});
 			$('body').addClass("fixed");
 		});
 		$('.modal__close,.overlay').click(function(){
-			$(".modalreg,.modallog,.modalcall,.modalcity").animate({opacity: 1, top:"10%"}, 200,
+			$(".modalreg,.modallog,.modalcall,.modalcity").animate({opacity: 1, top:"10%"}, 300,
 				function(){
 					$(this).css('display', 'none'); 
-					$('.overlay').fadeOut(300);
 				}
 			);
+			$('.overlay').fadeOut(300);
 			$('body').removeClass("fixed");
 		});
 
@@ -302,6 +299,201 @@ $(window).load(function (){
 		$("#slider").slider("values",1,value2);
 	});
 
+	//2 UI slider
+	$("#slider2,#mobslider").slider({
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost2").val($("#slider2").slider("values",0));
+			$("input#maxCost2").val($("#slider2").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost2").val($("#slider2").slider("values",0));
+			$("input#maxCost2").val($("#slider2").slider("values",1));
+    	}
+	});
+	$("input#minCost2").change(function(){
+		var value1=$("input#minCost2").val();
+		var value2=$("input#maxCost2").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost2").val(value1);
+		}
+		$("#slider2").slider("values",0,value1);	
+	});
+
+	$("input#maxCost2").change(function(){
+		var value1=$("input#minCost2").val();
+		var value2=$("input#maxCost2").val();
+	
+		if (value2 > 10000) { value2 = 10000; $("input#maxCost2").val(10000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost2").val(value2);
+		}
+		$("#slider2").slider("values",1,value2);
+	});
+
+	//3 UI slider
+	$("#slider3,#mobslider").slider({
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost3").val($("#slider3").slider("values",0));
+			$("input#maxCost3").val($("#slider3").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost3").val($("#slider3").slider("values",0));
+			$("input#maxCost3").val($("#slider3").slider("values",1));
+    	}
+	});
+	$("input#minCost3").change(function(){
+		var value1=$("input#minCost3").val();
+		var value2=$("input#maxCost3").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost3").val(value1);
+		}
+		$("#slider3").slider("values",0,value1);	
+	});
+
+	$("input#maxCost3").change(function(){
+		var value1=$("input#minCost3").val();
+		var value2=$("input#maxCost3").val();
+	
+		if (value2 > 10000) { value2 = 10000; $("input#maxCost3").val(10000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost3").val(value2);
+		}
+		$("#slider3").slider("values",1,value2);
+	});
+
+	//4 UI slider
+	$("#slider4,#mobslider").slider({
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost4").val($("#slider4").slider("values",0));
+			$("input#maxCost4").val($("#slider4").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost4").val($("#slider4").slider("values",0));
+			$("input#maxCost4").val($("#slider4").slider("values",1));
+    	}
+	});
+	$("input#minCost4").change(function(){
+		var value1=$("input#minCost4").val();
+		var value2=$("input#maxCost4").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost4").val(value1);
+		}
+		$("#slider4").slider("values",0,value1);	
+	});
+
+	$("input#maxCost4").change(function(){
+		var value1=$("input#minCost4").val();
+		var value2=$("input#maxCost4").val();
+	
+		if (value2 > 10000) { value2 = 10000; $("input#maxCost4").val(10000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost4").val(value2);
+		}
+		$("#slider4").slider("values",1,value2);
+	});
+
+	//5 UI slider
+	$("#slider5,#mobslider").slider({
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost5").val($("#slider5").slider("values",0));
+			$("input#maxCost5").val($("#slider5").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost5").val($("#slider5").slider("values",0));
+			$("input#maxCost5").val($("#slider5").slider("values",1));
+    	}
+	});
+	$("input#minCost5").change(function(){
+		var value1=$("input#minCost5").val();
+		var value2=$("input#maxCost5").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost5").val(value1);
+		}
+		$("#slider5").slider("values",0,value1);	
+	});
+
+	$("input#maxCost5").change(function(){
+		var value1=$("input#minCost5").val();
+		var value2=$("input#maxCost5").val();
+	
+		if (value2 > 10000) { value2 = 10000; $("input#maxCost5").val(10000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost5").val(value2);
+		}
+		$("#slider5").slider("values",1,value2);
+	});
+
+	//6 UI slider
+	$("#slider6,#mobslider").slider({
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		range: true,
+		stop: function(event, ui) {
+			$("input#minCost6").val($("#slider6").slider("values",0));
+			$("input#maxCost6").val($("#slider6").slider("values",1));
+    	},
+    	slide: function(event, ui){
+			$("input#minCost6").val($("#slider6").slider("values",0));
+			$("input#maxCost6").val($("#slider6").slider("values",1));
+    	}
+	});
+	$("input#minCost6").change(function(){
+		var value1=$("input#minCost6").val();
+		var value2=$("input#maxCost6").val();
+
+    	if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input#minCost6").val(value1);
+		}
+		$("#slider").slider("values",0,value1);	
+	});
+
+	$("input#maxCost6").change(function(){
+		var value1=$("input#minCost6").val();
+		var value2=$("input#maxCost6").val();
+	
+		if (value2 > 10000) { value2 = 10000; $("input#maxCost6").val(10000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input#maxCost6").val(value2);
+		}
+		$("#slider6").slider("values",1,value2);
+	});
+
 	//Check color
 	$(".colorbox__item").click(function(){
 		$(this).siblings(".colorbox__item").removeClass('colorbox__item_active');
@@ -309,6 +501,7 @@ $(window).load(function (){
 	});
 
 	//Sidenav toggle
+	$(".allfilters").hide();
 	$('.sidenav__more').click(function(){
 		$(this).toggleClass('sidenav__more_active');
 		$(this).siblings().not('.sidenav__text').slideToggle();

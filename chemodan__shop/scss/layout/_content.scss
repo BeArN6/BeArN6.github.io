@@ -209,9 +209,13 @@ h3{
 		font-size: 19px !important;
 		color: #a4a4a4;
 		position: absolute;
-    	right: 10px;
+		padding: 0 5px;
+    	right: 5px;
     	top: 9px;
     	cursor: pointer;
+    	&_active{
+    		transform: rotate(90deg);
+    	}
 	}
 }
 /*Sidefilters*/
@@ -222,6 +226,9 @@ h3{
     &__item{
     	padding: 6px 0;
     	border-bottom: 1px solid #e8e8e8;
+    	.sidenav__more_active{
+    		transform: rotate(180deg);
+    	}
     }
     &__sm{
     	font: 400 13px "Roboto",sans-serif;
@@ -564,6 +571,17 @@ h3{
 		}
 		&:hover{
 			color: #3498db;
+		}
+	}
+	&__home{
+		width: 24px;
+		height: 30px;
+		display: inline-block;
+		background: url(../img/icon_home.svg) center center no-repeat;
+		background-size: 100%;
+		transition: 0.2s ease-in-out;
+		&:hover{
+			background: url(../img/icon_home-home.svg) center center no-repeat;
 		}
 	}
 	li.active{
@@ -1378,7 +1396,7 @@ h3{
 	position: fixed;
 	display: none;
 	overflow: hidden;
-	top: 10%;
+	top: 0;
 	left: 50%;
 	background: #ffffff;
 	z-index: 17;

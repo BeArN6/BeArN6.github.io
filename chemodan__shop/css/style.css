@@ -803,9 +803,13 @@ h3 {
   font-size: 19px !important;
   color: #a4a4a4;
   position: absolute;
-  right: 10px;
+  padding: 0 5px;
+  right: 5px;
   top: 9px;
   cursor: pointer;
+}
+.sidenav__more_active {
+  transform: rotate(90deg);
 }
 
 /*Sidefilters*/
@@ -817,6 +821,9 @@ h3 {
 .sidefilters__item {
   padding: 6px 0;
   border-bottom: 1px solid #e8e8e8;
+}
+.sidefilters__item .sidenav__more_active {
+  transform: rotate(180deg);
 }
 .sidefilters__sm {
   font: 400 13px "Roboto",sans-serif;
@@ -1171,6 +1178,17 @@ h3 {
 }
 .mainnav a:hover {
   color: #3498db;
+}
+.mainnav__home {
+  width: 24px;
+  height: 30px;
+  display: inline-block;
+  background: url(../img/icon_home.svg) center center no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in-out;
+}
+.mainnav__home:hover {
+  background: url(../img/icon_home-home.svg) center center no-repeat;
 }
 .mainnav li.active:hover a {
   border: 1px solid #e8e8e8;
@@ -1968,7 +1986,7 @@ h3 {
   position: fixed;
   display: none;
   overflow: hidden;
-  top: 10%;
+  top: 0;
   left: 50%;
   background: #ffffff;
   z-index: 17;
