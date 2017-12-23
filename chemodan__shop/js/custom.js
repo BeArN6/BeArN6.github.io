@@ -135,6 +135,11 @@ $(window).load(function (){
 	  	]
 	});
 
+	$('.banner').slick({
+		arrows: false,
+		dots: true
+	});
+
 	$('.comments__slider').slick({
 		infinite: true,
   		slidesToShow: 3,
@@ -197,40 +202,31 @@ $(window).load(function (){
 		$('.modalrun1').click(function(event){
 			event.preventDefault();
 			$(".overlay").fadeIn(400);
-			$('.modalreg')
-					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},400);
+			$('.modalreg').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun2').click(function(event){
 			event.preventDefault();
 			$(".overlay").fadeIn(300)
-				$('.modallog')
-					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},300);
+				$('.modallog').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun3').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300)
-				$('.modalcall')
-					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},300);
+			$(".overlay").fadeIn(300);
+				$('.modalcall').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun4').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300,function(){
-				$('.modalcity')
-					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},300)
-			});
+			$(".overlay").fadeIn(300);
+				$('.modalcity').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modal__close,.overlay').click(function(){
 			$(".modalreg,.modallog,.modalcall,.modalcity").animate({opacity: 1, top:"10%"}, 300,
 				function(){
-					$(this).css('display', 'none'); 
+					$(this).fadeOut(400); 
 				}
 			);
 			$('.overlay').fadeOut(300);
