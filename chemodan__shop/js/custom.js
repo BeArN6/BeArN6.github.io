@@ -541,4 +541,8 @@ $(window).load(function (){
 		$(this).toggleClass("wishlist__more_active");
 		$(this).closest(".wishlist").next(".wishlist__items").slideToggle();
 	});
+
+
+	//Product gallery
+	$('.sp-wrap').smoothproducts();
 });
