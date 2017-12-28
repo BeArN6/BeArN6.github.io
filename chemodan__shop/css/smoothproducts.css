@@ -91,6 +91,7 @@ html, body {
 	margin-bottom: 8px;
 	border-radius: 4px;
 	border: 1px solid #eeeeee;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
 }
 .sp-large a img {
 	max-width: 100%;

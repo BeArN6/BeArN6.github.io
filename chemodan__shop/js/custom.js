@@ -237,6 +237,9 @@ $(window).load(function (){
 	$(".product__compare").click(function(){
 		$(this).toggleClass("product__compare_active");
 	})
+	$(".product__stats").click(function(){
+		$(this).toggleClass("product__stats_active");
+	})
 	$(".product__favorite").click(function(){
 		$(this).toggleClass("product__favorite_active");
 	});
@@ -540,6 +543,39 @@ $(window).load(function (){
 	$(".wishlist__more").click(function(){
 		$(this).toggleClass("wishlist__more_active");
 		$(this).closest(".wishlist").next(".wishlist__items").slideToggle();
+	});
+
+	//Cardgood choose color
+	$(".cardgood__disc").click(function(){
+		$(this).siblings().removeClass("cardgood__disc_active");
+		$(this).addClass("cardgood__disc_active");
+	});
+
+	//Cardgood choose size
+	$(".cardgood__size").click(function(){
+		$(this).siblings().removeClass("cardgood__size_active");
+		$(this).addClass("cardgood__size_active");
+	});
+
+	//Cardgood tabs
+	$(".characteristic").css({"display":"flex"});
+	$(".filtertab_1").click(function(){
+		$(".cardgood__tabs .filtertab").removeClass("filtertab_active");
+		$(this).addClass("filtertab_active");
+		$(".filtertabinfo").hide();
+		$(".characteristic").show();
+	});
+	$(".filtertab_2").click(function(){
+		$(".cardgood__tabs .filtertab").removeClass("filtertab_active");
+		$(this).addClass("filtertab_active");
+		$(".filtertabinfo").hide();
+		$(".productdesc").show();
+	});
+	$(".filtertab_3").click(function(){
+		$(".cardgood__tabs .filtertab").removeClass("filtertab_active");
+		$(this).addClass("filtertab_active");
+		$(".filtertabinfo").hide();
+		$(".tab3").show();
 	});
 
 

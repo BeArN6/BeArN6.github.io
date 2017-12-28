@@ -1401,6 +1401,35 @@ h3{
 			}
 		}
 	}
+	&__stats{
+		width: 38px;
+		height: 25px;
+		border-radius: 2px;
+		/*background: #e8e8e8;*/
+		position: absolute;
+		top: 5px;
+		right: 48px;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		i{
+			width: 20px;
+    		height: 22px;
+			background: url(../img/icon_comprasion.svg) center center no-repeat;
+			background-size: 100%;
+			transition: 0.2s ease-in-out;
+			filter: brightness(90%) grayscale(100%);
+			&:hover{
+				filter: none;
+			}
+		}
+		&_active{
+			i{
+				background-image: url(../img/icon_comprasion_ok.svg);
+			}
+		}
+	}
 	&__favorite{
 		width: 38px;
 		height: 25px;
@@ -2200,6 +2229,7 @@ h3{
 			padding: 10px;
 			color: #1c1c1c;
 			font: 300 14px "Roboto",sans-serif;
+			box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.10);
 			&::placeholder{
 				color: #a4a4a4;
 				font: 300 14px "Roboto",sans-serif;
@@ -2227,6 +2257,7 @@ h3{
 		border-radius: 5px;
 		border: 1px solid #e5e5e5;
 		padding: 0 10px;
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.10);
 		&::placeholder{
 			color: #a4a4a4;
 			font: 300 14px "Roboto",sans-serif;
@@ -2326,15 +2357,32 @@ h3{
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
+	&__tabs{
+		.filtertab{
+			&:hover{
+				color:#3498db;
+				border-color: #3498db;
+			}
+			&_active{
+				background:#3498db;
+				border-color: #3498db;
+				color: #fff;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
 	&__slider{
 		width: 305px;
 		/*background: #f6f6f6;*/
 		position: relative;
 		text-align: center;
+		align-self: flex-end;
 	}
 	&__info{
-
-	}
+		padding-bottom: 3px;
+	}	
 	&__adv{
 		width: 250px;
 		height: 310px;
@@ -2343,10 +2391,45 @@ h3{
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.18);
 	}
 	&__title{
 		font: 400 25px "Roboto",sans-serif;
 		color: #1c1c1c;
+	}
+	&__rating{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 10px 0;
+	}
+	&__stars{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		i{
+			display: flex;
+			width: 11px;
+			height: 10px;
+			background: url(../img/star-full.png) center center no-repeat;
+    		background-size: 100%;
+    		&:last-child{
+    			background: url(../img/star-half.png) center center no-repeat;
+    			background-size: 100%;
+    		}
+		}
+		span{
+			font: 500 14px "Roboto",sans-serif;
+			color: #1c1c1c;
+			display: inline-block;
+			margin-left: 8px;
+		}
+	}
+	&__vote{
+		font: 400 14px "Roboto",sans-serif;
+		color: #a4a4a4;
+		display: inline-block;
+		margin-left: 18px;
 	}
 	&__subtitle{
 		font: 400 14px "Roboto",sans-serif;
@@ -2359,8 +2442,16 @@ h3{
 			display: flex;
 			justify-content: space-between;
 			position: relative;
-            overflow: hidden;
+            /*overflow: hidden;*/
             padding: 1px 0;
+            &:before{
+            	content: '\2022';
+			    font-size: 13px;
+			    color: #000;
+			    position: absolute;
+			    left: -16px;
+			    top: 2px;
+            }
             &:after {
                 content:'';
                 display: block;
@@ -2409,6 +2500,7 @@ h3{
 		background: #fff;
 		border: 1px solid #e7e7e7;
 		padding: 0 5px;
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.09);
 		&_amount{
 			padding: 0 10px;
 		}
@@ -2473,6 +2565,7 @@ h3{
 			color: #1c1c1c;
 			width: auto;
 			border: 0;
+			background: transparent;
 			&::placeholder{
 				font: 500 21.55px "Roboto",sans-serif;
 				color: #1c1c1c;
@@ -2499,6 +2592,7 @@ h3{
 	}
 	.btn{
 		width: 160px;
+		height: 36px;
 	}
 }
 .characteristic{
@@ -2615,7 +2709,171 @@ h3{
     	margin-bottom: 5px;
 	}
 }
+.filtertabinfo{
+	margin-bottom: 20px;
+	display: none;
+}
 /*Card goods page end*/
+/*Account page*/
+.account{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 40px;
+	&__left{
+		width: 206px;
+	}
+	&__right{
+		width: 660px;
+	}
+	&__nav{
+		list-style: none;
+	}
+	&__li{
+		display: flex;
+		width: 100%;
+		height: 34px;
+		border-radius: 3px;
+		justify-content: flex-start;
+		align-items: center;
+		background: #fff;
+		border-bottom: 1px solid #f6f6f6;
+		cursor: pointer;
+		&:first-child{
+			border-top:1px solid #f6f6f6;
+		}
+		a{
+			color: #3498db;
+			font: 400 16px "Roboto",sans-serif;
+		}
+		&_active{
+			background: #1ea1f3;
+			a{
+				color: #fff;
+			}
+			.account__icon{
+				i{
+					color: #fff;
+				}
+			}
+		}
+	}
+	&__icon{
+		width: 27px;
+		height: 100%;
+		margin-right: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		i{
+			color: #3498db;
+		}
+		&_1{
+			i{
+				font-size: 16px;
+			}
+		}
+		&_2{
+			i{
+				font-size: 14px;
+			}
+		}
+		&_3{
+			i{
+				font-size: 12px;
+			}
+		}
+		&_4{
+			i{
+				font-size: 14px;
+			}
+		}
+		&_5{
+			i{
+				font-size: 14px;
+			}
+		}
+		&_6{
+			i{
+				font-size: 16px;
+			}
+		}
+	}
+	&__title{
+		font: 400 16px "Roboto",sans-serif;
+		color: #1c1c1c;
+		margin-bottom: 5px;
+	}
+	&__input{
+		margin-bottom: 8px;
+		padding-top: 7px;
+		width: 201px;
+		&_2{
+			width: 235px;
+		}
+		label{
+			display: block;
+			font: 400 14px "Roboto",sans-serif;
+			color: #a4a4a4;
+			margin-bottom: 7px;
+		}
+		input{
+			height: 39px;
+			width: 100%;
+			border-radius: 3px;
+			border: 1px solid #e5e5e5;
+			font: 400 14px "Roboto",sans-serif;
+			color: #1c1c1c;
+			padding: 0 15px;
+			box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+			&::placeholder{
+				font: 400 14px "Roboto",sans-serif;
+				color: #a4a4a4;
+			}
+		}
+	}
+}
+.profile{
+	padding-top: 5px;
+	&__cont{
+		display: flex;
+		justify-content: flex-start;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 15px;
+	}
+	&__buttcont{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-top: 15px;
+	}
+	&__left{
+		width: 150px;
+		margin-right: 20px;
+	}
+	&__right{
+		width: 470px;
+		padding-right: 20px;
+	}
+	&__img{
+		width: 143px;
+		height: 143px;
+		border-radius: 100%;
+		border: 1px solid #a5a5a5;
+		overflow: hidden;
+		text-align: center;
+		img{
+			margin-top: -30px;
+    		margin-left: -15px;
+		}
+	}
+	&__form{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+/*Account page end*/
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
