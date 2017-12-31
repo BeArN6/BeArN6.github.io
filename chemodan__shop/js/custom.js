@@ -192,12 +192,15 @@ $(window).load(function (){
 	//Modal windows
 	var modalWidth = $('.modalreg').width();
 	var modalWidth2 = $('.modalcall').width();
+	var modalWidth3 = $('.modalpass').width();
 	var modalFormMargin = modalWidth/2;
 	var modalFormMargin2 = modalWidth2/2;
+	var modalFormMargin3 = modalWidth3/2;
 		$(".modalreg").css({'margin-left':-modalFormMargin});
 		$(".modallog").css({'margin-left':-modalFormMargin});
 		$(".modalcall").css({'margin-left':-modalFormMargin2});
 		$(".modalcity").css({'margin-left':-modalFormMargin2});
+		$(".modalpass").css({'margin-left':-modalFormMargin3});
 
 		$('.modalrun1').click(function(event){
 			event.preventDefault();
@@ -223,8 +226,14 @@ $(window).load(function (){
 				$('.modalcity').fadeIn(400);
 			$('body').addClass("fixed");
 		});
+		$('.modalrun5').click(function(event){
+			event.preventDefault();
+			$(".overlay").fadeIn(400);
+			$('.modalpass').fadeIn(400);
+			$('body').addClass("fixed");
+		});
 		$('.modal__close,.overlay').click(function(){
-			$(".modalreg,.modallog,.modalcall,.modalcity").animate({opacity: 1, top:"10%"}, 300,
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").animate({opacity: 1, top:"10%"}, 300,
 				function(){
 					$(this).fadeOut(400); 
 				}
@@ -576,6 +585,59 @@ $(window).load(function (){
 		$(this).addClass("filtertab_active");
 		$(".filtertabinfo").hide();
 		$(".tab3").show();
+	});
+
+	//Basket tabs
+	$(".confirm").hide();
+	$(".basket__li_1").click(function(){
+		$(".basket__li").removeClass("basket__li_active")
+		$(this).addClass("basket__li_active");
+		$(".basket__table,.perinfo,.delpay,.confirm,.continue").hide();
+		$(".basket__table").show();
+	});
+	$(".basket__li_2").click(function(){
+		$(".basket__li").removeClass("basket__li_active")
+		$(this).addClass("basket__li_active");
+		$(".basket__table,.perinfo,.delpay,.confirm,.continue").hide();
+		$(".perinfo").show();
+	});
+	$(".basket__li_3").click(function(){
+		$(".basket__li").removeClass("basket__li_active")
+		$(this).addClass("basket__li_active");
+		$(".basket__table,.perinfo,.delpay,.confirm,.continue").hide();
+		$(".delpay").show();
+	});
+	$(".basket__li_4").click(function(){
+		$(".basket__li").removeClass("basket__li_active")
+		$(this).addClass("basket__li_active");
+		$(".basket__table,.perinfo,.delpay,.confirm,.continue").hide();
+		$(".confirm,.continue").show();
+	});
+
+	//Account tabs
+	$(".account__li_1").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+		$(".profile,.address,.account__comments,.purchases").hide();
+		$(".profile").show();
+	});
+	$(".account__li_2").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+		$(".profile,.address,.account__comments,.purchases").hide();
+		$(".address").show();
+	});
+	$(".account__li_4").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+		$(".profile,.address,.account__comments,.purchases").hide();
+		$(".account__comments").show();
+	});
+	$(".account__li_5").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+		$(".profile,.address,.account__comments,.purchases").hide();
+		$(".purchases").show();
 	});
 
 
