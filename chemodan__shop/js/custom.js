@@ -640,6 +640,11 @@ $(window).load(function (){
 		$(".purchases").show();
 	});
 
+	//Balance diff
+	$(".balance__check .checkboxlabel").click(function(){
+		$(".balance__row_diff").toggleClass("balance__row_active");
+	});
+
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
