@@ -202,7 +202,7 @@ h3{
 		}
 		&_6{
 			img{
-				width: 24px;
+				width: 30px;
 			}
 		}
 	}
@@ -629,6 +629,7 @@ h3{
 		display: flex;
     	justify-content: space-around;
     	align-items: stretch;
+    	min-height: 34px;
 	}
 	li{
 		display: flex;
@@ -842,6 +843,10 @@ h3{
 	&__title,&__price{
 		font: 400 14px "Roboto",sans-serif;
 		color: #1c1c1c;
+		cursor: pointer;
+		&:hover{
+			color: #3498db;
+		}
 	}
 	&__brand{
 		width: 68px;
@@ -854,6 +859,10 @@ h3{
 		overflow: hidden;
 		img{
 			width: 95%;
+		}
+		&:hover{
+			box-shadow: 0px 0px 1px 1px rgba(155,213,250,1);
+    		border-radius: 1px;
 		}
 	}
 }
@@ -966,7 +975,7 @@ h3{
 			font: 500 11px "Roboto",sans-serif;
 			color: #a4a4a4;
 		}
-		&:hover{
+		&_active{
 			span{
 				color: #3498db;
 			}
@@ -1101,6 +1110,9 @@ h3{
 			a{
 				text-transform: none;
 				text-decoration: none;
+				&:hover{
+					color: #3498db;
+				}
 			}
 		}
 		a{
@@ -1391,7 +1403,7 @@ h3{
 			height: 17px;
 			background: url(../img/icon_compare.svg) center center no-repeat;
 			background-size: 100%;
-			transition: 0.2s ease-in-out;
+			/*transition: 0.2s ease-in-out;*/
 			filter: brightness(90%) grayscale(100%);
 			&:hover{
 				filter: none;
@@ -1449,7 +1461,7 @@ h3{
 			height: 23px;
 			background: url(../img/icon_heart.svg) center center no-repeat;
 			background-size: 100%;
-			transition: 0.2s ease-in-out;
+			/*transition: 0.2s ease-in-out;*/
 			filter: brightness(90%) grayscale(100%);
 			&:hover{
 				filter: none;
@@ -1459,6 +1471,28 @@ h3{
 			i{
 				background-image: url(../img/icon_heart_ok.svg);
 				filter: none;
+			}
+		}
+	}
+	&__timer{
+		position: absolute;
+    	top: 51px;
+    	left: 6px;
+		span{
+			font: 700 20px "Roboto",sans-serif;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 41px;
+			height: 41px;
+			background: #3498db;
+			border-radius: 2px;
+			margin-bottom: 1px;
+			span{
+				font-size: 12px;
+				font-weight: 400;
 			}
 		}
 	}
@@ -1987,7 +2021,7 @@ h3{
     	height: 17px;
     	background: #fff;
     	color: #ababab;
-    	font: 400 13px "Roboto",sans-serif;
+    	font: 300 13px "Roboto",sans-serif;
     	display: none;
     	&_init{
     		z-index: 6;
@@ -1999,6 +2033,8 @@ h3{
 	    	color: #ababab;
 	    	font: 400 13px "Roboto",sans-serif;
 	    	border-radius: 10px;
+	    	display: flex;
+    		align-items: center;
     	}
     	&:not(.select__item_init){
     		margin-left: -1px;
@@ -2107,6 +2143,8 @@ h3{
 	.select2__item{
 		color: #1c1c1c;
 		background: #f3f3f3;
+		display: flex;
+    	align-items: center;
 	}
 	.select3__item{
 		color: #1c1c1c;
@@ -2952,6 +2990,7 @@ h3{
 		font: 400 14px "Roboto",sans-serif;
 		color: #a4a4a4;
 		text-decoration: underline;
+		cursor: pointer;
 		&:hover{
 			color: #01385f;
 		}
@@ -2964,6 +3003,7 @@ h3{
 		border-top: 1px solid #e8e8e8;
 		padding-top: 10px;
 		margin-top: 15px;
+		display: none;
 	}
 	&__input{
 		display: flex;
@@ -2999,6 +3039,9 @@ h3{
 		flex-wrap: wrap;
 		&_active{
 			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+			.address__editbox{
+				display: block;
+			}
 		}
 	}
 	&__name{
@@ -3041,6 +3084,7 @@ h3{
 	&__editbox{
 		padding: 0 15px 0;
 		border-top: 1px solid #f2f2f2;
+		display: none;
 	}
 	&__remove{
 		width: 37px;
@@ -3058,6 +3102,12 @@ h3{
 				color: #3498db;
 			}
 		}
+	}
+	&__add{
+		display: none;
+	}
+	&__addmore{
+		margin-bottom: 10px;
 	}
 }
 .purchases{
@@ -3114,6 +3164,9 @@ h3{
 		border-radius: 1px;
 		font-size: 12px;
 		margin: 0 0 0 15px;
+	}
+	&__box{
+		display: none;
 	}
 }
 .purchprod{
@@ -3559,6 +3612,12 @@ h3{
 			p{
 				color: #3498db;
 			}
+			.delpay__image{
+				display: none;
+				&_active{
+					display: block;
+				}
+			}
 		}
 	}
 	&__img{
@@ -3601,6 +3660,12 @@ h3{
 				width: 45px;
 			}
 		}*/
+	}
+	&__image{
+		display: block;
+		&_active{
+			display: none;
+		}
 	}
 	&__info{
 		width: 125px;
@@ -3881,6 +3946,9 @@ h3{
 					padding-bottom: 5px;
 				}
 			}
+			.balance__icons{
+				display: flex;
+			}
 		}
 	}
 	&__top{
@@ -3965,7 +4033,7 @@ h3{
 		position: absolute;
 		right: 10px;
 		top: 15px;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
     	align-items: center;

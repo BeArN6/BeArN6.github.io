@@ -109,6 +109,75 @@ $(window).bind('resize', handler);
 
 
 $(window).load(function (){
+
+	try{
+		//Product timer
+		$('.product__timer').countdown('2018/01/18 12:34:56', function(event) {
+  			$(this).html(event.strftime('<span>%D<span>дней</span></span><span>%H<span>часов</span></span><span>%M<span>мин</span></span><span>%S<span>сек</span></span>'));
+		});
+	} catch (e){
+		console.log("error");
+	}
+
+	//Product choose color
+	$(".product__color").click(function(){
+		$(this).siblings().removeClass("product__color_active");
+		$(this).addClass("product__color_active");
+	});
+
+	//Product choose size
+	$(".product__size").click(function(){
+		$(this).siblings().removeClass("product__size_active");
+		$(this).addClass("product__size_active");
+	});
+
+	//Account order show more
+	$(".purchases__more").click(function(){
+		$(this).parent(".purchases__item").next(".purchases__box").slideToggle();
+	});
+
+	//Account add address
+	$(".address__addmore").click(function(){
+		$('.address__add').show();
+	});
+
+	//Accound change password
+	$(".profile__chpass").click(function(){
+		$(".profile__chpasstoggle").slideToggle();
+	});
+
+	//Account address edit
+	$(".address__edit").click(function(){
+		$(this).toggleClass("address__edit_active");
+		$(this).parents(".address__item").toggleClass("address__item_active");
+		// $(this).parent(".address__options").siblings(".address__editbox").slideToggle();
+	});
+
+	//Balance col active
+	$(".balance__col").not(".balance__col_1").click(function(){
+		$(".balance__col").removeClass("balance__col_active");
+		$(this).addClass("balance__col_active");
+	});
+	//Balance prev and next
+	$(".balance__prev").click(function(){
+		$(".balance__col:nth-child(2)").insertAfter($(".balance__col:last-child"));
+	});
+	$(".balance__next").click(function(){
+		$(".balance__col:last-child").insertAfter($(".balance__col_1"));
+	});
+
+	//Choose delivery cart
+	$(".delpay__item").click(function(){
+		$(this).siblings().removeClass("delpay__item_active");
+		$(this).addClass("delpay__item_active");
+	});
+
+	//Htabs active
+	$(".htabs__item").click(function(){
+		$(".htabs__item").removeClass("htabs__item_active");
+		$(this).addClass("htabs__item_active");
+	});
+
 	//Home page slider
 	$('.maingoods__slider').slick({
 		infinite: true,
@@ -138,6 +207,32 @@ $(window).load(function (){
 	$('.banner').slick({
 		arrows: false,
 		dots: true
+	});
+
+	//Home page slider active tabs
+	$("#slick-slide10").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_1").addClass("bannercat__item_active");
+	});
+	$("#slick-slide11").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_2").addClass("bannercat__item_active");
+	});
+	$("#slick-slide12").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_3").addClass("bannercat__item_active");
+	});
+	$("#slick-slide13").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_4").addClass("bannercat__item_active");
+	});
+	$("#slick-slide14").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_5").addClass("bannercat__item_active");
+	});
+	$("#slick-slide15").click(function(){
+		$(".bannercat__item").removeClass("bannercat__item_active");
+		$(".bannercat__item_6").addClass("bannercat__item_active");
 	});
 
 	$('.comments__slider').slick({
