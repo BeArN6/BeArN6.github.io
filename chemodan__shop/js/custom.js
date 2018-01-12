@@ -178,6 +178,37 @@ $(window).load(function (){
 		$(this).addClass("htabs__item_active");
 	});
 
+	//Basket perinfo tabs
+	$(".perinfo__box").hide();
+	$(".perinfo__choose_1").click(function(){
+		$(".perinfo__box").hide();
+		$(".perinfo__new").show();
+	});
+
+	$(".perinfo__choose_2").click(function(){
+		$(".perinfo__box").hide();
+		$(".perinfo__new").hide();
+		$(".perinfo__box_2").show();
+	});
+
+	$(".tab_1").click(function(){
+		$(".perinfo__box").hide();
+		$(".perinfo__new").hide();
+		$(".perinfo__box_3").show();
+	});
+
+	$(".tab_2").click(function(){
+		$(".perinfo__box").hide();
+		$(".perinfo__new").hide();
+		$(".perinfo__box_2").show();
+	});
+
+	$(".tab_3").click(function(){
+		$(".perinfo__box").hide();
+		$(".perinfo__new").hide();
+		$(".perinfo__box_1").show();
+	});
+
 	//Home page slider
 	$('.maingoods__slider').slick({
 		infinite: true,

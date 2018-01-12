@@ -710,6 +710,10 @@ h3 {
   right: 4px;
 }
 
+.tab_1, .tab_2, .tab_3 {
+  cursor: pointer;
+}
+
 .content {
   order: 2;
   -webkit-order: 2;
@@ -1235,6 +1239,8 @@ h3 {
 .mainnav a {
   font: 400 14px "Roboto",sans-serif;
   color: #a4a4a4;
+  padding: 0 6px;
+  transition: 0s;
 }
 .mainnav a img {
   width: 24px;
@@ -3215,6 +3221,11 @@ h3 {
 .cardgood__amount i {
   font-size: 14px;
   color: #1c1c1c;
+  cursor: pointer;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardgood__amount i:hover {
   color: #3498db;
