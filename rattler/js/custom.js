@@ -144,6 +144,7 @@ $(window).load(function(){
 	}
 
 	$(".hamb").click(function(){
+		$("body").toggleClass("fixed");
 		$(".sidebar").toggleClass("sidebar__toggle");
 		$(this).toggleClass("hamb__toggle");
 	});
