@@ -75,7 +75,7 @@ h3{
 .hamb{
 	padding: 20px;
     position: fixed;
-    z-index: 15;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 90px;
@@ -809,6 +809,12 @@ h3{
 					    padding-top: 10px;
 					}
 				}
+			}
+		}
+		&:hover{
+			left: -250px !important;
+			.hamb{
+				left: 0;
 			}
 		}
 	}
