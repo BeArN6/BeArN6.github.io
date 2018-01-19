@@ -74,7 +74,7 @@ h3{
 }
 .hamb{
 	padding: 20px;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     left: 0;
     top: 0;
@@ -800,26 +800,28 @@ h3{
 	.sidebar{
 		left: -250px !important;
 		transition: 0.3s ease-in-out;
-		&:hover{
+		&__toggle{
 			left: 0 !important;
-			.hamb{
-				left: 235px;
-			}
 		}
 	}
 	.hamb{
 		display: inline-block;
+		&__toggle{
+			left: 235px;
+		}
 	}
 }
 
-@media screen and (min-width: 992px){
-	
-}
-
-@media screen and (min-width: 992px) and (max-width: 1619px) {
+@media screen and (min-width: 1201px) and (max-width: 1620px){
 	.wrapper{
 		max-width: 1150px;
 		padding-left: 250px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1120px) {
+	.wrapper{
+		max-width: 900px;
 	}
 	.title{
 		font-size: 27px;

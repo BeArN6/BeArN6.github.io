@@ -143,6 +143,11 @@ $(window).load(function(){
 		});
 	}
 
+	$(".hamb").click(function(){
+		$(".sidebar").toggleClass("sidebar__toggle");
+		$(this).toggleClass("hamb__toggle");
+	});
+
 	//Modal
 	var modalWidth = $('.modal-form').width();
 	var modalFormMargin = modalWidth/2;
