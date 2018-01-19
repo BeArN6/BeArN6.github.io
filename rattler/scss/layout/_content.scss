@@ -102,8 +102,12 @@ h3{
 	height: 100vh;
 	background: #fff;
 	z-index: 50;
-	top: 0;
+	top: -70px;
+	bottom: 0;
 	left: 0;
+	right: 0;
+	padding-bottom: 70px;
+	transform: translateY(70px);
 	padding: 25px 15px;
 	display: flex;
     flex-direction: column;
@@ -977,7 +981,8 @@ h3{
 
 @media screen and (max-width: 767px) {
 	.sidebar{
-		overflow-y: scroll;
+		overflow-y: auto;
+		-webkit-overflow-scrolling:touch;
 		nav{
 			ul{
 				li{
