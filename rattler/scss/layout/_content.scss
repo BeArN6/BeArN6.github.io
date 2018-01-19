@@ -72,6 +72,26 @@ h3{
     /*display: flex;
     justify-content: center;*/
 }
+.hamb{
+	padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 90px;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+	span{
+		display: block;
+	    width: 35px;
+	    height: 4px;
+	    background: #000;
+	    margin-bottom: 6px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
 .sidebar{
 	width: 250px;
 	position: fixed;
@@ -148,25 +168,6 @@ h3{
 					}
 				}
 			}
-		}
-	}
-}
-.hamb{
-	padding: 20px;
-    position: relative;
-    left: 235px;
-    top: -25px;
-    width: 90px;
-    display: none;
-    cursor: pointer;
-	span{
-		display: block;
-	    width: 35px;
-	    height: 4px;
-	    background: #000;
-	    margin-bottom: 6px;
-		&:last-child{
-			margin-bottom: 0;
 		}
 	}
 }
@@ -630,6 +631,9 @@ h3{
 		transition: 0.3s ease-in-out;
 		&:hover{
 			left: 0 !important;
+			.hamb{
+				left: 235px;
+			}
 		}
 	}
 	.hamb{
@@ -792,6 +796,21 @@ h3{
 }
 
 @media screen and (max-width: 767px) {
+	.sidebar{
+		overflow-y: scroll;
+		nav{
+			ul{
+				li{
+					nav{
+					    position: static;
+					    padding-left: 0;
+					    width: 100%;
+					    padding-top: 10px;
+					}
+				}
+			}
+		}
+	}
 	.whowe, .directions, .details, .clients, .materials, .consultation,
 	.contacts, .security{
 		width: 90%;
