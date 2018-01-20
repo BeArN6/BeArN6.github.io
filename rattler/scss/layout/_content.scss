@@ -102,6 +102,8 @@ h3{
 	width: 250px;
 	position: fixed;
 	height: 100vh;
+	/*min-height: 490px;*/
+	overflow-y: auto;
 	background: #fff;
 	z-index: 50;
 	top: -70px;
@@ -198,6 +200,8 @@ h3{
 	justify-content: flex-start;
 	align-items: flex-end;
 	margin-top: auto;
+	min-height: 56px;
+    padding-top: 15px;
 	&__img{
 		margin-right: 10px;
 	}
@@ -985,6 +989,7 @@ h3{
 	.sidebar{
 		overflow-y: auto;
 		-webkit-overflow-scrolling:touch;
+		padding-bottom: 140px;
 		nav{
 			ul{
 				li{
