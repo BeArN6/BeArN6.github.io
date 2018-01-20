@@ -2396,7 +2396,6 @@
         swipeDirection = _.swipeDirection();
 
         if (swipeDirection === 'vertical') {
-            return false;
             return;
         }
 
