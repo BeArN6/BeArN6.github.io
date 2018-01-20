@@ -122,7 +122,7 @@ $(window).load(function(){
 	        draggable: false,
 	        autoplay: true,
   			autoplaySpeed: 2000,
-  			swipe: dalse,
+  			swipe: false,
   			touchMove: false
 	      }
 	    }
