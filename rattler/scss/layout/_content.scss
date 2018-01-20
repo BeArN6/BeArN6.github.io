@@ -237,7 +237,10 @@ h3{
 	}
 }
 .slick-slider{
-	touch-action: none !important;
+	-webkit-touch-callout: none !important;
+    -khtml-user-select: none !important;
+    -ms-touch-action: none !important;
+    touch-action: none !important;
 }
 .slick-prev, .slick-next{
 	position: absolute;
