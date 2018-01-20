@@ -118,7 +118,10 @@ $(window).load(function(){
 	    {
 	      breakpoint: 760,
 	      settings: {
-	        arrows: false
+	        arrows: false,
+	        draggable: false,
+	        autoplay: true,
+  			autoplaySpeed: 2000
 	      }
 	    }
 	  	]
