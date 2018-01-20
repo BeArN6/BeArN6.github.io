@@ -150,7 +150,9 @@ $(window).load(function(){
 
 	$(".hamb").click(function(){
 		$("body").toggleClass("fixed");
-		$(".sidebar").toggleClass("sidebar__toggle");
+		$(".sidebar").toggleClass("sidebar__toggle").css({
+			"width":"100%"
+		});
 		$(".banner").css({
 			"z-index":"3"
 		});
