@@ -146,6 +146,9 @@ $(window).load(function(){
 	$(".hamb").click(function(){
 		$("body").toggleClass("fixed");
 		$(".sidebar").toggleClass("sidebar__toggle");
+		$(".banner").css({
+			"z-index":"3"
+		});
 		$(this).toggleClass("hamb__toggle");
 	});
 
