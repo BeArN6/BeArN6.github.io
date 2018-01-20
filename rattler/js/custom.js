@@ -123,7 +123,8 @@ $(window).load(function(){
 	        autoplay: true,
   			autoplaySpeed: 2000,
   			swipe: false,
-  			touchMove: false
+  			touchMove: false,
+  			verticalSwiping: false
 	      }
 	    }
 	  	]
@@ -150,9 +151,7 @@ $(window).load(function(){
 
 	$(".hamb").click(function(){
 		$("body").toggleClass("fixed");
-		$(".sidebar").toggleClass("sidebar__toggle").css({
-			"width":"100%"
-		});
+		$(".sidebar").toggleClass("sidebar__toggle");
 		$(".banner").css({
 			"z-index":"3"
 		});
