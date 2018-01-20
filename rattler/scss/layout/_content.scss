@@ -257,6 +257,7 @@ h3{
 }
 .banner{
 	margin-bottom: 40px;
+	pointer-events: none;
 	&__slide{
 		background: url(../img/banner.jpg) center top no-repeat;
 		background-size: cover;
