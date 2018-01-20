@@ -121,7 +121,9 @@ $(window).load(function(){
 	        arrows: false,
 	        draggable: false,
 	        autoplay: true,
-  			autoplaySpeed: 2000
+  			autoplaySpeed: 2000,
+  			swipe: dalse,
+  			touchMove: false
 	      }
 	    }
 	  	]
