@@ -78,7 +78,6 @@ body{
 }
 .fixed{
 	overflow: hidden;
-	position: fixed;
 	left: 100%;
 	height: 100vh;
 	transition: 0.3s;
@@ -828,7 +827,7 @@ body{
 		transition: 0.3s ease-in-out;
 		&__toggle{
 			left: 0 !important;
-			width: 100%;
+			width: 100vw;
 		}
 	}
 	.hamb{
