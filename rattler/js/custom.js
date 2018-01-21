@@ -137,13 +137,13 @@ $(window).load(function(){
 	});
 
 	var windWidth = $(window).width();
-	var posLeft = (+windWidth - 1140)/2 - 250;
+	var posLeft = (+windWidth - 1160)/2 - 250;
 	$(".sidebar").css({
 		"left": posLeft
 	});
 
 	if(windWidth > 1200 && windWidth < 1620){
-		var posLeft2 = (+windWidth - 1150)/2;
+		var posLeft2 = (+windWidth - 1170)/2;
 		$(".sidebar").css({
 			"left": posLeft2
 		});

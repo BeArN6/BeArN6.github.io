@@ -122,6 +122,7 @@ body{
 	display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: -200px 0px 0px 0px rgba(255,255,255,1);
     /*display: none;*/
 	nav{
 		ul{
@@ -866,6 +867,75 @@ body{
 	.wrapper{
 		max-width: 1150px;
 		padding-left: 250px;
+	}
+	.whowe, .directions, .details, .clients, .materials, .consultation,
+	.contacts,.security{
+		width: 900px;
+		margin-left: auto;
+		/*margin-right: auto;*/
+	}
+	.whowe{
+		&__text{
+			width: 500px;
+		}
+	}
+	.ptext{
+		&_2{
+			font-size: 14px;
+		}
+		&_3{
+			font-size: 13.9px;
+		}
+	}
+	.directions{
+		&__item{
+			img{
+				transform: scale(0.8);
+			}
+		}
+	}
+	.details{
+		&__input{
+			input{
+				width: 190px;
+			}
+		}
+		&__textarea{
+			textarea{
+				width: 440px;
+			}
+		}
+	}
+	.clients{
+		&__row{
+			img{
+				transform: scale(0.8);
+			}
+		}
+	}
+	.materials{
+		&__item{
+			width: 215px;
+		}
+		&__title{
+			font-size: 13px;
+		}
+	}
+	.map{
+		width: 620px;
+    	height: 360px;
+    	overflow: hidden;
+	}
+	.security{
+		&__cont{
+			justify-content: flex-start;
+		}
+		&__item{
+			margin-right: 30px;
+			&:last-child{
+				margin-left: 0;
+			}
+		}
 	}
 }
 
