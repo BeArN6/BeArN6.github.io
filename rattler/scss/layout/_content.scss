@@ -287,6 +287,9 @@ body{
 		margin-bottom: 20px;
 		background: url(../img/banner2.jpg) bottom center no-repeat;
 	}
+	&__toggle{
+		visibility: hidden !important;
+	}
 }
 .whowe{
 	padding-bottom: 40px;

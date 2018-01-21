@@ -151,7 +151,7 @@ $(window).load(function(){
 
 	$(".hamb").click(function(){
 		$("body").toggleClass("fixed");
-		$(".banner").toggle();
+		$(".banner").toggleClass("banner__toggle");
 		$(".sidebar").toggleClass("sidebar__toggle");
 		$(".banner").css({
 			"z-index":"3"
