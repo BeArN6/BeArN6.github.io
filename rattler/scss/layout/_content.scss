@@ -72,10 +72,15 @@ h3{
     /*display: flex;
     justify-content: center;*/
 }
+body{
+	position: relative;
+	left: 0%;
+}
 .fixed{
 	overflow: hidden;
-	position: relative;
+	left: 100%;
 	height: 100%;
+	transition: 0.3s;
 	/*position: relative;*/
 }
 .hamb{
