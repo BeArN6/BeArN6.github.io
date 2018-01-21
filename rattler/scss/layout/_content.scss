@@ -846,6 +846,7 @@ body{
 						&:hover{
 							nav{
 								display: none;
+								position: static;
 							}
 						}
 					}
