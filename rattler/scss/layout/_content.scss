@@ -110,7 +110,6 @@ body{
 	position: fixed;
 	height: 100vh;
 	/*min-height: 490px;*/
-	overflow-y: auto;
 	background: #fff;
 	z-index: 50;
 	top: -70px;
@@ -829,9 +828,29 @@ body{
 	.sidebar{
 		left: -250px !important;
 		transition: 0.3s ease-in-out;
+		overflow-y: auto;
 		&__toggle{
 			left: 0 !important;
 			width: 100%;
+		}
+		nav{
+			ul{
+				li{
+					nav{
+					    position: static;
+					    padding-left: 0;
+					    width: 100%;
+					    padding-top: 10px;
+					}
+					&.toggle{
+						&:hover{
+							nav{
+								display: none;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	.hamb{

@@ -149,6 +149,13 @@ $(window).load(function(){
 		});
 	}
 
+	if(windWidth < 1200){
+		$(".sidebar nav ul li.toggle").click(function(event){
+			event.preventDefault();
+			$(this).find("nav").slideToggle();
+		});
+	}
+
 	$(".hamb").click(function(){
 		$("body").toggleClass("fixed");
 		$(".banner").toggleClass("banner__toggle");
