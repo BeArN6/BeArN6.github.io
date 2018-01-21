@@ -74,6 +74,7 @@ h3{
 }
 .fixed{
 	overflow: hidden;
+	position: relative;
 	height: 100%;
 	/*position: relative;*/
 }
@@ -236,12 +237,12 @@ h3{
 		width: 170px;
 	}
 }
-.slick-slider{
+/*.slick-slider{
 	-webkit-touch-callout: none !important;
     -khtml-user-select: none !important;
     -ms-touch-action: none !important;
     touch-action: none !important;
-}
+}*/
 .slick-prev, .slick-next{
 	position: absolute;
 	top: 47%;
