@@ -126,7 +126,7 @@ $(window).load(function (){
 	});
 
 	//Product choose size
-	$(".product__size").click(function(){
+	$(".product__size").not($(".basket__size")).click(function(){
 		$(this).siblings().removeClass("product__size_active");
 		$(this).addClass("product__size_active");
 	});
@@ -138,12 +138,14 @@ $(window).load(function (){
 
 	//Account add address
 	$(".address__addmore").click(function(){
-		$('.address__add').show();
+		$(this).next('.address__add').show();
 	});
 
 	//Accound change password
+	$(".file_upload").hide();
 	$(".profile__chpass").click(function(){
 		$(".profile__chpasstoggle").slideToggle();
+		$(".file_upload").fadeToggle();
 	});
 
 	//Account address edit
@@ -153,6 +155,35 @@ $(window).load(function (){
 		// $(this).parent(".address__options").siblings(".address__editbox").slideToggle();
 	});
 
+	$(".address__name .checkboxlabel").click(function(){
+		//$(this).parents(".address__item").siblings().removeClass("address__item_checked");
+		$(this).parents(".address__item").toggleClass("address__item_checked");
+	});
+
+	//Langs
+	$(".lang__item").click(function(){
+		$(".lang__item").removeClass("lang__item_active");
+		$(this).addClass("lang__item_active");
+	});
+
+	//Cart goods amount
+	$(".cardgood__minus").click(function(){
+		var inputVal = $(this).next("input").attr("value") - 1;
+		if(inputVal >= 0){
+			$(this).next("input").attr("value", inputVal);
+		}
+	});
+	$(".cardgood__plus").click(function(){
+		var inputVal = +($(this).prev("input").attr("value")) + 1;
+		$(this).prev("input").attr("value", inputVal);
+	});
+
+	//Purchprod open
+	$(".purchprod__open").click(function(){
+		$(this).toggleClass("purchprod__open_active");
+		$(this).next(".purchprod__list").slideToggle();
+	});
+
 	//Balance col active
 	$(".balance__col").not(".balance__col_1").click(function(){
 		$(".balance__col").removeClass("balance__col_active");
@@ -160,9 +191,11 @@ $(window).load(function (){
 	});
 	//Balance prev and next
 	$(".balance__prev").click(function(){
+		$(".balance__col").removeClass("balance__col_active");
 		$(".balance__col:nth-child(2)").insertAfter($(".balance__col:last-child"));
 	});
 	$(".balance__next").click(function(){
+		$(".balance__col").removeClass("balance__col_active");
 		$(".balance__col:last-child").insertAfter($(".balance__col_1"));
 	});
 
@@ -174,9 +207,25 @@ $(window).load(function (){
 
 	//Htabs active
 	$(".htabs__item").click(function(){
-		$(".htabs__item").removeClass("htabs__item_active");
-		$(this).addClass("htabs__item_active");
+		$(this).siblings().removeClass("htabs__item_active");
+		$(this).toggleClass("htabs__item_active");
 	});
+
+	//Basket bind next btn
+	$(".basket .btn").click(function(){
+		$(".basket__li").removeClass("basket__li_active");
+		$(this).parents(".basket__table, .perinfo, .delpay").hide();
+		var basketId = $(this).attr("data-id");
+		$(".basket__li_" + basketId).addClass("basket__li_active");
+		$("#next-" + basketId).show();
+	})
+
+
+	//Confirm success
+	$(".confirm__success").click(function(){
+		$(".confirm").hide();
+		$(".continue").show();
+	})
 
 	//Basket perinfo tabs
 	$(".perinfo__box").hide();
@@ -235,9 +284,21 @@ $(window).load(function (){
 	  	]
 	});
 
+	//Home page choose category slider
+	$(".maingoods__slider").not("#slider-1").hide();
+	$(".filtertab").click(function(){
+		$(this).siblings().removeClass("filtertab_active");
+		$(this).addClass("filtertab_active");
+		$(".maingoods__slider").removeClass("maingoods__slider_active").hide();
+		var filterTab = $(this).attr("data-id");
+		$("#slider-" + filterTab).addClass("maingoods__slider_active").show();
+	});
+
 	$('.banner').slick({
 		arrows: false,
-		dots: true
+		dots: true,
+		autoplay:true,
+  		autoplaySpeed:3000
 	});
 
 	//Home page slider active tabs
@@ -330,30 +391,35 @@ $(window).load(function (){
 
 		$('.modalrun1').click(function(event){
 			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
 			$(".overlay").fadeIn(400);
 			$('.modalreg').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun2').click(function(event){
 			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
 			$(".overlay").fadeIn(300)
 				$('.modallog').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun3').click(function(event){
 			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
 			$(".overlay").fadeIn(300);
 				$('.modalcall').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun4').click(function(event){
 			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
 			$(".overlay").fadeIn(300);
 				$('.modalcity').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun5').click(function(event){
 			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
 			$(".overlay").fadeIn(400);
 			$('.modalpass').fadeIn(400);
 			$('body').addClass("fixed");
@@ -688,8 +754,8 @@ $(window).load(function (){
 
 	//Cardgood choose size
 	$(".cardgood__size").click(function(){
-		$(this).siblings().removeClass("cardgood__size_active");
-		$(this).addClass("cardgood__size_active");
+	 	$(this).siblings().removeClass("cardgood__size_active");
+	 	$(this).addClass("cardgood__size_active");
 	});
 
 	//Cardgood tabs
@@ -737,7 +803,7 @@ $(window).load(function (){
 		$(".basket__li").removeClass("basket__li_active")
 		$(this).addClass("basket__li_active");
 		$(".basket__table,.perinfo,.delpay,.confirm,.continue").hide();
-		$(".confirm,.continue").show();
+		$(".confirm").show();
 	});
 
 	//Account tabs
@@ -753,6 +819,12 @@ $(window).load(function (){
 		$(".profile,.address,.account__comments,.purchases").hide();
 		$(".address").show();
 	});
+	$(".account__li_3").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+		$(".profile,.address,.account__comments,.purchases").hide();
+		$(".accountpay").show();
+	});
 	$(".account__li_4").click(function(){
 		$(".account__li").removeClass("account__li_active")
 		$(this).addClass("account__li_active");
@@ -765,6 +837,10 @@ $(window).load(function (){
 		$(".profile,.address,.account__comments,.purchases").hide();
 		$(".purchases").show();
 	});
+	$(".account__li_6").click(function(){
+		$(".account__li").removeClass("account__li_active")
+		$(this).addClass("account__li_active");
+	});
 
 	//Balance diff
 	$(".balance__check .checkboxlabel").click(function(){
@@ -774,4 +850,10 @@ $(window).load(function (){
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
+
+	$(".sp-thumbs").slick({
+		infinite: true,
+  		slidesToShow: 4,
+  		slidesToScroll: 1
+	});
 });

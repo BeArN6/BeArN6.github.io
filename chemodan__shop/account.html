@@ -1596,7 +1596,7 @@
 						<li class="active">
 							<a href="">Скидки и акции</a>
 							<div class="dropdown">
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1607,7 +1607,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1618,7 +1618,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_orange dropdown__tip">ХИТ</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1629,7 +1629,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1640,7 +1640,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1651,7 +1651,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1662,7 +1662,7 @@
 									</div>
 								</div>
 
-								<div class="dropdown__item">
+								<div class="dropdown__item dropdown__item_akcii">
 									<span class="product__tip product__tip_purple dropdown__tip">NEW</span>
 									<div class="dropdown__itemleft">
 										<h2 class="dropdown__title">Чемодан Alezar Cyprus </h2>
@@ -1727,7 +1727,7 @@
 								</li>
 								<li class="account__li account__li_6">
 									<div class="account__icon account__icon_6"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
-									<a>Выход</a>
+									<a href="index.html">Выход</a>
 								</li>
 							</ul>
 						</div>
@@ -1738,6 +1738,10 @@
 										<h3 class="account__title">Ваше фото:</h3>
 										<div class="profile__img">
 											<img src="img/face2.png" alt="">
+											<label class="file_upload">
+										        <span>Изменить<br> фото</span>
+										        <input type="file">
+										    </label>
 										</div>
 										<a class="profile__chpass">Изменить пароль</a>
 									</div>
@@ -1811,37 +1815,6 @@
 									</form>
 								</div>
 								<h3 class="account__title">Или выберите существующий:</h3>
-								<div class="address__item address__item_active">
-									<div class="address__name">
-										<input type="checkbox" id="address1" class="checkbox">
-										<label for="address1" class="checkboxlabel">г. Москва, Московская область, ул. Лётчиков 15, квартира 2</label>
-									</div>
-									<div class="address__options">
-										<div class="address__edit address__edit_active"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
-										<div class="address__remove"><i>+</i></div>
-									</div>
-									<div class="address__add address__editbox">
-										<h3 class="account__title account__title_grey">Редактировать даные:</h3>
-										<form action="" class="profile__form">
-											<div class="account__input account__input_3">
-												<label for="">Город:</label>
-												<input type="text" placeholder="Москва">
-											</div>
-											<div class="account__input account__input_4">
-												<label for="">Адрес:</label>
-												<input type="text" placeholder="ул. Космонавтов 15">
-											</div>
-											<div class="account__input account__input_3">
-												<label for="">Квартира/офис:</label>
-												<input type="text" placeholder="2">
-											</div>
-											<div class="profile__buttcont profile__buttcont_np address__buttcont">
-												<button class="btn btn_mini btn_address">Сохранить</button>
-												<button class="btn btn_mini btn_address">Отмена</button>
-											</div>
-										</form>
-									</div>
-								</div>
 								<div class="address__item">
 									<div class="address__name">
 										<input type="checkbox" id="address1" class="checkbox">
@@ -1875,8 +1848,39 @@
 								</div>
 								<div class="address__item">
 									<div class="address__name">
-										<input type="checkbox" id="address1" class="checkbox">
-										<label for="address1" class="checkboxlabel">г. Москва, Московская область, ул. Лётчиков 15, квартира 2</label>
+										<input type="checkbox" id="address2" class="checkbox">
+										<label for="address2" class="checkboxlabel">г. Москва, Московская область, ул. Лётчиков 15, квартира 2</label>
+									</div>
+									<div class="address__options">
+										<div class="address__edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+										<div class="address__remove"><i>+</i></div>
+									</div>
+									<div class="address__add address__editbox">
+										<h3 class="account__title account__title_grey">Редактировать даные:</h3>
+										<form action="" class="profile__form">
+											<div class="account__input account__input_3">
+												<label for="">Город:</label>
+												<input type="text" placeholder="Москва">
+											</div>
+											<div class="account__input account__input_4">
+												<label for="">Адрес:</label>
+												<input type="text" placeholder="ул. Космонавтов 15">
+											</div>
+											<div class="account__input account__input_3">
+												<label for="">Квартира/офис:</label>
+												<input type="text" placeholder="2">
+											</div>
+											<div class="profile__buttcont profile__buttcont_np address__buttcont">
+												<button class="btn btn_mini btn_address">Сохранить</button>
+												<button class="btn btn_mini btn_address">Отмена</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="address__item">
+									<div class="address__name">
+										<input type="checkbox" id="address3" class="checkbox">
+										<label for="address3" class="checkboxlabel">г. Москва, Московская область, ул. Лётчиков 15, квартира 2</label>
 									</div>
 									<div class="address__options">
 										<div class="address__edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
@@ -1905,6 +1909,9 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="accountpay"></div>
+
 							<div class="ddescription__block account__comments">
 								<div class="ddescription__box">
 									<div class="ddescription__item ddescription__item_m">
@@ -2150,7 +2157,7 @@
 					<label for="">Пароль:</label>
 					<input type="text" placeholder="Пароль*">
 				</div>
-				<a href="" class="modal__log">У вас уже есть аккаунт? Войдите</a>
+				<a href="" class="modal__log modalrun2">У вас уже есть аккаунт? Войдите</a>
 				<button class="modal__btn">Зарегистрироваться</button>
 			</form>
 		</div>
@@ -2170,7 +2177,7 @@
 					<input type="text" placeholder="Пароль*">
 				</div>
 				<a href="" class="modal__forget">Забыли пароль?</a>
-				<a href="" class="modal__reg">Регистрация</a>
+				<a href="" class="modal__reg modalrun1">Регистрация</a>
 				<button class="modal__btn">Войти</button>
 			</form>
 			<div class="modal__bottom">

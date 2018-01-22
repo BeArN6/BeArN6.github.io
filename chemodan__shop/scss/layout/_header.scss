@@ -122,6 +122,7 @@ header{
 		font: 400 14px "Roboto",sans-serif;
 		color: #1c1c1c;
 		margin: 0 2px;
+		cursor: pointer;
 		&_active{
 			color: #a4a4a4;
 		}
@@ -157,6 +158,11 @@ header{
 			
 		}
 		img{
+			filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='bright30'><feComponentTransfer><feFuncR type='linear' slope='0.30'/><feFuncG type='linear' slope='0.30' /><feFuncB type='linear' slope='0.30' /></feComponentTransfer></filter></svg>#bright30");
+			-webkit-filter: brightness(0);
+    		-moz-filter: brightness(0);
+    		-ms-filter: brightness(0);
+    		-o-filter: brightness(0);
 			filter: brightness(0);
 		}
 		span{
