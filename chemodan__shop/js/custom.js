@@ -212,7 +212,7 @@ $(window).load(function (){
 	});
 
 	//Sidebar filter click
-	$(".filterbar__item").click(function(){
+	$(".sidefilters__item .filterbar__item").click(function(){
 		$(this).toggleClass("filterbar__item_active");
 	})
 
