@@ -211,6 +211,11 @@ $(window).load(function (){
 		$(this).toggleClass("htabs__item_active");
 	});
 
+	//Sidebar filter click
+	$(".filterbar__item").click(function(){
+		$(this).toggleClass("filterbar__item_active");
+	})
+
 	//Basket bind next btn
 	$(".basket .btn").click(function(){
 		$(".basket__li").removeClass("basket__li_active");
