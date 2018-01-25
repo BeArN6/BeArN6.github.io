@@ -146,17 +146,48 @@ body{
 		border: 1px solid #e8e8e8;
 		border-top: 0;
 		padding: 0 3px;
+		ul{
+			position: relative;
+		}
 		li{
 			display: flex;
 		    justify-content: center;
 		    align-items: flex-start;
 		    flex-direction: column;
 		    border-bottom: 1px solid #e8e8e8;
-		    position: relative;
+		    /*position: relative;*/
 		    width: 242px;
 		    transition: width 0.2s ease-in-out;
+		    &:first-child{
+		    	.sidenav__more{
+		    		top: 9px;
+		    	}
+		    }
+		    &:nth-child(2){
+		    	.sidenav__more{
+		    		top: 48px;
+		    	}
+		    }
+		    &:nth-child(3){
+		    	.sidenav__more{
+		    		top: 87px;
+		    	}
+		    }
+		    &:nth-child(4){
+		    	.sidenav__more{
+		    		top: 126px;
+		    	}
+		    }
+		    &:nth-child(5){
+		    	.sidenav__more{
+		    		top: 165px;
+		    	}
+		    }
 		    &:last-child{
 		    	border-bottom: 0;
+		    	.sidenav__more{
+		    		top: 204px;
+		    	}
 		    }
 		    &:hover{
 		    	width: 247px;
@@ -172,6 +203,27 @@ body{
 		display: flex;
     	justify-content: flex-start;
     	align-items: center;
+    	width: 100%;
+    	position: relative;
+    	&:after{
+    		content: "\f105";
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+			font-size: 19px !important;
+    		color: #a4a4a4;
+    		position: absolute;
+    		right: 5px;
+    		top: 9px;
+    		cursor: pointer;
+    		padding: 0 5px;
+    	}
+    	&_active{
+    		&:after{
+    			transform: rotate(90deg);
+    		}
+    	}
     	a{
     		font: 400 15px "Roboto",sans-serif;
     		color: #000;
@@ -223,6 +275,7 @@ body{
     	right: 5px;
     	top: 9px;
     	cursor: pointer;
+    	display: none !important;
     	&_active{
     		transform: rotate(90deg);
     	}
@@ -715,11 +768,10 @@ body{
     &__sidebar{
     	left: 246px;
     }
-    &_1{
-    	top: auto;
-    	bottom: -196px;
+    &_1,&_2,&_3,&_4,&_5,&_6{
+    	top: 1px;
     }
-    &_2{
+    /*&_2{
     	top: auto;
     	bottom: -157px;
     }
@@ -738,7 +790,7 @@ body{
     &_6{
     	top: auto;
     	bottom: -1px;
-    }
+    }*/
     &__cont{
     	width: 50%;
     	display: flex;
@@ -1235,6 +1287,12 @@ body{
 	background: #f6f6f6;
 	position: relative;
 	margin: 0 6px;
+	-moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	&__img{
 		height: 230px;
 		width: 100%;
@@ -1912,7 +1970,8 @@ body{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		border: 1px solid #ababab;
+		/*border: 1px solid #ababab;*/
+		box-shadow: 0 0 0 1px #ababab;
 		border-radius: 10px;
 		position: relative;
 		padding-left: 19px;
@@ -1961,11 +2020,16 @@ body{
 	}
 	&__img{
 		position: absolute;
-		left: -1px;
-		top: -1px;
-		height: 19px;
-		width: 19px;
-		border: 1px solid #ababab;
+		/*left: -1px;
+		top: -1px;*/
+		left: 0;
+		top: 0;
+		/*height: 19px;
+		width: 19px;*/
+		height: 17px;
+		width: 17px;
+		/*border: 1px solid #ababab;*/
+		box-shadow: 0 0 0 1px #ababab;
 		border-radius: 100%;
 		display: flex;
     	justify-content: center;
