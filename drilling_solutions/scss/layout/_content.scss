@@ -239,11 +239,8 @@ h3{
 	.slick-slide{
 		cursor: pointer;
 		position: relative;
-		&::after{
-			position: absolute;
-			left: 0;
-			top: 0;
-			box-shadow: 0 0 0 9999px rgba(250,187,0,0.75) inset;
+		img{
+			width: 100%;
 		}
 		&:hover{
 			&:after{

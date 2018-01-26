@@ -221,7 +221,7 @@ $(window).load(function(){
 	});
 	//Modal end
 
-	$('.slider-nav .slick-slide').on('mouseover',function(){
-		$(this).toggleClass("slick-slide_active");
-	});
+	// $('.slider-nav .slick-slide').on('mouseover',function(){
+	// 	$(this).toggleClass("slick-slide_active");
+	// });
 });
