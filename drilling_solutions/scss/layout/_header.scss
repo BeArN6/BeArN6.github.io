@@ -1,0 +1,179 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -167px;
+	transition: 0.7s;
+	z-index: 9995;
+	&__top{
+		width: 100%;
+		.wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0px 1px 0px 0px rgba(253,253,254,0.25);
+			padding: 30px 0;
+		}
+	}
+	&__logo{
+		display: flex;
+		align-items: center;
+		p{
+			font: 9px "GPL";
+			color: #dfdfdf;
+			text-transform: uppercase;
+			line-height: 14px;
+			margin-left: 8px;
+			margin-top: 1px;
+		}
+	}
+	&__img{
+		display: block;
+		&_active{
+			display: none;
+		}
+	}
+	&__info{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		a{
+			font: 15px "GPL";
+			color: #fff;
+			line-height: 14px;
+			margin-right: 25px;
+		}
+		&_2{
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+	}
+	&__nav{
+		padding: 25px 0;
+		ul{
+			list-style: none;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			li{
+				margin-right: 25px;
+				&:last-child{
+					margin-right: 0;
+				}
+				a{
+					font: 15px "GPL";
+					color: #fff;
+					line-height: 14px;
+					transition: 0s;
+					&:hover{
+						font-family: "GPM";
+					}
+					&:after{
+						display: block;
+						content: attr(title);
+						font-family: "GPM";
+						height: 0;
+						overflow: hidden;
+						visibility: hidden;
+					}
+				}
+			}
+		}
+	}
+	&_load{
+		top: 0;
+	}
+	&_active{
+		position: fixed;
+		top: 0;
+		.header__top{
+			background: #fdfdfe;
+		}
+		.header__info a, .btn{
+			color: #1a1a1a;
+		}
+		.header__bott{
+			background: #222323;
+		}
+		.header__nav{
+			ul{
+				li{
+					a{
+						&:hover{
+							color: #fabb00;
+						}
+					}
+				}
+			}
+		}
+		.header__logo{
+			p{
+				color: #747474;
+			}
+		}
+		.header__img{
+			display: none;
+			&_active{
+				display: block;
+			}
+		}
+	}
+}
+.email{
+	text-decoration: underline;
+	&_2{
+		margin-bottom: 45px;
+	}
+}
+.phone{
+	&_2{
+		margin-bottom: 10px;
+	}
+}
+.call{
+	padding: 5px 28px !important;
+	text-transform: uppercase;
+	font: 12px "GPL" !important;
+	line-height: 24px !important;
+}
+.toggle{
+	width: 30px;
+	display: none;
+	span{
+		height: 3px;
+		width: 100%;
+		display: block;
+		background-color: #000;
+		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.toggle{
+		display: block;
+	}
+}
