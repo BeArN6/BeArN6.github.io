@@ -120,9 +120,10 @@ h3{
     	position: absolute;
     	width: 100%;
     	bottom: 90px;
+    	height: 16px;
     	button{
     		width: 16px;
-		    height: 16px;
+		    height: 16px !important;
 		    border-radius: 100%;
 		    background: transparent;
 		    border: 1px solid #fff;
@@ -357,9 +358,10 @@ h3{
     	align-items: center;
     	list-style: none;
     	padding-top: 35px;
+    	height: 16px;
     	button{
     		width: 16px;
-		    height: 16px;
+		    height: 16px !important;
 		    border-radius: 100%;
 		    background: transparent;
 		    border: 1px solid #fabb00;
@@ -412,7 +414,7 @@ h3{
 	width: 552px;
 	top: 120px;
 	left: 6.15%;
-	z-index: 9999;
+	z-index: 9990;
 	background: #fff;
 	&__box{
 		display: flex;
@@ -882,14 +884,13 @@ h3{
 			}
 		}
 		&__logo{
-			margin-bottom: 15px;
+			margin-bottom: 0;
 		}
 		&__info{
 			flex-wrap: wrap;
     		justify-content: space-around;
     		a{
-    			margin-right: 0;
-    			margin-bottom: 15px;
+    			margin: 8px 10px;
     		}
 		}
 		&__nav{
@@ -960,6 +961,7 @@ h3{
 		padding-bottom: 40px;
 		&__box{
 			flex-wrap: wrap;
+			justify-content: space-around;
 		}
 		&__left{
 			padding: 20px;
@@ -968,6 +970,9 @@ h3{
 		&__right{
 			width: 100%;
 			max-width: 552px;
+		}
+		.title{
+			text-align: center;
 		}
 	}
 	.slider-for{
@@ -981,6 +986,14 @@ h3{
 	}
 	.slider-nav .slick-slide{
 		margin: 0px 5px !important;
+	}
+	.work{
+		&__box{
+			justify-content: space-around;
+		}
+		.title{
+			text-align: center;
+		}
 	}
 	.photos{
 		padding-bottom: 40px;
@@ -1073,6 +1086,12 @@ h3{
 		width: 320px;
     	padding: 15px;
     	margin-left: -160px;
+	}
+	.call{
+		margin: 8px 10px;
+	}
+	.toggle{
+		margin: 8px 10px;
 	}
 }
 
