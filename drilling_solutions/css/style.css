@@ -605,20 +605,29 @@ h3 {
   width: 100%;
   bottom: 90px;
   height: 16px;
+  min-height: 16px;
 }
 .banner .slick-dots button {
   width: 16px;
   height: 16px !important;
+  min-height: 16px;
   border-radius: 100%;
   background: transparent;
   border: 1px solid #fff;
   text-indent: 9999px;
+  padding: 0;
 }
 .banner .slick-dots li {
   margin: 0 4px;
 }
 .banner .slick-dots .slick-active button {
   background: #fff;
+}
+.banner .btn {
+  transition: 0.2s ease-in-out;
+}
+.banner .btn:hover {
+  background: #fabb00;
 }
 
 .adv__cont {
@@ -843,15 +852,18 @@ h3 {
   align-items: center;
   list-style: none;
   padding-top: 35px;
-  height: 16px;
+  height: 16px !important;
+  min-height: 16px;
 }
 .photos .slick-dots button {
   width: 16px;
   height: 16px !important;
+  min-height: 16px;
   border-radius: 100%;
   background: transparent;
   border: 1px solid #fabb00;
   text-indent: 9999px;
+  padding: 0;
 }
 .photos .slick-dots li {
   margin: 0 4px;

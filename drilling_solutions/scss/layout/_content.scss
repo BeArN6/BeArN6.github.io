@@ -121,13 +121,16 @@ h3{
     	width: 100%;
     	bottom: 90px;
     	height: 16px;
+    	min-height: 16px;
     	button{
     		width: 16px;
 		    height: 16px !important;
+		    min-height: 16px;
 		    border-radius: 100%;
 		    background: transparent;
 		    border: 1px solid #fff;
 		    text-indent: 9999px;
+		    padding: 0;
     	}
     	li{
     		margin: 0 4px;
@@ -137,6 +140,12 @@ h3{
     			background: #fff;
     		}
     	}
+	}
+	.btn{
+		transition: 0.2s ease-in-out;
+		&:hover{
+			background: #fabb00;
+		}
 	}
 }
 .adv{
@@ -358,14 +367,17 @@ h3{
     	align-items: center;
     	list-style: none;
     	padding-top: 35px;
-    	height: 16px;
+    	height: 16px !important;
+    	min-height: 16px;
     	button{
     		width: 16px;
 		    height: 16px !important;
+		    min-height: 16px;
 		    border-radius: 100%;
 		    background: transparent;
 		    border: 1px solid #fabb00;
 		    text-indent: 9999px;
+		    padding: 0;
     	}
     	li{
     		margin: 0 4px;
