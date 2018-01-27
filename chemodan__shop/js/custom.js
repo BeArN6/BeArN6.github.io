@@ -307,27 +307,27 @@ $(window).load(function (){
 	});
 
 	//Home page slider active tabs
-	$("#slick-slide70").click(function(){
+	$(".banner .slick-dots li:nth-child(1)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_1").addClass("bannercat__item_active");
 	});
-	$("#slick-slide71").click(function(){
+	$(".banner .slick-dots li:nth-child(2)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_2").addClass("bannercat__item_active");
 	});
-	$("#slick-slide72").click(function(){
+	$(".banner .slick-dots li:nth-child(3)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_3").addClass("bannercat__item_active");
 	});
-	$("#slick-slide73").click(function(){
+	$(".banner .slick-dots li:nth-child(4)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_4").addClass("bannercat__item_active");
 	});
-	$("#slick-slide74").click(function(){
+	$(".banner .slick-dots li:nth-child(5)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_5").addClass("bannercat__item_active");
 	});
-	$("#slick-slide75").click(function(){
+	$(".banner .slick-dots li:nth-child(6)").click(function(){
 		$(".bannercat__item").removeClass("bannercat__item_active");
 		$(".bannercat__item_6").addClass("bannercat__item_active");
 	});
@@ -390,47 +390,55 @@ $(window).load(function (){
 	var modalFormMargin3 = modalWidth3/2;
 		$(".modalreg").css({'margin-left':-modalFormMargin});
 		$(".modallog").css({'margin-left':-modalFormMargin});
+		$(".modalrem").css({'margin-left':-modalFormMargin});
 		$(".modalcall").css({'margin-left':-modalFormMargin2});
 		$(".modalcity").css({'margin-left':-modalFormMargin2});
 		$(".modalpass").css({'margin-left':-modalFormMargin3});
 
 		$('.modalrun1').click(function(event){
 			event.preventDefault();
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
 			$(".overlay").fadeIn(400);
 			$('.modalreg').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun2').click(function(event){
 			event.preventDefault();
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
 			$(".overlay").fadeIn(300)
 				$('.modallog').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun3').click(function(event){
 			event.preventDefault();
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
 			$(".overlay").fadeIn(300);
 				$('.modalcall').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun4').click(function(event){
 			event.preventDefault();
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
 			$(".overlay").fadeIn(300);
 				$('.modalcity').fadeIn(400);
 			$('body').addClass("fixed");
 		});
 		$('.modalrun5').click(function(event){
 			event.preventDefault();
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").hide();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
 			$(".overlay").fadeIn(400);
 			$('.modalpass').fadeIn(400);
 			$('body').addClass("fixed");
 		});
+		$('.modalrun6').click(function(event){
+			event.preventDefault();
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").hide();
+			$(".overlay").fadeIn(400);
+			$('.modalrem').fadeIn(400);
+			$('body').addClass("fixed");
+		});
 		$('.modal__close,.overlay').click(function(){
-			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass").animate({opacity: 1, top:"10%"}, 300,
+			$(".modalreg,.modallog,.modalcall,.modalcity,.modalpass,.modalrem").animate({opacity: 1, top:"10%"}, 300,
 				function(){
 					$(this).fadeOut(400); 
 				}

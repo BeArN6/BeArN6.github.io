@@ -141,11 +141,13 @@ body{
 		text-transform: uppercase;
 		background: #3498db;
 		padding: 8px 0;
+		height: 34px;
 	}
 	&__item{
 		border: 1px solid #e8e8e8;
 		border-top: 0;
 		padding: 0 3px;
+		/*height: 235px;*/
 		ul{
 			position: relative;
 		}
@@ -157,6 +159,7 @@ body{
 		    border-bottom: 1px solid #e8e8e8;
 		    /*position: relative;*/
 		    width: 242px;
+		    /*height: 39px;*/
 		    transition: width 0.2s ease-in-out;
 		    &:first-child{
 		    	.sidenav__more{
@@ -767,7 +770,7 @@ body{
 	left: 0px;
     top: 35px;
 	width: 920px;
-    height: 233px;
+    height: 235px;
     background: #fff;
     padding: 18px 16px;
     display: flex;
@@ -836,6 +839,12 @@ body{
 			width: 415px;
 			height: 52px;
 		}
+		&_brand3{
+			margin-right: 20px;
+		}
+		&_brand4{
+			margin-left: 20px;
+		}
 		&_type{
 			width: 415px;
 			align-items: center;
@@ -845,6 +854,10 @@ body{
 		}
 		&_price{
 			width: 175px;
+		}
+		&_price2{
+			width: auto;
+			height: 92px;
 		}
 		&_fc{
 			justify-content: flex-start;
@@ -870,6 +883,9 @@ body{
 				box-shadow: 0px 0px 1px 1px #9bd5fa;
     			border-radius: 1px;
 			}
+		}
+		&_akcii2{
+			height: 93px;
 		}
 	}
 	&__showmore{
@@ -1016,8 +1032,8 @@ body{
 /*Banner*/
 .banner{
 	width: 825px;
-	height: 233px;
-	/*overflow: hidden;*/
+	height: 235px;
+	overflow: hidden;
 	.slick-track{
 		padding: 0 !important;
 	}
@@ -1074,6 +1090,8 @@ body{
 		border-top: 0;
 		transition: 0.2s ease-in-out;
 		cursor: pointer;
+		height: 39px;
+    	justify-content: center;
 		span{
 			font: 500 11px "Roboto",sans-serif;
 			color: #a4a4a4;
@@ -1088,6 +1106,8 @@ body{
 		}
 	}
 	&__img{
+		-webkit-filter: grayscale(100%);
+		-webkit-filter: grayscale(1);
 		filter: grayscale(100%);
 		&_1{
 			width: 21px;
@@ -1906,6 +1926,10 @@ body{
 	width: 385px;
 	height: 460px;
 }
+.modalrem{
+	width: 385px;
+	height: 280px;
+}
 .modalcall{
 	width: 460px;
 	height: 430px;
@@ -2003,7 +2027,7 @@ body{
 			font: 400 13px "Roboto",sans-serif;
 			color: #ababab;
 			display: inline-block;
-			padding: 0 4px 2px;
+			padding: 0 4px;
 		}
 		&_np{
 			padding-left: 0;
@@ -2597,6 +2621,9 @@ body{
 		background-size: contain !important;
 	}
 }
+.sp-large{
+	height: 309px !important;
+}
 .sp-zoom{
 	display: none !important;
 }
@@ -2874,7 +2901,7 @@ body{
     	position: absolute;
     	top: 30px;
     	&:hover{
-    		box-shadow: 0 0 0 0;
+    		box-shadow: 0 0 0 0 rgba(0,0,0,0);
     		i{
     			color: #3498db;
     			text-shadow: 0px 0px 3.2800000000000002px rgba(0, 0, 0, 0.18);
@@ -3206,6 +3233,7 @@ body{
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		max-width: 588px;
 	}
 	&__chpass{
 		font: 400 14px "Roboto",sans-serif;
@@ -3259,6 +3287,7 @@ body{
     		background: url(../img/change.png) center center no-repeat;
     		background-size: 100%;
     		position: absolute;
+    		top: 20px;
     		z-index: 2;
     	}
     	span{
@@ -3271,9 +3300,12 @@ body{
 			position: absolute;
 			width: 143px;
     		height: 143px;
+    		left: 0;
+    		top: 0;
     		opacity: 0;
     		cursor: pointer;
     		z-index: 4;
+    		font-size: 0;
     	}
 	}
 }
