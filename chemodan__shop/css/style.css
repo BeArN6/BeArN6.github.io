@@ -883,6 +883,12 @@ body {
 .sidefilters__item .sidenav__more_active {
   transform: rotate(180deg);
 }
+.sidefilters__color1 .sidefilters__title:after {
+  content: none;
+}
+.sidefilters__price .sidefilters__title:after {
+  content: none;
+}
 .sidefilters__sm {
   font: 400 13px "Roboto",sans-serif;
   text-decoration: underline;
@@ -1519,6 +1525,9 @@ body {
   	color: #3498db;
   }*/
 }
+.dropdown__price:hover {
+  color: #3498db;
+}
 .dropdown__brand {
   width: 68px;
   height: 32px;
@@ -1558,6 +1567,9 @@ body {
 }
 .mainsearch input::placeholder {
   color: #a4a4a4;
+}
+.mainsearch input:-ms-input-placeholder {
+  color: #a4a4a4 !important;
 }
 .mainsearch img {
   position: absolute;
@@ -2309,6 +2321,9 @@ body {
   font: 300 17px "Roboto",sans-serif;
   color: #a4a4a4;
 }
+.modal__input input:-ms-input-placeholder, .modal__input textarea:-ms-input-placeholder, .modal__textarea input:-ms-input-placeholder, .modal__textarea textarea:-ms-input-placeholder {
+  color: #a4a4a4 !important;
+}
 .modal__input_1, .modal__textarea_1 {
   width: 180px;
   display: inline-block;
@@ -2547,6 +2562,7 @@ body {
   padding-left: 19px;
   cursor: pointer;
   margin-right: 5px;
+  height: 17px;
 }
 .filterbar__item span {
   font: 400 13px "Roboto",sans-serif;
@@ -2565,27 +2581,33 @@ body {
   padding: 0;
 }
 .filterbar__item_active {
-  border-color: #3498db;
+  box-shadow: 0 0 0 1px #3498db;
 }
 .filterbar__item_active span {
   color: #3498db;
 }
 .filterbar__item_active .filterbar__img {
-  border-color: #3498db;
+  box-shadow: 0 0 0 1px #3498db;
 }
 .filterbar__item_active .filterbar__img i {
   color: #3498db;
 }
+.filterbar__item_active .filterbar__img b {
+  color: #3498db;
+}
 .filterbar__item:hover {
-  border-color: #3498db;
+  box-shadow: 0 0 0 1px #3498db;
 }
 .filterbar__item:hover span {
   color: #3498db;
 }
 .filterbar__item:hover .filterbar__img {
-  border-color: #3498db;
+  box-shadow: 0 0 0 1px #3498db;
 }
 .filterbar__item:hover .filterbar__img i {
+  color: #3498db;
+}
+.filterbar__item:hover .filterbar__img b {
   color: #3498db;
 }
 .filterbar__img {
@@ -3025,6 +3047,9 @@ body {
   color: #a4a4a4;
   font: 300 14px "Roboto",sans-serif;
 }
+.goodreview__textarea textarea:-ms-input-placeholder {
+  color: #a4a4a4 !important;
+}
 .goodreview__inputcont {
   display: flex;
   justify-content: space-between;
@@ -3049,6 +3074,9 @@ body {
 .goodreview__input::placeholder {
   color: #a4a4a4;
   font: 300 14px "Roboto",sans-serif;
+}
+.goodreview__input:-ms-input-placeholder {
+  color: #a4a4a4 !important;
 }
 .goodreview__input_1 {
   width: 280px;
@@ -3112,10 +3140,14 @@ body {
   font: 18px/1 FontAwesome;
   display: block;
   content: "\f006";
-  color: #ccc;
+  color: #c3c3c3;
+  /*color: #ccc;
   background: #a2a5a6;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
+  /*mix-blend-mode: screen;
+  background: #fff;
+  color: #a2a5a6;*/
 }
 
 .ratingg > label:hover:before,
@@ -3123,10 +3155,10 @@ body {
 .ratingg > label.selected:before,
 .ratingg > label.selected ~ label:before {
   content: "\f005";
-  color: #f0ad4e;
-  background: #3498db;
+  color: #3498db;
+  /*background: #3498db;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 
 /*Feedback page end*/
@@ -3256,6 +3288,12 @@ body {
   z-index: 2;
   background: #fff;
 }
+.cardgood ul li span:first-child {
+  margin-right: auto;
+}
+.cardgood ul li span:last-child {
+  margin-left: auto;
+}
 .cardgood__all {
   font: 300 14px "Roboto",sans-serif;
   color: #3498db;
@@ -3359,6 +3397,9 @@ body {
   font: 500 21.55px "Roboto",sans-serif;
   color: #1c1c1c;
 }
+.cardgood__amount input:-ms-input-placeholder {
+  color: #a4a4a4 !important;
+}
 .cardgood__minus {
   padding-left: 10px;
 }
@@ -3387,40 +3428,28 @@ body {
 }
 
 .sp-thumbs .slick-prev, .sp-thumbs .slick-next {
-  width: 0;
-  height: 0;
-  color: transparent;
+  background: none;
+  color: #a4a4a4;
+  font-size: 25px;
   border: 0;
+  overflow: visible;
   position: absolute;
-  top: 25px;
+  top: 30px;
 }
-.sp-thumbs .slick-prev:hover:before, .sp-thumbs .slick-next:hover:before {
+.sp-thumbs .slick-prev:hover, .sp-thumbs .slick-next:hover {
+  box-shadow: 0 0 0 0;
+}
+.sp-thumbs .slick-prev:hover i, .sp-thumbs .slick-next:hover i {
   color: #3498db;
   text-shadow: 0px 0px 3.28px rgba(0, 0, 0, 0.18);
 }
 .sp-thumbs .slick-prev {
-  left: 15px;
-}
-.sp-thumbs .slick-prev:before {
-  content: "\f104";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #a4a4a4;
-  font-size: 25px;
+  left: -27px;
+  top: 22px;
 }
 .sp-thumbs .slick-next {
-  right: -25px;
-}
-.sp-thumbs .slick-next:before {
-  content: "\f105";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #a4a4a4;
-  font-size: 25px;
+  right: -27px;
+  top: 22px;
 }
 
 .characteristic {
@@ -3655,12 +3684,15 @@ body {
   border: 1px solid #e5e5e5;
   font: 400 14px "Roboto",sans-serif;
   color: #1c1c1c;
-  padding: 0 15px;
+  padding: 9px 15px;
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .account__input input::placeholder {
   font: 400 14px "Roboto",sans-serif;
   color: #a4a4a4;
+}
+.account__input input:-ms-input-placeholder {
+  color: #a4a4a4 !important;
 }
 .account__input input:focus {
   box-shadow: 0px 0px 1px 1px rgba(30, 161, 243, 0.59), inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);

@@ -293,6 +293,16 @@ body{
     		transform: rotate(180deg);
     	}
     }
+    &__color1{
+    	.sidefilters__title:after{
+    		content: none;
+    	}
+    }
+    &__price{
+    	.sidefilters__title:after{
+    		content: none;
+    	}
+    }
     &__sm{
     	font: 400 13px "Roboto",sans-serif;
     	text-decoration: underline;
@@ -933,6 +943,11 @@ body{
 			color: #3498db;
 		}*/
 	}
+	&__price{
+		&:hover{
+			color: #3498db;
+		}
+	}
 	&__brand{
 		width: 68px;
 		height: 32px;
@@ -970,6 +985,9 @@ body{
 		padding-right: 30px;
 		&::placeholder{
 			color: #a4a4a4;
+		}
+		&:-ms-input-placeholder{
+			color: #a4a4a4 !important;
 		}
 	}
 	img{
@@ -1744,6 +1762,9 @@ body{
 				font: 300 17px "Roboto",sans-serif;
 				color: #a4a4a4;
 			}
+			&:-ms-input-placeholder{
+				color: #a4a4a4 !important;
+			}
 		}
 		&_1{
 			width: 180px;
@@ -1977,6 +1998,7 @@ body{
 		padding-left: 19px;
 		cursor: pointer;
 		margin-right: 5px;
+		height: 17px;
 		span{
 			font: 400 13px "Roboto",sans-serif;
 			color: #ababab;
@@ -1994,25 +2016,31 @@ body{
 			}
 		}
 		&_active{
-			border-color: #3498db;
+			box-shadow: 0 0 0 1px #3498db;
 			span{
 				color: #3498db;
 			}
 			.filterbar__img{
-				border-color: #3498db;
+				box-shadow: 0 0 0 1px #3498db;
 				i{
+					color: #3498db;
+				}
+				b{
 					color: #3498db;
 				}
 			}
 		}
 		&:hover{
-			border-color: #3498db;
+			box-shadow: 0 0 0 1px #3498db;
 			span{
 				color: #3498db;
 			}
 			.filterbar__img{
-				border-color: #3498db;
+				box-shadow: 0 0 0 1px #3498db;
 				i{
+					color: #3498db;
+				}
+				b{
 					color: #3498db;
 				}
 			}
@@ -2444,6 +2472,9 @@ body{
 				color: #a4a4a4;
 				font: 300 14px "Roboto",sans-serif;
 			}
+			&:-ms-input-placeholder{
+			color: #a4a4a4 !important;
+		}
 		}
 	}
 	&__inputcont{
@@ -2471,6 +2502,9 @@ body{
 		&::placeholder{
 			color: #a4a4a4;
 			font: 300 14px "Roboto",sans-serif;
+		}
+		&:-ms-input-placeholder{
+			color: #a4a4a4 !important;
 		}
 		&_1{
 			width: 280px;
@@ -2535,10 +2569,14 @@ body{
     font: 18px/1 FontAwesome;
     display: block;
     content: "\f006";
-    color: #ccc;
+    color: #c3c3c3;
+    /*color: #ccc;
     background: #a2a5a6;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    /*mix-blend-mode: screen;
+    background: #fff;
+    color: #a2a5a6;*/
 }
 
 .ratingg > label:hover:before,
@@ -2546,10 +2584,10 @@ body{
 .ratingg > label.selected:before,
 .ratingg > label.selected ~ label:before {
     content: "\f005";
-    color: #f0ad4e;
-    background: #3498db;
+    color: #3498db;
+    /*background: #3498db;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
 }
 /*Feedback page end*/
 /*Card goods page*/
@@ -2678,6 +2716,12 @@ body{
 				position: relative;
                 z-index: 2;
                 background: #fff;
+                &:first-child{
+                	margin-right: auto;
+                }
+                &:last-child{
+                	margin-left: auto;
+                }
 			}
 		}
 	}
@@ -2786,6 +2830,9 @@ body{
 				font: 500 21.55px "Roboto",sans-serif;
 				color: #1c1c1c;
 			}
+			&:-ms-input-placeholder{
+				color: #a4a4a4 !important;
+			}
 		}
 	}
 	&__minus{
@@ -2819,42 +2866,28 @@ body{
 }
 .sp-thumbs{
 	.slick-prev, .slick-next{
-		width: 0;
-    	height: 0;
-    	color: transparent;
+		background: none;
+    	color: #a4a4a4;
+    	font-size: 25px;
     	border: 0;
+    	overflow: visible;
     	position: absolute;
-    	top: 25px;
+    	top: 30px;
     	&:hover{
-    		&:before{
+    		box-shadow: 0 0 0 0;
+    		i{
     			color: #3498db;
     			text-shadow: 0px 0px 3.2800000000000002px rgba(0, 0, 0, 0.18);
     		}
     	}
 	}
 	.slick-prev{
-		left: 15px;
-		&:before{
-    		content: "\f104";
-    		font-family: FontAwesome;
-    		font-style: normal;
-    		font-weight: normal;
-    		text-decoration: inherit;
-    		color: #a4a4a4;
-    		font-size: 25px;
-		}
+		left: -27px;
+    	top: 22px;
 	}
 	.slick-next{
-		right: -25px;
-		&:before{
-    		content: "\f105";
-    		font-family: FontAwesome;
-    		font-style: normal;
-    		font-weight: normal;
-    		text-decoration: inherit;
-    		color: #a4a4a4;
-    		font-size: 25px;
-		}
+		right: -27px;
+    	top: 22px;
 	}
 }
 .characteristic{
@@ -3099,11 +3132,14 @@ body{
 			border: 1px solid #e5e5e5;
 			font: 400 14px "Roboto",sans-serif;
 			color: #1c1c1c;
-			padding: 0 15px;
+			padding: 9px 15px;
 			box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 			&::placeholder{
 				font: 400 14px "Roboto",sans-serif;
 				color: #a4a4a4;
+			}
+			&:-ms-input-placeholder{
+				color: #a4a4a4 !important;
 			}
 			&:focus{
 				box-shadow: 0px 0px 1px 1px rgba(30,161,243,0.59),inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
