@@ -1349,7 +1349,7 @@ body {
 
 .dropdown {
   position: absolute;
-  z-index: 11;
+  z-index: 15;
   left: 0px;
   top: 35px;
   width: 920px;
@@ -1654,16 +1654,19 @@ body {
 .bannercat {
   width: 95px;
 }
+.bannercat .slick-track {
+  padding: 0 !important;
+}
 .bannercat__item {
   width: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #e8e8e8;
-  border-top: 0;
+  border: 1px solid #e8e8e8 !important;
+  border-top: 0 !important;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  height: 39px;
+  height: 39px !important;
   justify-content: center;
 }
 .bannercat__item span {

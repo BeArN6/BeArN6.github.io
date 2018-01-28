@@ -301,10 +301,29 @@ $(window).load(function (){
 
 	$('.banner').slick({
 		arrows: false,
-		dots: true,
-		autoplay:true,
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		asNavFor: '.bannercat',
+  		autoplay:true,
   		autoplaySpeed:3000
 	});
+
+	$(".bannercat").slick({
+		slidesToShow: 6,
+  		draggable: false,
+  		swipe: false,
+  		asNavFor: '.banner',
+  		vertical: true,
+  		focusOnSelect: true
+	});
+
+	$('.banner').on('afterChange', function(event,slick,i){
+  		$('.bannercat .slick-slide').removeClass('bannercat__item_active');
+  		$('.bannercat .slick-slide').eq(i).addClass('bannercat__item_active');    				 
+	});
+
+	// remember document ready on this
+	$('.bannercat .slick-slide').eq(0).addClass('bannercat__item_active');
 
 	//Home page slider active tabs
 	$(".banner .slick-dots li:nth-child(1)").click(function(){
@@ -865,7 +884,6 @@ $(window).load(function (){
 	$('.sp-wrap').smoothproducts();
 
 	$(".sp-thumbs").slick({
-		infinite: true,
   		slidesToShow: 4,
   		slidesToScroll: 1,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
