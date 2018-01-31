@@ -81,6 +81,53 @@ $(window).load(function(){
 		$(this).toggleClass("carttable__remove_mobactive");
 	});
 
+	//Langs toggle
+	$(".lang__item").click(function(){
+		$(this).siblings().removeClass("lang__item_active");
+		$(this).addClass("lang__item_active");
+	});
+
+	//Accound change password
+	$(".file_upload").hide();
+	$(".myinfo__changepass").click(function(){
+		$(".myinfo__cpformtoggle").slideToggle();
+		$(".file_upload").fadeToggle();
+	});
+
+	//Htabs modals
+	$(".htabs__item").click(function(){
+		$(this).find(".balancepop,.favorites,.loginpop,.cartpop").toggle();
+		$(this).find(".htabs__img").toggleClass("htabs__img_active");
+		var imgAttr = $(this).find(".htabs__object").attr("src");
+		var actPos = $(this).find(".htabs__object").attr("src").indexOf("-active");
+		var svgPos = $(this).find(".htabs__object").attr("src").indexOf(".svg");
+		if(actPos !== -1){
+			var imgSubstr = imgAttr.substr(0, actPos) + ".svg";
+			$(this).find(".htabs__object").attr("src", imgSubstr);
+		} else{
+			var imgSubstr2 = imgAttr.substr(0, svgPos) + "-active.svg";
+			$(this).find(".htabs__object").attr("src", imgSubstr2);
+		}
+	});
+
+	//Account choose row
+	$(".accountcont__row").click(function(){
+		$(this).siblings().removeClass("accountcont__row_active");
+		$(this).addClass("accountcont__row_active");
+	});
+
+	//Basket amount
+	$(".fa-minus").click(function(){
+		var inputVal = $(this).closest("span").next("input").attr("value") - 1;
+		if(inputVal >= 0){
+			$(this).closest("span").next("input").attr("value", inputVal);
+		}
+	});
+	$(".fa-plus").click(function(){
+		var inputVal = +($(this).closest("span").prev("input").attr("value")) + 1;
+		$(this).closest("span").prev("input").attr("value", inputVal);
+	});
+
 	//Hover menu
 	$('.dropdown').hide();
 	$('.mainnav li').hover(function () {
@@ -235,9 +282,13 @@ $(window).load(function(){
 
 	//Sidenav toggle
 	$(".allfilters_2").hide();
+	$('.sidenav__text').click(function(){
+		$(this).siblings(".sidenav__more").toggleClass('sidenav__more_active');
+		$(this).siblings(".sidefilters").slideToggle();
+	});
 	$('.sidenav__more').click(function(){
 		$(this).toggleClass('sidenav__more_active');
-		$(this).siblings().not('.sidenav__text').slideToggle();
+		$(this).siblings(".sidefilters").slideToggle();
 	});
 	$('.sidefilters__toggle').click(function(){
 		$(this).children('.sidefilters__more').toggleClass('sidefilters__more_active');
@@ -314,15 +365,15 @@ $(window).load(function(){
 		$(".modalps").css({'margin-left':-modalFormMargin2});
 		$(".modalcall").css({'margin-left':-modalFormMargin3});
 		$(".modaltown").css({'margin-left':-modalFormMargin4});
-		$(".modallog").css({'margin-left':-modalFormMargin5});
+		$(".modallog, .modalpass").css({'margin-left':-modalFormMargin5});
 		$(".modalreg").css({'margin-left':-modalFormMargin6});
 
 		$('.modal18').click(function(event){
 			event.preventDefault();
-			$(".overlay").fadeIn(300,function(){
+			$(".overlay2").fadeIn(300,function(){
 				$('.modal18')
 					.css('display', 'block')
-					.animate({opacity: 1,top: "20%"},200)
+					.animate({opacity: 1,top: "10%"},200)
 			});
 			$('body').addClass("fixed");
 		});
@@ -364,7 +415,7 @@ $(window).load(function(){
 		});
 		$('.modal-run6').click(function(event){
 			event.preventDefault();
-			$(".modallog").hide();
+			$('.modalform').hide();
 			$(".overlay").fadeIn(300,function(){
 				$('.modalreg')
 					.css('display', 'block')
@@ -372,11 +423,30 @@ $(window).load(function(){
 			});
 			$('body').addClass("fixed");
 		});
-		$('.modal__close,.overlay').click(function(){
-			$(".modal18,.modalps,.modalcall,.modaltown,.modallog,.modalreg").animate({opacity: 1, top:"10%"}, 200,
+		$('.modal-run7').click(function(event){
+			event.preventDefault();
+			$('.modalform').hide();
+			$(".overlay").fadeIn(300,function(){
+				$('.modalpass')
+					.css('display', 'block')
+					.animate({opacity: 1,top: "10%"},200)
+			});
+			$('body').addClass("fixed");
+		});
+		$('.modal__close,.overlay').not(".modal18 .modal__close, .overlay2").click(function(){
+			$(".modalps,.modalcall,.modaltown,.modallog,.modalreg,.modalpass").animate({opacity: 1, top:"10%"}, 200,
 				function(){
 					$(this).css('display', 'none'); 
 					$('.overlay').fadeOut(300);
+				}
+			);
+			$('body').removeClass("fixed");
+		});
+		$('.modalform__button_yes').click(function(){
+			$(".modal18,.modalps,.modalcall,.modaltown,.modallog,.modalreg,.modalpass").animate({opacity: 1, top:"10%"}, 200,
+				function(){
+					$(this).css('display', 'none'); 
+					$('.overlay2').fadeOut(300);
 				}
 			);
 			$('body').removeClass("fixed");
