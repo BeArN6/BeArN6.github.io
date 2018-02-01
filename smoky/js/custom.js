@@ -94,8 +94,25 @@ $(window).load(function(){
 		$(".file_upload").fadeToggle();
 	});
 
+	//Balance prev and next
+	$(".balance__prev").click(function(){
+		$(".balanceopen__block_1 .balanceopen__item:nth-child(2)").insertAfter($(".balanceopen__block_1 .balanceopen__item:last-child"));
+	});
+	$(".balance__next").click(function(){
+		$(".balanceopen__block_1 .balanceopen__item:last-child").insertAfter($(".balanceopen__block_1 .balanceopen__item_title"));
+	});
+
+	//Balance prev and next
+	$(".balance__prev2").click(function(){
+		$(".balanceopen__block_2 .balanceopen__item:nth-child(2)").insertAfter($(".balanceopen__block_2 .balanceopen__item:last-child"));
+	});
+	$(".balance__next2").click(function(){
+		$(".balanceopen__block_2 .balanceopen__item:last-child").insertAfter($(".balanceopen__block_2 .balanceopen__item_title"));
+	});
+
 	//Htabs modals
 	$(".htabs__item").click(function(){
+		$(".balancepop,.favorites,.loginpop,.cartpop,.registerpop").not($(this).find(".balancepop,.favorites,.loginpop,.cartpop")).hide();
 		$(this).find(".balancepop,.favorites,.loginpop,.cartpop").toggle();
 		$(this).find(".htabs__img").toggleClass("htabs__img_active");
 		var imgAttr = $(this).find(".htabs__object").attr("src");
@@ -110,6 +127,23 @@ $(window).load(function(){
 		}
 	});
 
+	$(".balancepop,.favorites,.loginpop,.cartpop,.registerpop").click(function(event){
+		event.stopPropagation();
+	});
+
+	//Mini login modal
+	$(".regpop-run").click(function(event){
+		event.stopPropagation();
+		$(this).parents(".loginpop, .passpop").hide();
+		$(this).parents(".loginpop, .passpop").siblings(".registerpop").show();
+	});
+
+	$(".loginpop__pass2").click(function(event){
+		event.stopPropagation();
+		$(this).parents(".loginpop, .registerpop").hide();
+		$(this).parents(".loginpop, .registerpop").siblings(".passpop").show();
+	});
+
 	//Account choose row
 	$(".accountcont__row").click(function(){
 		$(this).siblings().removeClass("accountcont__row_active");
@@ -117,16 +151,16 @@ $(window).load(function(){
 	});
 
 	//Basket amount
-	$(".fa-minus").click(function(){
-		var inputVal = $(this).closest("span").next("input").attr("value") - 1;
-		if(inputVal >= 0){
-			$(this).closest("span").next("input").attr("value", inputVal);
-		}
-	});
-	$(".fa-plus").click(function(){
-		var inputVal = +($(this).closest("span").prev("input").attr("value")) + 1;
-		$(this).closest("span").prev("input").attr("value", inputVal);
-	});
+	 $(".fa-minus").click(function(){
+	 	var inputVal = $(this).closest("span").next("input").attr("value") - 1;
+	 	if(inputVal >= 0){
+	 		$(this).closest("span").next("input").attr("value", inputVal);
+	 	}
+	 });
+	 $(".fa-plus").click(function(){
+	 	var inputVal = +($(this).closest("span").prev("input").attr("value")) + 1;
+	 	$(this).closest("span").prev("input").attr("value", inputVal);
+	 });
 
 	//Hover menu
 	$('.dropdown').hide();
@@ -284,11 +318,11 @@ $(window).load(function(){
 	$(".allfilters_2").hide();
 	$('.sidenav__text').click(function(){
 		$(this).siblings(".sidenav__more").toggleClass('sidenav__more_active');
-		$(this).siblings(".sidefilters").slideToggle();
+		$(this).siblings(".sidefilters, ul").slideToggle();
 	});
 	$('.sidenav__more').click(function(){
 		$(this).toggleClass('sidenav__more_active');
-		$(this).siblings(".sidefilters").slideToggle();
+		$(this).siblings(".sidefilters, ul").slideToggle();
 	});
 	$('.sidefilters__toggle').click(function(){
 		$(this).children('.sidefilters__more').toggleClass('sidefilters__more_active');

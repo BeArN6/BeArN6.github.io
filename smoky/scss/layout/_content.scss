@@ -3767,6 +3767,28 @@ a.dropdown__more{
 	.main__subtitle{
 		margin-bottom: 10px;
 	}
+	&__arrows{
+		width: 41px;
+	    height: 41px;
+	    background: #ececec;
+	    margin: 0 5px;
+	    transition: 0.2s ease-in-out;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    cursor: pointer;
+	    align-self: center;
+	    i{
+	    	font-size: 37px;
+    		color: #bdbdbd;
+	    }
+	    &:hover{
+	    	background: #f4eeee;
+	    	i{
+	    		color: #1c1c1c;
+	    	}
+	    }
+	}
 }
 /*Balance page end*/
 /*Balance open page*/
@@ -3777,6 +3799,7 @@ a.dropdown__more{
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 20px;
+		flex-wrap: wrap;
 	}
 	&__title{
 		width: 50%;
@@ -3814,6 +3837,12 @@ a.dropdown__more{
 		align-items: center;
 		&_title{
 			padding: 15px 15px;
+			min-height: 89px;
+		}
+		&_arrows{
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		&_active{
 			background: #edebf0;
@@ -4189,10 +4218,20 @@ a.dropdown__more{
 		&_green{
 			color: #106b2b;
 			border: 3px solid #106b2b;
+			transition: 0.2s ease-in-out;
+			&:hover{
+				background: #106b2b;
+				color: #fff;
+			}
 		}
 		&_orange{
 			color: #ff404e;
 			border: 3px solid #ff404e;
+			transition: 0.2s ease-in-out;
+			&:hover{
+				background: #ff404e;
+				color: #fff;
+			}
 		}
 	}
 	&__welcome{
@@ -4930,7 +4969,8 @@ a.dropdown__more{
 		margin-left: -155px !important;
 		overflow-y: scroll;
 		top: 10% !important;
-		max-height: 75vh;
+		max-height: 80vh;
+		height: auto;
 		&__title{
 			font-size: 20px;
 			margin-bottom: 5px;
@@ -4950,6 +4990,29 @@ a.dropdown__more{
 		&__item{
 			width: 50%;
 		}
+	}
+	.cartpop{
+		bottom: -170px;
+	}
+	.balancepop, .favorites{
+		bottom: -204px;
+	}
+	.loginpop{
+		/*bottom: -279px;*/
+		display: none !important;
+		&__reg{
+			p{
+				display: none;
+			}
+		}
+	}
+	.registerpop{
+		display: none !important;
+		/*bottom: -301px;*/
+	}
+	.passpop{
+		display: none !important;
+		/*bottom: -152px;*/
 	}
 	/*Cart page*/
 	.cart{
@@ -5024,6 +5087,9 @@ a.dropdown__more{
 						width: 29px;
     					height: 18px;
 					}
+				}
+				.carttable__text2{
+					margin-left: 18px;
 				}
 			}
 			&_3,&_5{

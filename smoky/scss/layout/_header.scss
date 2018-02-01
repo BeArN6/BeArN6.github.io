@@ -135,10 +135,10 @@ header{
 }
 .lang{
 	&__item{
-		color: #192028;
+		color: #aeaeae;
 		cursor: pointer;
 		&_active{
-			color: #aeaeae;
+			color: #192028;
 		}
 	}
 }
@@ -274,7 +274,7 @@ header{
     	}
     }
 }
-.loginpop,.registerpop{
+.loginpop,.registerpop,.passpop{
 	position: absolute;
 	display: none;
 	bottom: -326px;
@@ -396,6 +396,9 @@ header{
 }
 .registerpop{
 	bottom: -363px;
+}
+.passpop{
+	bottom: -150px;
 }
 .loggedpop,.balancepop,.favorites,.favorites2,.balancepop2{
 	display: none;

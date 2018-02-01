@@ -290,11 +290,11 @@ header {
 }
 
 .lang__item {
-  color: #192028;
+  color: #aeaeae;
   cursor: pointer;
 }
 .lang__item_active {
-  color: #aeaeae;
+  color: #192028;
 }
 
 .search {
@@ -425,7 +425,7 @@ header {
   display: none;
 }
 
-.loginpop, .registerpop {
+.loginpop, .registerpop, .passpop {
   position: absolute;
   display: none;
   bottom: -326px;
@@ -435,19 +435,19 @@ header {
   border: 1px solid #d1d1d1;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
 }
-.loginpop__box, .registerpop__box {
+.loginpop__box, .registerpop__box, .passpop__box {
   padding: 15px;
   border-bottom: 1px solid #d1d1d1;
   position: relative;
 }
-.loginpop__box:first-child, .registerpop__box:first-child {
+.loginpop__box:first-child, .registerpop__box:first-child, .passpop__box:first-child {
   padding-bottom: 25px;
 }
-.loginpop__box:nth-child(2), .registerpop__box:nth-child(2) {
+.loginpop__box:nth-child(2), .registerpop__box:nth-child(2), .passpop__box:nth-child(2) {
   padding-top: 25px;
   padding-bottom: 10px;
 }
-.loginpop__title, .registerpop__title {
+.loginpop__title, .registerpop__title, .passpop__title {
   color: #192028;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -455,10 +455,10 @@ header {
   line-height: normal;
   margin-bottom: 5px;
 }
-.loginpop__input, .registerpop__input {
+.loginpop__input, .registerpop__input, .passpop__input {
   margin-bottom: 5px;
 }
-.loginpop__input p, .registerpop__input p {
+.loginpop__input p, .registerpop__input p, .passpop__input p {
   color: #192028;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
@@ -467,7 +467,7 @@ header {
   text-align: left;
   margin-bottom: 2px;
 }
-.loginpop__input input, .registerpop__input input {
+.loginpop__input input, .registerpop__input input, .passpop__input input {
   width: 165px;
   height: 17px;
   background: #fff;
@@ -479,7 +479,7 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-.loginpop__pass, .registerpop__pass {
+.loginpop__pass, .registerpop__pass, .passpop__pass {
   color: #192028;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
@@ -489,12 +489,12 @@ header {
   margin-bottom: 10px;
   display: inline-block;
 }
-.loginpop .showmore, .registerpop .showmore {
+.loginpop .showmore, .registerpop .showmore, .passpop .showmore {
   width: 165px;
   height: 27px;
   font-size: 11px;
 }
-.loginpop__or, .registerpop__or {
+.loginpop__or, .registerpop__or, .passpop__or {
   width: 26px;
   height: 26px;
   border: 1px solid #e2e2e2;
@@ -513,29 +513,29 @@ header {
   font-weight: 500;
   text-transform: uppercase;
 }
-.loginpop__soccont p, .registerpop__soccont p {
+.loginpop__soccont p, .registerpop__soccont p, .passpop__soccont p {
   text-align: center;
   margin-bottom: 8px;
   font-weight: 700;
 }
-.loginpop .socials, .registerpop .socials {
+.loginpop .socials, .registerpop .socials, .passpop .socials {
   width: 150px;
   margin: 0 auto;
 }
-.loginpop .socials a img, .registerpop .socials a img {
+.loginpop .socials a img, .registerpop .socials a img, .passpop .socials a img {
   width: 23px;
   height: 23px;
 }
-.loginpop__reg, .registerpop__reg {
+.loginpop__reg, .registerpop__reg, .passpop__reg {
   text-align: center;
 }
-.loginpop__reg p, .registerpop__reg p {
+.loginpop__reg p, .registerpop__reg p, .passpop__reg p {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #192028;
 }
-.loginpop__reg a, .registerpop__reg a {
+.loginpop__reg a, .registerpop__reg a, .passpop__reg a {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -544,6 +544,10 @@ header {
 
 .registerpop {
   bottom: -363px;
+}
+
+.passpop {
+  bottom: -150px;
 }
 
 .loggedpop, .balancepop, .favorites, .favorites2, .balancepop2 {
@@ -5129,6 +5133,28 @@ a.dropdown__more {
 .balance .main__subtitle {
   margin-bottom: 10px;
 }
+.balance__arrows {
+  width: 41px;
+  height: 41px;
+  background: #ececec;
+  margin: 0 5px;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  align-self: center;
+}
+.balance__arrows i {
+  font-size: 37px;
+  color: #bdbdbd;
+}
+.balance__arrows:hover {
+  background: #f4eeee;
+}
+.balance__arrows:hover i {
+  color: #1c1c1c;
+}
 
 /*Balance page end*/
 /*Balance open page*/
@@ -5140,6 +5166,7 @@ a.dropdown__more {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 .balanceopen__title {
   width: 50%;
@@ -5178,6 +5205,12 @@ a.dropdown__more {
 }
 .balanceopen__row_title {
   padding: 15px 15px;
+  min-height: 89px;
+}
+.balanceopen__row_arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .balanceopen__row_active {
   background: #edebf0;
@@ -5544,10 +5577,20 @@ a.dropdown__more {
 .modalform__button_green {
   color: #106b2b;
   border: 3px solid #106b2b;
+  transition: 0.2s ease-in-out;
+}
+.modalform__button_green:hover {
+  background: #106b2b;
+  color: #fff;
 }
 .modalform__button_orange {
   color: #ff404e;
   border: 3px solid #ff404e;
+  transition: 0.2s ease-in-out;
+}
+.modalform__button_orange:hover {
+  background: #ff404e;
+  color: #fff;
 }
 .modalform__welcome {
   color: #503471;
@@ -6260,7 +6303,8 @@ a.dropdown__more {
     margin-left: -155px !important;
     overflow-y: scroll;
     top: 10% !important;
-    max-height: 75vh;
+    max-height: 80vh;
+    height: auto;
   }
   .modalform__title {
     font-size: 20px;
@@ -6279,6 +6323,32 @@ a.dropdown__more {
   }
   .modaltown__item {
     width: 50%;
+  }
+
+  .cartpop {
+    bottom: -170px;
+  }
+
+  .balancepop, .favorites {
+    bottom: -204px;
+  }
+
+  .loginpop {
+    /*bottom: -279px;*/
+    display: none !important;
+  }
+  .loginpop__reg p {
+    display: none;
+  }
+
+  .registerpop {
+    display: none !important;
+    /*bottom: -301px;*/
+  }
+
+  .passpop {
+    display: none !important;
+    /*bottom: -152px;*/
   }
 
   /*Cart page*/
@@ -6353,6 +6423,9 @@ a.dropdown__more {
   .carttable__col_4 .popular__amount input {
     width: 29px;
     height: 18px;
+  }
+  .carttable__col_4 .carttable__text2 {
+    margin-left: 18px;
   }
   .carttable__col_3, .carttable__col_5 {
     width: 55%;
