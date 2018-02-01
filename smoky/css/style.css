@@ -640,6 +640,10 @@ header {
 }
 .cartpop__top i {
   color: #d1d1d1;
+  transition: 0.2s ease-in-out;
+}
+.cartpop__top i:hover {
+  color: #8f8f8f;
 }
 .cartpop__bott {
   display: flex;
@@ -675,6 +679,9 @@ header {
   height: 27px;
   font-size: 11px;
 }
+.cartpop .popular__amount span i {
+  padding: 0;
+}
 
 .balancepop, .favorites {
   padding-bottom: 0;
@@ -689,11 +696,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.2s ease-in-out;
+}
+.balancepop li:hover, .favorites li:hover {
+  background: #f0f0f0;
 }
 .balancepop li i, .favorites li i {
   font-size: 10px;
   color: #aeaeae;
   font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+.balancepop li i:hover, .favorites li i:hover {
+  color: #8f8f8f;
 }
 
 .favorites2, .balancepop2 {
@@ -3980,6 +3995,7 @@ a.dropdown__more {
   border-bottom: 1px dashed #192028;
   margin-top: 10px;
   display: inline-block;
+  cursor: pointer;
 }
 .cartpayment__price {
   color: #a91c5f;
@@ -5617,31 +5633,31 @@ a.dropdown__more {
   text-align: left;
 }
 
-.modallog, .modalreg, .modalpass {
+.modallog, .modalreg, .modalpass, .modalpromo {
   width: 430px;
   height: 490px;
 }
-.modallog .loginpop__box, .modallog .registerpop__box, .modalreg .loginpop__box, .modalreg .registerpop__box, .modalpass .loginpop__box, .modalpass .registerpop__box {
+.modallog .loginpop__box, .modallog .registerpop__box, .modalreg .loginpop__box, .modalreg .registerpop__box, .modalpass .loginpop__box, .modalpass .registerpop__box, .modalpromo .loginpop__box, .modalpromo .registerpop__box {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.modallog .loginpop__box_1, .modallog .registerpop__box_1, .modalreg .loginpop__box_1, .modalreg .registerpop__box_1, .modalpass .loginpop__box_1, .modalpass .registerpop__box_1 {
+.modallog .loginpop__box_1, .modallog .registerpop__box_1, .modalreg .loginpop__box_1, .modalreg .registerpop__box_1, .modalpass .loginpop__box_1, .modalpass .registerpop__box_1, .modalpromo .loginpop__box_1, .modalpromo .registerpop__box_1 {
   padding: 0;
   padding-bottom: 20px;
 }
-.modallog .loginpop__box:last-child, .modallog .registerpop__box:last-child, .modalreg .loginpop__box:last-child, .modalreg .registerpop__box:last-child, .modalpass .loginpop__box:last-child, .modalpass .registerpop__box:last-child {
+.modallog .loginpop__box:last-child, .modallog .registerpop__box:last-child, .modalreg .loginpop__box:last-child, .modalreg .registerpop__box:last-child, .modalpass .loginpop__box:last-child, .modalpass .registerpop__box:last-child, .modalpromo .loginpop__box:last-child, .modalpromo .registerpop__box:last-child {
   border-bottom: 0px;
 }
-.modallog .loginpop__input, .modallog .registerpop__input, .modalreg .loginpop__input, .modalreg .registerpop__input, .modalpass .loginpop__input, .modalpass .registerpop__input {
+.modallog .loginpop__input, .modallog .registerpop__input, .modalreg .loginpop__input, .modalreg .registerpop__input, .modalpass .loginpop__input, .modalpass .registerpop__input, .modalpromo .loginpop__input, .modalpromo .registerpop__input {
   margin-bottom: 10px;
 }
-.modallog .loginpop__input p, .modallog .registerpop__input p, .modalreg .loginpop__input p, .modalreg .registerpop__input p, .modalpass .loginpop__input p, .modalpass .registerpop__input p {
+.modallog .loginpop__input p, .modallog .registerpop__input p, .modalreg .loginpop__input p, .modalreg .registerpop__input p, .modalpass .loginpop__input p, .modalpass .registerpop__input p, .modalpromo .loginpop__input p, .modalpromo .registerpop__input p {
   font-size: 12px;
   font-weight: 300;
   color: #333333;
   margin-bottom: 7px;
 }
-.modallog .loginpop__input input, .modallog .registerpop__input input, .modalreg .loginpop__input input, .modalreg .registerpop__input input, .modalpass .loginpop__input input, .modalpass .registerpop__input input {
+.modallog .loginpop__input input, .modallog .registerpop__input input, .modalreg .loginpop__input input, .modalreg .registerpop__input input, .modalpass .loginpop__input input, .modalpass .registerpop__input input, .modalpromo .loginpop__input input, .modalpromo .registerpop__input input {
   height: 40px;
   border: 1px solid #aeaeae;
   padding: 0 10px;
@@ -5650,51 +5666,55 @@ a.dropdown__more {
   width: 100%;
   color: #000;
 }
-.modallog .loginpop__input input:placeholder, .modallog .registerpop__input input:placeholder, .modalreg .loginpop__input input:placeholder, .modalreg .registerpop__input input:placeholder, .modalpass .loginpop__input input:placeholder, .modalpass .registerpop__input input:placeholder {
+.modallog .loginpop__input input:placeholder, .modallog .registerpop__input input:placeholder, .modalreg .loginpop__input input:placeholder, .modalreg .registerpop__input input:placeholder, .modalpass .loginpop__input input:placeholder, .modalpass .registerpop__input input:placeholder, .modalpromo .loginpop__input input:placeholder, .modalpromo .registerpop__input input:placeholder {
   color: #626262;
 }
-.modallog .loginpop__pass, .modallog .registerpop__pass, .modalreg .loginpop__pass, .modalreg .registerpop__pass, .modalpass .loginpop__pass, .modalpass .registerpop__pass {
+.modallog .loginpop__pass, .modallog .registerpop__pass, .modalreg .loginpop__pass, .modalreg .registerpop__pass, .modalpass .loginpop__pass, .modalpass .registerpop__pass, .modalpromo .loginpop__pass, .modalpromo .registerpop__pass {
   font-size: 12px;
   font-weight: 300;
   color: #333333;
 }
-.modallog .loginpop__soccont p, .modallog .registerpop__soccont p, .modalreg .loginpop__soccont p, .modalreg .registerpop__soccont p, .modalpass .loginpop__soccont p, .modalpass .registerpop__soccont p {
+.modallog .loginpop__soccont p, .modallog .registerpop__soccont p, .modalreg .loginpop__soccont p, .modalreg .registerpop__soccont p, .modalpass .loginpop__soccont p, .modalpass .registerpop__soccont p, .modalpromo .loginpop__soccont p, .modalpromo .registerpop__soccont p {
   font-size: 12px;
   font-weight: 300;
   color: #333333;
 }
-.modallog .loginpop__reg, .modallog .registerpop__reg, .modalreg .loginpop__reg, .modalreg .registerpop__reg, .modalpass .loginpop__reg, .modalpass .registerpop__reg {
+.modallog .loginpop__reg, .modallog .registerpop__reg, .modalreg .loginpop__reg, .modalreg .registerpop__reg, .modalpass .loginpop__reg, .modalpass .registerpop__reg, .modalpromo .loginpop__reg, .modalpromo .registerpop__reg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modallog .loginpop__reg p, .modallog .registerpop__reg p, .modalreg .loginpop__reg p, .modalreg .registerpop__reg p, .modalpass .loginpop__reg p, .modalpass .registerpop__reg p {
+.modallog .loginpop__reg p, .modallog .registerpop__reg p, .modalreg .loginpop__reg p, .modalreg .registerpop__reg p, .modalpass .loginpop__reg p, .modalpass .registerpop__reg p, .modalpromo .loginpop__reg p, .modalpromo .registerpop__reg p {
   font-size: 14px;
   font-weight: 300;
 }
-.modallog .loginpop__reg a, .modallog .registerpop__reg a, .modalreg .loginpop__reg a, .modalreg .registerpop__reg a, .modalpass .loginpop__reg a, .modalpass .registerpop__reg a {
+.modallog .loginpop__reg a, .modallog .registerpop__reg a, .modalreg .loginpop__reg a, .modalreg .registerpop__reg a, .modalpass .loginpop__reg a, .modalpass .registerpop__reg a, .modalpromo .loginpop__reg a, .modalpromo .registerpop__reg a {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
 }
-.modallog .showmore, .modalreg .showmore, .modalpass .showmore {
+.modallog .showmore, .modalreg .showmore, .modalpass .showmore, .modalpromo .showmore {
   margin-top: 10px;
 }
-.modallog .socials, .modalreg .socials, .modalpass .socials {
+.modallog .socials, .modalreg .socials, .modalpass .socials, .modalpromo .socials {
   justify-content: center;
 }
-.modallog .socials a, .modalreg .socials a, .modalpass .socials a {
+.modallog .socials a, .modalreg .socials a, .modalpass .socials a, .modalpromo .socials a {
   border-radius: 100%;
   display: inline-block;
   height: 38px;
   width: 38px;
   margin: 0 5px;
 }
-.modallog .socials a:hover, .modalreg .socials a:hover, .modalpass .socials a:hover {
+.modallog .socials a:hover, .modalreg .socials a:hover, .modalpass .socials a:hover, .modalpromo .socials a:hover {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
 }
 
 .modalpass {
+  height: 240px;
+}
+
+.modalpromo {
   height: 240px;
 }
 

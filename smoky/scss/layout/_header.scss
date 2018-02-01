@@ -487,6 +487,10 @@ header{
 		}
 		i{
 			color: #d1d1d1;
+			transition: 0.2s ease-in-out;
+			&:hover{
+				color: #8f8f8f;
+			}
 		}
 	}
 	&__bott{
@@ -523,6 +527,9 @@ header{
 		height: 27px;
 		font-size: 11px;
 	}
+	.popular__amount span i{
+		padding: 0;
+	}
 }
 .balancepop,.favorites{
 	padding-bottom: 0;
@@ -536,10 +543,18 @@ header{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		transition: 0.2s ease-in-out;
+		&:hover{
+			background: #f0f0f0;
+		}
 		i{
 			font-size: 10px;
     		color: #aeaeae;
     		font-weight: 300;
+    		transition: 0.2s ease-in-out;
+    		&:hover{
+    			color: #8f8f8f;
+    		}
 		}
 	}
 }

@@ -2607,6 +2607,7 @@ a.dropdown__more{
 		border-bottom: 1px dashed #192028;
 		margin-top: 10px;
 		display: inline-block;
+		cursor: pointer;
 	}
 	&__price{
 		color: #a91c5f;
@@ -4258,7 +4259,7 @@ a.dropdown__more{
 		text-align: left;
 	}
 }
-.modallog,.modalreg,.modalpass{
+.modallog,.modalreg,.modalpass,.modalpromo{
 	width: 430px;
 	height: 490px;
 	.loginpop, .registerpop{
@@ -4339,6 +4340,9 @@ a.dropdown__more{
 	}
 }
 .modalpass{
+	height: 240px;
+}
+.modalpromo{
 	height: 240px;
 }
 .modalcall{

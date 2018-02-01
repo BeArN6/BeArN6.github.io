@@ -1847,7 +1847,7 @@
 						<a href="">Оформление заказа</a>
 					</div>
 					<div class="cart">
-						<h2 class="main__title">Заказ №578-01</h2>
+						<h2 class="main__title">Корзина</h2>
 						<div class="carttable">
 							<div class="carttable__row carttable__row_title">
 								<div class="carttable__col carttable__col_1">
@@ -1910,7 +1910,15 @@
 								</div>
 								<div class="carttable__col carttable__col_4">
 									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">1</p>
+										<div class="popular__amount">
+											<span>
+												<i class="fa fa-minus" aria-hidden="true"></i>
+											</span>
+											<input type="text" tabindex="0">
+											<span>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</span>
+										</div>
 									</div>
 								</div>
 								<div class="carttable__col carttable__col_5">
@@ -1951,7 +1959,15 @@
 								</div>
 								<div class="carttable__col carttable__col_4">
 									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">1</p>
+										<div class="popular__amount">
+											<span>
+												<i class="fa fa-minus" aria-hidden="true"></i>
+											</span>
+											<input type="text" tabindex="0">
+											<span>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</span>
+										</div>
 									</div>
 								</div>
 								<div class="carttable__col carttable__col_5">
@@ -1992,7 +2008,15 @@
 								</div>
 								<div class="carttable__col carttable__col_4">
 									<div class="carttable__item carttable__item_c">
-										<p class="carttable__text">1</p>
+										<div class="popular__amount">
+											<span>
+												<i class="fa fa-minus" aria-hidden="true"></i>
+											</span>
+											<input type="text" tabindex="0">
+											<span>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</span>
+										</div>
 									</div>
 								</div>
 								<div class="carttable__col carttable__col_5">
@@ -2071,9 +2095,17 @@
 									<div class="carttable__col carttable__col_4">
 										<div class="carttable__item carttable__item_c">
 											<h2 class="carttable__title carttable__subtitle">
-												Количество:
+												Качество:
 											</h2>
-											<p class="carttable__text carttable__text2">1</p>
+											<div class="popular__amount">
+												<span>
+													<i class="fa fa-minus" aria-hidden="true"></i>
+												</span>
+												<input type="text" tabindex="0">
+												<span>
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</span>
+											</div>
 										</div>
 									</div>
 									<div class="carttable__col carttable__col_5">
@@ -2136,9 +2168,17 @@
 									<div class="carttable__col carttable__col_4">
 										<div class="carttable__item carttable__item_c">
 											<h2 class="carttable__title carttable__subtitle">
-												Количество:
+												Качество:
 											</h2>
-											<p class="carttable__text carttable__text2">1</p>
+											<div class="popular__amount">
+												<span>
+													<i class="fa fa-minus" aria-hidden="true"></i>
+												</span>
+												<input type="text" tabindex="0">
+												<span>
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</span>
+											</div>
 										</div>
 									</div>
 									<div class="carttable__col carttable__col_5">
@@ -2201,9 +2241,17 @@
 									<div class="carttable__col carttable__col_4">
 										<div class="carttable__item carttable__item_c">
 											<h2 class="carttable__title carttable__subtitle">
-												Количество:
+												Качество:
 											</h2>
-											<p class="carttable__text carttable__text2">1</p>
+											<div class="popular__amount">
+												<span>
+													<i class="fa fa-minus" aria-hidden="true"></i>
+												</span>
+												<input type="text" tabindex="0">
+												<span>
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</span>
+											</div>
 										</div>
 									</div>
 									<div class="carttable__col carttable__col_5">
@@ -2334,7 +2382,7 @@
 									<p class="cartpayment__p"><b>Скидки</b><span>1 201 руб.</span></p>
 									<p class="cartpayment__p"><b>Доставка</b><span>50 руб.</span></p>
 									<p class="cartpayment__p"><b>Сумма</b><span>50 руб.</span></p>
-									<a href="">Есть купон или промокод?</a>
+									<a class="promo">Есть купон или промокод?</a>
 								</div>
 								<div class="cartpayment__border"></div>
 								<div class="cartpayment__block">
@@ -2454,6 +2502,23 @@
 						</div>
 						<a href="" class="loginpop__pass modal-run6">Регистрация</a>
 						<button class="showmore">Восстановить</button>
+					</form>
+				</div>
+			</div>
+			<div class="overlay"></div>
+			<!--Modal window end-->
+			<!--Modal window-->
+			<div class="modalform modalpromo">
+				<span class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></span>
+				<h2 class="modalform__title modalcall__title">Промокод</h2>
+				<div class="loginpop__box loginpop__box_1">
+					<form action="#">
+						<div class="loginpop__input">
+							<p>Введите промокод</p>
+							<input type="text" placeholder="promo">
+						</div>
+						<a href="" class="loginpop__pass modal-run5">Войти</a>
+						<button class="showmore">Подтвердить</button>
 					</form>
 				</div>
 			</div>
@@ -2727,7 +2792,7 @@
 									<p>Пароль*</p>
 									<input type="password">
 								</div>
-								<a href="" class="loginpop__pass modal-run7">Забыли пароль?</a>
+								<a class="loginpop__pass loginpop__pass2">Забыли пароль?</a>
 								<button class="showmore">ОФОРМИТЬ ЗАКАЗ</button>
 							</form>
 							<span class="loginpop__or">ИЛИ</span>
@@ -2747,8 +2812,21 @@
 						<div class="loginpop__box">
 							<div class="loginpop__reg">
 								<p>Нет учётной записи?</p>
-								<a href="">Зарегистрироваться</a>
+								<a class="regpop-run">Зарегистрироваться</a>
 							</div>
+						</div>
+					</div>
+					<div class="passpop">
+						<div class="loginpop__box">
+							<h2 class="loginpop__title">Восстановление пароля</h2>
+							<form action="#">
+								<div class="loginpop__input">
+									<p>Электронная почта (E-mail)*</p>
+									<input type="email">
+								</div>
+								<a class="loginpop__pass regpop-run">Регистрация</a>
+								<button class="showmore">ВОССТАНОВИТЬ ПАРОЛЬ</button>
+							</form>
 						</div>
 					</div>
 					<div class="registerpop">
@@ -2767,7 +2845,7 @@
 									<p>Пароль*</p>
 									<input type="password">
 								</div>
-								<a href="" class="registerpop__pass modal-run7">Забыли пароль?</a>
+								<a class="registerpop__pass loginpop__pass2">Забыли пароль?</a>
 								<button class="showmore">ОФОРМИТЬ ЗАКАЗ</button>
 							</form>
 							<span class="registerpop__or">ИЛИ</span>
@@ -2787,7 +2865,7 @@
 						<div class="registerpop__box">
 							<div class="registerpop__reg">
 								<p>Уже есть учётная запись?</p>
-								<a href="">Войти</a>
+								<a class="login-run">Войти</a>
 							</div>
 						</div>
 					</div>
