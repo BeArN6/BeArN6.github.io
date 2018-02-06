@@ -730,6 +730,13 @@ h3 {
   padding-bottom: 105px;
   margin-top: 106px;
 }
+.content .wrapper {
+  align-items: flex-start;
+  padding-top: 60px;
+}
+.content .wrapper.flex {
+  flex-wrap: wrap;
+}
 
 .btn {
   font: 14px/36px "Conv_GothaProMed_0", sans-serif;
@@ -744,6 +751,24 @@ h3 {
 }
 .btn:hover {
   background: #232323;
+}
+.btn_card {
+  width: 250px;
+  letter-spacing: 0;
+  margin-right: 30px;
+}
+.btn_card:last-child {
+  margin-right: 0;
+}
+.btn_2 {
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  color: #282828;
+}
+.btn_2:hover {
+  background: #e73f34;
+  border: 1px solid #e73f34;
+  color: #fff;
 }
 
 .banner__slide {
@@ -798,6 +823,9 @@ h3 {
 .banner .slick-dots .slick-active button {
   border-color: #e73e32;
 }
+.banner .wrapper {
+  padding: 0;
+}
 
 .otext {
   font: 102px/51px "Conv_GothaProBol_0", sans-serif;
@@ -810,12 +838,12 @@ h3 {
 }
 
 .equipment {
-  padding: 60px 0 40px;
+  padding: 0 0 40px;
   position: relative;
   z-index: 3;
 }
 .equipment__otext {
-  top: 129px;
+  top: 70px;
 }
 .equipment__cont.flex {
   align-items: stretch;
@@ -1048,6 +1076,369 @@ h3 {
   box-shadow: 0 0 0 9999px rgba(34, 35, 35, 0.9) inset;
 }
 
+/*Catalog*/
+.pagebanner {
+  padding: 100px 0;
+  background-size: cover !important;
+}
+.pagebanner .wrapper {
+  padding: 0;
+}
+.pagebanner__title {
+  font: 24px/48px "Conv_GothaProBol_0", sans-serif;
+  color: #282828;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.pagebanner_1 {
+  background: url(../img/banner1.jpg) center center no-repeat;
+}
+.pagebanner_2 {
+  background: url(../img/banner2.jpg) center center no-repeat;
+}
+.pagebanner_3 {
+  background: url(../img/banner3.jpg) center center no-repeat;
+}
+.pagebanner_4 {
+  background: url(../img/banner4.jpg) center center no-repeat;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs.flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.breadcrumbs li a, .breadcrumbs li span {
+  font: 12px/30px "Conv_GothaProReg_0", sans-serif;
+  color: #7c7c7c;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  width: 285px;
+  padding: 23px 27px;
+  border: 1px solid #f0f0f0;
+  border-right: 0;
+}
+.sidebar__title {
+  font: 18px/24px "Conv_GothaProMed_0", sans-serif;
+  color: #161616;
+  margin-bottom: 18px;
+}
+.sidebar__cont {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 20px;
+}
+.sidebar__cont:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.main {
+  width: 855px;
+  border-bottom: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkboxlabel {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 4px 0 5px 40px;
+  font: 13px/26px "Conv_GothaProReg_0", sans-serif;
+  color: #4a4a4a;
+}
+.checkboxlabel:before {
+  content: "";
+  border-radius: 3px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #ededed;
+  border: 0;
+  margin-right: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkboxlabel:before {
+  content: url(../img/check.png);
+  color: #f3f3f3;
+  background: #e83f33;
+  text-align: center;
+  line-height: 24px;
+}
+
+.product {
+  width: 284px;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  border-right: 0;
+}
+.product:nth-child(3n) {
+  border-right: 1px solid #f0f0f0;
+}
+.product:last-child {
+  border-right: 1px solid #f0f0f0;
+}
+.product:hover {
+  box-shadow: 0px 0px 15px 0px rgba(36, 39, 41, 0.1);
+}
+.product:hover .product__more {
+  background: #e83f33;
+  color: #fff;
+}
+.product:hover .product__more_3 {
+  color: #e73e32;
+  background: none;
+}
+.product__cont.flex {
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.product__cont_2 {
+  margin-bottom: 65px;
+}
+.product__img {
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.product__img.flex {
+  justify-content: center;
+}
+.product__info {
+  padding: 25px 24px 40px;
+}
+.product__title {
+  color: #161616;
+  font: 18px/30px "Conv_GothaProMed_0", sans-serif;
+}
+.product__desc {
+  margin-bottom: 25px;
+  color: #747474;
+  font: 13px/24px "Conv_GothaProReg_0", sans-serif;
+}
+.product__price {
+  color: #404040;
+  font: 14px/18px "Conv_GothaProReg_0", sans-serif;
+  padding: 3px 0;
+}
+.product__price_2 {
+  font-family: "Conv_GothaProMed_0", sans-serif;
+}
+.product__more {
+  color: #404040;
+  font: 14px/24px "Conv_GothaProReg_0", sans-serif;
+  background: none;
+  border: 0;
+  transition: 0.2s ease-in-out;
+}
+.product__more_2 {
+  background: #f6f6f6;
+}
+.product__more_3 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Conv_GothaProMed_0", sans-serif;
+}
+.product__bts.flex {
+  flex-wrap: wrap;
+}
+
+.cardprod {
+  width: 100%;
+}
+.cardprod.flex {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.cardprod__slider {
+  width: 552px;
+  margin-bottom: 35px;
+}
+.cardprod .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-top: 35px;
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  height: 18px;
+  min-height: 18px;
+}
+.cardprod .slick-dots li {
+  margin: 0 4px;
+}
+.cardprod .slick-dots button {
+  width: 18px;
+  height: 18px !important;
+  min-height: 16px;
+  background: transparent;
+  border: 2px solid #131313;
+  text-indent: 9999px;
+  padding: 0;
+}
+.cardprod .slick-dots .slick-active button {
+  border-color: #e73e32;
+}
+
+.prodinfo {
+  width: 552px;
+}
+.prodinfo__title {
+  color: #161616;
+  font: 24px/36px "Conv_GothaProBol_0", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.prodinfo__border {
+  margin: 20px 0 40px;
+}
+.prodinfo__butts {
+  margin-bottom: 30px;
+}
+.prodinfo__chartitle {
+  color: #161616;
+  font: 18px/36px "Conv_GothaProBol_0", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.prodinfo__row {
+  border-bottom: 1px solid #e6e6e6;
+}
+.prodinfo__row:last-child {
+  border-bottom: 0;
+}
+.prodinfo__row span {
+  color: #4a4a4a;
+  font: 14px/60px "Conv_GothaProReg_0", sans-serif;
+}
+
+.destination {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.destination.flex {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.destination__item {
+  width: 552px;
+  margin-bottom: 35px;
+}
+.destination__item.flex {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.destination__img {
+  margin-right: 15px;
+}
+.destination__title {
+  color: #4a4a4a;
+  font: 18px/30px "Conv_GothaProReg_0", sans-serif;
+}
+.destination__text {
+  color: #969696;
+  font: 14px/24px "Conv_GothaProReg_0", sans-serif;
+  padding-right: 10px;
+}
+
+.description__text {
+  color: #4a4a4a;
+  font: 14px/30px "Conv_GothaProReg_0", sans-serif;
+  margin-bottom: 25px;
+}
+.description__text:last-child {
+  margin-bottom: 0;
+}
+
+/*Catalog end*/
+.producer__border {
+  margin-bottom: 50px;
+}
+.producer__img {
+  width: 552px;
+}
+.producer__img img {
+  width: 100%;
+}
+.producer__title {
+  margin-bottom: 70px;
+}
+
+.procedures.flex {
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.procedures__item {
+  width: 552px;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+.procedures__item.flex {
+  align-items: stretch;
+}
+.procedures__item:hover {
+  box-shadow: 0px 0px 15px 0px rgba(36, 39, 41, 0.1);
+}
+.procedures__item:hover .procedures__info {
+  background-color: #fff;
+}
+.procedures__item:hover .procedures__title {
+  color: #e83f34;
+  text-decoration: underline;
+}
+.procedures__item:hover .procedures__img:after {
+  opacity: 1;
+}
+.procedures__info {
+  width: 319px;
+  background-color: #f6f6f6;
+  padding: 35px 25px 35px 35px;
+  transition: background-color 0.3s ease-in-out;
+}
+.procedures__img {
+  width: 233px;
+  position: relative;
+}
+.procedures__img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 0 0 9999px rgba(231, 62, 50, 0.75) inset;
+}
+.procedures__img img {
+  height: 100%;
+}
+.procedures__title {
+  color: #161616;
+  font: 18px/48px "Conv_GothaProMed_0", sans-serif;
+  margin-bottom: 5px;
+}
+.procedures__text {
+  color: #4a4a4a;
+  font: 13px/24px "Conv_GothaProReg_0", sans-serif;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
     min-height: 100hv;
@@ -1068,6 +1459,10 @@ h3 {
   .btn {
     width: 200px;
     height: 60px;
+  }
+  .btn_card {
+    width: 250px;
+    margin-right: 10px;
   }
 
   .banner__slide {
@@ -1124,6 +1519,57 @@ h3 {
   .news__img {
     height: auto;
   }
+
+  /*Catalog*/
+  .main {
+    width: 685px;
+  }
+
+  .product {
+    width: 341px;
+  }
+  .product__cont_2 .product {
+    width: 242px;
+  }
+
+  .cardprod__slider {
+    width: 430px;
+  }
+
+  .prodinfo {
+    width: 515px;
+  }
+  .prodinfo__border {
+    margin: 10px 0 20px;
+  }
+  .prodinfo__butts {
+    margin-bottom: 20px;
+  }
+  .prodinfo__chartitle {
+    margin-bottom: 10px;
+  }
+  .prodinfo__row span {
+    font: 14px/47px "Conv_GothaProReg_0", sans-serif;
+  }
+
+  .destination__item {
+    width: 475px;
+  }
+
+  /*Catalog end*/
+  .producer__img {
+    width: 430px;
+  }
+  .producer__title {
+    margin-bottom: 20px;
+  }
+
+  .procedures__item {
+    width: 470px;
+  }
+  .procedures__info {
+    padding: 20px 15px 20px 20px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .content {
@@ -1170,7 +1616,7 @@ h3 {
   }
 
   .equipment__otext {
-    top: 122px;
+    top: 70px;
   }
   .equipment__item {
     width: 246.67px;
@@ -1247,17 +1693,92 @@ h3 {
   .news__img {
     height: auto;
   }
+
+  /*Catalog*/
+  .pagebanner {
+    padding: 40px 0;
+  }
+
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .main {
+    width: 560px;
+  }
+
+  .product {
+    width: 279px;
+  }
+  .product__title {
+    font: 17px/28px "Conv_GothaProMed_0", sans-serif;
+  }
+
+  /*Catalog end*/
+  .product__cont_2 .product {
+    width: 370px;
+  }
+  .product__cont_2 .product:nth-child(3n) {
+    border-right: 0;
+  }
+  .product__cont_2 .product:nth-child(2n) {
+    border-right: 1px solid #f0f0f0;
+  }
+
+  .cardprod.flex {
+    justify-content: space-around;
+  }
+
+  .destination {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .destination__item {
+    width: 370px;
+  }
+
+  .producer__border {
+    margin-bottom: 25px;
+  }
+  .producer__border_2 {
+    margin-bottom: 20px;
+  }
+  .producer__img {
+    margin-bottom: 30px;
+  }
+  .producer__title {
+    margin-bottom: 10px;
+  }
+  .producer__info {
+    width: 100%;
+  }
+
+  .procedures.flex {
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 767px) {
   .content {
     padding-bottom: 45px;
     margin-top: 60px;
   }
+  .content .wrapper {
+    padding-top: 30px;
+  }
+  .content .wrapper.flex {
+    flex-wrap: wrap;
+  }
 
   .btn {
     width: 180px;
     height: 50px;
     font: 12px/23px "Conv_GothaProMed_0", sans-serif;
+  }
+  .btn_card {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    width: 160px;
   }
 
   .wrapper {
@@ -1296,7 +1817,10 @@ h3 {
   }
 
   .equipment {
-    padding: 30px 0 15px;
+    padding: 0 0 15px;
+  }
+  .equipment__otext {
+    top: 114px;
   }
   .equipment__cont.flex {
     justify-content: space-around;
@@ -1375,6 +1899,84 @@ h3 {
     padding: 15px;
   }
   .modal-form .footer__form [type="submit"] {
+    width: 100%;
+  }
+
+  /*Catalog*/
+  .pagebanner {
+    padding: 30px 0;
+  }
+  .pagebanner .wrapper {
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+  }
+
+  .main {
+    border: 0;
+  }
+
+  .product {
+    border: 1px solid #f0f0f0 !important;
+    margin-bottom: 10px;
+  }
+  .product__cont.flex {
+    justify-content: space-around;
+  }
+
+  /*Catalog end*/
+  .cardprod__slider {
+    width: 100%;
+    max-width: 552px;
+  }
+  .cardprod .slick-dots {
+    bottom: 30px;
+  }
+  .cardprod.flex {
+    justify-content: space-around;
+  }
+
+  .prodinfo {
+    width: 100%;
+    max-width: 552px;
+  }
+  .prodinfo__border {
+    margin: 15px 0 30px;
+  }
+  .prodinfo__butts {
+    display: flex;
+    align-items: center;
+  }
+  .prodinfo__row span {
+    font: 13px/50px "Conv_GothaProReg_0", sans-serif;
+  }
+
+  .producer__border {
+    margin-bottom: 30px;
+  }
+  .producer__title {
+    margin-bottom: 20px;
+  }
+
+  .procedures.flex {
+    justify-content: space-around;
+  }
+  .procedures__item.flex {
+    flex-direction: column-reverse;
+    width: 270px;
+  }
+  .procedures__info {
+    width: 270px;
+  }
+  .procedures__img {
+    width: 270px;
+  }
+  .procedures__img img {
+    height: auto;
     width: 100%;
   }
 }
