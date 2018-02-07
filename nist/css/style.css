@@ -588,6 +588,7 @@ footer {
   .footer__nav {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 20px;
   }
   .footer__nav ul {
     display: flex;
@@ -597,13 +598,18 @@ footer {
   .footer__nav ul li {
     margin-right: 15px;
   }
+  .footer__nav .title {
+    margin-bottom: 0;
+  }
   .footer__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .footer__box .title {
     width: 100%;
+    margin-bottom: 0;
   }
   .footer__block {
     margin-right: 0;
@@ -1812,8 +1818,9 @@ h3 {
   }
 
   .otext {
-    font: 27px/27px "Conv_GothaProBol_0", sans-serif;
-    left: 0px;
+    /*font: 27px/27px "Conv_GothaProBol_0", sans-serif;
+    left: 0px;*/
+    display: none;
   }
 
   .equipment {
