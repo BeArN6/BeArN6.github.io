@@ -1,0 +1,97 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	&__top{
+		background: #59514c;
+		padding: 14px 0 36px;
+	}
+	&__bott{
+		background: #221e1b;
+		padding: 6.5px 0;
+	}
+	&__main{
+		p{
+			font: 400 10px/20px 'Roboto';
+			color: #aaaaaa;
+			letter-spacing: 0.05em;
+			width: 316px;
+		}
+		.logo{
+			display: block;
+			margin-bottom: 15px;
+		}
+	}
+	&__menus{
+		margin-top: 20px;
+    	margin-left: 107px;
+		nav{
+			margin-right: 79px;
+		}
+		ul{
+			list-style: none;
+			li{
+				a{
+					font: 400 12px/35px 'Roboto';
+					color: #fff;
+					letter-spacing: 0.05em;
+					&:hover{
+						color: #f8b30e;
+					}
+				}
+			}
+		}
+	}
+	&__info{
+		margin-top: 22px;
+	}
+	&__box{
+		&:first-child{
+			margin-bottom: 12px;
+			p{
+				margin-bottom: 3px;
+			}
+		}
+		&:nth-child(2){
+			margin-bottom: 21px;
+		}
+		p{
+			font: 400 12px/21px 'Roboto';
+			color: #fff;
+			
+		}
+		a{
+			display: block;
+			font: 500 12px/25px 'Roboto';
+			color: #a8a29d;
+		}
+	}
+	&__copyright{
+		font: 300 10px/27px 'Roboto';
+		color: #59524c;
+		letter-spacing: 0.1em;
+		span{
+			color: #a8a29d;
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
