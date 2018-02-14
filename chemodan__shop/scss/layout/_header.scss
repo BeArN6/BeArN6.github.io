@@ -282,22 +282,49 @@ header{
 }
 
 
-@media screen and (max-width: 1200px) {
-	
-}
-
-@media screen and (min-width: 992px){
-	
-}
-
-@media screen and (max-width: 991px) {
-	
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.header{
+		.wrapper{
+			max-width: 970px;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.header{
+		.wrapper{
+			max-width: 750px;
+		}
+		&__phoneus{
+			width: 21.051282%;
+			padding-left: 10px;
+		}
+		&__location{
+			width: 11.529915%;
+		    padding-right: 10px;
+		}
+		&__phonenumber{
+			width: 20.384615%;
+		}
+		&__icons{
+			width: 17.700855%;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		.wrapper{
+			max-width: 95%;
+		}
+		&__logo{
+			width: 175px;
+		}
+		&__phonenumber, &__phoneus, &__location{
+			display: none;
+		}
+		&__icons{
+			width: 140px;
+		}
+	}
 }
