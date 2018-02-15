@@ -697,22 +697,22 @@ h3 {
   color: #fff;
 }
 
-.adv {
+.adva {
   background: #fff;
   box-shadow: 0px 3px 35px 0px rgba(46, 46, 46, 0.09);
   padding: 33px 0;
 }
-.adv__item {
+.adva__item {
   border-right: 1px solid #f8b30e;
   padding: 20px 40px;
 }
-.adv__item:last-child {
+.adva__item:last-child {
   border-right: 0;
 }
-.adv__item img {
+.adva__item img {
   margin-right: 35px;
 }
-.adv__text {
+.adva__text {
   font: 400 11px/20px 'Roboto';
   letter-spacing: 0.05em;
   color: #59514c;
