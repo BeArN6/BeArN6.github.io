@@ -95,7 +95,7 @@ h3{
 	}
 	&__5{
 		background: #f8f8f8;
-		padding: 26px 0;
+		/*padding: 26px 0;*/
 	}
 }
 .banner{
@@ -469,11 +469,11 @@ h3{
 			/*margin: 0 40px;*/
 		}
 		.slick-list{
-			/*margin: 0 -37.7px;*/
+			padding: 26px 0;
 		}
 		.slick-prev, .slick-next{
 			position: absolute;
-			top: 35%;
+			top: 40%;
 			width: 25px;
 			height: 25px;
 			border-radius: 100%;
@@ -499,17 +499,30 @@ h3{
 	}
 	&__slide{
 		height: 67px !important;
+		filter: brightness(0) invert(92%) grayscale(100%);
+		cursor: pointer;
+		img{
+			transition: transform 0.2s;
+		}
+		&:hover{
+			filter: none;
+			img{
+				transform: translateY(-10px);
+			}
+		}
 		&.flex{
 			display: flex !important;
 			justify-content: center;
 			align-items: center;
 		}
+		&_2{
+			/*width: 205.4px !important;*/
+			filter: brightness(0) invert(75%) grayscale(100%);
+		}
 		/*&_1{
 			width: 139.4px !important;
 		}
-		&_2{
-			width: 205.4px !important;
-		}
+		
 		&_3{
 			width: 213.4px !important;
 		}

@@ -125,21 +125,61 @@ header{
 				font-style: italic;
 				color: #aaaaaa;
 			}
+			&.toggle{
+				width: 115px;
+			}
 		}
 		span{
 			font: 400 11px/26.41px 'Roboto';
-			color: #59514c;
+			color: #aaaaaa;
 			position: relative;
-			margin-right: 25px;
-			&::after{
-				content: url(../img/arrow-r.png);
-				position: absolute;
-				top: 2px;
-    			right: -16px;
+			margin-right: 5px;
+			display: none;
+			cursor: pointer;
+			&.active{
+				color: #59514c;
+				display: block;
+			}
+			&.toggle{
+				display: block;
+				&:first-child{
+					margin-right: 25px;
+				}
+				/*&:last-child{
+					margin-right: 30px;;
+				}*/
 			}
 		}
 		img{
 			cursor: pointer;
+		}
+	}
+	&__sort{
+		position: relative;
+		cursor: pointer;
+		width: 195px;
+		/*&::after{
+			content: url(../img/arrow-r.png);
+			position: absolute;
+			top: -5px;
+    		right: 5px;
+    		padding: 11px 5px;
+    		z-index: 5;
+    		transform: rotate(180deg);
+		}*/
+		img{
+			padding: 14px 5px;
+		}
+	}
+	&__more{
+		&.active{
+			transform: rotate(180deg);
+		}
+	}
+	&__toggle{
+		width: auto;
+		&::after{
+			transform: none;
 		}
 	}
 }

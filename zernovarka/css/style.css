@@ -273,20 +273,58 @@ header {
   font-style: italic;
   color: #aaaaaa;
 }
+.header__searchcont input.toggle {
+  width: 115px;
+}
 .header__searchcont span {
   font: 400 11px/26.41px 'Roboto';
-  color: #59514c;
+  color: #aaaaaa;
   position: relative;
-  margin-right: 25px;
+  margin-right: 5px;
+  display: none;
+  cursor: pointer;
 }
-.header__searchcont span::after {
-  content: url(../img/arrow-r.png);
-  position: absolute;
-  top: 2px;
-  right: -16px;
+.header__searchcont span.active {
+  color: #59514c;
+  display: block;
+}
+.header__searchcont span.toggle {
+  display: block;
+  /*&:last-child{
+  	margin-right: 30px;;
+  }*/
+}
+.header__searchcont span.toggle:first-child {
+  margin-right: 25px;
 }
 .header__searchcont img {
   cursor: pointer;
+}
+.header__sort {
+  position: relative;
+  cursor: pointer;
+  width: 195px;
+  		/*&::after{
+  			content: url(../img/arrow-r.png);
+  			position: absolute;
+  			top: -5px;
+      		right: 5px;
+      		padding: 11px 5px;
+      		z-index: 5;
+      		transform: rotate(180deg);
+  		}*/
+}
+.header__sort img {
+  padding: 14px 5px;
+}
+.header__more.active {
+  transform: rotate(180deg);
+}
+.header__toggle {
+  width: auto;
+}
+.header__toggle::after {
+  transform: none;
 }
 
 .currency {
@@ -560,7 +598,7 @@ h3 {
 }
 .section__5 {
   background: #f8f8f8;
-  padding: 26px 0;
+  /*padding: 26px 0;*/
 }
 
 .banner {
@@ -928,11 +966,11 @@ h3 {
   /*margin: 0 40px;*/
 }
 .brand__slider .slick-list {
-  /*margin: 0 -37.7px;*/
+  padding: 26px 0;
 }
 .brand__slider .slick-prev, .brand__slider .slick-next {
   position: absolute;
-  top: 35%;
+  top: 40%;
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -957,12 +995,12 @@ h3 {
 }
 .brand__slide {
   height: 67px !important;
+  filter: brightness(0) invert(92%) grayscale(100%);
+  cursor: pointer;
   /*&_1{
   	width: 139.4px !important;
   }
-  &_2{
-  	width: 205.4px !important;
-  }
+  
   &_3{
   	width: 213.4px !important;
   }
@@ -973,10 +1011,23 @@ h3 {
   	width: 244.4px !important;
   }*/
 }
+.brand__slide img {
+  transition: transform 0.2s;
+}
+.brand__slide:hover {
+  filter: none;
+}
+.brand__slide:hover img {
+  transform: translateY(-10px);
+}
 .brand__slide.flex {
   display: flex !important;
   justify-content: center;
   align-items: center;
+}
+.brand__slide_2 {
+  /*width: 205.4px !important;*/
+  filter: brightness(0) invert(75%) grayscale(100%);
 }
 
 @keyframes recentnews {

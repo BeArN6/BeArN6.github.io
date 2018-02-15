@@ -129,6 +129,23 @@ $(window).load(function(){
   		prevArrow:"<button type='button' class='slick-prev pull-left flex'><img src='img/prev.png' /></button>",
         nextArrow:"<button type='button' class='slick-next pull-right flex'><img src='img/next.png' /></button>"
 	});
+	$(".header__more").click(function(e){
+		e.preventDefault();
+		$(this).parent().toggleClass("header__toggle");
+		$(this).siblings("span").toggleClass("toggle");
+		$(this).parent().siblings("input").toggleClass("toggle");
+		$(this).toggleClass("active");
+	});
+	$(".header__sort span").click(function(e){
+		e.preventDefault();
+		$(this).addClass("active");
+		$(this).siblings("span").removeClass("active");
+		$(this).siblings("span").removeClass("toggle");
+		$(this).siblings("img").removeClass("active");
+		$(this).removeClass("toggle");
+		$(this).parent().siblings("input").removeClass("toggle");
+		$(".header__sort").addClass("header__toggle");
+	})
 });
 
 
