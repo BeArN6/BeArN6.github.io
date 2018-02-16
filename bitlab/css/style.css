@@ -646,7 +646,7 @@ h3 {
 }
 
 .banner {
-  background: url(../img/bg1.jpg) no-repeat;
+  background: url(../img/bg1.jpg) 26% center no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
