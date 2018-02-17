@@ -285,4 +285,15 @@ $(window).load(function(){
 	$(".toggle").click(function(){
 		$(".header__nav").slideToggle();
 	});
+
+	$(".services__bott").not($(".services__bott_1")).hide();
+	$(".services__item").click(function(){
+		var numberOfItem = $(this).attr("data-id");
+		$(".services__item").removeClass("services__item_active");
+		$(this).addClass("services__item_active");
+		$(".services__bott").hide();
+		$(".services__bott_" + numberOfItem).show();
+		$(".sites").hide();
+		$(".sites_" + numberOfItem).show();
+	});
 });

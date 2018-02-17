@@ -40,6 +40,8 @@
 				<div class="aboutus__items flex">
 					<div class="aboutus__item aboutus__item_1 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">
 						<img src="img/ab-line1.png" alt="" class="before wow bounceInLeft bounce" data-wow-duration="1.5s" data-wow-delay="1s">
+						<img src="img/round.png" alt="" class="round1 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="2.7s">
+						<img src="img/round2.png" alt="" class="round2 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="2.4s">
 						<div class="aboutus__img flex">
 							<img src="img/about1.png" alt="">
 						</div>
@@ -51,6 +53,8 @@
 					</div>
 					<div class="aboutus__item aboutus__item_2 wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
 						<img src="img/ab-line2.png" alt="" class="before wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="2s">
+						<img src="img/round.png" alt="" class="round1 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="3s">
+						<img src="img/round2.png" alt="" class="round2 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="2.7s">
 						<div class="aboutus__img flex">
 							<img src="img/about2.png" alt="">
 						</div>
@@ -62,6 +66,8 @@
 					</div>
 					<div class="aboutus__item aboutus__item_3 wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1s">
 						<img src="img/ab-line3.png" alt="" class="after wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.5s">
+						<img src="img/round.png" alt="" class="round1 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="3.3s">
+						<img src="img/round2.png" alt="" class="round2 wow bounceIn" data-wow-duration="1.5s" data-wow-delay="3s">
 						<div class="aboutus__img flex">
 							<img src="img/about3.png" alt="">
 						</div>
@@ -172,38 +178,38 @@
 					<img src="img/line2.png" alt="">
 				</div>
 				<div class="services__top flex">
-					<div class="services__item services__item_active flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="services__item services__item_active flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-id="1">
 						<div class="services__img">
 							<img src="img/serv1.png" alt="">
 						</div>
 						<p>Создание <br> сайтов</p>
 					</div>
-					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="0.8s" data-id="2">
 						<div class="services__img">
 							<img src="img/serv2.png" alt="">
 						</div>
 						<p>Дизайн и <br> проектирование </p>
 					</div>
-					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.1s">
+					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.1s" data-id="3">
 						<div class="services__img">
 							<img src="img/serv3.png" alt="">
 						</div>
 						<p>Поддержка <br> сайтов </p>
 					</div>
-					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.3s">
+					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.3s" data-id="4">
 						<div class="services__img">
 							<img src="img/serv4.png" alt="">
 						</div>
 						<p>Продвижение <br> и маркетинг </p>
 					</div>
-					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.6s">
+					<div class="services__item flex wow zoomInLeft" data-wow-duration="1s" data-wow-delay="1.6s" data-id="5">
 						<div class="services__img">
 							<img src="img/serv5.png" alt="">
 						</div>
 						<p>Корпоративный <br> портал </p>
 					</div>
 				</div>
-				<div class="services__bott flex">
+				<div class="services__bott services__bott_1 flex">
 					<div class="services__item1 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.5s">
 						<div class="services__title flex">
 							<p class="services__name">Landig Page</p>
@@ -298,7 +304,26 @@
 								<img src="img/clock.png" alt="">
 								<span class="bold">Срок выполнения: 14 дней</span>
 							</div>
-							<button class="services__buy">заказать </button>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
 						</div>
 					</div>
 					<div class="services__item1 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.3s">
@@ -337,7 +362,26 @@
 								<img src="img/clock.png" alt="">
 								<span class="bold">Срок выполнения: 14 дней</span>
 							</div>
-							<button class="services__buy">заказать </button>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
 						</div>
 					</div>
 					<div class="services__item1 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.6s">
@@ -376,13 +420,587 @@
 								<img src="img/clock.png" alt="">
 								<span class="bold">Срок выполнения: 14 дней</span>
 							</div>
-							<button class="services__buy">заказать </button>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+				</div>
+				<div class="services__bott services__bott_2 flex">
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Дизайн сайта</p>
+							<span class="services__price">от 5 000  </span>
+							<div class="services__icon flex">
+								<img src="img/serv21.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Уникальный дизайн</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>2-3 варианта</span>
+							</div>
+							<div class="services__row flex">
+								<p>Простой сайт, призванный обеспечить присутствие в сети вашей рекламы. Он может рассказывать о вашей деятельности, услугах или товарах и содержит ваши контактные данные. </p>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Создание логотипа</p>
+							<span class="services__price">от 2 500  </span>
+							<div class="services__icon flex">
+								<img src="img/serv22.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Уникальный дизайн</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>2-3 варианта</span>
+							</div>
+							<div class="services__row flex">
+								<p>Простой сайт, призванный обеспечить присутствие в сети вашей рекламы. Он может рассказывать о вашей деятельности, услугах или товарах и содержит ваши контактные данные. </p>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Редизайн сайта</p>
+							<span class="services__price">от 4 000  </span>
+							<div class="services__icon flex">
+								<img src="img/serv23.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Уникальный дизайн</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>2-3 варианта</span>
+							</div>
+							<div class="services__row flex">
+								<p>Простой сайт, призванный обеспечить присутствие в сети вашей рекламы. Он может рассказывать о вашей деятельности, услугах или товарах и содержит ваши контактные данные. </p>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+				</div>
+				<div class="services__bott services__bott_3 flex">
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Базовый</p>
+							<span class="services__price services__price_2">5 500 </span>
+							<div class="services__icon flex">
+								<img src="img/serv31.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/clock.png" alt="">
+								<span class="bold">5 часов мониторинга</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>1 200 руб за час сверх нормы</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Мониторинг работоспособности сайта</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Стандарт</p>
+							<span class="services__price services__price_2">13 200 </span>
+							<div class="services__icon flex">
+								<img src="img/serv32.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/clock.png" alt="">
+								<span class="bold">12 часов мониторинга</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>1 100 руб за час сверх нормы</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Мониторинг работоспособности сайта</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Премиум</p>
+							<span class="services__price services__price_2">13 200 </span>
+							<div class="services__icon flex">
+								<img src="img/serv33.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/clock.png" alt="">
+								<span class="bold">40 часов мониторинга</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>1 100 руб за час сверх нормы</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Мониторинг работоспособности сайта</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+				</div>
+				<div class="services__bott services__bott_4 flex">
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Базовый</p>
+							<span class="services__price">от 10 000 </span>
+							<div class="services__icon flex">
+								<img src="img/serv41.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Поисковая оптимизация</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Техническая поддержка</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Анализ конкурентов</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Ежемесячная отчетность</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>SMM</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>WEB-аналитика</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>Контекcтная реклама</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>E-mail маркетинг</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Стандарт</p>
+							<span class="services__price">от 20 000 </span>
+							<div class="services__icon flex">
+								<img src="img/serv42.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Поисковая оптимизация</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Техническая поддержка</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Анализ конкурентов</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Ежемесячная отчетность</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>SMM</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>WEB-аналитика</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>Контекcтная реклама</span>
+							</div>
+							<div class="services__row services__row_minus flex">
+								<img src="img/minus.png" alt="">
+								<span>E-mail маркетинг</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title flex">
+							<p class="services__name">Премиум</p>
+							<span class="services__price">от 30 000 </span>
+							<div class="services__icon flex">
+								<img src="img/serv43.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Поисковая оптимизация</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Техническая поддержка</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Анализ конкурентов</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Ежемесячная отчетность</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>SMM</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>WEB-аналитика</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>Контекcтная реклама</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/minus.png" alt="">
+								<span>E-mail маркетинг</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+				</div>
+				<div class="services__bott services__bott_5 flex">
+					<div class="services__item1">
+						<div class="services__title services__title_2 flex">
+							<p class="services__name services__name_2">Коробочная версия  сервиса</p>
+							<span class="services__price">от 59 000  </span>
+							<div class="services__icon flex">
+								<img src="img/serv51.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row services__row_img flex">
+								<img src="img/btr1.png" alt="">
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Дистрибутив продукта  (в исходных текстах);</span>
+							</div>	
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Лицензионный ключ продукта;</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Лицензионный ключ  на дополнительных пользователей;</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Бесплатную техническую поддержку*;</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Доступ к обновлениям продукта в течение 1 года (возможно продление);</span>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
+						</div>
+					</div>
+					<div class="services__item1">
+						<div class="services__title services__title_2 flex">
+							<p class="services__name services__name_2">Облачный сервис  «Битрикс24»</p>
+							<span class="services__price services__price_2">от 1 190   </span>
+							<div class="services__icon flex">
+								<img src="img/serv52.png" alt="">
+							</div>
+						</div>
+						<div class="services__main">
+							<div class="services__row services__row_img flex">
+								<img src="img/btr2.png" alt="">
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Пользователи: неограниченно</span>
+							</div>	
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Бизнес-пользователи: 24</span>
+							</div>
+							<div class="services__row flex">
+								<img src="img/plus.png" alt="">
+								<span>Место в облаке: 24 Гб</span>
+							</div>
+							<div class="services__row services__row_bm flex">
+								<p>«Облачный» сервис для компании до 24 сотрудников. Включает расширенные возможности и дополнительные инструменты.</p>
+							</div>
+							<div class="services__form services__order">
+								<h2>заказать сайт</h2>
+								<form action="">
+									<div class="footer__input flex">
+										<img src="img/man.png" alt="">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="footer__input flex">
+										<img src="img/fphone.png" alt="">
+										<input type="text" placeholder="Контактный телефон">
+									</div>
+									<button class="services__buy serv_send_2">отправить</button>
+								</form>
+							</div>
+							<div class="services__form services__success flex">
+								<img src="img/serv-success.png" alt="">
+								<img src="img/mini-line.png" alt="">
+								<h2>Ваша заявка принята!</h2>
+							</div>
+							<button class="services__buy serv_send">заказать </button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="sites">
+		<div class="sites sites_1">
 			<div class="wrapper">
 				<div class="title title_3 flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
 					<h2>создание сайтов</h2>
@@ -423,6 +1041,188 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="sites sites_2">
+			<div class="wrapper">
+				<div class="title title_3 flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+					<h2>Дизайн и проектирование</h2>
+				</div>
+				<div class="sites__cont flex">
+					<div class="sites__left flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="img/mac2.png" alt="">
+					</div>
+					<div class="sites__right wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+						<div class="sites__item sites__item_1 flex">
+							<div class="sites__img flex">
+								<img src="img/sites1.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>составление тз будующего сайта</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_2 flex">
+							<div class="sites__img flex">
+								<img src="img/sites2.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>реализация дизайна</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_3 flex">
+							<div class="sites__img flex">
+								<img src="img/sites3.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>внесение правок по желанию заказчика</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sites sites_3">
+			<div class="wrapper">
+				<div class="title title_3 flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+					<h2>техническая поддержка сайтов</h2>
+				</div>
+				<div class="sites__cont flex">
+					<div class="sites__left flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="img/mac3.png" alt="">
+					</div>
+					<div class="sites__right wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+						<div class="sites__item sites__item_1 flex">
+							<div class="sites__img flex">
+								<img src="img/sites21.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>аудит сайта</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_2 flex">
+							<div class="sites__img flex">
+								<img src="img/sites3.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>аудит сайта</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_3 flex">
+							<div class="sites__img flex">
+								<img src="img/sites22.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>оптимизация работы сайта</h2>
+								<p>С другой стороны дальнейшее развитие различных форм <br> деятельности способствует подготовки и реализации форм<br> развития. Идейные соображения высшего порядка, а также</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sites sites_4">
+			<div class="wrapper">
+				<div class="title title_3 flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+					<h2>продвижение и маркетинг</h2>
+				</div>
+				<div class="sites__cont flex">
+					<div class="sites__left sites__left_3 flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="img/mac4.png" alt="">
+					</div>
+					<div class="sites__right wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+						<div class="sites__item sites__item_1 flex">
+							<div class="sites__img flex">
+								<img src="img/sites31.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Анализ рынка</h2>
+								<p>На этом этапе проводится анализ сайтов-конкурентов и целевой аудитории. Для успешной работы с проектом изучаем предпочтения клиентов, возраст аудитории, предложения компаний, оказывающих те же услуги.</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_2 flex">
+							<div class="sites__img flex">
+								<img src="img/sites32.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Выбор стратегии</h2>
+								<p>Определяем, какие каналы привлечения клиентов должны быть задействованы: контекстная реклама, поисковые системы, либо социальные сети. В каких-то случаях целесообразно использовать сразу несколько каналов, т.е. комплексное продвижение сайта.</p>
+							</div>
+						</div>
+						<div class="sites__item sites__item_3 flex">
+							<div class="sites__img flex">
+								<img src="img/sites43.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Техническая реализация</h2>
+								<p>Этот этап самый трудоемкий, поскольку необходимо выполнить целый ряд работ. Сюда входят: оптимизация сайта под поисковые системы, создание объявлений контекстной рекламы и ведение кампаний, создание и работа над сообществами в социальных сетях.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sites sites_5">
+			<div class="wrapper">
+				<div class="title title_3 flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+					<h2>Битрикс 24 это </h2>
+				</div>
+				<div class="sites__cont flex">
+					<div class="sites__left sites__left_2 flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<img src="img/mac5.png" alt="">
+					</div>
+					<div class="sites__right sites__right_2 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+						<div class="sites__item sites__item_1 sites__item_na flex">
+							<div class="sites__img flex">
+								<img src="img/sites51.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Экономия рабочего времени </h2>
+							</div>
+						</div>
+						<div class="sites__item sites__item_2 sites__item_na flex">
+							<div class="sites__img flex">
+								<img src="img/sites52.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Повышение эффективности сотрудников</h2>
+							</div>
+						</div>
+						<div class="sites__item sites__item_3 sites__item_na flex">
+							<div class="sites__img flex">
+								<img src="img/sites53.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Оптимизация бизнес процессов</h2>
+							</div>
+						</div>
+						<div class="sites__item sites__item_4 sites__item_na flex">
+							<div class="sites__img flex">
+								<img src="img/sites54.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Повышение качества управленческих решений</h2>
+							</div>
+						</div>
+						<div class="sites__item sites__item_5 sites__item_na flex">
+							<div class="sites__img flex">
+								<img src="img/sites55.png" alt="">
+							</div>
+							<div class="sites__info">
+								<h2>Обеспечение контроля и управляемости</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="portfolio">
 			<div class="wrapper">
 				<div class="title flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
