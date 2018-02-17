@@ -199,12 +199,13 @@ $(window).load(function(){
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
-	// $(".banner").on('mousemove', function(e){
-	// 	$(this).css({
- //            'left': -e.pageX / 100 + 1,
- //            'top': -e.pageY / 100 + 1
- //        });
-	// });
+
+	$(".banner").on('mousemove', function(e){
+		$(this).css({
+            'background-position-x': -e.pageX/50  + 1,
+            'background-position-y': -e.pageY/50  + 1
+        });
+	});
 	$(".banner__order").click(function(){
 		event.preventDefault(event);
 		$(".overlay").fadeIn(600,function(){
@@ -213,9 +214,26 @@ $(window).load(function(){
 				.animate({opacity: 1,top: "0"},200)
 		});
 	});
+	$(".open-comment").click(function(){
+		event.preventDefault(event);
+		$(".overlay").fadeIn(600,function(){
+			$('.modal-2')
+				.css('display', 'block')
+				.animate({opacity: 1,top: "0"},200)
+		});
+	});
+	$(".btn-send-2").click(function(){
+		event.preventDefault(event);
+		$(".modal-1, .modal-send, .modal-2, modal-send2").hide();
+		$(".overlay").fadeIn(600,function(){
+			$('.modal-send2')
+				.css('display', 'block')
+				.animate({opacity: 1,top: "0"},200)
+		});
+	});
 	$(".btn-send").click(function(){
 		event.preventDefault(event);
-		$(".modal-1, .modal-send").hide();
+		$(".modal-1, .modal-send, .modal-2, modal-send2").hide();
 		$(".overlay").fadeIn(600,function(){
 			$('.modal-send')
 				.css('display', 'block')
@@ -223,7 +241,7 @@ $(window).load(function(){
 		});
 	});
 	$('.modal-close,.overlay').click(function(){
-		$(".modal-1, .modal-send").animate({opacity: 1, top:"0"}, 200,
+		$(".modal-1, .modal-send, .modal-2, modal-send2").animate({opacity: 1, top:"0"}, 200,
 			function(){
 				$(this).css('display', 'none'); 
 				$('.overlay').fadeOut(400);
@@ -253,5 +271,18 @@ $(window).load(function(){
 		$(this).closest(".services__order").siblings(".services__success").slideDown();
 		$(this).closest(".services__order").siblings(".services__row").addClass("services__row_blur");
 		$(this).closest(".services__item1").addClass("services__item1_active");
+	});
+
+	var windWidth = $(window).width();
+
+	$(".banner").css({
+		"height": windWidth * 0.36458333
+	});
+
+	if(windWidth < 768){
+		$(".header__nav").hide();
+	}
+	$(".toggle").click(function(){
+		$(".header__nav").slideToggle();
 	});
 });

@@ -27,6 +27,8 @@
 				</div>
 			</div>
 			<a href="#ex1" class="mouse"><img src="img/mouse.png" alt="" ></a>
+			<img src="img/line_1.png" alt="" class="line_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+			<img src="img/line_2.png" alt="" class="line_2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
 		</div>
 		<div class="aboutus" id="ex1">
 			<div class="wrapper">
@@ -557,7 +559,7 @@
 						<div class="comments__title flex">
 							<img src="img/comment2.png" alt="">
 							<h2>Благодарности:</h2>
-							<a href=""> Добавить отзыв</a>
+							<a class="open-comment"> Добавить отзыв</a>
 						</div>
 						<div class="comments__slider">
 							<div class="comment">
@@ -608,26 +610,26 @@
 					<img src="img/line2.png" alt="">
 				</div>
 				<div class="clients__cont">
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.8s">
 						<img src="img/client1.png" alt="">
 					</div>
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
-						<img src="img/client2.png" alt="">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+						<img src="img/client2.jpg" alt="">
 					</div>
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.9s">
-						<img src="img/client3.png" alt="">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+						<img src="img/client3.jpg" alt="">
 					</div>
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
 						<img src="img/client1.png" alt="">
 					</div>
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
-						<img src="img/client2.png" alt="">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+						<img src="img/client2.jpg" alt="">
 					</div>
-					<div class="clients__item flex wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.8s">
-						<img src="img/client3.png" alt="">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+						<img src="img/client3.jpg" alt="">
 					</div>
 					<div class="clients__item flex">
-						<img src="img/client2.png" alt="">
+						<img src="img/client2.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -713,6 +715,79 @@
 		</div>
 		<div class="overlay"></div>
 		<!--Modal window end-->
+		<!--Modal window-->
+		<div class="modal-form modal-2">
+			<div class="wrapper">
+				<div class="modal__top flex">
+					<a href="" class="logo">
+						<img src="img/m-logo.png" alt="">
+					</a>
+					<div class="modal-close">
+						<img src="img/close.png" alt="">
+					</div>
+				</div>
+				<div class="modal__main">
+					<div class="title title_2 flex">
+						<h2>ОСТАВИТЬ ОТЗЫВ</h2>
+						<img src="img/line2.png" alt="">
+					</div>
+					<div class="modal__cont flex">
+						<div class="modal__left">
+							<div class="footer__input flex">
+								<img src="img/input4.png" alt="">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="footer__input flex">
+								<img src="img/input5.png" alt="">
+								<input type="text" placeholder="Контактный телефон">
+							</div>
+							<div class="footer__input flex">
+								<img src="img/input6.png" alt="">
+								<input type="text" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="modal__right">
+							<div class="modal__textarea modal__textarea_2 flex">
+								<img src="img/input3.png" alt="">
+								<textarea name="" id="" placeholder="Ваш отзыв"></textarea>
+							</div>
+							<div class="footer__input modal__input flex">
+								<img src="img/input2.png" alt="">
+								<input type="text" placeholder="Прикрепить фото">
+								<input type="file">
+							</div>
+							<button class="btn btn-send-2">оставить отзыв</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<!--Modal window end-->
+		<!--Modal window-->
+		<div class="modal-form modal-send2">
+			<div class="wrapper">
+				<div class="modal__top flex">
+					<a href="" class="logo">
+						<img src="img/m-logo.png" alt="">
+					</a>
+					<div class="modal-close">
+						<img src="img/close.png" alt="">
+					</div>
+				</div>
+				<div class="modal__main">
+					<div class="modal__success">
+						<img src="img/success.png" alt="">
+						<div class="title flex">
+							<img src="img/line2.png" alt="">
+							<h2>Ваша заявка принята!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<!--Modal window end-->
 	</main>	
 			
 <!-- CONTENT EOF   -->
@@ -721,6 +796,11 @@
 
 	<header class="header">		
 		<div class="wrapper flex">
+			<div class="toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<a href="" class="logo">
 				<img src="img/logo.png" alt="">
 			</a>
