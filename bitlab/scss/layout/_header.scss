@@ -25,6 +25,10 @@ header{
 				a{
 					font: 22px RL;
 					color: #2c2a2b;
+    				padding: 3px 0;
+    				&:hover{
+    					border-bottom: 2px solid #dc1837;
+    				}
 				}
 			}
 		}
@@ -50,6 +54,7 @@ header{
 	top: 5px;
 	&__item{
 		padding: 0 12px;
+		opacity: 0.5;
 		img{
 			margin-right: 6px;
 		}
@@ -63,6 +68,7 @@ header{
 			border-right: 1px solid #a39daa;
 		}
 		&_active{
+			opacity: 1;
 			span{
 				border-bottom: 1px dashed #262626;
 			}

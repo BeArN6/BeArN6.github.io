@@ -58,9 +58,17 @@ footer{
 			li{
 				width: 100%;
 				margin-bottom: 15px;
+				&:hover{
+					a{
+						transform: translateX(10px);
+						color: #dc1837;
+					}
+				}
 				a{
 					color: #fff;
 					font: 22px RL;
+					transition: all 0.2s;
+					display: block;	
 				}
 			}
 		}
@@ -112,12 +120,35 @@ footer{
 			letter-spacing: 0.02em;
 			color: #fff;
 		}
+		.btn{
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+			&::before{
+				content: "";
+				box-shadow: 0 0 0 9999px rgba(0,0,0,0.1) inset;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 400px;
+				height: 60px;
+				transform: translateX(-400px);
+				transition: transform 0.4s ease;
+			}
+			&:hover{
+				&::before{
+					transform: translateX(0);
+				}
+			}
+		}
 	}
 	&__file{
 		width: 53px;
 		height: 58px;
 		background: #979798;
 		position: relative;
+		transition: all 0.3s ease;
+		cursor: pointer;
 		input[type="file"]{
 			width: 53px;
 			height: 58px;
@@ -126,19 +157,40 @@ footer{
 			left: 0;
 			opacity: 0;
 			border: 0;
+			cursor: pointer;
 		}
 		img{
 			margin-bottom: 5px;
+			transition: all 0.3s ease;
 		}
 		span{
 			font: 11px RL;
 			color: #fff;
+			transition: all 0.3s ease;
 		}
 		&.flex{
 			flex-direction: column;
 			justify-content: center;
 		}
+		&:hover{
+			background: #fff;
+			img{
+				filter: invert(1);
+			}
+			span{
+				color: #000;
+			}
+		}
 	}
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 .socials{
 	&.flex{
@@ -149,8 +201,18 @@ footer{
 		height: 47px;
 		background: #979798;
 		margin-right: 30px;
+		transition: all 0.3s ease;
+		img{
+			transition: all 0.3s ease;
+		}
 		&.flex{
 			justify-content: center;
+		}
+		&:hover{
+			background: #fff;
+			img{
+				filter: invert(1);
+			}
 		}
 	}
 }

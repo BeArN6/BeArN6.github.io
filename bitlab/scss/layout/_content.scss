@@ -222,6 +222,21 @@ h3{
 		width: 360px;
 		margin: 0 15px !important;
 		border: 1px solid #bdbdbd;
+		&_2{
+			.team__memberimg{
+				img{
+					margin-left: -75px;
+				}
+			}
+		}
+		&_3{
+			.team__memberimg{
+				img{
+					margin-left: -220px;
+    				margin-top: -40px;
+				}
+			}
+		}
 	}
 	&__memberimg{
 		width: 100%;
@@ -373,6 +388,10 @@ h3{
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			z-index: 3;
+		}
+		&_active{
+			min-height: 688px;
 		}
 	}
 	&__title{
@@ -451,6 +470,9 @@ h3{
 		&_nb{
 			border-bottom: 0;
 		}
+		&_blur{
+			filter: blur(3px);
+		}
 	}
 	&__buy{
 		font: 19px/30px RL;
@@ -464,8 +486,57 @@ h3{
 		margin: 4px 16px;
 		cursor: pointer;
 		position: relative;
-		z-index: 2;
+		z-index: 4;
 	}
+	&__form{
+    	background-color: #605d5e;
+    	padding: 15px 10px;
+    	position: absolute;
+    	left: 5px;
+    	bottom: 8px;
+    	z-index: 5;
+    	width: calc(100% - 10px);
+    	height: 295px;
+    	h2{
+    		text-transform: uppercase;
+    		color: #fff;
+    		font: 25px GR;
+    		margin: 20px 0 30px;
+    		text-align: center;
+    	}
+    	input{
+    		width: 84%;
+    		font-size: 16px;
+    		padding: 0 5px;
+    		&::placeholder{
+    			font-size: 16px;
+    		}
+    	}
+    	button{
+    		margin: 0;
+    		width: 100%;
+    	}
+    }
+    &__order{
+    	display: none;
+    }
+    &__success{
+    	padding: 0;
+    	&.flex{
+    		flex-direction: column;
+    		justify-content: center;
+    	}
+    	img{
+    		&:first-child{
+    			margin-bottom:20px;
+    		}
+    	}
+    	h2{
+    		font-size: 20px;
+    		margin-top: 10px;
+    		margin-bottom: 0;
+    	}
+    }
 }
 .sites{
 	background: #f4f4f4;
@@ -501,11 +572,49 @@ h3{
 	}
 	&__item{
 		margin-bottom: 30px;
+		position: relative;
+		z-index: 2;
 		&:last-child{
 			margin-bottom: 0;
 		}
 		&.flex{
 			justify-content: flex-start;
+		}
+		&_1{
+			&::before{
+				content: "01";
+				font: 72px GR;
+				color: #c6c6c6;
+				position: absolute;
+				top: -30px;
+				opacity: 0.27;
+				left: 80px;
+				z-index: -1;
+			}
+		}
+		&_2{
+			&::before{
+				content: "02";
+				font: 72px GR;
+				color: #c6c6c6;
+				position: absolute;
+				top: -30px;
+				opacity: 0.27;
+				left: 80px;
+				z-index: -1;
+			}
+		}
+		&_3{
+			&::before{
+				content: "03";
+				font: 72px GR;
+				color: #c6c6c6;
+				position: absolute;
+				top: -30px;
+				opacity: 0.27;
+				left: 80px;
+				z-index: -1;
+			}
 		}
 	}
 	&__img{
@@ -560,6 +669,16 @@ h3{
 		overflow: hidden;
 		position: relative;
 		margin-bottom: 6px;
+		transition: transform 0.6s ease;
+		background-color: #000;
+		&:hover {
+  			-webkit-transform: scale(0.8);
+  			-ms-transform: scale(0.8);
+  			transform: scale(0.8);
+		}
+		img{
+			height: 100%;
+		}
 	}
 	&__name{
 		font: 17.75px GR;
@@ -597,7 +716,10 @@ h3{
 .comments{
 	padding-top: 60px;
 	padding-bottom: 45px;
-	background: #f1f1f1;
+	background-color: #f1f1f1;
+	background-image: url(../img/c-bg.png);
+	background-position: center center;
+	background-size: cover;
 	&__left{
 		width: 555px;
 		position: relative;
@@ -636,11 +758,31 @@ h3{
 			text-transform: uppercase;
 			margin-top: 4px;
 		}
+		a{
+			display: block;
+			font: 16px RL;
+			color: #2c2a2b;
+			border-bottom: 1px dotted #2c2a2b;
+			margin-left: auto;
+			position: relative;
+			padding: 2px 0;
+			&::before{
+				content: "+";
+				font: 16px RL;
+				color: #2c2a2b;
+				position: absolute;
+    			left: -14px;
+			}
+		}
 	}
 	&__video{
 		width: 100%;
 		height: 400px;
 		background: #fff;
+		video{
+			width: 100%;
+			height: auto;
+		}
 	}
 	.slick-list{
 		/*margin: 0 -15px;*/
@@ -649,7 +791,7 @@ h3{
 		background: none;
     	border: 0;
     	position: absolute;
-    	bottom: -44px;
+    	bottom: -48px;
     	z-index: 5;
     	transition: filter 0.2s ease-in-out;
 		&:hover{
@@ -659,7 +801,7 @@ h3{
 	.slick-next{
 		right: 190px;
 		transform: rotate(180deg);
-		bottom: -40px;
+		bottom: -46px;
 	}
 	.slick-prev{
 		left: 190px;
