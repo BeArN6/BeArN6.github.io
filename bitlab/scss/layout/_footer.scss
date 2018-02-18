@@ -53,6 +53,7 @@ footer{
 	}
 	&__box{
 		width: 360px;
+		position: relative;
 		ul{
 			list-style: none;
 			li{
@@ -71,6 +72,10 @@ footer{
 					display: block;	
 				}
 			}
+		}
+		.services__success{
+    		background: transparent;
+    		top: 0;
 		}
 	}
 	&__input{

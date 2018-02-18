@@ -176,10 +176,29 @@ header {
 .header__nav ul li a {
   font: 1.1458333333333333VW RL;
   color: #2c2a2b;
-  padding: 3px 0;
+  padding: 5px 0;
+  position: relative;
+  text-transform: uppercase;
 }
-.header__nav ul li a:hover {
-  border-bottom: 2px solid #dc1837;
+.header__nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #dc1837;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: scale(0.4, 1);
+  -ms-transform: scale(0.4, 1);
+  transform: scale(0.4, 1);
+  opacity: 0;
+}
+.header__nav ul li a:hover::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
 }
 
 .logo {
@@ -235,6 +254,11 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .langs__item span {
+    font: 11px RL;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .header .wrapper {
     max-width: 970px;
@@ -259,6 +283,13 @@ header {
   }*/
   .langs {
     display: none;
+    top: 2px;
+  }
+  .langs__item img {
+    width: 13px;
+  }
+  .langs__item span {
+    font: 8px RL;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -392,6 +423,7 @@ footer {
 }
 .footer__box {
   width: 360px;
+  position: relative;
 }
 .footer__box ul {
   list-style: none;
@@ -409,6 +441,10 @@ footer {
   font: 22px RL;
   transition: all 0.2s;
   display: block;
+}
+.footer__box .services__success {
+  background: transparent;
+  top: 0;
 }
 .footer__input {
   width: 100%;
@@ -739,13 +775,14 @@ h3 {
 
 .icon-load {
   background: url(../img/loader.gif) no-repeat left top;
-  width: 40px;
-  height: 40px;
+  background-size: 100%;
+  width: 506px;
+  height: 300px;
   position: fixed;
   left: 50%;
   top: 50%;
-  margin-left: -20px;
-  margin-left: -20px;
+  margin-left: -253px;
+  margin-top: -150px;
   display: none;
 }
 
@@ -824,6 +861,22 @@ h3 {
   background-size: 100% 100%;
   margin-top: 7%;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.banner__order::before {
+  content: "";
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.1) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 70px;
+  transform: translateX(-400px);
+  transition: transform 0.4s ease;
+}
+.banner__order:hover::before {
+  transform: translateX(0);
 }
 
 .line_1 {
@@ -933,6 +986,7 @@ h3 {
   padding: 60px 0 53px;
   background: url(../img/bg3.png) center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .team__slider {
   margin-bottom: 30px;
@@ -1015,27 +1069,22 @@ h3 {
   border: 1px solid #bdbdbd;
   background-repeat: no-repeat;
   background-position: 107% bottom;
+  cursor: pointer;
+}
+.team__item:hover span {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 .team__item.flex {
   justify-content: center;
   flex-direction: column;
 }
-.team__item_1 {
-  background-image: url(../img/team1.png);
-}
-.team__item_2 {
-  background-image: url(../img/team2.png);
-  background-position: 130% bottom;
-}
-.team__item_3 {
-  background-image: url(../img/team3.png);
-}
-.team__item_4 {
-  background-image: url(../img/team4.png);
-}
 .team__item span {
   font: 52px GR;
   color: #dc1837;
+  transition: all 0.3s ease;
 }
 .team__item p {
   width: 100%;
@@ -1131,7 +1180,7 @@ h3 {
   z-index: 3;
 }
 .services__item1_active {
-  min-height: 688px;
+  /*min-height: 688px;*/
 }
 .services__title {
   width: 258px;
@@ -1184,6 +1233,7 @@ h3 {
 }
 .services__main {
   padding-top: 30px;
+  position: relative;
 }
 .services__row {
   border-bottom: 1px solid #e4e4e4;
@@ -1242,13 +1292,28 @@ h3 {
   cursor: pointer;
   position: relative;
   z-index: 4;
+  overflow: hidden;
+}
+.services__buy::before {
+  content: "";
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.1) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 70px;
+  transform: translateX(-400px);
+  transition: transform 0.4s ease;
+}
+.services__buy:hover::before {
+  transform: translateX(0);
 }
 .services__form {
   background-color: #605d5e;
   padding: 15px 10px;
   position: absolute;
   left: 5px;
-  bottom: 8px;
+  bottom: -8px;
   z-index: 5;
   width: calc(100% - 10px);
   height: 295px;
@@ -1273,10 +1338,35 @@ h3 {
   width: 100%;
 }
 .services__order {
-  display: none;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.services__order_active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 5;
 }
 .services__success {
   padding: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.services__success_active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 5;
 }
 .services__success.flex {
   flex-direction: column;
@@ -1332,8 +1422,8 @@ h3 {
 .sites__right::after {
   content: url(../img/lines2.png);
   position: absolute;
-  right: -61%;
-  top: 40%;
+  left: 97%;
+  bottom: 8%;
   z-index: -1;
 }
 .sites__right_2::after {
@@ -1416,6 +1506,7 @@ h3 {
 .portfolio__tab {
   margin-right: 25px;
   cursor: pointer;
+  position: relative;
 }
 .portfolio__tab:last-child {
   margin-right: 0;
@@ -1431,22 +1522,79 @@ h3 {
   color: #fff;
   background: #dc1837;
 }
+.portfolio__tab span::before, .portfolio__tab span::after {
+  position: absolute;
+  background: #dc1837;
+  height: 1px;
+  width: 0px;
+  content: " ";
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.portfolio__tab span::before {
+  bottom: 0;
+  right: 0;
+}
+.portfolio__tab span::after {
+  top: 0;
+  left: 0;
+}
+.portfolio__tab::before, .portfolio__tab::after {
+  position: absolute;
+  background: #dc1837;
+  height: 0;
+  width: 1px;
+  content: " ";
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.portfolio__tab::before {
+  bottom: 0;
+  right: 0;
+}
+.portfolio__tab::after {
+  top: 0;
+  left: 0;
+}
+.portfolio__tab:hover::before, .portfolio__tab:hover::after {
+  height: 60%;
+}
+.portfolio__tab:hover span::before, .portfolio__tab:hover span::after {
+  width: 90%;
+}
 .portfolio__item {
   width: 375px;
   height: 225px;
   overflow: hidden;
   position: relative;
   margin-bottom: 6px;
-  transition: transform 0.6s ease;
+  transition: all 0.1s ease;
   background-color: #000;
 }
 .portfolio__item:hover {
-  -webkit-transform: scale(0.8);
+  /*-webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
-  transform: scale(0.8);
+  transform: scale(0.8);*/
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+  z-index: 999;
+}
+.portfolio__item:hover img {
+  filter: blur(3px);
 }
 .portfolio__item img {
-  height: 100%;
+  width: 100%;
+  transition: all 0.1s ease;
 }
 .portfolio__name {
   font: 17.75px GR;
@@ -1625,12 +1773,12 @@ h3 {
   margin-right: 45px;
 }
 .comment__info {
-  padding-top: 20px;
+  padding-top: 0;
 }
 .comment__info h2 {
   color: #2c2a2b;
   font: 17px GR;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 .comment__info p {
   color: #2c2a2b;
@@ -1647,6 +1795,7 @@ h3 {
 }
 .clients__cont .slick-list {
   margin: 0 -15px;
+  padding: 15px 0;
 }
 .clients__cont .slick-next, .clients__cont .slick-prev {
   background: none;
@@ -1673,6 +1822,12 @@ h3 {
   background: #fff;
   margin: 0 15px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.clients__item:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .clients__item.flex {
   display: flex !important;
@@ -1835,6 +1990,8 @@ h3 {
   background: transparent;
   border: 0;
   margin-top: 20px;
+  width: 89%;
+  height: 110px;
 }
 .modal__textarea textarea::placeholder {
   font: 20px RL;

@@ -170,7 +170,6 @@ $(window).load(function(){
 		slidesToShow: 1,
   		slidesToScroll: 1,
   		arrows: true,
-  		dots: true,
   		autoplay: true,
 		autoplaySpeed: 500,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png' /></button>",
@@ -180,7 +179,6 @@ $(window).load(function(){
 		slidesToShow: 1,
   		slidesToScroll: 1,
   		arrows: true,
-  		dots: true,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png' /></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev.png' /></button>"
 	});
@@ -260,17 +258,23 @@ $(window).load(function(){
 		}
 
 	$(".serv_send").click(function(){
-		$(this).siblings(".services__order").slideDown();
+		$(".services__order").removeClass("services__order_active");
+		$(this).siblings(".services__order").addClass("services__order_active");
 		$(this).siblings(".services__row").addClass("services__row_blur");
 		$(this).closest(".services__item1").addClass("services__item1_active");
 	});
-	$(".services__success").hide();
 	$(".serv_send_2").click(function(e){
 		e.preventDefault();
-		$(this).closest(".services__order").slideUp();
-		$(this).closest(".services__order").siblings(".services__success").slideDown();
+		$(this).closest(".services__order").removeClass("services__order_active");
+		$(this).closest(".services__order").siblings(".services__success").addClass("services__success_active");
 		$(this).closest(".services__order").siblings(".services__row").addClass("services__row_blur");
 		$(this).closest(".services__item1").addClass("services__item1_active");
+	});
+	$(".footer__send").click(function(e){
+		e.preventDefault();
+		$(this).closest("form").hide();
+		$(this).closest("form").siblings(".services__success").addClass("services__success_active");
+		$(this).closest("form").siblings(".footer__title").hide();
 	});
 
 	var windWidth = $(window).width();

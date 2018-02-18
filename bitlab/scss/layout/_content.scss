@@ -58,7 +58,7 @@ h3{
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
-.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.icon-load{background:url(../img/loader.gif) no-repeat left top;background-size: 100%;width:506px;height:300px;position:fixed;left:50%;top:50%;margin-left: -253px;margin-top:-150px;display:none;}
 .loaded .icon-load{display:block;}
 
 
@@ -133,6 +133,24 @@ h3{
 		background-size: 100% 100%;
 		margin-top: 7%;
 		color: #fff;
+		position: relative;
+		overflow: hidden;
+		&::before{
+			content: "";
+	    	box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.1) inset;
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	width: 400px;
+	    	height: 70px;
+	    	transform: translateX(-400px);
+	    	transition: transform 0.4s ease;
+		}
+    	&:hover{
+    		&::before{
+    			transform: translateX(0);
+    		}
+    	}
 	}
 }
 .line{
@@ -249,6 +267,7 @@ h3{
 	padding: 60px 0 53px;
 	background: url(../img/bg3.png) center center no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	&__slider{
 		margin-bottom: 30px;
 		.slick-list{
@@ -341,26 +360,23 @@ h3{
 		border: 1px solid #bdbdbd;
 		background-repeat: no-repeat;
 		background-position: 107% bottom;
+		cursor: pointer;
+		&:hover{
+			span{
+				transform: scale(1.2);
+	    		-webkit-transform: scale(1.2);
+	    		-moz-transform: scale(1.2);
+	    		-o-transform: scale(1.2);
+			}
+		}
 		&.flex{
 			justify-content: center;
 			flex-direction: column;
 		}
-		&_1{
-			background-image: url(../img/team1.png);
-		}
-		&_2{
-			background-image: url(../img/team2.png);
-			background-position: 130% bottom;
-		}
-		&_3{
-			background-image: url(../img/team3.png);
-		}
-		&_4{
-			background-image: url(../img/team4.png);
-		}
 		span{
 			font: 52px GR;
 			color: #dc1837;
+			transition: all 0.3s ease;
 		}
 		p{
 			width: 100%;
@@ -458,7 +474,7 @@ h3{
 			z-index: 3;
 		}
 		&_active{
-			min-height: 688px;
+			/*min-height: 688px;*/
 		}
 	}
 	&__title{
@@ -512,6 +528,7 @@ h3{
 	}
 	&__main{
 		padding-top: 30px;
+		position: relative;
 	}
 	&__row{
 		border-bottom: 1px solid #e4e4e4;
@@ -572,13 +589,30 @@ h3{
 		cursor: pointer;
 		position: relative;
 		z-index: 4;
+		overflow: hidden;
+		&::before{
+			content: "";
+	    	box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.1) inset;
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	width: 400px;
+	    	height: 70px;
+	    	transform: translateX(-400px);
+	    	transition: transform 0.4s ease;
+		}
+    	&:hover{
+    		&::before{
+    			transform: translateX(0);
+    		}
+    	}
 	}
 	&__form{
     	background-color: #605d5e;
     	padding: 15px 10px;
     	position: absolute;
     	left: 5px;
-    	bottom: 8px;
+    	bottom: -8px;
     	z-index: 5;
     	width: calc(100% - 10px);
     	height: 295px;
@@ -603,10 +637,35 @@ h3{
     	}
     }
     &__order{
-    	display: none;
+    	opacity: 0;
+    	-webkit-transform: scale(0.8);
+  		-ms-transform: scale(0.8);
+  		transform: scale(0.8);
+  		transition: transform 0.3s ease;
+  		z-index: -1;
+  		&_active{
+  			-webkit-transform: scale(1);
+  			-ms-transform: scale(1);
+  			transform: scale(1);
+  			opacity: 1;
+  			z-index: 5;
+  		}
     }
     &__success{
     	padding: 0;
+    	opacity: 0;
+    	-webkit-transform: scale(0.8);
+  		-ms-transform: scale(0.8);
+  		transform: scale(0.8);
+  		transition: transform 0.3s ease;
+  		z-index: -1;
+  		&_active{
+  			-webkit-transform: scale(1);
+  			-ms-transform: scale(1);
+  			transform: scale(1);
+  			opacity: 1;
+  			z-index: 5;
+  		}
     	&.flex{
     		flex-direction: column;
     		justify-content: center;
@@ -663,8 +722,8 @@ h3{
 		&::after{
 			content: url(../img/lines2.png);
 			position: absolute;
-			right: -61%;
-    		top: 40%;
+			left: 97%;
+    		bottom: 8%;
 			z-index: -1;
 		}
 		&_2{
@@ -760,6 +819,7 @@ h3{
 	&__tab{
 		margin-right: 25px;
 		cursor: pointer;
+		position: relative;
 		&:last-child{
 			margin-right: 0;
 		}
@@ -773,6 +833,56 @@ h3{
 				color: #fff;
 				background: #dc1837;
 			}
+			&::before, &::after{
+				position: absolute;
+		    	background: #dc1837;
+		    	height: 1px;
+		    	width: 0px;
+		    	content: " ";
+		    	-webkit-transition: all .3s ease;
+		    	-moz-transition: all .3s ease;
+		    	-ms-transition: all .3s ease;
+		    	-o-transition: all .3s ease;
+		    	transition: all .3s ease;
+			}
+			&::before{
+				bottom: 0;
+    			right: 0;
+			}
+			&::after{
+				top: 0;
+    			left: 0;
+			}
+		}
+		&::before, &::after{
+			position: absolute;
+		    background: #dc1837;
+		    height: 0;
+		    width: 1px;
+		    content: " ";
+		    -webkit-transition: all .3s ease;
+		    -moz-transition: all .3s ease;
+		    -ms-transition: all .3s ease;
+		    -o-transition: all .3s ease;
+		    transition: all .3s ease;
+		}
+		&::before{
+			bottom: 0;
+    		right: 0;
+		}
+		&::after{
+			top: 0;
+    		left: 0;
+		}
+		&:hover{
+			&::before, &::after{
+				height: 60%;
+			}
+			span{
+				&::before, &::after{
+					width: 90%;
+				}
+			}
 		}
 	}
 	&__item{
@@ -781,15 +891,26 @@ h3{
 		overflow: hidden;
 		position: relative;
 		margin-bottom: 6px;
-		transition: transform 0.6s ease;
+		transition: all 0.1s ease;
 		background-color: #000;
 		&:hover {
-  			-webkit-transform: scale(0.8);
+  			/*-webkit-transform: scale(0.8);
   			-ms-transform: scale(0.8);
-  			transform: scale(0.8);
+  			transform: scale(0.8);*/
+  			transform: scale(1.1);
+    		-webkit-transform: scale(1.1);
+    		-moz-transform: scale(1.1);
+    		-o-transform: scale(1.1);
+    		box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
+    		border: 1px solid #fff;
+    		z-index: 999;
+    		img{
+    			filter: blur(3px);
+    		}
 		}
 		img{
-			height: 100%;
+			width: 100%;
+			transition: all 0.1s ease;
 		}
 	}
 	&__name{
@@ -969,11 +1090,11 @@ h3{
 		margin-right: 45px;
 	}
 	&__info{
-		padding-top: 20px;
+		padding-top: 0;
 		h2{
 			color: #2c2a2b;
 			font: 17px GR;
-			margin-bottom: 25px;
+			margin-bottom: 8px;
 		}
 		p{
 			color: #2c2a2b;
@@ -991,6 +1112,7 @@ h3{
 	&__cont{
 		.slick-list{
 			margin: 0 -15px;
+			padding: 15px 0;
 		}
 		.slick-next, .slick-prev{
 			background: none;
@@ -1018,6 +1140,12 @@ h3{
 		background: #fff;
 		margin: 0 15px;
 		overflow: hidden;
+		transition: transform 0.3s ease;
+		&:hover{
+			-webkit-transform: scale(1.1);
+	    	-moz-transform: scale(1.1);
+	    	-o-transform: scale(1.1);
+		}
 		&.flex{
 			display: flex !important;
 			justify-content: center;
@@ -1186,6 +1314,8 @@ h3{
     		background: transparent;
     		border: 0;
     		margin-top: 20px;
+    		width: 89%;
+    		height: 110px;
     		&::placeholder{
     			font: 20px RL;
     			color: #fff;

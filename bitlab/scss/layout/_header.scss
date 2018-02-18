@@ -27,9 +27,30 @@ header{
 				a{
 					font: 1.1458333333333333VW RL;
 					color: #2c2a2b;
-    				padding: 3px 0;
+    				padding: 5px 0;
+    				position: relative;
+    				text-transform: uppercase;
+    				&::after{
+    					content: "";
+    					position: absolute;
+					    bottom: 0;
+					    left: 0;
+					    width: 100%;
+					    height: 2px;
+					    background: #dc1837;
+					    transition: 0.4s ease-in-out;
+					    -webkit-transform: scale(0.4, 1);
+					    -ms-transform: scale(0.4, 1);
+					    transform: scale(0.4, 1);
+					    opacity: 0;
+    				}
     				&:hover{
-    					border-bottom: 2px solid #dc1837;
+    					&::after{
+    						-webkit-transform: scale(1, 1);
+						    -ms-transform: scale(1, 1);
+						    transform: scale(1, 1);
+						    opacity: 1;
+    					}
     				}
 				}
 			}
@@ -88,6 +109,15 @@ header{
 	display: none;
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1600px){
+	.langs{
+		&__item{
+			span{
+				font: 11px RL;
+			}
+		}
+	}
+}
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	.header{
@@ -118,6 +148,15 @@ header{
 	}*/
 	.langs{
 		display: none;
+	    top: 2px;
+	    &__item{
+	    	img{
+	    		width: 13px;
+	    	}
+	    	span{
+	    		font: 8px RL;
+	    	}
+	    }
 	}
 }
 
