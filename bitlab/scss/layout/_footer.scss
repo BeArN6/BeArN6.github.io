@@ -57,19 +57,23 @@ footer{
 		ul{
 			list-style: none;
 			li{
-				width: 100%;
+				/*width: 100%;*/
 				margin-bottom: 15px;
-				&:hover{
+				/*&:hover{
 					a{
 						transform: translateX(10px);
 						color: #dc1837;
 					}
-				}
+				}*/
 				a{
 					color: #fff;
 					font: 22px RL;
 					transition: all 0.2s;
-					display: block;	
+					display: inline-block;
+					&:hover{
+						transform: translateX(10px);
+						color: #dc1837;
+					}
 				}
 			}
 		}
@@ -101,6 +105,14 @@ footer{
 			&::placeholder{
 				font: 18px RL;
 				color: #fff;
+			}
+		}
+		&_error{
+			border-color: #dc1837;
+			input{
+				&::placeholder{
+					color: #dc1837;
+				}
 			}
 		}
 	}
