@@ -61,7 +61,7 @@ footer{
 			/*font: 0.8854166666666666VW CT;*/
 			font: 13px CT;
 			/*padding: 5.4% 0;*/
-			height: 40px;
+			height: 54px;
 			letter-spacing: 0.06em;
 			transition: all 0.2s ease;
 			&:hover{
@@ -155,6 +155,7 @@ footer{
     		}
     		input[type="submit"]{
     			font-size: 13px;
+    			height: 40px;
     		}
 		}
 	}

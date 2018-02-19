@@ -125,7 +125,7 @@ h3{
 				padding: 0 15.2173915%;
 				position: relative;
 				&.active{
-					background: #286e9b;
+
 				}
 				&.flex{
 					justify-content: flex-start;
@@ -136,6 +136,7 @@ h3{
 					padding: 8.3% 0;
 				}
 				&:hover{
+					background: #286e9b;
 					.dropdown{
 						display: flex;
 					}
@@ -816,8 +817,7 @@ h3{
 		}
 	}
 	.banner{
-		padding-top: 32.5%;
-    	padding-bottom: 0;
+		padding: 50px 0;
 		&__text{
 			width: 90%;
 			padding: 8% 3.8% 8%;
@@ -830,6 +830,9 @@ h3{
 		}
 		&__right{
 			text-align: center;
+		}
+		&_1{
+			height: auto;
 		}
 		&_2{
 		    background: url(../img/banner.jpg) center 13% no-repeat;
