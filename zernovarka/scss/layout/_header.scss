@@ -246,13 +246,160 @@ header{
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-	
+	.header{
+		&__bottnav{
+			width: 560px;
+			ul{
+				li{
+					margin-right: 0;
+    				width: 50%;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.header{
+		&__topnav{
+			ul{
+				li{
+					margin-right: 19.5px;
+				}
+			}
+		}
+		&__cartinfo{
+			margin-right: 6px;
+		}
+		&__bott{
+			.wrapper{
+				&.flex{
+					justify-content: space-around;
+				}
+			}
+		}
+		&__bottnav{
+			&.flex{
+				justify-content: space-between;
+			}
+		}
+	}
+	.logo{
+		img{
+			width: 150px;
+		}
+	}
+	.callback{
+		width: 370px;
+		margin-right: 0;
+		button{
+			width: 155px;
+		}
+	}
+	.info{
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		&__top{
+			display: none;
+		}
+		&__bott{
+			.wrapper{
+				&.flex{
+					justify-content: space-around;
+				}
+			}
+		}
+		&__bottnav{
+			width: 100%;
+			ul{
+				li{
+					width: 100%;
+					display: none;
+					margin-right: 0;
+					&.toggle{
+						display: block;
+						position: relative;
+						&::after{
+							content: "";
+							position: absolute;
+							top: 7px;
+							right: 0;
+							display: block;
+							width: 28px;
+							height: 28px;
+							background: url(../img/menu.svg) center center no-repeat;
+							background-size: 100%;
+							filter: brightness(0) invert(1);
+						}
+					}
+				}
+			}
+		}
+		&__main{
+			padding: 14.5px 0;
+		}
+		&__cart{
+			margin-top: 12px;
+			order: 1;
+		}
+		&__cartimg{
+			width: 38px;
+    		height: 38px;
+    		margin-right: 5px;
+		}
+		&__cartinfo{
+			p{
+				font-size: 11px;
+				margin-bottom: 3px;
+			}
+			span{
+				font-size: 10px;
+				a{
+					margin-right: 5px;
+				}
+			}
+		}
+		&__searchcont{
+			input{
+				width: 50%;
+				&.toggle{
+					width: 27%;
+				}
+			}
+			span{
+				&.toggle{
+					&:first-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		&__sort{
+			width: 177px;
+		}
+		&__toggle{
+			width: auto;
+		}
+	}
+	.logo{
+		img{
+			width: 120px;
+		}
+	}
+	.callback{
+		order: 2;
+		margin-right: 0;
+    	width: 100%;
+    	max-width: 397px;
+    	button{
+    		width: 150px;
+    	}
+    	&__icon{
+    		display: none !important;
+    	}
+	}
 }
