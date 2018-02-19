@@ -159,4 +159,13 @@ $(window).load(function(){
     		$(this).parents('.contact__input').removeClass('contact__input_error');
     	}
 	});
+
+	var windWidth = $(window).width();
+	if(windWidth < 768){
+		$(".dropdown").hide();
+		$(".sidebar__nav ul li.active").not(".sidebar__nav ul li.active a").click(function(e){
+			$(this).children(".dropdown").slideToggle();
+		});
+	}
+
 });
