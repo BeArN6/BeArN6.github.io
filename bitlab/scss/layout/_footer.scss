@@ -214,8 +214,8 @@ footer{
 		justify-content: flex-start;
 	}
 	a{
-		width: 47px;
-		height: 47px;
+		width: 58px;
+		height: 58px;
 		background: #979798;
 		margin-right: 30px;
 		transition: all 0.3s ease;
@@ -225,10 +225,19 @@ footer{
 		&.flex{
 			justify-content: center;
 		}
-		&:hover{
-			background: #fff;
-			img{
-				filter: invert(1);
+		&:first-child{
+			&:hover{
+				background: #0a6c85;
+			}
+		}
+		&:nth-child(2){
+			&:hover{
+				background: #8c07d1;
+			}
+		}
+		&:last-child{
+			&:hover{
+				background: #0f5ba3;
 			}
 		}
 	}

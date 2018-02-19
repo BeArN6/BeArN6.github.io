@@ -58,7 +58,7 @@ h3{
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
-.icon-load{background:url(../img/loader.gif) no-repeat left top;background-size: 100%;width:506px;height:300px;position:fixed;left:50%;top:50%;margin-left: -253px;margin-top:-150px;display:none;}
+.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
 .loaded .icon-load{display:block;}
 
 
@@ -67,6 +67,9 @@ h3{
 |                                     CONTENT                                 |
 ================================================================================
 */
+body{
+	height: auto;
+}
 .content{	
 	order: 2;
     -webkit-order: 2;
@@ -78,12 +81,24 @@ h3{
 	flex-wrap: wrap;
 }
 .banner{
-	background: url(../img/town.jpg) no-repeat;
-    background-size: calc(100% + 50px);
+	/*background: url(../img/town.jpg) no-repeat;*/
+   /* background-size: calc(100% + 50px);*/
+   	background: transparent;
     height: 700px;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 0 0 9999px rgba(206,206,206,0.7) inset;
+	z-index: 3;
+	&__town{
+		position: absolute;
+		right: -2%;
+    	top: -6%;
+		z-index: 1;
+		width: 105%;
+	}
+	/*&:hover{
+		transform: translate3d(-22.0392px, -16.2519px, 0px);
+    	transform-style: preserve-3d;
+	}*/
 	&::before{
 		content: "";
 		position: absolute;
@@ -292,6 +307,26 @@ h3{
 			transform: rotate(180deg);
 		}
 	}
+	&__slider2{
+		width: 118px;
+		.slick-list{
+			margin: 0;
+		}
+		.slick-next{
+			right: -17px;
+			transform: rotate(180deg);
+			img{
+				width: auto;
+			}
+		}
+		.slick-prev{
+			left: -17px;
+			transform: none;
+			img{
+				width: auto;
+			}
+		}
+	}
 	&__member{
 		width: 360px;
 		margin: 0 15px !important;
@@ -328,6 +363,7 @@ h3{
 		}
 		img{
 			margin: 0 2px;
+			max-width: 55px;
 		}
 	}
 	&__info{
@@ -357,18 +393,10 @@ h3{
 		width: 263px;
 		height: 152px;
 		background-color: #fff;
-		border: 1px solid #bdbdbd;
+		/*border: 1px solid #bdbdbd;*/
 		background-repeat: no-repeat;
 		background-position: 107% bottom;
 		cursor: pointer;
-		&:hover{
-			span{
-				transform: scale(1.2);
-	    		-webkit-transform: scale(1.2);
-	    		-moz-transform: scale(1.2);
-	    		-o-transform: scale(1.2);
-			}
-		}
 		&.flex{
 			justify-content: center;
 			flex-direction: column;
@@ -384,6 +412,20 @@ h3{
 			color: #2c2a2b;
 			text-align: center;
 		}
+	}
+}
+.spincrement1{
+	&::after{
+		content: "+";
+		font: 52px GR;
+		color: #dc1837;
+	}
+}
+.spincrement4{
+	&::after{
+		content: "+";
+		font: 52px GR;
+		color: #dc1837;
 	}
 }
 .title{
@@ -412,6 +454,11 @@ h3{
 .services{
 	padding: 60px 0 50px;
 	background: #fff;
+	.scale{
+		-webkit-transform: scale(1.08);
+    	transform: scale(1.08);
+    	transition: .25s;
+	}
 	&__top{
 		margin-bottom: 85px;
 	}
@@ -466,6 +513,7 @@ h3{
 		position: relative;
 		padding-bottom: 7px;
 		overflow: hidden;
+		transition: .25s;
 		&::after{
 			content: url(../img/bg-serv.png);
 			position: absolute;
@@ -529,6 +577,8 @@ h3{
 	&__main{
 		padding-top: 30px;
 		position: relative;
+		padding-bottom: 75px;
+		height: calc(100% - 111px);
 	}
 	&__row{
 		border-bottom: 1px solid #e4e4e4;
@@ -587,7 +637,8 @@ h3{
 		border: 0;
 		margin: 4px 16px;
 		cursor: pointer;
-		position: relative;
+		position: absolute;
+		bottom: 6px;
 		z-index: 4;
 		overflow: hidden;
 		&::before{
@@ -612,7 +663,7 @@ h3{
     	padding: 15px 10px;
     	position: absolute;
     	left: 5px;
-    	bottom: -8px;
+    	bottom: 0;
     	z-index: 5;
     	width: calc(100% - 10px);
     	height: 295px;
@@ -634,6 +685,8 @@ h3{
     	button{
     		margin: 0;
     		width: 100%;
+    		position: relative;
+    		bottom: 0;
     	}
     }
     &__order{
@@ -641,7 +694,7 @@ h3{
     	-webkit-transform: scale(0.8);
   		-ms-transform: scale(0.8);
   		transform: scale(0.8);
-  		transition: transform 0.3s ease;
+  		transition: all 0.3s ease;
   		z-index: -1;
   		&_active{
   			-webkit-transform: scale(1);
@@ -895,7 +948,8 @@ h3{
 			background: none;
     		border: 0;
     		position: absolute;
-    		top: 42%;
+    		top: 50%;
+    		margin-top: -29px;
     		z-index: 5;
     		transition: filter 0.2s ease-in-out;
 			&:hover{
@@ -926,17 +980,53 @@ h3{
     		-webkit-transform: scale(1.1);
     		-moz-transform: scale(1.1);
     		-o-transform: scale(1.1);
-    		box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
-    		border: 1px solid #fff;
+    		/*box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
+    		border: 1px solid #fff;*/
     		z-index: 999;
     		img{
     			filter: blur(3px);
+    		}
+    		&::before{
+    			content: "";
+    			box-shadow: 0 0 0 9999px rgba(0,0,0,0.3) inset;
+    			width: 360px;
+    			height: 200px;
+    			position: absolute;
+    			z-index: 1;
+    			width: 500px;
+    			height: 500px;
+    		}
+    		.portfolio__info, .portfolio__link{
+    			opacity: 1;
     		}
 		}
 		img{
 			width: 100%;
 			transition: all 0.1s ease;
 		}
+	}
+	&__info{
+		width: 240px;
+	    height: 150px;
+	    position: absolute;
+	    z-index: 2;
+	    left: 15px;
+	    top: 20px;
+	    opacity: 0;
+		p{
+			color: #fff;
+    		font: 16px/25px RL;
+		}
+	}
+	&__link{
+		color: #fff;
+	    font: 16px/25px RL;
+	    text-decoration: underline;
+	    position: absolute;
+	    z-index: 2;
+	    left: 150px;
+	    bottom: 13px;
+	    opacity: 0;
 	}
 	&__name{
 		font: 17.75px GR;
@@ -947,11 +1037,13 @@ h3{
 		position: absolute;
 		bottom: 8px;
 		left: 8px;
+		z-index: 2;
 	}
 	&__tags{
 		position: absolute;
 		top: 13px;
 		right: 9px;
+		z-index: 2;
 		&.flex{
 			flex-direction: column;
 			justify-content: center;
@@ -1188,7 +1280,7 @@ h3{
 	top: 0%;
 	/*left: 50%;*/
 	background-color: #1d1d1d;
-	background-image: url(../img/modal-bg.png);
+	background-image: url(../img/modal-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	z-index: 9999;
@@ -1401,7 +1493,7 @@ h3{
 	}
 }
 .modal-send2, .modal-2{
-	background-image: url(../img/modal-2.png);
+	background-image: url(../img/modal-2.jpg);
 }
 .overlay{
 	display: none;
@@ -1936,6 +2028,7 @@ h3{
 @media screen and (max-width: 767px) {
 	.banner{
 		height: 360px !important;
+		background: url(../img/town.jpg) no-repeat;
 		background-position: right;
 		padding-bottom: 20px;
 		background-size: cover;
@@ -1960,6 +2053,9 @@ h3{
     		height: 50px;
     		font: 16px/30px RL;
     		margin-top: 25px;
+		}
+		&__town{
+			display: none;
 		}
 	}
 	.line{

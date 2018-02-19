@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 </head>
 <body class="loaded">
 
@@ -29,6 +30,7 @@
 			<a href="#ex1" class="mouse"><img src="img/mouse.png" alt="" ></a>
 			<img src="img/line_1.png" alt="" class="line_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
 			<img src="img/line_2.png" alt="" class="line_2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+			<img src="img/town.jpg" alt="" class="banner__town">
 		</div>
 		<div class="aboutus" id="ex1">
 			<div class="wrapper">
@@ -94,8 +96,8 @@
 						</div>
 						<div class="team__memberinfo flex">
 							<div class="team__sert flex">
-								<img src="img/sert.jpg" alt="">
-								<img src="img/sert.jpg" alt="">
+								<a data-fancybox="gallery" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
+								<a data-fancybox="gallery" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
 							</div>
 							<div class="team__info flex">
 								<p class="team__membername">Алина Пирожкова</p>
@@ -110,7 +112,7 @@
 						</div>
 						<div class="team__memberinfo flex">
 							<div class="team__sert flex">
-								<img src="img/sert.jpg" alt="">
+								<a data-fancybox="gallery2" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
 							</div>
 							<div class="team__info flex">
 								<p class="team__membername">АРТЕМ СОРОКИН</p>
@@ -125,8 +127,11 @@
 						</div>
 						<div class="team__memberinfo flex">
 							<div class="team__sert flex">
-								<img src="img/sert.jpg" alt="">
-								<img src="img/sert.jpg" alt="">
+								<div class="team__slider2">
+									<a data-fancybox="gallery2" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
+									<a data-fancybox="gallery2" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
+									<a data-fancybox="gallery2" href="img/sert.jpg" class="fancy123"><img src="img/sert.jpg" alt=""></a>
+								</div>
 							</div>
 							<div class="team__info flex">
 								<p class="team__membername">Антонио бандерас</p>
@@ -151,27 +156,27 @@
 						</div>
 					</div>
 				</div>
-				<div class="team__items flex">
+				<div class="team__items flex" id="counter">
 					<div class="team__item team__item_1 flex wow zoomInRight" data-wow-duration="2s" data-wow-delay="0.5s">
-						<span>350+</span>
+						<span class="spincrement1 counter-value" data-count="350">0</span>
 						<p>Выполненных <br> проектов</p>
 					</div>
 					<div class="team__item team__item_2 flex wow zoomInRight" data-wow-duration="2s" data-wow-delay="0.9s">
-						<span>58</span>
+						<span class="spincrement2 counter-value" data-count="58">0</span>
 						<p>Человек <br> в команде</p>
 					</div>
 					<div class="team__item team__item_3 flex wow zoomInRight" data-wow-duration="2s" data-wow-delay="1.3s">
-						<span>150+</span>
+						<span class="spincrement3 counter-value" data-count="150">0</span>
 						<p>Сайтов <br> продвинуто</p>
 					</div>
-					<div class="team__item team__item_4 flex wow zoomInRight" data-wow-duration="2s" data-wow-delay="1.7s">
-						<span>5</span>
+					<div class="team__item team__item_4 flex wow zoomInRight" data-wow-duration="2s" data-wow-delay="1.7s" >
+						<span class="spincrement4 counter-value" data-count="5">0</span>
 						<p>Лет опыта<br> на рынке</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="services">
+		<div class="services" id="ex2">
 			<div class="wrapper">
 				<div class="title flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
 					<h2>предоставляемые нами услуги</h2>
@@ -1223,7 +1228,7 @@
 			</div>
 		</div>
 
-		<div class="portfolio">
+		<div class="portfolio" id="ex3">
 			<div class="wrapper">
 				<div class="title flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
 					<h2>Портфолио</h2>
@@ -1257,6 +1262,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1265,6 +1274,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1273,6 +1286,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1281,6 +1298,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1289,6 +1310,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1297,6 +1322,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1305,6 +1334,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1313,6 +1346,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1321,6 +1358,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 					</div>
@@ -1331,6 +1372,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1339,6 +1384,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1347,6 +1396,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1355,6 +1408,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1363,6 +1420,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1371,6 +1432,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1379,6 +1444,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1387,6 +1456,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 						<div class="portfolio__item">
@@ -1395,6 +1468,10 @@
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
+							<div class="portfolio__info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit deleniti dolorum, id minima architecto deserunt</p>
+							</div>
+							<a href="" class="portfolio__link">Посетить</a>
 							<p class="portfolio__name">Название</p>
 						</div>
 					</div>
@@ -1425,7 +1502,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf4.png" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1472,7 +1549,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="portfolio__items flex">
 						<div class="portfolio__item">
@@ -1499,7 +1576,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf4.png" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1546,7 +1623,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="portfolio__slider portfolio__items_3">
@@ -1583,7 +1660,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1622,7 +1699,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="portfolio__items flex">
 						<div class="portfolio__item">
@@ -1657,7 +1734,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1696,7 +1773,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="portfolio__slider portfolio__items_4">
@@ -1741,7 +1818,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf5.png" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1772,7 +1849,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="portfolio__items flex">
 						<div class="portfolio__item">
@@ -1815,7 +1892,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf5.png" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1846,7 +1923,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="portfolio__slider portfolio__items_5">
@@ -1907,7 +1984,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf7.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1922,7 +1999,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="portfolio__items flex">
 						<div class="portfolio__item">
@@ -1981,7 +2058,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf7.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -1996,7 +2073,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="portfolio__slider portfolio__items_6">
@@ -2049,7 +2126,7 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
@@ -2072,7 +2149,7 @@
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="portfolio__items flex">
 						<div class="portfolio__item">
@@ -2139,19 +2216,19 @@
 							</div>
 							<p class="portfolio__name">Название</p>
 						</div>
-						<div class="portfolio__item">
+						<!-- <div class="portfolio__item">
 							<img src="img/portf6.jpg" alt="">
 							<div class="portfolio__tags flex">
 								<span class="active">Web</span>
 								<span>seo</span>
 							</div>
 							<p class="portfolio__name">Название</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>	
-		<div class="comments">
+		<div class="comments" id="ex4">
 			<div class="wrapper">
 				<div class="title flex wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
 					<h2>отзывы наших клиентов</h2>
@@ -2165,17 +2242,17 @@
 						</div>
 						<div class="comments__videos">
 							<div class="comments__video">
-								<video id="" video autoplay loop muted>
+								<video id="" video loop onclick="this.paused ? this.play() : this.pause();">
 									<source src="img/big_buck_bunny.mp4" type="video/mp4">
 								</video>
 							</div>
 							<div class="comments__video">
-								<video id="slick-video" video autoplay loop muted>
+								<video id="slick-video" video loop onclick="this.paused ? this.play() : this.pause();">
 									<source src="img/big_buck_bunny.mp4" type="video/mp4">
 								</video>
 							</div>
 							<div class="comments__video">
-								<video id="slick-video" video autoplay loop muted>
+								<video id="slick-video" video loop onclick="this.paused ? this.play() : this.pause();">
 									<source src="img/big_buck_bunny.mp4" type="video/mp4">
 								</video>
 							</div>
@@ -2236,22 +2313,22 @@
 					<img src="img/line2.png" alt="">
 				</div>
 				<div class="clients__cont">
-					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.8s">
-						<img src="img/client1.png" alt="">
-					</div>
-					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
-						<img src="img/client2.jpg" alt="">
-					</div>
-					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-						<img src="img/client3.jpg" alt="">
-					</div>
-					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
 						<img src="img/client1.png" alt="">
 					</div>
 					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
 						<img src="img/client2.jpg" alt="">
 					</div>
-					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+						<img src="img/client3.jpg" alt="">
+					</div>
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+						<img src="img/client1.png" alt="">
+					</div>
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+						<img src="img/client2.jpg" alt="">
+					</div>
+					<div class="clients__item flex wow fadeIn" data-wow-duration="1s" data-wow-delay="1.8s">
 						<img src="img/client3.jpg" alt="">
 					</div>
 					<div class="clients__item flex">
@@ -2432,11 +2509,11 @@
 			</a>
 			<nav class="header__nav">
 				<ul class="flex">
-					<li><a href="">О нас</a></li>
-					<li><a href="">Услуги</a></li>
-					<li><a href="">Портфолио</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Контакты</a></li>
+					<li><a href="#ex1">О нас</a></li>
+					<li><a href="#ex2">Услуги</a></li>
+					<li><a href="#ex3">Портфолио</a></li>
+					<li><a href="#ex4">Отзывы</a></li>
+					<li><a href="#ex5">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="phone">
@@ -2460,7 +2537,7 @@
 
 <!-- BEGIN FOOTER -->	
 	
-	<footer>
+	<footer id="ex5">
 		<div class="footer__bott">
 			<div class="wrapper flex">
 				<div class="footer__box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -2544,12 +2621,14 @@
 	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>		
 	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script>
 	<!--
-	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+	</script>
 	<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
 	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
 	-->
 	<script type="text/javascript" src="js/custom.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/components/slick.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/components/wow.min.js" ></script>
 </body>
 </html>
