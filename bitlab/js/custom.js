@@ -170,6 +170,7 @@ $(window).load(function(){
 		slidesToShow: 1,
   		slidesToScroll: 1,
   		arrows: true,
+  		dots: true,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png' /></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev.png' /></button>"
 	});
@@ -177,6 +178,7 @@ $(window).load(function(){
 		slidesToShow: 1,
   		slidesToScroll: 1,
   		arrows: true,
+  		dots: true,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev.png' /></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev.png' /></button>"
 	});
@@ -406,18 +408,45 @@ $(window).load(function(){
 
 	
 	$(".portfolio__tab").click(function(){
-		var tabId = $(this).attr("tab-id");
-		$(".portfolio__slider").hide();
+		var tabId = $(this).attr("id");
+		$(".portfolio__items").hide();
 		$(".portfolio__items_" + tabId).show();
 		$(this).siblings().removeClass("portfolio__tab_active");
 		$(this).addClass("portfolio__tab_active");
+		var nOfChildren = $(".portfolio__items_" + tabId).children(".portfolio__item");
+		var nOfChildrenShow = $(".portfolio__items_" + tabId).children(".portfolio__item_show");
+		if(nOfChildren - nOfChildrenShow < 9){
+			$(".portfolio__items_" + tabId).children(".show-more").remove();
+		}
+		if(nOfChildren.length > 9){
+			$(".portfolio__items_" + tabId).children(".portfolio__item:lt(9)").addClass("portfolio__item_show");
+		} else{
+			nOfChildren.addClass("portfolio__item_show");
+		}
 	});
-	$(".portfolio__slider").slick({
-		arrows: true,
-		slidesToShow: 1,
-		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/next.png' /></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/next.png' /></button>"
+	$(".portfolio__items").each(function(){
+		var numberOfItems = $(this).children(".portfolio__item").length;
+		if(numberOfItems > 9){
+			$("<button class='show-more'>Показать еще</button>").appendTo($(this));
+		}
 	});
+	$(".show-more").click(function(){
+        var numberOfServs = $(this).siblings(".portfolio__item_show").length;
+        var numberOfServs2 = $(this).siblings(".portfolio__item").length;
+        if(numberOfServs2 - numberOfServs < 10){
+        	$(this).hide();
+        	$(this).siblings(".portfolio__item").slice(0, numberOfServs+9).addClass('portfolio__item_show');
+        }
+    });
+	// $(".portfolio__slider").slick({
+	// 	arrows: true,
+	// 	slidesToShow: 1,
+	// 	prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/next.png' /></button>",
+ //        nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/next.png' /></button>"
+	// });
+
+	$(".portfolio__item:lt(9)").addClass('portfolio__item_show');
+
 	$(".team__slider2").slick({
 		arrows: true,
 		slidesToShow: 2,
@@ -425,7 +454,7 @@ $(window).load(function(){
 		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/team-arrow.png' /></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/team-arrow.png' /></button>"
 	});
-	$(".portfolio__slider").not(".portfolio__items_1").hide();
+	$(".portfolio__items").not(".portfolio__items_1").hide();
 
 	$(".langs__item").click(function(){
 		$(this).siblings().removeClass("langs__item_active");
@@ -469,6 +498,17 @@ $(window).load(function(){
 	// 	function myHandler(e) {
 	// 		$('.comments__videos').slick('slickPlay');
 	// 	}
+
+	//Fancy
+	$(".fancy123").click(function(e){
+		e.preventDefault();
+		var imgLink = $(this).attr("href");
+		$(".originalimg img").attr("src", imgLink);
+		$(".originalimg").addClass("originalimg_active");
+	});
+	$(".originalimg__close").click(function(){
+		$(".originalimg").removeClass("originalimg_active");
+	});
 });
 
 $(window).resize(function(){

@@ -181,6 +181,7 @@ body{
 		width: 54.947917%;
 		top: 53.571429%;
 		right: 20.989583%;
+		z-index: 5;
 	}
 }
 .mouse{
@@ -313,7 +314,7 @@ body{
 			margin: 0;
 		}
 		.slick-next{
-			right: -17px;
+			right: -19px;
 			transform: rotate(180deg);
 			img{
 				width: auto;
@@ -330,7 +331,7 @@ body{
 	&__member{
 		width: 360px;
 		margin: 0 15px !important;
-		border: 1px solid #bdbdbd;
+		/*border: 1px solid #bdbdbd;*/
 		&_2{
 			.team__memberimg{
 				img{
@@ -396,7 +397,7 @@ body{
 		/*border: 1px solid #bdbdbd;*/
 		background-repeat: no-repeat;
 		background-position: 107% bottom;
-		cursor: pointer;
+		/*cursor: pointer;*/
 		&.flex{
 			justify-content: center;
 			flex-direction: column;
@@ -412,6 +413,37 @@ body{
 			color: #2c2a2b;
 			text-align: center;
 		}
+	}
+}
+.originalimg{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 0 0 9999px rgba(0,0,0,0.5) inset;
+	z-index: 9999;
+	display: none;
+	opacity: 0;
+	transition: all 0.3s ease;
+	&__close{
+		position: absolute;
+		right: 30px;
+		top: 15px;
+		transform: rotate(45deg);
+		color: #fff;
+		font: 60px RL;
+		cursor: pointer;
+	}
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+	&_active{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 1;
 	}
 }
 .spincrement1{
@@ -941,7 +973,7 @@ body{
 		}
 	}
 	&__items{
-		display: flex !important;
+		display: flex;
 	}
 	&__slider{
 		.slick-next, .slick-prev{
@@ -972,6 +1004,10 @@ body{
 		margin-bottom: 6px;
 		transition: all 0.1s ease;
 		background-color: #000;
+		display: none;
+		&_show{
+			display: block;
+		}
 		&:hover {
   			/*-webkit-transform: scale(0.8);
   			-ms-transform: scale(0.8);
@@ -1019,14 +1055,14 @@ body{
 		}
 	}
 	&__link{
-		color: #fff;
-	    font: 16px/25px RL;
-	    text-decoration: underline;
 	    position: absolute;
 	    z-index: 2;
 	    left: 150px;
-	    bottom: 13px;
+	    bottom: 11px;
 	    opacity: 0;
+	    img{
+	    	filter: none !important;
+	    }
 	}
 	&__name{
 		font: 17.75px GR;
@@ -1062,6 +1098,37 @@ body{
 			}
 		}
 	}
+}
+.show-more{
+	font: 19px/30px RL;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    width: 231px;
+    height: 67px;
+    display: block;
+    background: #dc1837;
+    border: 0;
+    margin: 25px auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &::before{
+    	content: "";
+	    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.1) inset;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 400px;
+	    height: 70px;
+	    transform: translateX(-400px);
+	    transition: transform 0.4s ease;
+    }
+    &:hover{
+    	&::before{
+    		transform: translateX(0);
+    	}
+    }
 }
 .comments{
 	padding-top: 60px;
@@ -1131,8 +1198,10 @@ body{
 		height: 400px;
 		background: #fff;
 		position: relative;
+		display: flex !important;
 		video{
-			width: 100%;
+			/*width: 100%;*/
+			object-fit: fill;
 			height: auto;
 			position: relative;
 			&::after{
@@ -1212,8 +1281,9 @@ body{
 		align-items: center;
 		position: absolute;
 		bottom: -37px;
-		left: 50%;
-		margin-left: -37.5px;
+		left: 0;
+    	width: 100%;
+    	margin-left: 0;
 		li{
 			padding: 0;
 			width: 14px;
@@ -1236,6 +1306,22 @@ body{
 			}
 		}	
 	}
+	&__videos{
+		.slick-prev{
+			left: 170px;
+		}
+		.slick-next{
+			right: 170px;
+		}
+	}
+	&__slider{
+		.slick-prev{
+			left: 45px;
+		}
+		.slick-next{
+			right: 45px;
+		}
+	}
 }
 .comment{
 	border: 1px solid #dedede;
@@ -1245,8 +1331,19 @@ body{
 	background: #fff;
 	&__top{
 		margin-bottom: 35px;
+		position: relative;
 		&.flex{
 			justify-content: flex-start;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			width: 55px;
+			height: 46px;
+			background: url(../img/quote.png) center center no-repeat;
+			top: 50%;
+			margin-top: -23px;
+			right: 35px;
 		}
 	}
 	&__img{
@@ -1558,7 +1655,7 @@ body{
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
+    body{min-height: 100vh; width: 100%; display: flex; flex-direction: column;}
 }
 @media screen and (min-width: 768px){
 	.comments{

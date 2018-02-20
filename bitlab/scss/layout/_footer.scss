@@ -225,7 +225,13 @@ footer{
 		&.flex{
 			justify-content: center;
 		}
-		&:first-child{
+		&:hover{
+			background: #fff;
+			img{
+				filter: grayscale(1) invert(1);
+			}
+		}
+		/*&:first-child{
 			&:hover{
 				background: #0a6c85;
 			}
@@ -239,7 +245,7 @@ footer{
 			&:hover{
 				background: #0f5ba3;
 			}
-		}
+		}*/
 	}
 }
 
