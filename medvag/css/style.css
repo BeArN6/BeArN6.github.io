@@ -186,18 +186,13 @@ footer {
 .contact__input {
   position: relative;
   width: 28%;
-  /*width: 295px;*/
   margin-right: 3%;
-  /*margin-right: 35px;*/
 }
 .contact__input label {
   color: #41474e;
-  /*font: 0.8854166666666666VW CT;*/
   font: 17px CT;
   position: absolute;
   letter-spacing: 0.06em;
-  			/*top: 29%;
-      		left: 7%;*/
   top: 17px;
   left: 20px;
 }
@@ -206,26 +201,21 @@ footer {
 }
 .contact__input input[type="text"] {
   color: #41474e;
-  /*font: 0.8854166666666666VW CT;*/
   font: 17px CT;
   border: 1px solid #e2e2e2;
   background: #fff;
-  /*padding: 5.4% 6.6%;*/
   padding: 0 19px;
   height: 54px;
   width: 100%;
 }
 .contact__input input[type="submit"] {
   width: 100%;
-  /*height: 100%;*/
   padding: 0;
   background: #135b89;
   border: 0;
   color: #fff;
   text-transform: uppercase;
-  /*font: 0.8854166666666666VW CT;*/
   font: 13px CT;
-  /*padding: 5.4% 0;*/
   height: 54px;
   letter-spacing: 0.06em;
   transition: all 0.2s ease;
@@ -466,7 +456,6 @@ h3 {
   padding-top: 3%;
   padding-bottom: 3%;
   position: fixed;
-  /*overflow: auto;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -475,7 +464,6 @@ h3 {
 .sidebar .logo {
   width: 69.565217%;
   margin: 0 auto;
-  /*margin-bottom: 37%;*/
 }
 .sidebar .logo.flex {
   justify-content: flex-start;
@@ -500,7 +488,6 @@ h3 {
   display: none;
 }
 .sidebar__nav {
-  /*padding-bottom: 18%;*/
   width: 100%;
 }
 .sidebar__nav ul {
@@ -532,10 +519,8 @@ h3 {
   margin: 0 auto;
 }
 .sidebar__info {
-  /*border-top: 1px solid #6197ba;*/
   width: 70.565217%;
   margin: 0 auto;
-  /*padding-top: 19%;*/
   padding-left: 2%;
 }
 .sidebar__info p {
@@ -829,7 +814,6 @@ h3 {
   background: #fff;
   z-index: 9999;
   border-radius: 0;
-  /*overflow: hidden;*/
 }
 .modal-form .title_3 {
   margin-bottom: 20px;
@@ -910,7 +894,6 @@ h3 {
 }
 .products__img {
   width: 54%;
-  /*padding: 5% 0;*/
   margin-right: 4.4%;
   background: #fff;
   border: 1px solid #e2e2e2;
@@ -1001,11 +984,7 @@ h3 {
   }
   .sidebar__nav {
     display: none;
-    /*width: 240px;
-    height: 322px;
-    padding-top: 85px;*/
     background: #135b89;
-    /*position: absolute;*/
     top: 0;
     right: 0;
     z-index: 2;
@@ -1018,9 +997,6 @@ h3 {
   .sidebar__nav ul li {
     padding: 0;
     padding-left: 35px;
-    /*&.active{
-    	display: none;
-    }*/
   }
   .sidebar__nav ul li a {
     font-size: 17px;
@@ -1105,11 +1081,6 @@ h3 {
     right: 17px;
     top: 25px;
     z-index: 5;
-    /*&_active{
-    	span{
-    		background: #fff;
-    	}
-    }*/
   }
   .toggle span {
     display: block;
