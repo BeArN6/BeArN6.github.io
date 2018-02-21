@@ -5,9 +5,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Главная</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />	
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/animate.css">
+	
 </head>
 <body class="loaded">
 
@@ -2667,7 +2665,24 @@
 <div class="icon-load"></div>		
 
 <!-- BODY EOF   -->
-	
+	<noscript id="deferred-styles">
+    	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/animate.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
 	<script src="js/jquery-3.0.0.min.js"></script>		
 	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
 	<!--
