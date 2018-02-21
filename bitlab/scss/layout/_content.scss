@@ -234,7 +234,7 @@ body{
 		}
 		&_3{
 			.after{
-				content: url(../img/ab-line3.png);
+				/*content: url(../img/ab-line3.png);*/
 				position: absolute;
 				left: -35px;
     			top: -137px;
@@ -293,7 +293,8 @@ body{
 			background: none;
     		border: 0;
     		position: absolute;
-    		top: 42%;
+    		top: 50%;
+    		margin-top: -11px;
     		z-index: 5;
     		transition: filter 0.2s ease-in-out;
 			&:hover{
@@ -421,8 +422,7 @@ body{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	box-shadow: 0 0 0 9999px rgba(0,0,0,0.5) inset;
-	z-index: 9999;
+	z-index: 9995;
 	display: none;
 	opacity: 0;
 	transition: all 0.3s ease;
@@ -434,16 +434,34 @@ body{
 		color: #fff;
 		font: 60px RL;
 		cursor: pointer;
+		z-index: 9999;
 	}
 	img{
 		max-width: 100%;
 		max-height: 100%;
+		z-index: 9999;
+		position: relative;
+		user-select: none;
+		/*display: none;*/
 	}
 	&_active{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		opacity: 1;
+	}
+	&__overlay{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-shadow: 0 0 0 9999px rgba(0,0,0,0.5) inset;
+		opacity: 0;
+		z-index: 9997;
+		&_active{
+			opacity: 1;
+		}
 	}
 }
 .spincrement1{
@@ -913,7 +931,7 @@ body{
 			color: #2c2a2b;
 			background: none;
 			display: inline-block;
-			padding: 7.5px 25px;
+			padding: 7.5px 24.5px;
 			&::before, &::after{
 				position: absolute;
 		    	background: #dc1837;
@@ -1242,6 +1260,7 @@ body{
     		p{
     			color: #fff;
     			font: 16px/25px RL;
+    			max-width: 100%;
     		}
 		}
 		&:hover{
@@ -1380,7 +1399,8 @@ body{
 			background: none;
     		border: 0;
     		position: absolute;
-    		top: 19%;
+    		top:50%;
+    		margin-top: -29px;
     		z-index: 5;
     		transition: filter 0.2s ease-in-out;
 			&:hover{
@@ -1392,7 +1412,9 @@ body{
 		}
 		.slick-prev{
 			left: -90px;
-			transform: rotate(180deg);
+			img{
+				transform: rotate(180deg);
+			}
 		}
 	}
 	&__item{
@@ -1466,6 +1488,14 @@ body{
 				}
 			}
 		}
+	}
+}
+.modal{
+	&_active{
+		opacity: 1;
+		top: 0;
+		display: block;
+		transition: all 0.3s ease;
 	}
 }
 .modal{
