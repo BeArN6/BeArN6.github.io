@@ -547,6 +547,6 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 	if (!div.is(e.target) // если клик был не по нашему блоку
 	    && div.has(e.target).length === 0 && !div2.is(e.target) ) { // и не по его дочерним элементам
 		div.show();
-		div.siblings(".services__form").hide();
+		div.siblings(".services__success").removeClass("services__success_active");
 	}
 });

@@ -166,6 +166,7 @@ header {
   padding: 1% 1% 1.4%;
   position: relative;
   width: 60.9375%;
+  max-width: 100%;
 }
 .header__nav {
   width: 60.1%;
@@ -178,12 +179,12 @@ header {
   color: #2c2a2b;
   /*padding: 23% 0;*/
   position: relative;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 .header__nav ul li a::after {
   content: "";
   position: absolute;
-  bottom: -114%;
+  bottom: -121%;
   left: 0;
   width: 100%;
   height: 20%;
@@ -1264,16 +1265,39 @@ body {
   height: 136px;
   background: #e4e4e4;
   cursor: pointer;
-}
-.services__item.flex {
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 .services__item p {
   font: 17px RL;
   text-align: center;
   color: #2c2a2b;
   margin-top: 10px;
+}
+.services__item::before, .services__item::after {
+  position: absolute;
+  background: #dc1837;
+  height: 0;
+  width: 1px;
+  content: " ";
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.services__item::before {
+  bottom: 0;
+  right: 0;
+}
+.services__item::after {
+  top: 0;
+  left: 0;
+}
+.services__item:hover:not(.services__item_active)::before, .services__item:hover:not(.services__item_active)::after {
+  height: 90%;
+}
+.services__item:hover:not(.services__item_active) .services__cont::before, .services__item:hover:not(.services__item_active) .services__cont::after {
+  width: 90%;
 }
 .services__item_active {
   background: #dc1837;
@@ -1285,14 +1309,47 @@ body {
 .services__item_active p {
   color: #fff;
 }
+.services__item_active::before {
+  content: "";
+}
 .services__item_active::after {
   content: "";
   position: absolute;
   border: 11px solid transparent;
   border-top: 11px solid #dc1837;
+  top: auto;
+  background: none;
   bottom: -22px;
   left: 50%;
   margin-left: -11px;
+}
+.services__cont {
+  height: 100%;
+  width: 100%;
+}
+.services__cont.flex {
+  flex-direction: column;
+  justify-content: center;
+}
+.services__cont::before, .services__cont::after {
+  position: absolute;
+  background: #dc1837;
+  height: 1px;
+  width: 0px;
+  content: " ";
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.services__cont::before {
+  bottom: 0;
+  right: 0;
+}
+.services__cont::after {
+  top: 0;
+  left: 0;
 }
 .services__item1 {
   width: 263px;
@@ -1426,6 +1483,36 @@ body {
   bottom: 6px;
   z-index: 4;
   overflow: hidden;
+  /*display: inline-block;*/
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /*box-shadow: 0 0 1px transparent;*/
+  /*position: relative;*/
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  /*&::before{
+  	content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2098D1;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+  }*/
 }
 .services__buy::before {
   content: "";
@@ -1437,6 +1524,14 @@ body {
   height: 70px;
   transform: translateX(-400px);
   transition: transform 0.4s ease;
+}
+.services__buy:hover {
+  /*&::before{
+  	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
+  	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }*/
 }
 .services__buy:hover::before {
   transform: translateX(0);
@@ -1481,9 +1576,10 @@ body {
   z-index: -1;
 }
 .services__order_active {
-  -webkit-transform: scale(1);
+  /*-webkit-transform: scale(1);
   -ms-transform: scale(1);
-  transform: scale(1);
+  transform: scale(1);*/
+  transform: none;
   opacity: 1;
   z-index: 5;
 }
