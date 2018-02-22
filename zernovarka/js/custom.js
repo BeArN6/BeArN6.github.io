@@ -147,6 +147,39 @@ $(window).load(function(){
 	    }
 	    ]
 	});
+	$(".similarnews__slider").slick({
+		slidesToShow: 4,
+  		slidesToScroll: 1,
+  		arrows: true,
+  		infinite: true,
+  		prevArrow:"<button type='button' class='slick-prev pull-left flex'><img src='img/prev.png' /></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right flex'><img src='img/next.png' /></button>",
+        responsive: [
+        {
+	      breakpoint: 410,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrows: false
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        arrows: false
+	      }
+	    },
+	    {
+	      breakpoint: 992,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1
+	      }
+	    }
+	    ]
+	});
 	$(".brand__slider").slick({
 		slidesToShow: 5,
   		slidesToScroll: 1,
@@ -230,6 +263,18 @@ $(window).load(function(){
 			}
 		);
 	});
+
+	//Basket tabs
+	$(".basket").not(".basket_1").hide();
+	$(".btn_basket").click(function(){
+		var tabId = $(this).attr("data-tab");
+		$(this).closest(".basket").hide();
+		$(".basket_" + tabId).show();
+		$(".basket__tab_" + tabId).addClass("basket__tab_active");
+	});
+
+	//Product gallery
+	$('.sp-wrap').smoothproducts();
 });
 
 
