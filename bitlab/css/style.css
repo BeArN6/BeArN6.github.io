@@ -1022,12 +1022,20 @@ body {
   z-index: -2;
   top: -138px;
   left: -34px;
+  width: 332px;
+  height: 332px;
+  border-radius: 100%;
+  border: 2px solid #e9e9e9;
 }
 .aboutus .round2 {
   position: absolute;
   z-index: -2;
   top: -89px;
   left: 14px;
+  width: 236px;
+  height: 236px;
+  border-radius: 100%;
+  border: 3px solid #e9e9e9;
 }
 
 .team {
@@ -1049,16 +1057,33 @@ body {
   top: 50%;
   margin-top: -11px;
   z-index: 5;
-  transition: filter 0.2s ease-in-out;
+  padding: 0;
+  width: 53px;
+  height: 53px;
+  border: 3px solid #8c8c8c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.team__slider .slick-next img, .team__slider .slick-prev img {
+  height: 20px;
+  transition: all 0.2s ease-in-out;
 }
 .team__slider .slick-next:hover, .team__slider .slick-prev:hover {
+  border: 3px solid #2c2a2b;
+}
+.team__slider .slick-next:hover img, .team__slider .slick-prev:hover img {
   filter: brightness(0);
 }
 .team__slider .slick-next {
-  right: -90px;
+  right: -86px;
 }
 .team__slider .slick-prev {
-  left: -90px;
+  left: -86px;
+}
+.team__slider .slick-prev img {
   transform: rotate(180deg);
 }
 .team__slider2 {
@@ -1067,19 +1092,26 @@ body {
 .team__slider2 .slick-list {
   margin: 0;
 }
+.team__slider2 .slick-next, .team__slider2 .slick-prev {
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+}
 .team__slider2 .slick-next {
-  right: -19px;
+  right: -15px;
   transform: rotate(180deg);
 }
 .team__slider2 .slick-next img {
   width: auto;
 }
 .team__slider2 .slick-prev {
-  left: -17px;
+  left: -13px;
   transform: none;
 }
 .team__slider2 .slick-prev img {
   width: auto;
+  transform: none;
 }
 .team__member {
   width: 360px;
@@ -1322,6 +1354,7 @@ body {
   bottom: -22px;
   left: 50%;
   margin-left: -11px;
+  transition: 0s;
 }
 .services__cont {
   height: 100%;
@@ -1423,6 +1456,8 @@ body {
   position: relative;
   padding-bottom: 75px;
   height: calc(100% - 111px);
+  border-left: 5px solid #e4e4e4;
+  border-right: 5px solid #e4e4e4;
 }
 .services__row {
   border-bottom: 1px solid #e4e4e4;
@@ -1540,10 +1575,12 @@ body {
   background-color: #605d5e;
   padding: 15px 10px;
   position: absolute;
-  left: 5px;
+  /*left: 5px;*/
+  left: 0;
   bottom: 0;
   z-index: 5;
-  width: calc(100% - 10px);
+  /*width: calc(100% - 10px);*/
+  width: 100%;
   height: 295px;
 }
 .services__form h2 {
@@ -2083,17 +2120,33 @@ body {
   background: none;
   border: 0;
   position: absolute;
-  bottom: -48px;
+  bottom: -44px;
   z-index: 5;
-  transition: filter 0.2s ease-in-out;
+  padding: 0;
+  width: 29px;
+  height: 29px;
+  border: 2px solid #8c8c8c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.comments .slick-next img, .comments .slick-prev img {
+  transition: all 0.2s ease-in-out;
 }
 .comments .slick-next:hover, .comments .slick-prev:hover {
+  border: 2px solid #2c2a2b;
+}
+.comments .slick-next:hover img, .comments .slick-prev:hover img {
   filter: brightness(0);
 }
 .comments .slick-next {
   right: 190px;
+  /*bottom: -46px;*/
+}
+.comments .slick-next img {
   transform: rotate(180deg);
-  bottom: -46px;
 }
 .comments .slick-prev {
   left: 190px;
@@ -2202,16 +2255,30 @@ body {
   top: 50%;
   margin-top: -29px;
   z-index: 5;
-  transition: filter 0.2s ease-in-out;
+  padding: 0;
+  width: 53px;
+  height: 53px;
+  border: 3px solid #8c8c8c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.clients__cont .slick-next img, .clients__cont .slick-prev img {
+  transition: all 0.2s ease-in-out;
 }
 .clients__cont .slick-next:hover, .clients__cont .slick-prev:hover {
+  border: 3px solid #2c2a2b;
+}
+.clients__cont .slick-next:hover img, .clients__cont .slick-prev:hover img {
   filter: brightness(0);
 }
 .clients__cont .slick-next {
-  right: -90px;
+  right: -86px;
 }
 .clients__cont .slick-prev {
-  left: -90px;
+  left: -86px;
 }
 .clients__cont .slick-prev img {
   transform: rotate(180deg);
@@ -2494,6 +2561,7 @@ body {
 @media screen and (min-width: 768px) {
   .comments .slick-slide, .comments .slick-list {
     width: 555px !important;
+    height: 400px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
