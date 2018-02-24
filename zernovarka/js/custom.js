@@ -231,11 +231,10 @@ $(window).load(function(){
 	var windWidth = $(window).width();
 	if(windWidth < 768){
 		$(".footer__box_3").appendTo(".footer__box_2");
+		$(".toggle").click(function(){
+			$(this).siblings().slideToggle();
+		});
 	}
-
-	$(".toggle").click(function(){
-		$(this).siblings().slideToggle();
-	});
 
 	//Modal
 	$(".call").click(function(){
@@ -255,6 +254,13 @@ $(window).load(function(){
 				.animate({opacity: 1,top: "5%"},200)
 		});
 	});
+	$(".btn_send2").click(function(){
+		event.preventDefault(event);
+		$(".modal-mainnav").hide();
+		$('.modal-success2')
+			.css('display', 'block')
+			.animate({opacity: 1,top: "5%"},200)
+	});
 	$('.modal-close,.overlay').click(function(){
 		$(".modal-call,.modal-success").animate({opacity: 1, top:"0"}, 200,
 			function(){
@@ -271,6 +277,27 @@ $(window).load(function(){
 		$(this).closest(".basket").hide();
 		$(".basket_" + tabId).show();
 		$(".basket__tab_" + tabId).addClass("basket__tab_active");
+	});
+
+	$(".coffemach .btn").click(function(){
+		$(this).closest(".coffemach__item").siblings(".coffemach__full").addClass("coffemach__full_active");
+	});
+	$(".coffemach__close").click(function(){
+		$(this).closest(".coffemach__full").removeClass("coffemach__full_active");
+	});
+
+	$(".title__butt_1").click(function(){
+		$(".filter").show();
+		$(".sortby").hide();
+		$(this).addClass("title__butt_active");
+		$(this).siblings(".title__butt").removeClass("title__butt_active");
+	});
+
+	$(".title__butt_2").click(function(){
+		$(".filter").hide();
+		$(".sortby").show();
+		$(this).addClass("title__butt_active");
+		$(this).siblings(".title__butt").removeClass("title__butt_active");
 	});
 
 	//Product gallery
