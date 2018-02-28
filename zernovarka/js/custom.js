@@ -312,6 +312,11 @@ $(window).load(function(){
 		$(this).children().not(":first-child").slideToggle();
 	});
 
+	var images = $('.retina-img');
+    images.each(function(i) {
+      $(this).width($(this).width() / 2);
+    });
+
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
 });
