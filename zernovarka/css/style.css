@@ -270,10 +270,10 @@ header {
   border: 0;
   border-right: 1px solid #59514c;
   width: 206px;
-  height: 16px;
+  /*height: 16px;*/
 }
 .header__searchcont input::placeholder {
-  font: 300 11px/26.41px 'Roboto';
+  font: 300 11px 'Roboto';
   font-style: italic;
   color: #aaaaaa;
 }
@@ -490,6 +490,41 @@ header {
   color: #59514c;
 }
 
+.phones {
+  position: relative;
+  cursor: pointer;
+  height: 17px;
+}
+.phones a {
+  display: block;
+  background: #fff;
+  width: 120px;
+}
+.phones a.first {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.phones a.second {
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+.phones a.third {
+  position: absolute;
+  left: 0;
+  top: 34px;
+}
+.phones::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 6px;
+  width: 7px;
+  height: 5px;
+  background: url(../img/arrow.png) center center no-repeat;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .header__bottnav {
     width: 560px;
@@ -540,6 +575,9 @@ header {
 @media screen and (max-width: 767px) {
   .header__top {
     display: none;
+  }
+  .header__bott {
+    padding-bottom: 12.5px;
   }
   .header__bott .wrapper.flex {
     justify-content: space-around;
@@ -1012,6 +1050,12 @@ h3 {
 .btn_basket {
   width: 180px;
 }
+.btn_testim {
+  width: 154px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
 .adva {
   background: #fff;
@@ -1407,6 +1451,9 @@ h3 {
   background: #f8f8f8;
   padding: 60px 0 185px;
 }
+.pagecont_brands {
+  padding-bottom: 85px;
+}
 .pagecont_nb {
   background: transparent;
   padding: 0;
@@ -1415,6 +1462,12 @@ h3 {
   padding-bottom: 135px;
 }
 
+.brands {
+  display: none;
+}
+.brands_active {
+  display: flex;
+}
 .brands__item {
   width: 360px;
   background: #fff;
@@ -1443,6 +1496,23 @@ h3 {
   font: 400 10px/20px "Roboto";
   letter-spacing: 0.05em;
   padding-right: 5px;
+}
+.brands__dots {
+  margin-top: 60px;
+  text-align: center;
+}
+.brands__dots button {
+  text-indent: 9999px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  padding: 0;
+  border: 0;
+  background: #e8e8e8;
+  margin: 0 8px;
+}
+.brands__dots button.active {
+  background: #f8b30e;
 }
 
 ::-webkit-scrollbar {
@@ -1545,7 +1615,7 @@ h3 {
 /*News*/
 .news {
   background: #f8f8f8;
-  padding: 60px 0;
+  padding: 60px 0 80px;
 }
 .news__banner {
   margin-bottom: 60px;
@@ -2401,7 +2471,7 @@ h3 {
   right: 42px;
   top: 15px;
   width: 210px;
-  height: 1px;
+  height: 2px;
   background: #aaaaaa;
 }
 .basket__tab span {
@@ -2625,6 +2695,7 @@ h3 {
 .filter__butts.flex {
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .filter__butt_1 {
   color: #fff;

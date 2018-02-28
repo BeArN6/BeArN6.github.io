@@ -221,6 +221,12 @@ h3{
 	&_basket{
 		width: 180px;
 	}
+	&_testim{
+		width: 154px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
 }
 .adva{
 	background: #fff;
@@ -625,6 +631,9 @@ h3{
 .pagecont{
 	background: #f8f8f8;
 	padding: 60px 0 185px;
+	&_brands{
+		padding-bottom: 85px;
+	}
 	&_nb{
 		background: transparent;
 		padding: 0;
@@ -634,6 +643,10 @@ h3{
 	}
 }
 .brands{
+	display: none;
+	&_active{
+		display: flex;
+	}
 	&__item{
 		width: 360px;
 		background: #fff;
@@ -661,6 +674,23 @@ h3{
 			font: 400 10px/20px "Roboto";
 			letter-spacing: 0.05em;
 			padding-right: 5px;
+		}
+	}
+	&__dots{
+		margin-top: 60px;
+		text-align: center;
+		button{
+			text-indent: 9999px;
+		    width: 8px;
+		    height: 8px;
+		    border-radius: 100%;
+		    padding: 0;
+		    border: 0;
+		    background: #e8e8e8;
+		    margin: 0 8px;
+		    &.active{
+		    	background: #f8b30e;
+		    }
 		}
 	}
 }
@@ -763,7 +793,7 @@ h3{
 /*News*/
 .news{
 	background: #f8f8f8;
-	padding: 60px 0;
+	padding: 60px 0 80px;
 	&__banner{
 		margin-bottom: 60px;
 	}
@@ -1642,7 +1672,7 @@ h3{
 			right: 42px;
     		top: 15px;
 			width: 210px;
-			height: 1px;
+			height: 2px;
 			background: #aaaaaa;
 		}
 		span{
@@ -1874,6 +1904,7 @@ h3{
 		&.flex{
 			flex-direction: column;
 			justify-content: flex-start;
+			align-items: flex-start;
 		}
 	}
 	&__butt{

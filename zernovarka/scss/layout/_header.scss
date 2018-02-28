@@ -125,9 +125,9 @@ header{
 			border: 0;
 			border-right: 1px solid #59514c;
 			width: 206px;
-			height: 16px;
+			/*height: 16px;*/
 			&::placeholder{
-				font: 300 11px/26.41px 'Roboto';
+				font: 300 11px 'Roboto';
 				font-style: italic;
 				color: #aaaaaa;
 			}
@@ -348,6 +348,41 @@ header{
 			font: 500 14px 'Roboto';
 			color: #59514c;
 		}
+		
+	}
+}
+.phones{
+	position: relative;
+   	cursor: pointer;
+   	height: 17px;
+   	a{
+   		display: block;
+   		background: #fff;
+   		width: 120px;
+   		&.first{
+   			position: absolute;
+   			left: 0;
+   			top: 0;
+   		}
+   		&.second{
+   			position: absolute;
+   			left: 0;
+   			top: 17px;
+   		}
+   		&.third{
+   			position: absolute;
+   			left: 0;
+   			top: 34px;
+   		}
+   	}
+   	&::after{
+		content: "";
+		position: absolute;
+		right: -15px;
+		top: 6px;
+		width: 7px;
+		height: 5px;
+		background: url(../img/arrow.png) center center no-repeat;
 	}
 }
 
@@ -420,6 +455,7 @@ header{
 			display: none;
 		}
 		&__bott{
+			padding-bottom: 12.5px;
 			.wrapper{
 				&.flex{
 					justify-content: space-around;

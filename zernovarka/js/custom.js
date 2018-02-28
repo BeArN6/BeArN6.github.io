@@ -300,6 +300,18 @@ $(window).load(function(){
 		$(this).siblings(".title__butt").removeClass("title__butt_active");
 	});
 
+	$(".brands__dots button").click(function(){
+		$(this).siblings().removeClass("active");
+		$(this).addClass("active");
+		var tabIndex = $(this).attr("tabindex");
+		$(".brands_" + tabIndex).siblings().removeClass('brands_active');
+		$(".brands_" + tabIndex).addClass("brands_active");
+	});
+	$(".phones a").not(":first-child").hide();
+	$(".phones").click(function(){
+		$(this).children().not(":first-child").slideToggle();
+	});
+
 	//Product gallery
 	$('.sp-wrap').smoothproducts();
 });
