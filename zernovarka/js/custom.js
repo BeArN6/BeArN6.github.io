@@ -242,7 +242,7 @@ $(window).load(function(){
 		$(".overlay").fadeIn(600,function(){
 			$('.modal-call')
 				.css('display', 'block')
-				.animate({opacity: 1,top: "5%"},200)
+				.animate({opacity: 1,top: "50%"},200)
 		});
 	});
 	$(".btn_send").click(function(){
@@ -251,7 +251,7 @@ $(window).load(function(){
 		$(".overlay").fadeIn(600,function(){
 			$('.modal-success')
 				.css('display', 'block')
-				.animate({opacity: 1,top: "5%"},200)
+				.animate({opacity: 1,top: "50%"},200)
 		});
 	});
 	$(".btn_send2").click(function(){
@@ -259,7 +259,7 @@ $(window).load(function(){
 		$(".modal-mainnav").hide();
 		$('.modal-success2')
 			.css('display', 'block')
-			.animate({opacity: 1,top: "5%"},200)
+			.animate({opacity: 1,top: "50%"},200)
 	});
 	$('.modal-close,.overlay').click(function(){
 		$(".modal-call,.modal-success").animate({opacity: 1, top:"0"}, 200,
@@ -316,6 +316,10 @@ $(window).load(function(){
     images.each(function(i) {
       $(this).width($(this).width() / 2);
     });
+    $(".currency span").not(".sep").click(function(){
+    	$(this).siblings().removeClass("active");
+    	$(this).addClass("active");
+    })
 
 	//Product gallery
 	$('.sp-wrap').smoothproducts();

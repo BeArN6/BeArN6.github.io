@@ -60,7 +60,7 @@ h3{
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
-.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.icon-load{background:url(../img/loader.png) no-repeat left top;width:276px;height:300px;position:fixed;left:50%;top:50%;margin-left:-138px;margin-top:-150px;display:none;}
 .loaded .icon-load{display:block;}
 
 
@@ -872,6 +872,7 @@ h3{
 .modal-form{
 	width: 280px;
 	height: 355px;
+	margin-top: -177.5px;
 	padding: 30px 45px 20px;
 	position: fixed;
 	margin-left: -140px;
@@ -1599,6 +1600,7 @@ h3{
 			font: 400 10px 'Roboto';
 			padding-top: 7px;
 	    	padding-left: 30px;
+	    	line-height: 17px;
 		}
 	}
 	&__check{
