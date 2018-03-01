@@ -1816,6 +1816,7 @@ h3 {
 .modal-mainnav {
   position: static;
   padding: 30px 30px 20px;
+  margin-top: 0;
 }
 
 .overlay {
