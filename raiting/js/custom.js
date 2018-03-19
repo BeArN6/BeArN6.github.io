@@ -117,6 +117,8 @@ $(window).load(function(){
 		$(".product__info").each(function(){
 			$(this).siblings(".product__article").after($(this));
 		});
+	}
+	if(windWidth <= 870){
 		$(".product__article p span").each(function(){
 			var spanText = $(this).text();
 			$(this).closest(".product__article").prepend("<p><span>" + spanText + "</span></p>");

@@ -83,6 +83,9 @@ h3{
 	background: url(../img/banner.jpg) center center no-repeat;
 	background-size: cover;
 	padding: 122px 0;
+	.wrapper{
+		position: relative;
+	}
 	&__top{
 	    margin-bottom: 19px;
 		&.flex{
@@ -137,6 +140,17 @@ h3{
 				}
 			}
 		}
+	}
+	&__date{
+		font-family: PFSquareSansPro;
+		line-height: normal;
+		font-size: 12px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 50%;
+		margin-left: -69px;
+		bottom: -75px;
 	}
 }
 .logo{
@@ -205,10 +219,22 @@ h3{
 		&_3{
 			width: 160px;
 			height: 50px;
+			a{
+				color: #464445;
+				&:hover{
+					color: #df6860;
+				}
+			}
 		}
 		&_4{
 			width: 215px;
 			height: 50px;
+			a{
+				color: #464445;
+				&:hover{
+					color: #df6860;
+				}
+			}
 		}
 		&_5{
 			width: 200px;
@@ -262,6 +288,10 @@ h3{
 		letter-spacing: 0.5px;
 		color: #1D375A;
 		margin-bottom: 25px;
+		display: block;
+		&:hover{
+			color: #df6860;
+		}
 	}
 	&__info{
 		&.flex{
@@ -392,6 +422,9 @@ h3{
 					}
 				}
 			}
+		}
+		&__date{
+			bottom: -45px;
 		}
 	}
 	.logo{
