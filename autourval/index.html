@@ -539,7 +539,7 @@
 			</div>
 			<script>
 				var wWidth = window.innerWidth;
-				if (wWidth > 768) {
+				if (wWidth >= 768) {
 					function initMap() {
 				        var uluru = {lat: 59.93272, lng: 30.34959};
 				        var uluru2 = {lat: 59.93278, lng: 30.34737};
@@ -558,17 +558,18 @@
 				}
 				if (wWidth < 768) {
 					function initMap() {
-				        var uluru = {lat: 50.4234, lng: 30.47764};
-				        var uluru2 = {lat: 50.42385, lng: 30.48216};
+				        var uluru = {lat: 59.93272, lng: 30.34959};
+				        var uluru2 = {lat: 59.932650, lng: 30.348334};
 				        var map = new google.maps.Map(document.getElementById('map'), {
-				          zoom: 15,
+				          zoom: 17,
 				          center: uluru2
 				        });
 				        // var image = "img/point.png"
 				        var marker = new google.maps.Marker({
 				          position: uluru,
-				          map: map
-				          //icon: image
+				          map: map,
+				          title: "Невский проспект, 82"
+				          // icon: image
 				        });
 				    }
 				}
@@ -637,6 +638,11 @@
 				<div class="header__worktime">
 					<span>с 9:00 до 21:00 без выходных</span>
 				</div>
+			</div>
+			<div class="header__humb">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</div>		
 	</header>

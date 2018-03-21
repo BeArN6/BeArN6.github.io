@@ -35,6 +35,9 @@ header{
     top: -69px;
     z-index: 9995;
     transition: 0.7s;
+    .wrapper{
+    	position: relative;
+    }
     &_load{
     	top: 0;
     }
@@ -98,6 +101,25 @@ header{
 			color: #fff;
 		}
 	}
+	&__humb{
+		position: absolute;
+		right: 0;
+		top: 15px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		padding: 10px 10px;
+		display: none;
+		span{
+			width: 25px;
+			height: 2px;
+			display: block;
+			margin-bottom: 4px;
+			background: #fff;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 .logo{
 	background-position: -10px -0px; 
@@ -122,9 +144,60 @@ header{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.header{
+		top: -115px;
+		&_load, &_active{
+			top: 0;
+		}
+		&__nav{
+			order: 1;
+			display: block;
+    		margin: 10px auto 0;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		padding: 7.5px 0;
+		top: -80px;
+		.wrapper{
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+		&_load, &_active{
+			top: 0;
+		}
+		&__nav{
+			order: 1;
+    		width: 100%;
+    		display: none;
+    		ul{
+    			&.flex{
+    				flex-direction: column;
+    			}
+    			li{
+    				width: 100%;
+    				border: 0;
+    				border-bottom: 1px solid #636658;
+    				&:last-child{
+    					border-bottom: 0;
+    				}
+    			}
+    		}
+		}
+		&__phone{
+			margin: 5px 0;
+		}
+		&__worktime{
+			display: none;
+		}
+		&__humb{
+			display: block;
+		}
+	}
+	.logo{
+		margin: 5px 0;
+	}
 }

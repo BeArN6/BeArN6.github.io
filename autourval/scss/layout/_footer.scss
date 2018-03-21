@@ -146,5 +146,16 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
-	
+	.footer{
+		&__top{
+			.wrapper{
+				&.flex{
+					justify-content: space-around;
+				}
+			}
+		}
+		&__center{
+			margin: 15px 0;
+		}
+	}
 }
