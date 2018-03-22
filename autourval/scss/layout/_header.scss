@@ -39,15 +39,15 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    top: -69px;
+    top: 0;
     z-index: 9995;
     transition: 0.7s;
     .wrapper{
     	position: relative;
     }
-    &_load{
+    /*&_load{
     	top: 0;
-    }
+    }*/
     &_active{
     	position: fixed;
     	top: 0;
@@ -160,7 +160,8 @@ header{
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.header{
-		top: -115px;
+		/*top: -115px;*/
+		top: 0;
 		&_load, &_active{
 			top: 0;
 		}
@@ -175,7 +176,8 @@ header{
 @media screen and (max-width: 767px) {
 	.header{
 		padding: 7.5px 0;
-		top: -80px;
+		/*top: -80px;*/
+		top: 0;
 		.wrapper{
 			flex-direction: column;
 			align-items: flex-start;

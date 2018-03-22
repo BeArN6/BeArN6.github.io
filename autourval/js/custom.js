@@ -108,9 +108,9 @@ $(window).bind('load', handler);
 $(window).bind('resize', handler);
 
 $(window).load(function(){
-	setTimeout(function(){
-		$(".header").addClass("header_load");
-	},0);
+	// setTimeout(function(){
+	// 	$(".header").addClass("header_load");
+	// },0);
 	var windWidth = $(window).width();
 	$(".comment__slider").slick({
 		infinite: true,
@@ -179,28 +179,28 @@ $(window).load(function(){
 
 	$('[data-fancybox="gallery"]:not(".slick-cloned")').fancybox({
         thumbs : {
-            showOnStart : true
+            showOnStart : false
         },
         hash : true
     });
 
     $('[data-fancybox="gallery11"]:not(".slick-cloned")').fancybox({
         thumbs : {
-            showOnStart : true
+            showOnStart : false
         },
         hash : true
     });
 
     $('[data-fancybox="gallery12"]:not(".slick-cloned")').fancybox({
         thumbs : {
-            showOnStart : true
+            showOnStart : false
         },
         hash : true
     });
 
     $('[data-fancybox="gallery2"]:not(".slick-cloned")').fancybox({
         thumbs : {
-            showOnStart : true
+            showOnStart : false
         },
         hash : true
     });
@@ -311,7 +311,13 @@ $(window).load(function(){
 
 	$(".serv__info a").click(function(e){
 		e.preventDefault();
+		var thisText = $(this).text();
 		$(this).siblings("p").slideToggle();
+		if(thisText == "Подробнее"){
+			$(this).text("Скрыть");
+		} else{
+			$(this).text("Подробнее");
+		}
 	})
 
 	$(".banner__order").click(function(event){
@@ -324,8 +330,13 @@ $(window).load(function(){
 		}
 	});
 
-	$(".wwcheck__part").click(function(){
-		$(this).toggleClass("active");
+	$(".wwcheck__part").hover(
+	function(){
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+	},
+	function(){
+		$(this).removeClass("active");
 		$(this).siblings().removeClass("active");
 	});
 
