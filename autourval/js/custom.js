@@ -164,6 +164,7 @@ $(window).load(function(){
   		slidesToShow: 1,
   		slidesToScroll: 1,
   		dots: true,
+  		infinite: false,
   		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='prev'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='next'></i></button>",
         responsive: [
@@ -177,6 +178,20 @@ $(window).load(function(){
 	});
 
 	$('[data-fancybox="gallery"]:not(".slick-cloned")').fancybox({
+        thumbs : {
+            showOnStart : true
+        },
+        hash : true
+    });
+
+    $('[data-fancybox="gallery11"]:not(".slick-cloned")').fancybox({
+        thumbs : {
+            showOnStart : true
+        },
+        hash : true
+    });
+
+    $('[data-fancybox="gallery12"]:not(".slick-cloned")').fancybox({
         thumbs : {
             showOnStart : true
         },

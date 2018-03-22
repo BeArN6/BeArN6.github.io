@@ -333,6 +333,7 @@ h3{
 		position: absolute;
 		height: 51px;
 		user-select: none;
+		cursor: pointer;
 		&.flex{
 			justify-content: flex-start;
 		}
@@ -342,7 +343,14 @@ h3{
 			i{
 				width: 44px;
 				height: 41px;
-				background: url(../img/part1.png) center center no-repeat;
+				background-position: -10px -421px;
+				/*background: url(../img/part1.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -370px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_2{
@@ -351,7 +359,14 @@ h3{
 			i{
 				width: 16px;
 				height: 51px;
-				background: url(../img/part2.png) center center no-repeat;
+				background-position: -10px -1235px;
+				/*background: url(../img/part2.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -1174px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_3{
@@ -360,7 +375,14 @@ h3{
 			i{
 				width: 45px;
 				height: 39px;
-				background: url(../img/part3.png) center center no-repeat;
+				background-position: -10px -321px;
+				/*background: url(../img/part3.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -272px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_4{
@@ -369,7 +391,14 @@ h3{
 			i{
 				width: 49px;
 				height: 31px;
-				background: url(../img/part4.png) center center no-repeat;
+				background-position: -10px -41px;
+				/*background: url(../img/part4.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -0px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_5{
@@ -379,18 +408,14 @@ h3{
 			i{
 				width: 43px;
 				height: 39px;
-				background: url(../img/part5.png) center center no-repeat;
+				background-position: -10px -627px;
+				/*background: url(../img/part5.png) center center no-repeat;*/
 			}
 			&.active{
 				i{
-					background: url(../img/part5-active.png) center center no-repeat;
-				}
-				span{
-					color: #ac6440;
-				}
-				.wwcheck__info{
-					opacity: 1;
-				}
+					background-position: -10px -578px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_6{
@@ -399,7 +424,14 @@ h3{
 			i{
 				width: 39px;
 				height: 33px;
-				background: url(../img/part6.png) center center no-repeat;
+				background-position: -10px -1033px;
+				/*background: url(../img/part6.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -990px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_7{
@@ -408,7 +440,14 @@ h3{
 			i{
 				width: 43px;
 				height: 43px;
-				background: url(../img/part7.png) center center no-repeat;
+				background-position: -10px -729px;
+				/*background: url(../img/part7.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -676px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_8{
@@ -417,7 +456,14 @@ h3{
 			i{
 				width: 42px;
 				height: 41px;
-				background: url(../img/part8.png) center center no-repeat;
+				background-position: -10px -939px;
+				/*background: url(../img/part8.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -888px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_9{
@@ -426,7 +472,14 @@ h3{
 			i{
 				width: 43px;
 				height: 43px;
-				background: url(../img/part9.png) center center no-repeat;
+				background-position: -10px -835px;
+				/*background: url(../img/part9.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -782px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_10{
@@ -435,7 +488,14 @@ h3{
 			i{
 				width: 12px;
 				height: 51px;
-				background: url(../img/part10.png) center center no-repeat;
+				background-position: -36px -1235px;
+				/*background: url(../img/part10.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -36px -1174px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_11{
@@ -444,7 +504,14 @@ h3{
 			i{
 				width: 43px;
 				height: 43px;
-				background: url(../img/part11.png) center center no-repeat;
+				background-position: -10px -525px;
+				/*background: url(../img/part11.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -472px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_12{
@@ -453,7 +520,14 @@ h3{
 			i{
 				width: 45px;
 				height: 44px;
-				background: url(../img/part12.png) center center no-repeat;
+				background-position: -10px -218px;
+				/*background: url(../img/part12.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -164px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_13{
@@ -462,7 +536,14 @@ h3{
 			i{
 				width: 33px;
 				height: 39px;
-				background: url(../img/part13.png) center center no-repeat;
+				background-position: -10px -1125px;
+				/*background: url(../img/part13.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -1076px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		&_14{
@@ -471,18 +552,35 @@ h3{
 			i{
 				width: 47px;
 				height: 31px;
-				background: url(../img/part14.png) center center no-repeat;
+				background-position: -10px -123px;
+				/*background: url(../img/part14.png) center center no-repeat;*/
+			}
+			&.active{
+				i{
+					background-position: -10px -82px;
+					/*background: url(../img/part5-active.png) center center no-repeat;*/
+				}	
 			}
 		}
 		i{
 			display: inline-block;
-			background-size: 100%;
+			/*background-size: 100%;*/
+			transition: 0.2s ease;
 		}
 		span{
 			font: 400 16px/16px Montserrat,sans-serif;
     		color: #393b35;
     		margin-left: 15px;
     		text-align: left;
+		}
+		&.active{
+			span{
+				color: #ac6440;
+			}
+			.wwcheck__info{
+				opacity: 1;
+				z-index: 2;
+			}
 		}
 	}
 	&__info{
@@ -493,6 +591,7 @@ h3{
 		left: -65px;
 		opacity: 0;
 		transition: 0.2s ease;
+		z-index: -1;
 		p{
 			font: 400 14px/18px Montserrat,sans-serif;
     		color: #393b35;
@@ -1524,41 +1623,84 @@ h3{
 			margin-left: -300px;
 		}
 		&__part{
+			i{
+				background-size: 120%;
+			}
 			&_1{
 				left: 0;
 				i{
 					width: 34px;
     				height: 33px;
+    				background-position: -2px -244px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -214px;
+					}
 				}
 			}
 			&_2{
 				left: 152px;
 				i{
-					width: 12px;
+					width: 36px;
+				    height: 37px;
+				    background-position: 17px -770px;
+				    margin-left: -15px;
+				}
+				&.active{
+					i{
+					    background-position: 17px -732px;
+					}
 				}
 			}
 			&_3{
 				left: 250px;
 				i{
 					width: 39px;
+					background-position: -2px -211px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -177px;
+					}
 				}
 			}
 			&_4{
 				left: 405px;
 				i{
 					width: 43px;
+					background-position: -4px -26px;
+				}
+				&.active{
+					i{
+					    background-position: -4px 4px;
+					}
 				}
 			}
 			&_5{
 				left: 521px;
 				i{
 					width: 37px;
+					height: 33px;
+    				background-position: -2px -398px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -367px;
+					}
 				}
 			}
 			&_6{
 			    left: 635px;
 				i{
 					width: 36px;
+					height: 29px;
+    				background-position: 0px -642px;
+				}
+				&.active{
+					i{
+					    background-position: 0 -615px;
+					}
 				}
 			}
 			&_7{
@@ -1566,6 +1708,13 @@ h3{
     			top: 246px;
 				i{
 					width: 36px;
+					height: 37px;
+    				background-position: -2px -451px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -418px;
+					}
 				}
 			}
 			&_8{
@@ -1573,6 +1722,13 @@ h3{
     			top: 400px;
 				i{
 					width: 36px;
+					height: 34px;
+    				background-position: -3px -584px;
+				}
+				&.active{
+					i{
+					    background-position: -3px -552px;
+					}
 				}
 			}
 			&_9{
@@ -1580,13 +1736,30 @@ h3{
 			    top: 400px;
 				i{
 					width: 36px;
+					height: 36px;
+    				background-position: -2px -518px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -485px;
+					}
 				}
 			}
 			&_10{
 			    left: 395px;
 			    top: 400px;
 				i{
-					width: 10px;
+					width: 36px;
+    				height: 37px;
+    				background-position: -22px -770px;
+				}
+				&.active{
+					i{
+					    background-position: -22px -732px;
+					}
+				}
+				span{
+					margin-left: -15px !important;
 				}
 			}
 			&_11{
@@ -1594,6 +1767,13 @@ h3{
 			    top: 400px;
 				i{
 					width: 36px;
+				    height: 36px;
+    				background-position: -2px -324px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -290px;
+					}
 				}
 			}
 			&_12{
@@ -1601,13 +1781,27 @@ h3{
 			    top: 400px;
 				i{
 					width: 36px;
+					height: 34px;
+    				background-position: -2px -135px;
+				}
+				&.active{
+					i{
+					    background-position: -2px -100px;
+					}
 				}
 			}
 			&_13{
 			    left: 15px;
 			    top: 400px;
 				i{
-					width: 28px;
+					width: 34px;
+					height: 33px;
+    				background-position: 1px -660px;
+				}
+				&.active{
+					i{
+					    background-position: 1px -631px;
+					}
 				}
 			}
 			&_14{
@@ -1615,6 +1809,12 @@ h3{
 			    top: 246px;
 				i{
 					width: 40px;
+					background-position: -4px -80px;
+				}
+				&.active{
+					i{
+					    background-position: -4px -51px;
+					}
 				}
 			}
 			span{
@@ -1877,9 +2077,75 @@ h3{
     		margin-bottom: 15px;
     		left: 0;
     		top: 0;
-			i{
-				width: 55px;
-				background-size: auto;
+			&_1{
+				i{
+					margin: 0 5.5px;
+				}
+			}
+			&_2{
+				i{
+					margin: 0 19.5px;
+				}
+			}
+			&_3{
+				i{
+					margin: 0 5px;
+				}
+			}
+			&_4{
+				i{
+					margin: 0 3px;
+				}
+			}
+			&_5{
+				i{
+					margin: 0 6px;
+				}
+			}
+			&_6{
+				i{
+					margin: 0 8px;
+				}
+			}
+			&_7{
+				i{
+					margin: 0 6px;
+				}
+			}
+			&_8{
+				i{
+					margin: 0 6.5px;
+				}
+			}
+			&_9{
+				i{
+					margin: 0 6px;
+				}
+			}
+			&_10{
+				i{
+					margin: 0 21.5px;
+				}
+			}
+			&_11{
+				i{
+					margin: 0 6px;
+				}
+			}
+			&_12{
+				i{
+					margin: 0 5px;
+				}
+			}
+			&_13{
+				i{
+					margin: 0 11px;
+				}
+			}
+			&_14{
+				i{
+					margin: 0 4px;
+				}
 			}
 		}
 	}
