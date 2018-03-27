@@ -177,6 +177,9 @@ h3{
 		background: url(../img/btn-h.png) center center no-repeat;
 		background-size: 100% 100%;
 	}
+	&:disabled{
+		background: #ededef;
+	}
 }
 .adva{
 	padding: 40px 0;

@@ -116,6 +116,7 @@ footer{
     	a{
     		font: 600 18px/18px $font;
     		color: #fff;
+    		pointer-events: none;
     	}
     }
     &__mail{
@@ -180,6 +181,11 @@ footer{
     		.call{
     			margin-left: 0;
     		}
+		}
+		&__phone{
+			a{
+				pointer-events: auto;
+			}
 		}
 		&__bott{
 			.wrapper{

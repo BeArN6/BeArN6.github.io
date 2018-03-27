@@ -93,6 +93,7 @@ header{
 		a{
 			font: 600 22px/22px $font;
 			color: #363c43;
+			pointer-events: none;
 		}
 		&:hover{
 			i{
@@ -236,6 +237,7 @@ header{
 		&__phone{
 			a{
 				font: 600 18px/22px "Fira Sans",sans-serif;
+				pointer-events: auto;
 			}
 		}
 		.call{
