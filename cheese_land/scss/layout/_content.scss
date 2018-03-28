@@ -1,0 +1,219 @@
+$font1: 'Conv_HelveticaNeueCyr-Roman';
+$fontR: 'Conv_BKANT';
+$fontB: 'Conv_ANTQUAB';
+$font2: 'Conv_ProximaNova-Bold';
+//main styles
+
+.main-wrapper{
+	padding: 0 0 0 0;
+	min-width: $min-width;
+    width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction:column;
+    -webkit-flex-direction:column;
+    -ms-flex-direction: column;
+	justify-content:flex-start;	
+    -webkit-justify-content:flex-start;	
+    -ms-flex-pack: start;
+}
+.wrapper{
+	min-width: $min-width;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* titles */
+/*p{	
+	@include font($base-font-size,$base-line-height,$text-color);
+	font-weight: 400;	
+}
+h1{	
+	@include font($font-size-h1,$line-height-h1,$title-color);
+	font-family: $title-font-family;
+	font-weight: 400;	
+}
+h2{
+	@include font($font-size-h2,$line-height-h2,$title-color);
+	font-family: $title-font-family;
+	font-weight: 400;	
+}
+h3{
+	@include font($font-size-h3,$line-height-h3,$title-color);
+	font-family: $title-font-family;
+	font-weight: 400;
+}*/
+
+/* text position */
+.text-left{text-align: left!important}
+.text-center{text-align: center!important}
+.text-right{text-align: right!important}
+.nowrap{white-space: nowrap!important;}
+
+
+/* loader */
+/*.loaded .main-wrapper{visibility:hidden;}
+.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.loaded .icon-load{display:block;}*/
+
+
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+.content{	
+	order: 2;
+    -webkit-order: 2;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.banner{
+	background: url(../img/banner.jpg) center center no-repeat;
+	background-size: cover;
+	/*padding: 212px 0;*/
+	padding: 11% 0;
+	&.flex{
+		flex-direction: column;
+		justify-content: center;
+	}
+	h1{
+		font: 80px/98px $fontB;
+		letter-spacing: 0.015em;
+		color: #fff;
+		text-align: center;
+	}
+	h2{
+		font: 36px/48px $font1;
+		letter-spacing: 0.015em;
+		color: #fff;
+		text-align: center;
+	}
+}
+.border{
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 30px 0;
+	&_2{
+		background: #838383;
+		margin: 30px 0 25px;
+	}
+}
+.section{
+	&__1{
+		padding: 90px 0 105px;
+		background: #f9f9f9;
+	}
+	&__text{
+		width: 610px;
+		h2{
+			font: 48px $fontB;
+			letter-spacing: 0.015em;
+			color: #454545;
+		}
+		p{
+			font: 18px/38px $fontR;
+			letter-spacing: 0.015em;
+			color: #000;
+			margin-bottom: 25px;
+			&:last-child{
+				margin-bottom: 25px;
+			}
+		}
+	}
+	&__slider{
+		width: 46%;
+		margin-right: 0;
+    	margin-left: auto;
+    	height: 595px;
+    	position: relative;
+    	&::after{
+    		content: "";
+    		display: block;
+    		position: absolute;
+    		left: 0;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		margin: auto;
+    		box-shadow: 0 0 0 9999px rgba(0,0,0,0.45) inset;
+    		z-index: 2;
+    	}
+	}
+	&__insta{
+		position: absolute;
+		left: 43px;
+		top: 60px;
+		z-index: 3;
+	}
+}
+.cows{
+	&__slider{
+		width: 890px;
+		.slick-prev, .slick-next{
+			background: #fff;
+			width: 24px;
+			height: 24px;
+			border-radius: 100%;
+			padding: 0;
+			border: 0;
+			position: absolute;
+			bottom: 30px;
+			z-index: 3;
+		}
+		.slick-prev{
+			left: 41px;
+		}
+		.slick-next{
+			left: 103px;
+			img{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
+}
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+
+

@@ -1,0 +1,88 @@
+$font1: 'Conv_HelveticaNeueCyr-Roman';
+$fontR: 'Conv_BKANT';
+$fontB: 'Conv_ANTQUAB';
+$font2: 'Conv_ProximaNova-Bold';
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	padding: 23.5px 0;
+	&__nav{
+		margin-left: 25px;
+		ul{
+			list-style: none;
+			li{
+				margin: 0 24px;
+				a{
+					font: 16px/48px $font1;
+					color: #000;
+					letter-spacing: 0.015em;
+				}
+			}
+		}
+	}
+	&__soc{
+		margin-left: 60px;
+		a{
+			margin: 0 7.5px;
+		}
+	}
+	&__phone{
+		margin-left: 20px;
+		a{
+			font: 16px/48px $font1;
+			color: #000;
+			letter-spacing: 0.015em;
+			margin-left: 10px;
+		}
+	}
+	&__cart{
+		position: relative;
+	}
+	&__amount{
+		width: 18px;
+		height: 18px;
+		border-radius: 100%;
+		background: #838383;
+		position: absolute;
+    	right: -20px;
+    	top: -13px;
+		&.flex{
+			justify-content: center;
+		}
+		span{
+			font: 12px/20px $font2;
+			color: #fff;
+			letter-spacing: 0.015em;
+			margin-bottom: -2px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
