@@ -11,25 +11,55 @@ footer{
 	order: 3;	
     -webkit-order: 3;	
 }
-
-
-
-@media screen and (max-width: 1200px) {
-	
+.footer{
+	.wrapper{
+		padding-top: 15px;
+		padding-bottom: 40px;
+		border-top: 1px solid #d4d4d4;
+	}
+	&__text{
+		font: 16px $fontB;
+		color: #666666;
+	}
+	&__soc{
+		margin-left: 0;
+		margin-right: 9%;
+	}
+	&__phone{
+		margin-left: 0;
+	}
 }
 
-@media screen and (min-width: 992px){
-	
-}
 
-@media screen and (max-width: 991px) {
-	
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+	.footer{
+		.wrapper{
+			padding-top: 10px;
+    		padding-bottom: 25px;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.footer{
+		.wrapper{
+			padding-bottom: 20px;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.footer{
+		.wrapper{
+			flex-direction: column;
+    		padding-bottom: 10px;
+		}
+		&__text{
+			margin-bottom: 15px;
+		}
+		&__soc{
+			margin-right: 0;
+		}
+	}
 }

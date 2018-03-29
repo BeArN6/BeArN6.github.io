@@ -13,6 +13,12 @@ header{
 }
 .header{
 	padding: 23.5px 0;
+	position: relative;
+	&__logo{
+		&:hover{
+			opacity: 0.9;
+		}
+	}
 	&__nav{
 		margin-left: 25px;
 		ul{
@@ -23,6 +29,9 @@ header{
 					font: 16px/48px $font1;
 					color: #000;
 					letter-spacing: 0.015em;
+					&:hover{
+						opacity: 0.9;
+					}
 				}
 			}
 		}
@@ -31,19 +40,39 @@ header{
 		margin-left: 60px;
 		a{
 			margin: 0 7.5px;
+			&:hover{
+				opacity: 0.9;
+			}
+			img{
+				width: 31px;
+			}
 		}
 	}
 	&__phone{
 		margin-left: 20px;
+		img{
+			width: 14px;
+		}
 		a{
 			font: 16px/48px $font1;
 			color: #000;
 			letter-spacing: 0.015em;
 			margin-left: 10px;
 		}
+		&:hover{
+			opacity: 0.9;
+		}
 	}
 	&__cart{
 		position: relative;
+		a{
+			img{
+				width: 21px;
+			}
+		}
+		&:hover{
+			opacity: 0.9;
+		}
 	}
 	&__amount{
 		width: 18px;
@@ -63,26 +92,132 @@ header{
 			margin-bottom: -2px;
 		}
 	}
+	&__toggle{
+		position: absolute;
+	    right: 0;
+	    top: 9px;
+	    border: 1px solid #000;
+	    border-radius: 5px;
+	    padding: 10px 10px;
+	    display: none;
+	    cursor: pointer;
+	    span{
+	    	width: 25px;
+		    height: 2px;
+		    display: block;
+		    margin-bottom: 4px;
+		    background: #000;
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+	    }
+	}
 }
 
 
 
-@media screen and (max-width: 1200px) {
-	
-}
-
-@media screen and (min-width: 992px){
-	
-}
-
-@media screen and (max-width: 991px) {
-	
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+	.header{
+	    padding: 17.5px 0;
+		&__nav{
+			ul{
+				li{
+					margin: 0 15px;
+					a{
+						font: 15px/45px Conv_HelveticaNeueCyr-Roman;
+					}
+				}
+			}
+		}
+		&__soc{
+			margin-left: 0;
+		}
+		&__phone{
+			margin-left: 0;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.header{
+		padding: 13.5px 0;
+		&__logo{
+			img{
+				width: 85px;
+			}
+		}
+		&__nav{
+			margin-left: 0;
+			ul{
+				li{
+					margin: 0 5px;
+					a{
+						font: 13px/26px Conv_HelveticaNeueCyr-Roman;
+					}
+				}
+			}
+		}
+		&__soc{
+			margin-left: 0;
+			a{
+				margin: 0 3.5px;
+				img{
+					width: 25px;
+				}
+			}
+		}
+		&__phone{
+			margin-left: 0;
+			a{
+				font: 14px/40px Conv_HelveticaNeueCyr-Roman;
+			}
+		}
+		&__cart{
+			margin-right: 15px;
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		padding: 12.5px 0;
+		.wrapper{
+			width: 90%;
+		}
+		&__logo{
+			width: 100%;
+		}
+		&__nav{
+			margin-left: 0;
+    		width: 100%;
+    		margin-top: 20px;
+    		margin-bottom: 20px;
+    		ul{
+    			li{
+    			    width: 100%;
+    				margin: 0;
+    				border-bottom: 1px solid #bdbdbd;
+    				a{
+    				    font: 16px/38px Conv_HelveticaNeueCyr-Roman;
+    				}
+    			}
+    		}
+		}
+		&__soc{
+			margin-left: 0;
+			width: 100%;
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__phone{
+			margin-left: 0;
+		}
+		&__cart{
+			margin-right: 20px;
+		}
+		&__toggle{
+			display: block;
+		}
+	}
 }

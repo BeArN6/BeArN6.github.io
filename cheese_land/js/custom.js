@@ -114,13 +114,22 @@ $(window).load(function(){
   		slidesToScroll: 1,
   		arrows: true,
   		infinite: true,
-  		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/arrow.png' /></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/arrow.png' /></button>",
+  		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/arrow.svg' /></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/arrow.svg' /></button>"
+	});
+	$(".comments__slider").slick({
+  		slidesToShow: 2,
+  		slidesToScroll: 1,
+  		arrows: true,
+  		infinite: true,
+  		prevArrow:"<button type='button' class='slick-prev pull-left'><img src='img/prev2.svg' /></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><img src='img/prev2.svg' /></button>",
         responsive: [
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        arrows: false
+	        arrows: false,
+	        slidesToShow: 1
 	      }
 	    }
 	    ]
@@ -128,7 +137,43 @@ $(window).load(function(){
 
 	let windWidth = $(window).width();
 	
-	$(".section__1 .section__text").css({
-		"marginLeft": (windWidth - 1240)/2
-	});
+	if(windWidth > 1250){
+		$(".section__1 .section__text").css({
+			"marginLeft": (windWidth - 1240)/2
+		});
+		$(".delivery .section__text").css({
+			"marginRight": (windWidth - 1240)/2
+		});
+	}
+	if(windWidth < 1251){
+		$(".section__1 .section__text").css({
+			"marginLeft": (windWidth - 950)/2
+		});
+		$(".delivery .section__text").css({
+			"marginRight": (windWidth - 950)/2
+		});
+	}
+	if(windWidth < 992){
+		$(".section__1 .section__text").css({
+			"marginLeft": (windWidth - 740)/2
+		});
+		$(".delivery .section__text").css({
+			"marginRight": (windWidth - 740)/2
+		});
+	}
+
+	//Fancybox
+	$('[data-fancybox="gallery"]:not(".slick-cloned")').fancybox({
+        thumbs : {
+            showOnStart : false
+        },
+        hash : true
+    });
+
+	if(windWidth < 768){
+		$(".header__nav, .header__soc, .header__phone, .header__cart").hide();
+	}
+    $(".header__toggle").click(function(){
+    	$(".header__nav, .header__soc, .header__phone, .header__cart").slideToggle();
+    });
 });
