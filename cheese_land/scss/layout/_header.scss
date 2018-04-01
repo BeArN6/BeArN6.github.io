@@ -13,7 +13,17 @@ header{
 }
 .header{
 	padding: 23.5px 0;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 9995;
+	transition: all 0.3s ease-in-out;
+	&_active{
+		padding: 10px 0;
+	}
 	&__logo{
 		&:hover{
 			opacity: 0.9;
@@ -120,9 +130,10 @@ header{
 	.header{
 	    padding: 17.5px 0;
 		&__nav{
+			margin-left: 0;
 			ul{
 				li{
-					margin: 0 15px;
+					margin: 0 10px;
 					a{
 						font: 15px/45px Conv_HelveticaNeueCyr-Roman;
 					}
@@ -135,12 +146,18 @@ header{
 		&__phone{
 			margin-left: 0;
 		}
+		&_active{
+			padding: 10px 0;
+		}
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.header{
-		padding: 13.5px 0;
+		padding: 20.5px 0;
+		&_active{
+			padding: 16.5px 0;
+		}
 		&__logo{
 			img{
 				width: 85px;
@@ -182,10 +199,12 @@ header{
 	.header{
 		padding: 12.5px 0;
 		.wrapper{
-			width: 90%;
+			/*width: 90%;*/
+			width: calc(100% - 30px);
 		}
 		&__logo{
-			width: 100%;
+			width: calc(100% - 115px);
+			order: -1;
 		}
 		&__nav{
 			margin-left: 0;
@@ -212,9 +231,23 @@ header{
 		}
 		&__phone{
 			margin-left: 0;
+			width: 100%;
+			&.flex{
+				justify-content: center;
+			}
 		}
 		&__cart{
-			margin-right: 20px;
+			margin-right: 65px;
+    		margin-bottom: -12px;
+    		order: -1;
+			a{
+				display: inline-block;
+				padding: 12px;
+			}
+		}
+		&__amount{
+		    right: -8px;
+    		top: 0px;
 		}
 		&__toggle{
 			display: block;

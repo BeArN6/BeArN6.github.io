@@ -72,6 +72,7 @@ h3{
 .content{	
 	order: 2;
     -webkit-order: 2;
+    margin-top: 100px;
 }
 .flex{
 	display: flex;
@@ -144,20 +145,10 @@ h3{
 		width: 46%;
 		margin-right: 0;
     	margin-left: auto;
-    	height: 595px;
+    	/*height: 595px;*/
+    	height: auto;
     	position: relative;
-    	&::after{
-    		content: "";
-    		display: block;
-    		position: absolute;
-    		left: 0;
-    		top: 0;
-    		right: 0;
-    		bottom: 0;
-    		margin: auto;
-    		box-shadow: 0 0 0 9999px rgba(0,0,0,0.45) inset;
-    		z-index: 2;
-    	}
+    	
 	}
 	&__insta{
 		position: absolute;
@@ -191,6 +182,16 @@ h3{
 			position: absolute;
 			bottom: 30px;
 			z-index: 3;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 48px;
+				height: 48px;
+				z-index: 4;
+				cursor: pointer;
+				left: -12px;
+    			top: -12px;
+			}
 			img{
 				width: 9px;
 			}
@@ -206,6 +207,20 @@ h3{
 			img{
 				transform: rotate(180deg);
 			}
+		}
+		.slick-list{
+			&::after{
+	    		content: "";
+	    		display: block;
+	    		position: absolute;
+	    		left: 0;
+	    		top: 0;
+	    		right: 0;
+	    		bottom: 0;
+	    		margin: auto;
+	    		box-shadow: 0 0 0 9999px rgba(0,0,0,0.45) inset;
+	    		z-index: 2;
+	    	}
 		}
 	}
 }
@@ -389,7 +404,8 @@ h3{
 	}
 }
 .gallery{
-	margin-bottom: 160px;
+	/*margin-bottom: 160px;*/
+	margin-bottom: 50px;
 	&.flex{
 		justify-content: center;
 	}
@@ -455,8 +471,11 @@ h3{
 				font: 18px Conv_ANTQUAB;
 			}
 			p{
-				font: 13px/26px Conv_BKANT;
+				font: 14px/26px Conv_BKANT;
 				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
 			}
 		}
 		&__slider{
@@ -558,7 +577,7 @@ h3{
 		}
 	}
 	.gallery{
-		margin-bottom: 100px;
+		/*margin-bottom: 100px;*/
 		.border{
 			margin-bottom: 60px;
 		}
@@ -568,6 +587,9 @@ h3{
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.wrapper{
 		max-width: 740px;
+	}
+	.content{
+		margin-top: 75px;
 	}
 	.banner{
 		padding: 6% 0;
@@ -588,14 +610,24 @@ h3{
 	}
 	.section{
 		&__text{
-			width: 350px;
+			/*width: 350px;*/
+			width: 440px;
 			h2{
 				font: 28px Conv_ANTQUAB;
 			}
 			p{
-			    font: 12px/22px Conv_BKANT;
+			    font: 14px/24px Conv_BKANT;
 			    margin-bottom: 14px;
+			    br{
+			    	display: none;
+			    }
+			    &:last-child{
+					margin-bottom: 0;
+				}
 			}
+		}
+		.section__text{
+			width: 350px;
 		}
 		&__slider{
 			height: auto;
@@ -604,7 +636,8 @@ h3{
 			padding: 50px 0 60px;
 		}
 		&__img{
-			width: 370px;
+			/*width: 370px;*/
+			width: 265px;
 			img{
 				width: 100%;
 			}
@@ -623,15 +656,17 @@ h3{
 	}
 	.products{
 		&__img{
-			width: 350px;
+			/*width: 350px;*/
+			width: 265px;
 			img{
 				width: 90%;
 			}
 		}
 		&__info{
-			width: 350px;
+			/*width: 350px;*/
+			width: 440px;
 			h3{
-				font: 18px Conv_ANTQUAB;
+				font: 20px Conv_ANTQUAB;
 				margin-right: 25px;
 			}
 			span{
@@ -643,7 +678,7 @@ h3{
 			margin-bottom: 10px;
 		}
 		&__text{
-		    font: 12px/24px Conv_ANTQUAB;
+		    font: 14px/24px Conv_ANTQUAB;
 		    margin-bottom: 15px;
 		}
 		&__more{
@@ -666,6 +701,12 @@ h3{
 		padding: 8% 0 9%;
 		&__slider{
 			width: 650px;
+			.slick-prev{
+				left: -45px;
+			}
+			.slick-next{
+				right: -45px;
+			}
 		}
 		&__quotes{
 			width: 250px;
@@ -675,7 +716,7 @@ h3{
 		}
 		&__text{
 			width: 250px;
-			font: 12px/24px Conv_HelveticaNeueCyr-Roman;
+			font: 14px/24px Conv_HelveticaNeueCyr-Roman;
 			margin: 10px 0;
 		}
 		&__account{
@@ -700,25 +741,41 @@ h3{
 	.delivery{
 		margin-bottom: 70px;
 		&__img{
+			height: 500px;
 			img{
-				width: 600px;
+				/*width: 600px;*/
+				height: 100%;
+			}
+		}
+		.section{
+			&__text{
+				padding: 4% 0;
+				width: 350px;
 			}
 		}
 	}
 	.gallery{
-		margin-bottom: 100px;
+		/*margin-bottom: 100px;*/
 		.border{
 			margin-bottom: 40px;
+		}
+		&__item{
+			width: 33.333333%;
+			&:nth-child(7), &:nth-child(8){
+				display: none;
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.wrapper{
-
+	.content{
+		margin-top: 78px;
 	}
 	.border{
 		margin: 15px 0;
+		margin-left: auto;
+    	margin-right: auto;
 	}
 	.banner{
 		h1{
@@ -736,7 +793,9 @@ h3{
 			}
 		}
 		&__text{
-			width: 90%;
+			/*width: 90%;*/
+			width: calc(100% - 30px);
+			text-align: center;
     		margin-left: 0 !important;
     		margin-right: 0 !important;
     		h2{
@@ -752,8 +811,9 @@ h3{
     		height: auto;
 		}
 		&__insta{
-			left: 20px;
-    		top: 30px;
+			padding: 5px;
+    		left: 10px;
+    		top: 10px;
 		}
 		&__img{
 			width: 100%;
@@ -768,9 +828,21 @@ h3{
 			width: 100%;
 			.slick-prev{
 				left: 13px;
+				width: 30px;
+    			height: 30px;
+    			&::before{
+					left: -9px;
+	    			top: -9px;
+				}
 			}
 			.slick-next{
 				left: 63px;
+				width: 30px;
+    			height: 30px;
+    			&::before{
+					left: -9px;
+	    			top: -9px;
+				}
 			}
 		}
 	}
@@ -809,12 +881,17 @@ h3{
 			}
 		}
 		&__info{
-			width: 90%;
+			/*width: 90%;*/
+			text-align: center;
+			width: calc(100% - 30px);
 			&_left{
 				margin-left: 0;
 			}
 		}
 		&__title{
+			&.flex{
+				justify-content: space-around;
+			}
 			h3{
 				font: 25px Conv_ANTQUAB;
 			}
@@ -824,7 +901,8 @@ h3{
 		}
 		&__more{
 			&.flex{
-				justify-content: space-between;
+				/*justify-content: space-between;*/
+				justify-content: space-around;
 			}
 			span{
 				font: 28px Conv_ANTQUAB;
@@ -873,7 +951,8 @@ h3{
 		}
 	}
 	.delivery{
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
+		margin-bottom: 20px;
 		&.flex{
 			flex-direction: column-reverse;
 		}
@@ -887,10 +966,21 @@ h3{
 	.gallery{
 		margin-bottom: 40px;
 		.border{
-			margin-bottom: 45px;
+			/*margin-bottom: 45px;*/
+			margin-bottom: 25px;
 		}
 		&__item{
 			width: 50%;
+			&.flex{
+				display: flex !important;
+			}
+		}
+		.slick-slide{
+			div{
+				display: flex;
+				justify-content: center;
+				align-items: stretch;
+			}
 		}
 	}
 }

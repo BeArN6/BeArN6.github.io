@@ -171,9 +171,62 @@ $(window).load(function(){
     });
 
 	if(windWidth < 768){
-		$(".header__nav, .header__soc, .header__phone, .header__cart").hide();
+		$(".header__nav, .header__soc, .header__phone").not(".footer__soc, .footer__phone").hide();
 	}
-    $(".header__toggle").click(function(){
-    	$(".header__nav, .header__soc, .header__phone, .header__cart").slideToggle();
-    });
+    // $(".header__toggle").click(function(){
+    // 	$(".header__nav, .header__soc, .header__phone, .header__cart").slideToggle();
+    // });
+
+    $(window).scroll(function() {
+		// if ($(this).scrollTop() > 250) {
+  //   		$(".header").removeClass("header_load");
+  //   	}
+    	if ($(this).scrollTop() > 500) {
+				$(".header").addClass("header_active");
+    	}
+    	if ($(this).scrollTop() < 250) {
+    		$(".header").removeClass("header_active");
+			// $(".header").addClass("header_load");
+    	}
+
+    	if ($(this).scrollTop() > 1500){
+    		$(".totop").addClass("totop_visible");
+    	} else{
+    		$(".totop").removeClass("totop_visible");
+    	}
+	});
+
+    if(windWidth > 767){
+		//Slide to block
+		$(".header__nav ul li a").click(function(event){
+	  	 	event.preventDefault();
+	  	 	var id  = $(this).attr('href'),
+	  	 	top = $(id).offset().top;
+	  	 	$('body,html').animate({scrollTop: top - 73}, 1500);
+	  	});
+	}
+	if(windWidth < 768){
+  		$(".header__toggle").click(function(){
+  			// $(this).toggleClass("active");
+  			$(".header__nav, .header__soc, .header__phone").not(".footer__soc, .footer__phone").slideToggle();
+  		});
+  		$(".header__nav ul li a").click(function(){
+  			event.preventDefault();
+  			$(this).closest(".header__nav").slideToggle();
+  			$(this).closest(".header__nav").siblings(".header__nav, .header__soc, .header__phone").not(".footer__soc, .footer__phone").slideToggle();
+  			// $(this).closest(".header__nav").siblings(".header__humb").toggleClass("active");
+		  	var id  = $(this).attr('href'),
+		  	top = $(id).offset().top;
+		  	$('body,html').animate({scrollTop: top - 78}, 1500);
+  		});
+
+  		$(".gallery__cont").slick({
+  			arrows: false,
+  			dots: false,
+  			rows: 2,
+  			slidesPerRow: 2,
+            slidesToScroll: 1,
+            slidesToShow: 1
+  		});
+  	}
 });

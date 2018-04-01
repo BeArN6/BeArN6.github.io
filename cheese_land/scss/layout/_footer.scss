@@ -60,6 +60,14 @@ footer{
 		}
 		&__soc{
 			margin-right: 0;
+			/*display: flex !important;*/
+			a{
+				padding: 7.5px;
+				margin: 0;
+			}
+		}
+		&__phone{
+			/*display: flex !important;*/
 		}
 	}
 }
