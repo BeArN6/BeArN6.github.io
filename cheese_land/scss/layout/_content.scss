@@ -394,13 +394,28 @@ h3{
 }
 .delivery{
 	margin-bottom: 185px;
+	&.flex{
+		align-items: stretch;
+	}
 	&__img{
-		width: 46%;
+		/*width: 46%;*/
+		width: 50%;
 		margin-right: auto;
     	margin-left: 0;
+    	background: url(../img/delimg.jpg) right center no-repeat;
+    	/*background-size: auto 100%;*/
+    	background-size: cover;
     	&.flex{
     		justify-content: flex-end;
     	}
+    	img{
+    		display: none;
+    	}
+	}
+	.section{
+		&__text{
+			padding: 30px 15px;
+		}
 	}
 }
 .gallery{
@@ -951,7 +966,7 @@ h3{
     			padding: 12px;
 			}
 			.slick-next{
-				left: -51px;
+				right: -51px;
     			padding: 12px;
 			}
 		}
@@ -995,6 +1010,7 @@ h3{
 			width: 100%;
 			img{
 				width: 100%;
+				display: block;
 			}
 		}
 	}
