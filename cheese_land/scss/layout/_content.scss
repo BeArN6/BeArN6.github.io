@@ -446,6 +446,9 @@ h3{
 
 
 @media screen and (min-width: 992px) and (max-width: 1250px) {
+	.content{
+		margin-top: 88px;
+	}
 	.wrapper{
 		max-width: 950px;
 	}
@@ -570,9 +573,22 @@ h3{
 	}
 	.delivery{
 		margin-bottom: 90px;
+		/*&.flex{
+			align-items: stretch;
+		}*/
 		&__img{
+			width: 50%;
 			img{
-				width: 685px;
+				/*width: 685px;*/
+				width: auto;
+				height: 100%;
+			}
+		}
+		.section{
+			&__text{
+				width: 50%;
+				margin-right: 0 !important;
+				padding: 30px 15px;
 			}
 		}
 	}
@@ -741,16 +757,25 @@ h3{
 	.delivery{
 		margin-bottom: 70px;
 		&__img{
-			height: 500px;
+			/*height: 500px;*/
+			width: 50%;
 			img{
-				/*width: 600px;*/
+				/*width: 685px;*/
+				width: auto;
 				height: 100%;
 			}
+			/*img{
+				width: 600px;
+				height: 100%;
+			}*/
 		}
 		.section{
 			&__text{
-				padding: 4% 0;
-				width: 350px;
+				/*padding: 4% 0;
+				width: 350px;*/
+				width: 50%;
+				margin-right: 0 !important;
+				padding: 30px 15px;
 			}
 		}
 	}
@@ -816,7 +841,8 @@ h3{
     		top: 10px;
 		}
 		&__img{
-			width: 100%;
+			/*width: 100%;*/
+			width: calc(100% - 30px);
     		max-width: 500px;
     		img{
     			width: 100%;
@@ -828,21 +854,21 @@ h3{
 			width: 100%;
 			.slick-prev{
 				left: 13px;
-				width: 30px;
+				/*width: 30px;
     			height: 30px;
     			&::before{
 					left: -9px;
 	    			top: -9px;
-				}
+				}*/
 			}
 			.slick-next{
 				left: 63px;
-				width: 30px;
+				/*width: 30px;
     			height: 30px;
     			&::before{
 					left: -9px;
 	    			top: -9px;
-				}
+				}*/
 			}
 		}
 	}
@@ -873,7 +899,8 @@ h3{
 			}
 		}
 		&__img{
-			width: 100%;
+			/*width: 100%;*/
+			width: calc(100% - 30px);
 			margin-bottom: 40px;
 			img{
 				width: 80%;
@@ -919,6 +946,14 @@ h3{
 		margin-bottom: 30px;
 		&__slider{
 			width: 250px;
+			.slick-prev{
+				left: -51px;
+    			padding: 12px;
+			}
+			.slick-next{
+				left: -51px;
+    			padding: 12px;
+			}
 		}
 		&__quotes{
 			width: 250px;

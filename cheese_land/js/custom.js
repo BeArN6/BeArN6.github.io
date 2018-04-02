@@ -128,7 +128,7 @@ $(window).load(function(){
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        arrows: false,
+	        // arrows: false,
 	        slidesToShow: 1
 	      }
 	    }
@@ -227,6 +227,12 @@ $(window).load(function(){
   			slidesPerRow: 2,
             slidesToScroll: 1,
             slidesToShow: 1
+  		});
+  	}
+  	if(windWidth > 767 && windWidth < 1251){
+  		let textHeig = $(".delivery .section__text").height() + 60;
+  		$(".delivery__img").css({
+  			height: textHeig
   		});
   	}
 });
