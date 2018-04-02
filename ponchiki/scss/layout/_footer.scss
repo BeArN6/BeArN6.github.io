@@ -1,0 +1,142 @@
+$calR: 'Conv_CALIBRI';
+$calB: 'Conv_CALIBRIB';
+$font: 'Conv_ExposureCTwo';
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	background: url(../img/bg-2.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	width: calc(100% - 255px);
+    margin-right: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+	.wrapper{
+		width: calc(100% - 115px);
+		&.flex{
+			justify-content: flex-start;
+			align-items: stretch;
+		}
+	}
+	&__left{
+		width: 215px;
+		margin-right: 10%;
+		&.flex{
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		p{
+			font: 15px/18px $calR;
+			color: #fff;
+			opacity: 0.25;
+			margin-bottom: 15px;
+		}
+	}
+	&__politic{
+		font: 15px/18px $calR;
+		color: #fff;
+		opacity: 0.25;
+		border-bottom: 1.5px solid #fff;
+	}
+	&__logo{
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__nav{
+		margin-right: 23%;
+		h3{
+			font: 18px/24px $calR;
+			color: #9a9a9a;
+			margin-bottom: 20px;
+		}
+		ul{
+			li{
+				display: block;
+				a{
+					font: 15px/21px $calR;
+					color: #fff;
+					opacity: 0.25;
+				}
+			}
+		}
+	}
+	&__right{
+		h3{
+			font: 18px/24px $calR;
+			color: #9a9a9a;
+			margin-bottom: 20px;
+		}
+	}
+	&__soc{
+		margin-bottom: 25px;
+		a{
+			display: inline-block;
+			margin: 0 2px;
+			opacity: 0.5;
+			transition: 0.2s ease-in-out;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.footer{
+		&__nav{
+			margin-right: 13%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.footer{
+		width: calc(100% - 210px);
+		.wrapper{
+			width: calc(100% - 40px);
+			&.flex{
+				justify-content: space-between;
+			}
+		}
+		&__left{
+			margin-right: 0;
+		}
+		&__nav{
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		width: 100%;
+		margin-left: 0;
+		padding-bottom: 30px;
+		.wrapper{
+			&.flex{
+				justify-content: space-around;
+				align-items: center;
+			}
+		}
+		&__left{
+			margin: 30px 0;
+			margin-right: 0;
+		}
+		&__nav{
+			display: none;
+		}
+		&__right{
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
+	}
+}

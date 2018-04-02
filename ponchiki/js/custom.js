@@ -128,5 +128,17 @@ $(window).load(function(){
 	$(".toggle").click(function(){
     	$(".sidebar__nav, .sidebar .btn").slideToggle();
     });
-})
+
+    $(".news__item:lt(4)").addClass('news__item_active');
+
+    if(windWidth > 1499) {
+    	$(".news__item:lt(5)").addClass('news__item_active');
+    }
+    if(windWidth > 1599) {
+    	$(".menu__item:lt(3)").addClass('menu__item_active');
+    }
+    if(windWidth > 1749) {
+    	$(".news__item:lt(6)").addClass('news__item_active');
+    }
+});
 
