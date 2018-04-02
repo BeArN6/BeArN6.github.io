@@ -229,10 +229,10 @@ $(window).load(function(){
             slidesToShow: 1
   		});
   	}
-  	if(windWidth > 767 && windWidth < 1251){
-  		let textHeig = $(".delivery .section__text").height() + 60;
-  		$(".delivery__img").css({
-  			height: textHeig
-  		});
-  	}
+  	// if(windWidth > 767 && windWidth < 1251){
+  	// 	let textHeig = $(".delivery .section__text").height() + 60;
+  	// 	$(".delivery__img").css({
+  	// 		height: textHeig
+  	// 	});
+  	// }
 });
