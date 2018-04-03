@@ -123,10 +123,10 @@ $(window).load(function(){
 	});
 
 	if(windWidth < 768){
-		$(".sidebar__nav, .sidebar .btn").hide();
+		$(".sidebar__nav, .sidebar .btn__cont").hide();
 	}
 	$(".toggle").click(function(){
-    	$(".sidebar__nav, .sidebar .btn").slideToggle();
+    	$(".sidebar__nav, .sidebar .btn__cont").slideToggle();
     });
 
     $(".news__item:lt(4)").addClass('news__item_active');
