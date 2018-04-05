@@ -1,0 +1,127 @@
+$font: 'Exo 2', sans-serif;
+$font2: 'Open Sans', sans-serif;
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 34px 0;
+	background: transparent;
+	&__logo{
+		font: 400 22px $font2;
+		color: #907354;
+		margin-right: 20px;
+		span{
+			color: #b09578;
+		}
+	}
+	&__left{
+		p{
+			font: 400 18px $font;
+			color: #fff;
+		}
+	}
+	&__soc{
+		a{
+			margin: 0 5px;
+		}
+	}
+	&__phone{
+		padding-left: 45px;
+		position: relative;
+		bottom: 2px;
+		&::before{
+			content: "";
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background: url(../img/phone.png) center center no-repeat;
+			background-size: 100%;
+			position: absolute;
+			left: 20px;
+			top: 9px;
+		}
+		a{
+			font: 500 24px $font;
+			color: #fff;
+			user-select: none;
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header{
+		&__logo{
+			font: 400 20px "Open Sans",sans-serif;
+		}
+		&__left{
+			p{
+				font: 400 16px "Exo 2",sans-serif;
+			}
+		}
+		&__phone{
+			a{
+				font: 500 20px "Exo 2",sans-serif;
+			}
+			&::before{
+				top: 6px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		padding: 10px 0;
+		.wrapper{
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__phone{
+			a{
+				user-select: auto;
+			}
+		}
+		&__logo{
+			font: 400 20px "Open Sans",sans-serif;
+		}
+		&__left{
+			&.flex{
+				justify-content: center;
+			}
+			p{
+				font: 400 16px "Exo 2",sans-serif;
+			}
+		}
+		&__right{
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__soc{
+			margin: 15px 0;
+		}
+		&__phone{
+			padding-left: 20px;
+			&::before{
+				left: 0;
+			}
+		}
+	}
+}
