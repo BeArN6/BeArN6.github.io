@@ -130,6 +130,7 @@ $(window).load(function(){
     });
 
     $(".news__item:lt(4)").addClass('news__item_active');
+    $(".menu__item:lt(4)").addClass('menu__item_active');
 
     if(windWidth > 1499) {
     	$(".news__item:lt(5)").addClass('news__item_active');
@@ -139,6 +140,9 @@ $(window).load(function(){
     }
     if(windWidth > 1749) {
     	$(".news__item:lt(6)").addClass('news__item_active');
+    }
+    if(windWidth < 1500) {
+
     }
 });
 
