@@ -215,6 +215,12 @@ h3{
 	bottom: 20px;
 	cursor: pointer;
 }
+.anchors2{
+	position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
 .anchors{
 	padding-top: 20px;
 	a{
@@ -226,17 +232,33 @@ h3{
 		background: #ffc873;
 		font: 500 16px/24px $font;
 		color: #000;
+		transition: 0.2s ease-in-out;
 		&.active{
+			background: #ffb441;
+		}
+		&:hover{
 			background: #ffb441;
 		}
 	}
 	&_2{
 		padding-top: 0;
 	}
+	&_load{
+		width: 1170px;
+		left: 50%;
+		margin-left: -585px;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+	}
 }
 .adva{
 	background: url(../img/bg.jpg) repeat;
 	padding-bottom: 50px;
+	.wrapper{
+		position: relative;
+		padding-top: 65px;
+	}
 	&__slider{
 		width: 1100px;
     	margin: 0 auto;
@@ -776,6 +798,13 @@ h3{
 		background: #fff;
 	}
 }
+#production{
+	&__slider{
+		.slick-dots{
+			bottom: -30px;
+		}
+	}
+}
 .modal-cont{
 	position: relative;
 	/*display: none;*/
@@ -812,6 +841,11 @@ h3{
 		border: 0;
 		.btn__cont{
 			width: 100%;
+		}
+		.modal-close{
+			right: 20px;
+    		top: 30px;
+    		z-index: 2;
 		}
 	}
 	input[type="text"]{
@@ -1238,6 +1272,9 @@ h3{
 	}
 	.adva{
 		padding-bottom: 0;
+		.wrapper{
+			padding-top: 170px;
+		}
 		&__slider{
 			width: 475px;
 			.slick-slide{
