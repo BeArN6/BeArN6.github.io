@@ -505,21 +505,21 @@ $(window).load(function(){
 		  	event.preventDefault();
 		   	var id  = $(this).attr('href'),
 		   	top = $(id).offset().top;
-		   	$('body,html').animate({scrollTop: top - 85}, 1500);
+		   	$('body,html').animate({scrollTop: top - 45}, 1500);
 		});
 		$("#cat1").click(function(event){
 		  	event.preventDefault();
 		  	var windHei = $(window).height();
 		   	var id  = $(this).attr('href'),
 		   	top = $(id).offset().top;
-		   	$('body,html').animate({scrollTop: top - 200}, 500);
+		   	$('body,html').animate({scrollTop: top - 180}, 500);
 		});
 		$("#cat3").click(function(event){
 		  	event.preventDefault();
 		  	var windHei = $(window).height();
 		   	var id  = $(this).attr('href'),
 		   	top = $(id).offset().top;
-		   	$('body,html').animate({scrollTop: top - 150}, 500);
+		   	$('body,html').animate({scrollTop: top - 130}, 500);
 		});
 	}
 
