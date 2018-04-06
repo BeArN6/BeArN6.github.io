@@ -237,13 +237,13 @@ $(window).load(function(){
 	});
 
 	$(".banner__order").click(function(){
-		if($(this).siblings(".phone").val() !== ""){
+		if($(this).closest(".btn__cont").siblings(".phone").val() !== ""){
 			// $('.modal-cont-2').addClass("modal_active");
 			// $(".modal-cont").hide();
-			$(this).siblings(".phone").removeClass("phone_empty");
+			$(this).closest(".btn__cont").siblings(".phone").removeClass("phone_empty");
 			$(this).removeAttr("disabled");
 		} else{
-			$(this).siblings(".phone").addClass("phone_empty");
+			$(this).closest(".btn__cont").siblings(".phone").addClass("phone_empty");
 			$(this).attr("disabled","disabled");
 		}
 	});
