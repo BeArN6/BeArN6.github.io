@@ -1,0 +1,87 @@
+$fontL: Conv_SF-UI-Display-Light;
+$fontB: Conv_SF-UI-Display-Bold;
+$fontR: Conv_SF-UI-Display-Regular;
+$fontM: Conv_SF-UI-Display-Medium;
+$fontSB: Conv_SF-UI-Display-Semibold;
+$fontG: 'Caveat', cursive;
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	&__top{
+		background: url(../img/fbanner.png) center center no-repeat;
+		background-size: cover;
+		padding: 20px 0;
+	}
+	&__left{
+		width: 275px;
+		p, a{
+			font: 16px/20px $fontL;
+			color: #3c393c; 
+		}
+		a{
+			&:hover{
+				color: red;
+			}
+		}
+	}
+	&__logo{
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	&__right{
+		width: 275px;
+	}
+	&__phone{
+		a{
+			color: #3c393c;
+			&.email{
+				color: #4c86b5;
+			}
+		}
+	}
+	&__bott{
+		background: #4477a0;
+		padding: 12px;
+		p{
+			font: 14px $fontL;
+			color: #fff; 
+			a{
+				padding-bottom: 1px;
+				border-bottom: 1px solid #fff;
+				color: #fff; 
+				&:hover{
+					color: red;
+					border-bottom: 1px solid red;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
