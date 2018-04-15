@@ -117,6 +117,43 @@ $(window).load(function(){
   		infinite: true
 	});
 
+	$(".cafes__slider").slick({
+		slidesPerRow: 4,
+		rows: 2,
+		slidesToScroll: 1,
+  		dots: false,
+  		arrows: true,
+  		infinite: true,
+  		prevArrow:"<button type='button' class='slick-prev pull-left flex'><img src='img/prev.png' class='prev'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right flex'><img src='img/prev.png' class='next'></i></button>",
+        responsive: [
+        	{
+		      breakpoint: 1200,
+		      settings: {
+		        slidesPerRow: 3
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesPerRow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesPerRow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 540,
+		      settings: {
+		        slidesPerRow: 1
+		      }
+		    }
+        ]
+	});
+
 	var banWidth = $(".banner").width();
 	$(".banner").css({
 		'max-height': banWidth
@@ -144,5 +181,25 @@ $(window).load(function(){
     if(windWidth < 1500) {
 
     }
+
+    $(".contus__tab").click(function(){
+    	$(this).addClass("active");
+    	$(this).siblings().removeClass("active");
+    	var thisId = $(this).attr("data-cont");
+    	$(".contus__box").removeClass("active");
+    	$(".contus__box_" + thisId).addClass("active");
+    });
+
+    var boxH = $(".contus__box_2").height();
+    $(".contus").css({
+    	"minHeight":boxH
+    });
+
+    $(window).resize(function(){
+    	var boxH = $(".contus__box_2").height();
+    	$(".contus").css({
+    		"minHeight":boxH
+    	})
+    })
 });
 
