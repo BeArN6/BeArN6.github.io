@@ -1,0 +1,138 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+    background: url(../img/footer.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 65px 0;
+}
+.footer{
+	.wrapper{
+		&.flex{
+			align-items: stretch;
+		}
+	}
+	&__logo{
+		&.flex{
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		img{
+			max-width: 133px;
+			margin-bottom: 20px;
+		}
+		span{
+			font: 13px/18px GPR;
+			color: #afafaf;
+			padding: 3px 0;
+		}
+	}
+	&__right{
+		width: 225px;
+		&.flex{
+			justify-content: flex-end;
+		}
+	}
+	&__soc{
+		margin-top: 25px;
+		width: 100%;
+		a{
+			filter: invert(0.5) grayscale(1);
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				filter: none;
+			}
+		}		
+	}
+}
+.fnav{
+	&.flex{
+		align-items: flex-start;
+	}
+	ul{
+		list-style: none;
+		min-width: 98px;
+		margin-right: 97px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__title{
+		margin-bottom: 15px;
+	}
+	&__link{
+		color: #afafaf;
+		font: 13px/30px GPR;
+		transition: 0.3s ease-in-out;
+		&:hover{
+			color: #ffd03f;
+		}
+		&_title{
+			color: #f1f1f1;
+			font: 16px/21px GPR;
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	footer{
+		padding: 45px 0;
+	}
+	.fnav{
+		ul{
+		    margin-right: 65px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	footer{
+		padding: 25px 0;
+	}
+	.fnav{
+		ul{
+			margin-right: 40px;
+			&:first-child{
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	footer{
+		padding: 25px 0;
+	}
+	.fnav{
+		display: none !important;
+	}
+}
+@media screen and (max-width: 500px){
+	.footer{
+		&__logo{
+			&.flex{
+				width: 100%;
+    			align-items: center;
+			}
+			span{
+				text-align: center;
+			}
+		}
+		&__right{
+			width: 100%;
+			&.flex{
+				justify-content: space-around;
+			}
+		}
+		&__soc{
+			width: 250px;
+		}
+	}
+}
