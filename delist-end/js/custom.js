@@ -176,16 +176,6 @@ $(window).load(function() {
 		);
 	});
 
-	if(windWidth > 767) {
-		//Nextblock btn
-		$(".nextblock").on("click", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top - 90}, 1000);
-		});
-	}
-
 	//Gallery
 	$('[data-fancybox="gallery"]:not(".slick-cloned")').fancybox({
         thumbs : {
@@ -227,6 +217,16 @@ $(window).load(function() {
 
 	var windWidth = $(window).width();
 
+	if(windWidth > 767) {
+		//Nextblock btn
+		$(".nextblock").on("click", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top - 66}, 1000);
+		});
+	}
+
 	if(windWidth < 768) {
 		$(".header__right").hide();
 
@@ -258,5 +258,14 @@ $(window).load(function() {
 
 	$(".header__toggle").click(function() {
 		$(".header__nav, .header__right").slideToggle();
+	});
+
+	$(".fcolor__item").click(function(){
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+	});
+	$(".fmaterial__item").click(function(){
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
 	});
 });

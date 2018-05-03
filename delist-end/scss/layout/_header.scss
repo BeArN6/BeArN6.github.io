@@ -70,7 +70,7 @@ header{
 		position: fixed;
     	top: 0;
     	background: #fff;
-    	padding: 15px 0;
+    	padding: 5px 0;
     	box-shadow: 0 0px 6px 1px rgba(0,0,0,0.2);
     	.phone{
     		a{
@@ -154,7 +154,7 @@ header{
 					width: 260px;
 					padding-top: 7px;
 					li{
-						padding-left: 23px;
+						/*padding-left: 23px;*/
 						background: #282828;
 						border-bottom: 1px solid #363636;
 						margin: 0;
@@ -167,6 +167,10 @@ header{
 							color: #dddddd;
 							text-transform: none;
 							padding: 0;
+							padding-left: 23px;
+							height: 100%;
+						    width: 100%;
+						    display: block;
 							&:hover{
 								background: none;
 								color: #e8bd37;

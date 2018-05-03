@@ -374,7 +374,8 @@ h3{
 		color: #fff;
 	}
 	&__cont{
-		padding: 50px 35px;
+		/*padding: 50px 35px;*/
+		padding: 15px 35px 25px;
 		background: #fff;
 		border-radius: 4px;
 	}
@@ -424,6 +425,10 @@ h3{
 		height: 48px;
 		border-radius: 100%;
 		margin-right: 12px;
+		cursor: pointer;
+		&.active{
+			border: 1px solid #ffd03f;
+		}
 		&_1{
 			background: #690f15;
 		}
@@ -2001,18 +2006,45 @@ h3{
 	}
 	.adva{
 		&__item{
-			width: 100%;
+			width: 49%;
 		}
 		&__top{
-			padding-left: 45px;
+			padding-left: 5px;
+			padding-right: 5px;
+			&.flex{
+				align-items: center;
+			}
+			p{
+				text-align: center;
+				br{
+					display: none;
+				}
+			}
+			h3{
+				font: 15px/30px GPR;
+			}
 		}
 		&__bott{
-			padding-left: 45px;
+			padding-left: 5px;
+			padding-right: 5px;
+			&.flex{
+				align-items: center;
+			}
+			p{
+				text-align: center;
+				br{
+					display: none;
+				}
+			}
 		}
 	}
 	.scheme{
 		&__item{
-			width: 100%;
+			width: 49%;
+			h3{
+				font: 16px/28px GPR;
+				text-align: center;
+			}
 		}
 		&__form{
 			input[type="email"],
@@ -2061,6 +2093,10 @@ h3{
 			&.flex{
 				justify-content: space-around;
 			}
+		}
+		&__item{
+			max-width: 230px;
+    		width: 49%;
 		}
 	}
 	.constructor2{
