@@ -279,7 +279,7 @@ $(window).load(function(){
 	});
 
 	$('.modal-close,.overlay').click(function(){
-		$(".modal-cont").animate({opacity: 0, top:"50%"}, 200,
+		$(".modal-cont, .video").animate({opacity: 0, top:"50%"}, 200,
 			function(){
 				$(this).css('z-index', '-1'); 
 				$('.overlay').fadeOut(400);
@@ -359,6 +359,14 @@ $(window).load(function(){
 			dots: false
 		});
 	}
+
+	$(".comments__video").click(function(){
+		$(".video").animate({
+			'opacity': 1,
+			'z-index': 9999
+		});
+		$(".overlay").fadeIn(600);
+	});
 
 	// $(".calculator__item_1 input[type='radio']").click(function(){
 	// 	var calcVal = $(this).attr("value");
