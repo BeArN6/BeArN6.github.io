@@ -113,7 +113,7 @@ $(window).load(function(){
 		$(".header__toggle").click(function(){
 			$(this).toggleClass("active");
 			$(".header").toggleClass("header__toggled");
-			$(".header__nav").slideToggle();
+			$(".header__nav").toggleClass("active");
 		});
 		$(".header__nav ul li a").on("click", function (event) {
 			event.preventDefault();
@@ -121,7 +121,7 @@ $(window).load(function(){
 				top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top - 76}, 1000);
 			$(".header__toggle").removeClass("active");
-			$(".header__nav").slideUp();
+			$(".header__nav").removeClass("active");
 		});
 	}
 		
@@ -460,7 +460,7 @@ $(window).load(function(){
   	});
 
   	$(window).scroll(function(){
-	    if ($(this).scrollTop() > 1000){
+	    if ($(this).scrollTop() > 0){
 	      $(".fixed").addClass("fixed_visible");
 	    } else{
 	      $(".fixed").removeClass("fixed_visible");
@@ -495,6 +495,32 @@ $(window).load(function(){
 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
 			$(".select3__item").hide(); // скрываем его
 		}
+	});
+
+	$(".products__tab").click(function(){
+		var tabId = $(this).attr("data-tab");
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+		$(".products__cont_" + tabId).addClass("active");
+		$(".products__cont_" + tabId).siblings().removeClass("active");
+	});
+	$(".catalog__tab").click(function(){
+		var tabId = $(this).attr("data-tab");
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+		$(".catalog__cont_" + tabId).addClass("active");
+		$(".catalog__cont_" + tabId).siblings().removeClass("active");
+	});
+
+	$('#example1').beforeafter({
+		reset: false,
+		reset_delay: 2000,
+		message: ""
+	});
+	$('#example2').beforeafter({
+		reset: false,
+		reset_delay: 2000,
+		message: ""
 	});
 });
 

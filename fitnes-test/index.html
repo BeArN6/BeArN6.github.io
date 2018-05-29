@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.beforeafter.min.css" />	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body class="loaded">
@@ -71,17 +72,17 @@
 			</div>
 			<div class="wrapper">
 				<div class="products__tabs flex">
-					<div class="products__tab active flex">
+					<div class="products__tab active flex" data-tab="1">
 						Кардио<br> оборудование
 					</div>
-					<div class="products__tab flex">
+					<div class="products__tab flex" data-tab="2">
 						Кроссфит <br> функциональный тренинг
 					</div>
-					<div class="products__tab flex">Силовое<br> оборудование</div>
-					<div class="products__tab flex">Аэробика <br> и йога</div>
-					<div class="products__tab flex">Дополнительно</div>
+					<div class="products__tab flex" data-tab="3">Силовое<br> оборудование</div>
+					<div class="products__tab flex" data-tab="4">Аэробика <br> и йога</div>
+					<div class="products__tab flex" data-tab="5">Дополнительно</div>
 				</div>
-				<div class="products__cont flex">
+				<div class="products__cont products__cont_1 flex active">
 					<div class="products__item">
 						<div class="products__img flex">
 							<img src="img/product1.jpg" alt="">
@@ -99,7 +100,7 @@
 						<div class="products__info">
 							<h2>Spirit Fitness CT900</h2>
 							<span>12 600 ₽</span>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="3">Подробнее</button>
 						</div>
 					</div>
 					<div class="products__item">
@@ -109,7 +110,7 @@
 						<div class="products__info">
 							<h2>Spirit Fitness CT900</h2>
 							<span>12 600 ₽</span>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="4">Подробнее</button>
 						</div>
 					</div>
 					<div class="products__item">
@@ -119,7 +120,175 @@
 						<div class="products__info">
 							<h2>Spirit Fitness CT900</h2>
 							<span>12 600 ₽</span>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="5">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="products__cont products__cont_2 flex">
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="6">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="7">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="8">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="9">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="products__cont products__cont_3 flex">
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="10">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="11">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="12">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="13">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="products__cont products__cont_4 flex">
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="14">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="15">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="16">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="17">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="products__cont products__cont_5 flex">
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="18">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="19">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="20">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info">
+							<h2>Spirit Fitness CT900</h2>
+							<span>12 600 ₽</span>
+							<button class="modal-run" data-id="21">Подробнее</button>
 						</div>
 					</div>
 				</div>
@@ -178,7 +347,7 @@
 							<span>1</span>
 						</div>
 						<p class="howwe__text">
-							<a href="">Оставляете заявку</a> <br>
+							<a href="" class="modal-run" data-id="22">Оставляете заявку</a> <br>
 							или звоните по телефону:<br>
 							+7 (988) 873 02 75<br>
 							+7 (327) 213 71 09
@@ -274,7 +443,7 @@
 							<span>10</span>
 						</div>
 						<p class="howwe__text">
-							<a href="">Начинаем работу</a><br>
+							<a href="" class="modal-run" data-id="23">Начинаем работу</a><br>
 							над новым<br>
 							совместным проектом
 						</p>
@@ -318,12 +487,9 @@
 			</div>
 			<div class="wrapper flex">
 				<div class="gym__img">
-					<div class="gym__before flex">
-						<img src="img/gym.jpg" alt="">
-					</div>
-					<div class="gym__after flex">
-						<img src="img/gym.jpg" alt="">
-					</div>
+					<div class="g-before-after" id="example1">
+				        <img src="img/gym-after.jpg" data-aftersrc="img/gym.jpg">
+				    </div>
 				</div>
 				<div class="gym__info">
 					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
@@ -335,8 +501,8 @@
 					десяти предложений в абзаце, что позволяет сделать текст более
 					привлекательным и живым для слухового восприятия. По своей сути
 					рыбатекст является альтернативой традиционному lorem ipsum.</p>
-					<div class="gym__btn bhover">
-						<button>Хочу так же</button>
+					<div class="gym__btn">
+						<button class="modal-run bhover" data-id="24">Хочу так же</button>
 					</div>
 				</div>
 			</div>
@@ -351,7 +517,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button class="modal-run bhover_2" data-id="3">Подробнее</button>
+						<button class="modal-run bhover_2" data-id="25">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__item flex">
@@ -359,7 +525,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button class="bhover_2">Подробнее</button>
+						<button class="modal-run bhover_2" data-id="26">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__item flex">
@@ -367,7 +533,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button class="bhover_2">Подробнее</button>
+						<button class="modal-run bhover_2" data-id="27">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__item flex">
@@ -375,7 +541,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button>Подробнее</button>
+						<button class="modal-run bhover_2" data-id="28">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__item flex">
@@ -383,7 +549,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button class="bhover_2">Подробнее</button>
+						<button class="modal-run bhover_2" data-id="29">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__item flex">
@@ -391,7 +557,7 @@
 					<div class="works__info">
 						<h3>Про­ек­ти­рова­ние фит­нес-цен­тра</h3>
 						<p>г. Москва, ул Полтава 09/14</p>
-						<button class="bhover_2">Подробнее</button>
+						<button class="modal-run bhover_2" data-id="30">Подробнее</button>
 					</div>
 				</div>
 				<div class="works__more">
@@ -405,15 +571,15 @@
 			</div>
 			<div class="wrapper">
 				<div class="products__tabs catalog__tabs flex">
-					<div class="products__tab catalog__tab active flex">
+					<div class="products__tab catalog__tab active flex" data-tab="1">
 						Новинки
 					</div>
-					<div class="products__tab catalog__tab flex">
+					<div class="products__tab catalog__tab flex" data-tab="2">
 						Продано
 					</div>
-					<div class="products__tab catalog__tab flex">Готовится к реализации</div>
+					<div class="products__tab catalog__tab flex" data-tab="3">Готовится к реализации</div>
 				</div>
-				<div class="catalog__cont flex">
+				<div class="catalog__cont catalog__cont_1 flex active">
 					<div class="products__item catalog__item">
 						<div class="products__img flex">
 							<img src="img/product1.jpg" alt="">
@@ -424,7 +590,7 @@
 								<span>12 600$</span>
 								<span class="new">10 000$</span>
 							</div>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="31">Подробнее</button>
 						</div>
 					</div>
 					<div class="products__item catalog__item">
@@ -437,7 +603,7 @@
 								<span>12 600$</span>
 								<span class="new">10 000$</span>
 							</div>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="32">Подробнее</button>
 						</div>
 					</div>
 					<div class="products__item catalog__item">
@@ -450,7 +616,89 @@
 								<span>12 600$</span>
 								<span class="new">10 000$</span>
 							</div>
-							<button>Подробнее</button>
+							<button class="modal-run" data-id="33">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__cont catalog__cont_2 flex">
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="34">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="35">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="36">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__cont catalog__cont_3 flex">
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="37">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="38">Подробнее</button>
+						</div>
+					</div>
+					<div class="products__item catalog__item">
+						<div class="products__img flex">
+							<img src="img/product1.jpg" alt="">
+						</div>
+						<div class="products__info catalog__info">
+							<h2>Spirit Fitness CT900</h2>
+							<div class="catalog__price flex">
+								<span>12 600$</span>
+								<span class="new">10 000$</span>
+							</div>
+							<button class="modal-run" data-id="39">Подробнее</button>
 						</div>
 					</div>
 				</div>
@@ -556,7 +804,7 @@
 				</h3>
 				<p class="proj3d__text">при поставке оборудования <br>
 				на сумму от 1 млн. руб.</p>
-				<button class="proj3d__btn bhover">Получить</button>
+				<button class="proj3d__btn bhover modal-run" data-id="40">Получить</button>
 				<div class="proj3d__cont flex">
 					<a href="img/gal1.jpg" class="proj3d__item flex" data-fancybox="gallery">
 						<img src="img/gal1.jpg" alt="">
@@ -580,12 +828,9 @@
 			</div>
 			<div class="wrapper flex">
 				<div class="gym__img">
-					<div class="gym__before flex">
-						<img src="img/gym.jpg" alt="">
-					</div>
-					<div class="gym__after flex">
-						<img src="img/gym.jpg" alt="">
-					</div>
+					<div class="g-before-after" id="example2">
+				        <img src="img/gym-after.jpg" data-aftersrc="img/gym.jpg">
+				    </div>
 				</div>
 				<div class="gym__info gym2__info">
 					<p><span>Восстановление текущего(износившегося) оборудования</span>
@@ -594,7 +839,7 @@
 					<p><span>Переоснащение клубов с выкупом и заменой нынешнего
 					оборудования и увеличивает  приток новых клиентов на 1/3</span></p>
 					<div class="gym__btn gym2__btn">
-						<button class="bhover">Получить консультацию</button>
+						<button class="bhover modal-run" data-id="41">Получить консультацию</button>
 					</div>
 				</div>
 			</div>
@@ -843,7 +1088,7 @@
 					</div>
 				</div>
 				<div class="modal__info">
-					<h2>Тренажер — Хаммер для плеч</h2>
+					<h2>Тренажер — Хаммер для плеч 1</h2>
 					<div class="border"></div>
 					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
 					сгенерировать несколько абзацев более менее осмысленного
@@ -927,7 +1172,2092 @@
 			</form>
 		</div>
 		<!--Modal window-->
-		<div class="modal-cont modal-cont-3 modal-works">
+		<div class="modal-cont modal-prod modal-cont-3">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 2</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-4">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 3</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-5">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 4</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-6">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 5</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-7">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 6</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-8">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 7</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-9">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 8</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-10">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 9</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-11">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 10</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-12">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 11</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-13">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 12</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-14">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 13</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-15">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 14</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-16">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 15</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-17">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 16</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-18">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 17</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-19">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 18</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-20">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 19</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-21">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — Хаммер для плеч 20</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-22">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<h2 class="modal__title">Оставить заявку:</h2>
+			<form class="modal__form">
+				<input type="text" class="phone" name="phone1" placeholder="Ваш телефон">
+				<input class="btn banner__order bhover_2" name="sendForm1" type="submit" value="Заказать звонок">
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-23">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<h2 class="modal__title">Начинаем работу:</h2>
+			<form class="modal__form">
+				<input type="text" class="phone" name="phone1" placeholder="Ваш телефон">
+				<input class="btn banner__order bhover_2" name="sendForm1" type="submit" value="Заказать звонок">
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-24">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<h2 class="modal__title">ОБНОВЛЕННЫЙ ФИТНЕС <br> ЗАЛ В ЯРОСЛАВЛЕ</h2>
+			<form class="modal__form">
+				<input type="text" class="phone" name="phone1" placeholder="Ваш телефон">
+				<input class="btn banner__order bhover_2" name="sendForm1" type="submit" value="Заказать звонок">
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-25 modal-works">
 			<span class="modal-close">
 				<img src="img/close.png" alt="">
 			</span>
@@ -939,7 +3269,7 @@
 						<img class="modal__img" src="img/example.jpg" alt="">
 					</div>
 					<div class="modal__sinfo">
-						<h2>Фитнес зал - Сокол</h2>
+						<h2>Фитнес зал - Сокол 1</h2>
 						<p>г. Москва, ул. Воронина оф 03/21</p>
 					</div>
 				</div>
@@ -949,6 +3279,1120 @@
 				а начинающему оратору отточить навык публичных
 				выступлений в домашних условиях. </p>
 			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-26 modal-works">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__cont2">
+				<div class="modal__slider">
+					<div class="modal__slide">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+					</div>
+					<div class="modal__sinfo">
+						<h2>Фитнес зал - Сокол 2</h2>
+						<p>г. Москва, ул. Воронина оф 03/21</p>
+					</div>
+				</div>
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+				вебмастеру сгенерировать несколько абзацев более
+				менее осмысленного текста рыбы на русском языке,
+				а начинающему оратору отточить навык публичных
+				выступлений в домашних условиях. </p>
+			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-27 modal-works">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__cont2">
+				<div class="modal__slider">
+					<div class="modal__slide">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+					</div>
+					<div class="modal__sinfo">
+						<h2>Фитнес зал - Сокол 3</h2>
+						<p>г. Москва, ул. Воронина оф 03/21</p>
+					</div>
+				</div>
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+				вебмастеру сгенерировать несколько абзацев более
+				менее осмысленного текста рыбы на русском языке,
+				а начинающему оратору отточить навык публичных
+				выступлений в домашних условиях. </p>
+			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-28 modal-works">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__cont2">
+				<div class="modal__slider">
+					<div class="modal__slide">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+					</div>
+					<div class="modal__sinfo">
+						<h2>Фитнес зал - Сокол 4</h2>
+						<p>г. Москва, ул. Воронина оф 03/21</p>
+					</div>
+				</div>
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+				вебмастеру сгенерировать несколько абзацев более
+				менее осмысленного текста рыбы на русском языке,
+				а начинающему оратору отточить навык публичных
+				выступлений в домашних условиях. </p>
+			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-29 modal-works">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__cont2">
+				<div class="modal__slider">
+					<div class="modal__slide">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+					</div>
+					<div class="modal__sinfo">
+						<h2>Фитнес зал - Сокол 5</h2>
+						<p>г. Москва, ул. Воронина оф 03/21</p>
+					</div>
+				</div>
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+				вебмастеру сгенерировать несколько абзацев более
+				менее осмысленного текста рыбы на русском языке,
+				а начинающему оратору отточить навык публичных
+				выступлений в домашних условиях. </p>
+			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-30 modal-works">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__cont2">
+				<div class="modal__slider">
+					<div class="modal__slide">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+						<img class="modal__img" src="img/example.jpg" alt="">
+					</div>
+					<div class="modal__sinfo">
+						<h2>Фитнес зал - Сокол 6</h2>
+						<p>г. Москва, ул. Воронина оф 03/21</p>
+					</div>
+				</div>
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+				вебмастеру сгенерировать несколько абзацев более
+				менее осмысленного текста рыбы на русском языке,
+				а начинающему оратору отточить навык публичных
+				выступлений в домашних условиях. </p>
+			</div>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-31">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 1</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-32">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 2</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-33">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 3</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-34">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 4</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-35">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 5</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-36">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 6</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-37">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 7</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-38">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 8</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-prod modal-cont-39">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<div class="modal__box flex">
+				<div class="modal__left">
+					<div class="slider-for">
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+						<a href="img/prod1.jpg" data-fancybox="gallery2"><img src="img/prod1.jpg" alt=""></a>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/prod1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal__info">
+					<h2>Тренажер — 9</h2>
+					<div class="border"></div>
+					<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+					сгенерировать несколько абзацев более менее осмысленного
+					текста рыбы на русском языке, а начинающему оратору отточить
+					навык публичных выступлений в домашних условиях.
+					При создании генератора мы использовали небезизвестный
+					универсальный код речей. Текст генерируется абзацами случайным
+					образом от двух до десяти предложений в абзаце, что позволяет
+					сделать текст более привлекательным и живым для восприятия.
+					Текст генерируется абзацами случайным образом от двух до десяти
+					предложений в абзаце, что позволяет сделать текст более
+					привлекательным и живым для восприятия. Текст генерируется
+					абзацами случайным образом от двух до десяти предложений.
+					</p>
+				</div>
+			</div>
+			<form action="" class="modal__form2 flex">
+				<input type="email" placeholder="Ваш e-mail">
+				<input type="text" class="phone" placeholder="Ваш телефон">
+				<input type="submit" class="banner__order bhover_2"  value="Получить" >
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-40">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<h2 class="modal__title">РАЗРАБОТАЕМ 3D-ПРОЕКТ</h2>
+			<form class="modal__form">
+				<input type="text" class="phone" name="phone1" placeholder="Ваш телефон">
+				<input class="btn banner__order bhover_2" name="sendForm1" type="submit" value="Заказать звонок">
+			</form>
+		</div>
+		<!--Modal window-->
+		<div class="modal-cont modal-cont-41">
+			<span class="modal-close">
+				<img src="img/close.png" alt="">
+			</span>
+			<h2 class="modal__title">НАШИ РАБОТЫ ДО И ПОСЛЕ</h2>
+			<form class="modal__form">
+				<input type="text" class="phone" name="phone1" placeholder="Ваш телефон">
+				<input class="btn banner__order bhover_2" name="sendForm1" type="submit" value="Заказать звонок">
+			</form>
 		</div>
 		<!--Modal window-->
 		<!-- <div class="modal-cont modal-thanks">
@@ -1041,6 +4485,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/components/slick.js"></script>
+	<script type="text/javascript" src="js/components/jquery.beforeafter.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
