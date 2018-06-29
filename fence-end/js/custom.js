@@ -124,7 +124,7 @@ $(window).load(function(){
 	});
 
 	$('.slider-nav, .slider-nav2').slick({
-	    slidesToShow: 3,
+	    slidesToShow: 4,
 	    slidesToScroll: 1,
 	    asNavFor: '.slider-for',
 	    focusOnSelect: true,

@@ -1,0 +1,157 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	padding: 85px 0 95px;
+	background: #2a2a2a;
+	.wrapper{
+		&.flex{
+			align-items: stretch;
+		}
+	}
+	&__col{
+		&.flex{
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		p{
+			font: 400 14px/18px 'Roboto';
+			color: #fff;
+		}
+		h3{
+			font: 700 16px 'Roboto';
+			text-transform: uppercase;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+		a{
+			font: 400 14px 'Roboto';
+			color: #fff;
+			display: inline-block;
+			margin-bottom: 12px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&:hover{
+				color: #00bf6c;
+				box-shadow: 0 1px 0 0 #00bf6c;
+			}
+			&.phone{
+				font: 400 13px 'Roboto';
+				color: #fff;
+				&:hover{
+					color: #00bf6c;
+					box-shadow: 0 0 0 0;
+				}
+			}
+		}
+		&_2{
+			&.flex{
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+.callback{
+	cursor: pointer;
+	&.flex{
+		justify-content: flex-start;
+	}
+	img{
+		margin-right: 10px;
+		filter: brightness(0) invert(1);
+		transition: all 0.3s ease-in-out;
+	}
+	span{
+		font: 400 13px 'Roboto';
+		color: #fff;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover{
+		img{
+			filter: none;
+		}
+		span{
+			color: #00bf6c;
+		}
+	}
+}
+.soc{
+	a{
+		margin-bottom: 0;
+		margin-right: 5px;
+		filter: brightness(0) invert(1);
+		transition: all 0.2s ease-in-out;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover{
+			box-shadow: 0 0 0 0;
+			filter: none;
+			margin-top: -5px;
+		}
+	}
+}
+@keyframes mouse{
+	0%{
+		transform: translateY(-5px);
+	}
+	100%{
+		transform: translateY(5px);
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		padding: 25px 0;
+		&__col{
+			width: 100%;
+			&:first-child{
+				margin-bottom: 20px;
+			}
+			&.flex{
+				flex-direction: row;
+				align-items: center;
+			}
+			&_2{
+				display: none !important;
+			}
+			h3{
+				width: 100%;
+			}
+			a{
+				&.phone{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.soc{
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 20px;
+	    width: 100%;
+    	&.flex{
+    		justify-content: center;
+    	}
+	}
+}
