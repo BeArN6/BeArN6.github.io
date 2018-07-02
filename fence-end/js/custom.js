@@ -350,6 +350,18 @@ $(window).load(function(){
 			}
 		);
 	});
-	$(".cat")
-})
+
+	if(windWidth > 991){
+		$(window).scroll(function() {
+	    	const block_position = $('.main').offset().top;
+	    	const block_position2 = $('.montaj').offset().top - 200;
+
+	    	if ($(this).scrollTop() > block_position && $(this).scrollTop() < block_position2) {
+				$(".sidebar").addClass("active");
+	    	} else{
+	    		$(".sidebar").removeClass("active");
+	    	}
+		});
+	}
+});
 
