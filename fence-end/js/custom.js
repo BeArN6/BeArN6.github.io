@@ -243,7 +243,7 @@ $(window).load(function(){
 
 	$(window).scroll(function() {
     	if ($(this).scrollTop() > 500) {
-				$("header").addClass("header_active");
+			$("header").addClass("header_active");
     	}
     	if ($(this).scrollTop() < 250) {
     		$("header").removeClass("header_active");
@@ -257,6 +257,7 @@ $(window).load(function(){
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			arrows: false,
+			dots: true,
 			responsive: [
 			  {
 			  	breakpoint: 992,
@@ -279,6 +280,7 @@ $(window).load(function(){
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			arrows: false,
+			dots: true,
 			responsive: [
 			  {
 			  	breakpoint: 768,
@@ -296,6 +298,17 @@ $(window).load(function(){
 		});
 	}
 	if(windWidth < 768){
+		$(window).scroll(function() {
+	    	if ($(this).scrollTop() > 400) {
+				$(".cat").show();
+	    	}
+	    	if ($(this).scrollTop() < 250) {
+	    		$(".cat").hide();
+	    	}
+		});
+		$(".cat").click(function(){
+			$(".sidebar").slideToggle();
+		});
 		$(".header__main").hide();
 		$(".header__hamb").click(function(){
 			$(this).addClass("active");
@@ -313,8 +326,30 @@ $(window).load(function(){
 		$(".price2__slider").slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows: false
+			arrows: false,
+			dots: true
 		});
 	}
+	$('.modal-run').click(function(event){
+		event.preventDefault();
+		let modalH2 = $(".modal-call").height();
+		$(".modal-call").css({
+			'marginTop': -modalH2/2
+		});
+		$(".overlay").fadeIn(600,function(){
+			$('.modal-call')
+				.css('z-index', '9999')
+				.animate({opacity: 1,top: "50%"},200)
+		});
+	});
+	$('.modal-close,.overlay').click(function(){
+		$(".modal-cont").animate({opacity: 0, top:"50%"}, 200,
+			function(){
+				$(this).css('z-index', '-1'); 
+				$('.overlay').fadeOut(400);
+			}
+		);
+	});
+	$(".cat")
 })
 

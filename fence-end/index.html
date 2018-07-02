@@ -31,7 +31,7 @@
 					<h2>заборы</h2>
 					<p>Доступные заборы для дома и дачи, огромный выбор, отличное качество. <br>
 					Подбор по вашим предпочтениям и любым размерам</p>
-					<button class="btn">Узнать больше</button>
+					<button class="btn modal-run">Узнать больше</button>
 					<a href="#ex2" class="nextblock">
 						<img src="img/mouse.png" alt="">
 					</a>
@@ -42,7 +42,7 @@
 					<h2>навесы</h2>
 					<p>Доступные навесы из поликарбоната для дома и дачи, огромный выбор, отличное качество. <br>
 					Подбор по вашим предпочтениям и любым размерам</p>
-					<button class="btn">Узнать больше</button>
+					<button class="btn modal-run">Узнать больше</button>
 					<a href="#ex2" class="nextblock">
 						<img src="img/mouse.png" alt="">
 					</a>
@@ -712,6 +712,17 @@
 				</div>
 			</div>
 		</div>
+		<!--Modal window end-->
+		<div class="modal-cont modal-call">
+			<span class="modal-close">+</span>
+			<form action="" method="post" class="modal__form">
+				<h3>Заказать звонок</h3>
+				<input type="text" name="fio1" placeholder="Ваше Имя">
+				<input type="text" class="phone" name="phone1" placeholder="+7 (___) ___-__-__">
+				<button type="submit" name="sendForm1" class="btn">ОТПРАВИТЬ</button>
+			</form>
+		</div>
+		<div class="overlay"></div>
 	</main>	
 			
 <!-- CONTENT EOF   -->
@@ -734,7 +745,7 @@
 			<div class="header__main">
 				<div class="header__top flex">
 					<a href="tel:+74990000000" class="header__phone">+7 (499) 000-00-00</a>
-					<div class="callback flex">
+					<div class="callback flex modal-run">
 						<img src="img/phone.png" alt="">
 						<span>Обратный звонок</span>
 					</div>
@@ -793,7 +804,7 @@
 			<div class="footer__col flex">
 				<h3>Контакты</h3>
 				<a href="tel:+74990000000" class="phone">+7 (499) 000-00-00</a>
-				<div class="callback flex">
+				<div class="callback flex modal-run">
 					<img src="img/phone.png" alt="">
 					<span>Обратный звонок</span>
 				</div>
