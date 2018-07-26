@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<title>Главная</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body class="loaded">
@@ -32,7 +33,7 @@
 							<img src="img/arrow.svg" alt="">
 						</div>
 					</div>
-					<div class="btn flex">
+					<div class="btn flex banner__consult">
 						<span>ПОЛУЧИТЬ <br> КОНСУЛЬТАЦИЮ</span>
 						<div class="btn__img flex">
 							<img src="img/arrow.svg" alt="">
@@ -97,7 +98,7 @@
 			<div class="banner2__box">
 				<h2 class="title">Какие бывают септики и в чем <br>
 				между ними разница?</h2>
-				<p class="banner2__text">Выбирая, какой купить септик, многие стоят на распутье: Купить септик Топас? Купить септик Астра? Или остановиться на септике Танк или бетонных кольцах? И тут, как и всегда, нужно обратить пристальное внимание на все предстоящие расходы с покупкой и дальнейшей установкой септика. К примеру, септики Астра и Топас (автономные септики) дороже сами по себе, но гораздо технологичнее своих конкурентов, а монтаж на септики серии Топас или Астра обходится дешевле за счет их компактности. Что касается накопительных септиков, то они больше по своим габаритам, их обязательно нужно якорить и, соответствено, монтаж на них выходит дороже. Выбирать нужно, исходя из потребностей.</p>
+				<p class="banner2__text">Выбирая септик, многие сталкиваются с различного рода рекламой: кто-то рекомендует септики Танк, кто-то советует Топас, Астру или Евролос; по мнению некоторых, самое лучшее решение - это вовсе сделать колодец. Каждый вариант, безусловно, хорош по-своему, поэтому важно знать разницу между ними, чтобы принять верное решение. Для начала, мы бы посоветовали обратить внимание на предстоящие расходы, связанные с монтажом и эксплуатации септиков. К примеру, септики Астра и Топас дороже сами по себе, но гораздо технологичнее своих конкурентов, а монтаж на них дешевле за счет их компактности. Накопительные септики дешевле, но больше по своим габаритам, их обязательно нужно якорить и, соответствено, монтаж на них выходит дороже. Итак, давайте разберемся с расходами:</p>
 				<h2 class="title">В таблице ниже приведены примерные  <br>
 				расходы за 5 лет при использовании <br>
 				трех типов септика:</h2>
@@ -110,10 +111,11 @@
 						<div class="examples__row examples__row_title examples__row_white"></div>
 						<div class="examples__row examples__row_gray">Стоимость септика</div>
 						<div class="examples__row examples__row_white">Стоимость монтажа</div>
-						<div class="examples__row examples__row_gray">Досыпка бактерий</div>
-						<div class="examples__row examples__row_white">Степень очистки</div>
-						<div class="examples__row examples__row_gray">Запах</div>
-						<div class="examples__row examples__row_white">Расходы за 5 лет</div>
+						<div class="examples__row examples__row_gray">Вызов ассенизатора</div>
+						<div class="examples__row examples__row_white">Досыпка бактерий</div>
+						<div class="examples__row examples__row_gray">Степень очистки</div>
+						<div class="examples__row examples__row_white">Запах</div>
+						<div class="examples__row examples__row_gray">Расходы за 5 лет</div>
 					</div>
 					<div class="examples__col examples__col_1">
 						<div class="examples__row examples__row_title examples__row_white">Автономный септик*</div>
@@ -205,7 +207,7 @@
 						наши специалисты по номеру +7 (495) 740-05-58</p>
 					</div>
 					<div class="product__right">
-						<img src="img/prod.png" alt="">
+						<img src="img/prod.png" alt="" class="product__rimg">
 						<div class="btn flex active product__btn">
 							<span>УЗНАТЬ ЦЕНЫ</span>
 							<div class="btn__img flex">
@@ -321,9 +323,10 @@
 				<h2 class="banner3__title">Вы решили купить септик под ключ? <br>
 				Вас интересует цена станции и монтажа?</h2>
 				<p class="banner3__text">
-					У наших специалистов Вы также можете уточнить всю остальную информацию о том, как купить септик в <br>
-					Москве или Московской области и прилегающих областях. Для того, чтобы связаться с нами, воспользуйтесь<br>
-					формой обратной связи или любым удобным Вам способом из раздела «Контакты»
+					У наших специалистов Вы также можете уточнить всю остальную информацию о том, как подбирается септик, сколько будет стоить нужный Вам,
+					какие сроки монтажа и какие акции действуют на данный момент. Для того, чтобы связаться с нами, воспользуйтесь
+					формой обратной связи 
+					или любым удобным Вам способом из раздела «Контакты»
 				</p>
 				<form action="" class="banner3__form flex">
 					<input type="text" placeholder="Имя*">
@@ -414,12 +417,6 @@
 		</div>
 		<div class="adva">
 			<div class="wrapper">
-				<div class="adva__box">
-					<h2>Убедитесь в этом</h2>
-					<p>Свяжитесь с нами для <br>
-					консультации</p>
-					<a href="tel:+74957400558">+7 (495) 740-05-58</a>
-				</div>
 				<h2 class="adva__title">6 важных качеств нашей команды, <br>
 				которых мы придерживаемся:</h2>
 				<div class="adva__cont flex">
@@ -486,13 +483,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="adva__box">
+					<h2>Убедитесь в этом</h2>
+					<p>Свяжитесь с нами для <br>
+					консультации</p>
+					<a href="tel:+74957400558" data-hover="+7 (495) 740-05-58">+7 (495) 740-05-58</a>
+				</div>
 			</div>
 		</div>
 		<div class="partners">
 			<div class="wrapper">
 				<h2 class="title">Нам доверяют:</h2>
 				<div class="partners__cont flex">
-					<img src="img/arrow2.svg" alt="" class="partners__arrow">
+					<!-- <img src="img/arrow2.svg" alt="" class="partners__arrow"> -->
 					<div class="partners__item">
 						<div class="partners__img flex">
 							<img src="img/part1.png" alt="">
@@ -520,6 +523,15 @@
 						<p>Обустроим все для комфорта <br>
 						работы на предприятии</p>
 					</div>
+					<div class="partners__item">
+						<div class="partners__img flex">
+							<img src="img/part2.png" alt="">
+						</div>
+						<h3>Септики <br>
+						для Mr.Burgerovich</h3>
+						<p>Кафе, рестораны - это тоже <br>
+						наши Клиенты</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -527,31 +539,80 @@
 			<div class="wrapper">
 				<h2 class="title">Посмотрите подробный видеоотчет <br>
 				и отзывы о нашей компании</h2>
+				<div class="videochat__cont flex">
+					<div class="videochat__video flex">
+						<div class="videochat__play flex">
+							<img src="img/play.png" alt="">
+							<div class="videochat__text">
+								<h3>Смотреть видео</h3>
+								<p>593 187 просмотров</p>
+							</div>
+						</div>
+						<div class="videochat__info">
+							<h3>История о том, как Sewera обеспечила очередного <br>
+							счастливчика полноценной канализацией в доме</h3>
+							<p>Константин Заруцкий (Academeg) - ведущий обозреватель автомобильных новинок, 
+							блоггер с аудиторией более 3 млн человек, да и просто хороший парень! </p>
+						</div>
+					</div>
+					<div class="videochat__slider">
+						<div class="videochat__slide videochat__slide_1">
+							<p>Отзывы <br>
+							о нас</p>
+							<img src="img/brand0.png" alt="" class="videochat__brand">
+							<div class="videochat__comment flex">
+								<img src="img/comment.png" alt="">
+								<span>15 отзывов</span>
+							</div>
+						</div>
+						<div class="videochat__slide videochat__slide_2">
+							<p>Отзывы <br>
+							о нас</p>
+							<img src="img/brand0.png" alt="" class="videochat__brand">
+							<div class="videochat__comment flex">
+								<img src="img/comment.png" alt="">
+								<span>15 отзывов</span>
+							</div>
+						</div>
+						<div class="videochat__slide videochat__slide_2">
+							<p>Отзывы <br>
+							о нас</p>
+							<img src="img/brand0.png" alt="" class="videochat__brand">
+							<div class="videochat__comment flex">
+								<img src="img/comment.png" alt="">
+								<span>15 отзывов</span>
+							</div>
+						</div>
+						<div class="videochat__slide videochat__slide_1">
+							<p>Отзывы <br>
+							о нас</p>
+							<img src="img/brand0.png" alt="" class="videochat__brand">
+							<div class="videochat__comment flex">
+								<img src="img/comment.png" alt="">
+								<span>15 отзывов</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="banner4">
 			<div class="banner4__box">
-				<h2 class="title">Купить септик под ключ в Москве <br>
-				и Московской области</h2>
-				<p class="banner2__text banner4__text">Компания "Севера" предлагает купить септик и установить под ключ в любых
-				условиях и в любое время года
-				 в Москве и во всех регионах Московской
-				области. Наши станции моделей – это проверенные
-				годами
-				станции технологии, которые осчастливили тысячи жителей
-				Москвы и прилежащих
-				регионов Московской области. Мы уже более 7 лет
-				дарим нашим Клиентам возможность купить септик и жить в
-				комфорте, где
-				после установки септика все сантехнические удобства становятся именно
-				«удобствами», а не их подобием.</p>
+				<h2 class="title">Мы знаем, как серьезно Вы <br>
+				подходите к вопросу о покупке септика </h2>
 				<p class="banner2__text banner4__text2">
-					Помимо установки на дачных участках, купить септик и установить под ключ
-					возможно на различных
-					производствах, заправках, для обслуживания
-					ресторанов, кафе и многого другого. Септики – это
-					 универсальное решение
-					проблем с канализацией.
+					Начиная с момента Вашего к нам обращения, мы полностью погружаемся  в решение Вашей задачи. Мы также прекрасно понимаем, что подразумевает 
+					словосочетание “под ключ” - это значит, что все работы, проектирование и продумывание плана мы полностью берем на себя. Наши сметы и цены полностью прозрачны, и если Вам покажется это увлекательным, то мы обязательно погрузим 
+					Вас в процесс работы.  
+				</p>
+				<p class="banner2__text banner4__text2">
+					Все работы производятся без предоплат, а цены фиксируются договорами.
+				</p>
+				<p class="banner2__text banner4__text2">
+					За всю историю нашей компании, мы сталкивались с совершенно разными задачами. Мы не называем их проблемами, потому что многолетний опыт позволяет нам 
+					структурированно и слаженно работать над совершенно разными проектами:
+					начиная от монтажа всех коммуникаций на дачных объектах, заканчивая крупными
+					промышленными предприятиями.
 				</p>
 				<div class="btn flex blue">
 					<span>ПОДРОБНЕЕ О НАС</span>
@@ -611,14 +672,14 @@
 					<span></span>
 				</div>
 				<ul class="flex">
-					<li><a href="">Цены</a></li>
-					<li><a href="">Что такое септик?</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Наши работы</a></li>
-					<li><a href="">Контакты</a></li>
+					<li><a href="" data-hover="Цены">Цены</a></li>
+					<li><a href="" data-hover="Что такое септик?">Что такое септик?</a></li>
+					<li><a href="" data-hover="Отзывы">Отзывы</a></li>
+					<li><a href="" data-hover="Наши работы">Наши работы</a></li>
+					<li><a href="" data-hover="Контакты">Контакты</a></li>
 				</ul>
 			</div>
-			<a href="tel:+74957400558" class="header__phone">+7 ( 495 ) 740-05-58</a>
+			<a href="tel:+74957400558" class="header__phone" data-hover="+7 ( 495 ) 740-05-58">+7 ( 495 ) 740-05-58</a>
 			<div class="header__call flex">
 				<span>ЗАКАЗАТЬ ЗВОНОК</span>
 				<div class="phone flex">
@@ -634,6 +695,22 @@
 	
 	<footer class="footer">
 		<div class="wrapper">
+			<div class="footer__box">
+				<h2>У Вас остались вопросы?</h2>
+				<p>Свяжитесь с нами</p>
+				<div class="footer__phone flex">
+					<div class="phone flex">
+						<img src="img/phone.svg" alt="">
+					</div>
+					<a href="tel:+74957400558">+7 ( 495 ) 740-05-58</a>
+				</div>
+				<div class="btn flex green">
+					<span>ЗАКАЗАТЬ ЗВОНОК</span>
+					<div class="btn__img flex">
+						<img src="img/arrow.svg" alt="">
+					</div>
+				</div>
+			</div>
 			<div class="footer__main flex">
 				<div class="footer__row footer__row_1 flex">
 					<a href="" class="header__logo footer__logo flex">
@@ -660,7 +737,7 @@
 					</div>
 				</div>
 				<div class="footer__row footer__row_2 flex">
-					<div class="footer__col flex">
+					<div class="footer__col footer__col_1 flex">
 						<div class="footer__item footer__map flex">
 							<div class="footer__icon flex">
 								<img src="img/loc.svg" alt="">
@@ -674,7 +751,7 @@
 							<span class="footer__text_2">ст. Калужская</span>
 						</div>
 					</div>
-					<div class="footer__col flex">
+					<div class="footer__col footer__col_2 flex">
 						<div class="footer__item footer__map flex">
 							<div class="footer__icon flex">
 								<img src="img/phone2.svg" alt="">
@@ -688,7 +765,7 @@
 							<a href="mailto:info@sewera.ru" class="footer__text_2">info@sewera.ru</a>
 						</div>
 					</div>
-					<div class="footer__col flex">
+					<div class="footer__col footer__col_3 flex">
 						<div class="footer__item">
 							<a href="" class="footer__text_2">Цены</a>
 						</div>
@@ -696,7 +773,7 @@
 							<a href="" class="footer__text_2">Что такое  септик?</a>
 						</div>
 					</div>
-					<div class="footer__col flex">
+					<div class="footer__col footer__col_4 flex">
 						<div class="footer__item">
 							<a href="" class="footer__text_2">Отзывы</a>
 						</div>
@@ -704,7 +781,7 @@
 							<a href="" class="footer__text_2">Контакты</a>
 						</div>
 					</div>
-					<div class="footer__col flex">
+					<div class="footer__col footer__col_5 flex">
 						<div class="footer__item">
 							<a href="" class="footer__text_2">Наши работы</a>
 						</div>
@@ -713,22 +790,6 @@
 				<div class="footer__row footer__row_3 flex">
 					<p class="footer__text">ООО Sewera, 2018. Все права защищены</p>
 					<a href="" class="footer__text">Политика конфиденциальности</a>
-				</div>
-			</div>
-			<div class="footer__box">
-				<h2>У Вас остались вопросы?</h2>
-				<p>Свяжитесь с нами</p>
-				<div class="footer__phone flex">
-					<div class="phone flex">
-						<img src="img/phone.svg" alt="">
-					</div>
-					<a href="tel:+74957400558">+7 ( 495 ) 740-05-58</a>
-				</div>
-				<div class="btn flex green">
-					<span>ЗАКАЗАТЬ ЗВОНОК</span>
-					<div class="btn__img flex">
-						<img src="img/arrow.svg" alt="">
-					</div>
 				</div>
 			</div>
 		</div>	
@@ -750,6 +811,7 @@
 	<script type="text/javascript" src="js/components/slick.js" ></script>
 	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
 	-->
+	<script type="text/javascript" src="js/components/slick.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
 </body>

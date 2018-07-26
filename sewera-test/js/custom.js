@@ -12,6 +12,112 @@ $(window).load(function(){
         },
         hash : true
     });
+
+    $(".partners__cont").slick({
+    	slidesToShow: 3,
+    	slidesToScroll: 1,
+    	responsive: [
+	    {
+	      breakpoint: 1300,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 992,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+    });
+
+    $(".videochat__slider").slick({
+    	vertical: true,
+    	slidesToShow: 3,
+    	slidesToScroll: 1,
+    	responsive: [
+	    {
+	      breakpoint: 1300,
+	      settings: {
+	        vertical: false
+	      }
+	    },
+	    {
+	      breakpoint: 992,
+	      settings: {
+	        vertical: false,
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        vertical: false,
+	        slidesToShow: 1,
+	        dots: true,
+	        arrows: false
+	      }
+	    }
+	  ]
+    });
+
+    var windWidth = $(window).width();
+    if(windWidth < 1300){
+    	$(".footer__col_4 .footer__item, .footer__col_5 .footer__item").prependTo(".footer__col_3");
+    	$(".footer__col_4, .footer__col_5").hide();
+    }
+    if(windWidth < 992){
+    	$(".examples__col_1, .examples__col_2, .examples__col_3").wrapAll("<div class='examples__wrapper'><div class='examples__slider'></div></div>");
+	    $(".examples__slider").slick({
+	    	slidesToShow: 1,
+	    	slidesToScroll: 1,
+	    	arrows: false,
+	    	dots: true,
+	    	responsive: [
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+	    });
+    	$("<img class='banner2__bg' src='img/banner2.jpg' />").prependTo(".banner2");
+    	$(".products__item").wrapAll("<div class='products__wrapper'><div class='products__slider'></div></div>")
+    	$(".products__slider").slick({
+	    	slidesToShow: 2,
+	    	slidesToScroll: 1,
+	    	arrows: false,
+	    	dots: false,
+	    	responsive: [
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 1,
+		        dots: true
+		      }
+		    }
+		  ]
+	    });
+	    $("<img class='banner4__bg' src='img/banner5.jpg' />").appendTo(".banner4");
+    	//$(".partners__cont").wrapAll("<div class='partners__wrapper'></div>")
+    }
+    if(windWidth < 768){
+    	$(".servs__cont").slick({
+    		slidesToShow: 1,
+	    	slidesToScroll: 1,
+	    	arrows: false,
+	    	dots: false
+    	});
+    	$(".examples__col_2 .examples__row_title").text("Накопитель- ный");
+    }
 });
 /* viewport width */
 function viewport(){
