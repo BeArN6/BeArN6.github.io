@@ -191,15 +191,42 @@ $(window).load(function(){
     });
 
     var boxH = $(".contus__box_2").height();
-    $(".contus").css({
+    $(".contus, .ourworks").css({
     	"minHeight":boxH
     });
 
     $(window).resize(function(){
     	var boxH = $(".contus__box_2").height();
-    	$(".contus").css({
+    	$(".contus, .ourworks").css({
     		"minHeight":boxH
     	})
-    })
+    });
+
+    $(".ourworks__slider").slick({
+    	infinite: true,
+    	slidesToScroll: 1,
+    	slidesToShow: 3,
+    	arrows: true,
+    	prevArrow:"<button type='button' class='slick-prev pull-left flex'><img src='img/prev.png' class='prev'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right flex'><img src='img/prev.png' class='next'></i></button>",
+        responsive: [
+        {
+        	breakpoint: 768,
+        	settings: {
+        		slidesToShow: 1
+        	}
+        }
+        ]
+    });
+
+    $(".ourworks__slider").hide();
+    $(".ourworks__btn_1").click(function(){
+    	if($(this).text() == "Подробнее"){
+    		$(this).text("Скрыть");
+    	} else{
+    		$(this).text("Подробнее");
+    	}
+    	$(this).closest(".contus__info").siblings(".ourworks__slider").slideToggle();
+    });
 });
 

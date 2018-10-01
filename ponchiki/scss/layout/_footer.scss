@@ -17,6 +17,7 @@ footer{
     margin-right: 0;
     margin-left: auto;
     padding-bottom: 50px;
+    padding-top: 50px;
 	.wrapper{
 		width: calc(100% - 115px);
 		&.flex{
@@ -63,6 +64,11 @@ footer{
 					font: 15px/21px $calR;
 					color: #fff;
 					opacity: 0.25;
+					transition: all 0.5s ease;
+					&:hover{
+						color: #ff0c01;
+    					opacity: 0.8;
+					}
 				}
 			}
 		}
@@ -119,6 +125,7 @@ footer{
 	.footer{
 		width: 100%;
 		margin-left: 0;
+		padding-top: 20px;
 		padding-bottom: 30px;
 		.wrapper{
 			&.flex{
