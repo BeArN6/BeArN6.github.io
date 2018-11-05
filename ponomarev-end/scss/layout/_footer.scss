@@ -1,0 +1,59 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	padding: 40px 0;
+	background: #303030;
+	&__link{
+		color: #fff;
+		font: 400 18px $font;
+		display: inline-block;
+		margin-bottom: 11px;
+	}
+	&__copy{
+		color: #eeeef2;
+		font: 300 14px $font;
+	}
+	&__text2{
+		color: #fff !important;
+	}
+}
+
+
+@media screen and (max-width: 1700px) {
+	.footer{
+		padding: 40px*0.75 0;
+		&__link{
+			font: 400 18px*0.75 $font;
+			margin-bottom: 11px*0.75;
+		}
+		&__copy{
+			font: 300 14px*0.75 $font;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		.wrapper{
+			&.flex{
+				justify-content: center;
+			}
+		}
+	}
+}

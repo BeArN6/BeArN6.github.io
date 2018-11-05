@@ -1,0 +1,243 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	padding: 35px 0 0;
+	background: #fff;
+	.wrapper{
+		&.flex{
+			align-items: flex-start;
+		}
+	}
+	&__logo{
+		&.flex{
+			justify-content: flex-start;
+		}
+		span{
+			&.text{
+				text-align: right;
+				font: 900 25px $font;
+				line-height: 29px;
+				background: linear-gradient(to left, #78abff, #6a51eb, #f37d8b);
+				-webkit-background-clip: text;
+  				-webkit-text-fill-color: transparent;
+				text-transform: uppercase;
+			}
+			&.sep{
+				width: 3px;
+				height: 48px;
+				background: linear-gradient(to right, #78abff, #6a51eb, #f37d8b);
+				margin: 0 15px;
+			}
+			&.text2{
+				color: #454545;
+				font: 400 22px $font;
+				line-height: 29px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__soc{
+		&.flex{
+			justify-content: flex-start;
+		}
+		a{
+			display: inline-block;
+			margin: 0 6px;
+		}
+	}
+	&__info{
+		text-align: right;
+		width: 370px;
+	}
+	&__phone{
+		color: #303030;
+		font: 700 20px $font;
+		padding-left: 35px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 15px;
+		pointer-events: none;
+		&:before{
+			content: "";
+			width: 20px;
+			height: 20px;
+			background: url(../img/phone.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -10px;
+		}
+	}
+	&__btncont{
+		position: relative;
+		width: 228px;
+		margin-right: 0;
+		margin-left: auto;
+		transition: all 0.3s ease;
+		&:before{
+			content: "";
+			width: 228px;
+			height: 40px;
+			position: absolute;
+			left: 2px;
+			top: -2px;
+			border-radius: 8px;
+			background: linear-gradient(to right, #45c2fc, #725ce2, #950ecc);
+			z-index: 1;
+		}
+		&:after{
+			content: "";
+			width: 224px;
+			height: 36px;
+			position: absolute;
+			left: 4px;
+			top: 0;
+			border-radius: 8px;
+			background: #fff;
+			z-index: 2;
+			/*transform: translateX(0%);*/
+			transition: all 0.5s ease;
+		}
+		&:hover{
+			/*.header{
+				&__btn{
+					background: linear-gradient(to right, #45c2fc, #725ce2, #950ecc);
+				}
+			}*/
+			&:after{
+				/*transform: translateX(100%);*/
+				width: 0px;
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+	&__btn{
+		display: inline-block;
+		font: 400 18px $font;
+		color: #303030;
+		width: 224px;
+		height: 36px;
+		border-radius: 6px;
+		/*background: #fff;*/
+		background: transparent;
+		border: 0;
+		position: relative;
+    	z-index: 3;
+    	transition: all 0.3s ease;
+	}
+}
+
+
+
+@media screen and (max-width: 1700px) {
+	.header{
+		padding: 35px*0.75 0 0;
+		&__logo{
+			span{
+				&.text{
+					font: 900 25px*0.75 $font;
+					line-height: 29px*0.75;
+				}
+				&.sep{
+					width: 3px*0.75;
+					height: 48px*0.75;
+					margin: 0 15px*0.75;
+				}
+				&.text2{
+					font: 400 22px*0.75 $font;
+					line-height: 29px*0.75;
+				}
+			}
+		}
+		&__soc{
+			a{
+				margin: 0 6px*0.75;
+				img{
+					width: 33px*0.75;
+				}
+			}
+		}
+		&__info{
+			width: 370px*0.75;
+		}
+		&__phone{
+			font: 700 20px*0.75 $font;
+			padding-left: 35px*0.75;
+			margin-bottom: 15px*0.75;
+			&:before{
+				width: 20px*0.75;
+				height: 20px*0.75;
+				margin-top: -10px*0.75;
+			}
+		}
+		&__btncont{
+			width: 228px*0.75;
+			&:before{
+				width: 170px;
+				height: 29px;
+				left: 2px;
+				top: -1px;
+				border-radius: 5px;
+			}
+			&:after{
+				width: 224px*0.75;
+				height: 36px*0.75;
+				left: 3px;
+				top: 0;
+				border-radius: 4px;
+			}
+		}
+		&__btn{
+			font: 400 18px*0.75 $font;
+			width: 224px*0.75;
+			height: 36px*0.75;
+			border-radius: 6px*0.75;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		.wrapper{
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__soc{
+			margin: 15px 0;
+		}
+		&__info{
+			text-align: center;
+		}
+		&__phone{
+			pointer-events: auto;
+		}
+		&__btncont{
+			margin-right: auto;
+			&:before{
+				left: 0px;
+			}
+			&:after{
+				left: 1px;
+			}
+		}
+	}
+}
