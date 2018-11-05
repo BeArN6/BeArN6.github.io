@@ -1,0 +1,178 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	padding: 10px 0;
+	background: url(../img/hbg.png);
+	background-size: 100% 100%;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: all 0.3s ease-in-out;
+	&.active{
+		z-index: 100;
+		.header{
+			&__logo{
+				img{
+					width: 170px;
+				}
+			}
+			&__text{
+				font: 16px/17px "Proxima Nova Regular";
+			}
+			&__address{
+				font-size: 14px;
+			}
+			&__info{
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			}
+			&__phone{
+				font-size: 20px;
+				margin-right: 10px;
+			}
+		}
+	}
+	&__logo{
+		img{
+			transition: all 0.3s ease;
+		}
+	}
+	&__text{
+		font: 20px/21px $f400;
+		color: $col;
+		transition: all 0.3s ease;
+	}
+	&__address{
+		font: 16px $f300;
+		color: $col;
+		padding-left: 20px;
+		position: relative;
+		transition: all 0.3s ease;
+		&:before{
+			content: "";
+			width: 11px;
+			height: 15px;
+			background: url(../img/map.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 0;
+			top: 3px;
+		}
+	}
+	&__info{
+		transition: all 0.3s ease;
+	}
+	&__phone{
+		font: 24px $f400;
+		color: $col;
+		padding-left: 20px;
+		position: relative;
+		margin-bottom: 5px;
+		display: block;
+		pointer-events: none;
+		transition: all 0.3s ease;
+		&:before{
+			content: "";
+			width: 13px;
+			height: 16px;
+			background: url(../img/phone.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -7px;
+		}
+	}
+	&__toggle{
+		display: none;
+		width: 33px;
+		position: absolute;
+		right: 0;
+		top: 7px;
+		span{
+			display: block;
+			width: 100%;
+			height: 4px;
+			margin-bottom: 6px;
+			background: #3c3c3c;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.header{
+		&__address{
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header{
+		&__address{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		&__logo{
+			margin-left: 0;
+    		margin-right: auto;
+		}
+		.wrapper{
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__address{
+			display: none;
+		}
+		&__text{
+			width: 100%;
+		    text-align: center;
+		    margin: 15px 0;
+		    display: none;
+		    transition: 0s;
+		    br{
+		    	display: none;
+		    }
+		}
+		&__info{
+			display: none;
+			text-align: center;
+			transition: 0s;
+		}
+		&__phone{
+			pointer-events: auto;
+			transition: 0s;
+		}
+		&__toggle{
+			display: block;
+		}
+		&.active{
+			.header{
+				&__info{
+					display: none;
+				}
+			}
+		}
+	}
+}
