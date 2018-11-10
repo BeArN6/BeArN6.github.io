@@ -1,0 +1,353 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+.header{
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 18px 0;
+	z-index: 100;
+	transition: all 0.3s ease-out;
+	&.active{
+		/*background: linear-gradient(to right, #b9b8b4, #f6f5f1);*/
+		padding: 10px 0;
+		background: #d9deda;
+		.header{
+			&__logo{
+				p{
+					color: #000;
+				}
+				span{
+					color: #000;
+				}
+			}
+			&__phone{
+				color: #000;
+			}
+		}
+		.btn{
+			color: #000;
+		}
+	}
+	&__toggle{
+		width: 44px;
+		height: 33px;
+		position: relative;
+		margin-right: 50px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		span{
+			display: block;
+			width: 100%;
+			height: 5px;
+			background: #fff;
+			margin-bottom: 9px;
+			border-radius: 2px;
+			position: absolute;
+			left: 0;
+			transition: all 0.3s ease-in-out;
+			&:first-child{
+				top: 0;
+			}
+			&:nth-child(2){
+				top: 14px;
+			}
+			&:last-child{
+				top: 28px;
+				margin-bottom: 0;
+			}
+		}
+		&.active{
+			span{
+				background: #ffd100;
+				&:first-child{
+					top: 14px;
+					transform: rotate(135deg);
+				}
+				&:nth-child(2){
+					opacity: 0;
+    				left: -44px;
+				}
+				&:last-child{
+					top: 14px;
+					transform: rotate(-135deg);
+				}
+			}
+		}
+	}
+	&__logo{
+		img{
+			margin-right: 20px;
+		}
+		p{
+			font: 24px/24px $f700;
+			color: #fff;
+			letter-spacing: 0.05em;
+			transition: all 0.3s ease-out;
+			span{
+				font: 18px $f300;
+				color: #fff;
+				transition: all 0.3s ease-out;
+			}
+		}
+	}
+	&__phone{
+		font: 32px $f500;
+		color: #fff;
+		display: inline-block;
+		padding-left: 45px;
+		position: relative;
+		letter-spacing: 0.05em;
+		margin-right: 75px;
+		pointer-events: none;
+		transition: all 0.3s ease-out;
+		&:before{
+			content: "";
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -13px;
+			background: url(../img/phone.png) center center no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+}
+.btn{
+	width: 290px;
+	height: 62px;
+	border: 2px solid #ffd100;
+	border-radius: 7px;
+	background: none;
+	font: 22px $f500;
+	color: #fff;
+	letter-spacing: 0.05em;
+	transform: perspective(1px) translateZ(0);
+    	position: relative;
+    	transition-property: color;
+    	transition-duration: 0.5s;
+    	&:before{
+    		content: "";
+		    position: absolute;
+		    z-index: -1;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: #ffd100;
+		    -webkit-transform: scaleX(0);
+		    transform: scaleX(0);
+		    -webkit-transform-origin: 0 50%;
+		    transform-origin: 0 50%;
+		    -webkit-transition-property: transform;
+		    transition-property: transform;
+		    -webkit-transition-duration: 0.5s;
+		    transition-duration: 0.5s;
+		    -webkit-transition-timing-function: ease-out;
+		    transition-timing-function: ease-out;
+    	}
+    	&:hover{
+    		color: #000;
+    		&:before{
+    			transform: scaleX(1);
+    			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    		}
+    	}
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, .9) inset;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0;
+    padding-top: 65px;
+    z-index: 10;
+    left: -100%;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    .wrapper{
+    	width: 100%;
+    }
+}
+
+.navigation.active {
+    left: 0
+}
+
+.navigation.flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navigation ul {
+    list-style: none
+}
+
+.navigation ul li {
+    padding: 10px 0
+}
+
+.navigation ul li a {
+    font: 18px $f500;
+    color: #fff
+}
+
+.navigation ul li a:hover {
+    color: #ffd100
+}
+
+.navigation ul li a.active {
+    color: #e13e43
+}
+
+
+@media screen and (max-width: 1650px) {
+	.header{
+		&__toggle{
+			width: 32px;
+			height: 24px;
+			margin-right: 35px;
+			span{
+				height: 4px;
+				margin-bottom: 6px;
+				&:first-child{
+					top: 0;
+				}
+				&:nth-child(2){
+					top: 10px;
+				}
+				&:last-child{
+					top: 20px;
+					margin-bottom: 0;
+				}
+			}
+			&.active{
+				span{
+					&:first-child{
+						top: 10px;
+						transform: rotate(135deg);
+					}
+					&:nth-child(2){
+						opacity: 0;
+	    				left: -32px;
+					}
+					&:last-child{
+						top: 10px;
+						transform: rotate(-135deg);
+					}
+				}
+			}
+		}
+		&__logo{
+			img{
+				width: 53px;
+			}
+			p{
+				font-size: 17.5px;
+				line-height: normal;
+				span{
+					font-size: 13px;
+				}
+			}
+		}
+		&__phone{
+			font-size: 23.4px;
+		    margin-right: 55px;
+		    padding-left: 33px;
+		    &:before{
+		    	width: 19px;
+    			height: 19px;
+    			margin-top: -9px;
+		    }
+		}
+	}
+	.btn{
+		width: 212px;
+    	height: 45px;
+    	font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header{
+		&__item{
+			&:last-child{
+				flex-direction: column;
+    			align-items: flex-end;
+			}
+		}
+		&__phone{
+			 margin-right: 0;
+			 margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		&__toggle{
+			margin-right: 30px;
+		}
+		&__logo{
+			img{
+				margin-right: 10px;
+				width: 45px;
+			}
+		}
+		&__item{
+			width: 100%;
+			&:last-child{
+				&.flex{
+					justify-content: center;
+				}
+			}
+		}
+		&__phone{
+			display: block;
+					margin: 0;
+    				margin-top: 5px;
+		    		margin-left: auto;
+		    		font-size: 15px;
+			&:before{
+				content: none;
+			}
+		}
+		.btn{
+			display: none;
+		}
+		&.active{
+			.header{
+				&__phone{
+					display: block;
+					margin: 0;
+    				margin-top: 5px;
+		    		margin-left: auto;
+		    		font-size: 15px;
+				}
+			}
+		}
+	}
+	.navigation{
+		padding-top: 62px;
+		.wrapper{
+			width: calc(100% - 30px);
+		}
+	}
+}

@@ -1,0 +1,170 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	padding: 30px 0 45px;
+	background: #020514;
+	&__top{
+		margin-bottom: 50px;
+	}
+	&__phones{
+		&.flex{
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+		}
+	}
+	&__phone{
+		font: 28px Conv_MuseoSansCyrl-500;
+	    color: #fff;
+	    display: inline-block;
+	    padding-left: 40px;
+	    position: relative;
+	    letter-spacing: .05em;
+	    margin-right: 75px;
+	    &:before{
+	    	content: "";
+		    width: 23px;
+		    height: 23px;
+		    position: absolute;
+		    left: 0;
+		    top: 50%;
+		    margin-top: -13px;
+		    background: url(../img/phone.png) center center no-repeat;
+		    background-size: 100% 100%;
+	    }
+	    &_2{
+	    	margin-top: 8px;
+	    }
+	}
+	&__item{
+		.btn{
+			width: 255px;
+			height: 55px;
+		}
+	}
+	&__soc{
+		&.flex{
+			justify-content: center;
+		}
+		a{
+			display: inline-block;
+			margin: 0 15px;
+		}
+	}
+	&__bott{
+		&.flex{
+			align-items: flex-end;
+		}
+	}
+	&__col{
+		&_2{
+			text-align: right;
+		}
+	}
+	&__politic{
+		font: 14px $f100;
+		color: #fff;
+		display: block;
+		margin-bottom: 7px;
+		&:hover{
+			color: #ffd100;
+		}
+	}
+	&__text{
+		font: 14px $f100;
+		color: #fff;
+		margin-bottom: 7px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		a{
+			color: #fff;
+			&:hover{
+				color: #ffd100;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1650px) {
+	.footer{
+		padding: 22px 0 33px;
+		&__phone{
+			font-size: 20.5px;
+			padding-left: 29px;
+			margin-right: 55px;
+			&:before{
+				width: 19px;
+			    height: 19px;
+			    margin-top: -9px;
+			}
+		}
+		&__item{
+			.btn{
+				width: 212px;
+			    height: 45px;
+			    font-size: 16px;
+			}
+		}
+		&__bott{
+			.wrapper{
+				&.flex{
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		&__logo{
+			margin-bottom: 15px;
+		}
+		&__item{
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__phone{
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		&__top{
+			margin-bottom: 20px;
+			.wrapper{
+				&.flex{
+					justify-content: center;
+				}
+			}
+		}
+		&__col{
+			text-align: center;
+			&_2{
+				text-align: center;
+			}
+		}
+		&__soc{
+			width: 100%;
+			margin: 15px 0;
+		}
+	}
+}

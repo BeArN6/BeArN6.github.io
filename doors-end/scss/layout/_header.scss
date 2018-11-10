@@ -1,0 +1,269 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;	
+}
+
+.header{
+	padding: 15px 0;
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	box-shadow: 0 0 11px 1px rgba(0,0,0,0.25);
+	transition: all 0.3s ease;
+	&.active{
+		padding: 7px;
+		.header{
+			&__logo{
+				a{
+					font-size: 31px;
+					span{
+						font-size: 27px;
+					}
+				}
+			}
+		}
+	}
+	&__logo{
+		a{
+			font: 35px $g700;
+			line-height: 35px;
+			color: #2f2f2f;
+			text-transform: uppercase;
+			span{
+				display: block;
+				color: #bb7b54;
+				font: 31px $g300;
+				line-height: 35px;
+			}
+		}
+		p{
+			font: 16px $h400;
+			line-height: 21px;
+			color: #303030;
+		}
+		&.flex{
+			justify-content: flex-start;
+		}
+	}
+	&__sep{
+		width: 2px;
+		height: 60px;
+		background: linear-gradient(to bottom, #e2ad75, #d1926b);
+		margin: 0 40px;
+	}
+	&__address{
+		font: 16px $h300;
+		line-height: 26px;
+		color: #303030;
+		padding-left: 25px;
+		position: relative;
+		margin-right: 70px;
+		&:before{
+			content: "";
+			width: 14px;
+			height: 19px;
+			background: url(../img/map.png);
+			background-size: 100% 100%;
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+	}
+	&__phone{
+		display: block;
+		font: 20px $h500;
+		line-height: 30px;
+		color: #303030;
+		margin-right: 50px;
+		pointer-events: none;
+	}
+	&__soc{
+		margin-right: 55px;
+		a{
+			display: block;
+			margin-right: 20px;
+			pointer-events: none;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	&__toggle{
+		display: none;
+		width: 33px;
+		position: static;
+		right: 0;
+		top: 11px;
+		span{
+			display: block;
+			width: 100%;
+			height: 4px;
+			margin-bottom: 6px;
+			background: #3c3c3c;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1700px) {
+	.header{
+		padding: 15px*$mult 0;
+		&.active{
+			padding: 7px*$mult;
+			.header{
+				&__logo{
+					a{
+						font-size: 31px*$mult;
+						line-height: 31px*$mult;
+						span{
+							font-size: 27px*$mult;
+							line-height: 27px*$mult;
+						}
+					}
+				}
+			}
+		}
+		&__logo{
+			a{
+				font: 35px*$mult $g700;
+				line-height: 35px*$mult;
+				span{
+					font: 31px*$mult $g300;
+					line-height: 35px*$mult;
+				}
+			}
+			p{
+				font: 16px*$mult $h400;
+				line-height: 21px*$mult;
+			}
+		}
+		&__sep{
+			width: 2px*$mult;
+			height: 60px*$mult;
+			margin: 0 40px*$mult;
+		}
+		&__address{
+			font: 16px*$mult $h300;
+			line-height: 26px*$mult;
+			padding-left: 25px*$mult;
+			margin-right: 70px*$mult;
+			&:before{
+				width: 14px*$mult;
+				height: 19px*$mult;
+				top: 2px*$mult;
+			}
+		}
+		&__phone{
+			font: 20px*$mult $h500;
+			line-height: 30px*$mult;
+			margin-right: 50px*$mult;
+		}
+		&__soc{
+			margin-right: 55px*$mult;
+			a{
+				margin-right: 20px*$mult;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.header{
+		&__sep{
+			margin: 0 12px;
+		}
+		&__address{
+			margin-right: 24.5px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header{
+		&__sep{
+			margin: 0 12px;
+		}
+		&__address{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		&.active{
+			.header{
+				&__logo{
+					a{
+						font: 19.25px Conv_Geometria-Bold;
+    					line-height: 19.25px;
+						span{
+							font: 17.25px Conv_Geometria-Light;
+    						line-height: 17.25px;
+						}
+					}
+				}
+				&__toggle{
+					width: 31px;
+					span{
+						height: 3px;
+						margin-bottom: 5px;
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		&__logo{
+			a{
+				font: 21.25px Conv_Geometria-Bold;
+    			line-height: 23.25px;
+    			span{
+    				font: 20.25px Conv_Geometria-Light;
+    				line-height: 22.25px;
+    			}
+			}
+			p{
+				display: none;
+			}
+		}
+		&__sep{
+			display: none;
+		}
+		&__info{
+			margin-top: 15px;
+		}
+		&__address{
+			width: 100%;
+		}
+		&__phone{
+			pointer-events: auto;
+			&_1{
+				margin-right: 0;
+			}
+		}
+		.btn{
+			margin: 15px auto 0;
+		}
+		&__toggle{
+			display: block;
+		}
+		&__soc{
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,141 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+
+.footer{
+	&__top{
+		background: #39322f;
+		padding: 30px 0;
+		.header{
+			&__logo{
+				a{
+					color: #f8f8f8;
+				}
+				p{
+					color: #f8f8f8;
+				}
+			}
+			&__address, &__phone{
+				color: #f8f8f8;
+			}
+		}
+	}
+	&__soc{
+		margin-right: 0;
+	}
+	&__bott{
+		background: #303030;
+		padding: 9px 0;
+	}
+	&__text{
+		font: 14px $h300;
+		color: #f8f8f8;
+		a{
+			color: #f8f8f8;
+			padding-bottom: 2px;
+			border-bottom: 1px solid #f8f8f8;
+			&:hover{
+				color: #ecab6d;
+			}
+		}
+	}
+	&__politic{
+		display: block;
+		flex-basis: 100%;
+		font: 16px $h400 !important;
+		line-height: 21px !important;
+		color: #fff !important;
+		text-transform: none !important;
+		margin-top: 10px;
+		&:hover{
+			color: #ecab6d !important;
+		}
+	}
+	&__mail{
+		font: 16px $h300;
+		line-height: 26px;
+		padding-left: 25px;
+		color: #f8f8f8;
+		&:hover{
+			color: #ecab6d;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1700px) {
+	.footer{
+		&__top{
+			padding: 30px*$mult 0;
+		}
+		&__bott{
+			padding: 9px*$mult 0;
+		}
+		&__text{
+			font: 14px*$mult $h300;
+			color: #f8f8f8;
+			a{
+				padding-bottom: 2px*$mult;
+			}
+		}
+		&__politic{
+			font: 16px*$mult $h400 !important;
+			line-height: 21px*$mult !important;
+		}
+		&__mail{
+			font: 16px*$mult $h300;
+			line-height: 26px*$mult;
+			padding-left: 25px*$mult;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.footer{
+		.header{
+			&__address{
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		.header{
+			&__sep{
+				display: block;
+			}
+			&__info{
+				margin-top: 15px;
+			}
+			&__address{
+				width: 100%;
+			}
+		}
+		&__text{
+			margin: 5px auto;
+    		text-align: center;
+		}
+		&__box{
+			p{
+				display: block;
+			}
+		}
+		&__box2{
+			margin-bottom: 10px;
+		}
+	}
+}
