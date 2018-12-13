@@ -3562,6 +3562,22 @@ h3{
   background: #fff;
 }
 
+.offer__more {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  width: 22px;
+  animation: hovericon 1s infinite ease-in-out;
+}
+
+.offer__more2 {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 30px;
+  animation: hovericon 1s infinite ease-in-out;
+}
+
 .offer__title {
   font: 700 20px "Conv_ProximaNova", sans-serif;
   color: #232c3c;
@@ -3611,6 +3627,10 @@ h3{
 
 .offer__list li b small {
   font-size: 11px;
+}
+
+.offer__desc {
+  position: relative;
 }
 
 .offer__desc.flex {
@@ -3663,6 +3683,12 @@ h3{
 
 .offer__search.flex {
   justify-content: center;
+}
+
+@keyframes hovericon {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .calc {
