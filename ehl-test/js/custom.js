@@ -117,12 +117,30 @@ $(window).load(function(){
 			e.preventDefault();
 	    	$(this).find('ul').slideToggle(400);
 	  	});
+
+	  	$(".adva__bg").remove();
+
+	  	$(".adva__items").slick({
+	  		slidesToShow: 1,
+	  		slidesToScroll: 1,
+	  		arrows: false,
+	  		dots: false,
+	  		autoplay: true,
+  			autoplaySpeed: 2000
+	  	});
 	}
 	$(".header__toggle").click(function(){
 		$(".header").toggleClass("active");
 		$(".header__box").slideToggle();
 	});
 	/*Header toggle end*/
+
+	/*Faq page*/
+	$(".faq__item").not(".active").click(function(){
+		$(this).addClass("active");
+		$(this).siblings(".faq__item").removeClass("active");
+	})
+	/*Faq page end*/
 
 });
 
