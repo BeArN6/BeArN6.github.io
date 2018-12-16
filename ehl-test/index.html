@@ -34,7 +34,7 @@
 		<div class="abouthome">
 			<div class="wrapper">
 				<div class="abouthome__body flex">
-					<div class="abouthome__infobox">
+					<div class="abouthome__infobox wow slideInLeft">
 						<div class="title">
 							<p>Основная информация о нас</p>
 							<h2>Компания<span> Elect Holdings Limited</span></h2>
@@ -159,7 +159,7 @@
 			<div class="wrapper">
 				<div class="calc__body">
 					<div class="calc__box flex">
-						<div class="calc__left">
+						<div class="calc__left wow slideInLeft" data-wow-delay="500ms">
 							<div class="title">
 								<p>Что мы предлагаем нашим партнерам</p>
 								<h2><span>Инвестиционные </span>предложения</h2>
@@ -201,7 +201,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="calc__right">
+						<div class="calc__right wow slideInRight" data-wow-delay="1000ms">>
 							<div class="title">
 								<h2><span>Статистика </span>проекта</h2>
 							</div>
@@ -264,7 +264,7 @@
 						<h2><span>Партнерская </span>программа</h2>
 					</div>
 					<div class="programm__box flex">
-						<div class="programm__left">
+						<div class="programm__left wow slideInLeft">
 							<div class="programm__rounds flex">
 								<div class="programm__round programm__round_1 flex">
 									<img class="programm__circle" src="img/circle.png" alt="">
@@ -316,20 +316,20 @@
 							<button class='btn programm__btn'>Промо материаллы</button>
 						</div>
 						<div class="programm__right">
-							<div class="programm__item programm__item_1 flex">
+							<div class="programm__item programm__item_1 flex wow slideInRight" data-wow-delay="700ms">
 								<div class="programm__icon flex">
 									<img src="img/onlain.svg" alt="">
 								</div>
 								<p class="programm__text2">Онлайн бизнес, вам решать - <br> где, когда и сколько.</p>
 							</div>
-							<div class="programm__item programm__item_2 flex">
+							<div class="programm__item programm__item_2 flex wow slideInRight" data-wow-delay="1400ms">
 								<div class="programm__icon flex">
 									<img src="img/many.svg" alt="">
 								</div>
 								<p class="programm__text2">Высокий заработок <br>
 								без собственных вложений</p>
 							</div>
-							<div class="programm__item flex">
+							<div class="programm__item flex wow slideInRight" data-wow-delay="2100ms">
 								<div class="programm__icon flex">
 									<img src="img/many2.svg" alt="">
 								</div>
@@ -353,7 +353,7 @@
 						<span>or Registration</span>
 					</div>
 				</div>
-				<form action="" class="modal__form">
+				<form action="/example.php" class="modal__form">
 					<div class="modal__input flex">
 						<div class="modal__label">
 							<span>Login*</span>
@@ -374,7 +374,7 @@
 					</div>
 					<p class="modal__placeholder">* обязательные поля</p>
 					<div class="modal__check">
-						<input id="remember" type="checkbox" type="text" checked>
+						<input id="remember" type="checkbox" checked>
 						<label for="remember">Remember password</label>
 					</div>
 					<div class="modal__kapcha flex">
@@ -405,7 +405,7 @@
 						<span>or Sign Up</span>
 					</div>
 				</div>
-				<form action="" class="modal__form">
+				<form action="/example.php" class="modal__form">
 					<div class="modal__rows">
 						<div class="modal__row flex">
 							<div class="modal__input flex">
@@ -481,7 +481,7 @@
 					</div>
 					<p class="modal__placeholder">* обязательные поля</p>
 					<div class="modal__check modal__check_2">
-						<input id="remember2" type="checkbox" type="text" checked>
+						<input id="remember2" type="checkbox" checked>
 						<label for="remember2">Галочка согласия с правами галочка согласия с правами галочка согласия с правами <a href="">лецензионное соглашение</a></label>
 					</div>
 					<div class="modal__kapcha flex">
@@ -622,6 +622,7 @@
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/components/slick.js" ></script>
+	<script type="text/javascript" src="js/components/wow.min.js" ></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
 </body>
 </html>
