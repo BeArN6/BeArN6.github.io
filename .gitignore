@@ -1,0 +1,6 @@
+*.txt
+*.md
+node_modules/
+gulpfile.js
+package.json
+package-lock.json
