@@ -108,6 +108,10 @@ $(window).load(function(){
 		};
     	$(".header.active").height(getIOSWindowHeight());
 
+    	$(".header__nav").css({
+			'max-height': getIOSWindowHeight() - 113,
+		});
+
     	$(window).scroll(function() {
 	        if ($(this).scrollTop() > 0) {
 	            $(".header.active").height(getIOSWindowHeight());
@@ -121,10 +125,6 @@ $(window).load(function(){
 			e.preventDefault();
 			$(this).siblings(".dropdown").slideToggle();
 		});
-
-		$(".header__nav").css({
-			'max-height': $(window).height() - 113 - getHeightOfIOSToolbars(),
-		})
     }
 
     var $docEl = $('html, body'),
@@ -166,10 +166,16 @@ $(window).load(function(){
 		$(this).parent().siblings(".header__menu").slideToggle();
     	if(numOfClicks % 2 !== 0) {
     		$.lockBody();
+    		$(".header").css({
+    			'height': getIOSWindowHeight()
+    		});
+    		$(".header__nav").css({
+				'max-height': getIOSWindowHeight() - 113,
+			});
     	} else {
     		$.unlockBody();
     		$(".header").css({
-    			'height': 'auto'
+    			'height': '66px'
     		});
     	}
     });
