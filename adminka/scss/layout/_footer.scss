@@ -1,0 +1,53 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer{
+	order: 3;	
+    -webkit-order: 3;	
+}
+.footer{
+	background: #fff;
+	padding: 22px 0;
+	&__text{
+		font: 400 14px $font4;
+		color: #666666;
+		b{
+			color: #aa0a0a;
+		}
+	}
+	&.active{
+		padding-left: 285px;
+	}
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+	
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.footer{
+		&.active{
+			padding-left: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.footer{
+		&.active{
+			padding-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer{
+		&.active{
+			padding-left: 0;
+		}
+	}
+}

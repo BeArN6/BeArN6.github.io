@@ -1,0 +1,131 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	order: 1;	
+    -webkit-order: 1;
+}
+.header{
+	padding: 17px 0;
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1001;
+	transition: all 0.3s ease;
+	&.active{
+		width: calc(100% - 285px);
+	}
+	&__left{
+		&.flex{
+			justify-content: flex-start;
+		}
+	}
+	&__toggle{
+		margin-right: 130px;
+	}
+	&__search{
+		padding-left: 30px;
+		position: relative;
+		&:before{
+			content: "";
+			width: 15px;
+			height: 15px;
+			background: url(../img/loop.png) center center no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -7.5px;
+		}
+		input{
+			font: 300 14px $font1;
+			color: #000;
+			border: 0;
+			background: none;
+			&::placeholder{
+				font: 300 14px $font1;
+				color: #999999;
+			}
+		}
+	}
+	&__right{
+		&.flex{
+			justify-content: flex-start;
+		}
+	}
+}
+.tosite{
+	display: block;
+	span{
+		font: 400 14px $font2;
+		display: inline-block;
+		margin-left: 8px;
+		color: #444141;
+		/*padding-bottom: 3px;*/
+		border-bottom: 1px solid #444141;
+	}
+}
+.user{
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	border: 3px solid #fff;
+	background: #cccccc;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+	position: relative;
+	margin-left: 30px;
+	&__status{
+		width: 16px;
+		height: 16px;
+		border-radius: 100%;
+		border: 3px solid #fff;
+		background: linear-gradient(to top, #36b9d8, #4bffa2);
+		box-shadow: 0px 10px 20px 0px rgba(53, 185, 216, 0.3);
+		position: absolute;
+		right: -3px;
+		bottom: -3px;
+	}
+}
+
+
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+	
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.header{
+		&.active{
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header{
+		&.active{
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header{
+		&.active{
+			width: 100%;
+		}
+		&__search{
+			display: none;
+		}
+	}
+	.user{
+		width: 35px;
+    	height: 35px;
+    	margin-left: 15px;
+	}
+}
