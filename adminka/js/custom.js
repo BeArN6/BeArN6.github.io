@@ -23,9 +23,16 @@ $(window).load(function(){
 	// 	$(".sidebar").removeClass("active");
 	// });
 
+	/*Users*/
 	$(".user").click(function(){
 		$(".rightbar").toggleClass("active");
 	});
+	$(".users__tab").click(function(){
+		var dataId = $(this).attr("data-id");
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".usertab__box_" + dataId).addClass("active").siblings(".usertab__box").removeClass("active");
+	});
+	/*Users end*/
 
     $(".sidebar").mCustomScrollbar();
     $(".withdropdown").click(function(){
@@ -105,6 +112,11 @@ $(window).load(function(){
 			}
 		);
 	});
+	$(".profile__tab").click(function(){
+		var dataId = $(this).attr("data-id");
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".profile__box_" + dataId).addClass("active").siblings(".profile__box").removeClass("active");
+	})
 	/*Profile end*/
 
 	/*Graph*/

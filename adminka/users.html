@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body class="loaded">
 
@@ -28,7 +29,7 @@
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-speedometer"></i>
+							<span class="lnr lnr-home"></span>
 						</div>
 						<span>Главная</span>
 					</a>
@@ -39,37 +40,85 @@
 				<li class="navigation__li withdropdown active">
 					<a class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-speedometer"></i>
+							<span class="lnr lnr-user"></span>
 						</div>
 						<span>Пользователи</span>
 					</a>
 					<ul class="navigation__dropdown">
-						<li>
-							<a href="">Все пользователи</a>
-						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
 							<a href="">Активные</a>
 						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-circle-minus"></span>
+							</div>
 							<a href="">Неактивные</a>
 						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-cross-circle"></span>
+							</div>
 							<a href="">Забаненные</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navigation__li withdropdown">
+					<a class="navigation__link flex">
+						<div class="navigation__icon">
+							<span class="lnr lnr-chart-bars"></span>
+						</div>
+						<span>Транзакции</span>
+					</a>
+					<ul class="navigation__dropdown">
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
+							<a href="">Пополнения</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-circle-minus"></span>
+							</div>
+							<a href="">Выводы</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-magnifier"></span>
+							</div>
+							<a href="">Поиск транзакции</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navigation__li withdropdown">
+					<a class="navigation__link flex">
+						<div class="navigation__icon">
+							<span class="lnr lnr-users"></span>
+						</div>
+						<span>Партнёры</span>
+					</a>
+					<ul class="navigation__dropdown">
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-pie-chart"></span>
+							</div>
+							<a href="">Статистика</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
+							<a href="">Начисления</a>
 						</li>
 					</ul>
 				</li>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<!-- <img src="img/icon.png" alt=""> -->
-						</div>
-						<span>Рефералы</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<!-- <img src="img/icon.png" alt=""> -->
+							<span class="lnr lnr-cog"></span>
 						</div>
 						<span>Настройки сайта</span>
 					</a>
@@ -77,37 +126,21 @@
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-settings"></i>
+							<span class="lnr lnr-pie-chart"></span>
 						</div>
-						<span>Form Stuff</span>
+						<span>Laravel horizont</span>
 					</a>
 				</li>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-bulb"></i>
+							<span class="lnr lnr-bug"></span>
 						</div>
-						<span>Elements</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<i class="icon-briefcase"></i>
-						</div>
-						<span>Tables</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<i class="icon-wallet"></i>
-						</div>
-						<span>Portlets</span>
+						<span>Посмотреть логи</span>
 					</a>
 				</li>
 			</ul>
-			<div class="navigation__title">Layouts</div>
+			<!-- <div class="navigation__title">Layouts</div>
 			<ul>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
@@ -192,7 +225,7 @@
 						<span>Multi Level Menu</span>
 					</a>
 				</li>
-			</ul>
+			</ul> -->
 		</nav>
 	</div>
 	<img src="img/close.svg" alt="" class="sidebar__close">
@@ -338,13 +371,13 @@
 			<div class="profile__header flex">
 				<h3 class="title">Редактирование пользователя</h3>
 				<div class="stats__tabs flex">
-					<div class="stats__tab flex">Основные</div>
-					<div class="stats__tab flex">Пополнения</div>
-					<div class="stats__tab flex active">Выводы</div>
-					<div class="stats__tab flex">Другие</div>
+					<div class="stats__tab profile__tab active flex" data-id="1">Основные</div>
+					<div class="stats__tab profile__tab flex" data-id="2">Пополнения</div>
+					<div class="stats__tab profile__tab flex" data-id="3">Выводы</div>
+					<div class="stats__tab profile__tab flex" data-id="4">Другие</div>
 				</div>
 			</div>
-			<div class="profile__box flex">
+			<div class="profile__box profile__box_1 active flex">
 				<div class="profile__person">
 					<div class="profile__user">
 						<div class="profile__image"></div>
@@ -448,6 +481,285 @@
 					</div>
 				</div>
 			</div>
+			<div class="profile__box profile__box_2 flex">
+				<div class="profile__tablecont">
+					<table class="profile__table">
+						<tr class="profile__row2 profile__row2_title">
+							<th class="profile__col profile__col_1">
+								ID
+							</th>
+							<th class="profile__col profile__col_2">
+								Дата
+							</th>
+							<th class="profile__col profile__col_3">
+								Пользователь
+							</th>
+							<th class="profile__col profile__col_4">
+								Кошелек
+							</th>
+							<th class="profile__col profile__col_5">
+								Система
+							</th>
+							<th class="profile__col profile__col_6">
+								Сумма
+							</th>
+							<th class="profile__col profile__col_7">
+								Cтатус
+							</th>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+					</table>
+				</div>
+				<div class="profile__panel flex">
+					<div class="profile__search">
+						<input type="text" placeholder="Поиск">
+					</div>
+					<div class="profile__pagination ppagination flex">
+						<p>Page</p>
+						<div class="ppagination__prev flex">
+							<img src="img/prev.png" alt="">
+						</div>
+						<div class="ppagination__page">
+							<input type="text" value="01">
+						</div>
+						<div class="ppagination__next flex">
+							<img src="img/prev.png" alt="">
+						</div>
+						<p>of 25</p>
+					</div>
+					<span class="profile__total">Total 254 records found</span>
+					<div class="profile__footer profile__footer_2 flex">
+						<button class="profile__cancel modal-close">Отмена</button>
+						<button class="profile__save">Сохранить</button>
+					</div>
+				</div>
+			</div>
+			<div class="profile__box profile__box_3 flex">
+				<div class="profile__tablecont">
+					<table class="profile__table">
+						<tr class="profile__row2 profile__row2_title">
+							<th class="profile__col profile__col_1">
+								ID
+							</th>
+							<th class="profile__col profile__col_2">
+								Дата
+							</th>
+							<th class="profile__col profile__col_3">
+								Пользователь
+							</th>
+							<th class="profile__col profile__col_4">
+								Кошелек
+							</th>
+							<th class="profile__col profile__col_5">
+								Система
+							</th>
+							<th class="profile__col profile__col_6">
+								Сумма
+							</th>
+							<th class="profile__col profile__col_7">
+								Cтатус
+							</th>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+						<tr class="profile__row2">
+							<td class="profile__col profile__col_1">01</td>
+							<td class="profile__col profile__col_2">
+								2018-08-23 16:25:01
+							</td>
+							<td class="profile__col profile__col_3">Esse Money</td>
+							<td class="profile__col profile__col_4">+9307499999</td>
+							<td class="profile__col profile__col_5">QIWI</td>
+							<td class="profile__col profile__col_6">727.04</td>
+							<td class="profile__col profile__col_7"><span>Получено</span></td>
+						</tr>
+					</table>
+				</div>
+				<div class="profile__panel flex">
+					<div class="profile__search">
+						<input type="text" placeholder="Поиск">
+					</div>
+					<div class="profile__pagination ppagination flex">
+						<p>Page</p>
+						<div class="ppagination__prev flex">
+							<img src="img/prev.png" alt="">
+						</div>
+						<div class="ppagination__page">
+							<input type="text" value="01">
+						</div>
+						<div class="ppagination__next flex">
+							<img src="img/prev.png" alt="">
+						</div>
+						<p>of 25</p>
+					</div>
+					<span class="profile__total">Total 254 records found</span>
+					<div class="profile__footer profile__footer_2 flex">
+						<button class="profile__cancel modal-close">Отмена</button>
+						<button class="profile__save">Сохранить</button>
+					</div>
+				</div>
+			</div>
+			<div class="profile__box profile__box_4 flex">
+				<div class="profile__row3 flex">
+					<div class="profile__item profile__item_toggle flex">
+						<span>Персональный шанс</span>
+						<div class="profile__toggle">
+							<input type="checkbox" id="other1">
+							<label for="other1"></label>
+						</div>
+					</div>
+					<div class="profile__selectlist">
+						<select name="" id="">
+							<option value="">Шанс №1</option>
+							<option value="">Шанс №2</option>
+							<option value="">Шанс №3</option>
+							<option value="">Шанс №4</option>
+						</select>
+					</div>
+				</div>
+				<div class="profile__row3 flex">
+					<div class="profile__item profile__item_toggle flex">
+						<span>Ручное одобрение реф. начислений</span>
+						<div class="profile__toggle">
+							<input type="checkbox" id="other2">
+							<label for="other2"></label>
+						</div>
+					</div>
+				</div>
+				<div class="profile__footer profile__footer_3 flex">
+					<button class="profile__cancel modal-close">Отмена</button>
+					<button class="profile__save">Сохранить</button>
+				</div>
+			</div>
 		</div>
 		<div class="overlay"></div>	
 		<header class="header">		
@@ -492,19 +804,19 @@
 					<h3 class="users__title">ПОЛЬЗОВАТЕЛИ</h3>
 					<div class="users__header flex">
 						<div class="users__tabs flex">
-							<div class="users__tab active flex">
+							<div class="users__tab active flex" data-id="1">
 								<p>350</p>
 								<span>Пользователи</span>
 							</div>
-							<div class="users__tab flex">
+							<div class="users__tab flex" data-id="2">
 								<p>45</p>
 								<span>Активные</span>
 							</div>
-							<div class="users__tab flex">
+							<div class="users__tab flex" data-id="3">
 								<p>298</p>
 								<span>Неактивные</span>
 							</div>
-							<div class="users__tab flex">
+							<div class="users__tab flex" data-id="4">
 								<p>03</p>
 								<span>Забаненные</span>
 							</div>
@@ -513,7 +825,7 @@
 							<input type="text" placeholder="Search by name ,email or mobile">
 						</div>
 					</div>
-					<div class="users__cont">
+					<div class="usertab__box usertab__box_1 users__cont active">
 						<div class="users__tablecont">
 							<table class="users__table">
 								<tr class="users__row users__row_title">
@@ -555,6 +867,345 @@
 									<td class="users__col users__col_8">
 										<button class="btn btn_red">ЗАБАНИТЬ</button>
 										<button class="btn btn_blue modal-run">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">652</td>
+									<td class="users__col users__col_5">652</td>
+									<td class="users__col users__col_6">90.151.87.202</td>
+									<td class="users__col users__col_7">90.151.87.202</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_purple">РАЗБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">653</td>
+									<td class="users__col users__col_5">653</td>
+									<td class="users__col users__col_6">90.151.87.203</td>
+									<td class="users__col users__col_7">90.151.87.203</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="users__controls flex">
+							<p>Показано <b>10</b> из <b>6,392</b> записей</p>
+							<div class="users__pagination pagination flex">
+								<div class="pagination__prev flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+								<div class="pagination__item flex">
+									<span>1</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>2</span>
+								</div>
+								<div class="pagination__item active flex">
+									<span>3</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>4</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>5</span>
+								</div>
+								<div class="pagination__next flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="usertab__box usertab__box_2 users__cont">
+						<div class="users__tablecont">
+							<table class="users__table">
+								<tr class="users__row users__row_title">
+									<th class="users__col users__col_1">ID</th>
+									<th class="users__col users__col_2">Аватар</th>
+									<th class="users__col users__col_3">
+										Имя Фамилия
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_4">
+										Баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_5">
+										Бонусный баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_6">
+										IP регистрации
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_7">
+										Последний IP
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_8">Управление</th>
+								</tr>
+								<tr class="users__sep"></tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">651</td>
+									<td class="users__col users__col_5">651</td>
+									<td class="users__col users__col_6">90.151.87.201</td>
+									<td class="users__col users__col_7">90.151.87.201</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue modal-run">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">652</td>
+									<td class="users__col users__col_5">652</td>
+									<td class="users__col users__col_6">90.151.87.202</td>
+									<td class="users__col users__col_7">90.151.87.202</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_purple">РАЗБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">652</td>
+									<td class="users__col users__col_5">652</td>
+									<td class="users__col users__col_6">90.151.87.202</td>
+									<td class="users__col users__col_7">90.151.87.202</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_purple">РАЗБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">653</td>
+									<td class="users__col users__col_5">653</td>
+									<td class="users__col users__col_6">90.151.87.203</td>
+									<td class="users__col users__col_7">90.151.87.203</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="users__controls flex">
+							<p>Показано <b>10</b> из <b>6,392</b> записей</p>
+							<div class="users__pagination pagination flex">
+								<div class="pagination__prev flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+								<div class="pagination__item flex">
+									<span>1</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>2</span>
+								</div>
+								<div class="pagination__item active flex">
+									<span>3</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>4</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>5</span>
+								</div>
+								<div class="pagination__next flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="usertab__box usertab__box_3 users__cont">
+						<div class="users__tablecont">
+							<table class="users__table">
+								<tr class="users__row users__row_title">
+									<th class="users__col users__col_1">ID</th>
+									<th class="users__col users__col_2">Аватар</th>
+									<th class="users__col users__col_3">
+										Имя Фамилия
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_4">
+										Баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_5">
+										Бонусный баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_6">
+										IP регистрации
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_7">
+										Последний IP
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_8">Управление</th>
+								</tr>
+								<tr class="users__sep"></tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">651</td>
+									<td class="users__col users__col_5">651</td>
+									<td class="users__col users__col_6">90.151.87.201</td>
+									<td class="users__col users__col_7">90.151.87.201</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue modal-run">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">652</td>
+									<td class="users__col users__col_5">652</td>
+									<td class="users__col users__col_6">90.151.87.202</td>
+									<td class="users__col users__col_7">90.151.87.202</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_purple">РАЗБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">653</td>
+									<td class="users__col users__col_5">653</td>
+									<td class="users__col users__col_6">90.151.87.203</td>
+									<td class="users__col users__col_7">90.151.87.203</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="users__controls flex">
+							<p>Показано <b>10</b> из <b>6,392</b> записей</p>
+							<div class="users__pagination pagination flex">
+								<div class="pagination__prev flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+								<div class="pagination__item flex">
+									<span>1</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>2</span>
+								</div>
+								<div class="pagination__item active flex">
+									<span>3</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>4</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>5</span>
+								</div>
+								<div class="pagination__next flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="usertab__box usertab__box_4 users__cont">
+						<div class="users__tablecont">
+							<table class="users__table">
+								<tr class="users__row users__row_title">
+									<th class="users__col users__col_1">ID</th>
+									<th class="users__col users__col_2">Аватар</th>
+									<th class="users__col users__col_3">
+										Имя Фамилия
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_4">
+										Баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_5">
+										Бонусный баланс
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_6">
+										IP регистрации
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_7">
+										Последний IP
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_8">Управление</th>
+								</tr>
+								<tr class="users__sep"></tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">651</td>
+									<td class="users__col users__col_5">651</td>
+									<td class="users__col users__col_6">90.151.87.201</td>
+									<td class="users__col users__col_7">90.151.87.201</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_red">ЗАБАНИТЬ</button>
+										<button class="btn btn_blue modal-run">НАСТРОЙКИ</button>
+									</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">652</td>
+									<td class="users__col users__col_5">652</td>
+									<td class="users__col users__col_6">90.151.87.202</td>
+									<td class="users__col users__col_7">90.151.87.202</td>
+									<td class="users__col users__col_8">
+										<button class="btn btn_purple">РАЗБАНИТЬ</button>
+										<button class="btn btn_blue">НАСТРОЙКИ</button>
 									</td>
 								</tr>
 								<tr class="users__row">

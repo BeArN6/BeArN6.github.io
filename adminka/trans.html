@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body class="loaded">
 
@@ -28,7 +29,7 @@
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-speedometer"></i>
+							<span class="lnr lnr-home"></span>
 						</div>
 						<span>Главная</span>
 					</a>
@@ -39,37 +40,85 @@
 				<li class="navigation__li withdropdown active">
 					<a class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-speedometer"></i>
+							<span class="lnr lnr-user"></span>
 						</div>
 						<span>Пользователи</span>
 					</a>
 					<ul class="navigation__dropdown">
-						<li>
-							<a href="">Все пользователи</a>
-						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
 							<a href="">Активные</a>
 						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-circle-minus"></span>
+							</div>
 							<a href="">Неактивные</a>
 						</li>
-						<li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-cross-circle"></span>
+							</div>
 							<a href="">Забаненные</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navigation__li withdropdown">
+					<a class="navigation__link flex">
+						<div class="navigation__icon">
+							<span class="lnr lnr-chart-bars"></span>
+						</div>
+						<span>Транзакции</span>
+					</a>
+					<ul class="navigation__dropdown">
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
+							<a href="">Пополнения</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-circle-minus"></span>
+							</div>
+							<a href="">Выводы</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-magnifier"></span>
+							</div>
+							<a href="">Поиск транзакции</a>
+						</li>
+					</ul>
+				</li>
+				<li class="navigation__li withdropdown">
+					<a class="navigation__link flex">
+						<div class="navigation__icon">
+							<span class="lnr lnr-users"></span>
+						</div>
+						<span>Партнёры</span>
+					</a>
+					<ul class="navigation__dropdown">
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-pie-chart"></span>
+							</div>
+							<a href="">Статистика</a>
+						</li>
+						<li class="flex">
+							<div class="navigation__icon">
+								<span class="lnr lnr-plus-circle"></span>
+							</div>
+							<a href="">Начисления</a>
 						</li>
 					</ul>
 				</li>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<!-- <img src="img/icon.png" alt=""> -->
-						</div>
-						<span>Рефералы</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<!-- <img src="img/icon.png" alt=""> -->
+							<span class="lnr lnr-cog"></span>
 						</div>
 						<span>Настройки сайта</span>
 					</a>
@@ -77,37 +126,21 @@
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-settings"></i>
+							<span class="lnr lnr-pie-chart"></span>
 						</div>
-						<span>Form Stuff</span>
+						<span>Laravel horizont</span>
 					</a>
 				</li>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
 						<div class="navigation__icon">
-							<i class="icon-bulb"></i>
+							<span class="lnr lnr-bug"></span>
 						</div>
-						<span>Elements</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<i class="icon-briefcase"></i>
-						</div>
-						<span>Tables</span>
-					</a>
-				</li>
-				<li class="navigation__li">
-					<a href="" class="navigation__link flex">
-						<div class="navigation__icon">
-							<i class="icon-wallet"></i>
-						</div>
-						<span>Portlets</span>
+						<span>Посмотреть логи</span>
 					</a>
 				</li>
 			</ul>
-			<div class="navigation__title">Layouts</div>
+			<!-- <div class="navigation__title">Layouts</div>
 			<ul>
 				<li class="navigation__li">
 					<a href="" class="navigation__link flex">
@@ -192,7 +225,7 @@
 						<span>Multi Level Menu</span>
 					</a>
 				</li>
-			</ul>
+			</ul> -->
 		</nav>
 	</div>
 	<img src="img/close.svg" alt="" class="sidebar__close">
@@ -334,122 +367,6 @@
 <!-- BEGIN CONTENT -->
 
 	<main class="content">
-		<div class="profile">
-			<div class="profile__header flex">
-				<h3 class="title">Редактирование пользователя</h3>
-				<div class="stats__tabs flex">
-					<div class="stats__tab flex">Основные</div>
-					<div class="stats__tab flex">Пополнения</div>
-					<div class="stats__tab flex active">Выводы</div>
-					<div class="stats__tab flex">Другие</div>
-				</div>
-			</div>
-			<div class="profile__box flex">
-				<div class="profile__person">
-					<div class="profile__user">
-						<div class="profile__image"></div>
-						<h4 class="profile__name">Esse money</h4>
-						<p class="profile__position">Admin</p>
-						<div class="profile__btns flex">
-							<button class="profile__btn btn_yellow">Сайт</button>
-							<button class="profile__btn btn_dblue">Вконтакте</button>
-						</div>
-					</div>
-					<div class="profile__status">
-						<p>Время активности: <span>2017-07-07 18:50:50</span></p>
-						<p>Дата регистрации: <span>2017-07-07 18:50:50</span></p>
-					</div>
-				</div>
-				<div class="profile__infobox">
-					<div class="profile__info">
-						<div class="profile__row profile__row_1 flex">
-							<div class="profile__item flex">
-								<span>Баланс</span>
-								<div class="profile__input flex">
-									<input type="text" value="158">
-									<div class="profile__icon flex">
-										<i></i>
-									</div>
-								</div>
-							</div>
-							<div class="profile__item flex">
-								<span>Бонусы</span>
-								<div class="profile__input flex">
-									<input type="text" value="158">
-									<div class="profile__icon flex">
-										<i></i>
-									</div>
-								</div>
-							</div>
-							<div class="profile__item flex">
-								<span>Партнёр</span>
-								<div class="profile__input flex">
-									<input type="text" value="158">
-									<div class="profile__icon flex">
-										<i></i>
-									</div>
-								</div>
-							</div>
-							<div class="profile__item flex">
-								<span>Ставка</span>
-								<div class="profile__input flex">
-									<input type="text" value="158">
-									<div class="profile__icon flex">
-										<i></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="profile__row flex">
-							<div class="profile__item profile__item_toggle flex">
-								<span>Ограничить</span>
-								<div class="profile__toggle">
-									<input type="checkbox" id="ptoggle1">
-									<label for="ptoggle1"></label>
-								</div>
-							</div>
-							<div class="profile__item profile__item_big flex">
-								<span>Лимит вывода</span>
-								<div class="profile__input flex">
-									<input type="text" value="158">
-									<div class="profile__icon flex">
-										<i></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="profile__row flex">
-							<div class="profile__item profile__item_toggle flex">
-								<span>Администратор</span>
-								<div class="profile__toggle">
-									<input type="checkbox" id="ptoggle2">
-									<label for="ptoggle2"></label>
-								</div>
-							</div>
-							<div class="profile__item profile__item_toggle flex">
-								<span>Модератор</span>
-								<div class="profile__toggle green">
-									<input type="checkbox" id="ptoggle3">
-									<label for="ptoggle3"></label>
-								</div>
-							</div>
-							<div class="profile__item profile__item_toggle flex">
-								<span>Бан</span>
-								<div class="profile__toggle red">
-									<input type="checkbox" id="ptoggle4">
-									<label for="ptoggle4"></label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="profile__footer flex">
-						<button class="profile__cancel modal-close">Отмена</button>
-						<button class="profile__save">Сохранить</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="overlay"></div>	
 		<header class="header">		
 			<div class="wrapper flex">
 				<div class="header__left flex">
@@ -488,52 +405,166 @@
 						<div class="date__text date__to">August 08, 2017</div>
 					</div>
 				</div>
-				<div class="transact">
-					<div class="transact__header flex">
-						<h3 class="title">Поиск транзакций</h3>
-					</div>
-					<div class="transact__box">
-						<div class="transact__search flex">
-							<div class="transact__input flex">
-								<div class="transact__icon flex">
-									<!-- <img src="img/loop.png" alt=""> -->
-									<i class="icon-magnifier"></i>
-								</div>
-								<input type="text" placeholder="Введите номер транзакции">
+				<div class="users">
+					<h3 class="users__title">ПОЛЬЗОВАТЕЛИ</h3>
+					<div class="users__header flex">
+						<div class="users__tabs flex">
+							<div class="users__tab active flex" data-id="1">
+								<p>350</p>
+								<span>Пополнения</span>
 							</div>
-							<button class="transact__btn">Поиск</button>
+							<div class="users__tab flex" data-id="2">
+								<p>45</p>
+								<span>Выводы</span>
+							</div>
+							<div class="users__tab flex" data-id="3">
+								<p>298</p>
+								<span>Поиск транзакций</span>
+							</div>
+						</div>
+						<div class="users__search">
+							<input type="text" placeholder="Search by name ,email or mobile">
 						</div>
 					</div>
-				</div>
-				<div class="transact transact_2">
-					<div class="transact__header flex">
-						<h3 class="title">Поиск транзакций</h3>
-					</div>
-					<div class="transact__box transact__box_2">
-						<div class="transact__search transact__search_2 flex">
-							<div class="transact__input flex">
-								<div class="transact__icon flex">
-									<!-- <img src="img/loop.png" alt=""> -->
-									<i class="icon-magnifier"></i>
-								</div>
-								<input type="text" placeholder="Введите номер транзакции">
-							</div>
-							<button class="transact__btn">Поиск</button>
+					<div class="usertab__box usertab__box_1 users__cont active">
+						<div class="users__tablecont">
+							<table class="users__table">
+								<tr class="users__row users__row_title">
+									<th class="users__col users__col_1">ID</th>
+									<th class="users__col users__col_2">Аватар</th>
+									<th class="users__col users__col_3">
+										Имя Фамилия
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col users__col_4">
+										Сумма
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col transact__col_5">
+										Кошелёк
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col transact__col_6">
+										Система
+										<img src="img/sort.png" alt="">
+									</th>
+									<th class="users__col transact__col_7">
+										Дата
+										<img src="img/sort.png" alt="">
+									</th>
+								</tr>
+								<tr class="users__sep"></tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">727.04</td>
+									<td class="users__col transact__col_5">+9307499999</td>
+									<td class="users__col transact__col_6">QIWI</td>
+									<td class="users__col transact__col_7">2018-08-23 16:25:01</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">727.04</td>
+									<td class="users__col transact__col_5">+9307499999</td>
+									<td class="users__col transact__col_6">QIWI</td>
+									<td class="users__col transact__col_7">2018-08-23 16:25:01</td>
+								</tr>
+								<tr class="users__row">
+									<td class="users__col users__col_1">125</td>
+									<td class="users__col users__col_2">
+										<div class="users__ava"></div>
+									</td>
+									<td class="users__col users__col_3">Esse Money</td>
+									<td class="users__col users__col_4">727.04</td>
+									<td class="users__col transact__col_5">+9307499999</td>
+									<td class="users__col transact__col_6">QIWI</td>
+									<td class="users__col transact__col_7">2018-08-23 16:25:01</td>
+								</tr>
+							</table>
 						</div>
-						<table class="transact__table">
-							<tr>
-								<td>Тип, имя:</td>
-								<td><i>[Пополнение]</i><span> Иванов Иван</span></td>
-							</tr>
-							<tr>
-								<td>Количество:</td>
-								<td><i>100р</i></td>
-							</tr>
-							<tr>
-								<td>Дата:</td>
-								<td><span>19.08.2018</span></td>
-							</tr>
-						</table>
+						<div class="users__controls flex">
+							<p>Показано <b>10</b> из <b>6,392</b> записей</p>
+							<div class="users__pagination pagination flex">
+								<div class="pagination__prev flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+								<div class="pagination__item flex">
+									<span>1</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>2</span>
+								</div>
+								<div class="pagination__item active flex">
+									<span>3</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>4</span>
+								</div>
+								<div class="pagination__item flex">
+									<span>5</span>
+								</div>
+								<div class="pagination__next flex">
+									<img src="img/arrows.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="usertab__box usertab__box_3 flex">
+						<div class="transact">
+							<div class="transact__header flex">
+								<h3 class="title">Поиск транзакций</h3>
+							</div>
+							<div class="transact__box">
+								<div class="transact__search flex">
+									<div class="transact__input flex">
+										<div class="transact__icon flex">
+											<!-- <img src="img/loop.png" alt=""> -->
+											<i class="icon-magnifier"></i>
+										</div>
+										<input type="text" placeholder="Введите номер транзакции">
+									</div>
+									<button class="transact__btn">Поиск</button>
+								</div>
+							</div>
+						</div>
+						<div class="transact transact_2">
+							<div class="transact__header flex">
+								<h3 class="title">Поиск транзакций</h3>
+							</div>
+							<div class="transact__box transact__box_2">
+								<div class="transact__search transact__search_2 flex">
+									<div class="transact__input flex">
+										<div class="transact__icon flex">
+											<!-- <img src="img/loop.png" alt=""> -->
+											<i class="icon-magnifier"></i>
+										</div>
+										<input type="text" placeholder="Введите номер транзакции">
+									</div>
+									<button class="transact__btn">Поиск</button>
+								</div>
+								<table class="transact__table">
+									<tr>
+										<td>Тип, имя:</td>
+										<td><i>[Пополнение]</i><span> Иванов Иван</span></td>
+									</tr>
+									<tr>
+										<td>Количество:</td>
+										<td><i>100р</i></td>
+									</tr>
+									<tr>
+										<td>Дата:</td>
+										<td><span>19.08.2018</span></td>
+									</tr>
+								</table>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

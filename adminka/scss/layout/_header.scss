@@ -27,6 +27,7 @@ header{
 	}
 	&__toggle{
 		margin-right: 130px;
+		cursor: pointer;
 	}
 	&__search{
 		padding-left: 30px;
@@ -79,6 +80,7 @@ header{
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 	position: relative;
 	margin-left: 30px;
+	cursor: pointer;
 	&__status{
 		width: 16px;
 		height: 16px;

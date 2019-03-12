@@ -398,14 +398,16 @@ h3{
 		position: relative;
 		list-style: none;
 		transition: all 0.3s ease;
-		&:after{
-			content: "";
-			position: absolute;
-			right: 30px;
-			top: 16px;
-			border: 5px solid transparent;
-			border-left: 5px solid #999999;
-			transition: all 0.3s ease;
+		&.withdropdown{
+			&:after{
+				content: "";
+				position: absolute;
+				right: 30px;
+				top: 16px;
+				border: 5px solid transparent;
+				border-left: 5px solid #999999;
+				transition: all 0.3s ease;
+			}
 		}
 		&.active{
 			background: #171820;
@@ -415,8 +417,10 @@ h3{
 					display: block;
 				}
 			}
-			&:after{
-				transform: rotate(90deg);
+			&.withdropdown{
+				&:after{
+					transform: rotate(90deg);
+				}
 			}
 		}
 	}
@@ -452,19 +456,24 @@ h3{
 	}
 	&__icon{
 		width: 32px;
-		i{
+		span{
 			font-size: 16px;
     		color: #999999;
     		transition: all 0.3s ease;
+    		font-family: Linearicons-Free;
 		}
 	}
 	&__dropdown{
 		display: none;
 		li{
 			padding: 5px 32px;
+			padding-left: 0;
+			&.flex{
+				justify-content: flex-start;
+			}
 			a{
 				display: block;
-				width: 100%;
+				width: calc(100% - 35px);
 				font: 400 15px $font3;
 				color: #cccccc;
 				&:hover{
@@ -520,8 +529,27 @@ h3{
 		}
 	}
 	&__box{
+		position: absolute;
+		transform: translateX(-100%);
+		z-index: -1;
+		opacity: 0;
+		&.active{
+			position: relative;
+			z-index: 2;
+			opacity: 1;
+			transform: translateX(0%);
+		}
 		&.flex{
 			align-items: flex-start;
+		}
+		&_2{
+			padding-top: 20px;
+		}
+		&_3{
+			padding-top: 20px;
+		}
+		&_4{
+			padding-top: 45px;
 		}
 	}
 	&__person{
@@ -697,6 +725,12 @@ h3{
 		&.flex{
 			justify-content: flex-end;
 		}
+		&_2{
+			padding: 0;
+		}
+		&_3{
+			width: 100%;
+		}
 	}
 	&__cancel{
 		display: inline-block;
@@ -719,6 +753,192 @@ h3{
 		color: #fff;
 		background: linear-gradient(to right, #f21c83, #fc6a33);
 		box-shadow: 0px 10px 20px 0px rgba(243, 31, 121, 0.3);
+	}
+	&__table{
+		width: 870px;
+		border: 1px solid #eeeeee;
+		border-radius: 5px;
+		margin: 0 auto 10px;
+		th{
+			font: 500 14px $font4;
+			color: #333333;
+			text-align: left;
+			padding: 11.5px 0;
+			padding-left: 10px;
+			border-right: 1px solid #eeeeee;
+			position: relative;
+			&:after{
+				content: "";
+				width: 10px;
+				height: 13px;
+				position: absolute;
+				right: 9px;
+				top: 50%;
+				margin-top: -6.5px;
+				background: url(../img/sort2.png);
+				background-size: 100% 100%;
+			}
+		}
+		td{
+			padding: 10px 0;
+			font: 400 14px $font1;
+			color: #666666;
+			border-right: 1px solid #eeeeee;
+			padding-left: 10px;
+		}
+	}
+	&__row2{
+		border-bottom: 1px solid #eeeeee;
+		&_title{
+			background: #f7fafc;
+			margin-bottom: 20px;
+		}
+	}
+	&__col{
+		&_1{
+			width: 97px;
+		}
+		&_2{
+			width: 159px;
+		}
+		&_3{
+			width: 147px;
+		}
+		&_4{
+			width: 129px;
+		}
+		&_5{
+			width: 118px;
+		}
+		&_6{
+			width: 98px;
+		}
+		&_7{
+			width: 119px;
+			span{
+				display: inline-block;
+				width: 86px;
+				padding: 5px 0;
+				background: #3aa6b4;
+				border-radius: 3px;
+				font: 400 12px $font2;
+				color: #fff;
+				text-align: center;
+			}
+		}
+		img{
+			margin-bottom: -2px;
+    		margin-left: 3px;
+		}
+	}
+	&__panel{
+		width: 100%;
+		margin-left: 23px;
+	}
+	&__search{
+		width: 175px;
+		height: 40px;
+		border-radius: 50px;
+		background: #f7fafc;
+		overflow: hidden;
+		position: relative;
+		&:before{
+			content: "";
+		    width: 15px;
+		    height: 15px;
+		    background: url(../img/loop.png);
+		    background-size: 100% 100%;
+		    position: absolute;
+		    right: 13px;
+		    top: 50%;
+		    margin-top: -7.5px;
+		}
+		input{
+			width: 100%;
+		    height: 100%;
+		    border: 0;
+		    background: none;
+		    padding: 0 20px;
+		    font: 400 12px $font2;
+		    color: #666666;
+		    &::placeholder{
+		    	font: 400 12px $font2;
+		    	color: #666666;
+		    }
+		}
+	}
+	&__total{
+		font: 300 12px $font1;
+		color: #333333;
+	}
+	&__row3{
+		width: 100%;
+		padding: 15px 0;
+		border-bottom: 1px solid #eeeeee;
+	}
+	&__selectlist{
+		width: 200px;
+		margin-right: auto;
+    	margin-left: 170px;
+		select{
+			width: 100%;
+			height: 40px;
+			background: #f7fafc;
+			border: 1px solid #eeeeee;
+    		padding: 0 18px;
+    		font: 400 14px $font2;
+    		color: #666666;
+    		outline: none;
+    		appearance: none;
+    		background: url(../img/more.png) 170px center no-repeat;
+    		option{
+    			font: 300 12px $font4;
+    			color: #666666;
+    			background: #fff;
+    		}
+		}
+	}
+}
+.ppagination{
+	p{
+		font: 300 12px $font1;
+		color: #333333;
+	}
+	&__prev{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #eeeeee;
+		background: #f7fafc;
+		margin-left: 10px;
+		&.flex{
+			justify-content: center;
+		}
+	}
+	&__page{
+		margin: 0 5px;
+		input{
+			width: 50px;
+			height: 30px;
+			border: 1px solid #eeeeee;
+			text-align: center;
+			font: 400 12px $font1;
+			color: #333333;
+			&::placeholder{
+				font: 400 12px $font1;
+				color: #333333;
+			}
+		}
+	}
+	&__next{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #eeeeee;
+		background: #f7fafc;
+		transform: rotate(180deg);
+		margin-right: 10px;
+		&.flex{
+			justify-content: center;
+		}
 	}
 }
 /*Profile end*/
@@ -1174,6 +1394,17 @@ h3{
     		}
     	}
     }
+    &__col{
+    	&_5{
+    		width: 140px;
+    	}
+    	&_6{
+    		width: 105px;
+    	}
+    	&_7{
+    		width: 185px;
+    	}
+    }
 }
 /*Transact end*/
 /*Users*/
@@ -1325,6 +1556,28 @@ h3{
 		}
 	}
 }
+.usertab{
+	&__box{
+		width: 100%;
+		position: absolute;
+		transform: translateX(-100%);
+		z-index: -1;
+		opacity: 0;
+		&.active{
+			position: relative;
+			z-index: 2;
+			opacity: 1;
+			transform: translateX(0%);
+		}
+		&.flex{
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&_3{
+			padding-top: 30px;
+		}
+	}
+}
 .pagination{
 	&__item{
 		width: 30px;
@@ -1445,7 +1698,51 @@ h3{
 	}
 }
 /*Users end*/
-
+/*Partners*/
+.partn{
+	&__col{
+		&_1{
+			width: 100px;
+		}
+		&_2{
+			width: 125px;
+		}
+		&_3{
+			width: 240px;
+		}
+	}
+	&__col2{
+		&_1{
+			width: 100px;
+		}
+		&_2{
+			width: 125px;
+		}
+		&_3{
+			width: 240px;
+		}
+		&_4{
+			width: 170px;
+		}
+		&_5{
+			width: 200px;
+		}
+		&_6{
+			width: 165px;
+			span{
+				display: inline-block;
+			    width: 86px;
+			    padding: 5px 0;
+			    background: #3aa6b4;
+			    border-radius: 3px;
+			    font: 400 12px "Conv_MyriadPro", sans-serif;
+			    color: #fff;
+			    text-align: center;
+			}
+		}
+	}
+}
+/*Partners end*/
 
 
 
@@ -1524,6 +1821,7 @@ h3{
     	height: 30px;
     	font-size: 12px;
 	}
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1599,6 +1897,21 @@ h3{
 		width: 75px;
     	height: 30px;
     	font-size: 12px;
+	}
+	.partn{
+		&__col{
+			&_3{
+				width: 170px;
+			}
+		}
+		&__col2{
+			&_1{
+				width: 75px;
+			}
+			&_3{
+				width: 170px;
+			}
+		}
 	}
 }
 
@@ -1727,6 +2040,19 @@ h3{
 				justify-content: center;
 			}
 		}
+		&__tablecont{
+			width: 100%;
+			overflow-x: scroll;
+		}
+		&__panel{
+			margin-left: 0;
+		}
+		&__footer{
+			&_2{
+				width: 100%;
+    			margin-top: 10px;
+			}
+		}
 	}
 }
 
@@ -1810,6 +2136,9 @@ h3{
 	}
 	.graph{
 		margin-bottom: 20px;
+		&__cont{
+			padding: 20px 5px;
+		}
 	}
 	.blheader{
 		padding: 15px 10px;
@@ -1896,8 +2225,12 @@ h3{
 	.profile{
 		width: 300px;
 		margin-left: -150px;
-		top: auto !important;
-		bottom: -50px;
+		/*top: auto !important;
+		bottom: -50px;*/
+		max-height: 70vh;
+		overflow-x: auto;
+		padding-left: 15px;
+		padding-bottom: 30px;
 		&__header{
 			margin-bottom: 15px;
 			text-align: center;
@@ -1914,8 +2247,23 @@ h3{
 			padding-top: 20px;
 		}
 		&__box{
+			top: 0;
+			height: 0;
 			&.flex{
 				justify-content: center;
+			}
+			&.active{
+				height: auto;
+			}
+			&_4{
+				padding-top: 0;
+				.profile{
+					&__item{
+						span{
+							width: 205px;
+						}
+					}
+				}
 			}
 		}
 		&__info{
@@ -1945,6 +2293,37 @@ h3{
 		}
 		&__footer{
 			padding-top: 20px;
+			&_2{
+				width: 100%;
+    			margin-top: 10px;
+			}
+		}
+		&__tablecont{
+			width: 100%;
+			overflow-x: scroll;
+		}
+		&__panel{
+			margin-left: 0;
+			&.flex{
+				justify-content: center;
+			}
+		}
+		&__search{
+			width: 100%;
+    		margin-bottom: 10px;
+		}
+		&__total{
+			width: 100%;
+			display: block;
+			text-align: center;
+			margin-top: 10px;
+		}
+		&__selectlist{
+			margin-left: 0;
+    		margin-top: 10px;
+    		select{
+    			width: 200px;
+    		}
 		}
 	}
 }
